@@ -1,0 +1,113 @@
+- id: fincen-alert-russian-sanctions-evasion-final-508-01
+  description: Use of corporate vehicles to obscure ownership, source of funds, or
+    countries involved, particularly sanctioned jurisdictions.
+  product_types:
+  - msb
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: shell_company
+- id: fincen-alert-russian-sanctions-evasion-final-508-02
+  description: Use of shell companies to conduct international wire transfers involving
+    financial institutions in jurisdictions distinct from company registration.
+  product_types:
+  - msb
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: shell_company
+- id: fincen-alert-russian-sanctions-evasion-final-508-03
+  description: Use of third parties to shield the identity of sanctioned persons and/or
+    PEPs seeking to hide the origin or ownership of funds.
+  product_types:
+  - msb
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: sanctions_evasion
+- id: fincen-alert-russian-sanctions-evasion-final-508-04
+  description: Accounts in jurisdictions experiencing a sudden rise in value being
+    transferred without a clear economic or business rationale.
+  product_types:
+  - msb
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: medium
+  category: layering
+- id: fincen-alert-russian-sanctions-evasion-final-508-05
+  description: Jurisdictions previously associated with Russian financial flows identified
+    as having a notable recent increase in new company formations.
+  product_types:
+  - msb
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: medium
+  category: shell_company
+- id: fincen-alert-russian-sanctions-evasion-final-508-06
+  description: Newly established accounts attempting to send or receive funds from
+    a sanctioned institution or an institution removed from SWIFT.
+  product_types:
+  - msb
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: sanctions_evasion
+- id: fincen-alert-russian-sanctions-evasion-final-508-07
+  description: Non-routine foreign exchange transactions that may indirectly involve
+    sanctioned Russian financial institutions.
+  product_types:
+  - msb
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: layering
+- id: fincen-alert-russian-sanctions-evasion-final-508-08
+  description: Transactions initiated from or sent to non-trusted IP addresses, particularly
+    in sanctioned jurisdictions.
+  product_types:
+  - crypto
+  - msb
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: cyber_enabled
+- id: fincen-alert-russian-sanctions-evasion-final-508-09
+  description: Transactions connected to CVC addresses listed on OFAC's Specially
+    Designated Nationals and Blocked Persons List.
+  product_types:
+  - crypto
+  - msb
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: sanctions_evasion
+- id: fincen-alert-russian-sanctions-evasion-final-508-10
+  description: Use of a CVC exchanger or foreign-located MSB in a high-risk jurisdiction
+    with AML/CFT deficiencies.
+  product_types:
+  - crypto
+  - msb
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: sanctions_evasion
+- id: fincen-alert-russian-sanctions-evasion-final-508-11
+  description: Customer receives CVC from an external wallet and initiates multiple
+    rapid trades among multiple CVCs with no apparent related purpose.
+  product_types:
+  - crypto
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: ransomware
+- id: fincen-alert-russian-sanctions-evasion-final-508-12
+  description: Customer initiates a transfer of funds involving a CVC mixing service.
+  product_types:
+  - crypto
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: ransomware
+- id: fincen-alert-russian-sanctions-evasion-final-508-13
+  description: Customer has transaction exposure identified by blockchain tracing
+    software as related to ransomware.
+  product_types:
+  - crypto
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  risk_level: high
+  category: ransomware

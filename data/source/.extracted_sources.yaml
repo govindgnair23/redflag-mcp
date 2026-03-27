@@ -1,0 +1,8 @@
+- source: red_flag_sources/pdf/FinCEN Alert Russian Sanctions Evasion FINAL 508.pdf
+  slug: fincen-alert-russian-sanctions-evasion-final-508
+  output_file: data/source/fincen-alert-russian-sanctions-evasion-final-508.yaml
+  extracted_at: '2026-03-26T12:35:00+00:00'
+- source: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng#s1
+  slug: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng
+  output_file: data/source/fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng.yaml
+  extracted_at: '2026-03-27T00:03:28.723460+00:00'

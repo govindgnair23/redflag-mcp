@@ -1,0 +1,431 @@
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-01
+  description: Inability to properly identify the client or questions surrounding
+    the client's identity.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-02
+  description: Client refuses or tries to avoid providing required information or
+    provides misleading, vague, or difficult to verify information.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-03
+  description: Client refuses to provide information regarding beneficial owners or
+    provides false or conflicting information.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: shell_company
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-04
+  description: Identification document presented by the client cannot be authenticated.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-05
+  description: Inconsistencies in identification documents or different identifiers
+    provided by the client.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-06
+  description: Client produces seemingly false information or identification that
+    appears to be counterfeited or altered.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-07
+  description: Client displays a pattern of name variations or uses aliases.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-08
+  description: Client alters the transaction after being asked for identity documents.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-09
+  description: Client provides only a non-civic address or disguises a post office
+    box as a civic address.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-10
+  description: Common identifiers are used by multiple clients that do not appear
+    to be related.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: shell_company
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-11
+  description: Client conducts transactions at different physical locations or approaches
+    different tellers.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-12
+  description: Client exhibits nervous behavior or a defensive stance to questioning.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-13
+  description: Client avoids contact with reporting entity employees.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-14
+  description: Client closes account after an initial deposit is made without a reasonable
+    explanation.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-15
+  description: Transactional activity far exceeds the projected activity at the time
+    of account opening.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-16
+  description: Transactional activity inconsistent with the client's apparent financial
+    standing or usual pattern of activities.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-17
+  description: Volume of transactional activity exceeds the norm for geographical
+    area.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-18
+  description: Client appears to be living beyond their means.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-19
+  description: Large and/or rapid movement of funds not commensurate with the client's
+    financial profile.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-20
+  description: Rounded sum transactions atypical of what would be expected from the
+    client.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-21
+  description: Size or type of transactions atypical of what is expected from the
+    client.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-22
+  description: Sudden change in the client's financial profile, pattern of activity
+    or transactions.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-23
+  description: Client uses notes, monetary instruments, or products and/or services
+    that are unusual for such a client.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-24
+  description: Holding multiple accounts at several financial institutions for no
+    apparent reason.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-25
+  description: Client appears to have recently established a series of new relationships
+    with different financial entities.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-26
+  description: Frequent use of safety deposit box.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-27
+  description: Accounts used for pass-through activities.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-28
+  description: Client frequently makes credit card overpayments and then requests
+    a cash advance.
+  product_types:
+  - credit_card
+  regulatory_source: FINTRAC Guidance
+  risk_level: medium
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-29
+  description: Client conducts transactions at different physical locations or with
+    different representatives in an apparent attempt to avoid detection.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-30
+  description: Client exhibits knowledge of reporting thresholds.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-31
+  description: Client is unaware of details surrounding incoming wire transfers.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-32
+  description: Client does not appear to know the sender of the wire transfer.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-33
+  description: Client sends or receives wire transfers to or from multiple beneficiaries
+    that do not correspond to the expected use of the account.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-34
+  description: Client frequently utilizes cash, prepaid credit cards, or money orders
+    to send wire transfers overseas.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-35
+  description: Client attempts to specify the routing of an international wire transfer.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-36
+  description: Client conducts wire transfers that do not include requisite information.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-37
+  description: Funds are deposited into several accounts and then consolidated into
+    one before transferring the funds outside the country.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-38
+  description: Client sends wire transfers to multiple clients over a short period
+    of time.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-39
+  description: Client is accompanied by persons who appear to be instructing the sending
+    or receiving of wire transfers.
+  product_types:
+  - money_transmitter
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: layering
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-40
+  description: Client makes enquiries indicating a desire to avoid reporting.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: structuring
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-41
+  description: Client conducts transactions with jurisdictions known for high ML/TF
+    risk.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: sanctions_evasion
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-42
+  description: Client is linked to persons or entities identified by media or law
+    enforcement as being linked to criminal activities.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: sanctions_evasion
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-43
+  description: Client is a politically exposed person or associated with one.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: corruption
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-44
+  description: Client engages in high-value transactions with politically exposed
+    persons.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: corruption
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-45
+  description: Client conducts transactions involving newly established, opaque, or
+    unidentified entities.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: corruption
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-46
+  description: Client uses intermediaries or complex legal entity structures to hide
+    the origin or ownership of funds.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: corruption
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-47
+  description: Client conducts transactions with vague or fraudulent documentation.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: corruption
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-48
+  description: Client raises donations in an unofficial or unregistered manner.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: terrorist_financing
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-49
+  description: Client is identified by media or law enforcement as having traveled
+    to high-risk jurisdictions linked to terrorist activities.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: terrorist_financing
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-50
+  description: Client conducts travel-related purchases linked to high-risk jurisdictions.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: terrorist_financing
+- id: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng-51
+  description: Client donates to a cause that is subject to derogatory information
+    that is publicly available.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FINTRAC Guidance
+  risk_level: high
+  category: terrorist_financing
