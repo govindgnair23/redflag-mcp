@@ -2,13 +2,19 @@
 """Extract AML red flags from PDFs or web pages using an LLM.
 
 Usage:
-    uv run python scripts/extract.py <pdf-path-or-url>
-    uv run python scripts/extract.py --force <pdf-path-or-url>
+    # Single source
+    uv run python scripts/extract.py [--force] <pdf-path-or-url>
 
-Outputs a YAML file in data/source/ conforming to the RedFlagSource schema.
+    # Batch mode — processes all PDFs in red_flag_sources/pdf/ and all URLs
+    # in red_flag_sources/Weblinks.md, skipping already-processed sources
+    uv run python scripts/extract.py [--force]
+    uv run python scripts/extract.py [--force] --parallel        # 4 workers
+    uv run python scripts/extract.py [--force] --parallel 8      # 8 workers
+
+Outputs YAML files in data/source/ conforming to the RedFlagSource schema.
 Tracks processed sources in data/source/.extracted_sources.yaml to avoid
 re-processing. Use --force to bypass the duplicate check.
-Requires OPENAI_API_KEY environment variable.
+Requires OPENAI_API_KEY environment variable (or .env file).
 """
 
 from __future__ import annotations
@@ -17,6 +23,7 @@ import json
 import os
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -37,7 +44,12 @@ from redflag_mcp.config import RISK_LEVELS, SIMULATION_TYPES, SOURCE_DIR
 from redflag_mcp.models import RedFlagSource
 
 DEFAULT_MODEL = "gpt-4o-mini"
+DEFAULT_PARALLEL_WORKERS = 4
 MANIFEST_PATH = SOURCE_DIR / ".extracted_sources.yaml"
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PDF_DIR = PROJECT_ROOT / "red_flag_sources" / "pdf"
+WEBLINKS_PATH = PROJECT_ROOT / "red_flag_sources" / "Weblinks.md"
 
 
 def load_manifest() -> list[dict]:
@@ -263,83 +275,212 @@ def write_yaml(entries: list[dict], output_path: Path) -> None:
         )
 
 
-def main() -> None:
-    args = sys.argv[1:]
-    force = "--force" in args
-    if force:
-        args.remove("--force")
+def parse_weblinks(path: Path) -> list[str]:
+    """Parse URLs from a Weblinks.md file.
 
-    if len(args) != 1:
-        print(f"Usage: {sys.argv[0]} [--force] <pdf-path-or-url>", file=sys.stderr)
-        sys.exit(1)
+    Handles numbered list format: '1) https://...'
+    Returns a list of URL strings, skipping blank lines and non-URL lines.
+    """
+    if not path.exists():
+        return []
 
-    source = args[0]
+    urls = []
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            # Match optional numbering prefix: '1) ', '1. ', or bare URL
+            match = re.match(r"^(?:\d+[).]\s+)?(https?://\S+)$", line)
+            if match:
+                urls.append(match.group(1))
+    return urls
+
+
+def discover_sources() -> list[str]:
+    """Discover all PDF files in red_flag_sources/pdf/ and URLs in Weblinks.md."""
+    sources: list[str] = []
+
+    if PDF_DIR.exists():
+        for pdf in sorted(PDF_DIR.glob("*.pdf")):
+            sources.append(str(pdf))
+
+    sources.extend(parse_weblinks(WEBLINKS_PATH))
+
+    return sources
+
+
+def process_one(source: str, force: bool, manifest: list[dict]) -> dict | None:
+    """Process a single source (PDF path or URL).
+
+    Returns a manifest entry dict on success, or None on skip/failure.
+    Does NOT write to the manifest file — the caller handles that.
+    """
+    if not force and is_already_processed(source, manifest):
+        print(f"Skipping (already processed): {source}")
+        return None
+
     is_url = source.startswith(("http://", "https://"))
 
-    # Check manifest for duplicates
-    manifest = load_manifest()
-    if not force and is_already_processed(source, manifest):
-        print(f"Already processed: {source}")
-        print("Use --force to re-extract.")
-        sys.exit(0)
-
-    # Extract text
-    if is_url:
-        print(f"Fetching URL: {source}")
-        text = extract_text_from_url(source)
-    else:
-        pdf_path = Path(source)
-        if not pdf_path.exists():
-            print(f"Error: File not found: {source}", file=sys.stderr)
-            sys.exit(1)
-        if pdf_path.suffix.lower() != ".pdf":
-            print(f"Error: Expected a .pdf file, got: {pdf_path.suffix}", file=sys.stderr)
-            sys.exit(1)
-        print(f"Extracting text from PDF: {source}")
-        text = extract_text_from_pdf(source)
+    try:
+        if is_url:
+            print(f"Fetching URL: {source}")
+            text = extract_text_from_url(source)
+        else:
+            pdf_path = Path(source)
+            if not pdf_path.exists():
+                print(f"Error: File not found: {source}", file=sys.stderr)
+                return None
+            if pdf_path.suffix.lower() != ".pdf":
+                print(f"Error: Expected a .pdf file, got: {pdf_path.suffix}", file=sys.stderr)
+                return None
+            print(f"Extracting text from PDF: {source}")
+            text = extract_text_from_pdf(source)
+    except Exception as e:
+        print(f"Error fetching/reading {source}: {e}", file=sys.stderr)
+        return None
 
     if not text.strip():
-        print("Error: No text extracted from source.", file=sys.stderr)
-        sys.exit(1)
+        print(f"Error: No text extracted from {source}", file=sys.stderr)
+        return None
 
-    print(f"Extracted {len(text)} characters of text.")
+    print(f"Extracted {len(text)} characters of text from {Path(source).name if not is_url else source}.")
 
-    # Generate slug and output path
     slug = source_slug(source)
     output_path = SOURCE_DIR / f"{slug}.yaml"
 
-    if output_path.exists():
-        print(f"Warning: {output_path} already exists and will be overwritten.")
+    try:
+        raw_flags = extract_red_flags(text)
+    except Exception as e:
+        print(f"Error calling LLM for {source}: {e}", file=sys.stderr)
+        return None
 
-    # Extract red flags via LLM
-    raw_flags = extract_red_flags(text)
-    print(f"LLM returned {len(raw_flags)} red flag(s).")
+    print(f"LLM returned {len(raw_flags)} red flag(s) for {slug}.")
 
-    # Validate and assign IDs
     entries, skipped = validate_and_build_entries(raw_flags, slug)
 
     if not entries:
-        print("Error: No valid red flags extracted.", file=sys.stderr)
-        sys.exit(1)
+        print(f"Error: No valid red flags extracted from {source}", file=sys.stderr)
+        return None
 
-    # Write YAML
     write_yaml(entries, output_path)
 
-    # Update manifest
-    # Remove any existing entry for this source (for --force re-runs)
-    manifest = [e for e in manifest if e.get("source") != source]
-    manifest.append({
+    manifest_entry = {
         "source": source,
         "slug": slug,
         "output_file": str(output_path.relative_to(SOURCE_DIR.parent.parent)),
         "extracted_at": datetime.now(timezone.utc).isoformat(),
-    })
-    save_manifest(manifest)
+    }
 
     print(f"\nExtracted {len(entries)} red flags from {source}")
     print(f"  → {output_path}")
     if skipped:
-        print(f"  {skipped} entries skipped due to validation errors (see warnings above)")
+        print(f"  {skipped} entries skipped due to validation errors")
+
+    return manifest_entry
+
+
+def run_batch(force: bool, workers: int | None) -> None:
+    """Discover and process all sources in batch mode."""
+    sources = discover_sources()
+    if not sources:
+        print("No sources found in red_flag_sources/pdf/ or red_flag_sources/Weblinks.md.")
+        return
+
+    manifest = load_manifest()
+
+    pending = [s for s in sources if force or not is_already_processed(s, manifest)]
+    skipped_count = len(sources) - len(pending)
+
+    print(f"Found {len(sources)} source(s): {len(pending)} to process, {skipped_count} already done.")
+    if not pending:
+        print("Nothing to do. Use --force to re-extract all sources.")
+        return
+
+    new_entries: list[dict] = []
+
+    if workers is None:
+        # Sequential
+        for source in pending:
+            entry = process_one(source, force=force, manifest=manifest)
+            if entry:
+                new_entries.append(entry)
+    else:
+        # Parallel
+        print(f"Running with {workers} parallel worker(s).")
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {
+                executor.submit(process_one, source, force, manifest): source
+                for source in pending
+            }
+            for future in as_completed(futures):
+                source = futures[future]
+                try:
+                    entry = future.result()
+                    if entry:
+                        new_entries.append(entry)
+                except Exception as e:
+                    print(f"Unexpected error processing {source}: {e}", file=sys.stderr)
+
+    if new_entries:
+        # Reload manifest to pick up any concurrent single-source runs, then upsert
+        final_manifest = load_manifest()
+        new_sources = {e["source"] for e in new_entries}
+        final_manifest = [e for e in final_manifest if e.get("source") not in new_sources]
+        final_manifest.extend(new_entries)
+        save_manifest(final_manifest)
+        print(f"\nBatch complete. {len(new_entries)} source(s) processed.")
+
+
+def main() -> None:
+    args = sys.argv[1:]
+
+    force = "--force" in args
+    if force:
+        args.remove("--force")
+
+    # Parse --parallel [N]
+    workers: int | None = None
+    if "--parallel" in args:
+        idx = args.index("--parallel")
+        args.pop(idx)
+        # Check if next arg is an integer
+        if idx < len(args) and args[idx].isdigit():
+            workers = int(args.pop(idx))
+        else:
+            workers = DEFAULT_PARALLEL_WORKERS
+
+    if len(args) == 0:
+        # Batch mode
+        run_batch(force=force, workers=workers)
+    elif len(args) == 1:
+        # Single-source mode
+        if workers is not None:
+            print("Note: --parallel is ignored in single-source mode.", file=sys.stderr)
+
+        source = args[0]
+        manifest = load_manifest()
+        if not force and is_already_processed(source, manifest):
+            print(f"Already processed: {source}")
+            print("Use --force to re-extract.")
+            sys.exit(0)
+
+        entry = process_one(source, force=force, manifest=manifest)
+        if entry is None:
+            sys.exit(1)
+
+        # Update manifest
+        updated = [e for e in manifest if e.get("source") != source]
+        updated.append(entry)
+        save_manifest(updated)
+    else:
+        print(
+            f"Usage:\n"
+            f"  {sys.argv[0]} [--force] <pdf-path-or-url>        # single source\n"
+            f"  {sys.argv[0]} [--force] [--parallel [N]]         # batch mode",
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
 
 if __name__ == "__main__":

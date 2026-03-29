@@ -25,16 +25,38 @@ export OPENAI_API_KEY=sk-...
 
 ### Usage
 
-```bash
-# Extract from a URL
-uv run python scripts/extract.py https://example.com/regulatory-guidance
+**Single source:**
 
+```bash
 # Extract from a local PDF
 uv run python scripts/extract.py path/to/document.pdf
+
+# Extract from a URL
+uv run python scripts/extract.py https://example.com/regulatory-guidance
 
 # Re-extract a source that was already processed
 uv run python scripts/extract.py --force path/to/document.pdf
 ```
+
+**Batch mode** — processes all PDFs in `red_flag_sources/pdf/` and all URLs in `red_flag_sources/Weblinks.md`, skipping sources already in the manifest:
+
+```bash
+# Sequential batch
+uv run python scripts/extract.py
+
+# Parallel batch (4 workers by default)
+uv run python scripts/extract.py --parallel
+
+# Parallel batch with custom worker count
+uv run python scripts/extract.py --parallel 8
+
+# Force re-extract all sources
+uv run python scripts/extract.py --force --parallel
+```
+
+To add sources for batch processing:
+- **PDFs** — drop `.pdf` files into `red_flag_sources/pdf/`
+- **URLs** — add lines in `red_flag_sources/Weblinks.md` using the format `1) https://...`
 
 ### What it does
 
