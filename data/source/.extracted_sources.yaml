@@ -6,3 +6,7 @@
   slug: fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng
   output_file: data/source/fintrac-canafe-transaction-operation-indicators-indicateurs-fin_mltf-eng.yaml
   extracted_at: '2026-03-27T00:03:28.723460+00:00'
+- source: red_flag_sources/pdf/FinCEN_Alert_Russian_Sanctions_Evasion_FINAL_508.pdf
+  slug: fincen_alert_russian_sanctions_evasion_final_508
+  output_file: data/source/fincen_alert_russian_sanctions_evasion_final_508.yaml
+  extracted_at: '2026-03-29T13:00:34.147014+00:00'

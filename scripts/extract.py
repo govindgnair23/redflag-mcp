@@ -24,8 +24,11 @@ import httpx
 import pdfplumber
 import yaml
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import ValidationError
+
+load_dotenv()
 
 # Add src to path so we can import redflag_mcp
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
@@ -126,15 +129,34 @@ def build_extraction_prompt(document_text: str) -> list[dict]:
     """Build the system and user prompts for LLM extraction."""
     system_prompt = f"""You are an AML compliance expert. Extract all distinct AML red flags from the provided regulatory document using a two-step process.
 
+## What is a red flag?
+
+A red flag is a description of specific, observable customer behavior or transaction activity that a financial institution employee could directly witness and that indicates potential money laundering or financial crime. It must describe what someone is *doing* — not what a regulator has decided, not what an institution is required to do, and not background information about a typology.
+
+A valid red flag answers: "What would a compliance officer actually observe that should trigger suspicion?"
+
 ## Step 1 — Identify red flags
 
-Read the document carefully and list every distinct behavioral or transactional indicator that signals potential money laundering or financial crime. Be thorough: red flags are often embedded in prose paragraphs, not just bullet lists. Do not summarize sections — each entry must be a single, standalone indicator.
+**Where to look first:** Scan the document for sections explicitly labeled as red flags or indicators — headings such as "Red Flags", "Risk Indicators", "Suspicious Activity Indicators", "Warning Signs", or similar. Extract from those sections first and most thoroughly.
+
+For content outside labeled sections, apply strict criteria: only extract text that describes a specific, observable behavior or transaction pattern. Do not extract from introductory, background, enforcement, or conclusion sections.
+
+**Handling embedded examples:** When an indicator is followed by an example clause ("For example,", "e.g.,", "such as", "including"), the example is part of that indicator — keep the full passage as one entry. Do not extract the example as a separate red flag.
+
+**Do NOT extract the following:**
+- Enforcement actions, historical cases, or examples of past violations ("OFAC has taken enforcement actions against…", "Company X was fined for…")
+- SAR filing instructions or recommendations ("financial institutions should file a SAR if…", "consider filing a SAR when…")
+- Regulatory directives or compliance obligations ("institutions are required to…", "banks must screen…")
+- Explanations of how a typology or scheme works at a general level, without describing an observable indicator
+- Document headers, section titles, introductory paragraphs, and administrative text
+
+**Test before including:** Ask — "Could a compliance officer directly observe this at their institution?" If no, do not extract it.
 
 ## Step 2 — Analyze each red flag
 
 For each indicator identified in Step 1, determine the following metadata:
 
-- "description" (string, required): Copy the indicator text exactly as it appears in the source document. Do not paraphrase, generalize, or remove any wording.
+- "description" (string, required): Copy the indicator text exactly as it appears in the source document, including any embedded example clause. Do not paraphrase, generalize, or remove any wording.
 - "product_types" (list of strings): Which financial products or channels does this indicator apply to? Choose from: "depository", "credit_card", "money_transmitter", "prepaid", "securities", "insurance", "crypto", "msb", "private_banking", "correspondent_banking", "trade_finance". Include all that apply.
 - "regulatory_source" (string): The full name of the issuing document or authority (e.g., "FinCEN Alert FIN-2022-Alert001", "FFIEC BSA/AML Examination Manual Appendix F").
 - "risk_level" (string): Severity of the indicator. One of: {sorted(RISK_LEVELS)}. Use "high" for indicators directly tied to confirmed typologies or sanctions violations; "medium" for suspicious patterns requiring investigation; "low" for weak signals that need corroboration.
@@ -143,18 +165,20 @@ For each indicator identified in Step 1, determine the following metadata:
 
 ## Example
 
-Source text: "Customers who make frequent cash deposits just below the $10,000 CTR threshold, particularly across multiple branch locations on the same day."
+Source text: "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions, including transactions that are inconsistent with activity over the prior 12 months. For example, a sanctioned entity may seek to use import or export companies to conduct transactions."
 
-Step 1 identification: Frequent sub-threshold cash deposits split across multiple branches.
+**Wrong** — splitting into two entries:
+1. "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions..."
+2. "For example, a sanctioned entity may seek to use import or export companies to conduct transactions."
 
-Step 2 analysis:
+**Correct** — one entry with the full passage including the example:
 {{
-  "description": "Customers who make frequent cash deposits just below the $10,000 CTR threshold, particularly across multiple branch locations on the same day.",
-  "product_types": ["depository"],
-  "regulatory_source": "FinCEN Guidance FIN-2012-G002",
+  "description": "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions, including transactions that are inconsistent with activity over the prior 12 months. For example, a sanctioned entity may seek to use import or export companies to conduct transactions.",
+  "product_types": ["correspondent_banking", "trade_finance"],
+  "regulatory_source": "FinCEN Alert FIN-2022-Alert001",
   "risk_level": "high",
-  "category": "structuring",
-  "simulation_type": "1A"
+  "category": "sanctions_evasion",
+  "simulation_type": null
 }}
 
 ## Output format
