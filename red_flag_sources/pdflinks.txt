@@ -1,0 +1,6 @@
+# PDF source URLs — one per line, in serial order.
+# Line 1 → key 001 (PDF named 001_...pdf), line 2 → 002, etc.
+# Blank lines and lines starting with # are ignored.
+# Run: uv run python scripts/build_sources_registry.py
+
+https://fincen.gov/sites/default/files/2022-06/Alert%20FIN-2022-Alert001_508C.pdf

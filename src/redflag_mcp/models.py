@@ -15,6 +15,7 @@ class RedFlagSource(BaseModel):
     risk_level: str | None = None
     category: str | None = None
     simulation_type: str | None = None
+    source_url: str | None = None
 
     @field_validator("risk_level")
     @classmethod
