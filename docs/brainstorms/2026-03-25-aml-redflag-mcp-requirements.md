@@ -11,12 +11,19 @@ Compliance and BSA officers at financial institutions need to understand which A
 
 ## Requirements
 
-- R1. The system maintains a persistent database of AML red flags, where each entry includes: description text, product type(s), regulatory source, risk level (high/medium/low), and category/typology (e.g., structuring, layering, terrorist financing, fraud nexus).
+- R1. The system maintains a persistent database of AML red flags, where each entry includes: description text, and the following multi-value metadata dimensions — each stored as a list to reflect that a single red flag can apply across multiple values of each dimension:
+  - `product_types: list[str]` — e.g., credit card, money transmitter, prepaid, crypto, lending
+  - `industry_types: list[str]` — e.g., depository institution, casino, MSB, securities broker-dealer, insurance, investment advisor, real estate
+  - `customer_profiles: list[str]` — e.g., retail, institutional, high-net-worth, unbanked, NPO, PEP
+  - `geographic_footprints: list[str]` — e.g., domestic, cross-border, high-risk-jurisdiction, specific corridors
+  - `regulatory_source: str` — the authoritative source document (single value)
+  - `risk_level: str` — high / medium / low (single value)
+  - `category: str` — AML typology, e.g., structuring, layering, terrorist financing, fraud nexus (single value)
 - R2. Red flags can be queried via semantic search: a user provides natural-language context (e.g., product type, institution type, use case) and receives a ranked list of relevant red flags.
 - R3. The MCP server exposes read-only tools that Claude can call to search and retrieve red flags.
-- R4. Query results include enough metadata (source, risk level, category, product types) for a compliance officer to evaluate relevance and cite the source in their AML program documentation.
+- R4. Query results include the full metadata set (source, risk level, category, product types, industry types, customer profiles, geographic footprints) for a compliance officer to evaluate relevance and cite the source in their AML program documentation.
 - R5. The database is populated by ingesting structured data files (JSON, CSV, or YAML). An ingestion CLI handles reading, LLM-assisted tagging of missing metadata, embedding generation, and storage.
-- R6. Tags (product type, regulatory source, risk level, category) are generated at ingestion time by an LLM for any entries missing them, reducing manual curation effort.
+- R6. All multi-value dimensions (product_types, industry_types, customer_profiles, geographic_footprints) plus scalar tags (regulatory_source, risk_level, category) are generated at ingestion time by an LLM for any entries missing them, reducing manual curation effort.
 - R7. The data layer is designed to scale from a few hundred to 1000+ entries without requiring architectural changes.
 
 ## Success Criteria
@@ -34,7 +41,7 @@ Compliance and BSA officers at financial institutions need to understand which A
 
 ## Key Decisions
 
-- **Semantic search over structured tag filtering**: Natural-language context from the user drives retrieval, so compliance officers don't need to know the exact taxonomy to find relevant flags. Optional metadata filters (product type, risk level, category) can further narrow results.
+- **Semantic search over structured tag filtering**: Natural-language context from the user drives retrieval, so compliance officers don't need to know the exact taxonomy to find relevant flags. Optional metadata filters across all five dimensions (product_types, industry_types, customer_profiles, geographic_footprints, risk_level) can further narrow results.
 - **Read-only MCP interface**: Write operations happen through a separate ingestion CLI. This keeps the MCP surface simple and safe for agent use.
 - **LLM-assisted tagging at ingestion time**: Tags are generated once when a record is ingested, not at query time. This keeps query latency low and makes the metadata stable and auditable.
 - **Vector database for storage**: Given the target scale of 1000+ entries, a local vector store (e.g., ChromaDB or LanceDB) is the appropriate persistence layer — more capable than in-memory, simpler than a hosted service.
