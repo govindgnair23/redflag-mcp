@@ -50,6 +50,7 @@ MANIFEST_PATH = SOURCE_DIR / ".extracted_sources.yaml"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = PROJECT_ROOT / "red_flag_sources" / "pdf"
 WEBLINKS_PATH = PROJECT_ROOT / "red_flag_sources" / "Weblinks.md"
+SOURCES_REGISTRY_PATH = PROJECT_ROOT / "red_flag_sources" / "sources.yaml"
 
 
 def load_manifest() -> list[dict]:
@@ -68,9 +69,51 @@ def save_manifest(manifest: list[dict]) -> None:
         yaml.dump(manifest, f, default_flow_style=False, sort_keys=False)
 
 
+def normalize_source(source: str) -> str:
+    """Normalize a source identifier to a canonical form for deduplication.
+
+    Local file paths are resolved to absolute paths so that relative and
+    absolute references to the same file compare equal. URLs are returned
+    unchanged.
+    """
+    if source.startswith(("http://", "https://")):
+        return source
+    return str(Path(source).resolve())
+
+
 def is_already_processed(source: str, manifest: list[dict]) -> bool:
     """Check if a source has already been processed."""
-    return any(entry.get("source") == source for entry in manifest)
+    normalized = normalize_source(source)
+    return any(normalize_source(entry.get("source", "")) == normalized for entry in manifest)
+
+
+def load_sources_registry() -> dict:
+    """Load red_flag_sources/sources.yaml, return {} if absent."""
+    if not SOURCES_REGISTRY_PATH.exists():
+        return {}
+    with open(SOURCES_REGISTRY_PATH) as f:
+        data = yaml.safe_load(f)
+    return data if isinstance(data, dict) else {}
+
+
+def extract_serial_key(filename: str) -> str | None:
+    """Extract leading numeric serial key from filename, e.g. '001' from '001_fincen.pdf'."""
+    match = re.match(r"^(\d+)[_-]", filename)
+    return match.group(1) if match else None
+
+
+def get_source_url(source: str, registry: dict) -> str | None:
+    """Resolve the public URL for a source.
+
+    - Web URLs: return the URL itself.
+    - PDFs: extract serial key from filename, look up in registry.
+    """
+    if source.startswith(("http://", "https://")):
+        return source
+    key = extract_serial_key(Path(source).name)
+    if key and key in registry:
+        return registry[key].get("url")
+    return None
 
 
 def slugify(text: str) -> str:
@@ -238,7 +281,7 @@ def extract_red_flags(document_text: str, model: str | None = None) -> list[dict
 
 
 def validate_and_build_entries(
-    raw_flags: list[dict], slug: str
+    raw_flags: list[dict], slug: str, source_url: str | None = None
 ) -> tuple[list[dict], int]:
     """Validate extracted red flags against RedFlagSource schema.
 
@@ -250,6 +293,8 @@ def validate_and_build_entries(
     for i, flag in enumerate(raw_flags, start=1):
         entry_id = f"{slug}-{i:02d}"
         flag["id"] = entry_id
+        if source_url:
+            flag["source_url"] = source_url
 
         try:
             source = RedFlagSource(**flag)
@@ -310,12 +355,13 @@ def discover_sources() -> list[str]:
     return sources
 
 
-def process_one(source: str, force: bool, manifest: list[dict]) -> dict | None:
+def process_one(source: str, force: bool, manifest: list[dict], source_url: str | None = None) -> dict | None:
     """Process a single source (PDF path or URL).
 
     Returns a manifest entry dict on success, or None on skip/failure.
     Does NOT write to the manifest file — the caller handles that.
     """
+    source = normalize_source(source)
     if not force and is_already_processed(source, manifest):
         print(f"Skipping (already processed): {source}")
         return None
@@ -357,7 +403,7 @@ def process_one(source: str, force: bool, manifest: list[dict]) -> dict | None:
 
     print(f"LLM returned {len(raw_flags)} red flag(s) for {slug}.")
 
-    entries, skipped = validate_and_build_entries(raw_flags, slug)
+    entries, skipped = validate_and_build_entries(raw_flags, slug, source_url=source_url)
 
     if not entries:
         print(f"Error: No valid red flags extracted from {source}", file=sys.stderr)
@@ -388,6 +434,7 @@ def run_batch(force: bool, workers: int | None) -> None:
         return
 
     manifest = load_manifest()
+    registry = load_sources_registry()
 
     pending = [s for s in sources if force or not is_already_processed(s, manifest)]
     skipped_count = len(sources) - len(pending)
@@ -402,7 +449,8 @@ def run_batch(force: bool, workers: int | None) -> None:
     if workers is None:
         # Sequential
         for source in pending:
-            entry = process_one(source, force=force, manifest=manifest)
+            url = get_source_url(source, registry)
+            entry = process_one(source, force=force, manifest=manifest, source_url=url)
             if entry:
                 new_entries.append(entry)
     else:
@@ -410,7 +458,7 @@ def run_batch(force: bool, workers: int | None) -> None:
         print(f"Running with {workers} parallel worker(s).")
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
-                executor.submit(process_one, source, force, manifest): source
+                executor.submit(process_one, source, force, manifest, get_source_url(source, registry)): source
                 for source in pending
             }
             for future in as_completed(futures):
@@ -465,7 +513,9 @@ def main() -> None:
             print("Use --force to re-extract.")
             sys.exit(0)
 
-        entry = process_one(source, force=force, manifest=manifest)
+        registry = load_sources_registry()
+        url = get_source_url(source, registry)
+        entry = process_one(source, force=force, manifest=manifest, source_url=url)
         if entry is None:
             sys.exit(1)
 
