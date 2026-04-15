@@ -14,7 +14,7 @@ The redflag-mcp project needs a populated database of AML red flags to be useful
 - R1. A script (`scripts/extract.py`) accepts a PDF file path or a URL as input and outputs a YAML file in `data/source/` containing the extracted red flags.
 - R2. For PDFs, the script extracts raw text locally (using `pdfplumber`) and sends it to an LLM for structured extraction. No vision/image models needed.
 - R3. For URLs, the script fetches and strips the page content to plain text, then sends it through the same LLM extraction pipeline as PDFs.
-- R4. The LLM prompt instructs the model to identify all distinct AML red flags in the document and return each as a structured object with: `id`, `description`, `product_types`, `regulatory_source`, `risk_level`, `category`, and `simulation_type` (optional).
+- R4. The LLM prompt instructs the model to identify all distinct AML red flags in the document and return each as a structured object with: `id`, `description`, `product_types`, `industry_types`, `customer_profiles`, `geographic_footprints`, `regulatory_source`, `risk_level`, and `category`.
 - R5. The `id` field is auto-generated as a slug derived from the source document and a sequence number (e.g., `fincen-russian-sanctions-2022-01`).
 - R6. Output YAML conforms exactly to the `RedFlagSource` schema defined in `models.py`, so `ingest.py` can process it without modification.
 - R7. The output file is named after the source document (e.g., `fincen-russian-sanctions-2022.yaml`) and written to `data/source/`.

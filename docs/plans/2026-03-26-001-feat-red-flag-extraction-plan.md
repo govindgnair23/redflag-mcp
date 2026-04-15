@@ -23,7 +23,7 @@ The redflag-mcp server needs a populated database. Regulatory red flags are publ
 - R1. Script accepts a PDF file path or URL and outputs a YAML file in `data/source/`
 - R2. PDF text extraction uses `pdfplumber` locally, then sends text to LLM
 - R3. URL text extraction fetches and strips HTML to plain text, then same LLM pipeline
-- R4. LLM returns structured red flags with: `id`, `description`, `product_types`, `regulatory_source`, `risk_level`, `category`, `simulation_type`
+- R4. LLM returns structured red flags with: `id`, `description`, `product_types`, `industry_types`, `customer_profiles`, `geographic_footprints`, `regulatory_source`, `risk_level`, `category`
 - R5. IDs are auto-generated slugs: `{source-slug}-{sequence-number}` (e.g., `fincen-russian-sanctions-2022-01`)
 - R6. Output YAML conforms to `RedFlagSource` schema — compatible with `ingest.py`
 - R7. Output file named after source document, written to `data/source/`
@@ -79,7 +79,7 @@ None — greenfield project, no `docs/solutions/` directory.
 ### Deferred to Implementation
 
 - **LLM prompt tuning**: The exact prompt wording will need iteration based on output quality from the FinCEN PDF test case. The plan specifies what to include in the prompt; the exact phrasing is an implementation detail.
-- **`simulation_type` mapping accuracy**: The LLM may struggle to map red flags to the Type 1A–8 taxonomy from `docs/Red_flag_types.md`. If accuracy is low, make `simulation_type` always `null` in extraction output and let users fill it manually.
+- **Multi-value dimension coverage**: The LLM may under-populate `industry_types`, `customer_profiles`, and `geographic_footprints` for some entries. Validate against sample output during implementation and refine the prompt if lists are frequently empty.
 
 ## High-Level Technical Design
 
@@ -168,7 +168,7 @@ sequenceDiagram
 *LLM extraction:*
 - Build a system prompt that instructs the model to identify all distinct AML red flags in the provided text
 - Include in the prompt: the `RedFlagSource` field definitions, allowed values for `risk_level` (from config enums), example output entry, and instructions to return a JSON object with a `red_flags` key containing an array of red flag objects
-- Include the `simulation_type` taxonomy summary from `docs/Red_flag_types.md` in the prompt so the LLM can attempt mapping (but mark as optional)
+- Include the allowed enum values for `risk_level`, `category`, `industry_types`, `customer_profiles`, and `geographic_footprints` in the prompt so the LLM uses consistent vocabulary
 - Use `openai.OpenAI()` sync client, `response_format={"type": "json_object"}`, model from `OPENAI_EXTRACTION_MODEL` env var (default `gpt-4o-mini`)
 
 *Output validation and writing:*

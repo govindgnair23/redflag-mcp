@@ -40,7 +40,7 @@ Compliance officers at financial institutions struggle to assemble product-relev
 
 ### Relevant Code and Patterns
 
-- `docs/Red_flag_types.md` — domain taxonomy organizing AML red flags by simulation data complexity (Type 1A–8). This can inform an optional `simulation_type` field in the data model, bridging this MCP server with the related simulation project at zero carrying cost.
+- `docs/Red_flag_types.md` — domain taxonomy of AML red flag types by simulation data complexity. Retained as domain reference only; not used in the data model.
 - No existing implementation code — greenfield project.
 
 ### Institutional Learnings
@@ -69,7 +69,6 @@ Compliance officers at financial institutions struggle to assemble product-relev
 
 - **Dual transport (stdio + HTTP)**: FastMCP supports both stdio and streamable-HTTP transports via a `MCP_TRANSPORT` environment variable (`stdio` or `http`). stdio for Claude Desktop / Claude Code; HTTP for OpenAI agents and other web-based agentic interfaces. HTTP defaults to `0.0.0.0:8000`; host and port are configurable via env vars.
 
-- **`simulation_type` as optional field**: The existing `docs/Red_flag_types.md` taxonomy (Type 1A–8) classifies red flags by simulation data complexity. Including this as an optional field bridges the MCP server with the related simulation project at no carrying cost and adds a useful analytical dimension (e.g., "what data would be needed to detect this red flag?").
 
 ## Open Questions
 
@@ -150,12 +149,11 @@ sequenceDiagram
 
 **Approach:**
 - `pyproject.toml` uses `hatchling` build backend. Dependencies: `mcp[cli]>=1.26.0`, `lancedb>=0.6.0`, `sentence-transformers>=3.0.0`, `openai>=1.0.0`, `pydantic>=2.0`, `pyyaml>=6.0`. Dev deps: `pytest>=8.0`, `pytest-asyncio>=0.23`, `ruff>=0.4`, `mypy>=1.9`. Defines a `redflag-mcp` script entry point.
-- `config.py` exports `DATA_DIR`, `SOURCE_DIR`, `VECTORS_DIR` as `Path` constants anchored to the project root; also exports enum sets for valid `risk_level` values, `simulation_type` codes from `docs/Red_flag_types.md`, and the embedding dimension constant (768).
+- `config.py` exports `DATA_DIR`, `SOURCE_DIR`, `VECTORS_DIR` as `Path` constants anchored to the project root; also exports enum sets for valid `risk_level` values and the embedding dimension constant (768).
 - `models.py` defines three Pydantic models:
   - `RedFlagSource` — input model parsed from YAML. All metadata fields optional except `description` and `id`. Used by the ingestion CLI.
   - `RedFlagRecord(LanceModel)` — storage model extending `lancedb.pydantic.LanceModel`. Adds a `Vector(768)` field. Used when writing to and reading from LanceDB.
   - `RedFlagResult` — MCP response model. Same fields as `RedFlagRecord` but without the `vector` field. Returned by all three MCP tools.
-- `simulation_type` is an `str | None` optional field accepting values from the Type 1A–8 taxonomy.
 
 **Patterns to follow:**
 - `lancedb.pydantic.LanceModel` + `Vector(dim)` for the storage model
@@ -337,7 +335,6 @@ sequenceDiagram
   regulatory_source: "FFIEC BSA/AML Manual Appendix F"
   risk_level: "high"
   category: "structuring"
-  simulation_type: "1A"
 
 - id: "missing-originator-info-01"
   description: "Wire transfers with minimal content and missing originator information"
