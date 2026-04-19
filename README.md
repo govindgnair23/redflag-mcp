@@ -25,6 +25,17 @@ export OPENAI_API_KEY=sk-...
 
 ### Adding PDFs in bulk (recommended workflow)
 
+**Step-by-step:**
+
+1. **Add the source URL to `red_flag_sources/pdflinks.txt`** — one URL per line, in serial order. Line 1 → key `001`, line 2 → `002`, etc.
+2. **Download the PDF** and save it to `red_flag_sources/pdf/` named `NNN_short_descriptive_name.pdf`, where `NNN` matches its line position in `pdflinks.txt`.
+3. **Regenerate the registry:** `uv run python scripts/build_sources_registry.py`
+4. **Run extraction:** `uv run python scripts/extract.py --parallel`
+
+> **Key constraint:** the `NNN_` prefix in the filename must match the line number in `pdflinks.txt`. Line 1 = `001_*.pdf`, line 2 = `002_*.pdf`, etc. This is how the extractor links each PDF to its public source URL.
+
+---
+
 PDFs are stored in `red_flag_sources/pdf/` and must be named with a zero-padded serial prefix:
 
 ```
