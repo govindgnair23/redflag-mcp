@@ -11,6 +11,10 @@ Usage:
     uv run python scripts/extract.py [--force] --parallel        # 4 workers
     uv run python scripts/extract.py [--force] --parallel 8      # 8 workers
 
+    # Range mode — process only PDFs whose serial number falls within NNN-NNN
+    uv run python scripts/extract.py [--force] --range 001-005
+    uv run python scripts/extract.py [--force] --range 001-005 --parallel
+
 Outputs YAML files in data/source/ conforming to the RedFlagSource schema.
 Tracks processed sources in data/source/.extracted_sources.yaml to avoid
 re-processing. Use --force to bypass the duplicate check.
@@ -426,9 +430,18 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
     return manifest_entry
 
 
-def run_batch(force: bool, workers: int | None) -> None:
+def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | None = None) -> None:
     """Discover and process all sources in batch mode."""
     sources = discover_sources()
+
+    if serial_range is not None:
+        start, end = serial_range
+        sources = [
+            s for s in sources
+            if (key := extract_serial_key(Path(s).name)) is not None and start <= int(key) <= end
+        ]
+        print(f"Range filter {start:03d}-{end:03d}: {len(sources)} PDF(s) matched.")
+
     if not sources:
         print("No sources found in red_flag_sources/pdf/ or red_flag_sources/Weblinks.md.")
         return
@@ -498,13 +511,35 @@ def main() -> None:
         else:
             workers = DEFAULT_PARALLEL_WORKERS
 
+    # Parse --range NNN-NNN
+    serial_range: tuple[int, int] | None = None
+    if "--range" in args:
+        idx = args.index("--range")
+        args.pop(idx)
+        if idx < len(args):
+            range_str = args.pop(idx)
+            match = re.fullmatch(r"(\d+)-(\d+)", range_str)
+            if not match:
+                print("Error: --range must be in format NNN-NNN (e.g. 001-005)", file=sys.stderr)
+                sys.exit(1)
+            start, end = int(match.group(1)), int(match.group(2))
+            if start > end:
+                print("Error: --range start must be <= end", file=sys.stderr)
+                sys.exit(1)
+            serial_range = (start, end)
+        else:
+            print("Error: --range requires an argument (e.g. --range 001-005)", file=sys.stderr)
+            sys.exit(1)
+
     if len(args) == 0:
         # Batch mode
-        run_batch(force=force, workers=workers)
+        run_batch(force=force, workers=workers, serial_range=serial_range)
     elif len(args) == 1:
         # Single-source mode
         if workers is not None:
             print("Note: --parallel is ignored in single-source mode.", file=sys.stderr)
+        if serial_range is not None:
+            print("Note: --range is ignored in single-source mode.", file=sys.stderr)
 
         source = args[0]
         manifest = load_manifest()
@@ -526,8 +561,9 @@ def main() -> None:
     else:
         print(
             f"Usage:\n"
-            f"  {sys.argv[0]} [--force] <pdf-path-or-url>        # single source\n"
-            f"  {sys.argv[0]} [--force] [--parallel [N]]         # batch mode",
+            f"  {sys.argv[0]} [--force] <pdf-path-or-url>                    # single source\n"
+            f"  {sys.argv[0]} [--force] [--parallel [N]]                     # batch mode\n"
+            f"  {sys.argv[0]} [--force] --range NNN-NNN [--parallel [N]]     # range mode",
             file=sys.stderr,
         )
         sys.exit(1)

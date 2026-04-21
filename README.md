@@ -86,7 +86,18 @@ uv run python scripts/extract.py --parallel 8
 
 # Force re-extract everything
 uv run python scripts/extract.py --force --parallel
+
+# Process only PDFs in a serial range (e.g. 001 through 005)
+uv run python scripts/extract.py --range 001-005
+
+# Range + parallel
+uv run python scripts/extract.py --range 001-005 --parallel
+
+# Force re-extract a range
+uv run python scripts/extract.py --force --range 001-005 --parallel
 ```
+
+> **Note:** `--range` applies only to numbered PDFs. Web URLs in `Weblinks.md` are excluded when a range is active.
 
 ### Single source (ad hoc)
 
