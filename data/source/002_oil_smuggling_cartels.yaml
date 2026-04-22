@@ -1,0 +1,179 @@
+- id: 002_oil_smuggling_cartels-01
+  description: A customer is a small U.S.-based oil and natural gas company, importing
+    company, or freight company operating in states on the U.S. southwest border with
+    transactional activity and profit margins that exceed the typical business profile
+    of similar companies in their industries.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-02
+  description: A customer is a small U.S.-based oil and natural gas company that is
+    selling WTI crude oil and other types of crude oil for significantly less than
+    the market rate.23
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-03
+  description: A customer is a small U.S.-based oil and natural gas company that is
+    selling millions of dollars of crude oil per month but has no online presence
+    or is using a basic website that appears designed to closely resemble major U.S.
+    oil and natural gas companies’ websites in order to make their significant crude
+    oil sales appear legitimate.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-04
+  description: A customer is a small U.S.-based oil and natural gas company that has
+    a website indicating it is only a buyer or seller of crude oil, but the company
+    is sending wire transfers to Mexican or U.S. companies for purchases of purported
+    waste oil or other hazardous materials.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-05
+  description: A customer is a small U.S.-based oil and natural gas company that is
+    suddenly purchasing waste oil or other hazardous materials from a singular or
+    small number of Mexican and U.S. companies.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-06
+  description: A customer is a small U.S.-based oil and natural gas company that is
+    sending wire transfers to Mexican or U.S. companies for waste oil or other hazardous
+    materials without possessing the appropriate registrations with the U.S. Environmental
+    Protection Agency (EPA).24
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-07
+  description: A customer is a small U.S.-based oil and natural gas company that is
+    sending wire transfers for waste oil or other hazardous materials to Mexican or
+    U.S. companies that do not appear to be related to the oil and natural gas industry.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-08
+  description: A customer is a small U.S.-based oil and natural gas company that has
+    a sudden and significant volume of transactional activity with one or a small
+    number of Mexican or U.S. companies that have little to no online presence and
+    displays other indicators of illicit shell company activity.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-09
+  description: A customer is a small U.S.-based oil and natural gas company that is
+    receiving domestic and international wire transfers for invoices related to the
+    sale of crude oil but sending wire transfers to Mexican or U.S. companies for
+    invoices for the purchase of waste oil or other hazardous materials.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-10
+  description: A customer is a U.S. importing company that is receiving wire transfers
+    from U.S.-based oil and natural gas companies and sending wire transfers to Mexican
+    companies for invoices involving the U.S. importing company’s purchases of waste
+    oil or other hazardous materials, despite the U.S. importing company lacking appropriate
+    registrations from the EPA.25
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-11
+  description: A customer is a U.S. importing company that is receiving wire transfers
+    from a small U.S.-based oil and natural gas company for the sale of waste oil
+    or other hazardous materials and then wiring those funds to a singular or small
+    number of companies in Mexico.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-12
+  description: A customer claims to be a U.S.-based company involved in the import
+    of waste oil or other hazardous materials, but upon further review, appears to
+    be a shell company of a Mexican company.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-13
+  description: A customer is a U.S. company that is the ultimate consignee of purchases
+    of waste oil or other hazardous materials but is registered to a residential address.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+- id: 002_oil_smuggling_cartels-14
+  description: A customer is a small U.S.-based oil and natural gas company, importing
+    company, or freight company operating on the U.S. southwest border that is transacting
+    with Mexican and U.S. companies and their beneficial owners associated with Cartel-related
+    activity based on open-source reporting in Mexico, indictments, and OFAC designations
+    and/or press releases.
+  product_types:
+  - depository
+  - money_transmitter
+  - trade_finance
+  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf

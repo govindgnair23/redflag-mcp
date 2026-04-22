@@ -1,0 +1,132 @@
+- id: 003_bulk_cash_smuggling_repatriation-01
+  description: A large volume of cash is delivered to a U.S.-based financial institution
+    via an ACS on behalf of a customer who operates a Mexico-based business, a business
+    located near the U.S. southwest border, or a U.S.-based company with an affiliated
+    Mexico-based business. Following the delivery, the customer then rapidly moves
+    the funds to a financial institution based in Mexico, makes transfers to another
+    business in the United States they own and operate, or purchases a large volume
+    of goods.
+  product_types:
+  - depository
+  - msb
+  - correspondent_banking
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-02
+  description: Large volumes of cash are transported by an ACS or passenger vehicles
+    to an U.S.-based MSB located along the southwest border and rapidly transferred
+    to Mexico.
+  product_types:
+  - money_transmitter
+  - msb
+  - depository
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-03
+  description: A customer that owns a Mexico-based business, or a customer with an
+    affiliated Mexico-based business, receives a large credit from a U.S.-based ACS
+    into their account at a U.S.-based financial institution.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-04
+  description: A customer that owns a Mexico-based business receives a large credit
+    into their account at a U.S.-based financial institution after depositing bulk
+    cash into the U.S.-based financial institution’s vault at a U.S.-based ACS secure
+    storage facility.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-05
+  description: A customer that owns a Mexico-based business receives a large cross-border
+    wire transfer to their account at a U.S.-based financial institution from a Canada-based
+    financial institution.
+  product_types:
+  - depository
+  - correspondent_banking
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-06
+  description: A business in Mexico, near the southwest border of the United States,
+    organizes the transportation of a large volume of cash to multiple locations throughout
+    the United States by an ACS or air transport, for no business or apparent lawful
+    purpose, before it is finally delivered to a U.S.-based financial institution
+    or a Federal Reserve Bank location.
+  product_types:
+  - depository
+  - msb
+  - correspondent_banking
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-07
+  description: A Mexico-based business transporting cash into the United States is
+    reluctant to provide information, or provides inconsistent information, on who
+    is the currency originator or where the funds are destined in Part II of a FinCEN
+    Form 105 (CMIR).
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-08
+  description: A non-bank Mexico-based business organizes the transport of large volumes
+    of USD into the United States, that are not commensurate with the size of the
+    business or the business profile.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-09
+  description: A shipment of bulk cash is delivered via a Mexico or Canada-based ACS
+    to a U.S.-based ACS without accompanying instructions or explanation for the purpose
+    of the transaction. The U.S.-based ACS then receives a request to transport the
+    funds to a financial institution.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+- id: 003_bulk_cash_smuggling_repatriation-10
+  description: A Mexico-based business or individual requests that bulk cash be transported
+    or accepted by a U.S. financial institution but does not provide a clear explanation
+    of the source of the funds.
+  product_types:
+  - depository
+  - msb
+  regulatory_source: FIN-2025-Alert001, FinCEN Alert on Bulk Cash Smuggling and Repatriation
+    by Mexico-Based Transnational Criminal Organizations
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf

@@ -44,7 +44,14 @@ load_dotenv()
 # Add src to path so we can import redflag_mcp
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from redflag_mcp.config import RISK_LEVELS, SIMULATION_TYPES, SOURCE_DIR
+from redflag_mcp.config import (
+    CUSTOMER_PROFILES,
+    GEOGRAPHIC_FOOTPRINTS,
+    INDUSTRY_TYPES,
+    RISK_LEVELS,
+    SIMULATION_TYPES,
+    SOURCE_DIR,
+)
 from redflag_mcp.models import RedFlagSource
 
 DEFAULT_MODEL = "gpt-4o-mini"
@@ -217,6 +224,9 @@ For each indicator identified in Step 1, determine the following metadata:
 
 - "description" (string, required): Copy the indicator text exactly as it appears in the source document, including any embedded example clause. Do not paraphrase, generalize, or remove any wording.
 - "product_types" (list of strings): Which financial products or channels does this indicator apply to? Choose from: "depository", "credit_card", "money_transmitter", "prepaid", "securities", "insurance", "crypto", "msb", "private_banking", "correspondent_banking", "trade_finance". Include all that apply.
+- "industry_types" (list of strings): Which customer industries or business sectors does this indicator involve? Prefer these values when applicable: {sorted(INDUSTRY_TYPES)}. Use an empty list when no industry is implied.
+- "customer_profiles" (list of strings): Which customer archetypes does this indicator involve? Prefer these values when applicable: {sorted(CUSTOMER_PROFILES)}. Use an empty list when no customer profile is implied.
+- "geographic_footprints" (list of strings): Which geographies, corridors, or regional footprints does this indicator involve? Prefer these values when applicable: {sorted(GEOGRAPHIC_FOOTPRINTS)}. Use an empty list when no geography is implied.
 - "regulatory_source" (string): The full name of the issuing document or authority (e.g., "FinCEN Alert FIN-2022-Alert001", "FFIEC BSA/AML Examination Manual Appendix F").
 - "risk_level" (string): Severity of the indicator. One of: {sorted(RISK_LEVELS)}. Use "high" for indicators directly tied to confirmed typologies or sanctions violations; "medium" for suspicious patterns requiring investigation; "low" for weak signals that need corroboration.
 - "category" (string): The primary AML typology. Use: "structuring", "layering", "sanctions_evasion", "terrorist_financing", "fraud_nexus", "corruption", "shell_company", "trade_based_ml", "cyber_enabled", "ransomware", "virtual_currency". If multiple apply, choose the most specific.
@@ -234,6 +244,9 @@ Source text: "Non-routine foreign exchange transactions that may indirectly invo
 {{
   "description": "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions, including transactions that are inconsistent with activity over the prior 12 months. For example, a sanctioned entity may seek to use import or export companies to conduct transactions.",
   "product_types": ["correspondent_banking", "trade_finance"],
+  "industry_types": ["import_export"],
+  "customer_profiles": ["cross_border_business"],
+  "geographic_footprints": [],
   "regulatory_source": "FinCEN Alert FIN-2022-Alert001",
   "risk_level": "high",
   "category": "sanctions_evasion",
