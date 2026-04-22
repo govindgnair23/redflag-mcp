@@ -19,7 +19,7 @@ Three distinct workflows:
 ### Prerequisites
 
 ```bash
-uv sync
+uv sync --extra dev
 export OPENAI_API_KEY=sk-...
 ```
 
@@ -132,6 +132,9 @@ Each entry in the YAML file has the following fields:
 | `description` | string | yes | Standalone description of the red flag indicator |
 | `source_url` | string | no | Public URL of the source document |
 | `product_types` | list[string] | no | Financial products this applies to (e.g. `depository`, `crypto`, `msb`) |
+| `industry_types` | list[string] | no | Customer industries or sectors this applies to (e.g. `oil_and_gas`, `government_benefits`) |
+| `customer_profiles` | list[string] | no | Customer archetypes this applies to (e.g. `small_business`, `charity_or_nonprofit`) |
+| `geographic_footprints` | list[string] | no | Relevant geographies or corridors (e.g. `southwest_border`, `mexico`) |
 | `regulatory_source` | string | no | Source document name or authority (e.g. `FinCEN Alert FIN-2022-Alert001`) |
 | `risk_level` | string | no | `high`, `medium`, or `low` |
 | `category` | string | no | AML typology (e.g. `structuring`, `sanctions_evasion`, `shell_company`) |
@@ -151,7 +154,18 @@ After extraction, embed the YAML files and load them into the vector database:
 uv run python scripts/ingest.py
 ```
 
-This reads all YAML files in `data/source/`, generates embeddings with `nomic-embed-text-v1.5`, and upserts records into LanceDB at `data/vectors/`. Run this before connecting the MCP server to Claude Desktop — the ~275 MB embedding model downloads on first use and connection timeouts will occur if it happens at server startup.
+For the initial local corpus, ingest only the three target files:
+
+```bash
+uv run python scripts/ingest.py \
+  data/source/001_federal_child_nutrition_fraud.yaml \
+  data/source/002_oil_smuggling_cartels.yaml \
+  data/source/003_bulk_cash_smuggling_repatriation.yaml
+```
+
+This generates embeddings with `nomic-embed-text-v1.5` and upserts records into LanceDB at `data/vectors/`. Run ingestion before connecting the MCP server to a desktop client; the embedding model downloads on first use and is better cached during ingestion than during server startup.
+
+`OPENAI_API_KEY` is optional for ingestion. When it is set, ingestion can auto-tag missing metadata into the derived LanceDB records. When it is not set, ingestion preserves available YAML metadata and leaves missing rich consultation fields empty. Source YAML files are not rewritten by ingestion.
 
 ---
 
@@ -170,12 +184,53 @@ MCP_TRANSPORT=http MCP_HOST=0.0.0.0 MCP_PORT=8000 uv run python -m redflag_mcp
 
 The server exposes three tools: `search_red_flags`, `get_red_flag`, and `list_filters`. It is fully offline after ingestion — no API keys required at query time.
 
+### Use from Codex
+
+For local Codex threads, prefer stdio so Codex starts the MCP server automatically:
+
+```bash
+codex mcp add redflag-mcp -- zsh -lc 'cd /Users/learningmachine/Documents/Python-dev/redflag-mcp && HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 uv run python -m redflag_mcp'
+```
+
+Verify the registration:
+
+```bash
+codex mcp list
+codex mcp get redflag-mcp
+```
+
+Then start a new Codex thread and ask for the server by name, for example:
+
+```text
+Use the redflag-mcp MCP server. List the available AML red flag filters.
+```
+
+If you already have the HTTP server running, you can register that instead:
+
+```bash
+codex mcp add redflag-mcp-http --url http://127.0.0.1:8000/mcp
+```
+
+### Local smoke checks
+
+After ingesting the three target files, verify the tools with:
+
+```text
+list_filters
+search_red_flags(query="federal child nutrition program sponsor receives reimbursements inconsistent with its profile", product_types=["depository"])
+search_red_flags(query="southwest border oil company wires for waste oil or hazardous materials")
+search_red_flags(query="bulk cash moved by armored car service to Mexico")
+get_red_flag(red_flag_id="001_federal_child_nutrition_fraud-01")
+```
+
+For a vague query such as "what should I look for in business accounts?", the calling agent should first ask a brief consultation question covering product/channel, industry, customer profile, geography, and transaction channel or volume. For a specific query, it should search directly.
+
 ---
 
 ## Development
 
 ```bash
-uv sync                          # Install dependencies
+uv sync --extra dev              # Install dependencies
 uv run pytest tests/             # Run tests
 uv run ruff check src/           # Lint
 uv run mypy src/                 # Type check

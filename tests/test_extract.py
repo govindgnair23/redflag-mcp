@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from extract import (
+    build_extraction_prompt,
     extract_text_from_pdf,
     extract_text_from_url,
     is_already_processed,
@@ -25,7 +26,33 @@ from extract import (
     validate_and_build_entries,
     write_yaml,
 )
+from redflag_mcp.config import (
+    CUSTOMER_PROFILES,
+    GEOGRAPHIC_FOOTPRINTS,
+    INDUSTRY_TYPES,
+)
 from redflag_mcp.models import RedFlagSource
+
+
+class TestBuildExtractionPrompt:
+    def test_prompt_contains_rich_metadata_fields(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "industry_types" in system_prompt
+        assert "customer_profiles" in system_prompt
+        assert "geographic_footprints" in system_prompt
+
+    def test_prompt_contains_representative_rich_metadata_values(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "oil_and_gas" in INDUSTRY_TYPES
+        assert "oil_and_gas" in system_prompt
+        assert "shell_or_front_company" in CUSTOMER_PROFILES
+        assert "shell_or_front_company" in system_prompt
+        assert "southwest_border" in GEOGRAPHIC_FOOTPRINTS
+        assert "southwest_border" in system_prompt
 
 
 class TestSlugify:
@@ -109,6 +136,27 @@ class TestValidateAndBuildEntries:
         assert skipped == 0
         assert entries[0]["id"] == "test-source-01"
         assert entries[1]["id"] == "test-source-02"
+
+    def test_valid_entries_with_rich_metadata(self):
+        raw = [
+            {
+                "description": "A small oil company sends wires for hazardous materials.",
+                "product_types": ["depository", "trade_finance"],
+                "industry_types": ["oil_and_gas"],
+                "customer_profiles": ["small_business"],
+                "geographic_footprints": ["southwest_border", "mexico"],
+                "risk_level": "medium",
+                "category": "fraud_nexus",
+                "regulatory_source": "FinCEN Alert",
+            }
+        ]
+
+        entries, skipped = validate_and_build_entries(raw, "rich")
+
+        assert skipped == 0
+        assert entries[0]["industry_types"] == ["oil_and_gas"]
+        assert entries[0]["customer_profiles"] == ["small_business"]
+        assert entries[0]["geographic_footprints"] == ["southwest_border", "mexico"]
 
     def test_invalid_risk_level_skipped(self):
         raw = [

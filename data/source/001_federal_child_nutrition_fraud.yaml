@@ -1,0 +1,155 @@
+- id: 001_federal_child_nutrition_fraud-01
+  description: A customer is a company or NPO serving as a sponsor for a government
+    benefit program that suddenly receives and disburses a significant number of reimbursements
+    in a short timeframe inconsistent with the customer profile of other similar entities.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: fraud_nexus
+  simulation_type: 2B
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-02
+  description: A customer is a recently established company or NPO enrolled in a government
+    benefit program that is suddenly receiving a significant amount of Federal payments
+    soon after starting its operations.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: fraud_nexus
+  simulation_type: 2B
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-03
+  description: A customer is a recently established company or NPO enrolled in a government
+    benefit program receiving payments to their accounts that are inconsistent with
+    their customer profile.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: fraud_nexus
+  simulation_type: 2B
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-04
+  description: A customer is a company or NPO enrolled in a government benefit program
+    but is unable to verify its status to the financial institution or its customer
+    profile is not commensurate with other similar entities.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: low
+  category: fraud_nexus
+  simulation_type: 1C
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-05
+  description: A customer is a company or NPO enrolled in a government benefit program
+    that is receiving a significant amount of reimbursements despite limited operations.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: fraud_nexus
+  simulation_type: 2B
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-06
+  description: A customer is a recently established company or NPO enrolled in a government
+    benefit program with a limited online presence.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: low
+  category: fraud_nexus
+  simulation_type: 1C
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-07
+  description: A customer is a company or NPO enrolled in a government benefit program
+    that has minimal to no operating costs other than payments for “consulting fees”
+    and nondescriptive, repetitive invoices (i.e. food supplies).
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: fraud_nexus
+  simulation_type: 3B
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-08
+  description: A customer that is a company or NPO enrolled in a government benefit
+    program makes a significant amount of cash withdrawals.
+  product_types:
+  - depository
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: fraud_nexus
+  simulation_type: 2A
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-09
+  description: A customer with previous fraud convictions is an employee of a company
+    or NPO enrolled in a government benefit program.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: low
+  category: fraud_nexus
+  simulation_type: 1A
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-10
+  description: A customer is an employee of a company or NPO enrolled in a government
+    benefit program that is frequently purchasing or redeeming cashier’s checks for
+    no clear purpose.
+  product_types:
+  - depository
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: layering
+  simulation_type: 2A
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-11
+  description: A customer that is a company or NPO, enrolled in a government benefit
+    program, or the customer’s employee, engages in behavior suggesting efforts to
+    evade the Currency Transaction Report (CTR) reporting requirement (e.g., alters
+    or cancels a transaction when advised a CTR would be filed or engages in structuring
+    with multiple cash transactions for under $10,000), as well as avoiding recordkeeping
+    requirements.
+  product_types:
+  - depository
+  - money_transmitter
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: high
+  category: structuring
+  simulation_type: 3B
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-12
+  description: A customer is a company or NPO enrolled in a government benefit program
+    meant for U.S. citizens and lawful permanent residents that is sending a significant
+    amount of wire transfers to individuals and companies located in foreign jurisdictions.
+  product_types:
+  - depository
+  - money_transmitter
+  - correspondent_banking
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: layering
+  simulation_type: 2C
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+- id: 001_federal_child_nutrition_fraud-13
+  description: A customer is a company or NPO enrolled in a government benefit program
+    that is sending payments abroad for residential and commercial real estate, vehicles,
+    aircraft, airline tickets, and designer clothing.
+  product_types:
+  - depository
+  - money_transmitter
+  - correspondent_banking
+  regulatory_source: FinCEN Alert FIN-2026-Alert001
+  risk_level: medium
+  category: layering
+  simulation_type: 2C
+  source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
