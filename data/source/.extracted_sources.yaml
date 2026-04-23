@@ -6,3 +6,15 @@
   slug: fincen_alert_russian_sanctions_evasion_final_508
   output_file: data/source/fincen_alert_russian_sanctions_evasion_final_508.yaml
   extracted_at: '2026-03-29T13:00:34.147014+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/001_federal_child_nutrition_fraud.pdf
+  slug: 001_federal_child_nutrition_fraud
+  output_file: data/source/001_federal_child_nutrition_fraud.yaml
+  extracted_at: '2026-04-21T00:22:06.348029+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/002_oil_smuggling_cartels.pdf
+  slug: 002_oil_smuggling_cartels
+  output_file: data/source/002_oil_smuggling_cartels.yaml
+  extracted_at: '2026-04-21T00:22:13.904001+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/003_bulk_cash_smuggling_repatriation.pdf
+  slug: 003_bulk_cash_smuggling_repatriation
+  output_file: data/source/003_bulk_cash_smuggling_repatriation.yaml
+  extracted_at: '2026-04-21T00:22:21.413169+00:00'
