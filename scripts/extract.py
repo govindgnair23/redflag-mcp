@@ -193,54 +193,69 @@ def source_slug(source: str) -> str:
 
 def build_extraction_prompt(document_text: str) -> list[dict]:
     """Build the system and user prompts for LLM extraction."""
-    system_prompt = f"""You are an AML compliance expert. Extract all distinct AML red flags from the provided regulatory document using a two-step process.
+    system_prompt = f"""You are an AML compliance expert. Extract every distinct red flag from the provided regulatory document using a two-step process.
 
 ## What is a red flag?
 
-A red flag is a description of specific, observable customer behavior or transaction activity that a financial institution employee could directly witness and that indicates potential money laundering or financial crime. It must describe what someone is *doing* — not what a regulator has decided, not what an institution is required to do, and not background information about a typology.
+A red flag is a description of customer behavior or transaction activity — observable directly or via transaction monitoring — that indicates potential money laundering or financial crime. It must describe what someone is *doing* or what a TM system would surface. It is not a regulator's decision, an institutional obligation, or background context about a typology.
 
-A valid red flag answers: "What would a compliance officer actually observe that should trigger suspicion?"
+A valid red flag answers: "What would a compliance officer or TM analyst actually see at their institution that should raise suspicion?"
 
 ## Step 1 — Identify red flags
 
-**Where to look first:** Scan the document for sections explicitly labeled as red flags or indicators — headings such as "Red Flags", "Risk Indicators", "Suspicious Activity Indicators", "Warning Signs", or similar. Extract from those sections first and most thoroughly.
+**Where to look:** Scan the entire document. Sections explicitly labeled "Red Flags," "Risk Indicators," "Suspicious Activity Indicators," or "Warning Signs" are highest yield — extract from those exhaustively. Indicators also appear in narrative form within typology descriptions, advisories, and case discussions — extract those too when they pass the observability test.
 
-For content outside labeled sections, apply strict criteria: only extract text that describes a specific, observable behavior or transaction pattern. Do not extract from introductory, background, enforcement, or conclusion sections.
+**Handling embedded examples:** When an indicator is followed by an example clause introduced by "for example," "e.g.,", "such as," or "including," the example is part of that indicator. Keep the full passage as one entry. Do not split the example into a separate red flag.
 
-**Handling embedded examples:** When an indicator is followed by an example clause ("For example,", "e.g.,", "such as", "including"), the example is part of that indicator — keep the full passage as one entry. Do not extract the example as a separate red flag.
+**Handling indicators embedded in prose:** When an indicator appears within a longer sentence ("Among the patterns observed are X, Y, and Z"), extract the indicator clause itself with its exact wording preserved. Do not paraphrase or generalize.
 
-**Do NOT extract the following:**
-- Enforcement actions, historical cases, or examples of past violations ("OFAC has taken enforcement actions against…", "Company X was fined for…")
-- SAR filing instructions or recommendations ("financial institutions should file a SAR if…", "consider filing a SAR when…")
-- Regulatory directives or compliance obligations ("institutions are required to…", "banks must screen…")
-- Explanations of how a typology or scheme works at a general level, without describing an observable indicator
-- Document headers, section titles, introductory paragraphs, and administrative text
+**Do NOT extract:**
+- Enforcement actions, historical case summaries, or descriptions of past violations
+- SAR filing instructions or recommendations
+- Regulatory directives or institutional compliance obligations
+- General typology explanations that do not describe an observable pattern
+- Document headers, section titles, introductory text, administrative text
 
-**Test before including:** Ask — "Could a compliance officer directly observe this at their institution?" If no, do not extract it.
+**Test before including:** Could a compliance officer or TM system at a financial institution directly observe this? If no, exclude it.
+
+**Deduplication:** Some indicators appear in multiple sections (e.g., an executive summary up front and a detailed section later). Extract each distinct indicator once. Two passages refer to the same indicator if they describe the same observable pattern, even when worded differently — keep the more specific version.
 
 ## Step 2 — Analyze each red flag
 
-For each indicator identified in Step 1, determine the following metadata:
+For each indicator identified in Step 1, populate the following fields:
 
-- "description" (string, required): Copy the indicator text exactly as it appears in the source document, including any embedded example clause. Do not paraphrase, generalize, or remove any wording.
-- "product_types" (list of strings): Which financial products or channels does this indicator apply to? Choose from: "depository", "credit_card", "money_transmitter", "prepaid", "securities", "insurance", "crypto", "msb", "private_banking", "correspondent_banking", "trade_finance". Include all that apply.
-- "industry_types" (list of strings): Which customer industries or business sectors does this indicator involve? Prefer these values when applicable: {sorted(INDUSTRY_TYPES)}. Use an empty list when no industry is implied.
-- "customer_profiles" (list of strings): Which customer archetypes does this indicator involve? Prefer these values when applicable: {sorted(CUSTOMER_PROFILES)}. Use an empty list when no customer profile is implied.
-- "geographic_footprints" (list of strings): Which geographies, corridors, or regional footprints does this indicator involve? Prefer these values when applicable: {sorted(GEOGRAPHIC_FOOTPRINTS)}. Use an empty list when no geography is implied.
-- "regulatory_source" (string): The full name of the issuing document or authority (e.g., "FinCEN Alert FIN-2022-Alert001", "FFIEC BSA/AML Examination Manual Appendix F").
-- "risk_level" (string): Severity of the indicator. One of: {sorted(RISK_LEVELS)}. Use "high" for indicators directly tied to confirmed typologies or sanctions violations; "medium" for suspicious patterns requiring investigation; "low" for weak signals that need corroboration.
-- "category" (string): The primary AML typology. Use: "structuring", "layering", "sanctions_evasion", "terrorist_financing", "fraud_nexus", "corruption", "shell_company", "trade_based_ml", "cyber_enabled", "ransomware", "virtual_currency". If multiple apply, choose the most specific.
-- "simulation_type" (string or null): Classification by the complexity of transaction data needed to simulate this red flag. Valid values: {sorted(SIMULATION_TYPES)}. Use null if uncertain.
+- "description" (string, required): The indicator's exact wording from the source, including any embedded example clause. No paraphrasing, no generalization, no truncation. If the indicator is embedded mid-sentence, extract the indicator clause itself with its wording preserved.
+
+- "product_types" (list of strings): Financial products or channels offered by the institution that this indicator applies to. Choose from: "deposits", "credit_card", "prepaid", "securities", "insurance", "crypto", "private_banking", "correspondent_banking", "trade_finance", "remittance", "check_cashing", "currency_exchange". Include all that apply. This field is about the institution's product surface, not about who the customer is — customer-side institution categories such as "money transmitter" or "MSB" belong in industry_types.
+
+- "industry_types" (list of strings): Customer industries or business sectors involved. Prefer these values when applicable: {sorted(INDUSTRY_TYPES)}. Empty list when no industry is implied.
+
+- "customer_profiles" (list of strings): Customer archetypes involved. Prefer these values when applicable: {sorted(CUSTOMER_PROFILES)}. Empty list when no profile is implied.
+
+- "geographic_footprints" (list of strings): Geographies, corridors, or regional footprints involved. Prefer these values when applicable: {sorted(GEOGRAPHIC_FOOTPRINTS)}. Empty list when none is implied.
+
+- "regulatory_source" (string): Full name of the issuing document or authority (e.g., "FinCEN Alert FIN-2022-Alert001", "FFIEC BSA/AML Examination Manual Appendix F").
+
+- "risk_level" (string): Standalone inferential strength of this indicator — how much suspicion the indicator alone justifies before corroboration. One of: {sorted(RISK_LEVELS)}.
+  - "high": indicator alone justifies investigation; specific behavior tightly coupled to a known typology or sanctions violation
+  - "medium": suspicious pattern that warrants investigation but typically requires corroboration
+  - "low": weak signal; meaningful only when combined with other indicators
+
+  Do not infer risk_level from the typology category. A generic structuring or sanctions reference is not automatically "high" — anchor on how specific and self-contained the observable behavior is.
+
+- "category" (string): Primary AML typology. One of: "structuring", "layering", "sanctions_evasion", "terrorist_financing", "fraud_nexus", "corruption", "shell_company", "trade_based_ml", "cyber_enabled", "ransomware", "virtual_currency". When multiple apply, choose the one most specific to the observable behavior described, not the broadest.
+
+When in doubt about any metadata field, prefer narrower lists over speculation.
 
 ## Example
 
-Source text: "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions, including transactions that are inconsistent with activity over the prior 12 months. For example, a sanctioned entity may seek to use import or export companies to conduct transactions."
+Source: "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions, including transactions that are inconsistent with activity over the prior 12 months. For example, a sanctioned entity may seek to use import or export companies to conduct transactions."
 
 **Wrong** — splitting into two entries:
-1. "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions..."
-2. "For example, a sanctioned entity may seek to use import or export companies to conduct transactions."
+1. The first sentence
+2. The "For example..." sentence
 
-**Correct** — one entry with the full passage including the example:
+**Correct** — one entry preserving the full passage:
 {{
   "description": "Non-routine foreign exchange transactions that may indirectly involve sanctioned financial institutions, including transactions that are inconsistent with activity over the prior 12 months. For example, a sanctioned entity may seek to use import or export companies to conduct transactions.",
   "product_types": ["correspondent_banking", "trade_finance"],
@@ -249,27 +264,23 @@ Source text: "Non-routine foreign exchange transactions that may indirectly invo
   "geographic_footprints": [],
   "regulatory_source": "FinCEN Alert FIN-2022-Alert001",
   "risk_level": "high",
-  "category": "sanctions_evasion",
-  "simulation_type": null
+  "category": "sanctions_evasion"
 }}
 
 ## Output format
 
-Return a JSON object with a single key "red_flags" containing an array of analyzed objects. Apply both steps before writing any entry. Do not duplicate indicators that appear in multiple sections of the document."""
+Return a single JSON object with one key, "red_flags", containing an array of analyzed objects. No markdown fences, no preamble, no commentary — emit valid JSON only. Apply both steps before emitting any entry. Process the entire document; do not stop early."""
 
-    user_prompt = f"""Extract all AML red flags from this regulatory document using the two-step process described:
+    user_prompt = f"""Extract all AML red flags from this regulatory document using the two-step process described.
 
 ---
 {document_text}
----
-
-Return the results as a JSON object with a "red_flags" array."""
+---"""
 
     return [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]
-
 
 def extract_red_flags(document_text: str, model: str | None = None) -> list[dict]:
     """Send document text to OpenAI and extract structured red flags."""
