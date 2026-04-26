@@ -17,16 +17,20 @@ RISK_LEVELS = {"high", "medium", "low"}
 # are intentionally not strict validators; the taxonomy can grow with the corpus.
 INDUSTRY_TYPES = {
     "adult_entertainment",
-    "charity_nonprofit",
+    "art_antiquities",            # NEW — AMLA 2020, FATF DNFBP
+    "casinos",                    # was "gaming" — BSA/FFIEC standard term
+    "charity_or_nonprofit",       # was "charity_nonprofit" — naming consistency
     "construction",
-    "energy",
+    "crypto",
     "food_service",
-    "gaming",
     "government_benefits",
     "import_export",
+    "legal_accounting",           # NEW — FATF DNFBP, corruption advisories
     "logistics",
-    "money_services",
-    "oil_and_gas",
+    "luxury_goods",               # NEW — autos, yachts, watches; cash-structuring vector
+    "money_services_business",    # was "money_services" — naming consistency
+    "oil_and_gas",                # "energy" dropped — oil_and_gas is the AML-relevant subset
+    "precious_metals_jewelry",    # NEW — DPMS, FinCEN-defined category
     "professional_services",
     "real_estate",
     "retail",
@@ -38,14 +42,16 @@ CUSTOMER_PROFILES = {
     "charity_or_nonprofit",
     "cross_border_business",
     "foreign_financial_institution",
+    "foreign_individual",          # NEW — non-resident individuals in cross-border red flags
     "government_benefit_program_sponsor",
-    "high_risk_business",
     "individual_consumer",
     "money_services_business",
     "newly_established_business",
+    "politically_exposed_person",  # NEW — PEPs/SFPFs; corruption and FATF guidance
     "shell_or_front_company",
     "small_business",
     "third_party_payment_processor",
+    # "high_risk_business" dropped — circular; risk_level captures this
 }
 
 GEOGRAPHIC_FOOTPRINTS = {
@@ -57,6 +63,9 @@ GEOGRAPHIC_FOOTPRINTS = {
     "middle_east",
     "southwest_border",
     "uk_eu",
+    "china",
+    "south_asia",
+    "south_east_asia"
 }
 
 # Valid simulation types from docs/Red_flag_types.md
