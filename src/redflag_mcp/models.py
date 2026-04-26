@@ -56,6 +56,39 @@ class RedFlagResult(BaseModel):
     simulation_type: str | None = None
     source_url: str | None = None
     score: float | None = None
+    fit_explanation: str | None = None
+    fit_signals: list[str] = Field(default_factory=list)
+
+
+class SourceRedFlagSnippet(BaseModel):
+    """Bounded red flag context returned with source detail responses."""
+
+    id: str
+    description_snippet: str
+    category: str | None = None
+    risk_level: str | None = None
+
+
+class RedFlagSourceSummary(BaseModel):
+    """Source-level coverage summary derived from ingested red flag records."""
+
+    source_id: str
+    regulatory_source: str | None = None
+    source_url: str | None = None
+    red_flag_count: int
+    categories: list[str] = Field(default_factory=list)
+    risk_levels: list[str] = Field(default_factory=list)
+    product_types: list[str] = Field(default_factory=list)
+    red_flag_ids: list[str] = Field(default_factory=list)
+
+
+class RedFlagSourceDetail(RedFlagSourceSummary):
+    """Bounded source detail for source browsing tools and resources."""
+
+    industry_types: list[str] = Field(default_factory=list)
+    customer_profiles: list[str] = Field(default_factory=list)
+    geographic_footprints: list[str] = Field(default_factory=list)
+    red_flags: list[SourceRedFlagSnippet] = Field(default_factory=list)
 
 
 class RedFlagRecord(BaseModel):
