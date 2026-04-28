@@ -182,8 +182,9 @@ uv run mcp dev src/redflag_mcp/server.py
 MCP_TRANSPORT=http MCP_HOST=0.0.0.0 MCP_PORT=8000 uv run python -m redflag_mcp
 ```
 
-The server exposes hosted-client-compatible tools for semantic search, exact metadata filtering, source browsing, and filter discovery:
+The server exposes hosted-client-compatible tools for request routing, semantic search, exact metadata filtering, source browsing, and filter discovery:
 
+- `classify_red_flag_request` for deciding whether a request needs more context, exact metadata filtering, filtered semantic search, or direct semantic search
 - `search_red_flags` for natural-language relevance search with sourced, ranked results
 - `filter_red_flags` for exact metadata requests that should not use embedding search
 - `get_red_flag` for the full text and citation metadata for one red flag
@@ -226,6 +227,7 @@ After ingesting the three target files, verify the tools with:
 ```text
 list_filters
 list_sources
+classify_red_flag_request(query="what red flags apply to my crypto product?")
 filter_red_flags(product_types=["depository"], category="fraud_nexus", risk_level="medium")
 search_red_flags(query="federal child nutrition program sponsor receives reimbursements inconsistent with its profile", product_types=["depository"])
 search_red_flags(query="southwest border oil company wires for waste oil or hazardous materials")
@@ -233,7 +235,7 @@ search_red_flags(query="bulk cash moved by armored car service to Mexico")
 get_red_flag(red_flag_id="001_federal_child_nutrition_fraud-01")
 ```
 
-For a vague query such as "what should I look for in business accounts?", the calling agent should first ask a brief consultation question covering product/channel, industry, customer profile, geography, and transaction channel or volume. For a specific query such as "southwest border oil company wires for waste oil or hazardous materials", it should search directly. For exact metadata requests such as "show medium-risk fraud nexus red flags for depository products", it should call `filter_red_flags` instead of semantic search.
+For a vague query such as "what should I look for in business accounts?", the calling agent should call `classify_red_flag_request` and ask a brief consultation question covering product/channel, industry, customer profile, geography, and transaction channel or volume when the route is `needs_more_context`. For exact metadata requests such as "show medium-risk fraud nexus red flags for depository products", it should call `filter_red_flags` instead of semantic search. For requests with both usable filters and a rich narrative, it should call `search_red_flags` with filters so metadata controls eligibility and embeddings rank the matching records.
 
 ---
 

@@ -142,7 +142,12 @@ def search(
     scalar_where = _scalar_where(
         category=filters.category, risk_level=filters.risk_level
     )
-    fetch_limit = min(table.count_rows(), max(limit * 8, 50))
+    row_count = table.count_rows()
+    fetch_limit = (
+        row_count
+        if _has_list_filters(filters)
+        else min(row_count, max(limit * 8, 50))
+    )
 
     try:
         builder = table.search(query_vector)
@@ -347,6 +352,10 @@ def _matches_filters(row: dict[str, Any], filters: RedFlagFilters) -> bool:
         if required and row.get(field) != required:
             return False
     return True
+
+
+def _has_list_filters(filters: RedFlagFilters) -> bool:
+    return any(_clean_list(getattr(filters, field)) for field in LIST_FILTER_FIELDS)
 
 
 def _metadata_result_sort_key(row: dict[str, Any]) -> tuple[int, str, str]:

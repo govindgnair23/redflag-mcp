@@ -30,6 +30,12 @@ def test_consultation_prompt_guides_followup_and_tool_routing(tmp_vectors_dir):
     assert "product/channel" in text
     assert "customer profile" in text
     assert "transaction channel or volume" in text
+    assert "classify_red_flag_request" in text
+    assert "needs_more_context" in text
+    assert "metadata_filter" in text
+    assert "filtered_semantic_search" in text
+    assert "direct_semantic_search" in text
+    assert "rich narrative" in text
     assert "list_filters" in text
     assert "filter_red_flags" in text
     assert "search_red_flags" in text

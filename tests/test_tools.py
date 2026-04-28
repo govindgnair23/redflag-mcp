@@ -218,6 +218,115 @@ def test_filter_red_flags_returns_empty_without_semantic_fallback(tmp_vectors_di
     assert response["match_type"] == "metadata_filter"
 
 
+def test_classify_red_flag_request_routes_metadata_only_context(tmp_vectors_dir):
+    service = seeded_service(tmp_vectors_dir)
+    service.embedding_model = FailingModel()
+
+    response = service.classify_red_flag_request(
+        query="oil smuggling",
+        product_types=["trade_finance"],
+        industry_types=["oil_and_gas"],
+    )
+
+    assert response["route"] == "metadata_filter"
+    assert response["recommended_tool"] == "filter_red_flags"
+    assert response["recommended_arguments"] == {
+        "limit": 5,
+        "product_types": ["trade_finance"],
+        "industry_types": ["oil_and_gas"],
+    }
+    assert response["inferred_filters"] == {
+        "product_types": ["trade_finance"],
+        "industry_types": ["oil_and_gas"],
+    }
+    assert response["follow_up_question"] is None
+
+
+def test_classify_red_flag_request_requires_two_metadata_filters(
+    tmp_vectors_dir,
+):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.classify_red_flag_request(
+        query="oil smuggling",
+        product_types=["trade_finance"],
+    )
+
+    assert response["route"] == "needs_more_context"
+    assert response["recommended_tool"] is None
+    assert response["inferred_filters"] == {"product_types": ["trade_finance"]}
+    assert "industry" in response["follow_up_question"]
+
+
+def test_classify_red_flag_request_routes_filtered_semantic_context(
+    tmp_vectors_dir,
+):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.classify_red_flag_request(
+        query=(
+            "trade finance customers receive third-party wires tied to "
+            "unusual invoices"
+        ),
+        product_types=["trade_finance"],
+        geographic_footprints=["southwest_border"],
+        limit=50,
+    )
+
+    assert response["route"] == "filtered_semantic_search"
+    assert response["recommended_tool"] == "search_red_flags"
+    assert response["recommended_arguments"] == {
+        "query": (
+            "trade finance customers receive third-party wires tied to "
+            "unusual invoices"
+        ),
+        "limit": MAX_SEARCH_LIMIT,
+        "product_types": ["trade_finance"],
+        "geographic_footprints": ["southwest_border"],
+    }
+
+
+def test_classify_red_flag_request_routes_direct_semantic_for_rich_narrative(
+    tmp_vectors_dir,
+):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.classify_red_flag_request(
+        query=(
+            "small importers moving goods through Laredo with frequent "
+            "third-party wires"
+        )
+    )
+
+    assert response["route"] == "direct_semantic_search"
+    assert response["recommended_tool"] == "search_red_flags"
+    assert response["recommended_arguments"]["query"] == (
+        "small importers moving goods through Laredo with frequent third-party wires"
+    )
+    assert response["missing_context"] == [
+        "product_types",
+        "industry_types",
+        "customer_profiles",
+        "geographic_footprints",
+    ]
+
+
+def test_classify_red_flag_request_routes_vague_request_to_followup(
+    tmp_vectors_dir,
+):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.classify_red_flag_request(
+        query="what red flags apply to my crypto product?"
+    )
+
+    assert response["route"] == "needs_more_context"
+    assert response["recommended_tool"] is None
+    assert response["recommended_arguments"] == {}
+    assert "product/channel" in response["follow_up_question"]
+    assert "customer profile" in response["follow_up_question"]
+
+
 def test_get_red_flag_returns_record_without_vector(tmp_vectors_dir):
     service = seeded_service(tmp_vectors_dir)
 
@@ -280,6 +389,7 @@ def test_fastmcp_tool_metadata_includes_consultation_guidance(tmp_vectors_dir):
     by_name = {tool.name: tool for tool in tools}
 
     assert sorted(by_name) == [
+        "classify_red_flag_request",
         "filter_red_flags",
         "get_red_flag",
         "get_source",
@@ -294,9 +404,19 @@ def test_fastmcp_tool_metadata_includes_consultation_guidance(tmp_vectors_dir):
     assert "transaction channel or volume" in search_description
     assert "If the request already names" in search_description
     assert "list_filters" in search_description
+    assert "classify_red_flag_request" in search_description
     assert "filter_red_flags" in search_description
     assert "exact metadata" in search_description
     assert "industry_types" in by_name["search_red_flags"].inputSchema["properties"]
+    classifier_description = by_name["classify_red_flag_request"].description
+    assert "before searching" in classifier_description
+    assert "needs_more_context" in classifier_description
+    assert "filtered_semantic_search" in classifier_description
+    assert "direct_semantic_search" in classifier_description
+    assert "query" in by_name["classify_red_flag_request"].inputSchema["properties"]
+    assert "product_types" in by_name[
+        "classify_red_flag_request"
+    ].inputSchema["properties"]
     assert "exact metadata" in by_name["filter_red_flags"].description
     assert "search_red_flags" in by_name["filter_red_flags"].description
     assert "source coverage" in by_name["list_sources"].description
