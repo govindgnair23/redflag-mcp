@@ -127,6 +127,36 @@ def test_search_applies_list_filters(tmp_vectors_dir):
     assert [result.id for result in results] == ["oil"]
 
 
+def test_search_applies_list_filters_before_semantic_ranking(tmp_vectors_dir):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    non_matching_records = [
+        make_record(
+            f"near-miss-{number:02d}",
+            vector(1.0),
+            product_types=["depository"],
+        )
+        for number in range(60)
+    ]
+    matching_record = make_record(
+        "filtered-match",
+        vector(0.0),
+        product_types=["trade_finance"],
+        industry_types=["oil_and_gas"],
+    )
+    upsert_records(table, [*non_matching_records, matching_record])
+
+    results = search(
+        table,
+        vector(1.0),
+        limit=1,
+        product_types=["trade_finance"],
+        industry_types=["oil_and_gas"],
+    )
+
+    assert [result.id for result in results] == ["filtered-match"]
+    assert results[0].score is not None
+
+
 def test_empty_filter_lists_are_ignored(tmp_vectors_dir):
     table = get_or_create_table(open_store(tmp_vectors_dir))
     upsert_records(
