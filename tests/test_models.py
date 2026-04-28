@@ -7,7 +7,12 @@ import yaml
 from pydantic import ValidationError
 
 from redflag_mcp.config import EMBEDDING_DIM
-from redflag_mcp.models import RedFlagRecord, RedFlagSource
+from redflag_mcp.models import (
+    RedFlagRecord,
+    RedFlagSource,
+    RedFlagSourceDetail,
+    RedFlagSourceSummary,
+)
 
 
 def test_source_accepts_rich_metadata():
@@ -95,3 +100,52 @@ def test_record_to_result_omits_vector_and_preserves_citation_metadata():
     assert payload["regulatory_source"] == "FinCEN Alert"
     assert payload["source_url"] == "https://example.com/source.pdf"
     assert payload["score"] == 0.88
+
+
+def test_result_accepts_bounded_fit_explanation_fields():
+    result = RedFlagRecord(
+        id="record-01",
+        description="Cash deposits inconsistent with expected activity.",
+        vector=[0.1] * EMBEDDING_DIM,
+    ).to_result()
+    result.fit_signals = ["Semantic match to query context."]
+    result.fit_explanation = "Semantic match to query context."
+
+    payload = result.model_dump(exclude_none=True)
+
+    assert payload["fit_signals"] == ["Semantic match to query context."]
+    assert payload["fit_explanation"] == "Semantic match to query context."
+    assert "vector" not in payload
+
+
+def test_source_summary_and_detail_models_are_vector_free():
+    summary = RedFlagSourceSummary(
+        source_id="source-example",
+        regulatory_source="FinCEN Alert",
+        source_url="https://example.com/source.pdf",
+        red_flag_count=2,
+        categories=["fraud_nexus"],
+        risk_levels=["high", "medium"],
+        product_types=["depository"],
+        red_flag_ids=["one", "two"],
+    )
+    detail = RedFlagSourceDetail(
+        **summary.model_dump(),
+        industry_types=["government_benefits"],
+        customer_profiles=["charity_or_nonprofit"],
+        geographic_footprints=["domestic_us"],
+        red_flags=[
+            {
+                "id": "one",
+                "description_snippet": "Government payments inconsistent with profile.",
+                "category": "fraud_nexus",
+                "risk_level": "high",
+            }
+        ],
+    )
+
+    assert "vector" not in summary.model_dump()
+    assert "vector" not in detail.model_dump()
+    assert detail.red_flags[0].description_snippet == (
+        "Government payments inconsistent with profile."
+    )

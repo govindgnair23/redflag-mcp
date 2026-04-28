@@ -9,6 +9,8 @@ from mcp.server.fastmcp import FastMCP
 
 from redflag_mcp.config import VECTORS_DIR
 from redflag_mcp.embeddings import EmbeddingModel
+from redflag_mcp.prompts import register_prompts
+from redflag_mcp.resources import register_resources
 from redflag_mcp.tools import RedFlagService, register_tools
 
 
@@ -44,6 +46,8 @@ def create_server(
         lifespan=lifespan,
     )
     register_tools(mcp)
+    register_resources(mcp, vector_dir=vector_dir, embedding_model=embedding_model)
+    register_prompts(mcp)
     return mcp
 
 
