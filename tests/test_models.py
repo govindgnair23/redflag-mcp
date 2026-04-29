@@ -118,6 +118,102 @@ def test_result_accepts_bounded_fit_explanation_fields():
     assert "vector" not in payload
 
 
+def test_source_accepts_enriched_metadata():
+    source = RedFlagSource(
+        id="enriched-01",
+        description="Customer uses TBML invoices to layer illicit funds.",
+        typology_family=["trade_based_money_laundering"],
+        transaction_patterns=["trade_document_manipulation", "rapid_fund_movement"],
+        key_terms=["invoice manipulation", "TBML", "import/export"],
+    )
+
+    assert source.typology_family == ["trade_based_money_laundering"]
+    assert source.transaction_patterns == ["trade_document_manipulation", "rapid_fund_movement"]
+    assert source.key_terms == ["invoice manipulation", "TBML", "import/export"]
+
+
+def test_current_yaml_without_enriched_fields_validates():
+    path = (
+        Path(__file__).resolve().parent.parent
+        / "data/source/001_federal_child_nutrition_fraud.yaml"
+    )
+    records = yaml.safe_load(path.read_text())
+
+    parsed = [RedFlagSource(**record) for record in records]
+
+    assert len(parsed) == 13
+    assert parsed[0].typology_family is None
+    assert parsed[0].transaction_patterns is None
+    assert parsed[0].key_terms is None
+
+
+def test_record_from_source_normalizes_enriched_lists_to_empty():
+    source = RedFlagSource(id="minimal-02", description="Minimal red flag, no enrichment")
+    vector = [0.0] * EMBEDDING_DIM
+
+    record = RedFlagRecord.from_source(source, vector)
+
+    assert record.typology_family == []
+    assert record.transaction_patterns == []
+    assert record.key_terms == []
+
+
+def test_result_carries_enriched_fields_through_to_result():
+    source = RedFlagSource(
+        id="enriched-02",
+        description="Crypto mixing to layer funds.",
+        typology_family=["crypto_asset_money_laundering"],
+        transaction_patterns=["cryptocurrency_mixing"],
+        key_terms=["crypto mixer", "virtual asset"],
+    )
+    vector = [0.0] * EMBEDDING_DIM
+    record = RedFlagRecord.from_source(source, vector)
+
+    result = record.to_result()
+
+    assert result.typology_family == ["crypto_asset_money_laundering"]
+    assert result.transaction_patterns == ["cryptocurrency_mixing"]
+    assert result.key_terms == ["crypto mixer", "virtual asset"]
+
+
+def test_enriched_fields_accept_empty_lists():
+    source = RedFlagSource(
+        id="empty-01",
+        description="Red flag with empty enrichment lists.",
+        typology_family=[],
+        transaction_patterns=[],
+        key_terms=[],
+    )
+    vector = [0.0] * EMBEDDING_DIM
+    record = RedFlagRecord.from_source(source, vector)
+
+    payload = record.model_dump(exclude_none=True)
+
+    assert payload["typology_family"] == []
+    assert payload["transaction_patterns"] == []
+    assert payload["key_terms"] == []
+
+
+def test_typology_family_accepts_free_form_values():
+    """Advisory vocabulary — free-form values must not raise ValidationError."""
+    source = RedFlagSource(
+        id="freeform-01",
+        description="Exotic typology not yet in the vocabulary.",
+        typology_family=["some_new_typology_not_in_vocabulary"],
+    )
+    assert source.typology_family == ["some_new_typology_not_in_vocabulary"]
+
+
+def test_transaction_patterns_accepts_free_form_values():
+    """Advisory vocabulary — free-form values must not raise ValidationError."""
+    source = RedFlagSource(
+        id="freeform-02",
+        description="Novel transaction pattern.",
+        transaction_patterns=["some_new_pattern_not_in_vocabulary"],
+    )
+    assert source.transaction_patterns == ["some_new_pattern_not_in_vocabulary"]
+
+
 def test_source_summary_and_detail_models_are_vector_free():
     summary = RedFlagSourceSummary(
         source_id="source-example",

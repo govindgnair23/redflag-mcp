@@ -25,6 +25,8 @@ LIST_FILTER_FIELDS = (
     "industry_types",
     "customer_profiles",
     "geographic_footprints",
+    "typology_family",
+    "transaction_patterns",
 )
 SCALAR_FILTER_FIELDS = ("category", "risk_level")
 DISTINCT_FILTER_FIELDS = LIST_FILTER_FIELDS + SCALAR_FILTER_FIELDS
@@ -37,6 +39,8 @@ class RedFlagFilters:
     industry_types: list[str] | None = None
     customer_profiles: list[str] | None = None
     geographic_footprints: list[str] | None = None
+    typology_family: list[str] | None = None
+    transaction_patterns: list[str] | None = None
     category: str | None = None
     risk_level: str | None = None
     regulatory_source: str | None = None
@@ -90,6 +94,9 @@ def red_flag_schema() -> pa.Schema:
             pa.field("category", pa.string()),
             pa.field("simulation_type", pa.string()),
             pa.field("source_url", pa.string()),
+            pa.field("typology_family", pa.list_(pa.string())),
+            pa.field("transaction_patterns", pa.list_(pa.string())),
+            pa.field("key_terms", pa.list_(pa.string())),
             pa.field("vector", pa.list_(pa.float32(), EMBEDDING_DIM)),
         ]
     )

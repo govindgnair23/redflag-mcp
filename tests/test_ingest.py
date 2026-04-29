@@ -15,6 +15,8 @@ from ingest import (  # noqa: E402
     ingest_sources,
     load_sources,
     missing_metadata_fields,
+    warn_free_form_values,
+    write_back_yaml_sources,
 )
 from redflag_mcp.config import EMBEDDING_DIM  # noqa: E402
 from redflag_mcp.models import RedFlagSource  # noqa: E402
@@ -51,6 +53,9 @@ def test_complete_metadata_does_not_trigger_tagger():
         regulatory_source="FinCEN Alert",
         risk_level="high",
         category="structuring",
+        typology_family=["fraud_proceeds"],
+        transaction_patterns=["structuring"],
+        key_terms=["cash deposit"],
     )
 
     def tagger(_source: RedFlagSource, _missing: list[str]) -> dict:
@@ -166,3 +171,147 @@ def test_missing_metadata_fields_detects_empty_lists_and_scalars():
     assert "product_types" in missing
     assert "industry_types" in missing
     assert "risk_level" not in missing
+
+
+def test_missing_metadata_fields_detects_absent_enriched_fields():
+    source = RedFlagSource(id="enriched-missing-01", description="No enrichment fields set")
+
+    missing = missing_metadata_fields(source)
+
+    assert "typology_family" in missing
+    assert "transaction_patterns" in missing
+    assert "key_terms" in missing
+
+
+def test_complete_enrichment_does_not_trigger_tagger_for_enriched_fields():
+    source = RedFlagSource(
+        id="complete-enriched-01",
+        description="Fully enriched record",
+        product_types=["depository"],
+        industry_types=["import_export"],
+        customer_profiles=["cross_border_business"],
+        geographic_footprints=["domestic_us"],
+        regulatory_source="FinCEN Alert",
+        risk_level="high",
+        category="layering",
+        typology_family=["trade_based_money_laundering"],
+        transaction_patterns=["trade_document_manipulation"],
+        key_terms=["invoice fraud", "TBML"],
+    )
+
+    def tagger(_source: RedFlagSource, _missing: list[str]) -> dict:
+        raise AssertionError("tagger should not be called for fully enriched record")
+
+    records, enriched_count = build_records([source], embedding_model=FakeModel(), tagger=tagger)
+
+    assert enriched_count == 0
+    assert records[0].typology_family == ["trade_based_money_laundering"]
+    assert records[0].transaction_patterns == ["trade_document_manipulation"]
+    assert records[0].key_terms == ["invoice fraud", "TBML"]
+
+
+def test_tagger_enriches_missing_new_fields():
+    source = RedFlagSource(
+        id="new-fields-missing-01",
+        description="TBML invoice scheme for layering proceeds",
+        product_types=["depository"],
+        industry_types=["import_export"],
+        customer_profiles=["cross_border_business"],
+        geographic_footprints=["domestic_us"],
+        regulatory_source="FinCEN Alert",
+        risk_level="medium",
+        category="layering",
+    )
+
+    def tagger(_source: RedFlagSource, missing: list[str]) -> dict:
+        assert "typology_family" in missing
+        assert "transaction_patterns" in missing
+        assert "key_terms" in missing
+        return {
+            "typology_family": ["trade_based_money_laundering"],
+            "transaction_patterns": ["trade_document_manipulation"],
+            "key_terms": ["TBML", "invoice fraud"],
+        }
+
+    records, enriched_count = build_records([source], embedding_model=FakeModel(), tagger=tagger)
+
+    assert enriched_count == 1
+    assert records[0].typology_family == ["trade_based_money_laundering"]
+    assert records[0].transaction_patterns == ["trade_document_manipulation"]
+    assert records[0].key_terms == ["TBML", "invoice fraud"]
+
+
+def test_warn_free_form_values_logs_for_unknown_vocabulary(caplog):
+    from redflag_mcp.config import TYPOLOGY_FAMILIES
+
+    with caplog.at_level(logging.WARNING):
+        warn_free_form_values(
+            "test-01",
+            "typology_family",
+            ["trade_based_money_laundering", "some_exotic_new_type"],
+            TYPOLOGY_FAMILIES,
+        )
+
+    assert "some_exotic_new_type" in caplog.text
+    assert "typology_family" in caplog.text
+
+
+def test_warn_free_form_values_silent_for_known_vocabulary(caplog):
+    from redflag_mcp.config import TYPOLOGY_FAMILIES
+
+    with caplog.at_level(logging.WARNING):
+        warn_free_form_values(
+            "test-02",
+            "typology_family",
+            ["trade_based_money_laundering", "sanctions_evasion"],
+            TYPOLOGY_FAMILIES,
+        )
+
+    assert caplog.text == ""
+
+
+def test_write_back_yaml_sources_round_trips_enriched_records(tmp_path):
+    target = tmp_path / "sources.yaml"
+    sources = [
+        RedFlagSource(
+            id="roundtrip-01",
+            description="Trade-based layering scheme.",
+            product_types=["depository"],
+            regulatory_source="FinCEN Alert",
+            risk_level="medium",
+            category="layering",
+            typology_family=["trade_based_money_laundering"],
+            transaction_patterns=["trade_document_manipulation"],
+            key_terms=["TBML", "invoice"],
+        ),
+        RedFlagSource(
+            id="roundtrip-02",
+            description="Structuring cash deposits.",
+            product_types=["depository"],
+            regulatory_source="FinCEN Alert",
+            risk_level="high",
+            category="structuring",
+            typology_family=["fraud_proceeds"],
+            transaction_patterns=["structuring"],
+            key_terms=["cash", "CTR avoidance"],
+        ),
+    ]
+
+    write_back_yaml_sources(sources, target)
+
+    reloaded, invalid = load_sources([target])
+    assert invalid == 0
+    assert len(reloaded) == 2
+    assert reloaded[0].typology_family == ["trade_based_money_laundering"]
+    assert reloaded[1].transaction_patterns == ["structuring"]
+    assert reloaded[1].key_terms == ["cash", "CTR avoidance"]
+
+
+def test_write_back_does_not_occur_without_flag(tmp_path, tmp_vectors_dir):
+    source_file = tmp_path / "source.yaml"
+    original_content = yaml.safe_dump([{"id": "no-writeback-01", "description": "Stable"}])
+    source_file.write_text(original_content)
+
+    ingest_sources([source_file], vector_dir=tmp_vectors_dir, embedding_model=FakeModel())
+
+    assert source_file.read_text() == original_content
