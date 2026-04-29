@@ -68,6 +68,35 @@ GEOGRAPHIC_FOOTPRINTS = {
     "south_east_asia"
 }
 
+TYPOLOGY_FAMILIES = {
+    "corruption_and_bribery",
+    "crypto_asset_money_laundering",
+    "fraud_proceeds",
+    "human_trafficking_proceeds",
+    "narcotics_proceeds",
+    "proliferation_financing",
+    "real_estate_money_laundering",
+    "sanctions_evasion",
+    "tax_evasion",
+    "terrorist_financing",
+    "trade_based_money_laundering",
+}
+
+TRANSACTION_PATTERNS = {
+    "cash_intensive_behavior",
+    "cryptocurrency_mixing",
+    "informal_value_transfer",
+    "loan_back_scheme",
+    "rapid_fund_movement",
+    "real_estate_transactions",
+    "round_tripping",
+    "shell_company_usage",
+    "structuring",
+    "third_party_payments",
+    "trade_document_manipulation",
+    "wire_transfer_chains",
+}
+
 # Valid simulation types from docs/Red_flag_types.md
 SIMULATION_TYPES = {
     "1A", "1B", "1C", "1D",
