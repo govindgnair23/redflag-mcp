@@ -26,6 +26,7 @@ from redflag_mcp.config import (
     CUSTOMER_PROFILES,
     GEOGRAPHIC_FOOTPRINTS,
     INDUSTRY_TYPES,
+    REGULATORS,
     SOURCE_DIR,
     TRANSACTION_PATTERNS,
     TYPOLOGY_FAMILIES,
@@ -46,7 +47,7 @@ LIST_METADATA_FIELDS = (
     "transaction_patterns",
     "key_terms",
 )
-SCALAR_METADATA_FIELDS = ("regulatory_source", "risk_level", "category")
+SCALAR_METADATA_FIELDS = ("regulatory_source", "risk_level", "category", "regulator", "issued_date")
 METADATA_FIELDS = LIST_METADATA_FIELDS + SCALAR_METADATA_FIELDS
 MetadataTagger = Callable[[RedFlagSource, list[str]], dict[str, Any]]
 
@@ -129,6 +130,7 @@ def build_records(
             source = merge_metadata(source, patch, missing)
             warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
             warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
+            warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)
             enriched_count += 1
         elif missing:
             LOGGER.warning(
@@ -213,6 +215,9 @@ For list fields, return lists of strings. Prefer these suggested values when app
 - transaction_patterns: {sorted(TRANSACTION_PATTERNS)} — prefer values from this list; use free-form only when none apply
 - key_terms: free-form list of short, searchable phrases (instrument names, dollar thresholds, \
 regulatory references, entity types — not full sentences)
+- regulator: {sorted(REGULATORS)} — abbreviated issuing authority; infer from the regulatory_source value
+- issued_date: ISO 8601 date string (YYYY-MM-DD or YYYY-MM or YYYY) — publication date of the source \
+document; infer from the regulatory_source name if the date is embedded there
 
 Use "high", "medium", or "low" for risk_level. Use an empty list when a requested list field is not implied. Do not rewrite the description."""
 
@@ -334,6 +339,7 @@ def main(argv: Sequence[str] | None = None) -> None:
                     source = merge_metadata(source, patch, missing)
                     warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
                     warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
+                    warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)
                     enriched_count += 1
                 enriched.append(source)
             write_back_yaml_sources(enriched, path)

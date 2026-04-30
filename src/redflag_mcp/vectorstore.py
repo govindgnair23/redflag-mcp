@@ -28,7 +28,7 @@ LIST_FILTER_FIELDS = (
     "typology_family",
     "transaction_patterns",
 )
-SCALAR_FILTER_FIELDS = ("category", "risk_level")
+SCALAR_FILTER_FIELDS = ("category", "risk_level", "regulator")
 DISTINCT_FILTER_FIELDS = LIST_FILTER_FIELDS + SCALAR_FILTER_FIELDS
 RISK_ORDER = {"high": 0, "medium": 1, "low": 2}
 
@@ -43,6 +43,9 @@ class RedFlagFilters:
     transaction_patterns: list[str] | None = None
     category: str | None = None
     risk_level: str | None = None
+    regulator: str | None = None
+    issued_after: str | None = None
+    issued_before: str | None = None
     regulatory_source: str | None = None
     source_url: str | None = None
     source_id: str | None = None
@@ -54,6 +57,8 @@ class RedFlagFilters:
             getattr(self, field_name)
             for field_name in (
                 *SCALAR_FILTER_FIELDS,
+                "issued_after",
+                "issued_before",
                 "regulatory_source",
                 "source_url",
                 "source_id",
@@ -90,6 +95,8 @@ def red_flag_schema() -> pa.Schema:
             pa.field("customer_profiles", pa.list_(pa.string())),
             pa.field("geographic_footprints", pa.list_(pa.string())),
             pa.field("regulatory_source", pa.string()),
+            pa.field("regulator", pa.string()),
+            pa.field("issued_date", pa.string()),
             pa.field("risk_level", pa.string()),
             pa.field("category", pa.string()),
             pa.field("simulation_type", pa.string()),
@@ -147,7 +154,11 @@ def search(
         risk_level=risk_level,
     )
     scalar_where = _scalar_where(
-        category=filters.category, risk_level=filters.risk_level
+        category=filters.category,
+        risk_level=filters.risk_level,
+        regulator=filters.regulator,
+        issued_after=filters.issued_after,
+        issued_before=filters.issued_before,
     )
     row_count = table.count_rows()
     fetch_limit = (
@@ -371,12 +382,25 @@ def _metadata_result_sort_key(row: dict[str, Any]) -> tuple[int, str, str]:
     return (risk_rank, source_label, row.get("id") or "")
 
 
-def _scalar_where(*, category: str | None, risk_level: str | None) -> str | None:
+def _scalar_where(
+    *,
+    category: str | None,
+    risk_level: str | None,
+    regulator: str | None = None,
+    issued_after: str | None = None,
+    issued_before: str | None = None,
+) -> str | None:
     conditions = []
     if category:
         conditions.append(f"category = '{_escape_sql_string(category)}'")
     if risk_level:
         conditions.append(f"risk_level = '{_escape_sql_string(risk_level)}'")
+    if regulator:
+        conditions.append(f"regulator = '{_escape_sql_string(regulator)}'")
+    if issued_after:
+        conditions.append(f"issued_date >= '{_escape_sql_string(issued_after)}'")
+    if issued_before:
+        conditions.append(f"issued_date <= '{_escape_sql_string(issued_before)}'")
     return " AND ".join(conditions) if conditions else None
 
 

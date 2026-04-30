@@ -56,6 +56,8 @@ def test_complete_metadata_does_not_trigger_tagger():
         typology_family=["fraud_proceeds"],
         transaction_patterns=["structuring"],
         key_terms=["cash deposit"],
+        regulator="FinCEN",
+        issued_date="2022-03",
     )
 
     def tagger(_source: RedFlagSource, _missing: list[str]) -> dict:
@@ -197,6 +199,8 @@ def test_complete_enrichment_does_not_trigger_tagger_for_enriched_fields():
         typology_family=["trade_based_money_laundering"],
         transaction_patterns=["trade_document_manipulation"],
         key_terms=["invoice fraud", "TBML"],
+        regulator="FinCEN",
+        issued_date="2022-03",
     )
 
     def tagger(_source: RedFlagSource, _missing: list[str]) -> dict:
@@ -305,6 +309,116 @@ def test_write_back_yaml_sources_round_trips_enriched_records(tmp_path):
     assert reloaded[0].typology_family == ["trade_based_money_laundering"]
     assert reloaded[1].transaction_patterns == ["structuring"]
     assert reloaded[1].key_terms == ["cash", "CTR avoidance"]
+
+
+def test_missing_metadata_fields_detects_absent_regulator_and_date():
+    source = RedFlagSource(id="reg-missing-01", description="No regulator or date")
+
+    missing = missing_metadata_fields(source)
+
+    assert "regulator" in missing
+    assert "issued_date" in missing
+
+
+def test_complete_metadata_with_regulator_and_date_does_not_trigger_tagger():
+    source = RedFlagSource(
+        id="reg-complete-01",
+        description="Fully enriched record with regulator and date",
+        product_types=["depository"],
+        industry_types=["retail"],
+        customer_profiles=["cash_intensive_business"],
+        geographic_footprints=["domestic_us"],
+        regulatory_source="FinCEN Alert FIN-2022-Alert001",
+        risk_level="high",
+        category="structuring",
+        typology_family=["fraud_proceeds"],
+        transaction_patterns=["structuring"],
+        key_terms=["cash deposit"],
+        regulator="FinCEN",
+        issued_date="2022-03-07",
+    )
+
+    def tagger(_source: RedFlagSource, _missing: list[str]) -> dict:
+        raise AssertionError("tagger should not be called for complete metadata")
+
+    records, enriched_count = build_records([source], embedding_model=FakeModel(), tagger=tagger)
+
+    assert enriched_count == 0
+    assert records[0].regulator == "FinCEN"
+    assert records[0].issued_date == "2022-03-07"
+
+
+def test_tagger_enriches_missing_regulator():
+    source = RedFlagSource(
+        id="reg-enrich-01",
+        description="FATF guidance on virtual assets",
+        product_types=["crypto"],
+        industry_types=["crypto"],
+        customer_profiles=["cross_border_business"],
+        geographic_footprints=["domestic_us"],
+        regulatory_source="FATF Guidance on Virtual Assets",
+        risk_level="high",
+        category="sanctions_evasion",
+        typology_family=["crypto_asset_money_laundering"],
+        transaction_patterns=["cryptocurrency_mixing"],
+        key_terms=["virtual asset", "VASP"],
+        issued_date="2021-10",
+    )
+
+    def tagger(_source: RedFlagSource, missing: list[str]) -> dict:
+        assert "regulator" in missing
+        return {"regulator": "FATF"}
+
+    records, enriched_count = build_records([source], embedding_model=FakeModel(), tagger=tagger)
+
+    assert enriched_count == 1
+    assert records[0].regulator == "FATF"
+
+
+def test_tagger_enriches_missing_issued_date():
+    source = RedFlagSource(
+        id="date-enrich-01",
+        description="FinCEN advisory on structuring",
+        product_types=["depository"],
+        industry_types=["retail"],
+        customer_profiles=["cash_intensive_business"],
+        geographic_footprints=["domestic_us"],
+        regulatory_source="FinCEN Advisory FIN-2014-A005",
+        risk_level="medium",
+        category="structuring",
+        typology_family=["fraud_proceeds"],
+        transaction_patterns=["structuring"],
+        key_terms=["CTR", "cash"],
+        regulator="FinCEN",
+    )
+
+    def tagger(_source: RedFlagSource, missing: list[str]) -> dict:
+        assert "issued_date" in missing
+        return {"issued_date": "2014-08"}
+
+    records, enriched_count = build_records([source], embedding_model=FakeModel(), tagger=tagger)
+
+    assert enriched_count == 1
+    assert records[0].issued_date == "2014-08"
+
+
+def test_warn_free_form_values_logs_for_unknown_regulator(caplog):
+    from redflag_mcp.config import REGULATORS
+
+    with caplog.at_level(logging.WARNING):
+        warn_free_form_values("test-01", "regulator", ["SomeUnknownAgency"], REGULATORS)
+
+    assert "SomeUnknownAgency" in caplog.text
+    assert "regulator" in caplog.text
+
+
+def test_warn_free_form_values_silent_for_known_regulator(caplog):
+    from redflag_mcp.config import REGULATORS
+
+    with caplog.at_level(logging.WARNING):
+        warn_free_form_values("test-02", "regulator", ["FinCEN"], REGULATORS)
+
+    assert caplog.text == ""
 
 
 def test_write_back_does_not_occur_without_flag(tmp_path, tmp_vectors_dir):
