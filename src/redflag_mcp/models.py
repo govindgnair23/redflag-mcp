@@ -19,6 +19,8 @@ class RedFlagSource(BaseModel):
     customer_profiles: list[str] | None = None
     geographic_footprints: list[str] | None = None
     regulatory_source: str | None = None
+    regulator: str | None = None
+    issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
     simulation_type: str | None = None
@@ -54,6 +56,8 @@ class RedFlagResult(BaseModel):
     customer_profiles: list[str] = Field(default_factory=list)
     geographic_footprints: list[str] = Field(default_factory=list)
     regulatory_source: str | None = None
+    regulator: str | None = None
+    issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
     simulation_type: str | None = None
@@ -107,6 +111,8 @@ class RedFlagRecord(BaseModel):
     customer_profiles: list[str] = Field(default_factory=list)
     geographic_footprints: list[str] = Field(default_factory=list)
     regulatory_source: str | None = None
+    regulator: str | None = None
+    issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
     simulation_type: str | None = None
@@ -149,6 +155,8 @@ class RedFlagRecord(BaseModel):
             customer_profiles=_list_or_empty(source.customer_profiles),
             geographic_footprints=_list_or_empty(source.geographic_footprints),
             regulatory_source=source.regulatory_source,
+            regulator=source.regulator,
+            issued_date=source.issued_date,
             risk_level=source.risk_level,
             category=source.category,
             simulation_type=source.simulation_type,
@@ -168,6 +176,8 @@ class RedFlagRecord(BaseModel):
             customer_profiles=self.customer_profiles,
             geographic_footprints=self.geographic_footprints,
             regulatory_source=self.regulatory_source,
+            regulator=self.regulator,
+            issued_date=self.issued_date,
             risk_level=self.risk_level,
             category=self.category,
             simulation_type=self.simulation_type,

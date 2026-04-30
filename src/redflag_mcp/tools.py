@@ -159,6 +159,9 @@ class RedFlagService:
         geographic_footprints: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
+        regulator: str | None = None,
+        issued_after: str | None = None,
+        issued_before: str | None = None,
         regulatory_source: str | None = None,
         source_url: str | None = None,
         source_id: str | None = None,
@@ -176,6 +179,9 @@ class RedFlagService:
             geographic_footprints=geographic_footprints,
             category=category,
             risk_level=risk_level,
+            regulator=regulator,
+            issued_after=issued_after,
+            issued_before=issued_before,
             regulatory_source=regulatory_source,
             source_url=source_url,
             source_id=source_id,
@@ -397,6 +403,9 @@ def register_tools(mcp: FastMCP) -> None:
         geographic_footprints: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
+        regulator: str | None = None,
+        issued_after: str | None = None,
+        issued_before: str | None = None,
         regulatory_source: str | None = None,
         source_url: str | None = None,
         source_id: str | None = None,
@@ -411,6 +420,9 @@ def register_tools(mcp: FastMCP) -> None:
             geographic_footprints=geographic_footprints,
             category=category,
             risk_level=risk_level,
+            regulator=regulator,
+            issued_after=issued_after,
+            issued_before=issued_before,
             regulatory_source=regulatory_source,
             source_url=source_url,
             source_id=source_id,
@@ -426,9 +438,9 @@ def register_tools(mcp: FastMCP) -> None:
     @mcp.tool(
         description=(
             "List available filter values for product_types, industry_types, "
-            "customer_profiles, geographic_footprints, category, and risk_level. "
-            "Agents should call this before or during consultation when they need "
-            "valid local filter values."
+            "customer_profiles, geographic_footprints, category, risk_level, and "
+            "regulator. Agents should call this before or during consultation when "
+            "they need valid local filter values."
         )
     )
     def list_filters(ctx: Context | None = None) -> dict[str, Any]:
@@ -499,6 +511,8 @@ def _add_fit_explanations(
             signals.append(f"Risk level is {result.risk_level}.")
         if result.regulatory_source:
             signals.append(f"Source is {result.regulatory_source}.")
+        if result.regulator:
+            signals.append(f"Regulator is {result.regulator}.")
         if not signals:
             signals.append("Semantic match to the query context.")
         result.fit_signals = signals

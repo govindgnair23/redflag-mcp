@@ -214,6 +214,53 @@ def test_transaction_patterns_accepts_free_form_values():
     assert source.transaction_patterns == ["some_new_pattern_not_in_vocabulary"]
 
 
+def test_source_accepts_regulator_field():
+    source = RedFlagSource(id="reg-01", description="Test", regulator="FinCEN")
+    assert source.regulator == "FinCEN"
+
+
+def test_source_accepts_unknown_regulator_without_error():
+    from pydantic import ValidationError as _VE
+    try:
+        source = RedFlagSource(id="reg-02", description="Test", regulator="SomeUnknownAgency")
+        assert source.regulator == "SomeUnknownAgency"
+    except _VE:
+        pytest.fail("Unknown regulator should not raise ValidationError (advisory vocab)")
+
+
+def test_source_accepts_issued_date_field():
+    source = RedFlagSource(id="date-01", description="Test", issued_date="2022-03-07")
+    assert source.issued_date == "2022-03-07"
+
+
+def test_record_from_source_carries_regulator_and_date():
+    source = RedFlagSource(
+        id="carry-01",
+        description="Test",
+        regulator="OFAC",
+        issued_date="2023-06",
+    )
+    vector = [0.0] * EMBEDDING_DIM
+    record = RedFlagRecord.from_source(source, vector)
+    assert record.regulator == "OFAC"
+    assert record.issued_date == "2023-06"
+
+
+def test_result_carries_regulator_and_date():
+    source = RedFlagSource(
+        id="result-carry-01",
+        description="Test",
+        regulator="FATF",
+        issued_date="2021",
+    )
+    vector = [0.0] * EMBEDDING_DIM
+    record = RedFlagRecord.from_source(source, vector)
+    result = record.to_result()
+    assert result.regulator == "FATF"
+    assert result.issued_date == "2021"
+    assert "vector" not in result.model_dump()
+
+
 def test_source_summary_and_detail_models_are_vector_free():
     summary = RedFlagSourceSummary(
         source_id="source-example",

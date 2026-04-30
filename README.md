@@ -136,12 +136,13 @@ Each entry in the YAML file has the following fields:
 | `customer_profiles` | list[string] | no | Customer archetypes this applies to (e.g. `small_business`, `charity_or_nonprofit`) |
 | `geographic_footprints` | list[string] | no | Relevant geographies or corridors (e.g. `southwest_border`, `mexico`) |
 | `regulatory_source` | string | no | Source document name or authority (e.g. `FinCEN Alert FIN-2022-Alert001`) |
+| `regulator` | string | no | Abbreviated issuing authority (e.g. `FinCEN`, `OFAC`, `FATF`). Populated at extraction; auto-tagged by write-back when absent. |
+| `issued_date` | string | no | Publication date of the source document (ISO 8601: YYYY-MM-DD, YYYY-MM, or YYYY). |
 | `risk_level` | string | no | `high`, `medium`, or `low` |
 | `category` | string | no | AML typology (e.g. `structuring`, `sanctions_evasion`, `shell_company`) |
 | `simulation_type` | string | no | Optional simulation complexity code (e.g. `1A`, `2B`) |
-| `typology_family` | list[string] | no | AML typology families (e.g. `narcotics_proceeds`, `trade_based_money_laundering`) |
-| `transaction_patterns` | list[string] | no | Transaction-level patterns observed (e.g. `structuring`, `wire_transfer_chains`) |
-| `key_terms` | list[string] | no | Free-form keywords for lexical search (acronyms, instrument names, regulatory references) |
+
+> **Note:** `typology_family`, `transaction_patterns`, and `key_terms` are not produced by extraction. They are added to YAML source files by running `scripts/ingest.py --write-back-yaml` (see [Enriching YAML source files](#enriching-yaml-source-files-write-back) below).
 
 ### Deduplication
 
@@ -172,7 +173,7 @@ This generates embeddings with `nomic-embed-text-v1.5` and upserts records into 
 
 ### Enriching YAML source files (write-back)
 
-To enrich source YAML files with `typology_family`, `transaction_patterns`, and `key_terms` — fields used for offline keyword search — run ingestion with `--write-back-yaml`:
+To enrich source YAML files with `typology_family`, `transaction_patterns`, `key_terms`, `regulator`, and `issued_date` — fields used for offline keyword search and faceted filtering — run ingestion with `--write-back-yaml`:
 
 ```bash
 export OPENAI_API_KEY=sk-...
@@ -185,7 +186,7 @@ This enriches each source file in-place and exits without updating the vector da
 uv run python scripts/ingest.py data/source/001_federal_child_nutrition_fraud.yaml
 ```
 
-> **Note:** If you deploy this change against an existing `data/vectors/` store, delete the store and re-ingest from scratch so the three new list columns are present in the LanceDB schema:
+> **Note:** If you deploy this change against an existing `data/vectors/` store, delete the store and re-ingest from scratch so the new columns (`typology_family`, `transaction_patterns`, `key_terms`, `regulator`, `issued_date`) are present in the LanceDB schema:
 > ```bash
 > rm -rf data/vectors/
 > uv run python scripts/ingest.py

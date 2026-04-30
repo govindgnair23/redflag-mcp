@@ -97,6 +97,17 @@ TRANSACTION_PATTERNS = {
     "wire_transfer_chains",
 }
 
+REGULATORS = {
+    # US AML/banking regulators
+    "FinCEN", "OFAC", "FFIEC", "OCC", "FRB", "FDIC", "NCUA",
+    # US securities / commodities
+    "SEC", "CFTC",
+    # US law enforcement
+    "DOJ", "FBI", "IRS", "DHS",
+    # International
+    "FATF", "AUSTRAC", "FCA", "EBA", "FINTRAC",
+}
+
 # Valid simulation types from docs/Red_flag_types.md
 SIMULATION_TYPES = {
     "1A", "1B", "1C", "1D",
