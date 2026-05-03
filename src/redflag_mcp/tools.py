@@ -9,6 +9,7 @@ from mcp.server.fastmcp import Context, FastMCP
 
 from redflag_mcp.config import VECTORS_DIR
 from redflag_mcp.embeddings import EmbeddingModel, encode_query
+from redflag_mcp.lexicalstore import LexicalRedFlagFilters, LexicalStore
 from redflag_mcp.models import RedFlagResult
 from redflag_mcp.vectorstore import (
     RedFlagFilters,
@@ -106,6 +107,17 @@ class RedFlagService:
         table = get_or_create_table(open_store(vector_dir))
         return cls(table=table, embedding_model=embedding_model)
 
+    @classmethod
+    def from_corpus_path(
+        cls,
+        corpus_path: Path,
+        embedding_model: EmbeddingModel | None = None,
+    ) -> RedFlagService:
+        return cls(
+            table=LexicalStore.open(corpus_path),
+            embedding_model=embedding_model,
+        )
+
     def search_red_flags(
         self,
         *,
@@ -119,9 +131,30 @@ class RedFlagService:
         risk_level: str | None = None,
     ) -> dict[str, Any]:
         if self.table.count_rows() == 0:
-            return {"message": PRE_INGESTION_MESSAGE, "results": []}
+            return self._with_corpus({"message": PRE_INGESTION_MESSAGE, "results": []})
 
         clamped_limit = min(max(limit, 1), MAX_SEARCH_LIMIT)
+        if self._is_corpus_mode():
+            results = self.table.search(
+                query,
+                limit=clamped_limit,
+                product_types=product_types,
+                industry_types=industry_types,
+                customer_profiles=customer_profiles,
+                geographic_footprints=geographic_footprints,
+                category=category,
+                risk_level=risk_level,
+            )
+            return self._with_corpus(
+                {
+                    "query": query,
+                    "limit": clamped_limit,
+                    "results": [
+                        result.model_dump(exclude_none=True) for result in results
+                    ],
+                }
+            )
+
         query_vector = encode_query(query, model=self.embedding_model)
         results = search(
             self.table,
@@ -143,11 +176,13 @@ class RedFlagService:
             category=category,
             risk_level=risk_level,
         )
-        return {
-            "query": query,
-            "limit": clamped_limit,
-            "results": [result.model_dump(exclude_none=True) for result in results],
-        }
+        return self._with_corpus(
+            {
+                "query": query,
+                "limit": clamped_limit,
+                "results": [result.model_dump(exclude_none=True) for result in results],
+            }
+        )
 
     def filter_red_flags(
         self,
@@ -164,57 +199,97 @@ class RedFlagService:
         source_id: str | None = None,
     ) -> dict[str, Any]:
         if self.table.count_rows() == 0:
-            return {
-                "message": PRE_INGESTION_MESSAGE,
-                "match_type": "metadata_filter",
-                "results": [],
-            }
-        filters = RedFlagFilters(
-            product_types=product_types,
-            industry_types=industry_types,
-            customer_profiles=customer_profiles,
-            geographic_footprints=geographic_footprints,
-            category=category,
-            risk_level=risk_level,
-            regulatory_source=regulatory_source,
-            source_url=source_url,
-            source_id=source_id,
+            return self._with_corpus(
+                {
+                    "message": PRE_INGESTION_MESSAGE,
+                    "match_type": "metadata_filter",
+                    "results": [],
+                }
+            )
+        filters = (
+            LexicalRedFlagFilters(
+                product_types=product_types,
+                industry_types=industry_types,
+                customer_profiles=customer_profiles,
+                geographic_footprints=geographic_footprints,
+                category=category,
+                risk_level=risk_level,
+                regulatory_source=regulatory_source,
+                source_url=source_url,
+                source_id=source_id,
+            )
+            if self._is_corpus_mode()
+            else RedFlagFilters(
+                product_types=product_types,
+                industry_types=industry_types,
+                customer_profiles=customer_profiles,
+                geographic_footprints=geographic_footprints,
+                category=category,
+                risk_level=risk_level,
+                regulatory_source=regulatory_source,
+                source_url=source_url,
+                source_id=source_id,
+            )
         )
         if not filters.has_any():
-            return {
-                "message": (
-                    "Provide at least one metadata filter before using filter_red_flags."
-                ),
-                "match_type": "metadata_filter",
-                "results": [],
-            }
+            return self._with_corpus(
+                {
+                    "message": (
+                        "Provide at least one metadata filter before using "
+                        "filter_red_flags."
+                    ),
+                    "match_type": "metadata_filter",
+                    "results": [],
+                }
+            )
 
         clamped_limit = min(max(limit, 1), MAX_SEARCH_LIMIT)
-        results = filter_records(
-            self.table,
-            limit=clamped_limit,
-            filters=filters,
+        if isinstance(self.table, LexicalStore):
+            assert isinstance(filters, LexicalRedFlagFilters)
+            results = self.table.filter_red_flags(limit=clamped_limit, filters=filters)
+        else:
+            assert isinstance(filters, RedFlagFilters)
+            results = filter_records(
+                self.table,
+                limit=clamped_limit,
+                filters=filters,
+            )
+        return self._with_corpus(
+            {
+                "match_type": "metadata_filter",
+                "limit": clamped_limit,
+                "results": [result.model_dump(exclude_none=True) for result in results],
+            }
         )
-        return {
-            "match_type": "metadata_filter",
-            "limit": clamped_limit,
-            "results": [result.model_dump(exclude_none=True) for result in results],
-        }
 
     def get_red_flag(self, red_flag_id: str) -> dict[str, Any]:
         if self.table.count_rows() == 0:
-            return {"message": PRE_INGESTION_MESSAGE, "red_flag": None}
+            return self._with_corpus(
+                {"message": PRE_INGESTION_MESSAGE, "red_flag": None}
+            )
 
-        result = get_by_id(self.table, red_flag_id)
+        result = (
+            self.table.get_by_id(red_flag_id)
+            if self._is_corpus_mode()
+            else get_by_id(self.table, red_flag_id)
+        )
         if result is None:
-            return {"message": f"Red flag not found: {red_flag_id}", "red_flag": None}
-        return {"red_flag": result.model_dump(exclude_none=True)}
+            return self._with_corpus(
+                {"message": f"Red flag not found: {red_flag_id}", "red_flag": None}
+            )
+        return self._with_corpus({"red_flag": result.model_dump(exclude_none=True)})
 
     def list_filters(self) -> dict[str, Any]:
-        filters = list_distinct_values(self.table)
+        filters = (
+            self.table.list_distinct_values()
+            if self._is_corpus_mode()
+            else list_distinct_values(self.table)
+        )
         if self.table.count_rows() == 0:
-            return {"message": PRE_INGESTION_MESSAGE, "filters": filters}
-        return {"filters": filters}
+            return self._with_corpus(
+                {"message": PRE_INGESTION_MESSAGE, "filters": filters}
+            )
+        return self._with_corpus({"filters": filters})
 
     def classify_red_flag_request(
         self,
@@ -298,30 +373,53 @@ class RedFlagService:
 
     def list_sources(self) -> dict[str, Any]:
         if self.table.count_rows() == 0:
-            return {
-                "message": PRE_INGESTION_MESSAGE,
-                "source_count": 0,
-                "sources": [],
-            }
+            return self._with_corpus(
+                {
+                    "message": PRE_INGESTION_MESSAGE,
+                    "source_count": 0,
+                    "sources": [],
+                }
+            )
 
         sources = [
             source.model_dump(exclude_none=True)
-            for source in list_source_summaries(self.table)
+            for source in (
+                self.table.list_sources()
+                if self._is_corpus_mode()
+                else list_source_summaries(self.table)
+            )
         ]
         response: dict[str, Any] = {
             "source_count": len(sources),
             "sources": sources,
         }
-        return response
+        return self._with_corpus(response)
 
     def get_source(self, source_id: str) -> dict[str, Any]:
         if self.table.count_rows() == 0:
-            return {"message": PRE_INGESTION_MESSAGE, "source": None}
+            return self._with_corpus(
+                {"message": PRE_INGESTION_MESSAGE, "source": None}
+            )
 
-        source = get_source_detail(self.table, source_id)
+        source = (
+            self.table.get_source(source_id)
+            if self._is_corpus_mode()
+            else get_source_detail(self.table, source_id)
+        )
         if source is None:
-            return {"message": f"Source not found: {source_id}", "source": None}
-        return {"source": source.model_dump(exclude_none=True)}
+            return self._with_corpus(
+                {"message": f"Source not found: {source_id}", "source": None}
+            )
+        return self._with_corpus({"source": source.model_dump(exclude_none=True)})
+
+    def _is_corpus_mode(self) -> bool:
+        return isinstance(self.table, LexicalStore)
+
+    def _with_corpus(self, response: dict[str, Any]) -> dict[str, Any]:
+        if self._is_corpus_mode():
+            response = dict(response)
+            response["corpus"] = self.table.corpus.model_dump(exclude_none=True)
+        return response
 
 
 def register_tools(mcp: FastMCP) -> None:

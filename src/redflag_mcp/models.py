@@ -1,6 +1,8 @@
 from __future__ import annotations
 
-from pydantic import BaseModel, Field, field_validator
+from typing import Literal
+
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from redflag_mcp.config import EMBEDDING_DIM, RISK_LEVELS, SIMULATION_TYPES
 
@@ -11,6 +13,8 @@ def _list_or_empty(value: list[str] | None) -> list[str]:
 
 class RedFlagSource(BaseModel):
     """Input model parsed from YAML source files. Used by the ingestion CLI."""
+
+    model_config = ConfigDict(extra="allow")
 
     id: str
     description: str
@@ -58,6 +62,85 @@ class RedFlagResult(BaseModel):
     score: float | None = None
     fit_explanation: str | None = None
     fit_signals: list[str] = Field(default_factory=list)
+
+
+class CorpusMetadata(BaseModel):
+    """Version and integrity metadata for a packaged local corpus."""
+
+    version: str
+    schema_version: int = Field(gt=0)
+    build_timestamp: str
+    package_id: str
+    file_hashes: dict[str, str]
+    integrity_status: Literal["unverified", "verified", "failed"]
+    record_count: int = Field(ge=0)
+    source_count: int = Field(ge=0)
+
+    @field_validator("file_hashes")
+    @classmethod
+    def validate_file_hashes(cls, v: dict[str, str]) -> dict[str, str]:
+        for file_name, digest in v.items():
+            if len(digest) != 64 or any(c not in "0123456789abcdef" for c in digest):
+                raise ValueError(
+                    f"file hash for {file_name} must be a lowercase SHA-256 digest"
+                )
+        return v
+
+
+class SourceReleaseMetadata(BaseModel):
+    """Reviewed source-level metadata layered over the generated URL registry."""
+
+    title: str | None = None
+    authority: str | None = None
+    jurisdiction: str | None = None
+    publication_date: str | None = None
+    redistribution_status: Literal[
+        "url_only", "bundled_allowed", "restricted"
+    ] = "url_only"
+    source_document_sha256: str | None = None
+
+    @field_validator("source_document_sha256")
+    @classmethod
+    def validate_source_document_sha256(cls, v: str | None) -> str | None:
+        if v is None:
+            return v
+        if len(v) != 64 or any(c not in "0123456789abcdef" for c in v):
+            raise ValueError("source_document_sha256 must be a lowercase SHA-256 digest")
+        return v
+
+
+class SourceManifestEntry(SourceReleaseMetadata):
+    """Source metadata after merging reviewed metadata with the source URL registry."""
+
+    source_key: str
+    source_url: str | None = None
+    bundle_source_asset: bool = False
+
+    @model_validator(mode="after")
+    def set_bundle_policy(self) -> SourceManifestEntry:
+        self.bundle_source_asset = self.redistribution_status == "bundled_allowed"
+        return self
+
+
+def build_source_manifest(
+    source_metadata: dict[str, SourceReleaseMetadata],
+    source_registry: dict[str, dict[str, str | None]],
+) -> dict[str, SourceManifestEntry]:
+    """Merge reviewed source metadata with generated source URLs."""
+
+    unknown_keys = sorted(set(source_metadata) - set(source_registry))
+    if unknown_keys:
+        raise ValueError(f"source metadata references unknown source keys: {unknown_keys}")
+
+    manifest: dict[str, SourceManifestEntry] = {}
+    for source_key in sorted(source_registry):
+        metadata = source_metadata.get(source_key) or SourceReleaseMetadata()
+        manifest[source_key] = SourceManifestEntry(
+            **metadata.model_dump(),
+            source_key=source_key,
+            source_url=source_registry[source_key].get("url"),
+        )
+    return manifest
 
 
 class SourceRedFlagSnippet(BaseModel):

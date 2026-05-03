@@ -4,11 +4,12 @@ MCP server exposing AML red flag knowledge as queryable tools. Compliance office
 
 ## Overview
 
-Three distinct workflows:
+Four distinct workflows:
 
 1. **Extraction** — pull AML red flags out of PDFs or web pages using an LLM and save them as YAML
 2. **Ingestion** — embed the YAML files and load them into the local vector database
-3. **Query** — MCP server answers semantic search queries against that database
+3. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
+4. **Query** — MCP server answers search and filtering requests against the configured local store
 
 ---
 
@@ -166,6 +167,27 @@ uv run python scripts/ingest.py \
 This generates embeddings with `nomic-embed-text-v1.5` and upserts records into LanceDB at `data/vectors/`. Run ingestion before connecting the MCP server to a desktop client; the embedding model downloads on first use and is better cached during ingestion than during server startup.
 
 `OPENAI_API_KEY` is optional for ingestion. When it is set, ingestion can auto-tag missing metadata into the derived LanceDB records. When it is not set, ingestion preserves available YAML metadata and leaves missing rich consultation fields empty. Source YAML files are not rewritten by ingestion.
+
+---
+
+## Corpus Packaging
+
+Maintainers can build a versioned, verifiable SQLite FTS5 corpus package from approved YAML records:
+
+```bash
+uv run python scripts/build_corpus.py \
+  --output-dir dist/corpus \
+  --version 2026.04.29 \
+  data/source/001_federal_child_nutrition_fraud.yaml \
+  data/source/002_oil_smuggling_cartels.yaml \
+  data/source/003_bulk_cash_smuggling_repatriation.yaml
+
+uv run python scripts/verify_corpus.py dist/corpus/redflag-corpus-2026.04.29.zip
+```
+
+The package contains `manifest.json` and `redflags.sqlite`. The manifest records schema version, build timestamp, source record hashes, file hashes, record/source counts, and source redistribution metadata. Source documents are treated as URL-only unless `data/lexicon/source_metadata.yaml` explicitly clears them for bundling.
+
+This is release-author tooling. Normal MCP users should consume published corpus artifacts through the managed installer/runtime path as that path lands.
 
 ---
 

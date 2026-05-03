@@ -8,10 +8,13 @@ from pydantic import ValidationError
 
 from redflag_mcp.config import EMBEDDING_DIM
 from redflag_mcp.models import (
+    CorpusMetadata,
     RedFlagRecord,
     RedFlagSource,
     RedFlagSourceDetail,
     RedFlagSourceSummary,
+    SourceReleaseMetadata,
+    build_source_manifest,
 )
 
 
@@ -46,6 +49,91 @@ def test_current_yaml_without_rich_metadata_validates():
 
     assert len(parsed) == 14
     assert parsed[0].industry_types is None
+
+
+def test_enriched_yaml_metadata_validates_and_is_preserved():
+    source = RedFlagSource(
+        id="enriched-01",
+        description="Trade invoices are inconsistent with shipping records.",
+        typology_family="trade_based_money_laundering",
+        transaction_patterns=["over_invoicing", "invoice_mismatch"],
+        key_terms=["TBML", "trade finance"],
+    )
+
+    payload = source.model_dump()
+
+    assert payload["typology_family"] == "trade_based_money_laundering"
+    assert payload["transaction_patterns"] == ["over_invoicing", "invoice_mismatch"]
+    assert payload["key_terms"] == ["TBML", "trade finance"]
+
+
+def test_corpus_metadata_validates_and_serializes():
+    metadata = CorpusMetadata(
+        version="2026.04.29",
+        schema_version=1,
+        build_timestamp="2026-04-29T12:00:00Z",
+        package_id="redflag-corpus-2026.04.29",
+        file_hashes={
+            "manifest.json": "a" * 64,
+            "redflags.sqlite": "b" * 64,
+        },
+        integrity_status="verified",
+        record_count=3,
+        source_count=2,
+    )
+
+    payload = metadata.model_dump()
+
+    assert payload["version"] == "2026.04.29"
+    assert payload["schema_version"] == 1
+    assert payload["file_hashes"]["redflags.sqlite"] == "b" * 64
+    assert payload["integrity_status"] == "verified"
+
+
+def test_source_metadata_merges_with_source_registry():
+    metadata = {
+        "001": SourceReleaseMetadata(
+            title="Federal Child Nutrition Program Fraud Alert",
+            authority="FinCEN",
+            jurisdiction="US",
+            publication_date="2026-01",
+            redistribution_status="url_only",
+        )
+    }
+    registry = {"001": {"url": "https://example.com/fincen-alert.pdf"}}
+
+    manifest = build_source_manifest(metadata, registry)
+
+    assert manifest["001"].title == "Federal Child Nutrition Program Fraud Alert"
+    assert manifest["001"].source_url == "https://example.com/fincen-alert.pdf"
+    assert manifest["001"].redistribution_status == "url_only"
+    assert manifest["001"].bundle_source_asset is False
+
+
+def test_missing_source_metadata_defaults_to_url_only_manifest_entry():
+    manifest = build_source_manifest(
+        {},
+        {"002": {"url": "https://example.com/source.pdf"}},
+    )
+
+    assert manifest["002"].title is None
+    assert manifest["002"].source_url == "https://example.com/source.pdf"
+    assert manifest["002"].redistribution_status == "url_only"
+    assert manifest["002"].bundle_source_asset is False
+
+
+def test_source_metadata_unknown_registry_key_is_rejected():
+    metadata = {
+        "999": SourceReleaseMetadata(
+            title="Unknown Source",
+            authority="FinCEN",
+            jurisdiction="US",
+            redistribution_status="url_only",
+        )
+    }
+
+    with pytest.raises(ValueError, match="unknown source keys"):
+        build_source_manifest(metadata, {"001": {"url": "https://example.com/one.pdf"}})
 
 
 def test_record_from_source_normalizes_missing_lists_to_empty():
