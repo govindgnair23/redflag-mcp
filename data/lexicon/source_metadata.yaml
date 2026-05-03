@@ -1,0 +1,5 @@
+# Reviewed source-level release metadata for corpus packaging.
+#
+# This file is layered on top of red_flag_sources/sources.yaml. Missing entries
+# default to URL-only packaging; source documents are bundled only when a source
+# is explicitly marked bundled_allowed and has a verified asset hash.
