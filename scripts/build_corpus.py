@@ -20,7 +20,7 @@ from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from redflag_mcp.config import PROJECT_ROOT  # noqa: E402
+from redflag_mcp.config import PROJECT_ROOT, SOURCE_DIR  # noqa: E402
 from redflag_mcp.lexicalstore import LEXICAL_SCHEMA_VERSION, create_lexical_store  # noqa: E402
 from redflag_mcp.models import (  # noqa: E402
     CorpusMetadata,
@@ -41,6 +41,27 @@ FIXED_ZIP_TIMESTAMP = (2026, 1, 1, 0, 0, 0)
 class CorpusBuildResult:
     package_path: Path
     manifest: dict[str, Any]
+
+
+def discover_source_files(source_dir: Path = SOURCE_DIR) -> list[Path]:
+    return sorted(
+        path for path in source_dir.glob("*.yaml") if not path.name.startswith(".")
+    )
+
+
+def select_corpus_source_paths(
+    source_paths: Sequence[Path],
+    *,
+    all_sources: bool,
+    source_dir: Path = SOURCE_DIR,
+) -> list[Path]:
+    if all_sources and source_paths:
+        raise ValueError("--all-sources cannot be used with explicit source paths")
+    if all_sources:
+        return discover_source_files(source_dir)
+    if not source_paths:
+        raise ValueError("Provide source paths or pass --all-sources")
+    return list(source_paths)
 
 
 def build_corpus_package(
@@ -254,13 +275,25 @@ def _source_key(value: object) -> str:
 
 def main(argv: Sequence[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Build a local red flag corpus ZIP.")
-    parser.add_argument("sources", nargs="+", type=Path)
+    parser.add_argument("sources", nargs="*", type=Path)
+    parser.add_argument(
+        "--all-sources",
+        action="store_true",
+        help="Build from all visible YAML files in data/source/.",
+    )
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--version", required=True)
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    try:
+        source_paths = select_corpus_source_paths(
+            args.sources,
+            all_sources=args.all_sources,
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     result = build_corpus_package(
-        args.sources,
+        source_paths,
         output_dir=args.output_dir,
         version=args.version,
     )

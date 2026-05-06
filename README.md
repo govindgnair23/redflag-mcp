@@ -226,6 +226,12 @@ Maintainers can build a versioned, verifiable SQLite FTS5 corpus package from ap
 uv run python scripts/build_corpus.py \
   --output-dir dist/corpus \
   --version 2026.04.29 \
+  --all-sources
+
+# Or build a curated corpus from explicit YAML files
+uv run python scripts/build_corpus.py \
+  --output-dir dist/corpus \
+  --version 2026.04.29 \
   data/source/001_federal_child_nutrition_fraud.yaml \
   data/source/002_oil_smuggling_cartels.yaml \
   data/source/003_bulk_cash_smuggling_repatriation.yaml
