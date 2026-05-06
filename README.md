@@ -1,6 +1,6 @@
 # redflag-mcp
 
-MCP server exposing AML red flag knowledge as queryable tools. Compliance officers ask natural-language questions; the server returns relevant, sourced red flags from a local vector database.
+MCP server exposing AML red flag knowledge as queryable tools. Compliance officers ask natural-language questions; the server returns relevant, sourced red flags from either a local LanceDB vector store or a packaged SQLite FTS5 corpus.
 
 ## Overview
 
@@ -142,8 +142,11 @@ Each entry in the YAML file has the following fields:
 | `risk_level` | string | no | `high`, `medium`, or `low` |
 | `category` | string | no | AML typology (e.g. `structuring`, `sanctions_evasion`, `shell_company`) |
 | `simulation_type` | string | no | Optional simulation complexity code (e.g. `1A`, `2B`) |
+| `typology_family` | list[string] | no | Higher-level AML typology families (e.g. `trade_based_money_laundering`, `fraud_proceeds`) |
+| `transaction_patterns` | list[string] | no | Observable behavioral patterns (e.g. `structuring`, `trade_document_manipulation`) |
+| `key_terms` | list[string] | no | Short searchable phrases, instruments, thresholds, or acronyms (e.g. `TBML`, `CTR`, `cashier's check`) |
 
-> **Note:** `typology_family`, `transaction_patterns`, and `key_terms` are not produced by extraction. They are added to YAML source files by running `scripts/ingest.py --write-back-yaml` (see [Enriching YAML source files](#enriching-yaml-source-files-write-back) below).
+`regulator` and `issued_date` are requested during extraction. `typology_family`, `transaction_patterns`, and `key_terms` are added to existing YAML source files by running `scripts/ingest.py --write-back-yaml` (see [Enriching YAML source files](#enriching-yaml-source-files-write-back) below).
 
 ### Deduplication
 
@@ -170,7 +173,7 @@ uv run python scripts/ingest.py \
 
 This generates embeddings with `nomic-embed-text-v1.5` and upserts records into LanceDB at `data/vectors/`. Run ingestion before connecting the MCP server to a desktop client; the embedding model downloads on first use and is better cached during ingestion than during server startup.
 
-`OPENAI_API_KEY` is optional for ingestion. When it is set, ingestion can auto-tag missing metadata into the derived LanceDB records. When it is not set, ingestion preserves available YAML metadata and leaves missing rich consultation fields empty. Source YAML files are not rewritten by ingestion.
+`OPENAI_API_KEY` is optional for ingestion. When it is set, ingestion can auto-tag missing metadata into the derived LanceDB records. When it is not set, ingestion preserves available YAML metadata and leaves missing rich consultation fields empty. Source YAML files are not rewritten by normal ingestion.
 
 ### Enriching YAML source files (write-back)
 
@@ -212,7 +215,34 @@ uv run python scripts/verify_corpus.py dist/corpus/redflag-corpus-2026.04.29.zip
 
 The package contains `manifest.json` and `redflags.sqlite`. The manifest records schema version, build timestamp, source record hashes, file hashes, record/source counts, and source redistribution metadata. Source documents are treated as URL-only unless `data/lexicon/source_metadata.yaml` explicitly clears them for bundling.
 
-This is release-author tooling. Normal MCP users should consume published corpus artifacts through the managed installer/runtime path as that path lands.
+The current SQLite lexical corpus schema version is `2`. Rebuild older corpus packages after schema changes that add stored fields or filters.
+
+### Running from a corpus
+
+The server can run directly against a built SQLite corpus without loading the embedding model:
+
+```bash
+REDFLAG_CORPUS_PATH=dist/corpus/redflags.sqlite uv run python -m redflag_mcp
+```
+
+It can also verify and install a ZIP package into a local corpus cache:
+
+```bash
+REDFLAG_CORPUS_PACKAGE=dist/corpus/redflag-corpus-2026.04.29.zip \
+REDFLAG_CORPUS_CACHE_DIR=~/.redflag-mcp \
+uv run python -m redflag_mcp
+```
+
+For release-index driven activation:
+
+```bash
+REDFLAG_CORPUS_RELEASE_INDEX=dist/corpus/releases.json \
+REDFLAG_CORPUS_VERSION=2026.04.29 \
+REDFLAG_CORPUS_CACHE_DIR=~/.redflag-mcp \
+uv run python -m redflag_mcp
+```
+
+Set `REDFLAG_CORPUS_AUTO_UPDATE=0` to reuse the active cached corpus without checking the package or release index. When no corpus environment variables are set, the server falls back to the LanceDB vector store at `data/vectors/`.
 
 ---
 
@@ -227,18 +257,21 @@ uv run mcp dev src/redflag_mcp/server.py
 
 # Start as HTTP server (for OpenAI agents or other HTTP clients)
 MCP_TRANSPORT=http MCP_HOST=0.0.0.0 MCP_PORT=8000 uv run python -m redflag_mcp
+
+# Start from a packaged corpus instead of LanceDB
+REDFLAG_CORPUS_PACKAGE=dist/corpus/redflag-corpus-2026.04.29.zip uv run python -m redflag_mcp
 ```
 
 The server exposes hosted-client-compatible tools for request routing, semantic search, exact metadata filtering, source browsing, and filter discovery:
 
 - `classify_red_flag_request` for deciding whether a request needs more context, exact metadata filtering, filtered semantic search, or direct semantic search
 - `search_red_flags` for natural-language relevance search with sourced, ranked results
-- `filter_red_flags` for exact metadata requests that should not use embedding search
+- `filter_red_flags` for exact metadata requests that should not use embedding search. Filters include `product_types`, `industry_types`, `customer_profiles`, `geographic_footprints`, `typology_family`, `transaction_patterns`, `category`, `risk_level`, `regulator`, `issued_after`, `issued_before`, `regulatory_source`, `source_url`, and `source_id`.
 - `get_red_flag` for the full text and citation metadata for one red flag
 - `list_filters` for available metadata filter values
 - `list_sources` and `get_source` for ingested source coverage and citation context
 
-It is fully offline after ingestion — no API keys required at query time.
+It is fully offline after ingestion or corpus installation — no API keys required at query time.
 
 ### Use from Codex
 
@@ -276,7 +309,10 @@ list_filters
 list_sources
 classify_red_flag_request(query="what red flags apply to my crypto product?")
 filter_red_flags(product_types=["depository"], category="fraud_nexus", risk_level="medium")
+filter_red_flags(typology_family=["trade_based_money_laundering"], transaction_patterns=["trade_document_manipulation"])
+filter_red_flags(regulator="FinCEN", issued_after="2024", issued_before="2026")
 search_red_flags(query="federal child nutrition program sponsor receives reimbursements inconsistent with its profile", product_types=["depository"])
+search_red_flags(query="TBML invoice mismatch")
 search_red_flags(query="southwest border oil company wires for waste oil or hazardous materials")
 search_red_flags(query="bulk cash moved by armored car service to Mexico")
 get_red_flag(red_flag_id="001_federal_child_nutrition_fraud-01")
