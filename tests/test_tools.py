@@ -38,6 +38,11 @@ def make_record(
     geographic_footprints: list[str] | None = None,
     risk_level: str = "medium",
     category: str = "fraud_nexus",
+    regulator: str | None = None,
+    issued_date: str | None = None,
+    typology_family: list[str] | None = None,
+    transaction_patterns: list[str] | None = None,
+    key_terms: list[str] | None = None,
 ) -> RedFlagRecord:
     return RedFlagRecord(
         id=record_id,
@@ -47,9 +52,14 @@ def make_record(
         customer_profiles=customer_profiles or [],
         geographic_footprints=geographic_footprints or [],
         regulatory_source="FinCEN Alert FIN-2025-Alert001",
+        regulator=regulator,
+        issued_date=issued_date,
         risk_level=risk_level,
         category=category,
         source_url="https://example.com/source.pdf",
+        typology_family=typology_family or [],
+        transaction_patterns=transaction_patterns or [],
+        key_terms=key_terms or [],
         vector=vector(1.0),
     )
 
@@ -79,6 +89,11 @@ def seeded_corpus_service(tmp_path) -> RedFlagService:
                 industry_types=["import_export"],
                 risk_level="high",
                 category="trade_based_money_laundering",
+                regulator="FinCEN",
+                issued_date="2022-06",
+                typology_family=["trade_based_money_laundering"],
+                transaction_patterns=["trade_document_manipulation"],
+                key_terms=["invoice mismatch"],
             ),
             make_record(
                 "benefits-01",
@@ -291,6 +306,21 @@ def test_corpus_filter_lookup_sources_include_corpus_metadata(tmp_path):
     assert filters["corpus"]["version"] == "2026.04.29"
     assert sources["corpus"]["version"] == "2026.04.29"
     assert source["corpus"]["version"] == "2026.04.29"
+
+
+def test_corpus_filter_red_flags_supports_enriched_metadata(tmp_path):
+    service = seeded_corpus_service(tmp_path)
+
+    response = service.filter_red_flags(
+        typology_family=["trade_based_money_laundering"],
+        transaction_patterns=["trade_document_manipulation"],
+        regulator="FinCEN",
+        issued_after="2022",
+        issued_before="2022-12",
+    )
+
+    assert [result["id"] for result in response["results"]] == ["tbml-01"]
+    assert response["results"][0]["typology_family"] == ["trade_based_money_laundering"]
 
 
 def test_classify_red_flag_request_routes_metadata_only_context(tmp_vectors_dir):

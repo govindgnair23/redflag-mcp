@@ -137,9 +137,13 @@ Each entry in the YAML file has the following fields:
 | `customer_profiles` | list[string] | no | Customer archetypes this applies to (e.g. `small_business`, `charity_or_nonprofit`) |
 | `geographic_footprints` | list[string] | no | Relevant geographies or corridors (e.g. `southwest_border`, `mexico`) |
 | `regulatory_source` | string | no | Source document name or authority (e.g. `FinCEN Alert FIN-2022-Alert001`) |
+| `regulator` | string | no | Abbreviated issuing authority (e.g. `FinCEN`, `OFAC`, `FATF`). Populated at extraction; auto-tagged by write-back when absent. |
+| `issued_date` | string | no | Publication date of the source document (ISO 8601: YYYY-MM-DD, YYYY-MM, or YYYY). |
 | `risk_level` | string | no | `high`, `medium`, or `low` |
 | `category` | string | no | AML typology (e.g. `structuring`, `sanctions_evasion`, `shell_company`) |
 | `simulation_type` | string | no | Optional simulation complexity code (e.g. `1A`, `2B`) |
+
+> **Note:** `typology_family`, `transaction_patterns`, and `key_terms` are not produced by extraction. They are added to YAML source files by running `scripts/ingest.py --write-back-yaml` (see [Enriching YAML source files](#enriching-yaml-source-files-write-back) below).
 
 ### Deduplication
 
@@ -167,6 +171,27 @@ uv run python scripts/ingest.py \
 This generates embeddings with `nomic-embed-text-v1.5` and upserts records into LanceDB at `data/vectors/`. Run ingestion before connecting the MCP server to a desktop client; the embedding model downloads on first use and is better cached during ingestion than during server startup.
 
 `OPENAI_API_KEY` is optional for ingestion. When it is set, ingestion can auto-tag missing metadata into the derived LanceDB records. When it is not set, ingestion preserves available YAML metadata and leaves missing rich consultation fields empty. Source YAML files are not rewritten by ingestion.
+
+### Enriching YAML source files (write-back)
+
+To enrich source YAML files with `typology_family`, `transaction_patterns`, `key_terms`, `regulator`, and `issued_date` — fields used for offline keyword search and faceted filtering — run ingestion with `--write-back-yaml`:
+
+```bash
+export OPENAI_API_KEY=sk-...
+uv run python scripts/ingest.py --write-back-yaml data/source/001_federal_child_nutrition_fraud.yaml
+```
+
+This enriches each source file in-place and exits without updating the vector database. After write-back, re-run normal ingestion to load the enriched records:
+
+```bash
+uv run python scripts/ingest.py data/source/001_federal_child_nutrition_fraud.yaml
+```
+
+> **Note:** If you deploy this change against an existing `data/vectors/` store, delete the store and re-ingest from scratch so the new columns (`typology_family`, `transaction_patterns`, `key_terms`, `regulator`, `issued_date`) are present in the LanceDB schema:
+> ```bash
+> rm -rf data/vectors/
+> uv run python scripts/ingest.py
+> ```
 
 ---
 

@@ -23,7 +23,12 @@ def make_record(
     risk_level: str = "medium",
     category: str = "fraud_nexus",
     regulatory_source: str | None = "FinCEN Alert",
+    regulator: str | None = None,
+    issued_date: str | None = None,
     source_url: str | None = "https://example.com/source.pdf",
+    typology_family: list[str] | None = None,
+    transaction_patterns: list[str] | None = None,
+    key_terms: list[str] | None = None,
 ) -> RedFlagRecord:
     return RedFlagRecord(
         id=record_id,
@@ -33,9 +38,14 @@ def make_record(
         customer_profiles=customer_profiles or [],
         geographic_footprints=geographic_footprints or [],
         regulatory_source=regulatory_source,
+        regulator=regulator,
+        issued_date=issued_date,
         risk_level=risk_level,
         category=category,
         source_url=source_url,
+        typology_family=typology_family or [],
+        transaction_patterns=transaction_patterns or [],
+        key_terms=key_terms or [],
     )
 
 
@@ -151,6 +161,101 @@ def test_filter_red_flags_uses_exact_metadata_and_no_score(tmp_path):
 
     assert [result.id for result in results] == ["match"]
     assert results[0].score is None
+
+
+def test_enriched_metadata_round_trips_through_lexical_store(tmp_path):
+    db_path = tmp_path / "redflags.sqlite"
+    create_lexical_store(
+        db_path,
+        [
+            make_record(
+                "enriched",
+                typology_family=["trade_based_money_laundering"],
+                transaction_patterns=["trade_document_manipulation"],
+                key_terms=["TBML", "invoice mismatch"],
+                regulator="FinCEN",
+                issued_date="2022-06",
+            )
+        ],
+        corpus=corpus_metadata(),
+        aliases={},
+    )
+
+    result = LexicalStore.open(db_path).get_by_id("enriched")
+
+    assert result is not None
+    assert result.typology_family == ["trade_based_money_laundering"]
+    assert result.transaction_patterns == ["trade_document_manipulation"]
+    assert result.key_terms == ["TBML", "invoice mismatch"]
+    assert result.regulator == "FinCEN"
+    assert result.issued_date == "2022-06"
+
+
+def test_filter_red_flags_supports_enriched_metadata(tmp_path):
+    db_path = tmp_path / "redflags.sqlite"
+    create_lexical_store(
+        db_path,
+        [
+            make_record(
+                "match",
+                typology_family=["trade_based_money_laundering"],
+                transaction_patterns=["trade_document_manipulation"],
+                regulator="FinCEN",
+                issued_date="2022-06",
+            ),
+            make_record(
+                "miss",
+                typology_family=["fraud_proceeds"],
+                transaction_patterns=["structuring"],
+                regulator="OFAC",
+                issued_date="2023-01",
+            ),
+        ],
+        corpus=corpus_metadata(),
+        aliases={},
+    )
+
+    results = LexicalStore.open(db_path).filter_red_flags(
+        limit=10,
+        filters=LexicalRedFlagFilters(
+            typology_family=["trade_based_money_laundering"],
+            transaction_patterns=["trade_document_manipulation"],
+            regulator="FinCEN",
+            issued_after="2022",
+            issued_before="2022-12",
+        ),
+    )
+
+    assert [result.id for result in results] == ["match"]
+
+
+def test_list_distinct_values_includes_enriched_filters(tmp_path):
+    db_path = tmp_path / "redflags.sqlite"
+    create_lexical_store(
+        db_path,
+        [
+            make_record(
+                "one",
+                typology_family=["trade_based_money_laundering"],
+                transaction_patterns=["trade_document_manipulation"],
+                regulator="FinCEN",
+            ),
+            make_record(
+                "two",
+                typology_family=["fraud_proceeds"],
+                transaction_patterns=["structuring"],
+                regulator="OFAC",
+            ),
+        ],
+        corpus=corpus_metadata(),
+        aliases={},
+    )
+
+    filters = LexicalStore.open(db_path).list_distinct_values()
+
+    assert filters["typology_family"] == ["fraud_proceeds", "trade_based_money_laundering"]
+    assert filters["transaction_patterns"] == ["structuring", "trade_document_manipulation"]
+    assert filters["regulator"] == ["FinCEN", "OFAC"]
 
 
 def test_empty_query_with_filters_uses_metadata_filtering(tmp_path):

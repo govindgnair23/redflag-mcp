@@ -26,7 +26,10 @@ from redflag_mcp.config import (
     CUSTOMER_PROFILES,
     GEOGRAPHIC_FOOTPRINTS,
     INDUSTRY_TYPES,
+    REGULATORS,
     SOURCE_DIR,
+    TRANSACTION_PATTERNS,
+    TYPOLOGY_FAMILIES,
     VECTORS_DIR,
 )
 from redflag_mcp.embeddings import EmbeddingModel, encode_documents
@@ -40,8 +43,11 @@ LIST_METADATA_FIELDS = (
     "industry_types",
     "customer_profiles",
     "geographic_footprints",
+    "typology_family",
+    "transaction_patterns",
+    "key_terms",
 )
-SCALAR_METADATA_FIELDS = ("regulatory_source", "risk_level", "category")
+SCALAR_METADATA_FIELDS = ("regulatory_source", "risk_level", "category", "regulator", "issued_date")
 METADATA_FIELDS = LIST_METADATA_FIELDS + SCALAR_METADATA_FIELDS
 MetadataTagger = Callable[[RedFlagSource, list[str]], dict[str, Any]]
 
@@ -122,6 +128,9 @@ def build_records(
         if tagger and missing:
             patch = tagger(source, missing)
             source = merge_metadata(source, patch, missing)
+            warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
+            warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
+            warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)
             enriched_count += 1
         elif missing:
             LOGGER.warning(
@@ -176,6 +185,24 @@ def build_openai_tagger(api_key: str, model: str = DEFAULT_MODEL) -> MetadataTag
     return tagger
 
 
+def warn_free_form_values(
+    source_id: str,
+    field: str,
+    values: list[str],
+    vocabulary: set[str],
+) -> None:
+    """Log a warning for any value not present in the controlled vocabulary."""
+    for value in values:
+        if value not in vocabulary:
+            LOGGER.warning(
+                "Record %s: free-form value %r in field %r not in controlled vocabulary "
+                "(review and promote to vocabulary if appropriate)",
+                source_id,
+                value,
+                field,
+            )
+
+
 def build_tagging_prompt(source: RedFlagSource, missing_fields: list[str]) -> list[dict[str, str]]:
     system_prompt = f"""You are an AML compliance metadata analyst. Fill only the requested missing fields for a red flag record.
 
@@ -184,6 +211,13 @@ For list fields, return lists of strings. Prefer these suggested values when app
 - industry_types: {sorted(INDUSTRY_TYPES)}
 - customer_profiles: {sorted(CUSTOMER_PROFILES)}
 - geographic_footprints: {sorted(GEOGRAPHIC_FOOTPRINTS)}
+- typology_family: {sorted(TYPOLOGY_FAMILIES)} — prefer values from this list; use free-form only when none apply
+- transaction_patterns: {sorted(TRANSACTION_PATTERNS)} — prefer values from this list; use free-form only when none apply
+- key_terms: free-form list of short, searchable phrases (instrument names, dollar thresholds, \
+regulatory references, entity types — not full sentences)
+- regulator: {sorted(REGULATORS)} — abbreviated issuing authority; infer from the regulatory_source value
+- issued_date: ISO 8601 date string (YYYY-MM-DD or YYYY-MM or YYYY) — publication date of the source \
+document; infer from the regulatory_source name if the date is embedded there
 
 Use "high", "medium", or "low" for risk_level. Use an empty list when a requested list field is not implied. Do not rewrite the description."""
 
@@ -200,6 +234,18 @@ Use "high", "medium", or "low" for risk_level. Use an empty list when a requeste
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]
+
+
+def write_back_yaml_sources(sources: Sequence[RedFlagSource], source_path: Path) -> None:
+    """Write enriched source records back to the original YAML file.
+
+    Rewrites the entire file with the serialized enriched records. Fields with
+    None values are excluded so the output stays clean.
+    """
+    entries = [source.model_dump(exclude_none=True) for source in sources]
+    with source_path.open("w", encoding="utf-8") as f:
+        yaml.dump(entries, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+    LOGGER.info("Wrote %d enriched record(s) back to %s", len(entries), source_path)
 
 
 def ingest_sources(
@@ -249,6 +295,16 @@ def main(argv: Sequence[str] | None = None) -> None:
         action="store_true",
         help="Disable OpenAI enrichment even when OPENAI_API_KEY is available.",
     )
+    parser.add_argument(
+        "--write-back-yaml",
+        action="store_true",
+        help=(
+            "Write enriched metadata back to the YAML source files. "
+            "Rewrites each file with the enriched record list. "
+            "Run once before building a corpus package to persist typology_family, "
+            "transaction_patterns, and key_terms to the authoritative source files."
+        ),
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -265,8 +321,33 @@ def main(argv: Sequence[str] | None = None) -> None:
             "OPENAI_API_KEY is not set; ingesting available metadata without auto-tagging."
         )
 
+    source_paths: list[Path] | None = args.sources or None
+
+    if args.write_back_yaml:
+        paths = list(source_paths) if source_paths is not None else discover_source_files()
+        for path in paths:
+            file_sources, invalid_count = load_sources([path])
+            if invalid_count:
+                LOGGER.warning("Skipping write-back for %s: %d invalid record(s)", path, invalid_count)
+                continue
+            enriched: list[RedFlagSource] = []
+            enriched_count = 0
+            for source in file_sources:
+                missing = missing_metadata_fields(source)
+                if tagger and missing:
+                    patch = tagger(source, missing)
+                    source = merge_metadata(source, patch, missing)
+                    warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
+                    warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
+                    warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)
+                    enriched_count += 1
+                enriched.append(source)
+            write_back_yaml_sources(enriched, path)
+            LOGGER.info("Enriched %d record(s) in %s", enriched_count, path)
+        return
+
     summary = ingest_sources(
-        args.sources or None,
+        source_paths,
         vector_dir=args.vectors_dir,
         tagger=tagger,
     )

@@ -23,10 +23,15 @@ class RedFlagSource(BaseModel):
     customer_profiles: list[str] | None = None
     geographic_footprints: list[str] | None = None
     regulatory_source: str | None = None
+    regulator: str | None = None
+    issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
     simulation_type: str | None = None
     source_url: str | None = None
+    typology_family: list[str] | None = None
+    transaction_patterns: list[str] | None = None
+    key_terms: list[str] | None = None
 
     @field_validator("risk_level")
     @classmethod
@@ -55,10 +60,15 @@ class RedFlagResult(BaseModel):
     customer_profiles: list[str] = Field(default_factory=list)
     geographic_footprints: list[str] = Field(default_factory=list)
     regulatory_source: str | None = None
+    regulator: str | None = None
+    issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
     simulation_type: str | None = None
     source_url: str | None = None
+    typology_family: list[str] = Field(default_factory=list)
+    transaction_patterns: list[str] = Field(default_factory=list)
+    key_terms: list[str] = Field(default_factory=list)
     score: float | None = None
     fit_explanation: str | None = None
     fit_signals: list[str] = Field(default_factory=list)
@@ -184,10 +194,15 @@ class RedFlagRecord(BaseModel):
     customer_profiles: list[str] = Field(default_factory=list)
     geographic_footprints: list[str] = Field(default_factory=list)
     regulatory_source: str | None = None
+    regulator: str | None = None
+    issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
     simulation_type: str | None = None
     source_url: str | None = None
+    typology_family: list[str] = Field(default_factory=list)
+    transaction_patterns: list[str] = Field(default_factory=list)
+    key_terms: list[str] = Field(default_factory=list)
     vector: list[float] = Field(default_factory=list)
 
     @field_validator("risk_level")
@@ -223,10 +238,15 @@ class RedFlagRecord(BaseModel):
             customer_profiles=_list_or_empty(source.customer_profiles),
             geographic_footprints=_list_or_empty(source.geographic_footprints),
             regulatory_source=source.regulatory_source,
+            regulator=source.regulator,
+            issued_date=source.issued_date,
             risk_level=source.risk_level,
             category=source.category,
             simulation_type=source.simulation_type,
             source_url=source.source_url,
+            typology_family=_list_or_empty(source.typology_family),
+            transaction_patterns=_list_or_empty(source.transaction_patterns),
+            key_terms=_list_or_empty(source.key_terms),
             vector=vector,
         )
 
@@ -239,9 +259,14 @@ class RedFlagRecord(BaseModel):
             customer_profiles=self.customer_profiles,
             geographic_footprints=self.geographic_footprints,
             regulatory_source=self.regulatory_source,
+            regulator=self.regulator,
+            issued_date=self.issued_date,
             risk_level=self.risk_level,
             category=self.category,
             simulation_type=self.simulation_type,
             source_url=self.source_url,
+            typology_family=self.typology_family,
+            transaction_patterns=self.transaction_patterns,
+            key_terms=self.key_terms,
             score=score,
         )

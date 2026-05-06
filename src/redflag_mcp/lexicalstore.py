@@ -17,16 +17,19 @@ from redflag_mcp.models import (
     SourceRedFlagSnippet,
 )
 
-LEXICAL_SCHEMA_VERSION = 1
+LEXICAL_SCHEMA_VERSION = 2
 SOURCE_DETAIL_SNIPPET_LIMIT = 10
 LIST_FILTER_FIELDS = (
     "product_types",
     "industry_types",
     "customer_profiles",
     "geographic_footprints",
+    "typology_family",
+    "transaction_patterns",
 )
-SCALAR_FILTER_FIELDS = ("category", "risk_level")
+SCALAR_FILTER_FIELDS = ("category", "risk_level", "regulator")
 DISTINCT_FILTER_FIELDS = LIST_FILTER_FIELDS + SCALAR_FILTER_FIELDS
+JSON_LIST_FIELDS = (*LIST_FILTER_FIELDS, "key_terms")
 RISK_ORDER = {"high": 0, "medium": 1, "low": 2}
 
 
@@ -36,8 +39,13 @@ class LexicalRedFlagFilters:
     industry_types: list[str] | None = None
     customer_profiles: list[str] | None = None
     geographic_footprints: list[str] | None = None
+    typology_family: list[str] | None = None
+    transaction_patterns: list[str] | None = None
     category: str | None = None
     risk_level: str | None = None
+    regulator: str | None = None
+    issued_after: str | None = None
+    issued_before: str | None = None
     regulatory_source: str | None = None
     source_url: str | None = None
     source_id: str | None = None
@@ -49,6 +57,8 @@ class LexicalRedFlagFilters:
             getattr(self, field_name)
             for field_name in (
                 *SCALAR_FILTER_FIELDS,
+                "issued_after",
+                "issued_before",
                 "regulatory_source",
                 "source_url",
                 "source_id",
@@ -125,8 +135,13 @@ class LexicalStore:
         industry_types: list[str] | None = None,
         customer_profiles: list[str] | None = None,
         geographic_footprints: list[str] | None = None,
+        typology_family: list[str] | None = None,
+        transaction_patterns: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
+        regulator: str | None = None,
+        issued_after: str | None = None,
+        issued_before: str | None = None,
     ) -> list[RedFlagResult]:
         if limit <= 0:
             return []
@@ -135,8 +150,13 @@ class LexicalStore:
             industry_types=industry_types,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
+            typology_family=typology_family,
+            transaction_patterns=transaction_patterns,
             category=category,
             risk_level=risk_level,
+            regulator=regulator,
+            issued_after=issued_after,
+            issued_before=issued_before,
         )
         expanded = self._expand_query(query)
         if not expanded.terms:
@@ -320,10 +340,11 @@ def create_lexical_store(
                 """
                 INSERT INTO red_flags (
                     id, description, product_types, industry_types, customer_profiles,
-                    geographic_footprints, regulatory_source, risk_level, category,
-                    simulation_type, source_url
+                    geographic_footprints, regulatory_source, regulator, issued_date,
+                    risk_level, category, simulation_type, source_url,
+                    typology_family, transaction_patterns, key_terms
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     row["id"],
@@ -333,10 +354,15 @@ def create_lexical_store(
                     json.dumps(row["customer_profiles"], sort_keys=True),
                     json.dumps(row["geographic_footprints"], sort_keys=True),
                     row.get("regulatory_source"),
+                    row.get("regulator"),
+                    row.get("issued_date"),
                     row.get("risk_level"),
                     row.get("category"),
                     row.get("simulation_type"),
                     row.get("source_url"),
+                    json.dumps(row["typology_family"], sort_keys=True),
+                    json.dumps(row["transaction_patterns"], sort_keys=True),
+                    json.dumps(row["key_terms"], sort_keys=True),
                 ),
             )
             connection.execute(
@@ -361,10 +387,15 @@ def _create_schema(connection: sqlite3.Connection) -> None:
             customer_profiles TEXT NOT NULL,
             geographic_footprints TEXT NOT NULL,
             regulatory_source TEXT,
+            regulator TEXT,
+            issued_date TEXT,
             risk_level TEXT,
             category TEXT,
             simulation_type TEXT,
-            source_url TEXT
+            source_url TEXT,
+            typology_family TEXT NOT NULL,
+            transaction_patterns TEXT NOT NULL,
+            key_terms TEXT NOT NULL
         )
         """
     )
@@ -416,7 +447,7 @@ def _required_metadata_value(connection: sqlite3.Connection, key: str) -> str:
 
 
 def _decode_row(row: dict[str, Any]) -> dict[str, Any]:
-    for field in LIST_FILTER_FIELDS:
+    for field in JSON_LIST_FIELDS:
         if isinstance(row.get(field), str):
             row[field] = json.loads(row[field] or "[]")
         else:
@@ -499,6 +530,10 @@ def _metadata_fit_signals(
         signals.append(f"Risk level matches {filters.risk_level}.")
     elif result.risk_level:
         signals.append(f"Risk level is {result.risk_level}.")
+    if filters.regulator and result.regulator == filters.regulator:
+        signals.append(f"Regulator matches {filters.regulator}.")
+    elif result.regulator:
+        signals.append(f"Regulator is {result.regulator}.")
     if result.regulatory_source:
         signals.append(f"Source is {result.regulatory_source}.")
     return signals
@@ -514,6 +549,10 @@ def _matches_all_filters(row: dict[str, Any], filters: LexicalRedFlagFilters) ->
         required = getattr(filters, field)
         if required and decoded.get(field) != required:
             return False
+    if filters.issued_after and (decoded.get("issued_date") or "") < filters.issued_after:
+        return False
+    if filters.issued_before and (decoded.get("issued_date") or "") > filters.issued_before:
+        return False
     return True
 
 
