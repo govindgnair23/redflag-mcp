@@ -306,6 +306,17 @@ def test_source_accepts_regulator_field():
     assert source.regulator == "FinCEN"
 
 
+def test_source_accepts_optional_regulator_jurisdiction_field():
+    source = RedFlagSource(
+        id="reg-jurisdiction-01",
+        description="Test",
+        regulator="AMF-France",
+        regulator_jurisdiction="FR",
+    )
+
+    assert source.regulator_jurisdiction == "FR"
+
+
 def test_source_accepts_unknown_regulator_without_error():
     from pydantic import ValidationError as _VE
     try:
@@ -325,11 +336,13 @@ def test_record_from_source_carries_regulator_and_date():
         id="carry-01",
         description="Test",
         regulator="OFAC",
+        regulator_jurisdiction="US",
         issued_date="2023-06",
     )
     vector = [0.0] * EMBEDDING_DIM
     record = RedFlagRecord.from_source(source, vector)
     assert record.regulator == "OFAC"
+    assert record.regulator_jurisdiction == "US"
     assert record.issued_date == "2023-06"
 
 
@@ -338,12 +351,14 @@ def test_result_carries_regulator_and_date():
         id="result-carry-01",
         description="Test",
         regulator="FATF",
+        regulator_jurisdiction="FATF",
         issued_date="2021",
     )
     vector = [0.0] * EMBEDDING_DIM
     record = RedFlagRecord.from_source(source, vector)
     result = record.to_result()
     assert result.regulator == "FATF"
+    assert result.regulator_jurisdiction == "FATF"
     assert result.issued_date == "2021"
     assert "vector" not in result.model_dump()
 

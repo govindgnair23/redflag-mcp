@@ -44,16 +44,18 @@ load_dotenv()
 # Add src to path so we can import redflag_mcp
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from redflag_mcp.config import (
+from redflag_mcp.config import (  # noqa: E402
+    CATEGORIES,
     CUSTOMER_PROFILES,
     GEOGRAPHIC_FOOTPRINTS,
     INDUSTRY_TYPES,
+    PRODUCT_TYPES,
     REGULATORS,
     RISK_LEVELS,
-    SIMULATION_TYPES,
     SOURCE_DIR,
+    jurisdiction_for_regulator,
 )
-from redflag_mcp.models import RedFlagSource
+from redflag_mcp.models import RedFlagSource  # noqa: E402
 
 DEFAULT_MODEL = "gpt-4o-mini"
 DEFAULT_PARALLEL_WORKERS = 4
@@ -227,7 +229,7 @@ For each indicator identified in Step 1, populate the following fields:
 
 - "description" (string, required): The indicator's exact wording from the source, including any embedded example clause. No paraphrasing, no generalization, no truncation. If the indicator is embedded mid-sentence, extract the indicator clause itself with its wording preserved.
 
-- "product_types" (list of strings): Financial products or channels offered by the institution that this indicator applies to. Choose from: "deposits", "credit_card", "prepaid", "securities", "insurance", "crypto", "private_banking", "correspondent_banking", "trade_finance", "remittance", "check_cashing", "currency_exchange". Include all that apply. This field is about the institution's product surface, not about who the customer is — customer-side institution categories such as "money transmitter" or "MSB" belong in industry_types.
+- "product_types" (list of strings): Financial products or channels offered by the institution that this indicator applies to. Prefer these values when applicable: {sorted(PRODUCT_TYPES)}. Include all that apply. This field is about the institution's product surface, not about who the customer is — customer-side institution categories such as "money transmitter" or "MSB" belong in industry_types.
 
 - "industry_types" (list of strings): Customer industries or business sectors involved. Prefer these values when applicable: {sorted(INDUSTRY_TYPES)}. Empty list when no industry is implied.
 
@@ -239,6 +241,8 @@ For each indicator identified in Step 1, populate the following fields:
 
 - "regulator" (string): Abbreviated name of the issuing regulatory authority. Choose from: {sorted(REGULATORS)}. Use null when the issuing authority is not represented in the list or cannot be identified from the document.
 
+- Do not emit regulator_jurisdiction. It is assigned deterministically by code from the extracted regulator after validation.
+
 - "issued_date" (string): Publication date of the issuing document in ISO 8601 format (YYYY-MM-DD). Use YYYY-MM if only the month is known, YYYY if only the year is known. Use null if the date cannot be determined from the document.
 
 - "risk_level" (string): Standalone inferential strength of this indicator — how much suspicion the indicator alone justifies before corroboration. One of: {sorted(RISK_LEVELS)}.
@@ -248,7 +252,7 @@ For each indicator identified in Step 1, populate the following fields:
 
   Do not infer risk_level from the typology category. A generic structuring or sanctions reference is not automatically "high" — anchor on how specific and self-contained the observable behavior is.
 
-- "category" (string): Primary AML typology. One of: "structuring", "layering", "sanctions_evasion", "terrorist_financing", "fraud_nexus", "corruption", "shell_company", "trade_based_ml", "cyber_enabled", "ransomware", "virtual_currency". When multiple apply, choose the one most specific to the observable behavior described, not the broadest.
+- "category" (string): Primary AML typology. Choose from: {sorted(CATEGORIES)}. When multiple apply, choose the one most specific to the observable behavior described, not the broadest.
 
 When in doubt about any metadata field, prefer narrower lists over speculation.
 
@@ -330,6 +334,11 @@ def validate_and_build_entries(
         flag["id"] = entry_id
         if source_url:
             flag["source_url"] = source_url
+        jurisdiction = jurisdiction_for_regulator(flag.get("regulator"))
+        if jurisdiction:
+            flag["regulator_jurisdiction"] = jurisdiction
+        else:
+            flag.pop("regulator_jurisdiction", None)
 
         try:
             source = RedFlagSource(**flag)

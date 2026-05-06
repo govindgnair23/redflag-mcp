@@ -28,7 +28,7 @@ LIST_FILTER_FIELDS = (
     "typology_family",
     "transaction_patterns",
 )
-SCALAR_FILTER_FIELDS = ("category", "risk_level", "regulator")
+SCALAR_FILTER_FIELDS = ("category", "risk_level", "regulator", "regulator_jurisdiction")
 DISTINCT_FILTER_FIELDS = LIST_FILTER_FIELDS + SCALAR_FILTER_FIELDS
 RISK_ORDER = {"high": 0, "medium": 1, "low": 2}
 
@@ -44,6 +44,7 @@ class RedFlagFilters:
     category: str | None = None
     risk_level: str | None = None
     regulator: str | None = None
+    regulator_jurisdiction: str | None = None
     issued_after: str | None = None
     issued_before: str | None = None
     regulatory_source: str | None = None
@@ -96,6 +97,7 @@ def red_flag_schema() -> pa.Schema:
             pa.field("geographic_footprints", pa.list_(pa.string())),
             pa.field("regulatory_source", pa.string()),
             pa.field("regulator", pa.string()),
+            pa.field("regulator_jurisdiction", pa.string()),
             pa.field("issued_date", pa.string()),
             pa.field("risk_level", pa.string()),
             pa.field("category", pa.string()),
@@ -141,6 +143,10 @@ def search(
     geographic_footprints: list[str] | None = None,
     category: str | None = None,
     risk_level: str | None = None,
+    regulator: str | None = None,
+    regulator_jurisdiction: str | None = None,
+    issued_after: str | None = None,
+    issued_before: str | None = None,
 ) -> list[RedFlagResult]:
     if limit <= 0 or table.count_rows() == 0:
         return []
@@ -152,11 +158,16 @@ def search(
         geographic_footprints=geographic_footprints,
         category=category,
         risk_level=risk_level,
+        regulator=regulator,
+        regulator_jurisdiction=regulator_jurisdiction,
+        issued_after=issued_after,
+        issued_before=issued_before,
     )
     scalar_where = _scalar_where(
         category=filters.category,
         risk_level=filters.risk_level,
         regulator=filters.regulator,
+        regulator_jurisdiction=filters.regulator_jurisdiction,
         issued_after=filters.issued_after,
         issued_before=filters.issued_before,
     )
@@ -387,6 +398,7 @@ def _scalar_where(
     category: str | None,
     risk_level: str | None,
     regulator: str | None = None,
+    regulator_jurisdiction: str | None = None,
     issued_after: str | None = None,
     issued_before: str | None = None,
 ) -> str | None:
@@ -397,6 +409,10 @@ def _scalar_where(
         conditions.append(f"risk_level = '{_escape_sql_string(risk_level)}'")
     if regulator:
         conditions.append(f"regulator = '{_escape_sql_string(regulator)}'")
+    if regulator_jurisdiction:
+        conditions.append(
+            f"regulator_jurisdiction = '{_escape_sql_string(regulator_jurisdiction)}'"
+        )
     if issued_after:
         conditions.append(f"issued_date >= '{_escape_sql_string(issued_after)}'")
     if issued_before:

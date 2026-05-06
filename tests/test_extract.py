@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 from unittest.mock import MagicMock, patch
@@ -27,9 +26,14 @@ from extract import (
     write_yaml,
 )
 from redflag_mcp.config import (
+    CATEGORIES,
     CUSTOMER_PROFILES,
     GEOGRAPHIC_FOOTPRINTS,
     INDUSTRY_TYPES,
+    PRODUCT_TYPES,
+    REGULATOR_JURISDICTIONS,
+    REGULATORS,
+    jurisdiction_for_regulator,
 )
 from redflag_mcp.models import RedFlagSource
 
@@ -47,12 +51,45 @@ class TestBuildExtractionPrompt:
         messages = build_extraction_prompt("Document text")
         system_prompt = messages[0]["content"]
 
+        assert "depository" in PRODUCT_TYPES
+        assert "depository" in system_prompt
+        assert "trade_based_money_laundering" in CATEGORIES
+        assert "trade_based_money_laundering" in system_prompt
+        assert "trade_based_ml" not in system_prompt
         assert "oil_and_gas" in INDUSTRY_TYPES
         assert "oil_and_gas" in system_prompt
         assert "shell_or_front_company" in CUSTOMER_PROFILES
         assert "shell_or_front_company" in system_prompt
         assert "southwest_border" in GEOGRAPHIC_FOOTPRINTS
         assert "southwest_border" in system_prompt
+        for regulator in ("AMLA", "ESMA", "MAS", "HKMA", "ASIC", "APRA"):
+            assert regulator in REGULATORS
+            assert regulator in system_prompt
+
+    def test_regulator_jurisdiction_is_not_llm_extracted(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "regulator_jurisdiction" in system_prompt
+        assert "Do not emit regulator_jurisdiction" in system_prompt
+
+    def test_representative_regulator_jurisdiction_mappings(self):
+        expected = {
+            "FinCEN": "US",
+            "AMF-France": "FR",
+            "ACPR": "FR",
+            "MAS": "SG",
+            "AUSTRAC": "AU",
+            "ASIC": "AU",
+            "APRA": "AU",
+            "FCA": "GB",
+            "AMLA": "EU",
+            "ESMA": "EU",
+        }
+
+        for regulator, jurisdiction in expected.items():
+            assert REGULATOR_JURISDICTIONS[regulator] == jurisdiction
+            assert jurisdiction_for_regulator(regulator) == jurisdiction
 
 
 class TestSlugify:
@@ -188,6 +225,22 @@ class TestValidateAndBuildEntries:
         assert entries[0]["id"] == "seq-01"
         assert entries[9]["id"] == "seq-10"
         assert entries[14]["id"] == "seq-15"
+
+    def test_regulator_jurisdiction_is_derived_from_regulator(self):
+        raw = [
+            {
+                "description": "French regulator identifies suspicious securities activity.",
+                "regulator": "AMF-France",
+                "regulator_jurisdiction": "US",
+                "risk_level": "medium",
+            }
+        ]
+
+        entries, skipped = validate_and_build_entries(raw, "france")
+
+        assert skipped == 0
+        assert entries[0]["regulator"] == "AMF-France"
+        assert entries[0]["regulator_jurisdiction"] == "FR"
 
 
 class TestWriteYaml:

@@ -24,6 +24,7 @@ def make_record(
     category: str = "fraud_nexus",
     regulatory_source: str | None = "FinCEN Alert",
     regulator: str | None = None,
+    regulator_jurisdiction: str | None = None,
     issued_date: str | None = None,
     source_url: str | None = "https://example.com/source.pdf",
     typology_family: list[str] | None = None,
@@ -39,6 +40,7 @@ def make_record(
         geographic_footprints=geographic_footprints or [],
         regulatory_source=regulatory_source,
         regulator=regulator,
+        regulator_jurisdiction=regulator_jurisdiction,
         issued_date=issued_date,
         risk_level=risk_level,
         category=category,
@@ -174,6 +176,7 @@ def test_enriched_metadata_round_trips_through_lexical_store(tmp_path):
                 transaction_patterns=["trade_document_manipulation"],
                 key_terms=["TBML", "invoice mismatch"],
                 regulator="FinCEN",
+                regulator_jurisdiction="US",
                 issued_date="2022-06",
             )
         ],
@@ -188,6 +191,7 @@ def test_enriched_metadata_round_trips_through_lexical_store(tmp_path):
     assert result.transaction_patterns == ["trade_document_manipulation"]
     assert result.key_terms == ["TBML", "invoice mismatch"]
     assert result.regulator == "FinCEN"
+    assert result.regulator_jurisdiction == "US"
     assert result.issued_date == "2022-06"
 
 
@@ -200,7 +204,8 @@ def test_filter_red_flags_supports_enriched_metadata(tmp_path):
                 "match",
                 typology_family=["trade_based_money_laundering"],
                 transaction_patterns=["trade_document_manipulation"],
-                regulator="FinCEN",
+                regulator="AMF-France",
+                regulator_jurisdiction="FR",
                 issued_date="2022-06",
             ),
             make_record(
@@ -208,6 +213,7 @@ def test_filter_red_flags_supports_enriched_metadata(tmp_path):
                 typology_family=["fraud_proceeds"],
                 transaction_patterns=["structuring"],
                 regulator="OFAC",
+                regulator_jurisdiction="US",
                 issued_date="2023-01",
             ),
         ],
@@ -220,7 +226,7 @@ def test_filter_red_flags_supports_enriched_metadata(tmp_path):
         filters=LexicalRedFlagFilters(
             typology_family=["trade_based_money_laundering"],
             transaction_patterns=["trade_document_manipulation"],
-            regulator="FinCEN",
+            regulator_jurisdiction="FR",
             issued_after="2022",
             issued_before="2022-12",
         ),
@@ -239,12 +245,14 @@ def test_list_distinct_values_includes_enriched_filters(tmp_path):
                 typology_family=["trade_based_money_laundering"],
                 transaction_patterns=["trade_document_manipulation"],
                 regulator="FinCEN",
+                regulator_jurisdiction="US",
             ),
             make_record(
                 "two",
                 typology_family=["fraud_proceeds"],
                 transaction_patterns=["structuring"],
                 regulator="OFAC",
+                regulator_jurisdiction="US",
             ),
         ],
         corpus=corpus_metadata(),
@@ -256,6 +264,7 @@ def test_list_distinct_values_includes_enriched_filters(tmp_path):
     assert filters["typology_family"] == ["fraud_proceeds", "trade_based_money_laundering"]
     assert filters["transaction_patterns"] == ["structuring", "trade_document_manipulation"]
     assert filters["regulator"] == ["FinCEN", "OFAC"]
+    assert filters["regulator_jurisdiction"] == ["US"]
 
 
 def test_empty_query_with_filters_uses_metadata_filtering(tmp_path):

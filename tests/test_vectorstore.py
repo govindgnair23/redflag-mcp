@@ -28,6 +28,8 @@ def make_record(
     risk_level: str = "medium",
     category: str = "fraud_nexus",
     regulatory_source: str | None = "FinCEN Alert",
+    regulator: str | None = None,
+    regulator_jurisdiction: str | None = None,
     source_url: str | None = "https://example.com/source.pdf",
 ) -> RedFlagRecord:
     return RedFlagRecord(
@@ -38,6 +40,8 @@ def make_record(
         customer_profiles=customer_profiles or [],
         geographic_footprints=geographic_footprints or [],
         regulatory_source=regulatory_source,
+        regulator=regulator,
+        regulator_jurisdiction=regulator_jurisdiction,
         risk_level=risk_level,
         category=category,
         source_url=source_url,
@@ -188,6 +192,7 @@ def test_list_distinct_values_returns_sorted_filters(tmp_vectors_dir):
                 geographic_footprints=["mexico"],
                 risk_level="high",
                 category="layering",
+                regulator_jurisdiction="US",
             ),
             make_record(
                 "two",
@@ -198,6 +203,7 @@ def test_list_distinct_values_returns_sorted_filters(tmp_vectors_dir):
                 geographic_footprints=["domestic_us"],
                 risk_level="medium",
                 category="fraud_nexus",
+                regulator_jurisdiction="FR",
             ),
         ],
     )
@@ -210,6 +216,7 @@ def test_list_distinct_values_returns_sorted_filters(tmp_vectors_dir):
     assert filters["geographic_footprints"] == ["domestic_us", "mexico"]
     assert filters["risk_level"] == ["high", "medium"]
     assert filters["category"] == ["fraud_nexus", "layering"]
+    assert filters["regulator_jurisdiction"] == ["FR", "US"]
 
 
 def test_list_sources_aggregates_records_by_source_url(tmp_vectors_dir):
@@ -442,3 +449,22 @@ def test_filter_red_flags_returns_deterministic_order(tmp_vectors_dir):
     )
 
     assert [result.id for result in results] == ["high-a", "high-b", "medium-b"]
+
+
+def test_filter_red_flags_applies_regulator_jurisdiction(tmp_vectors_dir):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record("fr", vector(1.0), regulator="AMF-France", regulator_jurisdiction="FR"),
+            make_record("us", vector(1.0), regulator="FinCEN", regulator_jurisdiction="US"),
+        ],
+    )
+
+    results = filter_red_flags(
+        table,
+        filters=RedFlagFilters(regulator_jurisdiction="FR"),
+    )
+
+    assert [result.id for result in results] == ["fr"]
+    assert results[0].regulator_jurisdiction == "FR"

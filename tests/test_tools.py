@@ -39,6 +39,7 @@ def make_record(
     risk_level: str = "medium",
     category: str = "fraud_nexus",
     regulator: str | None = None,
+    regulator_jurisdiction: str | None = None,
     issued_date: str | None = None,
     typology_family: list[str] | None = None,
     transaction_patterns: list[str] | None = None,
@@ -53,6 +54,7 @@ def make_record(
         geographic_footprints=geographic_footprints or [],
         regulatory_source="FinCEN Alert FIN-2025-Alert001",
         regulator=regulator,
+        regulator_jurisdiction=regulator_jurisdiction,
         issued_date=issued_date,
         risk_level=risk_level,
         category=category,
@@ -90,6 +92,7 @@ def seeded_corpus_service(tmp_path) -> RedFlagService:
                 risk_level="high",
                 category="trade_based_money_laundering",
                 regulator="FinCEN",
+                regulator_jurisdiction="US",
                 issued_date="2022-06",
                 typology_family=["trade_based_money_laundering"],
                 transaction_patterns=["trade_document_manipulation"],
@@ -124,6 +127,7 @@ def seeded_service(tmp_vectors_dir) -> RedFlagService:
                 geographic_footprints=["southwest_border"],
                 risk_level="high",
                 category="layering",
+                regulator_jurisdiction="US",
             ),
             make_record(
                 "benefits-01",
@@ -134,6 +138,7 @@ def seeded_service(tmp_vectors_dir) -> RedFlagService:
                 geographic_footprints=["domestic_us"],
                 risk_level="medium",
                 category="fraud_nexus",
+                regulator_jurisdiction="US",
             ),
         ],
     )
@@ -152,6 +157,7 @@ def test_list_filters_returns_all_dimensions(tmp_vectors_dir):
     assert filters["geographic_footprints"] == ["domestic_us", "southwest_border"]
     assert filters["category"] == ["fraud_nexus", "layering"]
     assert filters["risk_level"] == ["high", "medium"]
+    assert filters["regulator_jurisdiction"] == ["US"]
 
 
 def test_search_returns_clamped_sourced_results(tmp_vectors_dir):
@@ -321,6 +327,15 @@ def test_corpus_filter_red_flags_supports_enriched_metadata(tmp_path):
 
     assert [result["id"] for result in response["results"]] == ["tbml-01"]
     assert response["results"][0]["typology_family"] == ["trade_based_money_laundering"]
+
+
+def test_filter_red_flags_supports_regulator_jurisdiction(tmp_path):
+    service = seeded_corpus_service(tmp_path)
+
+    response = service.filter_red_flags(regulator_jurisdiction="US")
+
+    assert [result["id"] for result in response["results"]] == ["tbml-01"]
+    assert response["results"][0]["regulator_jurisdiction"] == "US"
 
 
 def test_classify_red_flag_request_routes_metadata_only_context(tmp_vectors_dir):
