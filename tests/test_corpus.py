@@ -10,7 +10,12 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-from build_corpus import build_corpus_package, build_release_index  # noqa: E402
+from build_corpus import (  # noqa: E402
+    build_corpus_package,
+    build_release_index,
+    discover_source_files,
+    select_corpus_source_paths,
+)
 from verify_corpus import verify_corpus_package  # noqa: E402
 
 
@@ -124,6 +129,59 @@ def test_build_empty_corpus_fails(tmp_path):
             version="2026.04.29",
             build_timestamp="2026-04-29T12:00:00Z",
         )
+
+
+def test_discover_source_files_excludes_hidden_yaml(tmp_path):
+    visible = tmp_path / "001_visible.yaml"
+    hidden = tmp_path / ".extracted_sources.yaml"
+    non_yaml = tmp_path / "notes.txt"
+    visible.write_text("[]")
+    hidden.write_text("[]")
+    non_yaml.write_text("not yaml")
+
+    assert discover_source_files(tmp_path) == [visible]
+
+
+def test_select_corpus_source_paths_uses_all_visible_sources(tmp_path):
+    first = tmp_path / "001_first.yaml"
+    second = tmp_path / "002_second.yaml"
+    hidden = tmp_path / ".extracted_sources.yaml"
+    first.write_text("[]")
+    second.write_text("[]")
+    hidden.write_text("[]")
+
+    selected = select_corpus_source_paths(
+        [],
+        all_sources=True,
+        source_dir=tmp_path,
+    )
+
+    assert selected == [first, second]
+
+
+def test_select_corpus_source_paths_preserves_explicit_paths(tmp_path):
+    first = tmp_path / "001_first.yaml"
+    second = tmp_path / "002_second.yaml"
+
+    selected = select_corpus_source_paths(
+        [second, first],
+        all_sources=False,
+        source_dir=tmp_path,
+    )
+
+    assert selected == [second, first]
+
+
+def test_select_corpus_source_paths_rejects_all_sources_with_explicit_paths(tmp_path):
+    source = tmp_path / "001_source.yaml"
+
+    with pytest.raises(ValueError, match="cannot be used with explicit source paths"):
+        select_corpus_source_paths([source], all_sources=True, source_dir=tmp_path)
+
+
+def test_select_corpus_source_paths_requires_a_selection(tmp_path):
+    with pytest.raises(ValueError, match="Provide source paths or pass --all-sources"):
+        select_corpus_source_paths([], all_sources=False, source_dir=tmp_path)
 
 
 def test_verify_detects_sqlite_hash_mismatch(tmp_path):
