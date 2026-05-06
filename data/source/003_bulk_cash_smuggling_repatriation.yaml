@@ -8,17 +8,36 @@
     of goods.
   product_types:
   - deposits
+  - correspondent_banking
   - remittance
-  industry_types: []
+  - trade_finance
+  industry_types:
+  - import_export
+  - retail
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: high
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - bulk cash smuggling
+  - repatriation
+  - southwest border
+  - Mexico
+  - financial institution
+  - large volume goods
 - id: 003_bulk_cash_smuggling_repatriation-02
   description: Large volumes of cash are transported by an ACS or passenger vehicles
     to an U.S.-based MSB located along the southwest border and rapidly transferred
@@ -35,9 +54,24 @@
   - southwest_border
   - mexico
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: high
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - bulk cash smuggling
+  - MSB
+  - southwest border
+  - Mexico
+  - rapid transfer
 - id: 003_bulk_cash_smuggling_repatriation-03
   description: A customer that owns a Mexico-based business, or a customer with an
     affiliated Mexico-based business, receives a large credit from a U.S.-based ACS
@@ -50,9 +84,22 @@
   geographic_footprints:
   - mexico
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - cash_intensive_behavior
+  key_terms:
+  - large credit
+  - cross-border transactions
+  - Mexico-based business
+  - U.S. financial institution
 - id: 003_bulk_cash_smuggling_repatriation-04
   description: A customer that owns a Mexico-based business receives a large credit
     into their account at a U.S.-based financial institution after depositing bulk
@@ -60,32 +107,63 @@
     storage facility.
   product_types:
   - deposits
-  industry_types: []
+  industry_types:
+  - money_services_business
+  - import_export
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - mexico
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - bulk cash smuggling
+  - repatriation
+  - large credit
+  - ACS secure storage
+  - Mexico-based business
 - id: 003_bulk_cash_smuggling_repatriation-05
   description: A customer that owns a Mexico-based business receives a large cross-border
     wire transfer to their account at a U.S.-based financial institution from a Canada-based
     financial institution.
   product_types:
-  - remittance
   - deposits
+  - correspondent_banking
+  - remittance
   industry_types: []
   customer_profiles:
   - cross_border_business
   geographic_footprints:
-  - mexico
   - canada
+  - mexico
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - cross-border wire transfer
+  - large transactions
+  - Mexico
+  - Canada
+  - U.S. financial institution
 - id: 003_bulk_cash_smuggling_repatriation-06
   description: A business in Mexico, near the southwest border of the United States,
     organizes the transportation of a large volume of cash to multiple locations throughout
@@ -103,9 +181,23 @@
   - southwest_border
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: high
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - bulk cash smuggling
+  - repatriation
+  - ACS transport
+  - no lawful purpose
+  - U.S. financial institution
 - id: 003_bulk_cash_smuggling_repatriation-07
   description: A Mexico-based business transporting cash into the United States is
     reluctant to provide information, or provides inconsistent information, on who
@@ -114,16 +206,31 @@
   product_types:
   - deposits
   - remittance
-  industry_types: []
+  industry_types:
+  - money_services_business
+  - import_export
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - mexico
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: medium
-  category: structuring
+  category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - FinCEN Form 105
+  - bulk cash smuggling
+  - currency originator
+  - cash repatriation
 - id: 003_bulk_cash_smuggling_repatriation-08
   description: A non-bank Mexico-based business organizes the transport of large volumes
     of USD into the United States, that are not commensurate with the size of the
@@ -131,16 +238,30 @@
   product_types:
   - deposits
   - remittance
-  industry_types: []
+  industry_types:
+  - money_services_business
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - mexico
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - bulk cash smuggling
+  - USD transport
+  - Mexico to US
+  - non-bank business
 - id: 003_bulk_cash_smuggling_repatriation-09
   description: A shipment of bulk cash is delivered via a Mexico or Canada-based ACS
     to a U.S.-based ACS without accompanying instructions or explanation for the purpose
@@ -157,9 +278,24 @@
   - canada
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2025-Alert001
-  risk_level: medium
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
+  risk_level: high
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - bulk cash
+  - repatriation
+  - ACS
+  - financial institution
+  - Mexico
+  - Canada
 - id: 003_bulk_cash_smuggling_repatriation-10
   description: A Mexico-based business or individual requests that bulk cash be transported
     or accepted by a U.S. financial institution but does not provide a clear explanation
@@ -168,12 +304,25 @@
   - deposits
   industry_types: []
   customer_profiles:
-  - cross_border_business
   - individual_consumer
+  - cross_border_business
   geographic_footprints:
   - mexico
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2025-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-03-31'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/BCS-Alert-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - bulk cash smuggling
+  - source of funds
+  - Mexico
+  - U.S. financial institution

@@ -11,9 +11,23 @@
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - cash_intensive_behavior
+  key_terms:
+  - government benefit program
+  - reimbursements
+  - sponsor
+  - NPO
+  - short timeframe
 - id: 001_federal_child_nutrition_fraud-02
   description: A customer is a recently established company or NPO enrolled in a government
     benefit program that is suddenly receiving a significant amount of Federal payments
@@ -28,9 +42,23 @@
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - cash_intensive_behavior
+  key_terms:
+  - Federal payments
+  - government benefit program
+  - recently established
+  - NPO
+  - significant amount
 - id: 001_federal_child_nutrition_fraud-03
   description: A customer is a recently established company or NPO enrolled in a government
     benefit program receiving payments to their accounts that are inconsistent with
@@ -45,9 +73,22 @@
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - invoice_mismatch
+  key_terms:
+  - government benefits
+  - recently established
+  - inconsistent payments
+  - NPO
 - id: 001_federal_child_nutrition_fraud-04
   description: A customer is a company or NPO enrolled in a government benefit program
     but is unable to verify its status to the financial institution or its customer
@@ -61,9 +102,22 @@
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
-  risk_level: low
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
+  risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - unusual_international_wires
+  key_terms:
+  - government benefit program
+  - verification issues
+  - NPO
+  - financial institution
 - id: 001_federal_child_nutrition_fraud-05
   description: A customer is a company or NPO enrolled in a government benefit program
     that is receiving a significant amount of reimbursements despite limited operations.
@@ -76,9 +130,23 @@
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  - third_party_payments
+  key_terms:
+  - government benefit program
+  - reimbursements
+  - limited operations
+  - NPO
+  - fraud
 - id: 001_federal_child_nutrition_fraud-06
   description: A customer is a recently established company or NPO enrolled in a government
     benefit program with a limited online presence.
@@ -92,9 +160,21 @@
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: low
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - government benefit program
+  - recently established
+  - limited online presence
 - id: 001_federal_child_nutrition_fraud-07
   description: A customer is a company or NPO enrolled in a government benefit program
     that has minimal to no operating costs other than payments for “consulting fees”
@@ -103,15 +183,27 @@
   - deposits
   industry_types:
   - charity_or_nonprofit
-  - food_service
   customer_profiles:
   - charity_or_nonprofit
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  - third_party_payments
+  key_terms:
+  - consulting fees
+  - government benefit program
+  - repetitive invoices
+  - food supplies
 - id: 001_federal_child_nutrition_fraud-08
   description: A customer that is a company or NPO enrolled in a government benefit
     program makes a significant amount of cash withdrawals.
@@ -124,9 +216,22 @@
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - cash withdrawals
+  - government benefit program
+  - NPO
+  - significant amount
 - id: 001_federal_child_nutrition_fraud-09
   description: A customer with previous fraud convictions is an employee of a company
     or NPO enrolled in a government benefit program.
@@ -135,13 +240,26 @@
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
-  - charity_or_nonprofit
+  - individual_consumer
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: low
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  key_terms:
+  - government benefit program
+  - fraud convictions
+  - NPO
+  - charity
 - id: 001_federal_child_nutrition_fraud-10
   description: A customer is an employee of a company or NPO enrolled in a government
     benefit program that is frequently purchasing or redeeming cashier’s checks for
@@ -151,13 +269,26 @@
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
-  - charity_or_nonprofit
+  - individual_consumer
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - cashier's checks
+  - government benefit program
+  - NPO
+  - frequent transactions
 - id: 001_federal_child_nutrition_fraud-11
   description: A customer that is a company or NPO, enrolled in a government benefit
     program, or the customer’s employee, engages in behavior suggesting efforts to
@@ -171,12 +302,27 @@
   - charity_or_nonprofit
   customer_profiles:
   - charity_or_nonprofit
+  - individual_consumer
   geographic_footprints:
   - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: high
   category: structuring
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - structuring
+  - cash_intensive_behavior
+  key_terms:
+  - Currency Transaction Report
+  - CTR
+  - structuring
+  - government benefit program
+  - cash transactions under $10,000
 - id: 001_federal_child_nutrition_fraud-12
   description: A customer is a company or NPO enrolled in a government benefit program
     meant for U.S. citizens and lawful permanent residents that is sending a significant
@@ -191,12 +337,25 @@
   - charity_or_nonprofit
   - cross_border_business
   geographic_footprints:
-  - foreign_individual
-  - foreign_financial_institution
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - government benefit program
+  - wire transfers
+  - foreign jurisdictions
+  - NPO
+  - charity fraud
 - id: 001_federal_child_nutrition_fraud-13
   description: A customer is a company or NPO enrolled in a government benefit program
     that is sending payments abroad for residential and commercial real estate, vehicles,
@@ -213,8 +372,21 @@
   - charity_or_nonprofit
   - cross_border_business
   geographic_footprints:
-  - foreign_individual
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2026-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-01-09'
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-01/FinCEN-Alert-Federal-Child-Nutrition-Programs.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - government benefit program
+  - real estate payments
+  - luxury goods
+  - cross-border transactions

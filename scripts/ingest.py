@@ -7,8 +7,10 @@ import argparse
 import json
 import logging
 import os
+import re
 import sys
 from collections.abc import Callable, Sequence
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -39,6 +41,7 @@ from redflag_mcp.vectorstore import get_or_create_table, open_store, upsert_reco
 
 LOGGER = logging.getLogger(__name__)
 DEFAULT_MODEL = "gpt-4o-mini"
+DEFAULT_PARALLEL_WORKERS = 4
 LIST_METADATA_FIELDS = (
     "product_types",
     "industry_types",
@@ -66,6 +69,45 @@ def discover_source_files(source_dir: Path = SOURCE_DIR) -> list[Path]:
     return sorted(
         path for path in source_dir.glob("*.yaml") if not path.name.startswith(".")
     )
+
+
+def parse_serial_range(value: str) -> tuple[int, int]:
+    match = re.fullmatch(r"(\d+)-(\d+)", value)
+    if not match:
+        raise ValueError("range must be in format NNN-NNN (e.g. 001-005)")
+    start, end = int(match.group(1)), int(match.group(2))
+    if start > end:
+        raise ValueError("range start must be <= end")
+    return start, end
+
+
+def source_file_serial(path: Path) -> int | None:
+    match = re.match(r"^(\d+)[_-]", path.name)
+    return int(match.group(1)) if match else None
+
+
+def filter_source_paths_by_range(
+    paths: Sequence[Path],
+    serial_range: tuple[int, int],
+) -> list[Path]:
+    start, end = serial_range
+    return [
+        path
+        for path in paths
+        if (serial := source_file_serial(path)) is not None and start <= serial <= end
+    ]
+
+
+def select_write_back_paths(
+    source_paths: Sequence[Path] | None,
+    *,
+    source_dir: Path = SOURCE_DIR,
+    serial_range: tuple[int, int] | None = None,
+) -> list[Path]:
+    paths = list(source_paths) if source_paths is not None else discover_source_files(source_dir)
+    if serial_range is not None:
+        paths = filter_source_paths_by_range(paths, serial_range)
+    return paths
 
 
 def load_sources(source_paths: Sequence[Path]) -> tuple[list[RedFlagSource], int]:
@@ -183,8 +225,16 @@ def merge_metadata(
     data = source.model_dump(exclude_none=True)
     for field in missing_fields:
         if field in patch and patch[field] not in (None, ""):
-            data[field] = patch[field]
+            data[field] = normalize_metadata_patch_value(field, patch[field])
     return RedFlagSource(**data)
+
+
+def normalize_metadata_patch_value(field: str, value: Any) -> Any:
+    if field not in LIST_METADATA_FIELDS:
+        return value
+    if isinstance(value, list):
+        return [item for item in value if item not in (None, "")]
+    return [value]
 
 
 def build_openai_tagger(api_key: str, model: str = DEFAULT_MODEL) -> MetadataTagger:
@@ -269,6 +319,113 @@ def write_back_yaml_sources(sources: Sequence[RedFlagSource], source_path: Path)
     LOGGER.info("Wrote %d enriched record(s) back to %s", len(entries), source_path)
 
 
+def enrich_source_for_write_back(
+    source: RedFlagSource,
+    *,
+    tagger: MetadataTagger | None = None,
+) -> tuple[RedFlagSource, bool]:
+    source = derive_regulator_jurisdiction(source)
+    missing = missing_metadata_fields(source)
+    if tagger and missing:
+        patch = tagger(source, missing)
+        source = merge_metadata(source, patch, missing)
+        source = derive_regulator_jurisdiction(source)
+        warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
+        warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
+        warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)
+        return source, True
+    return source, False
+
+
+def write_back_yaml_file(
+    path: Path,
+    *,
+    tagger: MetadataTagger | None = None,
+) -> IngestSummary:
+    file_sources, invalid_count = load_sources([path])
+    if invalid_count:
+        LOGGER.warning("Skipping write-back for %s: %d invalid record(s)", path, invalid_count)
+        return IngestSummary(
+            source_files=1,
+            valid_records=len(file_sources),
+            invalid_records=invalid_count,
+            enriched_records=0,
+            upserted_records=0,
+        )
+
+    enriched: list[RedFlagSource] = []
+    enriched_count = 0
+    for source in file_sources:
+        source, changed_by_tagger = enrich_source_for_write_back(source, tagger=tagger)
+        if changed_by_tagger:
+            enriched_count += 1
+        enriched.append(source)
+    write_back_yaml_sources(enriched, path)
+    LOGGER.info("Enriched %d record(s) in %s", enriched_count, path)
+    return IngestSummary(
+        source_files=1,
+        valid_records=len(file_sources),
+        invalid_records=0,
+        enriched_records=enriched_count,
+        upserted_records=0,
+    )
+
+
+def combine_summaries(summaries: Sequence[IngestSummary]) -> IngestSummary:
+    return IngestSummary(
+        source_files=sum(summary.source_files for summary in summaries),
+        valid_records=sum(summary.valid_records for summary in summaries),
+        invalid_records=sum(summary.invalid_records for summary in summaries),
+        enriched_records=sum(summary.enriched_records for summary in summaries),
+        upserted_records=sum(summary.upserted_records for summary in summaries),
+    )
+
+
+def run_write_back_yaml(
+    paths: Sequence[Path],
+    *,
+    tagger: MetadataTagger | None = None,
+    workers: int | None = None,
+) -> IngestSummary:
+    if not paths:
+        LOGGER.info("No YAML source files selected for write-back.")
+        return IngestSummary(
+            source_files=0,
+            valid_records=0,
+            invalid_records=0,
+            enriched_records=0,
+            upserted_records=0,
+        )
+
+    if workers is None or workers <= 1:
+        return combine_summaries(
+            [write_back_yaml_file(path, tagger=tagger) for path in paths]
+        )
+
+    summaries: list[IngestSummary] = []
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {
+            executor.submit(write_back_yaml_file, path, tagger=tagger): path
+            for path in paths
+        }
+        for future in as_completed(futures):
+            path = futures[future]
+            try:
+                summaries.append(future.result())
+            except Exception as exc:
+                LOGGER.exception("Unexpected error writing back %s: %s", path, exc)
+                summaries.append(
+                    IngestSummary(
+                        source_files=1,
+                        valid_records=0,
+                        invalid_records=1,
+                        enriched_records=0,
+                        upserted_records=0,
+                    )
+                )
+    return combine_summaries(summaries)
+
+
 def ingest_sources(
     source_paths: Sequence[Path] | None = None,
     *,
@@ -326,6 +483,24 @@ def main(argv: Sequence[str] | None = None) -> None:
             "transaction_patterns, and key_terms to the authoritative source files."
         ),
     )
+    parser.add_argument(
+        "--range",
+        dest="serial_range",
+        help=(
+            "With --write-back-yaml, process only YAML files whose names start "
+            "with a serial in NNN-NNN format, e.g. 001-005."
+        ),
+    )
+    parser.add_argument(
+        "--parallel",
+        nargs="?",
+        const=DEFAULT_PARALLEL_WORKERS,
+        type=int,
+        help=(
+            "With --write-back-yaml, process YAML files in parallel. Optionally "
+            f"pass a worker count; defaults to {DEFAULT_PARALLEL_WORKERS}."
+        ),
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -343,30 +518,25 @@ def main(argv: Sequence[str] | None = None) -> None:
         )
 
     source_paths: list[Path] | None = args.sources or None
+    serial_range: tuple[int, int] | None = None
+    if args.serial_range:
+        try:
+            serial_range = parse_serial_range(args.serial_range)
+        except ValueError as exc:
+            parser.error(str(exc))
+    if args.parallel is not None and args.parallel < 1:
+        parser.error("--parallel worker count must be >= 1")
 
     if args.write_back_yaml:
-        paths = list(source_paths) if source_paths is not None else discover_source_files()
-        for path in paths:
-            file_sources, invalid_count = load_sources([path])
-            if invalid_count:
-                LOGGER.warning("Skipping write-back for %s: %d invalid record(s)", path, invalid_count)
-                continue
-            enriched: list[RedFlagSource] = []
-            enriched_count = 0
-            for source in file_sources:
-                source = derive_regulator_jurisdiction(source)
-                missing = missing_metadata_fields(source)
-                if tagger and missing:
-                    patch = tagger(source, missing)
-                    source = merge_metadata(source, patch, missing)
-                    source = derive_regulator_jurisdiction(source)
-                    warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
-                    warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
-                    warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)
-                    enriched_count += 1
-                enriched.append(source)
-            write_back_yaml_sources(enriched, path)
-            LOGGER.info("Enriched %d record(s) in %s", enriched_count, path)
+        paths = select_write_back_paths(source_paths, serial_range=serial_range)
+        summary = run_write_back_yaml(paths, tagger=tagger, workers=args.parallel)
+        LOGGER.info(
+            "Write-back processed %s file(s), %s valid record(s), %s invalid, %s enriched.",
+            summary.source_files,
+            summary.valid_records,
+            summary.invalid_records,
+            summary.enriched_records,
+        )
         return
 
     summary = ingest_sources(
