@@ -9,17 +9,35 @@
   - trade_finance
   industry_types:
   - oil_and_gas
+  - import_export
   - logistics
+  - transportation
   customer_profiles:
   - small_business
   - cross_border_business
   geographic_footprints:
   - southwest_border
   - mexico
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - invoice_mismatch
+  - cash_intensive_behavior
+  key_terms:
+  - oil smuggling
+  - cartels
+  - southwest border
+  - profit margins
+  - importing company
 - id: 002_oil_smuggling_cartels-02
   description: A customer is a small U.S.-based oil and natural gas company that is
     selling WTI crude oil and other types of crude oil for significantly less than
@@ -34,10 +52,24 @@
   - small_business
   geographic_footprints:
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - unusual_international_wires
+  key_terms:
+  - WTI crude oil
+  - market rate
+  - oil smuggling
+  - Mexico-based cartels
 - id: 002_oil_smuggling_cartels-03
   description: A customer is a small U.S.-based oil and natural gas company that is
     selling millions of dollars of crude oil per month but has no online presence
@@ -54,10 +86,26 @@
   - small_business
   geographic_footprints:
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - oil smuggling
+  - cartels
+  - crude oil sales
+  - legitimacy
+  - U.S. Southwest Border
 - id: 002_oil_smuggling_cartels-04
   description: A customer is a small U.S.-based oil and natural gas company that has
     a website indicating it is only a buyer or seller of crude oil, but the company
@@ -66,19 +114,32 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - oil_and_gas
   customer_profiles:
   - small_business
-  - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - invoice_mismatch
+  key_terms:
+  - waste oil
+  - hazardous materials
+  - wire transfers
+  - oil smuggling
+  - cartels
 - id: 002_oil_smuggling_cartels-05
   description: A customer is a small U.S.-based oil and natural gas company that is
     suddenly purchasing waste oil or other hazardous materials from a singular or
@@ -86,19 +147,33 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - oil_and_gas
   customer_profiles:
   - small_business
-  - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - invoice_mismatch
+  key_terms:
+  - waste oil
+  - hazardous materials
+  - oil smuggling
+  - cartels
+  - Mexico
+  - U.S. companies
 - id: 002_oil_smuggling_cartels-06
   description: A customer is a small U.S.-based oil and natural gas company that is
     sending wire transfers to Mexican or U.S. companies for waste oil or other hazardous
@@ -107,19 +182,32 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - oil_and_gas
   customer_profiles:
   - small_business
-  - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - trade_document_manipulation
+  key_terms:
+  - waste oil
+  - hazardous materials
+  - EPA registration
+  - wire transfers
+  - oil smuggling
 - id: 002_oil_smuggling_cartels-07
   description: A customer is a small U.S.-based oil and natural gas company that is
     sending wire transfers for waste oil or other hazardous materials to Mexican or
@@ -127,19 +215,33 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - oil_and_gas
   customer_profiles:
   - small_business
-  - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - trade_document_manipulation
+  key_terms:
+  - waste oil
+  - hazardous materials
+  - wire transfers
+  - oil smuggling
+  - cartels
+  - Mexico
 - id: 002_oil_smuggling_cartels-08
   description: A customer is a small U.S.-based oil and natural gas company that has
     a sudden and significant volume of transactional activity with one or a small
@@ -148,19 +250,32 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - oil_and_gas
   customer_profiles:
   - small_business
-  - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - oil smuggling
+  - shell company
+  - cartels
+  - transactional activity
+  - Mexico
 - id: 002_oil_smuggling_cartels-09
   description: A customer is a small U.S.-based oil and natural gas company that is
     receiving domestic and international wire transfers for invoices related to the
@@ -169,19 +284,33 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - oil_and_gas
   customer_profiles:
   - small_business
-  - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - invoice_mismatch
+  key_terms:
+  - crude oil
+  - waste oil
+  - hazardous materials
+  - wire transfers
+  - oil smuggling
+  - cartels
 - id: 002_oil_smuggling_cartels-10
   description: A customer is a U.S. importing company that is receiving wire transfers
     from U.S.-based oil and natural gas companies and sending wire transfers to Mexican
@@ -191,19 +320,33 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - import_export
-  - oil_and_gas
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - invoice_mismatch
+  key_terms:
+  - EPA registration
+  - waste oil
+  - hazardous materials
+  - wire transfers
+  - oil smuggling
+  - cartels
 - id: 002_oil_smuggling_cartels-11
   description: A customer is a U.S. importing company that is receiving wire transfers
     from a small U.S.-based oil and natural gas company for the sale of waste oil
@@ -212,19 +355,33 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - import_export
-  - oil_and_gas
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - mexico
   - southwest_border
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_ml
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - funnel_account_activity
+  key_terms:
+  - waste oil
+  - hazardous materials
+  - wire transfers
+  - Mexico
+  - oil smuggling
+  - cartels
 - id: 002_oil_smuggling_cartels-12
   description: A customer claims to be a U.S.-based company involved in the import
     of waste oil or other hazardous materials, but upon further review, appears to
@@ -232,7 +389,6 @@
   product_types:
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - import_export
   customer_profiles:
@@ -240,27 +396,57 @@
   - cross_border_business
   geographic_footprints:
   - mexico
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: high
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - waste oil
+  - hazardous materials
+  - shell company
+  - Mexican cartels
+  - import export
 - id: 002_oil_smuggling_cartels-13
   description: A customer is a U.S. company that is the ultimate consignee of purchases
     of waste oil or other hazardous materials but is registered to a residential address.
   product_types:
+  - trade_finance
   - deposits
   - correspondent_banking
-  - trade_finance
   industry_types:
   - import_export
   customer_profiles:
   - shell_or_front_company
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - unusual_international_wires
+  key_terms:
+  - waste oil
+  - hazardous materials
+  - residential address
+  - ultimate consignee
+  - Mexico-based cartels
 - id: 002_oil_smuggling_cartels-14
   description: A customer is a small U.S.-based oil and natural gas company, importing
     company, or freight company operating on the U.S. southwest border that is transacting
@@ -273,15 +459,31 @@
   - trade_finance
   industry_types:
   - oil_and_gas
-  - logistics
   - import_export
+  - logistics
+  - transportation
   customer_profiles:
   - small_business
   - cross_border_business
   geographic_footprints:
   - southwest_border
   - mexico
-  regulatory_source: FinCEN Alert FIN-2025-Alert002
-  risk_level: high
-  category: trade_based_ml
+  regulatory_source: FinCEN Alert FIN-2025-Alert002, FinCEN Alert on Oil Smuggling
+    Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-05-01'
+  risk_level: medium
+  category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Oil-Smuggling-FINAL-508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - trade_document_manipulation
+  key_terms:
+  - oil smuggling
+  - cartel activity
+  - U.S.-Mexico transactions
+  - OFAC designations
+  - freight company

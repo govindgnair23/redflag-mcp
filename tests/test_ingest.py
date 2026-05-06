@@ -4,6 +4,7 @@ import logging
 import sys
 from pathlib import Path
 
+import pytest
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
@@ -11,9 +12,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 from ingest import (  # noqa: E402
     build_records,
     discover_source_files,
+    filter_source_paths_by_range,
     ingest_sources,
     load_sources,
+    merge_metadata,
     missing_metadata_fields,
+    parse_serial_range,
+    run_write_back_yaml,
+    select_write_back_paths,
     warn_free_form_values,
     write_back_yaml_sources,
 )
@@ -242,6 +248,27 @@ def test_tagger_enriches_missing_new_fields():
     assert records[0].typology_family == ["trade_based_money_laundering"]
     assert records[0].transaction_patterns == ["trade_document_manipulation"]
     assert records[0].key_terms == ["TBML", "invoice fraud"]
+
+
+def test_merge_metadata_normalizes_scalar_list_field_patch():
+    source = RedFlagSource(
+        id="scalar-list-patch-01",
+        description="TBML invoice scheme for layering proceeds",
+    )
+
+    merged = merge_metadata(
+        source,
+        {
+            "typology_family": "trade_based_money_laundering",
+            "transaction_patterns": "trade_document_manipulation",
+            "key_terms": "TBML",
+        },
+        ["typology_family", "transaction_patterns", "key_terms"],
+    )
+
+    assert merged.typology_family == ["trade_based_money_laundering"]
+    assert merged.transaction_patterns == ["trade_document_manipulation"]
+    assert merged.key_terms == ["TBML"]
 
 
 def test_warn_free_form_values_logs_for_unknown_vocabulary(caplog):
@@ -474,3 +501,138 @@ def test_write_back_does_not_occur_without_flag(tmp_path, tmp_vectors_dir):
     ingest_sources([source_file], vector_dir=tmp_vectors_dir, embedding_model=FakeModel())
 
     assert source_file.read_text() == original_content
+
+
+def write_temp_source(
+    path: Path,
+    *,
+    record_id: str,
+    description: str = "Customer activity is suspicious.",
+    regulator: str | None = None,
+    risk_level: str | None = "medium",
+) -> None:
+    payload = {
+        "id": record_id,
+        "description": description,
+        "product_types": ["depository"],
+        "industry_types": ["retail"],
+        "customer_profiles": ["cash_intensive_business"],
+        "geographic_footprints": ["domestic_us"],
+        "regulatory_source": "FinCEN Alert",
+        "risk_level": risk_level,
+        "category": "structuring",
+        "issued_date": "2025",
+        "typology_family": ["fraud_proceeds"],
+        "transaction_patterns": ["structuring"],
+        "key_terms": ["cash"],
+    }
+    if regulator:
+        payload["regulator"] = regulator
+    path.write_text(yaml.safe_dump([payload], sort_keys=False))
+
+
+def test_select_write_back_paths_defaults_to_visible_yaml_files(tmp_path):
+    first = tmp_path / "001_first.yaml"
+    second = tmp_path / "002_second.yaml"
+    hidden = tmp_path / ".extracted_sources.yaml"
+    first.write_text("[]")
+    second.write_text("[]")
+    hidden.write_text("[]")
+
+    paths = select_write_back_paths(None, source_dir=tmp_path)
+
+    assert paths == [first, second]
+
+
+def test_select_write_back_paths_preserves_explicit_multiple_sources(tmp_path):
+    first = tmp_path / "001_first.yaml"
+    second = tmp_path / "002_second.yaml"
+    first.write_text("[]")
+    second.write_text("[]")
+
+    paths = select_write_back_paths([second, first], source_dir=tmp_path)
+
+    assert paths == [second, first]
+
+
+def test_filter_source_paths_by_range_uses_leading_serial_prefix(tmp_path):
+    paths = [
+        tmp_path / "001_first.yaml",
+        tmp_path / "002_second.yaml",
+        tmp_path / "010_tenth.yaml",
+        tmp_path / "no-prefix.yaml",
+    ]
+
+    filtered = filter_source_paths_by_range(paths, (1, 2))
+
+    assert filtered == paths[:2]
+
+
+def test_parse_serial_range_rejects_invalid_and_reversed_ranges():
+    assert parse_serial_range("001-003") == (1, 3)
+
+    for value in ("001", "abc-def"):
+        with pytest.raises(ValueError, match="format NNN-NNN"):
+            parse_serial_range(value)
+
+    with pytest.raises(ValueError, match="start must be <= end"):
+        parse_serial_range("005-001")
+
+
+def test_run_write_back_yaml_enriches_multiple_explicit_sources(tmp_path):
+    first = tmp_path / "001_first.yaml"
+    second = tmp_path / "002_second.yaml"
+    write_temp_source(first, record_id="first-01")
+    write_temp_source(second, record_id="second-01", regulator="FinCEN")
+
+    def tagger(_source: RedFlagSource, missing: list[str]) -> dict:
+        assert "regulator_jurisdiction" not in missing
+        if "regulator" in missing:
+            return {"regulator": "FinCEN"}
+        return {}
+
+    summary = run_write_back_yaml([first, second], tagger=tagger)
+    first_record = yaml.safe_load(first.read_text())[0]
+    second_record = yaml.safe_load(second.read_text())[0]
+
+    assert summary.source_files == 2
+    assert summary.valid_records == 2
+    assert summary.enriched_records == 1
+    assert first_record["regulator"] == "FinCEN"
+    assert first_record["regulator_jurisdiction"] == "US"
+    assert second_record["regulator_jurisdiction"] == "US"
+
+
+def test_run_write_back_yaml_parallel_processes_each_file_once(tmp_path):
+    files = [tmp_path / f"{index:03d}_source.yaml" for index in range(1, 4)]
+    for index, path in enumerate(files, start=1):
+        write_temp_source(path, record_id=f"source-{index:02d}")
+
+    def tagger(_source: RedFlagSource, missing: list[str]) -> dict:
+        assert "regulator" in missing
+        return {"regulator": "FinCEN"}
+
+    summary = run_write_back_yaml(files, tagger=tagger, workers=2)
+
+    assert summary.source_files == 3
+    assert summary.valid_records == 3
+    assert summary.enriched_records == 3
+    for path in files:
+        records = yaml.safe_load(path.read_text())
+        assert len(records) == 1
+        assert records[0]["regulator"] == "FinCEN"
+        assert records[0]["regulator_jurisdiction"] == "US"
+
+
+def test_run_write_back_yaml_preserves_existing_metadata(tmp_path):
+    source_file = tmp_path / "001_existing.yaml"
+    write_temp_source(source_file, record_id="existing-01", regulator="FinCEN")
+
+    def tagger(_source: RedFlagSource, _missing: list[str]) -> dict:
+        raise AssertionError("tagger should not be called for complete metadata")
+
+    run_write_back_yaml([source_file], tagger=tagger)
+
+    record = yaml.safe_load(source_file.read_text())[0]
+    assert record["regulator"] == "FinCEN"
+    assert record["regulator_jurisdiction"] == "US"

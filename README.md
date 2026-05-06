@@ -185,7 +185,26 @@ export OPENAI_API_KEY=sk-...
 uv run python scripts/ingest.py --write-back-yaml data/source/001_federal_child_nutrition_fraud.yaml
 ```
 
-This enriches each source file in-place and exits without updating the vector database. After write-back, re-run normal ingestion to load the enriched records:
+Write-back supports the same batch selection styles as extraction:
+
+```bash
+# All visible YAML files in data/source/
+uv run python scripts/ingest.py --write-back-yaml
+
+# Multiple explicit YAML files
+uv run python scripts/ingest.py --write-back-yaml \
+  data/source/001_federal_child_nutrition_fraud.yaml \
+  data/source/002_oil_smuggling_cartels.yaml
+
+# Serial range by source filename prefix
+uv run python scripts/ingest.py --write-back-yaml --range 001-003
+
+# Parallel file-level write-back (4 workers by default, or pass a count)
+uv run python scripts/ingest.py --write-back-yaml --range 001-003 --parallel
+uv run python scripts/ingest.py --write-back-yaml --parallel 8
+```
+
+This enriches each selected source file in-place and exits without updating the vector database. Existing metadata is not overwritten by the LLM; only missing fields are requested, and deterministic fields such as `regulator_jurisdiction` are derived in code. After write-back, re-run normal ingestion to load the enriched records:
 
 ```bash
 uv run python scripts/ingest.py data/source/001_federal_child_nutrition_fraud.yaml

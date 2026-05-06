@@ -219,7 +219,7 @@ def test_source_accepts_enriched_metadata():
     assert source.key_terms == ["invoice manipulation", "TBML", "import/export"]
 
 
-def test_current_yaml_without_enriched_fields_validates():
+def test_current_yaml_validates_with_optional_enriched_fields():
     path = (
         Path(__file__).resolve().parent.parent
         / "data/source/001_federal_child_nutrition_fraud.yaml"
@@ -229,9 +229,9 @@ def test_current_yaml_without_enriched_fields_validates():
     parsed = [RedFlagSource(**record) for record in records]
 
     assert len(parsed) == 13
-    assert parsed[0].typology_family is None
-    assert parsed[0].transaction_patterns is None
-    assert parsed[0].key_terms is None
+    for source in parsed:
+        assert source.id
+        assert source.description
 
 
 def test_record_from_source_normalizes_enriched_lists_to_empty():

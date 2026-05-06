@@ -9,12 +9,12 @@
 - source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/003_bulk_cash_smuggling_repatriation.pdf
   slug: 003_bulk_cash_smuggling_repatriation
   output_file: data/source/003_bulk_cash_smuggling_repatriation.yaml
-  extracted_at: '2026-05-06T00:55:45.484215+00:00'
+  extracted_at: '2026-05-06T01:22:34.201852+00:00'
 - source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/001_federal_child_nutrition_fraud.pdf
   slug: 001_federal_child_nutrition_fraud
   output_file: data/source/001_federal_child_nutrition_fraud.yaml
-  extracted_at: '2026-05-06T00:55:46.348068+00:00'
+  extracted_at: '2026-05-06T01:22:35.147391+00:00'
 - source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/002_oil_smuggling_cartels.pdf
   slug: 002_oil_smuggling_cartels
   output_file: data/source/002_oil_smuggling_cartels.yaml
-  extracted_at: '2026-05-06T00:55:47.520489+00:00'
+  extracted_at: '2026-05-06T01:22:38.061930+00:00'
