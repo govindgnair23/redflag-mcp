@@ -6,6 +6,8 @@ import sys
 from pathlib import Path
 
 from redflag_mcp.config import EMBEDDING_DIM
+from redflag_mcp.lexicalstore import create_lexical_store
+from redflag_mcp.models import CorpusMetadata
 from redflag_mcp.models import RedFlagRecord
 from redflag_mcp.server import create_server
 from redflag_mcp.tools import MAX_SEARCH_LIMIT, PRE_INGESTION_MESSAGE, RedFlagService
@@ -19,7 +21,7 @@ class FakeModel:
 
 class FailingModel:
     def encode(self, sentences: list[str], **kwargs: object) -> list[list[float]]:
-        raise AssertionError("filter_red_flags should not encode queries")
+        raise AssertionError("corpus mode should not encode queries")
 
 
 def vector(first_value: float) -> list[float]:
@@ -50,6 +52,47 @@ def make_record(
         source_url="https://example.com/source.pdf",
         vector=vector(1.0),
     )
+
+
+def corpus_metadata() -> CorpusMetadata:
+    return CorpusMetadata(
+        version="2026.04.29",
+        schema_version=1,
+        build_timestamp="2026-04-29T12:00:00Z",
+        package_id="redflag-corpus-2026.04.29",
+        file_hashes={"redflags.sqlite": "a" * 64},
+        integrity_status="verified",
+        record_count=0,
+        source_count=0,
+    )
+
+
+def seeded_corpus_service(tmp_path) -> RedFlagService:
+    db_path = tmp_path / "redflags.sqlite"
+    create_lexical_store(
+        db_path,
+        [
+            make_record(
+                "tbml-01",
+                description="Trade-based money laundering through invoices.",
+                product_types=["trade_finance"],
+                industry_types=["import_export"],
+                risk_level="high",
+                category="trade_based_money_laundering",
+            ),
+            make_record(
+                "benefits-01",
+                description="Sponsor receives reimbursements inconsistent with profile.",
+                product_types=["depository"],
+                industry_types=["government_benefits"],
+                risk_level="medium",
+                category="fraud_nexus",
+            ),
+        ],
+        corpus=corpus_metadata(),
+        aliases={"TBML": ["trade based money laundering"]},
+    )
+    return RedFlagService.from_corpus_path(db_path, embedding_model=FailingModel())
 
 
 def seeded_service(tmp_vectors_dir) -> RedFlagService:
@@ -216,6 +259,38 @@ def test_filter_red_flags_returns_empty_without_semantic_fallback(tmp_vectors_di
 
     assert response["results"] == []
     assert response["match_type"] == "metadata_filter"
+
+
+def test_corpus_search_uses_lexical_store_without_embeddings(tmp_path):
+    service = seeded_corpus_service(tmp_path)
+
+    response = service.search_red_flags(query="TBML invoices")
+
+    assert [result["id"] for result in response["results"]] == ["tbml-01"]
+    assert response["corpus"]["version"] == "2026.04.29"
+    assert response["corpus"]["integrity_status"] == "verified"
+    assert any("TBML" in signal for signal in response["results"][0]["fit_signals"])
+
+
+def test_corpus_filter_lookup_sources_include_corpus_metadata(tmp_path):
+    service = seeded_corpus_service(tmp_path)
+
+    filtered = service.filter_red_flags(product_types=["depository"])
+    red_flag = service.get_red_flag("benefits-01")
+    filters = service.list_filters()
+    sources = service.list_sources()
+    source = service.get_source(sources["sources"][0]["source_id"])
+
+    assert [result["id"] for result in filtered["results"]] == ["benefits-01"]
+    assert red_flag["red_flag"]["id"] == "benefits-01"
+    assert filters["filters"]["product_types"] == ["depository", "trade_finance"]
+    assert sources["source_count"] == 1
+    assert source["source"]["red_flags"]
+    assert filtered["corpus"]["package_id"] == "redflag-corpus-2026.04.29"
+    assert red_flag["corpus"]["version"] == "2026.04.29"
+    assert filters["corpus"]["version"] == "2026.04.29"
+    assert sources["corpus"]["version"] == "2026.04.29"
+    assert source["corpus"]["version"] == "2026.04.29"
 
 
 def test_classify_red_flag_request_routes_metadata_only_context(tmp_vectors_dir):
