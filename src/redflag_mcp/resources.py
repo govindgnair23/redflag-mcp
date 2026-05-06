@@ -15,6 +15,7 @@ def register_resources(
     mcp: FastMCP,
     *,
     vector_dir: Path = VECTORS_DIR,
+    corpus_path: Path | None = None,
     embedding_model: EmbeddingModel | None = None,
 ) -> None:
     @mcp.resource(
@@ -25,7 +26,9 @@ def register_resources(
     )
     def source_catalog() -> str:
         """Return source coverage summaries as JSON."""
-        return _json(_service(None, vector_dir, embedding_model).list_sources())
+        return _json(
+            _service(None, vector_dir, corpus_path, embedding_model).list_sources()
+        )
 
     @mcp.resource(
         "redflag://sources/{source_id}",
@@ -35,7 +38,9 @@ def register_resources(
     )
     def source_detail(source_id: str, ctx: Context | None = None) -> str:
         """Return one source detail as JSON."""
-        return _json(_service(ctx, vector_dir, embedding_model).get_source(source_id))
+        return _json(
+            _service(ctx, vector_dir, corpus_path, embedding_model).get_source(source_id)
+        )
 
 
 def _json(payload: dict[str, Any]) -> str:
@@ -45,9 +50,15 @@ def _json(payload: dict[str, Any]) -> str:
 def _service(
     ctx: Context | None,
     vector_dir: Path,
+    corpus_path: Path | None,
     embedding_model: EmbeddingModel | None,
 ) -> RedFlagService:
     if ctx is None:
+        if corpus_path is not None:
+            return RedFlagService.from_corpus_path(
+                corpus_path,
+                embedding_model=embedding_model,
+            )
         return RedFlagService.from_vector_dir(
             vector_dir=vector_dir,
             embedding_model=embedding_model,
@@ -55,6 +66,11 @@ def _service(
     try:
         return _service_from_context(ctx)
     except ValueError:
+        if corpus_path is not None:
+            return RedFlagService.from_corpus_path(
+                corpus_path,
+                embedding_model=embedding_model,
+            )
         return RedFlagService.from_vector_dir(
             vector_dir=vector_dir,
             embedding_model=embedding_model,
