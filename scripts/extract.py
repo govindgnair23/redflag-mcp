@@ -48,6 +48,7 @@ from redflag_mcp.config import (
     CUSTOMER_PROFILES,
     GEOGRAPHIC_FOOTPRINTS,
     INDUSTRY_TYPES,
+    REGULATORS,
     RISK_LEVELS,
     SIMULATION_TYPES,
     SOURCE_DIR,
@@ -236,6 +237,10 @@ For each indicator identified in Step 1, populate the following fields:
 
 - "regulatory_source" (string): Full name of the issuing document or authority (e.g., "FinCEN Alert FIN-2022-Alert001", "FFIEC BSA/AML Examination Manual Appendix F").
 
+- "regulator" (string): Abbreviated name of the issuing regulatory authority. Choose from: {sorted(REGULATORS)}. Use null when the issuing authority is not represented in the list or cannot be identified from the document.
+
+- "issued_date" (string): Publication date of the issuing document in ISO 8601 format (YYYY-MM-DD). Use YYYY-MM if only the month is known, YYYY if only the year is known. Use null if the date cannot be determined from the document.
+
 - "risk_level" (string): Standalone inferential strength of this indicator — how much suspicion the indicator alone justifies before corroboration. One of: {sorted(RISK_LEVELS)}.
   - "high": indicator alone justifies investigation; specific behavior tightly coupled to a known typology or sanctions violation
   - "medium": suspicious pattern that warrants investigation but typically requires corroboration
@@ -263,6 +268,8 @@ Source: "Non-routine foreign exchange transactions that may indirectly involve s
   "customer_profiles": ["cross_border_business"],
   "geographic_footprints": [],
   "regulatory_source": "FinCEN Alert FIN-2022-Alert001",
+  "regulator": "FinCEN",
+  "issued_date": "2022-06",
   "risk_level": "high",
   "category": "sanctions_evasion"
 }}

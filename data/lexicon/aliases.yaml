@@ -1,0 +1,151 @@
+# AML alias lexicon — maps normalized lookup terms to canonical expansion strings.
+# Keys: lowercase, no spaces or special characters (use underscore for multi-word terms).
+# Values: list of canonical expansion phrases, lowercase, for case-insensitive FTS matching.
+# Governance: add entries here for review; do not generate or infer new entries at query time.
+
+# --- Acronyms and abbreviations ---
+
+tbml:
+  - trade based money laundering
+  - trade-based money laundering
+
+cvc:
+  - convertible virtual currency
+  - cryptocurrency
+  - virtual currency
+  - digital currency
+
+msb:
+  - money services business
+  - money service business
+
+ctr:
+  - currency transaction report
+  - currency transaction reporting
+
+sar:
+  - suspicious activity report
+  - suspicious activity reporting
+
+bsa:
+  - bank secrecy act
+
+npo:
+  - nonprofit organization
+  - non-profit organization
+  - nongovernmental organization
+  - ngo
+
+pep:
+  - politically exposed person
+  - politically exposed persons
+
+sfpf:
+  - senior foreign political figure
+  - senior foreign political figures
+
+kyc:
+  - know your customer
+  - know-your-customer
+  - customer identification
+
+cdd:
+  - customer due diligence
+
+edd:
+  - enhanced due diligence
+  - enhanced customer due diligence
+
+fatf:
+  - financial action task force
+
+dnfbp:
+  - designated non-financial businesses and professions
+  - designated non-financial business or profession
+
+# --- Behavioral shorthand and typology slang ---
+
+hawala:
+  - informal value transfer
+  - informal value transfer system
+  - underground banking
+  - alternative remittance
+
+smurfing:
+  - structuring
+  - structuring transactions
+  - cash structuring
+  - currency structuring
+
+# --- AML typology families (expanded forms for FTS) ---
+
+trade_based_money_laundering:
+  - trade based money laundering
+  - trade-based money laundering
+  - tbml
+  - import export fraud
+  - trade misinvoicing
+  - over-invoicing
+  - under-invoicing
+
+sanctions_evasion:
+  - sanctions evasion
+  - sanctions circumvention
+  - ofac sanctions
+  - sanctions violations
+
+crypto_asset_money_laundering:
+  - cryptocurrency money laundering
+  - crypto asset laundering
+  - virtual asset money laundering
+  - crypto mixing
+  - blockchain money laundering
+
+# --- Transaction pattern shorthand ---
+
+structuring:
+  - structuring
+  - cash structuring
+  - smurfing
+  - currency structuring
+  - transactions under 10000
+  - transactions below reporting threshold
+
+layering:
+  - layering
+  - rapid fund movement
+  - rapid transfer
+  - moving funds through multiple accounts
+
+round_tripping:
+  - round tripping
+  - round-tripping
+  - loan back scheme
+  - loan-back
+
+shell_company:
+  - shell company
+  - front company
+  - shell corporation
+  - nominee company
+
+# --- Regulatory instruments ---
+
+cashiers_check:
+  - cashier check
+  - cashier's check
+  - cashiers checks
+  - official check
+
+wire_transfer:
+  - wire transfer
+  - wire transfers
+  - international wire
+  - domestic wire
+  - funds transfer
+
+prepaid_card:
+  - prepaid card
+  - prepaid debit card
+  - stored value card
+  - gift card

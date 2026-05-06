@@ -240,7 +240,7 @@ def sha256_json(value: Any) -> str:
 def _enriched_search_terms(source: RedFlagSource) -> list[str]:
     terms: list[str] = []
     for field in ("typology_family", "transaction_patterns", "key_terms"):
-        value = (source.model_extra or {}).get(field)
+        value = getattr(source, field)
         if isinstance(value, list):
             terms.extend(str(item) for item in value)
         elif value:

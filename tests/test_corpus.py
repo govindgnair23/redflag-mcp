@@ -29,7 +29,7 @@ def write_source(path: Path, record_id: str = "001-test-01") -> None:
                     "risk_level": "high",
                     "category": "trade_based_money_laundering",
                     "source_url": "https://example.com/source.pdf",
-                    "typology_family": "trade_based_money_laundering",
+                    "typology_family": ["trade_based_money_laundering"],
                     "transaction_patterns": ["invoice_mismatch"],
                     "key_terms": ["TBML"],
                 }
@@ -74,7 +74,7 @@ def test_build_and_verify_corpus_package(tmp_path):
     assert result.package_path.name == "redflag-corpus-2026.04.29.zip"
     assert verification.status == "verified"
     assert verification.version == "2026.04.29"
-    assert verification.schema_version == 1
+    assert verification.schema_version == 2
     assert verification.record_count == 1
     assert verification.file_hashes["redflags.sqlite"] == result.manifest["file_hashes"]["redflags.sqlite"]
 
@@ -228,3 +228,6 @@ def test_enriched_yaml_fields_are_included_in_lexical_index(tmp_path):
     results = LexicalStore.open(sqlite_path).search("invoice_mismatch")
 
     assert [record.id for record in results] == ["001-test-01"]
+    assert results[0].typology_family == ["trade_based_money_laundering"]
+    assert results[0].transaction_patterns == ["invoice_mismatch"]
+    assert results[0].key_terms == ["TBML"]
