@@ -138,6 +138,7 @@ Each entry in the YAML file has the following fields:
 | `geographic_footprints` | list[string] | no | Relevant geographies or corridors (e.g. `southwest_border`, `mexico`) |
 | `regulatory_source` | string | no | Source document name or authority (e.g. `FinCEN Alert FIN-2022-Alert001`) |
 | `regulator` | string | no | Abbreviated issuing authority (e.g. `FinCEN`, `OFAC`, `FATF`). Populated at extraction; auto-tagged by write-back when absent. |
+| `regulator_jurisdiction` | string | no | Canonical jurisdiction code deterministically derived from `regulator` (e.g. `US`, `FR`, `SG`, `AU`, `GB`, `EU`). Not normally extracted by the LLM. |
 | `issued_date` | string | no | Publication date of the source document (ISO 8601: YYYY-MM-DD, YYYY-MM, or YYYY). |
 | `risk_level` | string | no | `high`, `medium`, or `low` |
 | `category` | string | no | AML typology (e.g. `structuring`, `sanctions_evasion`, `shell_company`) |
@@ -146,7 +147,7 @@ Each entry in the YAML file has the following fields:
 | `transaction_patterns` | list[string] | no | Observable behavioral patterns (e.g. `structuring`, `trade_document_manipulation`) |
 | `key_terms` | list[string] | no | Short searchable phrases, instruments, thresholds, or acronyms (e.g. `TBML`, `CTR`, `cashier's check`) |
 
-`regulator` and `issued_date` are requested during extraction. `typology_family`, `transaction_patterns`, and `key_terms` are added to existing YAML source files by running `scripts/ingest.py --write-back-yaml` (see [Enriching YAML source files](#enriching-yaml-source-files-write-back) below).
+`regulator` and `issued_date` are requested during extraction. `regulator_jurisdiction` is derived in code from `regulator`; if the regulator is missing or unmapped, it stays unset and ingestion logs a warning. `typology_family`, `transaction_patterns`, and `key_terms` are added to existing YAML source files by running `scripts/ingest.py --write-back-yaml` (see [Enriching YAML source files](#enriching-yaml-source-files-write-back) below).
 
 ### Deduplication
 
@@ -177,7 +178,7 @@ This generates embeddings with `nomic-embed-text-v1.5` and upserts records into 
 
 ### Enriching YAML source files (write-back)
 
-To enrich source YAML files with `typology_family`, `transaction_patterns`, `key_terms`, `regulator`, and `issued_date` — fields used for offline keyword search and faceted filtering — run ingestion with `--write-back-yaml`:
+To enrich source YAML files with `typology_family`, `transaction_patterns`, `key_terms`, `regulator`, `regulator_jurisdiction`, and `issued_date` — fields used for offline keyword search and faceted filtering — run ingestion with `--write-back-yaml`:
 
 ```bash
 export OPENAI_API_KEY=sk-...
@@ -190,7 +191,7 @@ This enriches each source file in-place and exits without updating the vector da
 uv run python scripts/ingest.py data/source/001_federal_child_nutrition_fraud.yaml
 ```
 
-> **Note:** If you deploy this change against an existing `data/vectors/` store, delete the store and re-ingest from scratch so the new columns (`typology_family`, `transaction_patterns`, `key_terms`, `regulator`, `issued_date`) are present in the LanceDB schema:
+> **Note:** If you deploy this change against an existing `data/vectors/` store, delete the store and re-ingest from scratch so the new columns (`typology_family`, `transaction_patterns`, `key_terms`, `regulator`, `regulator_jurisdiction`, `issued_date`) are present in the LanceDB schema:
 > ```bash
 > rm -rf data/vectors/
 > uv run python scripts/ingest.py
@@ -215,7 +216,7 @@ uv run python scripts/verify_corpus.py dist/corpus/redflag-corpus-2026.04.29.zip
 
 The package contains `manifest.json` and `redflags.sqlite`. The manifest records schema version, build timestamp, source record hashes, file hashes, record/source counts, and source redistribution metadata. Source documents are treated as URL-only unless `data/lexicon/source_metadata.yaml` explicitly clears them for bundling.
 
-The current SQLite lexical corpus schema version is `2`. Rebuild older corpus packages after schema changes that add stored fields or filters.
+The current SQLite lexical corpus schema version is `3`. Rebuild older corpus packages after schema changes that add stored fields or filters.
 
 ### Running from a corpus
 
@@ -266,7 +267,7 @@ The server exposes hosted-client-compatible tools for request routing, semantic 
 
 - `classify_red_flag_request` for deciding whether a request needs more context, exact metadata filtering, filtered semantic search, or direct semantic search
 - `search_red_flags` for natural-language relevance search with sourced, ranked results
-- `filter_red_flags` for exact metadata requests that should not use embedding search. Filters include `product_types`, `industry_types`, `customer_profiles`, `geographic_footprints`, `typology_family`, `transaction_patterns`, `category`, `risk_level`, `regulator`, `issued_after`, `issued_before`, `regulatory_source`, `source_url`, and `source_id`.
+- `filter_red_flags` for exact metadata requests that should not use embedding search. Filters include `product_types`, `industry_types`, `customer_profiles`, `geographic_footprints`, `typology_family`, `transaction_patterns`, `category`, `risk_level`, `regulator`, `regulator_jurisdiction`, `issued_after`, `issued_before`, `regulatory_source`, `source_url`, and `source_id`.
 - `get_red_flag` for the full text and citation metadata for one red flag
 - `list_filters` for available metadata filter values
 - `list_sources` and `get_source` for ingested source coverage and citation context
@@ -311,6 +312,7 @@ classify_red_flag_request(query="what red flags apply to my crypto product?")
 filter_red_flags(product_types=["depository"], category="fraud_nexus", risk_level="medium")
 filter_red_flags(typology_family=["trade_based_money_laundering"], transaction_patterns=["trade_document_manipulation"])
 filter_red_flags(regulator="FinCEN", issued_after="2024", issued_before="2026")
+filter_red_flags(regulator_jurisdiction="FR")
 search_red_flags(query="federal child nutrition program sponsor receives reimbursements inconsistent with its profile", product_types=["depository"])
 search_red_flags(query="TBML invoice mismatch")
 search_red_flags(query="southwest border oil company wires for waste oil or hazardous materials")
@@ -318,7 +320,7 @@ search_red_flags(query="bulk cash moved by armored car service to Mexico")
 get_red_flag(red_flag_id="001_federal_child_nutrition_fraud-01")
 ```
 
-For a vague query such as "what should I look for in business accounts?", the calling agent should call `classify_red_flag_request` and ask a brief consultation question covering product/channel, industry, customer profile, geography, and transaction channel or volume when the route is `needs_more_context`. For exact metadata requests such as "show medium-risk fraud nexus red flags for depository products", it should call `filter_red_flags` instead of semantic search. For requests with both usable filters and a rich narrative, it should call `search_red_flags` with filters so metadata controls eligibility and embeddings rank the matching records.
+For a vague query such as "what should I look for in business accounts?", the calling agent should call `classify_red_flag_request` and ask a brief consultation question covering product/channel, industry, customer profile, geography, and transaction channel or volume when the route is `needs_more_context`. For exact metadata requests such as "show medium-risk fraud nexus red flags for depository products" or "red flags from regulators in France", it should call `filter_red_flags` instead of semantic search, translating country names to `regulator_jurisdiction` codes such as `FR`, `SG`, `AU`, `GB`, `US`, and `EU`. For requests with both usable filters and a rich narrative, it should call `search_red_flags` with filters so metadata controls eligibility and embeddings rank the matching records.
 
 ---
 

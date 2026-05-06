@@ -22,7 +22,7 @@ load_dotenv()
 # Add src to path so this script works before the package is installed.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from redflag_mcp.config import (
+from redflag_mcp.config import (  # noqa: E402
     CUSTOMER_PROFILES,
     GEOGRAPHIC_FOOTPRINTS,
     INDUSTRY_TYPES,
@@ -31,10 +31,11 @@ from redflag_mcp.config import (
     TRANSACTION_PATTERNS,
     TYPOLOGY_FAMILIES,
     VECTORS_DIR,
+    jurisdiction_for_regulator,
 )
-from redflag_mcp.embeddings import EmbeddingModel, encode_documents
-from redflag_mcp.models import RedFlagRecord, RedFlagSource
-from redflag_mcp.vectorstore import get_or_create_table, open_store, upsert_records
+from redflag_mcp.embeddings import EmbeddingModel, encode_documents  # noqa: E402
+from redflag_mcp.models import RedFlagRecord, RedFlagSource  # noqa: E402
+from redflag_mcp.vectorstore import get_or_create_table, open_store, upsert_records  # noqa: E402
 
 LOGGER = logging.getLogger(__name__)
 DEFAULT_MODEL = "gpt-4o-mini"
@@ -115,6 +116,24 @@ def missing_metadata_fields(source: RedFlagSource) -> list[str]:
     return missing
 
 
+def derive_regulator_jurisdiction(source: RedFlagSource) -> RedFlagSource:
+    """Derive deterministic jurisdiction metadata from regulator when possible."""
+    jurisdiction = jurisdiction_for_regulator(source.regulator)
+    if jurisdiction:
+        if source.regulator_jurisdiction == jurisdiction:
+            return source
+        return source.model_copy(update={"regulator_jurisdiction": jurisdiction})
+    if source.regulator:
+        LOGGER.warning(
+            "Record %s: regulator %r has no configured regulator_jurisdiction",
+            source.id,
+            source.regulator,
+        )
+    if source.regulator_jurisdiction:
+        return source.model_copy(update={"regulator_jurisdiction": None})
+    return source
+
+
 def build_records(
     sources: Sequence[RedFlagSource],
     *,
@@ -124,10 +143,12 @@ def build_records(
     enriched_sources: list[RedFlagSource] = []
     enriched_count = 0
     for source in sources:
+        source = derive_regulator_jurisdiction(source)
         missing = missing_metadata_fields(source)
         if tagger and missing:
             patch = tagger(source, missing)
             source = merge_metadata(source, patch, missing)
+            source = derive_regulator_jurisdiction(source)
             warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
             warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
             warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)
@@ -333,10 +354,12 @@ def main(argv: Sequence[str] | None = None) -> None:
             enriched: list[RedFlagSource] = []
             enriched_count = 0
             for source in file_sources:
+                source = derive_regulator_jurisdiction(source)
                 missing = missing_metadata_fields(source)
                 if tagger and missing:
                     patch = tagger(source, missing)
                     source = merge_metadata(source, patch, missing)
+                    source = derive_regulator_jurisdiction(source)
                     warn_free_form_values(source.id, "typology_family", source.typology_family or [], TYPOLOGY_FAMILIES)
                     warn_free_form_values(source.id, "transaction_patterns", source.transaction_patterns or [], TRANSACTION_PATTERNS)
                     warn_free_form_values(source.id, "regulator", [source.regulator] if source.regulator else [], REGULATORS)

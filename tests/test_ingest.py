@@ -4,7 +4,6 @@ import logging
 import sys
 from pathlib import Path
 
-import pytest
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
@@ -317,6 +316,7 @@ def test_missing_metadata_fields_detects_absent_regulator_and_date():
     missing = missing_metadata_fields(source)
 
     assert "regulator" in missing
+    assert "regulator_jurisdiction" not in missing
     assert "issued_date" in missing
 
 
@@ -345,6 +345,7 @@ def test_complete_metadata_with_regulator_and_date_does_not_trigger_tagger():
 
     assert enriched_count == 0
     assert records[0].regulator == "FinCEN"
+    assert records[0].regulator_jurisdiction == "US"
     assert records[0].issued_date == "2022-03-07"
 
 
@@ -367,12 +368,56 @@ def test_tagger_enriches_missing_regulator():
 
     def tagger(_source: RedFlagSource, missing: list[str]) -> dict:
         assert "regulator" in missing
+        assert "regulator_jurisdiction" not in missing
         return {"regulator": "FATF"}
 
     records, enriched_count = build_records([source], embedding_model=FakeModel(), tagger=tagger)
 
     assert enriched_count == 1
     assert records[0].regulator == "FATF"
+    assert records[0].regulator_jurisdiction == "FATF"
+
+
+def test_ingest_derives_regulator_jurisdiction_without_tagger_request():
+    source = RedFlagSource(
+        id="fr-reg-01",
+        description="AMF red flag",
+        product_types=["securities"],
+        industry_types=["professional_services"],
+        customer_profiles=["cross_border_business"],
+        geographic_footprints=["uk_eu"],
+        regulatory_source="AMF France guidance",
+        risk_level="medium",
+        category="layering",
+        typology_family=["fraud_proceeds"],
+        transaction_patterns=["rapid_fund_movement"],
+        key_terms=["AMF"],
+        regulator="AMF-France",
+        regulator_jurisdiction="US",
+        issued_date="2025",
+    )
+
+    def tagger(_source: RedFlagSource, _missing: list[str]) -> dict:
+        raise AssertionError("jurisdiction derivation must not trigger tagger")
+
+    records, enriched_count = build_records([source], embedding_model=FakeModel(), tagger=tagger)
+
+    assert enriched_count == 0
+    assert records[0].regulator_jurisdiction == "FR"
+
+
+def test_ingest_logs_warning_for_unmapped_regulator_jurisdiction(caplog):
+    source = RedFlagSource(
+        id="unknown-reg-01",
+        description="Unknown regulator record",
+        regulator="SomeUnknownAgency",
+    )
+
+    with caplog.at_level(logging.WARNING):
+        records, _ = build_records([source], embedding_model=FakeModel())
+
+    assert records[0].regulator_jurisdiction is None
+    assert "has no configured regulator_jurisdiction" in caplog.text
 
 
 def test_tagger_enriches_missing_issued_date():

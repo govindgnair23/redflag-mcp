@@ -24,6 +24,7 @@ class RedFlagSource(BaseModel):
     geographic_footprints: list[str] | None = None
     regulatory_source: str | None = None
     regulator: str | None = None
+    regulator_jurisdiction: str | None = None
     issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
@@ -61,6 +62,7 @@ class RedFlagResult(BaseModel):
     geographic_footprints: list[str] = Field(default_factory=list)
     regulatory_source: str | None = None
     regulator: str | None = None
+    regulator_jurisdiction: str | None = None
     issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
@@ -195,6 +197,7 @@ class RedFlagRecord(BaseModel):
     geographic_footprints: list[str] = Field(default_factory=list)
     regulatory_source: str | None = None
     regulator: str | None = None
+    regulator_jurisdiction: str | None = None
     issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
@@ -239,6 +242,7 @@ class RedFlagRecord(BaseModel):
             geographic_footprints=_list_or_empty(source.geographic_footprints),
             regulatory_source=source.regulatory_source,
             regulator=source.regulator,
+            regulator_jurisdiction=source.regulator_jurisdiction,
             issued_date=source.issued_date,
             risk_level=source.risk_level,
             category=source.category,
@@ -260,6 +264,7 @@ class RedFlagRecord(BaseModel):
             geographic_footprints=self.geographic_footprints,
             regulatory_source=self.regulatory_source,
             regulator=self.regulator,
+            regulator_jurisdiction=self.regulator_jurisdiction,
             issued_date=self.issued_date,
             risk_level=self.risk_level,
             category=self.category,

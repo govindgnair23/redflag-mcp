@@ -26,6 +26,8 @@ def write_source(path: Path, record_id: str = "001-test-01") -> None:
                     "customer_profiles": ["cross_border_business"],
                     "geographic_footprints": ["domestic_us"],
                     "regulatory_source": "FinCEN Alert",
+                    "regulator": "FinCEN",
+                    "regulator_jurisdiction": "US",
                     "risk_level": "high",
                     "category": "trade_based_money_laundering",
                     "source_url": "https://example.com/source.pdf",
@@ -74,7 +76,7 @@ def test_build_and_verify_corpus_package(tmp_path):
     assert result.package_path.name == "redflag-corpus-2026.04.29.zip"
     assert verification.status == "verified"
     assert verification.version == "2026.04.29"
-    assert verification.schema_version == 2
+    assert verification.schema_version == 3
     assert verification.record_count == 1
     assert verification.file_hashes["redflags.sqlite"] == result.manifest["file_hashes"]["redflags.sqlite"]
 

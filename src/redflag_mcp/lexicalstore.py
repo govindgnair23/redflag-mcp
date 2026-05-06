@@ -17,7 +17,7 @@ from redflag_mcp.models import (
     SourceRedFlagSnippet,
 )
 
-LEXICAL_SCHEMA_VERSION = 2
+LEXICAL_SCHEMA_VERSION = 3
 SOURCE_DETAIL_SNIPPET_LIMIT = 10
 LIST_FILTER_FIELDS = (
     "product_types",
@@ -27,7 +27,7 @@ LIST_FILTER_FIELDS = (
     "typology_family",
     "transaction_patterns",
 )
-SCALAR_FILTER_FIELDS = ("category", "risk_level", "regulator")
+SCALAR_FILTER_FIELDS = ("category", "risk_level", "regulator", "regulator_jurisdiction")
 DISTINCT_FILTER_FIELDS = LIST_FILTER_FIELDS + SCALAR_FILTER_FIELDS
 JSON_LIST_FIELDS = (*LIST_FILTER_FIELDS, "key_terms")
 RISK_ORDER = {"high": 0, "medium": 1, "low": 2}
@@ -44,6 +44,7 @@ class LexicalRedFlagFilters:
     category: str | None = None
     risk_level: str | None = None
     regulator: str | None = None
+    regulator_jurisdiction: str | None = None
     issued_after: str | None = None
     issued_before: str | None = None
     regulatory_source: str | None = None
@@ -140,6 +141,7 @@ class LexicalStore:
         category: str | None = None,
         risk_level: str | None = None,
         regulator: str | None = None,
+        regulator_jurisdiction: str | None = None,
         issued_after: str | None = None,
         issued_before: str | None = None,
     ) -> list[RedFlagResult]:
@@ -155,6 +157,7 @@ class LexicalStore:
             category=category,
             risk_level=risk_level,
             regulator=regulator,
+            regulator_jurisdiction=regulator_jurisdiction,
             issued_after=issued_after,
             issued_before=issued_before,
         )
@@ -340,11 +343,12 @@ def create_lexical_store(
                 """
                 INSERT INTO red_flags (
                     id, description, product_types, industry_types, customer_profiles,
-                    geographic_footprints, regulatory_source, regulator, issued_date,
+                    geographic_footprints, regulatory_source, regulator,
+                    regulator_jurisdiction, issued_date,
                     risk_level, category, simulation_type, source_url,
                     typology_family, transaction_patterns, key_terms
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     row["id"],
@@ -355,6 +359,7 @@ def create_lexical_store(
                     json.dumps(row["geographic_footprints"], sort_keys=True),
                     row.get("regulatory_source"),
                     row.get("regulator"),
+                    row.get("regulator_jurisdiction"),
                     row.get("issued_date"),
                     row.get("risk_level"),
                     row.get("category"),
@@ -388,6 +393,7 @@ def _create_schema(connection: sqlite3.Connection) -> None:
             geographic_footprints TEXT NOT NULL,
             regulatory_source TEXT,
             regulator TEXT,
+            regulator_jurisdiction TEXT,
             issued_date TEXT,
             risk_level TEXT,
             category TEXT,
@@ -494,6 +500,7 @@ def _searchable_text(
         str(row.get("category") or ""),
         str(row.get("risk_level") or ""),
         str(row.get("regulatory_source") or ""),
+        str(row.get("regulator_jurisdiction") or ""),
         str(row.get("source_url") or ""),
     ]
     for field in LIST_FILTER_FIELDS:
@@ -534,6 +541,15 @@ def _metadata_fit_signals(
         signals.append(f"Regulator matches {filters.regulator}.")
     elif result.regulator:
         signals.append(f"Regulator is {result.regulator}.")
+    if (
+        filters.regulator_jurisdiction
+        and result.regulator_jurisdiction == filters.regulator_jurisdiction
+    ):
+        signals.append(
+            f"Regulator jurisdiction matches {filters.regulator_jurisdiction}."
+        )
+    elif result.regulator_jurisdiction:
+        signals.append(f"Regulator jurisdiction is {result.regulator_jurisdiction}.")
     if result.regulatory_source:
         signals.append(f"Source is {result.regulatory_source}.")
     return signals

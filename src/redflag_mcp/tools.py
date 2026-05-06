@@ -90,7 +90,7 @@ PRE_INGESTION_MESSAGE = (
 
 SEARCH_DESCRIPTION = """Search AML red flags using natural-language context and optional filters.
 
-Agent guidance: use classify_red_flag_request before searching for ambiguous "what red flags apply" requests. If the user's request is vague, briefly ask for product/channel, industry, customer profile, geography, and transaction channel or volume before searching. If the request already names those details or has a specific scenario, search directly. Call list_filters when you need valid filter values. Use filter_red_flags for exact metadata requests; use search_red_flags for semantic relevance questions."""
+Agent guidance: use classify_red_flag_request before searching for ambiguous "what red flags apply" requests. If the user's request is vague, briefly ask for product/channel, industry, customer profile, geography, and transaction channel or volume before searching. If the request already names those details or has a specific scenario, search directly. Call list_filters when you need valid filter values. Use filter_red_flags for exact metadata requests; use search_red_flags for semantic relevance questions. For country or jurisdiction requests, translate names to regulator_jurisdiction codes before filtering, such as France -> FR, Singapore -> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> US, and European Union/EU regulators -> EU."""
 
 
 @dataclass
@@ -129,6 +129,7 @@ class RedFlagService:
         geographic_footprints: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
+        regulator_jurisdiction: str | None = None,
     ) -> dict[str, Any]:
         if self.table.count_rows() == 0:
             return self._with_corpus({"message": PRE_INGESTION_MESSAGE, "results": []})
@@ -144,6 +145,7 @@ class RedFlagService:
                 geographic_footprints=geographic_footprints,
                 category=category,
                 risk_level=risk_level,
+                regulator_jurisdiction=regulator_jurisdiction,
             )
             return self._with_corpus(
                 {
@@ -166,6 +168,7 @@ class RedFlagService:
             geographic_footprints=geographic_footprints,
             category=category,
             risk_level=risk_level,
+            regulator_jurisdiction=regulator_jurisdiction,
         )
         _add_fit_explanations(
             results,
@@ -175,6 +178,7 @@ class RedFlagService:
             geographic_footprints=geographic_footprints,
             category=category,
             risk_level=risk_level,
+            regulator_jurisdiction=regulator_jurisdiction,
         )
         return self._with_corpus(
             {
@@ -197,6 +201,7 @@ class RedFlagService:
         category: str | None = None,
         risk_level: str | None = None,
         regulator: str | None = None,
+        regulator_jurisdiction: str | None = None,
         issued_after: str | None = None,
         issued_before: str | None = None,
         regulatory_source: str | None = None,
@@ -222,6 +227,7 @@ class RedFlagService:
                 category=category,
                 risk_level=risk_level,
                 regulator=regulator,
+                regulator_jurisdiction=regulator_jurisdiction,
                 issued_after=issued_after,
                 issued_before=issued_before,
                 regulatory_source=regulatory_source,
@@ -239,6 +245,7 @@ class RedFlagService:
                 category=category,
                 risk_level=risk_level,
                 regulator=regulator,
+                regulator_jurisdiction=regulator_jurisdiction,
                 issued_after=issued_after,
                 issued_before=issued_before,
                 regulatory_source=regulatory_source,
@@ -480,6 +487,7 @@ def register_tools(mcp: FastMCP) -> None:
         geographic_footprints: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
+        regulator_jurisdiction: str | None = None,
         ctx: Context | None = None,
     ) -> dict[str, Any]:
         """Search for relevant AML red flags and return sourced results."""
@@ -492,14 +500,21 @@ def register_tools(mcp: FastMCP) -> None:
             geographic_footprints=geographic_footprints,
             category=category,
             risk_level=risk_level,
+            regulator_jurisdiction=regulator_jurisdiction,
         )
 
     @mcp.tool(
         description=(
             "Return AML red flags for exact metadata criteria without semantic "
             "embedding search. Use this for exact metadata requests such as high-risk "
-            "depository structuring red flags. Use search_red_flags instead for "
-            "open-ended relevance questions."
+            "depository structuring red flags or red flags from regulators in France. "
+            "For country or jurisdiction requests, translate names to ISO-style "
+            "regulator_jurisdiction codes before filtering: France -> FR, Singapore "
+            "-> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> "
+            "US, and European Union/EU regulators -> EU. Prefer "
+            "filter_red_flags(regulator_jurisdiction=\"FR\") for requests like "
+            "\"red flags from regulators in France.\" Use search_red_flags instead "
+            "for open-ended relevance questions."
         )
     )
     def filter_red_flags(
@@ -513,6 +528,7 @@ def register_tools(mcp: FastMCP) -> None:
         category: str | None = None,
         risk_level: str | None = None,
         regulator: str | None = None,
+        regulator_jurisdiction: str | None = None,
         issued_after: str | None = None,
         issued_before: str | None = None,
         regulatory_source: str | None = None,
@@ -532,6 +548,7 @@ def register_tools(mcp: FastMCP) -> None:
             category=category,
             risk_level=risk_level,
             regulator=regulator,
+            regulator_jurisdiction=regulator_jurisdiction,
             issued_after=issued_after,
             issued_before=issued_before,
             regulatory_source=regulatory_source,
@@ -550,9 +567,10 @@ def register_tools(mcp: FastMCP) -> None:
         description=(
             "List available filter values for product_types, industry_types, "
             "customer_profiles, geographic_footprints, typology_family, "
-            "transaction_patterns, category, risk_level, and regulator. Agents "
-            "should call this before or during consultation when they need valid "
-            "local filter values."
+            "transaction_patterns, category, risk_level, regulator, and "
+            "regulator_jurisdiction. Agents should call this before or during "
+            "consultation when they need valid local filter values, especially "
+            "when unsure which regulator_jurisdiction codes are available."
         )
     )
     def list_filters(ctx: Context | None = None) -> dict[str, Any]:
@@ -598,6 +616,7 @@ def _add_fit_explanations(
     geographic_footprints: list[str] | None = None,
     category: str | None = None,
     risk_level: str | None = None,
+    regulator_jurisdiction: str | None = None,
 ) -> None:
     list_signal_specs = (
         ("Product type", "product_types", product_types),
@@ -621,6 +640,13 @@ def _add_fit_explanations(
             signals.append(f"Risk level matches {risk_level}.")
         elif result.risk_level:
             signals.append(f"Risk level is {result.risk_level}.")
+        if (
+            regulator_jurisdiction
+            and result.regulator_jurisdiction == regulator_jurisdiction
+        ):
+            signals.append(f"Regulator jurisdiction matches {regulator_jurisdiction}.")
+        elif result.regulator_jurisdiction:
+            signals.append(f"Regulator jurisdiction is {result.regulator_jurisdiction}.")
         if result.regulatory_source:
             signals.append(f"Source is {result.regulatory_source}.")
         if result.regulator:
