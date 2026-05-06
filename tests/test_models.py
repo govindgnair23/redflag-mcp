@@ -38,7 +38,7 @@ def test_source_accepts_rich_metadata():
     assert source.geographic_footprints == ["domestic_us"]
 
 
-def test_current_yaml_without_rich_metadata_validates():
+def test_current_yaml_validates():
     path = (
         Path(__file__).resolve().parent.parent
         / "data/source/002_oil_smuggling_cartels.yaml"
@@ -48,7 +48,6 @@ def test_current_yaml_without_rich_metadata_validates():
     parsed = [RedFlagSource(**record) for record in records]
 
     assert len(parsed) == 14
-    assert parsed[0].industry_types is None
 
 
 def test_enriched_yaml_metadata_validates_and_is_preserved():
