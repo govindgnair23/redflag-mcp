@@ -1,0 +1,20 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "uv sync --frozen"
+
+[deploy]
+startCommand = "uv run uvicorn redflag_mcp.http_app:app --host 0.0.0.0 --port $PORT"
+healthcheckPath = "/ready"
+healthcheckTimeout = 60
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
+
+[variables]
+REDFLAG_RUNTIME_MODE = "hosted-corpus"
+REDFLAG_CORPUS_RELEASE_INDEX = "dist/corpus/releases.json"
+REDFLAG_CORPUS_VERSION = "2026.04.29"
+REDFLAG_CORPUS_CACHE_DIR = "/app/.redflag-mcp"
+REDFLAG_ALLOWED_HOSTS = "healthcheck.railway.app,redflag-mcp-production.up.railway.app"
+REDFLAG_MAX_REQUEST_BYTES = "1000000"
+REDFLAG_MAX_CONCURRENT_REQUESTS = "10"
+REDFLAG_RATE_LIMIT_PER_MINUTE = "120"
