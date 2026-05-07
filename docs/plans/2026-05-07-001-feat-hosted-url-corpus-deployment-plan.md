@@ -311,7 +311,7 @@ flowchart TB
 **Verification:**
 - The public hosted surface has documented, tested input and request bounds while retaining one-URL setup.
 
-- [ ] **Unit 5: Add Railway Deployment Configuration**
+- [x] **Unit 5: Add Railway Deployment Configuration**
 
 **Goal:** Make the repository deployable on Railway as a managed web service with build/start commands and a readiness healthcheck path.
 
@@ -353,7 +353,7 @@ flowchart TB
 **Verification:**
 - An operator can deploy the repo to Railway and obtain a public `/mcp` URL backed by a packaged corpus.
 
-- [ ] **Unit 6: Add Hosted Retrieval Benchmark**
+- [x] **Unit 6: Add Hosted Retrieval Benchmark**
 
 **Goal:** Provide a small smoke/launch gate proving lexical corpus search is not obviously broken for representative public hosted queries.
 
@@ -390,7 +390,7 @@ flowchart TB
 **Verification:**
 - Maintainers have a repeatable pre-launch signal that the hosted lexical search is not obviously broken.
 
-- [ ] **Unit 7: Rewrite Public Setup and Operator Documentation**
+- [x] **Unit 7: Rewrite Public Setup and Operator Documentation**
 
 **Goal:** Put the one-URL connector setup first while clearly separating public hosted privacy from local/institution-hosted modes.
 

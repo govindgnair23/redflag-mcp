@@ -2,14 +2,35 @@
 
 MCP server exposing AML red flag knowledge as queryable tools. Compliance officers ask natural-language questions; the server returns relevant, sourced red flags from either a local LanceDB vector store or a packaged SQLite FTS5 corpus.
 
+## Hosted Connector
+
+Public users should start with the hosted MCP URL:
+
+```text
+https://<deployment>/mcp
+```
+
+Add that URL in a hosted MCP client, enable the connector, and ask AML red flag research questions such as:
+
+```text
+What red flags apply to TBML invoice mismatch?
+Which red flags cover bulk cash movement to Mexico?
+List source coverage for the corpus.
+```
+
+Public hosted mode is not for confidential customer, transaction, institution, or investigation details. User prompts are sent to the hosted MCP service operator and the host client. Use local desktop or institution-hosted deployments for sensitive institution-specific context.
+
+The hosted connector is backed by a verified packaged corpus. End users do not need Python, repository setup, package downloads, ingestion, OpenAI keys, or environment variables. Operators should use [docs/hosted-deployment.md](docs/hosted-deployment.md) for Railway deployment, corpus activation, rollback, logging, and validation.
+
 ## Overview
 
-Four distinct workflows:
+Five distinct workflows:
 
 1. **Extraction** — pull AML red flags out of PDFs or web pages using an LLM and save them as YAML
 2. **Ingestion** — embed the YAML files and load them into the local vector database
 3. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
-4. **Query** — MCP server answers search and filtering requests against the configured local store
+4. **Hosted deployment** — run the ASGI MCP service from a verified corpus package at one public `/mcp` URL
+5. **Query** — MCP server answers search and filtering requests against the configured local or hosted store
 
 ---
 
@@ -242,6 +263,16 @@ uv run python scripts/verify_corpus.py dist/corpus/redflag-corpus-2026.04.29.zip
 The package contains `manifest.json` and `redflags.sqlite`. The manifest records schema version, build timestamp, source record hashes, file hashes, record/source counts, and source redistribution metadata. Source documents are treated as URL-only unless `data/lexicon/source_metadata.yaml` explicitly clears them for bundling.
 
 The current SQLite lexical corpus schema version is `3`. Rebuild older corpus packages after schema changes that add stored fields or filters.
+
+Run the hosted retrieval smoke benchmark before publishing a corpus package:
+
+```bash
+uv run python scripts/evaluate_retrieval.py \
+  --corpus dist/corpus/redflag-corpus-2026.04.29.zip \
+  --benchmark data/eval/hosted_retrieval_queries.yaml
+```
+
+This benchmark checks representative alias, geography, typology, product/channel, and source-specific queries against the lexical corpus. It is a launch gate, not proof of broad AML retrieval quality.
 
 ### Running from a corpus
 
