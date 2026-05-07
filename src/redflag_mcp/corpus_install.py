@@ -19,6 +19,7 @@ class CorpusInstallError(RuntimeError):
 class CorpusInstallConfig:
     cache_dir: Path
     corpus_package_path: Path | None = None
+    expected_package_sha256: str | None = None
     corpus_version: str | None = None
     release_index_path: Path | None = None
     auto_update: bool = True
@@ -43,7 +44,10 @@ class CorpusInstaller:
                 return active
 
         if self.config.corpus_package_path is not None:
-            return self._install_package(self.config.corpus_package_path)
+            return self._install_package(
+                self.config.corpus_package_path,
+                expected_sha256=self.config.expected_package_sha256,
+            )
 
         release = self._select_release()
         if release is not None:

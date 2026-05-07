@@ -604,6 +604,8 @@ def _service_from_context(ctx: Context | None) -> RedFlagService:
     if ctx is None:
         return RedFlagService.from_vector_dir()
     state = ctx.request_context.lifespan_context
+    if state.service is None:
+        raise RuntimeError(state.readiness.message)
     return state.service
 
 

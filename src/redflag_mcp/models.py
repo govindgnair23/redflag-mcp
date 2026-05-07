@@ -87,6 +87,9 @@ class CorpusMetadata(BaseModel):
     integrity_status: Literal["unverified", "verified", "failed"]
     record_count: int = Field(ge=0)
     source_count: int = Field(ge=0)
+    source_record_hashes: dict[str, str] | None = None
+    build_inputs: dict[str, str | None] | None = None
+    enrichment_provenance: dict[str, str] | None = None
 
     @field_validator("file_hashes")
     @classmethod
@@ -110,6 +113,12 @@ class SourceReleaseMetadata(BaseModel):
         "url_only", "bundled_allowed", "restricted"
     ] = "url_only"
     source_document_sha256: str | None = None
+    retrieved_at: str | None = None
+    citation_url: str | None = None
+    durable_citation: str | None = None
+    enrichment_status: Literal["approved", "manual_review", "generated", "unknown"] = (
+        "unknown"
+    )
 
     @field_validator("source_document_sha256")
     @classmethod
