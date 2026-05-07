@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import sys
 import zipfile
 from pathlib import Path
@@ -118,6 +119,38 @@ def test_rebuild_produces_same_sqlite_hash_for_same_inputs(tmp_path):
     assert first.manifest["file_hashes"]["redflags.sqlite"] == second.manifest["file_hashes"]["redflags.sqlite"]
 
 
+def test_rebuild_produces_same_package_hash_for_same_inputs(tmp_path):
+    source = tmp_path / "source.yaml"
+    aliases = tmp_path / "aliases.yaml"
+    source_metadata = tmp_path / "source_metadata.yaml"
+    registry = tmp_path / "sources.yaml"
+    write_source(source)
+    aliases.write_text(yaml.safe_dump({"TBML": ["trade based money laundering"]}))
+    source_metadata.write_text("{}")
+    registry.write_text(yaml.safe_dump({"001": {"url": "https://example.com/source.pdf"}}))
+
+    first = build_corpus_package(
+        [source],
+        output_dir=tmp_path / "first",
+        version="2026.04.29",
+        build_timestamp="2026-04-29T12:00:00Z",
+        aliases_path=aliases,
+        source_metadata_path=source_metadata,
+        source_registry_path=registry,
+    )
+    second = build_corpus_package(
+        [source],
+        output_dir=tmp_path / "second",
+        version="2026.04.29",
+        build_timestamp="2026-04-29T12:00:00Z",
+        aliases_path=aliases,
+        source_metadata_path=source_metadata,
+        source_registry_path=registry,
+    )
+
+    assert sha256_file(first.package_path) == sha256_file(second.package_path)
+
+
 def test_build_empty_corpus_fails(tmp_path):
     empty = tmp_path / "empty.yaml"
     empty.write_text("[]")
@@ -209,6 +242,22 @@ def test_verify_detects_sqlite_hash_mismatch(tmp_path):
     assert "hash mismatch" in verification.message
 
 
+def test_verify_detects_external_package_checksum_mismatch(tmp_path):
+    source = tmp_path / "source.yaml"
+    write_source(source)
+    result = build_corpus_package(
+        [source],
+        output_dir=tmp_path / "dist",
+        version="2026.04.29",
+        build_timestamp="2026-04-29T12:00:00Z",
+    )
+
+    verification = verify_corpus_package(result.package_path, expected_sha256="0" * 64)
+
+    assert verification.status == "failed"
+    assert "package hash mismatch" in verification.message
+
+
 def test_malformed_package_without_manifest_fails(tmp_path):
     package = tmp_path / "bad.zip"
     with zipfile.ZipFile(package, "w") as archive:
@@ -267,6 +316,53 @@ def test_source_metadata_controls_url_only_packaging(tmp_path):
 
     assert manifest["sources"]["001"]["redistribution_status"] == "url_only"
     assert manifest["sources"]["001"]["bundle_source_asset"] is False
+    assert "asset_path" not in manifest["sources"]["001"]
+
+
+def test_manifest_includes_hosted_release_provenance_fields(tmp_path):
+    source = tmp_path / "source.yaml"
+    aliases = tmp_path / "aliases.yaml"
+    source_metadata = tmp_path / "source_metadata.yaml"
+    registry = tmp_path / "sources.yaml"
+    write_source(source)
+    aliases.write_text(yaml.safe_dump({"TBML": ["trade based money laundering"]}))
+    source_metadata.write_text(
+        yaml.safe_dump(
+            {
+                "001": {
+                    "title": "Test Source",
+                    "retrieved_at": "2026-04-29",
+                    "citation_url": "https://example.com/source.pdf",
+                    "durable_citation": "FinCEN Alert FIN-2026-A001",
+                    "enrichment_status": "approved",
+                }
+            }
+        )
+    )
+    registry.write_text(yaml.safe_dump({"001": {"url": "https://example.com/source.pdf"}}))
+
+    result = build_corpus_package(
+        [source],
+        output_dir=tmp_path / "dist",
+        version="2026.04.29",
+        build_timestamp="2026-04-29T12:00:00Z",
+        aliases_path=aliases,
+        source_metadata_path=source_metadata,
+        source_registry_path=registry,
+    )
+
+    manifest = result.manifest
+    assert manifest["build_timestamp"] == "2026-04-29T12:00:00Z"
+    assert manifest["schema_version"] == 3
+    assert manifest["source_record_hashes"]["001-test-01"]
+    assert manifest["build_inputs"]["aliases_sha256"] == sha256_file(aliases)
+    assert manifest["build_inputs"]["source_metadata_sha256"] == sha256_file(source_metadata)
+    assert manifest["build_inputs"]["source_registry_sha256"] == sha256_file(registry)
+    assert "dependency_lock_sha256" in manifest["build_inputs"]
+    assert manifest["enrichment_provenance"]["status"] == "approved"
+    assert manifest["sources"]["001"]["retrieved_at"] == "2026-04-29"
+    assert manifest["sources"]["001"]["citation_url"] == "https://example.com/source.pdf"
+    assert manifest["sources"]["001"]["durable_citation"] == "FinCEN Alert FIN-2026-A001"
 
 
 def test_enriched_yaml_fields_are_included_in_lexical_index(tmp_path):
@@ -291,3 +387,9 @@ def test_enriched_yaml_fields_are_included_in_lexical_index(tmp_path):
     assert results[0].typology_family == ["trade_based_money_laundering"]
     assert results[0].transaction_patterns == ["invoice_mismatch"]
     assert results[0].key_terms == ["TBML"]
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    digest.update(path.read_bytes())
+    return digest.hexdigest()
