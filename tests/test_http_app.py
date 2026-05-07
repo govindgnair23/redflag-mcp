@@ -55,6 +55,18 @@ def hosted_config(tmp_path: Path, package: Path):
     )
 
 
+def hosted_app(tmp_path: Path, env: dict[str, str] | None = None):
+    package = build_package(tmp_path)
+    values = {
+        "REDFLAG_RUNTIME_MODE": "hosted-corpus",
+        "REDFLAG_CORPUS_PACKAGE": str(package),
+        "REDFLAG_CORPUS_PACKAGE_SHA256": sha256_file(package),
+        "REDFLAG_CORPUS_CACHE_DIR": str(tmp_path / "cache"),
+    }
+    values.update(env or {})
+    return create_http_app(env=values)
+
+
 def test_health_returns_process_liveness_without_tool_call(tmp_path):
     package = build_package(tmp_path)
     app = create_http_app(runtime_config=hosted_config(tmp_path, package))
@@ -137,6 +149,79 @@ def test_mcp_requests_are_rejected_when_hosted_runtime_not_ready(tmp_path):
 
     assert response.status_code == 503
     assert response.json()["status"] == "not_ready"
+
+
+def test_oversized_mcp_request_is_rejected_before_mcp_handling(tmp_path):
+    app = hosted_app(tmp_path, {"REDFLAG_MAX_REQUEST_BYTES": "8"})
+
+    with TestClient(app) as client:
+        response = client.post(
+            "/mcp",
+            content=b"x" * 9,
+            headers={
+                "content-type": "application/json",
+                "accept": "application/json, text/event-stream",
+            },
+        )
+
+    assert response.status_code == 413
+    assert response.json()["error"] == "request_too_large"
+
+
+def test_invalid_origin_is_rejected(tmp_path):
+    app = hosted_app(
+        tmp_path,
+        {
+            "REDFLAG_ALLOWED_ORIGINS": "https://allowed.example",
+            "REDFLAG_ALLOWED_HOSTS": "testserver",
+        },
+    )
+
+    with TestClient(app) as client:
+        response = client.post(
+            "/mcp",
+            json={},
+            headers={
+                "origin": "https://evil.example",
+                "accept": "application/json, text/event-stream",
+            },
+        )
+
+    assert response.status_code == 403
+    assert response.json()["error"] == "origin_not_allowed"
+
+
+def test_invalid_host_is_rejected(tmp_path):
+    app = hosted_app(tmp_path, {"REDFLAG_ALLOWED_HOSTS": "allowed.example"})
+
+    with TestClient(app) as client:
+        response = client.get("/ready", headers={"host": "evil.example"})
+
+    assert response.status_code == 403
+    assert response.json()["error"] == "host_not_allowed"
+
+
+def test_rate_limit_exceeded_returns_bounded_failure(tmp_path):
+    app = hosted_app(tmp_path, {"REDFLAG_RATE_LIMIT_PER_MINUTE": "1"})
+
+    with TestClient(app) as client:
+        first = client.get("/health")
+        second = client.get("/health")
+
+    assert first.status_code == 200
+    assert second.status_code == 429
+    assert second.json()["error"] == "rate_limit_exceeded"
+
+
+def test_concurrency_limit_exceeded_returns_bounded_failure(tmp_path):
+    app = hosted_app(tmp_path, {"REDFLAG_MAX_CONCURRENT_REQUESTS": "1"})
+    app.state.guardrails.active_requests = 1
+
+    with TestClient(app) as client:
+        response = client.get("/health")
+
+    assert response.status_code == 503
+    assert response.json()["error"] == "too_many_concurrent_requests"
 
 
 def test_create_http_app_defaults_to_hosted_runtime_mode() -> None:

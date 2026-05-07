@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import time
 from collections.abc import AsyncIterator, Mapping
 from contextlib import AsyncExitStack, asynccontextmanager
 
@@ -29,6 +30,7 @@ def create_http_app(
     embedding_model: EmbeddingModel | None = None,
 ) -> Starlette:
     config = runtime_config or _load_hosted_runtime_config(env)
+    guardrails = PublicHttpGuardrails.from_env(os.environ if env is None else env)
     readiness = ReadinessState.not_ready("Corpus activation has not run.")
     state_holder: dict[str, ServerState] = {}
 
@@ -71,8 +73,91 @@ def create_http_app(
         lifespan=lifespan,
     )
     app.state.runtime_config = config
+    app.state.guardrails = guardrails
     app.add_middleware(HostedReadinessMiddleware)
+    app.add_middleware(PublicHttpGuardrailMiddleware)
     return app
+
+
+class PublicHttpGuardrails:
+    def __init__(
+        self,
+        *,
+        max_request_bytes: int = 1_000_000,
+        allowed_origins: set[str] | None = None,
+        allowed_hosts: set[str] | None = None,
+        rate_limit_per_minute: int = 120,
+        max_concurrent_requests: int = 10,
+    ) -> None:
+        self.max_request_bytes = max_request_bytes
+        self.allowed_origins = allowed_origins or set()
+        self.allowed_hosts = allowed_hosts or set()
+        self.rate_limit_per_minute = rate_limit_per_minute
+        self.max_concurrent_requests = max_concurrent_requests
+        self.active_requests = 0
+        self.request_times: dict[str, list[float]] = {}
+
+    @classmethod
+    def from_env(cls, env: Mapping[str, str]) -> PublicHttpGuardrails:
+        return cls(
+            max_request_bytes=int(env.get("REDFLAG_MAX_REQUEST_BYTES", "1000000")),
+            allowed_origins=_csv_set(env.get("REDFLAG_ALLOWED_ORIGINS")),
+            allowed_hosts=_csv_set(env.get("REDFLAG_ALLOWED_HOSTS")),
+            rate_limit_per_minute=int(env.get("REDFLAG_RATE_LIMIT_PER_MINUTE", "120")),
+            max_concurrent_requests=int(
+                env.get("REDFLAG_MAX_CONCURRENT_REQUESTS", "10")
+            ),
+        )
+
+    def check_rate_limit(self, client_id: str, *, now: float | None = None) -> bool:
+        if self.rate_limit_per_minute <= 0:
+            return True
+        now = now or time.monotonic()
+        window_start = now - 60
+        recent = [
+            timestamp
+            for timestamp in self.request_times.get(client_id, [])
+            if timestamp >= window_start
+        ]
+        if len(recent) >= self.rate_limit_per_minute:
+            self.request_times[client_id] = recent
+            return False
+        recent.append(now)
+        self.request_times[client_id] = recent
+        return True
+
+
+class PublicHttpGuardrailMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        guardrails = getattr(request.app.state, "guardrails", PublicHttpGuardrails())
+
+        host = request.headers.get("host", "").split(":", 1)[0]
+        if guardrails.allowed_hosts and host not in guardrails.allowed_hosts:
+            return _guardrail_error("host_not_allowed", 403)
+
+        origin = request.headers.get("origin")
+        if origin and guardrails.allowed_origins and origin not in guardrails.allowed_origins:
+            return _guardrail_error("origin_not_allowed", 403)
+
+        content_length = request.headers.get("content-length")
+        if (
+            content_length is not None
+            and int(content_length) > guardrails.max_request_bytes
+        ):
+            return _guardrail_error("request_too_large", 413)
+
+        client = request.client.host if request.client else "unknown"
+        if not guardrails.check_rate_limit(client):
+            return _guardrail_error("rate_limit_exceeded", 429)
+
+        if guardrails.active_requests >= guardrails.max_concurrent_requests:
+            return _guardrail_error("too_many_concurrent_requests", 503)
+
+        guardrails.active_requests += 1
+        try:
+            return await call_next(request)
+        finally:
+            guardrails.active_requests -= 1
 
 
 class HostedReadinessMiddleware(BaseHTTPMiddleware):
@@ -101,6 +186,16 @@ def _load_hosted_runtime_config(env: Mapping[str, str] | None) -> RuntimeConfig:
     values = dict(os.environ if env is None else env)
     values.setdefault("REDFLAG_RUNTIME_MODE", RuntimeMode.HOSTED_CORPUS.value)
     return load_runtime_config(values)
+
+
+def _csv_set(value: str | None) -> set[str]:
+    if not value:
+        return set()
+    return {item.strip() for item in value.split(",") if item.strip()}
+
+
+def _guardrail_error(error: str, status_code: int) -> JSONResponse:
+    return JSONResponse({"error": error}, status_code=status_code)
 
 
 app = create_http_app()

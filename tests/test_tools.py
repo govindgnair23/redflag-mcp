@@ -10,7 +10,13 @@ from redflag_mcp.lexicalstore import create_lexical_store
 from redflag_mcp.models import CorpusMetadata
 from redflag_mcp.models import RedFlagRecord
 from redflag_mcp.server import create_server
-from redflag_mcp.tools import MAX_SEARCH_LIMIT, PRE_INGESTION_MESSAGE, RedFlagService
+from redflag_mcp.tools import (
+    MAX_FILTER_VALUES,
+    MAX_QUERY_LENGTH,
+    MAX_SEARCH_LIMIT,
+    PRE_INGESTION_MESSAGE,
+    RedFlagService,
+)
 from redflag_mcp.vectorstore import get_or_create_table, open_store, upsert_records
 
 
@@ -22,6 +28,11 @@ class FakeModel:
 class FailingModel:
     def encode(self, sentences: list[str], **kwargs: object) -> list[list[float]]:
         raise AssertionError("corpus mode should not encode queries")
+
+
+class FailingTable:
+    def count_rows(self) -> int:
+        raise AssertionError("validation should run before querying the store")
 
 
 def vector(first_value: float) -> list[float]:
@@ -171,6 +182,38 @@ def test_search_returns_clamped_sourced_results(tmp_vectors_dir):
     assert len(response["results"]) == 2
     assert response["results"][0]["source_url"] == "https://example.com/source.pdf"
     assert "vector" not in response["results"][0]
+
+
+def test_search_rejects_overlong_query_before_store_access():
+    service = RedFlagService(table=FailingTable(), embedding_model=FailingModel())
+
+    response = service.search_red_flags(query="x" * (MAX_QUERY_LENGTH + 1))
+
+    assert response["results"] == []
+    assert "query is too long" in response["message"]
+
+
+def test_search_rejects_too_many_filter_values_before_store_access():
+    service = RedFlagService(table=FailingTable(), embedding_model=FailingModel())
+
+    response = service.search_red_flags(
+        query="invoice risk",
+        product_types=[f"type-{index}" for index in range(MAX_FILTER_VALUES + 1)],
+    )
+
+    assert response["results"] == []
+    assert "too many filter values" in response["message"]
+
+
+def test_filter_red_flags_rejects_too_many_filter_values_before_store_access():
+    service = RedFlagService(table=FailingTable(), embedding_model=FailingModel())
+
+    response = service.filter_red_flags(
+        product_types=[f"type-{index}" for index in range(MAX_FILTER_VALUES + 1)],
+    )
+
+    assert response["results"] == []
+    assert "too many filter values" in response["message"]
 
 
 def test_search_with_rich_filters_excludes_non_matching_records(tmp_vectors_dir):

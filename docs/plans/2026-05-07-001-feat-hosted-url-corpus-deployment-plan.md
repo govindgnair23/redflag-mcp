@@ -269,7 +269,7 @@ flowchart TB
 **Verification:**
 - The app can be hosted as an HTTP service with separate MCP and health/readiness endpoints.
 
-- [ ] **Unit 4: Add Public HTTP Guardrails**
+- [x] **Unit 4: Add Public HTTP Guardrails**
 
 **Goal:** Bound the anonymous public connector so the first hosted endpoint is simple but not unbounded.
 
