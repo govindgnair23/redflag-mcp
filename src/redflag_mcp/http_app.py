@@ -185,6 +185,7 @@ class HostedReadinessMiddleware(BaseHTTPMiddleware):
 def _load_hosted_runtime_config(env: Mapping[str, str] | None) -> RuntimeConfig:
     values = dict(os.environ if env is None else env)
     values.setdefault("REDFLAG_RUNTIME_MODE", RuntimeMode.HOSTED_CORPUS.value)
+    values.setdefault("REDFLAG_CORPUS_RELEASE_INDEX", "dist/corpus/releases.json")
     return load_runtime_config(values)
 
 

@@ -288,11 +288,6 @@ def _hosted_config_error(config: RuntimeConfig) -> str | None:
             )
         return None
     if config.corpus_release_index_path is not None:
-        if not config.corpus_version:
-            return (
-                "Hosted corpus mode requires REDFLAG_CORPUS_VERSION with "
-                "REDFLAG_CORPUS_RELEASE_INDEX."
-            )
         return None
     return "Hosted corpus mode requires a verified corpus package or release index."
 
