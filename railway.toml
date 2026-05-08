@@ -3,7 +3,6 @@ builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-startCommand = "uv run uvicorn redflag_mcp.http_app:app --host 0.0.0.0 --port $PORT"
 healthcheckPath = "/ready"
 healthcheckTimeout = 60
 restartPolicyType = "ON_FAILURE"
