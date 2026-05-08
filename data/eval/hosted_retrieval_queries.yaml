@@ -11,7 +11,7 @@ queries:
     query: southwest border oil company waste oil hazardous materials
     top_n: 5
     expected_ids:
-      - 002_oil_smuggling_cartels-13
+      - 002_oil_smuggling_cartels-11
 
   - id: bulk-cash-mexico
     query: bulk cash movement armored car service Mexico
