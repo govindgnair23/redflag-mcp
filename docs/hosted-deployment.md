@@ -12,7 +12,7 @@ Public hosted mode is not for confidential customer, transaction, institution, o
 - ASGI app: `redflag_mcp.http_app:app`
 - First hosted mode: anonymous, single instance, process-local rate and concurrency limits
 
-Railway should use `/ready` as the deployment healthcheck. `/health` only proves that HTTP is running; `/ready` proves that a verified corpus has activated. Railway healthcheck requests use host `healthcheck.railway.app`, so include that host in `REDFLAG_ALLOWED_HOSTS`.
+Railway should use `/health` as the deployment healthcheck so the container can become reachable even when corpus activation needs debugging. `/ready` is the operator readiness check for verified corpus activation and must return corpus metadata before public traffic is considered usable. Railway healthcheck requests use host `healthcheck.railway.app`, so include that host in `REDFLAG_ALLOWED_HOSTS`.
 
 ## Corpus Artifact
 
@@ -42,7 +42,8 @@ Original PDFs and source text stay under `red_flag_sources/` or controlled build
 
 - `uv sync --frozen` for dependency installation
 - `uv run uvicorn redflag_mcp.http_app:app --host 0.0.0.0 --port $PORT` for startup
-- `/ready` as the deployment healthcheck path
+- `/health` as the deployment healthcheck path
+- `/ready` as the corpus readiness check operators should verify after deploy
 - hosted corpus runtime variables and public request bounds
 
 Keep the first deployment to one service instance because the current rate limiter and concurrency cap are process-local.
@@ -61,7 +62,7 @@ REDFLAG_MAX_CONCURRENT_REQUESTS=10
 REDFLAG_RATE_LIMIT_PER_MINUTE=120
 ```
 
-Railway injects `$PORT`; do not hard-code the port in the start command. Railway's deployment healthcheck is an activation gate, not continuous uptime monitoring. Add external uptime monitoring if public availability becomes important.
+Railway injects `$PORT`; do not hard-code the port in the start command. Railway's deployment healthcheck is a process liveness gate, not corpus readiness or continuous uptime monitoring. Add external uptime monitoring if public availability becomes important.
 
 ## Logging And Privacy
 
