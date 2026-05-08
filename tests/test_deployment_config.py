@@ -13,16 +13,12 @@ def test_railway_config_launches_hosted_asgi_app() -> None:
     build = config["build"]
     deploy = config["deploy"]
     variables = config["variables"]
-    start_command = deploy["startCommand"]
 
     assert build["builder"] == "DOCKERFILE"
     assert build["dockerfilePath"] == "Dockerfile"
     assert "buildCommand" not in build
+    assert "startCommand" not in deploy
     assert deploy["healthcheckPath"] == "/ready"
-    assert "uvicorn" in start_command
-    assert "redflag_mcp.http_app:app" in start_command
-    assert "--host 0.0.0.0" in start_command
-    assert "--port $PORT" in start_command
     assert variables["REDFLAG_RUNTIME_MODE"] == "hosted-corpus"
     assert variables["REDFLAG_ALLOWED_HOSTS"]
     assert "healthcheck.railway.app" in variables["REDFLAG_ALLOWED_HOSTS"]
