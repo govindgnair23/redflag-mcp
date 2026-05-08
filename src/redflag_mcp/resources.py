@@ -17,6 +17,7 @@ def register_resources(
     vector_dir: Path = VECTORS_DIR,
     corpus_path: Path | None = None,
     embedding_model: EmbeddingModel | None = None,
+    disable_fallback: bool = False,
 ) -> None:
     @mcp.resource(
         "redflag://sources",
@@ -27,7 +28,13 @@ def register_resources(
     def source_catalog() -> str:
         """Return source coverage summaries as JSON."""
         return _json(
-            _service(None, vector_dir, corpus_path, embedding_model).list_sources()
+            _service(
+                None,
+                vector_dir,
+                corpus_path,
+                embedding_model,
+                disable_fallback,
+            ).list_sources()
         )
 
     @mcp.resource(
@@ -39,7 +46,13 @@ def register_resources(
     def source_detail(source_id: str, ctx: Context | None = None) -> str:
         """Return one source detail as JSON."""
         return _json(
-            _service(ctx, vector_dir, corpus_path, embedding_model).get_source(source_id)
+            _service(
+                ctx,
+                vector_dir,
+                corpus_path,
+                embedding_model,
+                disable_fallback,
+            ).get_source(source_id)
         )
 
 
@@ -52,7 +65,12 @@ def _service(
     vector_dir: Path,
     corpus_path: Path | None,
     embedding_model: EmbeddingModel | None,
+    disable_fallback: bool,
 ) -> RedFlagService:
+    if disable_fallback:
+        if ctx is None:
+            raise RuntimeError("Hosted resources require activated corpus state")
+        return _service_from_context(ctx)
     if ctx is None:
         if corpus_path is not None:
             return RedFlagService.from_corpus_path(

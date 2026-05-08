@@ -24,6 +24,8 @@ from redflag_mcp.vectorstore import (
 )
 
 MAX_SEARCH_LIMIT = 20
+MAX_QUERY_LENGTH = 1000
+MAX_FILTER_VALUES = 25
 ROUTE_NEEDS_MORE_CONTEXT = "needs_more_context"
 ROUTE_METADATA_FILTER = "metadata_filter"
 ROUTE_FILTERED_SEMANTIC_SEARCH = "filtered_semantic_search"
@@ -131,6 +133,16 @@ class RedFlagService:
         risk_level: str | None = None,
         regulator_jurisdiction: str | None = None,
     ) -> dict[str, Any]:
+        validation_error = _validate_public_search_inputs(
+            query=query,
+            product_types=product_types,
+            industry_types=industry_types,
+            customer_profiles=customer_profiles,
+            geographic_footprints=geographic_footprints,
+        )
+        if validation_error is not None:
+            return {"message": validation_error, "results": []}
+
         if self.table.count_rows() == 0:
             return self._with_corpus({"message": PRE_INGESTION_MESSAGE, "results": []})
 
@@ -208,6 +220,21 @@ class RedFlagService:
         source_url: str | None = None,
         source_id: str | None = None,
     ) -> dict[str, Any]:
+        validation_error = _validate_filter_cardinality(
+            product_types=product_types,
+            industry_types=industry_types,
+            customer_profiles=customer_profiles,
+            geographic_footprints=geographic_footprints,
+            typology_family=typology_family,
+            transaction_patterns=transaction_patterns,
+        )
+        if validation_error is not None:
+            return {
+                "message": validation_error,
+                "match_type": "metadata_filter",
+                "results": [],
+            }
+
         if self.table.count_rows() == 0:
             return self._with_corpus(
                 {
@@ -604,6 +631,8 @@ def _service_from_context(ctx: Context | None) -> RedFlagService:
     if ctx is None:
         return RedFlagService.from_vector_dir()
     state = ctx.request_context.lifespan_context
+    if state.service is None:
+        raise RuntimeError(state.readiness.message)
     return state.service
 
 
@@ -667,6 +696,35 @@ def _clean_filter_arguments(**filters: object) -> dict[str, Any]:
         elif value:
             cleaned[field_name] = value
     return cleaned
+
+
+def _validate_public_search_inputs(
+    *,
+    query: str,
+    product_types: list[str] | None = None,
+    industry_types: list[str] | None = None,
+    customer_profiles: list[str] | None = None,
+    geographic_footprints: list[str] | None = None,
+) -> str | None:
+    if len(query) > MAX_QUERY_LENGTH:
+        return f"Search query is too long; maximum length is {MAX_QUERY_LENGTH} characters."
+
+    return _validate_filter_cardinality(
+        product_types=product_types,
+        industry_types=industry_types,
+        customer_profiles=customer_profiles,
+        geographic_footprints=geographic_footprints,
+    )
+
+
+def _validate_filter_cardinality(**filters: list[str] | None) -> str | None:
+    filter_values = sum(len(value or []) for value in filters.values())
+    if filter_values > MAX_FILTER_VALUES:
+        return (
+            "Request has too many filter values; maximum total filter "
+            f"values is {MAX_FILTER_VALUES}."
+        )
+    return None
 
 
 def _has_enough_context_filters(filters: dict[str, Any]) -> bool:

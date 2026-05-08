@@ -34,6 +34,7 @@ LOGGER = logging.getLogger(__name__)
 DEFAULT_ALIASES_PATH = PROJECT_ROOT / "data/lexicon/aliases.yaml"
 DEFAULT_SOURCE_METADATA_PATH = PROJECT_ROOT / "data/lexicon/source_metadata.yaml"
 DEFAULT_SOURCE_REGISTRY_PATH = PROJECT_ROOT / "red_flag_sources/sources.yaml"
+DEFAULT_DEPENDENCY_LOCK_PATH = PROJECT_ROOT / "uv.lock"
 FIXED_ZIP_TIMESTAMP = (2026, 1, 1, 0, 0, 0)
 
 
@@ -73,6 +74,7 @@ def build_corpus_package(
     aliases_path: Path = DEFAULT_ALIASES_PATH,
     source_metadata_path: Path = DEFAULT_SOURCE_METADATA_PATH,
     source_registry_path: Path = DEFAULT_SOURCE_REGISTRY_PATH,
+    dependency_lock_path: Path = DEFAULT_DEPENDENCY_LOCK_PATH,
 ) -> CorpusBuildResult:
     output_dir.mkdir(parents=True, exist_ok=True)
     build_timestamp = build_timestamp or datetime.now(UTC).strftime(
@@ -87,6 +89,29 @@ def build_corpus_package(
     source_registry = load_source_registry(source_registry_path)
     source_metadata = load_source_metadata(source_metadata_path)
     source_manifest = build_source_manifest(source_metadata, source_registry)
+    source_record_hashes = {
+        source.id: sha256_json(source.model_dump(mode="json", exclude_none=True))
+        for source in sorted(sources, key=lambda item: item.id)
+    }
+    build_inputs = {
+        "aliases_sha256": sha256_file(aliases_path) if aliases_path.exists() else None,
+        "source_metadata_sha256": (
+            sha256_file(source_metadata_path)
+            if source_metadata_path.exists()
+            else None
+        ),
+        "source_registry_sha256": (
+            sha256_file(source_registry_path)
+            if source_registry_path.exists()
+            else None
+        ),
+        "dependency_lock_sha256": (
+            sha256_file(dependency_lock_path)
+            if dependency_lock_path.exists()
+            else None
+        ),
+    }
+    enrichment_provenance = _build_enrichment_provenance(source_manifest)
     package_id = f"redflag-corpus-{version}"
     sqlite_path = output_dir / "redflags.sqlite"
     corpus = CorpusMetadata(
@@ -98,6 +123,9 @@ def build_corpus_package(
         integrity_status="verified",
         record_count=len(records),
         source_count=len(source_manifest),
+        source_record_hashes=source_record_hashes,
+        build_inputs=build_inputs,
+        enrichment_provenance=enrichment_provenance,
     )
     extra_search_text = {
         source.id: _enriched_search_terms(source)
@@ -121,23 +149,9 @@ def build_corpus_package(
         "record_count": len(records),
         "source_count": len(source_manifest),
         "file_hashes": {"redflags.sqlite": sqlite_hash},
-        "source_record_hashes": {
-            source.id: sha256_json(source.model_dump(mode="json", exclude_none=True))
-            for source in sorted(sources, key=lambda item: item.id)
-        },
-        "build_inputs": {
-            "aliases_sha256": sha256_file(aliases_path) if aliases_path.exists() else None,
-            "source_metadata_sha256": (
-                sha256_file(source_metadata_path)
-                if source_metadata_path.exists()
-                else None
-            ),
-            "source_registry_sha256": (
-                sha256_file(source_registry_path)
-                if source_registry_path.exists()
-                else None
-            ),
-        },
+        "source_record_hashes": source_record_hashes,
+        "build_inputs": build_inputs,
+        "enrichment_provenance": enrichment_provenance,
         "sources": {
             key: entry.model_dump(exclude_none=True)
             for key, entry in source_manifest.items()
@@ -273,6 +287,21 @@ def _source_key(value: object) -> str:
     return str(value).zfill(3)
 
 
+def _build_enrichment_provenance(
+    source_manifest: dict[str, SourceReleaseMetadata],
+) -> dict[str, str]:
+    statuses = {entry.enrichment_status for entry in source_manifest.values()}
+    if "manual_review" in statuses:
+        status = "manual_review"
+    elif statuses == {"approved"}:
+        status = "approved"
+    elif "generated" in statuses:
+        status = "generated"
+    else:
+        status = "unknown"
+    return {"status": status}
+
+
 def main(argv: Sequence[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Build a local red flag corpus ZIP.")
     parser.add_argument("sources", nargs="*", type=Path)
@@ -283,6 +312,10 @@ def main(argv: Sequence[str] | None = None) -> None:
     )
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--version", required=True)
+    parser.add_argument(
+        "--build-timestamp",
+        help="Deterministic UTC build timestamp to store in manifest metadata.",
+    )
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
     try:
@@ -296,6 +329,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         source_paths,
         output_dir=args.output_dir,
         version=args.version,
+        build_timestamp=args.build_timestamp,
     )
     LOGGER.info("Built corpus package %s", result.package_path)
 

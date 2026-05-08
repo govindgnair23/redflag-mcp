@@ -13,6 +13,7 @@ def activate_corpus(
     *,
     cache_dir: Path,
     corpus_package_path: Path | None = None,
+    expected_package_sha256: str | None = None,
     corpus_version: str | None = None,
     release_index_path: Path | None = None,
     auto_update: bool = True,
@@ -21,6 +22,7 @@ def activate_corpus(
         CorpusInstallConfig(
             cache_dir=cache_dir,
             corpus_package_path=corpus_package_path,
+            expected_package_sha256=expected_package_sha256,
             corpus_version=corpus_version,
             release_index_path=release_index_path,
             auto_update=auto_update,

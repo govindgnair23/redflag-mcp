@@ -1,0 +1,26 @@
+# Smoke benchmark for hosted lexical corpus retrieval.
+# This is a launch gate, not a broad measure of AML retrieval quality.
+queries:
+  - id: tbml-alias-invoice
+    query: TBML invoice mismatch import export
+    top_n: 5
+    expected_ids:
+      - 002_oil_smuggling_cartels-13
+
+  - id: southwest-border-oil
+    query: southwest border oil company waste oil hazardous materials
+    top_n: 5
+    expected_ids:
+      - 002_oil_smuggling_cartels-13
+
+  - id: bulk-cash-mexico
+    query: bulk cash movement armored car service Mexico
+    top_n: 5
+    expected_ids:
+      - 003_bulk_cash_smuggling_repatriation-01
+
+  - id: federal-benefits-fraud
+    query: government benefits sponsor reimbursements inconsistent with profile
+    top_n: 5
+    expected_category: fraud_nexus
+    expected_regulatory_source: FinCEN Alert FIN-2026-Alert001
