@@ -18,7 +18,7 @@ def test_railway_config_launches_hosted_asgi_app() -> None:
     assert build["dockerfilePath"] == "Dockerfile"
     assert "buildCommand" not in build
     assert "startCommand" not in deploy
-    assert deploy["healthcheckPath"] == "/ready"
+    assert deploy["healthcheckPath"] == "/health"
     assert variables["REDFLAG_RUNTIME_MODE"] == "hosted-corpus"
     assert variables["REDFLAG_ALLOWED_HOSTS"]
     assert "healthcheck.railway.app" in variables["REDFLAG_ALLOWED_HOSTS"]
