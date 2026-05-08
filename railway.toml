@@ -1,6 +1,6 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "uv sync --frozen"
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
 
 [deploy]
 startCommand = "uv run uvicorn redflag_mcp.http_app:app --host 0.0.0.0 --port $PORT"

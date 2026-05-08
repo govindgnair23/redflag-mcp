@@ -10,10 +10,14 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 def test_railway_config_launches_hosted_asgi_app() -> None:
     config = tomllib.loads((PROJECT_ROOT / "railway.toml").read_text())
 
+    build = config["build"]
     deploy = config["deploy"]
     variables = config["variables"]
     start_command = deploy["startCommand"]
 
+    assert build["builder"] == "DOCKERFILE"
+    assert build["dockerfilePath"] == "Dockerfile"
+    assert "buildCommand" not in build
     assert deploy["healthcheckPath"] == "/ready"
     assert "uvicorn" in start_command
     assert "redflag_mcp.http_app:app" in start_command
