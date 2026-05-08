@@ -97,6 +97,10 @@ def test_source_metadata_merges_with_source_registry():
             jurisdiction="US",
             publication_date="2026-01",
             redistribution_status="url_only",
+            retrieved_at="2026-04-29",
+            citation_url="https://example.com/fincen-alert.pdf",
+            durable_citation="FinCEN FIN-2026-A001",
+            enrichment_status="approved",
         )
     }
     registry = {"001": {"url": "https://example.com/fincen-alert.pdf"}}
@@ -105,6 +109,10 @@ def test_source_metadata_merges_with_source_registry():
 
     assert manifest["001"].title == "Federal Child Nutrition Program Fraud Alert"
     assert manifest["001"].source_url == "https://example.com/fincen-alert.pdf"
+    assert manifest["001"].retrieved_at == "2026-04-29"
+    assert manifest["001"].citation_url == "https://example.com/fincen-alert.pdf"
+    assert manifest["001"].durable_citation == "FinCEN FIN-2026-A001"
+    assert manifest["001"].enrichment_status == "approved"
     assert manifest["001"].redistribution_status == "url_only"
     assert manifest["001"].bundle_source_asset is False
 

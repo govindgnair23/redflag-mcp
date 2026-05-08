@@ -31,7 +31,15 @@ class CorpusVerificationResult:
     file_hashes: dict[str, str] | None = None
 
 
-def verify_corpus_package(package_path: Path) -> CorpusVerificationResult:
+def verify_corpus_package(
+    package_path: Path,
+    *,
+    expected_sha256: str | None = None,
+) -> CorpusVerificationResult:
+    if expected_sha256 is not None:
+        actual_sha256 = _sha256_file(package_path)
+        if actual_sha256 != expected_sha256:
+            return _failed("Corpus package hash mismatch")
     try:
         with zipfile.ZipFile(package_path) as archive:
             names = set(archive.namelist())
@@ -68,12 +76,24 @@ def _failed(message: str) -> CorpusVerificationResult:
     return CorpusVerificationResult(status="failed", message=message, file_hashes={})
 
 
+def _sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def main(argv: Sequence[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Verify a local red flag corpus ZIP.")
     parser.add_argument("package", type=Path)
+    parser.add_argument("--expected-sha256")
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-    result = verify_corpus_package(args.package)
+    result = verify_corpus_package(
+        args.package,
+        expected_sha256=args.expected_sha256,
+    )
     if result.status == "verified":
         LOGGER.info("Verified %s", args.package)
         return
