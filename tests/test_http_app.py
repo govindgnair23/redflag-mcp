@@ -228,3 +228,6 @@ def test_create_http_app_defaults_to_hosted_runtime_mode() -> None:
     app = create_http_app()
 
     assert app.state.runtime_config.mode == RuntimeMode.HOSTED_CORPUS
+    assert app.state.runtime_config.corpus_release_index_path == Path(
+        "dist/corpus/releases.json"
+    )
