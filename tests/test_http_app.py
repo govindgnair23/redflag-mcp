@@ -130,6 +130,35 @@ def test_mcp_is_mounted_at_single_connector_path(tmp_path):
     assert nested_response.status_code == 404
 
 
+def test_mcp_accepts_public_host_when_allowed_hosts_are_not_configured(tmp_path):
+    app = hosted_app(tmp_path)
+
+    with TestClient(app, base_url="https://redflag-mcp.up.railway.app") as client:
+        response = client.post(
+            "/mcp",
+            json={},
+            headers={"accept": "application/json, text/event-stream"},
+        )
+
+    assert response.status_code != 421
+
+
+def test_mcp_uses_configured_allowed_host_for_transport_security(tmp_path):
+    app = hosted_app(
+        tmp_path,
+        {"REDFLAG_ALLOWED_HOSTS": "redflag-mcp.up.railway.app"},
+    )
+
+    with TestClient(app, base_url="https://redflag-mcp.up.railway.app") as client:
+        response = client.post(
+            "/mcp",
+            json={},
+            headers={"accept": "application/json, text/event-stream"},
+        )
+
+    assert response.status_code != 421
+
+
 def test_mcp_requests_are_rejected_when_hosted_runtime_not_ready(tmp_path):
     app = create_http_app(
         runtime_config=load_runtime_config(

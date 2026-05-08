@@ -5,6 +5,7 @@ import time
 from collections.abc import AsyncIterator, Mapping
 from contextlib import AsyncExitStack, asynccontextmanager
 
+from mcp.server.transport_security import TransportSecuritySettings
 from starlette.applications import Starlette
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
@@ -40,6 +41,7 @@ def create_http_app(
         json_response=True,
         stateless_http=True,
         state_factory=lambda: state_holder["state"],
+        transport_security=_transport_security_from_guardrails(guardrails),
     )
     mcp_app = mcp.streamable_http_app()
 
@@ -197,6 +199,18 @@ def _csv_set(value: str | None) -> set[str]:
 
 def _guardrail_error(error: str, status_code: int) -> JSONResponse:
     return JSONResponse({"error": error}, status_code=status_code)
+
+
+def _transport_security_from_guardrails(
+    guardrails: PublicHttpGuardrails,
+) -> TransportSecuritySettings:
+    if not guardrails.allowed_hosts:
+        return TransportSecuritySettings(enable_dns_rebinding_protection=False)
+    return TransportSecuritySettings(
+        enable_dns_rebinding_protection=True,
+        allowed_hosts=sorted(guardrails.allowed_hosts),
+        allowed_origins=sorted(guardrails.allowed_origins),
+    )
 
 
 app = create_http_app()

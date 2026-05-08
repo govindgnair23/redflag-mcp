@@ -9,6 +9,7 @@ from enum import Enum
 from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
+from mcp.server.transport_security import TransportSecuritySettings
 
 from redflag_mcp.config import VECTORS_DIR
 from redflag_mcp.corpus import activate_corpus
@@ -184,6 +185,7 @@ def create_server(
     json_response: bool = False,
     stateless_http: bool = False,
     state_factory: Callable[[], ServerState] | None = None,
+    transport_security: TransportSecuritySettings | None = None,
 ) -> FastMCP[ServerState]:
     config = runtime_config or RuntimeConfig(
         mode=(
@@ -223,6 +225,7 @@ def create_server(
         port=port,
         json_response=json_response,
         stateless_http=stateless_http,
+        transport_security=transport_security,
         lifespan=lifespan,
     )
     register_tools(mcp)
