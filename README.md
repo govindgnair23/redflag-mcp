@@ -24,13 +24,56 @@ The hosted connector is backed by a verified packaged corpus. End users do not n
 
 ## Overview
 
-Five distinct workflows:
+Six distinct workflows:
 
-1. **Extraction** — pull AML red flags out of PDFs or web pages using an LLM and save them as YAML
-2. **Ingestion** — embed the YAML files and load them into the local vector database
-3. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
-4. **Hosted deployment** — run the ASGI MCP service from a verified corpus package at one public `/mcp` URL
-5. **Query** — MCP server answers search and filtering requests against the configured local or hosted store
+1. **Source harvesting** — download PDFs and capture web pages from the AML catalog CSV into the local source registry
+2. **Extraction** — pull AML red flags out of PDFs or web pages using an LLM and save them as YAML
+3. **Ingestion** — embed the YAML files and load them into the local vector database
+4. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
+5. **Hosted deployment** — run the ASGI MCP service from a verified corpus package at one public `/mcp` URL
+6. **Query** — MCP server answers search and filtering requests against the configured local or hosted store
+
+---
+
+## Source Harvesting
+
+`scripts/harvest_sources.py` automates acquisition of regulatory documents from the Global AML/CFT/Sanctions Red Flag Catalog. It reads the `Direct URL` column, classifies each URL as a PDF or web page, downloads the file, and registers it in `red_flag_sources/sources.yaml`.
+
+```bash
+uv run python scripts/harvest_sources.py red_flag_sources/Global_AML_CFT_Sanctions_Red_Flag_Catalog.csv
+```
+
+**What it does:**
+
+1. Reads the `Direct URL` column from each CSV row
+2. Skips blank, malformed, or already-registered URLs
+3. Classifies the URL as PDF via path heuristics (`.pdf` suffix, `/download`, `/file`) — falls back to an HTTP HEAD check for ambiguous cases
+4. Downloads PDFs to `red_flag_sources/pdf/NNN.pdf`
+5. Fetches web pages via the [Jina Reader API](https://r.jina.ai/) and saves cleaned markdown to `red_flag_sources/markdown/NNN.md`
+6. Appends each new entry to `sources.yaml` (written once at the end)
+7. Prints a final summary: PDFs downloaded, web pages fetched, skipped, failed
+
+The script is **idempotent** — re-running against the same CSV produces no new files or registry entries. Per-URL failures are logged and skipped without aborting the run.
+
+```
+red_flag_sources/
+  Global_AML_CFT_Sanctions_Red_Flag_Catalog.csv   # input catalog (~218 URLs)
+  sources.yaml                                      # registry of all harvested URLs
+  pdf/                                              # downloaded PDFs (gitignored via *.pdf)
+  markdown/                                         # Jina Reader captures (gitignored)
+```
+
+After harvesting, pass the downloaded files to the extraction pipeline:
+
+```bash
+# Extract red flags from all newly downloaded PDFs
+uv run python scripts/extract.py --parallel
+
+# Or target a specific serial range
+uv run python scripts/extract.py --range 039-060 --parallel
+```
+
+> **Note:** `sources.yaml` is the shared registry for both `harvest_sources.py` and `build_sources_registry.py`. Do not run both scripts concurrently — each does a full overwrite on save.
 
 ---
 
