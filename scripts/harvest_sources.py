@@ -152,6 +152,12 @@ def main(argv: list[str] | None = None) -> None:
         type=Path,
         help="Path to the CSV file containing a 'Direct URL' column.",
     )
+    parser.add_argument(
+        "--force",
+        "-f",
+        action="store_true",
+        help="Re-download already-registered URLs, overwriting existing local files.",
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -164,6 +170,7 @@ def main(argv: list[str] | None = None) -> None:
     MARKDOWN_DIR.mkdir(parents=True, exist_ok=True)
 
     registry, existing_urls = load_registry(SOURCES_YAML)
+    url_to_key: dict[str, str] = {v["url"]: k for k, v in registry.items() if "url" in v}
     serial = next_serial(registry)
 
     pdf_count = 0
@@ -188,12 +195,17 @@ def main(argv: list[str] | None = None) -> None:
                         continue
 
                     if url in existing_urls:
-                        LOGGER.info("Already registered, skipping: %s", url)
-                        skipped_count += 1
-                        continue
+                        if not args.force:
+                            LOGGER.info("Already registered, skipping: %s", url)
+                            skipped_count += 1
+                            continue
+                        # Force mode: re-download using the existing key
+                        key = url_to_key[url]
+                        LOGGER.info("Force re-downloading %s (key %s)", url, key)
+                    else:
+                        key = f"{serial:03d}"
 
                     kind = classify_url(url, client)
-                    key = f"{serial:03d}"
                     dest_path = (
                         PDFS_DIR / f"{key}.pdf"
                         if kind == "pdf"
@@ -212,7 +224,8 @@ def main(argv: list[str] | None = None) -> None:
 
                         registry[key] = {"url": url}
                         existing_urls.add(url)
-                        serial += 1
+                        if url not in url_to_key:
+                            serial += 1
                     except Exception as exc:
                         LOGGER.error("Failed %s: %s", url, exc)
                         failed_count += 1
