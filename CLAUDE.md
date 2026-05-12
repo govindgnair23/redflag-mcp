@@ -8,6 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 uv sync                                        # Install dependencies
 uv run python -m redflag_mcp                   # Start MCP server (stdio mode)
 uv run mcp dev src/redflag_mcp/server.py       # Run in MCP inspector
+uv run python scripts/harvest_sources.py <csv> # Download PDFs/web pages from catalog CSV
 uv run python scripts/ingest.py                # Populate vector DB from YAML sources
 uv run pytest tests/                           # Run full test suite
 uv run pytest tests/test_tools.py             # Run a single test file
