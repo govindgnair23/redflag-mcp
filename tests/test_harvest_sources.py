@@ -564,3 +564,84 @@ class TestMainIntegration:
         registry, _ = load_registry(registry_path)
         assert len(registry) == 0
         assert not (tmp_path / "markdown" / "001.md").exists()
+
+    def test_force_redownloads_existing_url(self, tmp_path, monkeypatch):
+        """--force re-downloads an already-registered URL using its existing key."""
+        pdf_url = "https://example.com/report.pdf"
+
+        registry_path = _make_registry(tmp_path, {"005": {"url": pdf_url}})
+        csv_path = _make_csv(
+            tmp_path,
+            [{"Region": "US", "Direct URL": pdf_url, "Document Title": "PDF"}],
+        )
+        pdfs_dir = tmp_path / "pdf"
+        pdfs_dir.mkdir()
+
+        monkeypatch.setattr("harvest_sources.SOURCES_YAML", registry_path)
+        monkeypatch.setattr("harvest_sources.PDFS_DIR", pdfs_dir)
+        monkeypatch.setattr("harvest_sources.MARKDOWN_DIR", tmp_path / "markdown")
+
+        def mock_get(url, **kwargs):
+            resp = MagicMock()
+            resp.raise_for_status = MagicMock()
+            resp.content = b"%PDF-refreshed"
+            return resp
+
+        with patch("harvest_sources.httpx.Client") as mock_client_cls:
+            mock_client = MagicMock()
+            mock_client.__enter__ = MagicMock(return_value=mock_client)
+            mock_client.__exit__ = MagicMock(return_value=False)
+            mock_client.get.side_effect = mock_get
+            mock_client_cls.return_value = mock_client
+
+            main([str(csv_path), "--force"])
+
+        # File should be (re-)written at the existing key path
+        assert (pdfs_dir / "005.pdf").read_bytes() == b"%PDF-refreshed"
+
+        # Registry should still have the same key, not a new one
+        registry, _ = load_registry(registry_path)
+        assert len(registry) == 1
+        assert "005" in registry
+        assert registry["005"] == {"url": pdf_url}
+
+    def test_force_does_not_increment_serial_for_existing(self, tmp_path, monkeypatch):
+        """--force on an already-registered URL does not advance the serial counter."""
+        existing_url = "https://example.com/old.pdf"
+        new_url = "https://example.com/new.pdf"
+
+        registry_path = _make_registry(tmp_path, {"003": {"url": existing_url}})
+        csv_path = _make_csv(
+            tmp_path,
+            [
+                {"Region": "US", "Direct URL": existing_url, "Document Title": "Old"},
+                {"Region": "US", "Direct URL": new_url, "Document Title": "New"},
+            ],
+        )
+        pdfs_dir = tmp_path / "pdf"
+        pdfs_dir.mkdir()
+
+        monkeypatch.setattr("harvest_sources.SOURCES_YAML", registry_path)
+        monkeypatch.setattr("harvest_sources.PDFS_DIR", pdfs_dir)
+        monkeypatch.setattr("harvest_sources.MARKDOWN_DIR", tmp_path / "markdown")
+
+        def mock_get(url, **kwargs):
+            resp = MagicMock()
+            resp.raise_for_status = MagicMock()
+            resp.content = b"%PDF-data"
+            return resp
+
+        with patch("harvest_sources.httpx.Client") as mock_client_cls:
+            mock_client = MagicMock()
+            mock_client.__enter__ = MagicMock(return_value=mock_client)
+            mock_client.__exit__ = MagicMock(return_value=False)
+            mock_client.get.side_effect = mock_get
+            mock_client_cls.return_value = mock_client
+
+            main([str(csv_path), "--force"])
+
+        registry, _ = load_registry(registry_path)
+        # existing_url keeps key 003; new_url gets key 004 (next serial after max=3)
+        assert registry["003"] == {"url": existing_url}
+        assert registry["004"] == {"url": new_url}
+        assert len(registry) == 2
