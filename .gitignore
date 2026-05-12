@@ -29,6 +29,9 @@ data/vectors/
 .DS_Store
 Thumbs.db
 
+# Harvested source materials (downloaded by scripts/harvest_sources.py)
+red_flag_sources/markdown/
+
 # Environment
 .env
 .env.local
