@@ -75,9 +75,7 @@
 038:
   url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
 039:
-  url: https://ofac.treasury.gov/media/934236/download?inline=
-'040':
-  url: https://ofac.treasury.gov/recent-actions/20250320
+  url: https://ofac.treasury.gov/media/935441/download?inline
 '041':
   url: https://ofac.treasury.gov/media/912981/download?inline
 '042':
@@ -126,10 +124,6 @@
   url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
 '064':
   url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
-'065':
-  url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/1-eng
-'066':
-  url: https://fintrac-canafe.canada.ca/intel/operation/oai-fent-eng
 '067':
   url: https://fintrac-canafe.canada.ca/intel/operation/exploitation-eng
 068:
@@ -138,18 +132,6 @@
   url: https://fintrac-canafe.canada.ca/intel/operation/ml-rec-eng
 '070':
   url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
-'071':
-  url: https://fintrac-canafe.canada.ca/intel/operation/wildlife-eng
-'072':
-  url: https://fintrac-canafe.canada.ca/intel/operation/romance-eng
-'073':
-  url: https://fintrac-canafe.canada.ca/intel/operation/dprk-eng
-'074':
-  url: https://fintrac-canafe.canada.ca/intel/operation/oai-cm-eng
-'075':
-  url: https://fintrac-canafe.canada.ca/intel/operation/russia-eng
-'076':
-  url: https://www.canada.ca/en/department-finance/programs/financial-sector-policy/anti-money-laundering-anti-terrorist-financing.html
 '077':
   url: https://www.handbook.fca.org.uk/handbook/FCG.pdf
 078:
@@ -184,58 +166,24 @@
   url: https://assets.publishing.service.gov.uk/media/6835e2f4214f7f554cf6932a/OFSI_Legal_Services_Threat_Assessment.pdf
 093:
   url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
-094:
-  url: https://www.gov.uk/government/collections/money-laundering-regulations-2017-supervision-by-hmrc
 095:
   url: https://assets.publishing.service.gov.uk/media/5cdd76ebe5274a774d84148a/Anti-money_laundering__compliance_in_the_MSB_sector.pdf
 096:
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-097:
-  url: https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/revised-guidelines-money
 098:
   url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
 099:
   url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054144/Guidelines%20on%20MLTF%20risk%20management%20and%20access%20to%20financial%20services.pdf
 '100':
   url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-'101':
-  url: https://www.eba.europa.eu
-'102':
-  url: https://www.europol.europa.eu/publication-events/main-reports/eu-socta-2025
 '103':
   url: https://www.europol.europa.eu/publication-events/main-reports/internet-organised-crime-threat-assessment-iocta-2025
-'104':
-  url: https://www.zoll.de/DE/FIU/Fachliche-Informationen/Typologien/typologien_node.html
-'105':
-  url: https://acpr.banque-france.fr/page-tableau-filtre/lignes-directrices
 '106':
   url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
 '107':
   url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/2025/annex-guideline-wwft-sanctions.pdf
-'108':
-  url: https://www.fiu-nederland.nl/en/publications
-'109':
-  url: https://uif.bancaditalia.it/normativa/norm-indicatori-anomalia/
-'110':
-  url: https://www.bancaditalia.it/compiti/vigilanza/normativa/archivio-norme/disposizioni/disp-2019-cliente/index.html
-'111':
-  url: https://www.sepblac.es/en/about-money-laundering-and-terrorist-financing/risk-operations-examples-catalogue/
-'112':
-  url: https://www.finma.ch/en/documentation/finma-circulars/
-'113':
-  url: https://www.ctif-cfi.be/en/publications
 '114':
   url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
-'115':
-  url: https://www.fi.se/en/published/regulations/2017/201711-regulations-regarding-measures-against-money-laundering-and-terrorist-financing/
-'116':
-  url: https://www.finanstilsynet.no/en/topics/anti-money-laundering/circulars/
-'117':
-  url: https://www.finanssivalvonta.fi/en/regulation/regulatory-framework/anti-money-laundering/regulations-and-guidelines/
-'118':
-  url: https://www.fma.gv.at/en/cross-sectoral-topics/prevention-of-money-laundering-and-terrorist-financing/circulars/
-'119':
-  url: https://www.gov.pl/web/finanse/sprawozdania-z-dzialalnosci-giif
 '120':
   url: https://www.coe.int/en/web/moneyval/activities/typologies
 '121':
@@ -272,24 +220,14 @@
   url: https://www.npa.go.jp/sosikihanzai/jafic/en/nenzihokoku_e/data/jafic_e2024.pdf
 '137':
   url: https://www.npa.go.jp/sosikihanzai/jafic/en/nenzihokoku_e/data/jafic_e2023.pdf
-'138':
-  url: https://www.fsa.go.jp/en/news/2024/aml_cft_guidelines.html
 '139':
   url: https://www.kofiu.go.kr/eng/main.do
-'140':
-  url: http://www.pbc.gov.cn/en/3688110/3688172/4157443/index.html
 '141':
   url: https://fiuindia.gov.in/pdfs/downloads/AnnualReport2021_22.pdf
 '142':
   url: https://fiuindia.gov.in/pdfs/quicklinks/User_Manual_VASP.pdf
 '143':
   url: https://www.rbi.org.in/Scripts/BS_ViewMasterDirections.aspx?id=11566
-'144':
-  url: https://www.sebi.gov.in/legal/master-circulars/aug-2024/master-circular-on-anti-money-laundering-aml-standards-and-combating-the-financing-of-terrorism-cft-obligations-of-securities-market-intermediaries_85843.html
-'145':
-  url: https://www.bnm.gov.my/-/policy-document-on-anti-money-laundering-countering-financing-of-terrorism-and-targeted-financial-sanctions-for-financial-institutions-aml/cft-and-tfs-for-fis-
-'146':
-  url: https://amlcft.bnm.gov.my/AMLCFT07.html
 '147':
   url: https://www.ppatk.go.id/backend/assets/images/publikasi/1658219051_.pdf
 '148':
@@ -314,98 +252,41 @@
   url: https://www.centralbank.ae/media/tdikym4m/amlcft-guidance-for-licensed-financial-institutions-providing-services-to-legal-persons-and-arrangements.pdf
 '158':
   url: https://rulebook.centralbank.ae/en/rulebook/guidance-licensed-financial-institutions-suspicious-transaction-reporting
-'159':
-  url: https://www.uaefiu.gov.ae/en/stakeholders/reporting-entities/str-process/
 '160':
   url: https://assets.adgm.com/download/assets/Anti-Money+Laundering+and+Sanctions+Rules+and+Guidance+AML+20250210.pdf/6a0053227a6911ef819fe625b52cf370
 '161':
   url: https://www.sama.gov.sa/en-US/RulesInstructions/AML%20Rules/Money%20Laundering.pdf
 '162':
   url: https://www.sama.gov.sa/en-US/Laws/BankingRules/Anti-Money%20Laundering%20and%20Counter-Terrorist%20Financing%20Rules.pdf
-'163':
-  url: https://www.gov.il/en/departments/general/impa-reporting-guidelines
 '164':
   url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/risk-assessments
-'165':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/combating-sexual-exploitation-children-financial-gain
 '166':
   url: https://www.austrac.gov.au/industry-and-business/education-and-resources/publications-and-resources/indicators-suspicious-activity-banking-sector
 '167':
   url: https://www.austrac.gov.au/industry-and-business/education-and-resources/publications-and-resources/indicators-suspicious-activity-securities-and-derivatives-sector
-'168':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/indicators-suspicious-activity-remittance-service-providers-sector
-'169':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/indicators-suspicious-activity-superannuation-sector
-'170':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/risk-insights-and-indicators-suspicious-activity-real-estate-sector
-'171':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/risk-insights-and-indicators-suspicious-activity-legal-professionals
-'172':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/indicators-suspicious-activity-online-betting-agencies-sector
-'173':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/indicators-suspicious-activity-life-insurance-sector
-'174':
-  url: https://www.austrac.gov.au/business/how-comply-and-report-guidance-and-resources/guidance-resources/risk-insights-and-indicators-suspicious-activity-dealers-precious-stones-metals
 '175':
   url: https://www.austrac.gov.au/industry-and-business/education-and-resources/publications-and-resources/typologies-paper-austrac-money-laundering-and-terrorism-financing-indicators
-'176':
-  url: https://www.police.govt.nz/about-us/structure/teams-and-units/financial-intelligence-unit/quarterly-typology-reports
-'177':
-  url: https://www.rbnz.govt.nz/regulation-and-supervision/anti-money-laundering/sector-risk-assessment
-'178':
-  url: https://www.dia.govt.nz/AML-CFT-Risk-Assessments
-'179':
-  url: https://www.fma.govt.nz/business/services/aml-cft/monitoring/
 '180':
   url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Trade-based-money-laundering-trends-and-developments.html
-'181':
-  url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Virtual-assets-red-flag-indicators.html
-'182':
-  url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Updated-guidance-rba-virtual-assets.html
-'183':
-  url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Money-laundering-from-environmental-crime.html
 '184':
   url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-rba-real-estate-sector.html
-'185':
-  url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Crowdfunding-for-terrorism-financing.html
-'186':
-  url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Illicit-financial-flows-cyber-enabled-fraud.html
-'187':
-  url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Misuse-citizenship-residency-investment.html
-'188':
-  url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Best-practices-NPOs-recommendation-8.html
-'189':
-  url: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-Beneficial-Ownership-Transparency-Legal-Arrangements.html
 '190':
   url: https://fiaumalta.org/app/uploads/2025/03/March-2025-Detecting-Disrupting-and-Investigating-Online-Child-Sexual-Exploitation.pdf
 '191':
   url: https://www.fatf-gafi.org/en/publications/Financingofproliferation/complex-proliferation-financing-sanction-evasion-schemes.html
-'192':
-  url: https://www.fatf-gafi.org/en/topics/internationalcooperation.html
 '193':
   url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Concealment-beneficial-ownership.html
-'194':
-  url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Human-trafficking.html
 '195':
   url: https://www.fatf-gafi.org/en/publications/Financingofproliferation/Guidance-counter-proliferation-financing.html
 '196':
   url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Moneylaunderingandterroristfinancingthroughtherealestatesector.html
 '197':
   url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Trade-basedmoneylaundering.html
-'198':
-  url: https://www.fatf-gafi.org/en/publications/Methodsandtrends/Hawala.html
-'199':
-  url: https://wolfsberg-group.org/news/36
 '200':
   url: https://www.gleif.org/lei-solutions/featuring-the-lei/cross-border-payments/wolfsberg-group-payment-transparency-standards-2023.pdf
-'201':
-  url: https://wolfsberg-group.org/news/wolfsberg-guidance-on-payment-transparency-roles-and-responsibilities
-'202':
-  url: https://wolfsberg-group.org/news/publication-of-the-wolfsberg-rfi-best-practice-guidance
 '203':
   url: https://library.iccwbo.org/content/tfb/pdf/trade-finance-principles-2019-amendments-wolfsberg-icc-baft-final.pdf
 '204':
   url: https://www.bis.org/bcbs/publ/d505.htm
 '205':
   url: https://ofac.treasury.gov/media/934236/download?inline
-
