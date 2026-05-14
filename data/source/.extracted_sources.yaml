@@ -18,3 +18,31 @@
   slug: 002_oil_smuggling_cartels
   output_file: data/source/002_oil_smuggling_cartels.yaml
   extracted_at: '2026-05-06T01:22:38.061930+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/007_employee_retention_credit_fraud.pdf
+  slug: 007_employee_retention_credit_fraud
+  output_file: data/source/007_employee_retention_credit_fraud.yaml
+  extracted_at: '2026-05-13T23:26:28.357863+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/006_hizballah_financing.pdf
+  slug: 006_hizballah_financing
+  output_file: data/source/006_hizballah_financing.yaml
+  extracted_at: '2026-05-13T23:26:29.376309+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/005_deepfake_media_fraud.pdf
+  slug: 005_deepfake_media_fraud
+  output_file: data/source/005_deepfake_media_fraud.yaml
+  extracted_at: '2026-05-13T23:26:32.663257+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/008_hamas_terrorist_financing.pdf
+  slug: 008_hamas_terrorist_financing
+  output_file: data/source/008_hamas_terrorist_financing.yaml
+  extracted_at: '2026-05-13T23:26:33.754718+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/004_fincen_name_fraud_schemes.pdf
+  slug: 004_fincen_name_fraud_schemes
+  output_file: data/source/004_fincen_name_fraud_schemes.yaml
+  extracted_at: '2026-05-13T23:26:36.016939+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/009_pig_butchering_scams.pdf
+  slug: 009_pig_butchering_scams
+  output_file: data/source/009_pig_butchering_scams.yaml
+  extracted_at: '2026-05-13T23:26:38.494497+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/010_russian_export_control_evasion_supplemental.pdf
+  slug: 010_russian_export_control_evasion_supplemental
+  output_file: data/source/010_russian_export_control_evasion_supplemental.yaml
+  extracted_at: '2026-05-13T23:26:40.953410+00:00'

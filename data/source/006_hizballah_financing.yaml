@@ -1,0 +1,204 @@
+- id: 006_hizballah_financing-01
+  description: A customer or a customer’s counterparty conducts transactions with
+    entities and individuals that OFAC has designated due to their connection with
+    Hizballah, or conducts transactions that contain a nexus to identifiers listed
+    for OFAC-designated entities and individuals affiliated with Hizballah, to include
+    email addresses, physical addresses, phone numbers, passport numbers, or convertible
+    virtual currency addresses.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
+- id: 006_hizballah_financing-02
+  description: A customer or a customer’s counterparty utilizes the services of foreign
+    financial institutions that have been identified as being of “primary money laundering
+    concern” under section 311 of the USA PATRIOT Act referencing their association
+    with, or use by, Hizballah.
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - middle_east
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
+- id: 006_hizballah_financing-03
+  description: A customer conducts transactions with an MSB or other financial institution,
+    including one that offers services in convertible virtual currency, that operates
+    in jurisdictions known for, or at high risk for, Hizballah terrorist financing
+    activity, such as the tri-border region of South America, the Middle East, or
+    West Africa, and has opaque ownership or whose beneficial owners are known associates
+    of Hizballah.
+  product_types:
+  - money_transmitter
+  - crypto
+  - depository
+  - wire_transfer
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - beneficial_owner_obscured
+  - money_services_business
+  geographic_footprints:
+  - caribbean
+  - middle_east
+  - west_africa
+  - latin_america
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
+- id: 006_hizballah_financing-04
+  description: A customer conducts transactions that originate with, are directed
+    to, or otherwise involve entities that are known or suspected front companies
+    or other companies whose beneficial ownership information indicates that they
+    may have a nexus with Hizballah. Indicators of possible front companies include
+    opaque ownership structures or business addresses that are residential or co-located
+    with other companies.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
+- id: 006_hizballah_financing-05
+  description: Invoices—particularly for shipments of electronics leaving the United
+    States for the tri-border region of South America or the PRC, or used cars being
+    shipped from the United States to West Africa—appear to over- or under-charge
+    the recipient, especially if the goods do not appear to correspond with the counterparty’s
+    stated line of business and/or if the payments for those goods are facilitated
+    by a Lebanese or Hizballah-connected financial firm, or a branch of a Lebanese
+    or Hizballah-connected financial firm located abroad.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - auto_sales
+  - retail
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - latin_america
+  - china
+  - west_africa
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
+- id: 006_hizballah_financing-06
+  description: Transactions and wire transfers refer to underlying commercial activity
+    that involves bills of lading with no consignees or involves vessels that have
+    been previously linked to suspicious financial activities or registered to sanctioned
+    entities connected with Hizballah, the Houthis, the IRGC-QF, or the Syrian regime.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - middle_east
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
+- id: 006_hizballah_financing-07
+  description: Documentation, such as bills of lading and shipping invoices, appears
+    to be falsified or omits key information, or there are inconsistencies between
+    shipping related documents and maritime database entries.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
+- id: 006_hizballah_financing-08
+  description: A customer, domestic or foreign, with businesses in the real estate,
+    import/export, construction, diamonds and precious stones, or high-value art sectors
+    with numerous international counterparties in high-risk jurisdictions for Hizballah
+    financing, makes an unusually high number of cash deposits in business accounts,
+    transfers funds from business to personal accounts or vice versa, or uses personal
+    accounts or personal credit cards to make business payments.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - real_estate
+  - import_export
+  - construction
+  - precious_metals_jewelry
+  - art_antiquities
+  customer_profiles:
+  - cross_border_business
+  - small_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - middle_east
+  - west_africa
+  - latin_america
+  regulatory_source: FinCEN Alert FIN-2024-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-10-23'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-Hizballah-Alert-508C.pdf
