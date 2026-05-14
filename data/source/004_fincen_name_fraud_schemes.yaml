@@ -1,0 +1,430 @@
+- id: 004_fincen_name_fraud_schemes-01
+  description: A customer intending to file their BOI directly with FinCEN makes an
+    online payment.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-02
+  description: A customer makes an online payment to file their BOI with a third-party
+    filing company or service provider through a website domain that is registered
+    in a foreign location.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  - third_party_payment_processor
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-03
+  description: A customer sends a payment to file their BOI through a third-party
+    filing company or service provider with little to no online presence or a name
+    similar to legitimate companies or government entities.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-04
+  description: A customer uncharacteristically sends a payment to a counterparty and
+    tells the financial institution that the funds must be sent immediately to FinCEN
+    or risk a fine, penalty, or legal action for failure to file their BOI.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-05
+  description: A company announces its “license” or “approval” from FinCEN as an MSB
+    via a press release through a news wire service, on its website, or social media.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-06
+  description: A company has been flagged by a state financial regulator as potentially
+    fraudulent or for having exploited victims in the past.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-07
+  description: A company is registered as an MSB with FinCEN but is not licensed as
+    an MSB with any U.S. state or territorial financial regulatory authority where
+    they claim to operate.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-08
+  description: A company with a limited online presence prominently highlights their
+    MSB registration with FinCEN or claims to be licensed by FinCEN alongside unverified
+    testimonials and promotions of risk-free high-investment returns, often on its
+    website, a news wire service, or a social media post.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-09
+  description: An MSB registered with FinCEN shares a street address with other recently
+    registered MSBs.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-10
+  description: VASPs or other financial institutions provide a user with a virtual
+    currency deposit address that has been flagged as potentially fraudulent by blockchain
+    explorers or blockchain analytic tools.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-11
+  description: An MSB claims that its AML Program or “know your customer” policies,
+    procedures, or internal controls have been formally approved or otherwise vetted
+    by FinCEN.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-12
+  description: An individual or entity claims that their MSB registration with FinCEN
+    is either a “recommendation,” “certification of legitimacy,” “approval,” or “endorsement”
+    by FinCEN, Treasury, or the U.S. government, or any U.S. government official.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-13
+  description: An individual or entity claims that their MSB registration with FinCEN
+    equates to U.S. government approval to operate in the United States.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-14
+  description: An MSB suggests that users need to pay an AML-related processing “fee”
+    or a “FinCEN fee” to use its services, including to deposit or withdraw funds
+    from its platform.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - money_services_business
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-15
+  description: A company is registered as an MSB with the same or very similar name
+    of a large, well-known financial institution that appears to lack an MSB registration
+    requirement, such as a bank, credit union, or broker-dealer, and appears to have
+    no official affiliation with that large, well-known financial institution.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - depository
+  - prepaid
+  - securities
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-16
+  description: A customer sends a payment purportedly to FinCEN or in connection with
+    an apparent penalty owed to FinCEN, with the memo line denoting “tax,” “fee,”
+    “debt,” “prize,” “lien,” or “grant.”
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-17
+  description: A customer uncharacteristically sends payments to a new counterparty
+    and indicates to the financial institution that the funds must be sent immediately
+    to pay FinCEN for a supposed “AML/CFT violation,” “outstanding debt,” or a “Treasury
+    grant.”
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-18
+  description: A customer indicates that they received a phone call, text message,
+    email, or U.S. Mail from FinCEN demanding immediate payment.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf
+- id: 004_fincen_name_fraud_schemes-19
+  description: A customer presents a letter supposedly from the FinCEN Director, Deputy
+    Director, or any other FinCEN or Treasury official requesting immediate payment.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2024-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-12-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2024-12/Alert-FinCEN-Scams-FINAL508.pdf

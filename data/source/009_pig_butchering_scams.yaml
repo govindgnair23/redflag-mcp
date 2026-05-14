@@ -1,0 +1,295 @@
+- id: 009_pig_butchering_scams-01
+  description: A customer with no history or background of using, exchanging, or otherwise
+    interacting with virtual currency attempts to exchange a high amount of fiat currency
+    from an existing or newly opened bank account for virtual currency or attempts
+    to initiate high-value transfers to VASPs.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-02
+  description: A customer mentions or expresses interest in an investment opportunity
+    leveraging virtual currency with significant returns that they were told about
+    from a new contact who reached out to them unsolicited online or through text
+    message.21
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-03
+  description: A customer mentions that they were instructed by an individual who
+    recently contacted them to exchange fiat currency for virtual currency at a virtual
+    currency kiosk and deposit the virtual currency at an address supplied by the
+    individual.22
+  product_types:
+  - crypto
+  - currency_exchange
+  - depository
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-04
+  description: A customer appears distressed or anxious to access funds to meet demands
+    or the timeline of a virtual currency investment opportunity.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-05
+  description: A customer uncharacteristically liquidates savings accounts prior to
+    maturation, such as a certificate of deposit, and then subsequently attempts to
+    wire the liquidated fiat currency to a VASP or to exchange them for virtual currency.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-06
+  description: A customer takes out a HELOC, home equity loan, or second mortgage
+    and uses the proceeds to purchase virtual currency or wires the proceeds to a
+    VASP for the purchase of virtual currency.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - crypto
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-07
+  description: A customer receives what appears to be a deposit of virtual currency
+    from a virtual currency address at or slightly above the amount that the customer
+    previously transferred out of their virtual currency account. This deposit is
+    then followed by outgoing transfers from the customer in substantially larger
+    amounts.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-08
+  description: Accounts with large balances that are inactive or have limited activity
+    begin to show constant, uncharacteristic, sudden, abnormally frequent, or significant
+    withdrawals of large amounts of money being transferred to a VASP or being exchanged
+    for virtual currency.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-09
+  description: A customer sends multiple electronic funds transfers (EFTs) or wire
+    transfers to a VASP or sends part of their available balance from an account or
+    wallet they maintain with a VASP and notes that the transaction is for “taxes,”
+    “fees,” or “penalties.”23
+  product_types:
+  - ach
+  - wire_transfer
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-10
+  description: A customer with a short history of conducting several small-value EFTs
+    to a VASP abruptly stops sending EFTs and begins sending multiple high-value wire
+    transfers to accounts of holding companies, limited liability corporations, and
+    individuals with which the customer has no prior transaction history. This is
+    indicative of a victim sending trial transactions to a scammer before committing
+    to and sending larger amounts.
+  product_types:
+  - ach
+  - wire_transfer
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-11
+  description: System monitoring and logs show that a customer’s account is accessed
+    repeatedly by unique IP addresses, device IDs, or geographies inconsistent with
+    prior access patterns. Additionally, logins to a customer’s online account at
+    a VASP come from a variety of different device IDs and names inconsistent with
+    the customer’s typical logins.
+  product_types:
+  - depository
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-12
+  description: A customer mentions that they are transacting to invest in virtual
+    currency using a service that has a website or application with poor spelling
+    or grammatical structure, dubious customer testimonials, or a generally amateurish
+    site design.24
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-13
+  description: A customer mentions visiting a website or application that is purported
+    to be associated with a legitimate VASP or business involved in investing in virtual
+    currency. The website or application shows warning signs such as a web address
+    or domain name that is misspelled in such a manner as to resemble that of another
+    business, a recently registered web address or domain name, no physical street
+    address, international contact information, or contact methods that include only
+    chat or email.25
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-14
+  description: A customer mentions that they downloaded an application on their phone
+    directly from a third-party website, rather than from a well-known third-party
+    application store or an application store installed by the manufacturer of the
+    device.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf
+- id: 009_pig_butchering_scams-15
+  description: A customer receives a large amount of virtual currency such as ether
+    at an exchange, subsequently converts the amount to a virtual currency with lower
+    transaction fees such as TRX, and then abruptly sends it out of the exchange.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert005
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-09-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf

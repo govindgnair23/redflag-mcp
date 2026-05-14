@@ -1,0 +1,425 @@
+- id: 005_deepfake_media_fraud-01
+  description: A customer’s photo is internally inconsistent (e.g., shows visual tells
+    of being altered) or is inconsistent with their other identifying information
+    (e.g., a customer’s date of birth indicates that they are much older or younger
+    than the photo would suggest).
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-02
+  description: A customer presents multiple identity documents that are inconsistent
+    with each other.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-03
+  description: A customer uses a third-party webcam plugin during a live verification
+    check. Alternatively, a customer attempts to change communication methods during
+    a live verification check due to excessive or suspicious technological glitches
+    during remote verification of their identity.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-04
+  description: A customer declines to use multifactor authentication to verify their
+    identity.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-05
+  description: A reverse-image lookup or open-source search of an identity photo matches
+    an image in an online gallery of GenAI-produced faces.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-06
+  description: A customer’s photo or video is flagged by commercial or open-source
+    deepfake detection software.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-07
+  description: GenAI-detection software flags the potential use of GenAI text in a
+    customer’s profile or responses to prompts.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-08
+  description: A customer’s geographic or device data is inconsistent with the customer’s
+    identity documents.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-09
+  description: A newly opened account or an account with little prior transaction
+    history has a pattern of rapid transactions; high payment volumes to potentially
+    risky payees, such as gambling websites or digital asset exchanges; or high volumes
+    of chargebacks or rejected payments.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  - credit_card
+  - ach
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-10
+  description: Patterns of apparent coordinated activity among multiple similar accounts;
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-11
+  description: Patterns of rapid transactions by a newly opened account or an account
+    with little prior transaction history;
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-12
+  description: Patterns of withdrawing funds immediately after deposit and in manners
+    that make payments difficult to reverse in cases of suspected fraud, such as through
+    international bank transfers or payments to offshore digital asset exchanges and
+    gambling sites.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - newly_established_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - offshore
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-13
+  description: High payment volumes to potentially higher-risk payees, such as gambling
+    websites or digital asset exchanges;
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  - credit_card
+  - ach
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-14
+  description: High volumes of chargebacks or rejected payments;
+  product_types:
+  - credit_card
+  - depository
+  - ach
+  - money_transmitter
+  - remittance
+  - prepaid
+  industry_types:
+  - retail
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-15
+  description: Access to an account from an IP address that is inconsistent with the
+    customer’s profile;
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - non_resident_alien
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-16
+  description: A customer’s inability to satisfactorily authenticate their identity,
+    source of income, or another aspect of their profile;
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-17
+  description: Inconsistencies among multiple identity documents submitted by the
+    customer;
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf
+- id: 005_deepfake_media_fraud-18
+  description: Inconsistencies between the identity document and other aspects of
+    the customer’s profile.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2024-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-11-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf

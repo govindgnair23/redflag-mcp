@@ -1,0 +1,200 @@
+- id: 007_employee_retention_credit_fraud-01
+  description: A business account receives more than one ERC check deposit over multiple
+    days.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-02
+  description: Small business accounts receive an ERC check deposit that is not commensurate
+    with the size of the business, the number of employees, and the volume of transactions.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-03
+  description: A large ERC is deposited into a business account and is subsequently
+    transferred using P2P services or to an online banking institution, or withdrawn
+    as cash at an ATM.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-04
+  description: Funds may be subsequently transferred from the account into separate
+    accounts or payments may be made to new businesses that a customer has not had
+    transactions with prior to receiving an ERC check deposit.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-05
+  description: The account receiving an ERC check deposit has no deposits other than
+    Treasury-issued checks, or the account has no regular business transactions.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-06
+  description: A customer attempts to deposit an altered Treasury ERC check, or financial
+    institutions are unable to verify the validity of the checks that customers attempt
+    to deposit.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-07
+  description: The ERC check is deposited into a new business account that did not
+    exist in 2020 or 2021.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-08
+  description: A new business account is created for an established business, but
+    no other business activity occurs in the account except the deposit of the ERC.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-09
+  description: A dormant business account suddenly receives an ERC check deposit.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-10
+  description: An ERC is deposited into a business account with no payroll history.
+  product_types:
+  - depository
+  industry_types:
+  - payroll
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
+- id: 007_employee_retention_credit_fraud-11
+  description: A customer reports or provides documents indicating that their ERC
+    was obtained by a third-party firm whose credentials cannot be verified or is
+    the subject of adverse media.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  - third_party_payment_processor
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-11-22'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_ERC_Fraud_Alert_FINAL508.pdf
