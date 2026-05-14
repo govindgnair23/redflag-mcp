@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Extract AML red flags from PDFs or web pages using an LLM.
+"""Extract AML red flags from PDFs or markdown files using an LLM.
 
 Usage:
     # Single source
-    uv run python scripts/extract.py [--force] <pdf-path-or-url>
+    uv run python scripts/extract.py [--force] <pdf-or-md-path>
 
-    # Batch mode — processes all PDFs in red_flag_sources/pdf/ and all URLs
-    # in red_flag_sources/Weblinks.md, skipping already-processed sources
+    # Batch mode — processes all PDFs in red_flag_sources/pdf/ and all markdown
+    # files in red_flag_sources/markdown/, skipping already-processed sources
     uv run python scripts/extract.py [--force]
     uv run python scripts/extract.py [--force] --parallel        # 4 workers
     uv run python scripts/extract.py [--force] --parallel 8      # 8 workers
 
-    # Range mode — process only PDFs whose serial number falls within NNN-NNN
+    # Range mode — process only sources whose serial number falls within NNN-NNN
     uv run python scripts/extract.py [--force] --range 001-005
     uv run python scripts/extract.py [--force] --range 001-005 --parallel
 
@@ -63,7 +63,7 @@ MANIFEST_PATH = SOURCE_DIR / ".extracted_sources.yaml"
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = PROJECT_ROOT / "red_flag_sources" / "pdf"
-WEBLINKS_PATH = PROJECT_ROOT / "red_flag_sources" / "Weblinks.md"
+MARKDOWN_DIR = PROJECT_ROOT / "red_flag_sources" / "markdown"
 SOURCES_REGISTRY_PATH = PROJECT_ROOT / "red_flag_sources" / "sources.yaml"
 
 
@@ -111,8 +111,11 @@ def load_sources_registry() -> dict:
 
 
 def extract_serial_key(filename: str) -> str | None:
-    """Extract leading numeric serial key from filename, e.g. '001' from '001_fincen.pdf'."""
-    match = re.match(r"^(\d+)[_-]", filename)
+    """Extract leading numeric serial key from filename.
+
+    Handles both '001_fincen.pdf' → '001' and bare-numeric '054.md' → '054'.
+    """
+    match = re.match(r"^(\d+)", filename)
     return match.group(1) if match else None
 
 
@@ -174,6 +177,31 @@ def extract_text_from_url(url: str) -> str:
     return soup.get_text(separator="\n", strip=True)
 
 
+def extract_text_from_markdown(md_path: str) -> str:
+    """Return the content portion of a Jina-reader markdown file.
+
+    Strips the frontmatter header and returns everything after the
+    'Markdown Content:' marker. Falls back to the full file text if
+    the marker is absent.
+    """
+    text = Path(md_path).read_text(encoding="utf-8")
+    marker = "Markdown Content:"
+    if marker in text:
+        return text.split(marker, 1)[1]
+    return text
+
+
+def get_url_from_markdown(md_path: str) -> str | None:
+    """Extract the URL Source value from a Jina-reader markdown frontmatter."""
+    with open(md_path, encoding="utf-8") as f:
+        for i, line in enumerate(f):
+            if i >= 40:
+                break
+            if line.startswith("URL Source:"):
+                return line.removeprefix("URL Source:").strip()
+    return None
+
+
 def source_slug(source: str) -> str:
     """Generate a slug from a PDF filename or URL."""
     if source.startswith(("http://", "https://")):
@@ -212,12 +240,16 @@ A valid red flag answers: "What would a compliance officer or TM analyst actuall
 
 **Handling indicators embedded in prose:** When an indicator appears within a longer sentence ("Among the patterns observed are X, Y, and Z"), extract the indicator clause itself with its exact wording preserved. Do not paraphrase or generalize.
 
+**Implicit red flags in case narratives:** Regulators often describe control failures, execution lapses, alert-review findings, or case examples without labeling the underlying signal as a red flag. Extract the observable customer behavior, transaction-monitoring signal, adverse-news signal, discrepancy, or CDD/risk-assessment conflict when the narrative shows that it should have raised suspicion. For example, if a regulator says an FI failed to escalate "the discrepancy in Customer G's business activity between the FI's records and corporate registry," extract that discrepancy as the red flag. Preserve the source wording as much as possible, but extract the observable signal rather than the institution's failure to act.
+
 **Do NOT extract:**
-- Enforcement actions, historical case summaries, or descriptions of past violations
+- Enforcement actions, historical case summaries, or descriptions of past violations when they do not contain an observable customer or transaction signal
 - SAR filing instructions or recommendations
 - Regulatory directives or institutional compliance obligations
 - General typology explanations that do not describe an observable pattern
 - Document headers, section titles, introductory text, administrative text
+
+Enforcement actions and historical cases are excluded only when they describe institutional failures without an observable red flag. If the same passage identifies suspicious customer activity, TM alerts, adverse news, inconsistencies between public records and FI records, or discrepancies that should trigger CDD/risk review, extract the observable signal and exclude only the institutional lapse language.
 
 **Test before including:** Could a compliance officer or TM system at a financial institution directly observe this? If no, exclude it.
 
@@ -276,6 +308,29 @@ Source: "Non-routine foreign exchange transactions that may indirectly involve s
   "issued_date": "2022-06",
   "risk_level": "high",
   "category": "sanctions_evasion"
+}}
+
+## Implicit case narrative example
+
+Source: "Failure to escalate the discrepancy in Customer G's business activity between the FI's records and corporate registry, which should have triggered a review of the customer's CDD information and ML/TF risk assessment."
+
+**Wrong** — extracting the institution's failure:
+{{
+  "description": "Failure to escalate the discrepancy in Customer G's business activity between the FI's records and corporate registry, which should have triggered a review of the customer's CDD information and ML/TF risk assessment."
+}}
+
+**Correct** — extracting the observable signal:
+{{
+  "description": "discrepancy in Customer G's business activity between the FI's records and corporate registry",
+  "product_types": ["depository", "trade_finance"],
+  "industry_types": ["import_export"],
+  "customer_profiles": ["corporate_customer"],
+  "geographic_footprints": [],
+  "regulatory_source": "Regulatory case narrative",
+  "regulator": null,
+  "issued_date": null,
+  "risk_level": "medium",
+  "category": "customer_due_diligence"
 }}
 
 ## Output format
@@ -387,14 +442,16 @@ def parse_weblinks(path: Path) -> list[str]:
 
 
 def discover_sources() -> list[str]:
-    """Discover all PDF files in red_flag_sources/pdf/ and URLs in Weblinks.md."""
+    """Discover all PDF files in red_flag_sources/pdf/ and markdown files in red_flag_sources/markdown/."""
     sources: list[str] = []
 
     if PDF_DIR.exists():
         for pdf in sorted(PDF_DIR.glob("*.pdf")):
             sources.append(str(pdf))
 
-    sources.extend(parse_weblinks(WEBLINKS_PATH))
+    if MARKDOWN_DIR.exists():
+        for md in sorted(MARKDOWN_DIR.glob("*.md")):
+            sources.append(str(md))
 
     return sources
 
@@ -417,15 +474,22 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
             print(f"Fetching URL: {source}")
             text = extract_text_from_url(source)
         else:
-            pdf_path = Path(source)
-            if not pdf_path.exists():
+            local_path = Path(source)
+            if not local_path.exists():
                 print(f"Error: File not found: {source}", file=sys.stderr)
                 return None
-            if pdf_path.suffix.lower() != ".pdf":
-                print(f"Error: Expected a .pdf file, got: {pdf_path.suffix}", file=sys.stderr)
+            suffix = local_path.suffix.lower()
+            if suffix == ".pdf":
+                print(f"Extracting text from PDF: {source}")
+                text = extract_text_from_pdf(source)
+            elif suffix == ".md":
+                print(f"Extracting text from markdown: {source}")
+                text = extract_text_from_markdown(source)
+                if source_url is None:
+                    source_url = get_url_from_markdown(source)
+            else:
+                print(f"Error: Unsupported file type: {suffix}", file=sys.stderr)
                 return None
-            print(f"Extracting text from PDF: {source}")
-            text = extract_text_from_pdf(source)
     except Exception as e:
         print(f"Error fetching/reading {source}: {e}", file=sys.stderr)
         return None
@@ -601,7 +665,7 @@ def main() -> None:
     else:
         print(
             f"Usage:\n"
-            f"  {sys.argv[0]} [--force] <pdf-path-or-url>                    # single source\n"
+            f"  {sys.argv[0]} [--force] <pdf-or-md-path>                      # single source\n"
             f"  {sys.argv[0]} [--force] [--parallel [N]]                     # batch mode\n"
             f"  {sys.argv[0]} [--force] --range NNN-NNN [--parallel [N]]     # range mode",
             file=sys.stderr,

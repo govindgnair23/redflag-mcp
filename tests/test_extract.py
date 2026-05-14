@@ -73,6 +73,14 @@ class TestBuildExtractionPrompt:
         assert "regulator_jurisdiction" in system_prompt
         assert "Do not emit regulator_jurisdiction" in system_prompt
 
+    def test_prompt_extracts_implicit_red_flags_from_case_narratives(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "Implicit red flags in case narratives" in system_prompt
+        assert "discrepancy in Customer G's business activity between the FI's records and corporate registry" in system_prompt
+        assert "Enforcement actions and historical cases are excluded only when" in system_prompt
+
     def test_representative_regulator_jurisdiction_mappings(self):
         expected = {
             "FinCEN": "US",
