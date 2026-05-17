@@ -1,0 +1,913 @@
+- id: 028_covid_health_care_fraud-01
+  description: Ordering or submitting claims for expensive tests or services that
+    do not test for COVID-19, oftentimes in conjunction with COVID-19 testing, such
+    as medically unnecessary and expensive respiratory testing, allergy testing, genetic
+    testing, narcotics screening, or whole-body health assessments, or providing testing
+    for services not usually rendered by the company.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-02
+  description: Billing for services not provided, or overbilling (e.g., upcoding or
+    unbundling), when administering or processing COVID-19 testing and treatments.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-03
+  description: Paying service providers or purported marketing organizations an illegal
+    kickback or bribe in exchange for ordering, or arranging for the ordering of,
+    services and testing.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-04
+  description: False and fraudulent representations about COVID-19 testing, treatments,
+    or cures are used to defraud insurance carriers and to perpetrate fraud on the
+    financial markets by defrauding investors.
+  product_types:
+  - securities
+  - depository
+  - wire_transfer
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-05
+  description: Collecting beneficiaries’ personally identifiable information (PII),
+    including Medicare information.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-06
+  description: Solicitations will often link their requests for information to COVID-19
+    treatment and prevention, such as testing or protective equipment.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-07
+  description: Fraudsters then submit fraudulent claims for payment from health care
+    benefit programs.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-08
+  description: Fraudsters have also used the stolen PII to submit fraudulent telehealth
+    services claims.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-09
+  description: Filing false claims and applications for Federal relief funds, such
+    as those provided under the Coronavirus Aid, Relief, and Economic Security (CARES)
+    Act’s Provider Relief Fund, the PPP-HCEA, or the Economic Impact Disaster Loan
+    (EIDL) program, and the claim or application has a nexus to health care benefit
+    programs.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-10
+  description: Targeting beneficiaries for their PII and then using the stolen PII
+    to commit COVID-19-related fraud against health care benefit programs.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-11
+  description: 'After the COVID-19 public health emergency declaration, a health care
+    service provider’s account receives or continues to receive: (1) health care benefit
+    program or health insurance payments well above the provider’s estimated business
+    transactions; or (2) payments at the same volume despite an expected diminished
+    activity level during the public health emergency (e.g., a non-emergency medical
+    transport company receiving higher than expected payments during stay-at-home
+    orders).'
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  - transportation
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-12
+  description: A health care service provider’s account receives health care benefit
+    program or health insurance payments beyond the expected type or volume of service,
+    based on staffing and other characteristics of the business (e.g., processing
+    COVID-19 tests when the medical facility does not typically offer diagnostic services,
+    or the facility is processing a high volume of tests despite only employing a
+    few medical personnel).
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-13
+  description: A COVID-19-related health care service provider’s business account
+    has unusual transaction activities, such as payments for personal or medically
+    irrelevant expenses (e.g., payments to automobile dealers, travel agents, or retailers
+    of luxury goods).
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-14
+  description: Following the COVID-19 public health emergency declaration, personal
+    or business accounts, especially ones that did not previously receive health care-related
+    payments, begin receiving steep increases in health care benefit program or health
+    insurance payments.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-15
+  description: A purported health care service provider’s account receives health
+    care benefit program or health insurance payments related to COVID-19 services,
+    and then individuals immediately withdraw the funds in a manner that is not typical
+    for health care businesses (e.g., cashier’s checks, cash withdrawals, certain
+    types of Automated Clearing House (ACH) transfers, or domestic and international
+    wire transfers).
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-16
+  description: After the COVID-19 public health emergency determination, a purported
+    health care provider’s account does not receive small-dollar check deposits, payments
+    from merchant fee servicers, or cash payments from patients that would indicate
+    patient copayments.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-17
+  description: A newly formed health care business account has a volume or type of
+    payment that seems inconsistent with expected levels of activity for such an account.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - newly_established_business
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-18
+  description: The physical location of a purported medical facility receiving reimbursements
+    for COVID-19-related health care services or relief funds is non-existent, a residential
+    address, a commercial mail receiving agency address (e.g., a UPS Store address),
+    or another non-office building address (e.g., a purported medical facility is
+    listed as a laboratory, but the physical address is a vacant lot, car dealership,
+    restaurant, or retail store).
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-19
+  description: The purported laboratory, health care service provider, or medical
+    service personnel or their counterparties appear to have a minimal web presence,
+    or one that begins around the time of the COVID-19 public health emergency declaration.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: low
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-20
+  description: Following the public health emergency declaration, the physical location
+    of a purported medical facility receiving payments for health care services or
+    relief funds is far from the physical location of the majority of its patients
+    or the providers purported to be practicing there, unless the facility is providing
+    appropriate telehealth services (e.g., a purported medical facility located in
+    a western state receives payments related to patients residing on the East Coast).
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-21
+  description: After the COVID-19 public health emergency declaration, a health care
+    service provider’s or other business account begins having overly complex, medical-related
+    transactions involving multiple counterparties indicative of possible structuring,
+    layering, kickbacks, or fraudulent medical claims.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-22
+  description: A health care service provider’s account makes frequent or unusually
+    large payments recorded as advertising or marketing expenses, or makes recurring
+    round-dollar payments to one or multiple individuals in a manner inconsistent
+    with its payroll-related withdrawals.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-23
+  description: The payments may reference “director fees,” “consulting fees,” “marketing,”
+    or “business process outsourcing.”
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-24
+  description: A health care service provider starts receiving payments from laboratories
+    and health care services companies, but there is no financial documentation (e.g.,
+    operating expense payments) that the provider rendered legitimate services.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-25
+  description: When questioned, the provider indicates that he or she invested in
+    the company and the payments are dividends or payments for services (e.g., a laboratory
+    pays a physician for services related to a COVID-19 laboratory test).
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-26
+  description: The tests, however, are not related to the physician’s specialization
+    or do not normally require a physician’s involvement.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-27
+  description: An account with no previous known association with providing health
+    care services, receives an unexpected or excessive COVID-19-related payment that
+    appears to be the CARES Act’s Provider Relief Fund or the PPP-HCEA payments.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-28
+  description: Shortly after the account receives the deposit, an individual(s) withdraws
+    the funds via large cash withdrawals, cashier’s checks, wires to an overseas account,
+    transfers to personal accounts, or payments for non-business expenses.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-29
+  description: An account previously associated with providing health care services
+    but that has not been recently active or appears to be defunct, receives an unexpected
+    or excessive COVID-19-related payment that appears to be the CARES Act’s Provider
+    Relief Fund or the PPP-HCEA payments.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-30
+  description: An account holder receives a substantial amount of reimbursements from
+    health care benefit programs or health insurance companies for services rendered
+    at the same time that the account holder receives COVID-19-related unemployment
+    insurance payments.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-31
+  description: The defendants acquired control over dozens of New York pharmacies
+    by paying others to pose as the owners of the pharmacies and hiring pharmacists
+    to pretend to be supervising pharmacists at the pharmacies, for the purpose of
+    obtaining pharmacy licenses and insurance plan credentialing.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-32
+  description: The defendants used COVID-19 emergency override billing codes to submit
+    fraudulent claims to Medicare, for which they were allegedly paid over $30 million
+    for medications that never were purchased by the pharmacies, prescribed by physicians,
+    or dispensed to patients.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-33
+  description: The defendants frequently filed such claims during periods when pharmacies
+    were non-operational, and used doctors’ names on prescriptions without their permission.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-34
+  description: The defendants engaged in a complex, money laundering conspiracy where
+    they created sham pharmacy wholesale companies and fabricated invoices to legitimate
+    pharmaceutical drug purchases.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  - precious_metals_jewelry
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-35
+  description: funds to be wired from the sham pharmacy wholesale companies to companies
+    in China for distribution to individuals in Uzbekistan.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  - foreign_individual
+  geographic_footprints:
+  - china
+  - eastern_europe
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-36
+  description: The defendants received cash in exchange, provided for by members of
+    the Uzbekistani immigrant community to an unlicensed money transfer business for
+    remittance to their relatives in Uzbekistan, minus a commission that was deducted
+    by the money launderer.
+  product_types:
+  - money_transmitter
+  - remittance
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - migrant_worker
+  geographic_footprints:
+  - eastern_europe
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-37
+  description: the defendants directed the international money launderer to transfer
+    funds back from the sham wholesale companies to the defendants, their relatives,
+    or their designees, in the form of certified cashier’s checks and bags of cash.
+  product_types:
+  - depository
+  - check_cashing
+  - wire_transfer
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-38
+  description: The defendants used the proceeds of the scheme to purchase real estate
+    and other luxury items.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  - luxury_goods
+  customer_profiles:
+  - high_net_worth_individual
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-39
+  description: The president of a California-based medical technology company allegedly
+    paid kickbacks and bribes to marketers and doctors to run an allergy screening
+    test for 120 allergens on every patient regardless of medical necessity.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-40
+  description: the company president sought to expand the pre-existing allergy test
+    scheme and capitalize on a national emergency for financial gain by combining
+    the COVID-19 test with the more expensive allergy testing which did not identify
+    or detect COVID-19.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-41
+  description: the company president allegedly made false claims to investors concerning
+    the company’s ability to provide accurate, fast, reliable, and cheap COVID-19
+    tests.
+  product_types:
+  - securities
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf
+- id: 028_covid_health_care_fraud-42
+  description: the company’s stock price, and to conspire to commit health care fraud
+    in connection with the submission of over $69 million in false and fraudulent
+    claims for allergy and COVID-19 testing.
+  product_types:
+  - securities
+  - depository
+  - wire_transfer
+  - ach
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2021-A001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-02-02'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2021-02-02/COVID-19%20Health%20Care%20508%20Final.pdf

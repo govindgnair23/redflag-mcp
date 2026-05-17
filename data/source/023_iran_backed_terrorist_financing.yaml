@@ -1,0 +1,581 @@
+- id: 023_iran_backed_terrorist_financing-01
+  description: A customer or a customer’s counterparty conducts transactions with
+    Office of Foreign Assets Control (OFAC)-designated entities and individuals, or
+    transactions that contain a nexus to identifiers listed for OFAC-designated entities
+    and individuals, to include email addresses, physical addresses, phone numbers,
+    passport numbers, or CVC addresses.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  - money_transmitter
+  - prepaid
+  - correspondent_banking
+  - remittance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-02
+  description: Information included in a transaction between customers or in a note
+    accompanying a peer-to-peer transfer include key terms known to be associated
+    with terrorism or terrorist organizations.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-03
+  description: A customer conducts transactions with a money services business (MSB)
+    or other financial institution, including a VASP, that operates in jurisdictions
+    known for, or at high risk for, terrorist activity and is reasonably believed
+    to have lax customer identification and verification processes, opaque ownership,
+    or otherwise fails to comply with AML/CFT best practices.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  - prepaid
+  - correspondent_banking
+  - remittance
+  industry_types:
+  - money_services_business
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-04
+  description: A customer conducts transactions that originate with, are directed
+    to, or otherwise involve entities that are front companies, general “trading companies”
+    with unclear business purposes, or other companies whose beneficial ownership
+    information indicates that they may have a nexus with Iran or other Iran-supported
+    terrorist groups. Indicators of possible front companies include opaque ownership
+    structures, individuals and/or entities with obscure names that direct the company,
+    or business addresses that are residential or co-located with other companies.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - iran
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-05
+  description: A customer that is or purports to be a charitable organization or NPO
+    solicits donations but does not appear to provide any charitable services or openly
+    supports terrorist activity or operations. In some cases, these organizations
+    may post on social media platforms or encrypted messaging apps to solicit donations,
+    including in CVC.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  - prepaid
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-06
+  description: A customer receives numerous small CVC payments from many wallets,
+    then transfers the funds to another wallet, particularly if the customer logs
+    in using an Internet Protocol (IP) based in a jurisdiction known for, or at high
+    risk for, terrorist activity.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-07
+  description: A customer makes money transfers to a jurisdiction known for, or at
+    high risk for, terrorist activity that are inconsistent with their stated occupation
+    or business purpose with vague stated purposes such as “travel expenses,” “charity,”
+    “aid,” or “gifts.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-08
+  description: A customer account receives large payouts from social media fundraisers
+    or crowdfunding platforms and is then accessed from an IP address in a jurisdiction
+    known for, or at high risk for, terrorist activity, particularly if the social
+    media accounts that contribute to the fundraisers contain content supportive of
+    terrorist campaigns.
+  product_types:
+  - depository
+  - money_transmitter
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-09
+  description: A customer company is incorporated in the United States or a third-country
+    jurisdiction, but its activities occur solely in jurisdictions known for, or at
+    high risk for, terrorist activity and show no relationship to the company’s stated
+    business purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-10
+  description: Hamas and other terrorist groups have exploited crowdfunding and social
+    media platforms to raise funds under the guise of humanitarian or charitable causes
+    worldwide.
+  product_types:
+  - depository
+  - money_transmitter
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-11
+  description: Hamas has used convertible virtual currency (CVC) for fundraising,
+    leveraging money exchangers that have incorporated CVC into their operations to
+    facilitate cross-border transfers, probably seeking to benefit from the perceived
+    anonymity afforded by certain CVC transactions and the lax regulatory oversight
+    of virtual asset service providers (VASPs) in some high-risk jurisdictions.
+  product_types:
+  - crypto
+  - money_transmitter
+  - depository
+  industry_types:
+  - crypto
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-12
+  description: The Houthis’ funding is raised and transferred by means of an elaborate
+    smuggling network connected to Iran-based IRGC-QF-backed Houthi financial facilitator
+    Said Al-Jamal.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - middle_east
+  - asia
+  - africa
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-13
+  description: The network generates tens of millions of dollars in revenue annually
+    through the sale of Iranian commodities like petroleum to customers in Asia, the
+    Middle East, and Africa.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - middle_east
+  - south_asia
+  - south_east_asia
+  - africa
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-14
+  description: Those funds are then funneled to the Houthis in Yemen through a complex
+    network of exchanges and intermediaries spread across multiple countries.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - correspondent_banking
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - money_services_business
+  geographic_footprints:
+  - middle_east
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-15
+  description: The Houthis also raise funds by collecting customs revenue from the
+    Hudaydah and Salif ports in Yemen, appropriating public funds using fraudulent
+    contracts, and unlawfully appropriating assets belonging to political opponents
+    or those who have fled the country.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - logistics
+  - maritime_shipping
+  customer_profiles: []
+  geographic_footprints:
+  - middle_east
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-16
+  description: Hizballah also finances itself through a broad range of illicit activities,
+    including oil smuggling, money laundering, drug trafficking, counterfeiting, and
+    illegal weapons procurement.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  - correspondent_banking
+  industry_types:
+  - oil_and_gas
+  - precious_metals_jewelry
+  - arms_dual_use_goods
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - middle_east
+  - europe
+  - africa
+  - latin_america
+  - west_africa
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-17
+  description: Hizballah also utilizes networks of front companies and legitimate
+    businesses, as well as cryptocurrencies, to raise, launder, and transfer funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - crypto
+  - correspondent_banking
+  industry_types:
+  - import_export
+  - crypto
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-18
+  description: Hizballah financiers make use of free trade zones and countries with
+    weak regulatory frameworks to establish import-export companies that facilitate
+    trade-based money laundering schemes.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-19
+  description: These companies are often held in the name of a relative of the financier,
+    for example a spouse.
+  product_types:
+  - trade_finance
+  - depository
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-20
+  description: Hizballah operatives have been known to operate in the Tri-border area
+    of Argentina, Brazil, and Paraguay, and in free trade zones in Chile and Panama,
+    with members and supporters identified in Colombia and Peru as well.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - latin_america
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: low
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-21
+  description: Hizballah’s illicit activities also extend to Africa.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - africa
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: low
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-22
+  description: PIJ relies on many of the same funding channels as Hamas.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: low
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-23
+  description: PIJ makes use of sham charities to move and launder funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-24
+  description: These groups have also abused the Iraqi financial system to generate
+    revenue and launder money, including through the use of front companies, fraudulent
+    documentation, identity theft, currency arbitrage, and counterfeit currency.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - middle_east
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf
+- id: 023_iran_backed_terrorist_financing-25
+  description: A customer or a customer’s counterparty conducts transactions with
+    Office of Foreign Assets Control (OFAC)-designated entities and individuals, or
+    transactions that contain a nexus to identifiers listed for OFAC-designated entities
+    and individuals, to include email addresses, physical addresses, phone numbers,
+    passport numbers, or CVC addresses.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  - money_transmitter
+  - prepaid
+  - correspondent_banking
+  - remittance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2024-A001 FinCEN Advisory to Financial Institutions to Counter
+    the Financing of Iran-Backed Terrorist Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-05-08'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/advisory/2024-05-07/FinCEN-Advisory-Iran-Backed-TF-508C.pdf

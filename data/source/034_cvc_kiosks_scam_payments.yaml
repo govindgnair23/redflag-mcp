@@ -1,0 +1,307 @@
+- id: 034_cvc_kiosks_scam_payments-01
+  description: A customer sends multiple payments just below the suspicious activity
+    reporting (SAR) threshold, or other applicable threshold set by state law, from
+    multiple kiosk locations.
+  product_types:
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-02
+  description: A customer structures cash deposits just beneath the Currency Transaction
+    Report (CTR) threshold, or CVC kiosk daily limit, either by using multiple machines
+    or multiple accounts (i.e., smurfing).
+  product_types:
+  - money_transmitter
+  - prepaid
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-03
+  description: A customer with limited or no transaction history makes a substantial
+    deposit that is rapidly transferred through multiple addresses, commingled with
+    multiple other deposits, or swapped into a different CVC.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-04
+  description: Multiple customers use CVC kiosks in geographically disparate locations
+    to make deposits to the same CVC address over a short period of time while certifying
+    that they are the owners of the deposit address.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-05
+  description: Multiple customer accounts or transactions are linked to the same phone
+    number or CVC wallet address.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-06
+  description: Blockchain analysis indicates that a customer’s transaction is received
+    by a CVC wallet that is identified as associated with fraud or other illicit activity.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-07
+  description: Blockchain analysis indicates that a customer’s transaction is received
+    by a CVC wallet associated with a financial institution that has been identified
+    as associated with TCOs perpetrating CVC investment scams.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-08
+  description: A customer conducting an in-person banking transaction withdraws substantial
+    amounts of cash from their bank account or retirement account and indicates that
+    they have been directed by a person on the phone or internet to deposit the funds
+    into a CVC kiosk.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-09
+  description: An older customer with no history of CVC-related activity conducts
+    a high-value transaction or series of transactions with a CVC kiosk operator.
+  product_types:
+  - money_transmitter
+  - prepaid
+  industry_types:
+  - crypto
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-10
+  description: A customer uses a debit card to make multiple payments below the CTR
+    limit to a CVC kiosk operator.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - depository
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-11
+  description: A customer operates a CVC kiosk business that is not registered with
+    FinCEN as an MSB or does not maintain applicable state licenses.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-12
+  description: A customer operates a CVC kiosk business that fails to collect required
+    customer and transaction information.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-13
+  description: A customer operates a CVC kiosk business that advertises the ability
+    for customers to conduct transactions without identification, or with only a phone
+    number or email address.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-14
+  description: A customer operates a CVC kiosk business that charges unusually high
+    transaction fees relative to similarly situated operators, has opaque rates and
+    fees, or has other business practices that diverge significantly from those of
+    legitimate CVC kiosk operators.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf
+- id: 034_cvc_kiosks_scam_payments-15
+  description: A customer that operates a CVC kiosk business structures cash transactions
+    below the SAR or CTR threshold.
+  product_types:
+  - money_transmitter
+  - prepaid
+  - crypto
+  - depository
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Convertible Virtual Currency Kiosks
+    for Scam Payments and Other Illicit Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-04'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Notice-CVCKIOSK.pdf

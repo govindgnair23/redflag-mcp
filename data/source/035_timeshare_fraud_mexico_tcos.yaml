@@ -1,0 +1,235 @@
+- id: 035_timeshare_fraud_mexico_tcos-01
+  description: A customer is uncharacteristically wiring funds to Mexico and indicates
+    the need to send the funds immediately to pay “taxes” or “fees” to apparent timeshare
+    brokers or else risk losing an urgent financial opportunity regarding their timeshare.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-02
+  description: A customer is uncharacteristically sending international wire transfers
+    from retirement accounts or trust accounts to Mexican financial institutions directly
+    or by first sending the funds to their personal checking or savings accounts either
+    through an internal transfer within their financial institution or by a wire transfer
+    to their accounts held at another financial institution and then immediately wiring
+    the funds to Mexico.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-03
+  description: A customer is sending multiple, structured, or repetitive wire transfers
+    to Mexican financial institutions with the same memo line denoting “taxes” or
+    “fees” regarding a timeshare.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-04
+  description: A customer suddenly begins sending an unusual volume of wire transfers
+    to Mexican banks or brokerage houses despite no previous related transaction activity.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-05
+  description: A counterparty in a transaction is a new or recently formed or registered
+    Mexican company in the timeshare, travel, real estate, or financial services industries
+    with minimal to no online presence.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-06
+  description: A counterparty in a transaction is a new or recently formed or registered
+    Mexican company that has indicators of being a shell company used for illicit
+    activity.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-07
+  description: A counterparty in a transaction is a new or recently formed or registered
+    Mexican company with an account opened within the previous six months at a Mexican
+    bank or brokerage house.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-08
+  description: A counterparty in a transaction is a new or recently formed or registered
+    Mexican company that is receiving repeated, or an unusual volume of, wire transfers
+    from U.S. personal bank accounts, retirement accounts, or trust accounts with
+    memo lines describing “taxes” or “fees” regarding timeshares in Mexico.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-09
+  description: A counterparty in a transaction is a new or recently formed or registered
+    Mexican company that appears to do business in the timeshare industry but has
+    previously done business as a company whose name is associated with complaints
+    by consumer protection and law enforcement agencies.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf
+- id: 035_timeshare_fraud_mexico_tcos-10
+  description: A counterparty in a transaction is a Mexican company with beneficial
+    owners associated with timeshare fraud or drug-related U.S. Department of Justice
+    (DOJ) indictments or OFAC designations.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  regulatory_source: FIN-2024-NTC2 July 16, 2024 FinCEN, OFAC, and FBI Joint Notice
+    on Timeshare Fraud Associated with Mexico-Based Transnational Criminal Organizations
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-07-16'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN-Joint-Notice-Timeshare-Mexico-508C-FINAL.pdf

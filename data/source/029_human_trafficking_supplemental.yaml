@@ -1,0 +1,1171 @@
+- id: 029_human_trafficking_supplemental-01
+  description: A third party speaks on behalf of the customer (a third party may insist
+    on being present and/or translating).
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-02
+  description: A third party insists on being present for every aspect of the transaction.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-03
+  description: A third party attempts to fill out paperwork without consulting the
+    customer.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-04
+  description: A third party maintains possession and/or control of all documents
+    or money.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-05
+  description: A third party claims to be related to the customer, but does not know
+    critical details.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-06
+  description: A prospective customer uses, or attempts to use, third-party identification
+    (of someone who is not present) to open an account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-07
+  description: A third party attempts to open an account for an unqualified minor.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-08
+  description: A third party commits acts of physical aggression or intimidation toward
+    the customer.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-09
+  description: A customer shows signs of poor hygiene, malnourishment, fatigue, signs
+    of physical and/or sexual abuse, physical restraint, confinement, or torture.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-10
+  description: A customer shows lack of knowledge of their whereabouts, cannot clarify
+    where they live or where they are staying, or provides scripted, confusing, or
+    inconsistent stories in response to inquiry.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-11
+  description: Customers frequently appear to move through, and transact from, different
+    geographic locations in the United States.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-12
+  description: These transactions can be combined with travel and transactions in
+    and to foreign countries that are significant conduits for human trafficking.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-13
+  description: Transactions are inconsistent with a customer’s expected activity and/or
+    line of business in an apparent effort to cover trafficking victims’ living costs,
+    including housing (e.g., hotel, motel, short-term rentals, or residential accommodations),
+    transportation (e.g., airplane, taxi, limousine, or rideshare services), medical
+    expenses, pharmacies, clothing, grocery stores, and restaurants, to include fast
+    food eateries.
+  product_types:
+  - depository
+  - credit_card
+  - money_transmitter
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  - food_service
+  - retail
+  - healthcare
+  customer_profiles:
+  - small_business
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-14
+  description: Transactional activity largely occurs outside of normal business operating
+    hours (e.g., an establishment that operates during the day has a large number
+    of transactions at night), is almost always made in cash, and deposits are larger
+    than what is expected for the business and the size of its operations.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-15
+  description: A customer frequently makes cash deposits with no Automated Clearing
+    House (ACH) payments.
+  product_types:
+  - ach
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: low
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-16
+  description: An individual frequently purchases and uses prepaid access cards.
+  product_types:
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-17
+  description: A customer’s account shares common identifiers, such as a telephone
+    number, email, and social media handle, or address, associated with escort agency
+    websites and commercial sex advertisements.
+  product_types:
+  - depository
+  - prepaid
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - shell_or_front_company
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-18
+  description: Frequent transactions with online classified sites that are based in
+    foreign jurisdictions.
+  product_types:
+  - credit_card
+  - depository
+  - wire_transfer
+  industry_types:
+  - online_marketplace
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-19
+  description: A customer frequently sends or receives funds via cryptocurrency to
+    or from darknet markets or services known to be associated with illicit activity.
+  product_types:
+  - crypto
+  - wire_transfer
+  - depository
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-20
+  description: This may include services that host advertising content for illicit
+    services, sell illicit content, or financial institutions that allow prepaid cards
+    to pay for cryptocurrencies without appropriate risk mitigation controls.
+  product_types:
+  - crypto
+  - prepaid
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-21
+  description: Frequent transactions using third-party payment processors that conceal
+    the originators and/or beneficiaries of the transactions.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-22
+  description: A customer avoids transactions that require identification documents
+    or that trigger reporting requirements.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-23
+  description: Human traffickers routinely establish and use front companies, sometimes
+    legal entities, to hide the true nature of a business, and its illicit activities,
+    owners, and associates.
+  product_types:
+  - depository
+  - wire_transfer
+  - credit_card
+  industry_types:
+  - travel_hospitality
+  - food_service
+  - retail
+  - construction
+  - adult_entertainment
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-24
+  description: The front company generates revenue from sales of alcoholic beverages
+    and cover charges.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - adult_entertainment
+  - food_service
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-25
+  description: Payments for these illicit services are usually in cash, and traffickers
+    may invest the illicit proceeds in high-value assets, such as real estate and
+    cars.
+  product_types:
+  - depository
+  industry_types:
+  - real_estate
+  - auto_sales
+  customer_profiles:
+  - cash_intensive_business
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-26
+  description: Some seemingly legitimate businesses use exploitative employment schemes,
+    such as visa fraud and wage retention, to amass profit from labor and sex trafficking.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - construction
+  - agriculture
+  - hospitality
+  customer_profiles:
+  - newly_established_business
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-27
+  description: Some labor recruiters mislead or defraud victims, taking advantage
+    of workers before and after they enter the United States.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - professional_services
+  - construction
+  - agriculture
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-28
+  description: Some labor recruiters also mislead workers about the conditions and
+    nature of a job, engage in contract switching, and confiscate or destroy workers’
+    identity documents.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - professional_services
+  - construction
+  - agriculture
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-29
+  description: Foreign nationals who have legitimate temporary work or student visas
+    also can be exploited.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - student
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: low
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-30
+  description: Another common practice is to charge exploitative fees to workers by
+    withholding their salary or paying less than promised.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - payroll
+  customer_profiles:
+  - cross_border_business
+  - migrant_worker
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-31
+  description: Victims’ salaries are transferred to the traffickers or their co-conspirators
+    via teller checks or wire transfers.
+  product_types:
+  - wire_transfer
+  - check_cashing
+  - depository
+  industry_types:
+  - payroll
+  customer_profiles:
+  - migrant_worker
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-32
+  description: Proceeds also can be “disguised” as a legitimate business expense,
+    such as a cleaning service.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  - food_service
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-33
+  description: Financial institutions may see multiple employees receiving their salaries
+    in the same account, or payment for employment may be followed by immediate withdrawal
+    or transfer into another account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - payroll
+  customer_profiles:
+  - small_business
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-34
+  description: Funnel accounts generally involve an individual or business account
+    in one geographic area that receives multiple cash deposits, often in amounts
+    below the cash reporting threshold, from which the funds are withdrawn in a different
+    geographic area with little time elapsing between the deposits and withdrawals.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-35
+  description: Human traffickers may use interstate funnel accounts to transfer funds
+    between geographic areas, move proceeds rapidly, and maintain anonymity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-36
+  description: In labor and sex trafficking schemes, human traffickers may open accounts
+    in their name, or escort victims to a bank, and force them to open an account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-37
+  description: Traffickers maintain control of the victims’ bank accounts through
+    coercion, and direct victims to deposit money into their accounts and other accounts
+    that the traffickers can access.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-38
+  description: In some cases, victims also are coerced or forced to wire proceeds
+    via money services businesses (MSBs) to facilitate the funneling of proceeds.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-39
+  description: Buyers of commercial sex use prepaid cards—a method of payment using
+    funds paid in advance, which can be acquired anonymously with cash or on darknet
+    websites—to register with escort websites and to purchase sexual services, flights,
+    throw-away phones, and hotel rooms.
+  product_types:
+  - prepaid
+  - credit_card
+  - depository
+  industry_types:
+  - adult_entertainment
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-40
+  description: Illicit actors also use virtual currency to advertise commercial sex
+    online.
+  product_types:
+  - crypto
+  industry_types:
+  - online_marketplace
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-41
+  description: For example, human traffickers have purchased prepaid cards, and then
+    used the cards to purchase virtual currency on a peer-to-peer exchange platform.
+  product_types:
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-42
+  description: Human traffickers then use the virtual currency to buy online advertisements
+    that feature commercial sex acts to obtain customers.
+  product_types:
+  - crypto
+  industry_types:
+  - online_marketplace
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-43
+  description: Human traffickers and their facilitators use TPPPs to wire funds to
+    individuals or businesses both domestically and abroad.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-44
+  description: The organization used funnel accounts to launder money deposited in
+    cities across the United States to third-party launderers who made cash withdrawals
+    in Los Angeles.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - third_party_payment_processor
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-45
+  description: To move funds to and from Thailand, the organization employed third-party
+    money launderers who made bank accounts available and coordinated cash deposits
+    and withdrawals.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-46
+  description: Bulk cash smuggling was another scheme used to physically transport
+    proceeds to Thailand.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-47
+  description: According to law enforcement, individuals were recruited to carry large
+    volumes of cash in suitcases and transport the money to Thailand.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-48
+  description: To evade detection, the trafficking organization paid flight attendants
+    to keep quiet, and in some limited instances, to transport bulk cash in their
+    own luggage.
+  product_types:
+  - depository
+  industry_types:
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-49
+  description: Money also was concealed in clothing and dolls that were shipped to
+    Thailand.
+  product_types:
+  - trade_finance
+  - depository
+  industry_types:
+  - logistics
+  - retail
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-50
+  description: Traffickers based in Thailand lured women to the United States through
+    false promises of a better life.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - south_east_asia
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-51
+  description: the organization engaged in visa fraud by creating false identification
+    documents, and forced many of the victims to enter into fraudulent marriages and
+    debt bondage.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-52
+  description: Once in the United States, the victims were sent to various cities,
+    isolated in a residence, and forced to pay off their debt by engaging in commercial
+    sex acts.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-53
+  description: The organization used funnel accounts to launder money deposited in
+    cities across the United States to third-party launderers who made cash withdrawals
+    in Los Angeles.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - third_party_payment_processor
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-54
+  description: According to data made available to FinCEN, deposits were made in cash,
+    and were just enough to cover account debits.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-55
+  description: To move funds to and from Thailand, the organization employed third-party
+    money launderers who made bank accounts available and coordinated cash deposits
+    and withdrawals.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-56
+  description: Bulk cash smuggling was another scheme used to physically transport
+    proceeds to Thailand.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-57
+  description: Evidence revealed that the group’s illicit activity revolved around
+    the purchase of Vanilla Visa prepaid credit cards, which were then used to purchase
+    bitcoin on the Paxful virtual currency exchange.
+  product_types:
+  - prepaid
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf
+- id: 029_human_trafficking_supplemental-58
+  description: Those bitcoin were used to purchase prostitution ads on Backpage.com.
+  product_types:
+  - crypto
+  industry_types:
+  - online_marketplace
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2020-A008 Supplemental Advisory on Identifying
+    and Reporting Human Trafficking and Related Activity
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-15'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-15/Advisory%20Human%20Trafficking%20508%20FINAL_0.pdf

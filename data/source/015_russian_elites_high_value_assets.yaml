@@ -1,0 +1,335 @@
+- id: 015_russian_elites_high_value_assets-01
+  description: 'The purchase, sale, donation, or legal ownership transfer of high-value
+    real estate in the name of a foreign legal entity, shell company, or trust, especially
+    if the transaction: (i) is far above or below fair market value, (ii) involves
+    all-cash transfers, or (iii) is funded by a third party with a known nexus to
+    sanctioned Russian elites and their proxies.'
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-02
+  description: The use of legal entities or arrangements that may have a nexus to
+    sanctioned Russian elites and their proxies to hide the ultimate beneficiary or
+    the origins or source of the funds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-03
+  description: Changes, without an apparent business reason, to the transaction patterns
+    of a firm located in a country other than the United States, Russia, Belarus,
+    and Ukraine, where the new transactions involve convertible virtual currency and
+    Russian-related investments or firms.
+  product_types:
+  - crypto
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - russia
+  - eastern_europe
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-04
+  description: A Russian individual or entity requests a wire transfer from a non-U.S.
+    (particularly non-Russian) bank to pay for an all-cash purchase, especially if
+    the wired funds come from an account held by an individual or entity other than
+    the original requestor.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-05
+  description: The dilution of equitable interest held in real property by sanctioned
+    Russian elites and their proxies, by the addition of, or the transfer of real
+    estate to, an individual not affiliated with the buyer or seller.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-06
+  description: The maintenance, purchase, or termination of real estate insurance
+    by persons with a known nexus to sanctioned Russian elites and their proxies.
+  product_types:
+  - insurance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-07
+  description: The use of shell companies and trusts, and/or third-party intermediaries,
+    including art dealers, brokers, advisers, or interior designers, with a nexus
+    to sanctioned Russian elites and their proxies, to purchase, hold, or sell art
+    on a client’s behalf.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - shell_or_front_company
+  - third_party_payment_processor
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-08
+  description: Transactions involving sanctioned Russian elites and their proxies,
+    and large amounts of cash, especially in currencies not typically used in the
+    art market.
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-09
+  description: Artwork-related transactions involving persons with suspected ties
+    to sanctioned Russian elites and their proxies who (i) are not concerned with
+    recouping their initial investment or paying a substantially higher price than
+    the notational value of the work, and/or (ii) conduct transactions that exceed
+    the expected sales value of the work.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-10
+  description: The purchase, maintenance, or termination of insurance policies to
+    protect the market value or provide cash payments for the loss, theft, or destruction
+    of privately held or donated high-value artwork linked to sanctioned Russian elites
+    and their proxies.
+  product_types:
+  - insurance
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-11
+  description: Transactions involving PMSJ trading companies, particularly in Asia,
+    and firms with a nexus to sanctioned Russian elites and their proxies.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-12
+  description: High-value or frequent transactions involving mining operations with
+    opaque and complex corporate structures, that are or have been owned or controlled
+    by sanctioned Russian elites or their proxies.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-13
+  description: The sudden transfer, including through sales, by sanctioned Russian
+    elites and their proxies of ownership in high-value assets and goods.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - luxury_goods
+  - art_antiquities
+  - precious_metals_jewelry
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-14
+  description: The involvement of legal entities, such as shell companies, with a
+    nexus to sanctioned Russian elites and their proxies, that are falsely posing
+    as well-known entities and operating in jurisdictions other than the well-known
+    entity’s jurisdiction and geographic sphere of business.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-15
+  description: The involvement of a common set of (i) financial institutions, (ii)
+    individuals, or (iii) addresses to facilitate luxury goods-related transactions,
+    that may have a nexus to sanctioned Russian elites and their proxies.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - luxury_goods
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-16
+  description: The involvement of law firms based in global and offshore financial
+    centers that have historically specialized in Russian clientele or in transactions
+    associated with sanctioned Russian elites and their proxies.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - legal_accounting
+  customer_profiles:
+  - professional_services
+  geographic_footprints:
+  - uk_eu
+  - caribbean
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: low
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf
+- id: 015_russian_elites_high_value_assets-17
+  description: The involvement of transportation service companies that have been
+    owned by, or have a nexus to, sanctioned Russian elites and their proxies, and
+    that may be used to transport luxury goods and obfuscate their movement.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - logistics
+  - transportation
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-16'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Elites%20High%20Value%20Assets_508%20FINAL.pdf

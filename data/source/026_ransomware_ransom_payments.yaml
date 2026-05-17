@@ -1,0 +1,247 @@
+- id: 026_ransomware_ransom_payments-01
+  description: A financial institution or its customer detects IT enterprise activity
+    that is connected to ransomware cyber indicators or known cyber threat actors.
+    Malicious cyber activity may be evident in system log files, network traffic,
+    or file information.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  - credit_card
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-02
+  description: When opening a new account or during other interactions with the financial
+    institution, a customer provides information that a payment is in response to
+    a ransomware incident.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  - credit_card
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-03
+  description: A customer’s CVC address, or an address with which a customer conducts
+    transactions is connected to ransomware variants, payments, or related activity.
+    These connections may appear in open sources or commercial or government analyses.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-04
+  description: An irregular transaction occurs between an organization, especially
+    an organization from a sector at high risk for targeting by ransomware (e.g.,
+    government, financial, educational, healthcare) and a DFIR or CIC, especially
+    one known to facilitate ransomware payments.
+  product_types:
+  - wire_transfer
+  - ach
+  - credit_card
+  - depository
+  - crypto
+  industry_types:
+  - government_benefits
+  - healthcare
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-05
+  description: A DFIR or CIC customer receives funds from a counterparty and shortly
+    after receipt of funds sends equivalent amounts to a CVC exchange.
+  product_types:
+  - wire_transfer
+  - ach
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-06
+  description: A customer shows limited knowledge of CVC during onboarding or via
+    other interactions with the financial institution, yet inquires about or purchases
+    CVC (particularly if in a large amount or rush requests), which may indicate the
+    customer is a victim of ransomware.
+  product_types:
+  - crypto
+  - wire_transfer
+  - ach
+  - credit_card
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-07
+  description: A customer that has no or limited history of CVC transactions sends
+    a large CVC transaction, particularly when outside a company’s normal business
+    practices.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-08
+  description: A customer that has not identified itself to the CVC exchanger, or
+    registered with FinCEN as a money transmitter, appears to be using the liquidity
+    provided by the exchange to execute large numbers of offsetting transactions between
+    various CVCs, which may indicate that the customer is acting as an unregistered
+    MSB.
+  product_types:
+  - crypto
+  industry_types:
+  - money_services_business
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-09
+  description: A customer uses a foreign-located CVC exchanger in a high-risk jurisdiction
+    lacking, or known to have inadequate, AML/CFT regulations for CVC entities.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-10
+  description: A customer receives CVC from an external wallet, and immediately initiates
+    multiple, rapid trades among multiple CVCs, especially AECs, with no apparent
+    related purpose, followed by a transaction off the platform. This may be indicative
+    of attempts to break the chain of custody on the respective blockchains or further
+    obfuscate the transaction.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-11
+  description: A customer initiates a transfer of funds involving a mixing service.
+  product_types:
+  - crypto
+  - wire_transfer
+  - ach
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf
+- id: 026_ransomware_ransom_payments-12
+  description: A customer uses an encrypted network (e.g., the onion router) or an
+    unidentified web portal to communicate with the recipient of the CVC transaction.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FIN-2021-A004 Advisory on Ransomware and the Use of the Financial
+    System to Facilitate Ransom Payments
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2021-11-08'
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://www.fincen.gov/system/files/advisory/2021-11-08/FinCEN%20Ransomware%20Advisory_FINAL_508_.pdf

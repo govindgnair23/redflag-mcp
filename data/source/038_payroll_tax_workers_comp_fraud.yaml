@@ -1,0 +1,221 @@
+- id: 038_payroll_tax_workers_comp_fraud-01
+  description: The customer is a new (i.e., less than two years old) small construction
+    company specializing in one type of construction trade (e.g., framing, drywall,
+    stucco, masonry, painting, etc.) with minimal to no online presence and has indicators
+    of being a shell company for illicit activity.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-02
+  description: The person or company opening the account has no known prior involvement
+    with, or in, the construction industry, and the individual opening the account
+    provides a non-U.S. passport as a form of identification.
+  product_types:
+  - depository
+  industry_types:
+  - construction
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-03
+  description: Beneficial owners of the shell company have no known prior involvement
+    with, or in, the construction company and may have prior convictions involving
+    fraud.
+  product_types:
+  - depository
+  industry_types:
+  - construction
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-04
+  description: The company’s recently acquired workers’ compensation insurance policy,
+    which may be verifiable through an official state website, was issued within the
+    last year and covers only a small number of employees. However, a high volume
+    of transactions is observed in the company’s bank accounts, which is not commensurate
+    with a construction company of that size.
+  product_types:
+  - depository
+  - insurance
+  industry_types:
+  - construction
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-05
+  description: A customer receives weekly deposits in their account that exceed normal
+    account activity from several construction contractors involved in multiple construction
+    trades (e.g., framing, drywall, stucco, masonry, painting, etc.). The deposits
+    may be conducted from locations in multiple cities or states.
+  product_types:
+  - depository
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-06
+  description: A customer engages in behavior that suggests efforts to evade CTR filing
+    requirements (e.g., the account holder or company representative alters or cancels
+    a transaction when advised a CTR would be filed or engages in structuring with
+    multiple check payments for under $10,000).
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-07
+  description: A representative of the construction company conducts large or unusual
+    volumes of cash withdrawals or negotiation of checks for cash when accompanied
+    by another involved person(s) or using an armored car service to deliver bulk
+    cash.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-08
+  description: Large volumes of checks for under $1,000 are drawn on the company’s
+    bank account and made payable to separate individuals (i.e., the workers), which
+    are subsequently negotiated for cash by the payee.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-09
+  description: The company’s bank account has minimal to no tax- or payroll-related
+    payments to the IRS, state and local tax authorities, or a third-party payroll
+    company despite a large volume of deposits from clients.
+  product_types:
+  - depository
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-10
+  description: The Internet Protocol (IP) address identified from the account holder’s
+    online banking activity also may be associated with the online banking activity
+    for another customer involved in the same type of purported construction-related
+    activity.
+  product_types:
+  - depository
+  industry_types:
+  - construction
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: low
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf
+- id: 038_payroll_tax_workers_comp_fraud-11
+  description: The account holder or company representative makes statements to bank
+    tellers or check cashers that the purpose of the cash withdrawals, negotiation
+    of checks for cash, or check cashing activity is for payroll and the volume, amount,
+    and frequency of transactions are uncharacteristic for a construction company
+    with a small number of employees.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice FIN-2023-NTC1
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-08-15'
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Notice_Payroll_Tax_Evasion_and_Workers_Comp_508.pdf

@@ -1,0 +1,422 @@
+- id: 030_unemployment_insurance_fraud-01
+  description: 'Fictitious employer-employee fraud: filers falsely claim they work
+    for a legitimate company, or create a fictitious company and supply fictitious
+    employee and wage records to apply for UI payments;'
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-02
+  description: 'Employer-employee collusion fraud: the employee receives UI payments
+    while the employer continues to pay the employee reduced, unreported wages;'
+  product_types:
+  - depository
+  industry_types:
+  - payroll
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-03
+  description: 'Misrepresentation of income fraud: an individual returns to work and
+    fails to report the income in order to continue receiving UI payments, or in an
+    effort to receive higher UI payments, an applicant claims higher wages than he/she
+    previously earned;'
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-04
+  description: 'Insider fraud: state employees use credentials to inappropriately
+    access or change UI claims, resulting in the approval of unqualified applications,
+    improper payment amounts, or movement of UI funds to accounts that are not on
+    the application;'
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - government_official
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-05
+  description: 'Identity-related fraud: filers submit applications for UI payments
+    using stolen or fake identification information to perpetrate an account takeover.1'
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-06
+  description: UI payments from a state other than the state in which the customer
+    reportedly resides or has previously worked;
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-07
+  description: Multiple state UI payments within the same disbursement timeframe;
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-08
+  description: UI payments in the name of a person other than the accountholder, or
+    in the names of multiple unemployment payments recipients;
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-09
+  description: UI payments and regular work-related earnings, via direct deposit or
+    paper checks;
+  product_types:
+  - depository
+  - ach
+  - check_cashing
+  industry_types:
+  - payroll
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-10
+  description: Numerous deposits or electronic funds transfers (EFTs) that indicate
+    they are UI payments from one or more states to persons other than the accountholder(s);
+  product_types:
+  - depository
+  - ach
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-11
+  description: A higher amount of UI payments in the same timeframe than similarly
+    situated customers received.
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-12
+  description: The customer withdraws the disbursed UI funds in a lump sum by cashier’s
+    checks, by purchasing a prepaid debit card, or by transferring the funds to out-of-state
+    accounts.
+  product_types:
+  - depository
+  - check_cashing
+  - prepaid
+  - wire_transfer
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-13
+  description: The customer’s UI payments are quickly diverted via wire transfer to
+    foreign accounts, particularly to accounts in countries with weak anti-money laundering
+    controls.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-14
+  description: The customer receives or sends UI payments to a peer-to-peer (P2P)
+    application or app.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-15
+  description: The funds are then wired to an overseas account, or withdrawn using
+    a debit card, in a manner that is inconsistent with the spending patterns of similarly
+    situated customers.
+  product_types:
+  - depository
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-16
+  description: Individuals quickly withdraw disbursed UI funds via online bill payments
+    addressed to an individual(s), as opposed to businesses, as payee(s), with some
+    individual payees receiving multiple online bill paychecks over a short time period.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-17
+  description: The IP address associated with logins for an account conducting suspected
+    UI-fraud activities does not map to the general location of stated address in
+    identity documentation for the customer or where the UI payment originated.
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-18
+  description: Individuals direct UI-related EFTs, or deposit UI checks into suspected
+    shell/front company accounts, which may be indicative of money mules transferring
+    these funds in and out of the accounts.
+  product_types:
+  - depository
+  - ach
+  - check_cashing
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-19
+  description: Multiple accounts receiving UI payments at one or more financial institutions
+    are associated with the same free, web-based email account that may appear in
+    more than one UI application.
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-20
+  description: A newly opened account, or an account that has been inactive for more
+    than thirty days, starts to receive numerous UI deposits.
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-21
+  description: After a financial institution suspects UI fraud and requests additional
+    identification documentation to verify the identity(ies) of the customer(s), queried
+    individuals provide documents that are incorrect or forged, which may be an indicator
+    of an account takeover or identity theft.
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf
+- id: 030_unemployment_insurance_fraud-22
+  description: After a financial institution suspects UI fraud and conducts due diligence,
+    it determines that the customer does not have a history of living at, or being
+    associated with, the address to which the UI check or UI debit card is sent, or
+    within the geographical area in which the registered debit card is being used.
+  product_types:
+  - depository
+  - prepaid
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2020-A007
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-10-13/Advisory%20Unemployment%20Insurance%20COVID%2019%20508%20Final.pdf

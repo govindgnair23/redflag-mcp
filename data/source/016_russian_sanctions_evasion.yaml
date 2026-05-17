@@ -1,0 +1,246 @@
+- id: 016_russian_sanctions_evasion-01
+  description: Use of corporate vehicles (i.e. legal entities, such as shell companies,
+    and legal arrangements) to obscure (i) ownership, (ii) source of funds, or (iii)
+    countries involved, particularly sanctioned jurisdictions.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-02
+  description: Use of shell companies to conduct international wire transfers, often
+    involving financial institutions in jurisdictions distinct from company registration.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-03
+  description: Use of third parties to shield the identity of sanctioned persons and/or
+    PEPs seeking to hide the origin or ownership of funds, for example, to hide the
+    purchase or sale of real estate.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - politically_exposed_person
+  - beneficial_owner_obscured
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-04
+  description: Accounts in jurisdictions or with financial institutions that are experiencing
+    a sudden rise in value being transferred to their respective areas or institutions,
+    without a clear economic or business rationale.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-05
+  description: Jurisdictions previously associated with Russian financial flows that
+    are identified as having a notable recent increase in new company formations.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: low
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-06
+  description: Newly established accounts that attempt to send or receive funds from
+    a sanctioned institution or an institution removed from the Society for Worldwide
+    Interbank Financial Telecommunication (SWIFT).
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-07
+  description: Non-routine foreign exchange transactions that may indirectly involve
+    sanctioned Russian financial institutions, including transactions that are inconsistent
+    with activity over the prior 12 months. For example, the Central Bank of the Russian
+    Federation may seek to use import or export companies to engage in foreign exchange
+    transactions on its behalf and to obfuscate its involvement.
+  product_types:
+  - currency_exchange
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-08
+  description: 'A customer’s transactions are initiated from or sent to the following
+    types of Internet Protocol (IP) addresses: non-trusted sources; locations in Russia,
+    Belarus, FATF-identified jurisdictions with AML/CFT/CP deficiencies,19 and comprehensively
+    sanctioned jurisdictions; or IP addresses previously flagged as suspicious.'
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-09
+  description: A customer’s transactions are connected to CVC addresses listed on
+    OFAC’s Specially Designated Nationals and Blocked Persons List.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-10
+  description: A customer uses a CVC exchanger or foreign-located MSB in a high-risk
+    jurisdiction with AML/CFT/CP deficiencies, particularly for CVC entities and activities,
+    including inadequate “know-your-customer” or customer due diligence measures.
+  product_types:
+  - crypto
+  - money_transmitter
+  - remittance
+  industry_types:
+  - crypto
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-11
+  description: A customer receives CVC from an external wallet, and immediately initiates
+    multiple, rapid trades among multiple CVCs with no apparent related purpose, followed
+    by a transaction off the platform.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-12
+  description: A customer initiates a transfer of funds involving a CVC mixing service.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf
+- id: 016_russian_sanctions_evasion-13
+  description: A customer has either direct or indirect receiving transaction exposure
+    identified by blockchain tracing software as related to ransomware.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2022-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-03-07'
+  risk_level: high
+  category: ransomware
+  source_url: https://www.fincen.gov/system/files/2022-03/FinCEN%20Alert%20Russian%20Sanctions%20Evasion%20FINAL%20508.pdf

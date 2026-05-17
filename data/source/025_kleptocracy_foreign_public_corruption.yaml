@@ -1,0 +1,201 @@
+- id: 025_kleptocracy_foreign_public_corruption-01
+  description: Transactions involving long-term government contracts consistently
+    awarded, through an opaque selection process, to the same legal entity or entities
+    that share similar beneficial ownership structures.
+  product_types:
+  - depository
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: medium
+  category: corruption
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-02
+  description: Transactions involving services provided to state-owned companies or
+    public institutions by companies registered in high-risk jurisdictions.
+  product_types:
+  - depository
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: medium
+  category: corruption
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-03
+  description: Transactions involving official embassy or foreign government business
+    conducted through personal accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - government_official
+  - foreign_individual
+  geographic_footprints:
+  - foreign_financial_institution
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: high
+  category: corruption
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-04
+  description: Transactions involving public officials related to high-value assets,
+    such as real estate or other luxury goods, that are not commensurate with the
+    reported source of wealth for the public official or that fall outside that individual’s
+    normal pattern of activity or lifestyle.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  - luxury_goods
+  customer_profiles:
+  - government_official
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: high
+  category: corruption
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-05
+  description: Transactions involving public officials and funds moving to and from
+    countries with which the public officials do not appear to have ties.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - government_official
+  - politically_exposed_person
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: medium
+  category: corruption
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-06
+  description: Use of third parties to shield the identity of foreign public officials
+    seeking to hide the origin or ownership of funds, for example, to hide the purchase
+    or sale of real estate.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - government_official
+  - politically_exposed_person
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: high
+  category: corruption
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-07
+  description: Documents corroborating transactions involving government contracts
+    (e.g., invoices) that include charges at substantially higher prices than market
+    rates or that include overly simple documentation or lack traditional details
+    (e.g., valuations for good and services).
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - government_benefits
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: medium
+  category: corruption
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-08
+  description: Transactions involving payments that do not match the total amounts
+    set out in the underlying documentation, or that involve vague payment details
+    or the use of old or fraudulent documentation to justify transfer of funds.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-09
+  description: Transactions involving fictitious email addresses and false invoices
+    to justify payments, particularly for international transactions.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf
+- id: 025_kleptocracy_foreign_public_corruption-10
+  description: Assets held in the name of intermediate legal entities whose beneficial
+    owner or owners are tied to a kleptocrat or his or her family member.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-04-14'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2022-04-14/FinCEN%20Advisory%20Corruption%20FINAL%20508.pdf

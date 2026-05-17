@@ -1,0 +1,115 @@
+- id: 017_twitter_cvc_scam-01
+  description: a CVC or other financial account receives a high volume of payments
+    in a short period of time from previously unaffiliated accounts and/or multiple
+    originating CVC addresses.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2020-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-07-16'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/2020-07/FinCEN%20Alert%20Twitter_508%20FINAL.pdf
+- id: 017_twitter_cvc_scam-02
+  description: Promises of high or guaranteed investment or donation returns for payments
+    made to accounts with which you have no prior business relationship.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2020-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-07-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2020-07/FinCEN%20Alert%20Twitter_508%20FINAL.pdf
+- id: 017_twitter_cvc_scam-03
+  description: Communications, including social media posts, soliciting payments with
+    misspellings or messages out of profile for the counterparty, soliciting payments
+    from individuals or organizations with whom you have no prior existing business
+    relationship, including celebrities or public figures.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2020-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-07-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2020-07/FinCEN%20Alert%20Twitter_508%20FINAL.pdf
+- id: 017_twitter_cvc_scam-04
+  description: Solicitations requesting donations via social media where the solicitor
+    is not affiliated with a reputable organization.
+  product_types:
+  - crypto
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2020-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-07-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2020-07/FinCEN%20Alert%20Twitter_508%20FINAL.pdf
+- id: 017_twitter_cvc_scam-05
+  description: Social media posts that solicit donations or advertise give-aways that
+    appear from accounts that are not “verified” through the social media platform
+    account verification processes or that misspell the celebrity or financial institution’s
+    name.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2020-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-07-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2020-07/FinCEN%20Alert%20Twitter_508%20FINAL.pdf
+- id: 017_twitter_cvc_scam-06
+  description: Multiple social media accounts communicating the same message soliciting
+    funds for an unknown purpose or to an unknown account.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2020-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-07-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2020-07/FinCEN%20Alert%20Twitter_508%20FINAL.pdf
+- id: 017_twitter_cvc_scam-07
+  description: Communications, including social media posts, that provide the same
+    CVC address across multiple celebrity or prominent financial institution social
+    media accounts.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2020-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-07-16'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/2020-07/FinCEN%20Alert%20Twitter_508%20FINAL.pdf

@@ -1,0 +1,295 @@
+- id: 036_counterfeit_passport_cards-01
+  description: The photo on the presented U.S passport card has a white, blurry border;
+    a dark gray square surrounding the photo; or is in color.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-02
+  description: The photo of the account holder on file does not match the individual
+    present who is pictured in the counterfeit U.S. passport card.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-03
+  description: The card bearer’s date of birth and other areas of text are flat and
+    do not feel raised when touched.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-04
+  description: The holographic U.S. Department of State seal is missing or has been
+    substituted with a seal from an unrelated agency.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-05
+  description: The smaller portrait is blurry and does not contain micro-printed text
+    with information specific to the bearer of the card, or the portraits are of different
+    people.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-06
+  description: The signature of a customer presenting a U.S. passport card for identification
+    does not match the customer’s signature card on file.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-07
+  description: A customer presenting a U.S. passport card as identification may not
+    know or be able to reference personal identifiers, including date of birth or
+    social security number.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-08
+  description: If a customer presenting a U.S. passport card as identification does
+    know or is able to reference personal identifiers, including date of birth or
+    social security number, they nevertheless lack basic account knowledge and are
+    excessively interested in specific details about their account balances and withdrawal
+    limits.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-09
+  description: A customer appears to be following directions by phone from a third-party.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-10
+  description: A customer presents a U.S. passport card for identification and opens
+    a new joint account with a third-party with whom the customer has no prior relationship.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-11
+  description: A customer conducts transactions characteristic of U.S. passport card
+    fraud at branch locations outside of their geographical footprint.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-12
+  description: A customer presents a U.S. passport card as a form of identification
+    and subsequently withdraws cash, purchases a cashier’s check, purchases money
+    orders, or initiates wire transfers for a large amount for no business or apparent
+    lawful purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-13
+  description: A customer presents a U.S. passport card as a form of identification
+    and attempts to negotiate an uncharacteristic, sudden, or abnormally large volume
+    of checks made payable to cash.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-14
+  description: A customer presents a U.S. passport card as a form of identification,
+    asks for daily withdrawal and transfer limits, and subsequently withdraws cash,
+    initiates a wire transfer, or purchases a cashier’s check made payable to a third
+    party.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-15
+  description: A customer presents a U.S. passport card before transferring funds
+    out of an existing account to a recently established joint account, and the funds
+    are then rapidly withdrawn or wired from the joint account to a separate, unrelated
+    account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-16
+  description: A customer makes withdrawals from an account at multiple branch locations
+    for no business or apparent lawful purpose using a U.S. passport card as identification.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
+- id: 036_counterfeit_passport_cards-17
+  description: A customer engages in behavior that suggests efforts to evade the CTR
+    filing requirements (e.g., the customer alters or cancels a transaction when informed
+    of the CTR filing requirement, or engages in structuring by conducting multiple
+    cash withdrawals below $10,000 during one business day).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice on the Use of Counterfeit U.S. Passport Cards to
+    Perpetrate Identity Theft and Fraud Schemes at Financial Institutions (FIN-2024-NTC1)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-04-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN_Notice_Counterfeit_US_Passport_FINAL508.pdf
