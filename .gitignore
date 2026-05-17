@@ -39,5 +39,5 @@ red_flag_sources/markdown/
 
 #Agent related 
 
-.claude/
+.claude/*
 .codex/
