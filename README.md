@@ -24,14 +24,65 @@ The hosted connector is backed by a verified packaged corpus. End users do not n
 
 ## Overview
 
-Six distinct workflows:
+Eight distinct workflows:
 
-1. **Source harvesting** — download PDFs and capture web pages from the AML catalog CSV into the local source registry
-2. **Extraction** — pull AML red flags out of PDFs or web pages using an LLM and save them as YAML
-3. **Ingestion** — embed the YAML files and load them into the local vector database
-4. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
-5. **Hosted deployment** — run the ASGI MCP service from a verified corpus package at one public `/mcp` URL
-6. **Query** — MCP server answers search and filtering requests against the configured local or hosted store
+1. **URL pipeline** — download URLs, optionally inspect local captures, then extract red flags
+2. **Source harvesting** — bulk-download PDFs and web pages from a catalog CSV into `sources.yaml`
+3. **Extraction** — pull AML red flags out of PDFs or web pages using an LLM and save them as YAML
+4. **Source registry** — rebuild `red_flag_sources/registry.csv`, the audit ledger for extracted, downloaded, and not-downloaded sources
+5. **Ingestion** — embed the YAML files and load them into the local vector database
+6. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
+7. **Hosted deployment** — run the ASGI MCP service from a verified corpus package at one public `/mcp` URL
+8. **Query** — MCP server answers search and filtering requests against the configured local or hosted store
+
+---
+
+## URL Pipeline
+
+Use `scripts/pipeline.py` for day-to-day source onboarding from URLs. It supports both a one-shot workflow and a review checkpoint between download and extraction.
+
+Create a plain text file with one URL per line:
+
+```text
+https://example.gov/report.pdf
+https://example.gov/red-flag-guidance
+```
+
+Blank lines and non-HTTP(S) lines are skipped.
+
+### One-shot download and extraction
+
+```bash
+uv run python scripts/pipeline.py run urls.txt
+```
+
+Use this when you trust the source list and want to download each URL, register it in `red_flag_sources/sources.yaml`, extract red flags, update `data/source/.extracted_sources.yaml`, and rebuild `red_flag_sources/registry.csv`.
+
+### Download, inspect, then extract
+
+```bash
+# Download PDFs/web captures and update sources.yaml + registry.csv
+uv run python scripts/pipeline.py download urls.txt
+
+# Inspect red_flag_sources/pdf/ and red_flag_sources/markdown/, then extract downloaded rows
+uv run python scripts/pipeline.py extract
+```
+
+Use the two-step flow when you want to inspect Jina Reader markdown captures or downloaded PDFs before spending OpenAI extraction calls.
+
+### Options
+
+```bash
+# Bypass registry deduplication and re-download/re-extract
+uv run python scripts/pipeline.py run urls.txt --force
+
+# Extract downloaded sources in parallel; default is sequential unless --parallel is present
+uv run python scripts/pipeline.py extract --parallel
+uv run python scripts/pipeline.py extract --parallel 8
+uv run python scripts/pipeline.py run urls.txt --parallel 4
+```
+
+Deduplication uses `red_flag_sources/registry.csv` by `source_url`. Re-run `scripts/build_registry.py` first if you manually edited `sources.yaml`, catalog CSVs, or YAML source files and need the pipeline to see the latest status.
 
 ---
 
@@ -63,9 +114,11 @@ red_flag_sources/
   markdown/                                         # Jina Reader captures (gitignored)
 ```
 
-After harvesting, pass the downloaded files to the extraction pipeline:
+After harvesting, rebuild the status registry and pass downloaded files to extraction:
 
 ```bash
+uv run python scripts/build_registry.py
+
 # Extract red flags from all newly downloaded PDFs
 uv run python scripts/extract.py --parallel
 
@@ -73,7 +126,9 @@ uv run python scripts/extract.py --parallel
 uv run python scripts/extract.py --range 039-060 --parallel
 ```
 
-> **Note:** `sources.yaml` is the shared registry for both `harvest_sources.py` and `build_sources_registry.py`. Do not run both scripts concurrently — each does a full overwrite on save.
+Use `harvest_sources.py` when the input is a catalog CSV. Use `pipeline.py` when the input is a simple URL list or when you want the download-inspect-extract workflow.
+
+> **Note:** `sources.yaml` is the shared URL registry for `pipeline.py`, `harvest_sources.py`, and `build_sources_registry.py`. Do not run these scripts concurrently — each can overwrite `sources.yaml` after updating it.
 
 ---
 
@@ -88,20 +143,22 @@ uv sync --extra dev
 export OPENAI_API_KEY=sk-...
 ```
 
-### Adding PDFs in bulk (recommended workflow)
+### Adding sources in bulk (recommended workflow)
 
-**Step-by-step:**
+Use `scripts/pipeline.py` for new URL lists:
 
-1. **Add the source URL to `red_flag_sources/pdflinks.txt`** — one URL per line, in serial order. Line 1 → key `001`, line 2 → `002`, etc.
-2. **Download the PDF** and save it to `red_flag_sources/pdf/` named `NNN_short_descriptive_name.pdf`, where `NNN` matches its line position in `pdflinks.txt`.
-3. **Regenerate the registry:** `uv run python scripts/build_sources_registry.py`
-4. **Run extraction:** `uv run python scripts/extract.py --parallel`
+```bash
+uv run python scripts/pipeline.py download urls.txt
+uv run python scripts/pipeline.py extract --parallel
+```
 
-> **Key constraint:** the `NNN_` prefix in the filename must match the line number in `pdflinks.txt`. Line 1 = `001_*.pdf`, line 2 = `002_*.pdf`, etc. This is how the extractor links each PDF to its public source URL.
+This downloads into `red_flag_sources/pdf/` or `red_flag_sources/markdown/`, updates `sources.yaml`, extracts downloaded registry rows, updates `.extracted_sources.yaml`, and rebuilds `registry.csv`.
 
----
+For catalog CSVs, use `scripts/harvest_sources.py` first, then `scripts/extract.py`.
 
-PDFs are stored in `red_flag_sources/pdf/` and must be named with a zero-padded serial prefix:
+### Manual PDF workflow
+
+PDFs are stored in `red_flag_sources/pdf/` and should be named with a zero-padded serial prefix:
 
 ```
 red_flag_sources/pdf/
@@ -110,7 +167,7 @@ red_flag_sources/pdf/
   003_fatf_guidance_virtual_assets.pdf
 ```
 
-Each serial number maps to a public URL for the source document. Maintain this mapping in `red_flag_sources/pdflinks.txt` — one URL per line, in serial order:
+Each serial number maps to a public URL for the source document in `red_flag_sources/sources.yaml`. For the legacy manual flow, maintain that mapping in `red_flag_sources/pdflinks.txt` — one URL per line, in serial order:
 
 ```
 # FinCEN Russian Sanctions Evasion Alert
@@ -123,10 +180,11 @@ https://bsaaml.ffiec.gov/manual
 https://www.fatf-gafi.org/...
 ```
 
-Blank lines and lines starting with `#` are ignored. After editing `pdflinks.txt`, regenerate `sources.yaml`:
+Blank lines and lines starting with `#` are ignored. After editing `pdflinks.txt`, regenerate `sources.yaml` and `registry.csv`:
 
 ```bash
 uv run python scripts/build_sources_registry.py
+uv run python scripts/build_registry.py
 ```
 
 Then run batch extraction:
@@ -177,7 +235,7 @@ uv run python scripts/extract.py https://example.com/regulatory-guidance
 uv run python scripts/extract.py --force red_flag_sources/pdf/001_fincen_alert.pdf
 ```
 
-For single-source PDFs, add the URL to `pdflinks.txt` and run `build_sources_registry.py` first so the extractor can populate `source_url` in the output.
+For single-source PDFs, make sure `sources.yaml` maps the file's serial prefix to the public URL before extraction so the extractor can populate `source_url` in the output. If you maintain the legacy `pdflinks.txt` file, run `build_sources_registry.py` and then `build_registry.py` first.
 
 ### What it does
 
@@ -186,6 +244,7 @@ For single-source PDFs, add the URL to `pdflinks.txt` and run `build_sources_reg
 3. **Validates** — each returned flag is checked against the `RedFlagSource` schema; invalid entries are skipped with a warning
 4. **Writes YAML** — saves to `data/source/<slug>.yaml`, one entry per red flag
 5. **Updates the manifest** — records the source in `data/source/.extracted_sources.yaml` to prevent re-processing
+6. **Rebuilds the source registry** — updates `red_flag_sources/registry.csv` after successful batch or single-source extraction
 
 ### Output schema
 
@@ -216,6 +275,31 @@ Each entry in the YAML file has the following fields:
 ### Deduplication
 
 `data/source/.extracted_sources.yaml` tracks every processed source by its canonical path or URL. Sources already in the manifest are skipped in both batch and single-source mode. Use `--force` to re-extract a source regardless.
+
+---
+
+## Source Registry
+
+`scripts/build_registry.py` rebuilds `red_flag_sources/registry.csv` from scratch. The registry is a human-readable audit ledger across three states:
+
+| Status | Meaning |
+|---|---|
+| `extracted` | A YAML file exists in `data/source/` and extraction metadata is available |
+| `downloaded` | The URL is present in `sources.yaml`, but no extracted YAML row covers it yet |
+| `not_downloaded` | The URL appears in the catalog CSVs, but is not present in `sources.yaml` |
+
+Run it manually after editing catalog CSVs, `sources.yaml`, or extracted YAML files outside the normal scripts:
+
+```bash
+uv run python scripts/build_registry.py
+```
+
+You usually do not need to run it after `pipeline.py extract` or `extract.py`; both rebuild the registry after successful extraction. `pipeline.py download` rebuilds it after each successful download so newly captured URLs appear as `downloaded`.
+
+The registry powers pipeline deduplication and extraction auto-discovery:
+
+- `pipeline.py download` skips URLs already present in `registry.csv` unless `--force` is used.
+- `pipeline.py extract` finds rows with `status == "downloaded"` and extracts their local PDF or markdown files.
 
 ---
 
