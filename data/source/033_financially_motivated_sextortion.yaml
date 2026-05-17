@@ -1,0 +1,213 @@
+- id: 033_financially_motivated_sextortion-01
+  description: A customer, including a customer who is a minor with an account co-signed
+    by a parent or guardian, makes a series of payments over a short period of time
+    using P2P payment platforms to a recipient in a Jurisdiction of Concern, especially
+    if the customer has no discernable personal connection to that geographic area.
+  product_types:
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - west_africa
+  - south_east_asia
+  - domestic_us
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-02
+  description: A customer, especially a customer who is a minor with an account co-signed
+    by a parent or guardian or who is a young adult, makes a series of P2P transfers
+    that may be low, round dollar amounts (e.g., between $10-50) that are hundreds
+    of dollars or less over a short period of time to an individual, or individuals,
+    with whom the customer has no prior transaction relationship. The customer who
+    receives these funds then rapidly transfers them via a P2P transfer to another
+    account or accounts.
+  product_types:
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-03
+  description: A customer makes payments that include payment memos with messages
+    indicating extortion (e.g., “delete the pictures,” “please stop”) and typically
+    occur during late night and early morning hours.
+  product_types:
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-04
+  description: A customer, including a customer who is a minor with a P2P account
+    co-signed by a parent or guardian, purchases CVC through a P2P platform and subsequently
+    transfers the CVC to an unhosted CVC wallet with exposure to illicit finance risk
+    based on blockchain analytics or to a CVC wallet with whom the customer has had
+    no prior transaction relationship with no business or apparent lawful purpose.
+  product_types:
+  - money_transmitter
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-05
+  description: A customer, including a customer who is a minor with an account co-signed
+    by a parent or guardian, makes multiple, uncharacteristic purchases of prepaid
+    access cards. These prepaid access cards are typically then redeemed in a different
+    jurisdiction from where the cards were purchased.
+  product_types:
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - west_africa
+  - south_east_asia
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-06
+  description: A customer, including a customer who is a minor with an account co-signed
+    by a parent or guardian, receives multiple P2P payments from unrelated accounts
+    with which the customer had not previously interacted. The customer then rapidly
+    transfers these funds via a P2P payment to another unrelated account or accounts.
+    This activity may be indicative of a victim who is being coerced to act as a money
+    mule.
+  product_types:
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-07
+  description: A customer’s account receives many deposits or transfers from P2P payment
+    platforms, that may be hundreds of dollars or less, over a short period of time
+    that are quickly withdrawn in cash or transferred to other accounts with no business
+    or apparent lawful purpose.
+  product_types:
+  - money_transmitter
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-08
+  description: A customer’s P2P or bank account experiences a high volume of transfers
+    to and from accounts in a Jurisdictions of Concern with no business or apparent
+    lawful purpose.
+  product_types:
+  - money_transmitter
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - west_africa
+  - south_east_asia
+  - domestic_us
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-09
+  description: A customer receives multiple P2P payments and subsequently uses these
+    funds to purchase CVC. The customer then transfers the purchased CVC to an unhosted
+    CVC wallet with exposure to illicit finance risk based on blockchain analytics
+    or a CVC wallet that is hosted by a CVC exchange in a Jurisdiction of Concern.
+  product_types:
+  - money_transmitter
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - west_africa
+  - south_east_asia
+  - domestic_us
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf
+- id: 033_financially_motivated_sextortion-10
+  description: A customer deposits or cashes multiple money orders that may be hundreds
+    of dollars or less from individuals with whom the customer previously had no interaction
+    and who may be geographically distant from the customer’s location with no business
+    or apparent lawful purpose.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Notice on Financially Motivated Sextortion (FIN-2025-NTC2)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-09-08'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN-Notice-FMS-508C.pdf

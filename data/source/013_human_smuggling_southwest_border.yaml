@@ -1,0 +1,142 @@
+- id: 013_human_smuggling_southwest_border-01
+  description: Transactions involving multiple wire transfers, cash deposits, or P2P
+    payments from multiple originators from different geographic locations either
+    across (1) the United States, or (2) Mexico and Central America, to one beneficiary
+    located on or around the SW border, with no apparent business purpose.
+  product_types:
+  - wire_transfer
+  - depository
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - mexico
+  - central_america
+  - southwest_border
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: high
+  category: human_smuggling
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf
+- id: 013_human_smuggling_southwest_border-02
+  description: Deposits made by multiple individuals in multiple locations into a
+    single account, not affiliated with the account holder’s area of residence or
+    work, with no apparent business purpose.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf
+- id: 013_human_smuggling_southwest_border-03
+  description: Currency deposits into U.S. accounts without explanation, followed
+    by rapid wire transfers to countries with high migrant flows (e.g., Mexico, Central
+    America), in a manner that is inconsistent with expected customer activity.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - mexico
+  - central_america
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: high
+  category: human_smuggling
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf
+- id: 013_human_smuggling_southwest_border-04
+  description: Frequent exchange of small-denomination for larger-denomination bills
+    by a customer who is not in a cash-intensive industry.
+  product_types:
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf
+- id: 013_human_smuggling_southwest_border-05
+  description: Multiple customers sending wire transfers to the same beneficiary (who
+    is not a relative, and may be located in the sender’s home country), inconsistent
+    with the customer’s usual business activity and reported occupation.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf
+- id: 013_human_smuggling_southwest_border-06
+  description: A customer making significantly greater deposits—including cash deposits—than
+    those of peers in similar professions or lines of business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf
+- id: 013_human_smuggling_southwest_border-07
+  description: A customer making cash deposits that are inconsistent with the customer’s
+    line of business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf
+- id: 013_human_smuggling_southwest_border-08
+  description: Extensive use of cash to purchase assets, such as real estate, and
+    to conduct transactions.
+  product_types:
+  - depository
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert001
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-01-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Human%20Smuggling%20FINAL_508.pdf

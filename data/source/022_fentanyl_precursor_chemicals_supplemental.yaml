@@ -1,0 +1,312 @@
+- id: 022_fentanyl_precursor_chemicals_supplemental-01
+  description: A customer or counterparty has previous drug-related convictions or
+    open-source reporting indicates connections to clandestine lab operations.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-02
+  description: A customer or counterparty is a chemical or pharmaceutical company
+    in the PRC, Hong Kong, or another jurisdiction with a residential address or a
+    business address shared with other similar businesses or that has no physical
+    presence or shows other indicators of possible illicit shell company activity.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - china
+  - hong_kong
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-03
+  description: A counterparty, with no supposed affiliation with the PRC, uses a PRC-based
+    phone number or Internet Protocol (IP) address that is affiliated with the website
+    of a Chinese chemical or pharmaceutical company.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles: []
+  geographic_footprints:
+  - china
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-04
+  description: A customer or counterparty is a vendor on an e-commerce or Darknet
+    marketplace that advertises the sale of precursor chemicals (using chemical names,
+    abbreviations, or CAS numbers in the advertisement) and manufacturing equipment
+    used for the synthesis of illicit fentanyl and other synthetic opioids.
+  product_types:
+  - crypto
+  industry_types:
+  - online_marketplace
+  - professional_services
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: high
+  category: narcotics_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-05
+  description: A customer is a Mexican company that, according to open-source and
+    commercially available reporting, is importing shipments of fentanyl precursor
+    chemicals and manufacturing equipment without appropriate importing licenses and
+    registrations in Mexico.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - southwest_border
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: high
+  category: narcotics_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-06
+  description: A customer is a Mexican company with little or no online presence and
+    is involved in the import of the same precursor chemicals and manufacturing equipment
+    used in the synthesis of fentanyl.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - mexico
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-07
+  description: Multiple, seemingly unrelated Mexican importing companies share phone
+    numbers, email addresses, or physical addresses and transact with the same PRC-based
+    chemical manufacturing and pharmaceutical companies.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - china
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-08
+  description: A customer is a Mexican importing company that predominantly transacts
+    only with chemical or pharmaceutical companies in the PRC or Hong Kong for no
+    apparent legitimate reason as compared to similar importers that transact with
+    foreign chemical manufacturing and pharmaceutical suppliers in multiple jurisdictions.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - china
+  - hong_kong
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-09
+  description: A customer sends low-dollar or virtual currency payments for no apparent
+    legitimate purpose to beneficiaries involved in the chemical manufacturing and
+    pharmaceutical industries in the PRC, Hong Kong, or another jurisdiction.
+  product_types:
+  - wire_transfer
+  - crypto
+  industry_types:
+  - professional_services
+  customer_profiles: []
+  geographic_footprints:
+  - china
+  - hong_kong
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-10
+  description: Multiple customers send funds for no apparent legitimate purpose to
+    the same beneficiary involved in the chemical manufacturing and pharmaceutical
+    industries in the PRC, Hong Kong, or another jurisdiction (i.e., many-to-one).
+  product_types:
+  - wire_transfer
+  - crypto
+  industry_types:
+  - professional_services
+  customer_profiles: []
+  geographic_footprints:
+  - china
+  - hong_kong
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-11
+  description: A Mexico-based entity from an unrelated industry transacts with a PRC-based
+    chemical or pharmaceutical company. Alternatively, a PRC-based entity from an
+    unrelated industry transacts with a Mexico-based chemical or pharmaceutical company.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - china
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-12
+  description: A customer engages in behavior that suggests efforts to evade the Currency
+    Transaction Report (CTR) filing requirement (e.g., the customer alters or cancels
+    a transaction when advised a CTR would be filed or engages in structuring with
+    multiple cash transactions for under $10,000), as well as avoiding recordkeeping
+    requirements.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-13
+  description: A customer sends virtual currency payments to an address that is linked
+    through blockchain analytics to beneficiaries associated with the PRC-based chemical
+    manufacturing and pharmaceutical industries or to individuals or entities listed
+    in DOJ indictments and OFAC designations.
+  product_types:
+  - crypto
+  industry_types:
+  - professional_services
+  customer_profiles: []
+  geographic_footprints:
+  - china
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf
+- id: 022_fentanyl_precursor_chemicals_supplemental-14
+  description: A customer is a Mexican company that does not appear to be involved
+    in the chemical manufacturing and pharmaceutical industries despite transactional
+    activity indicating the procurement of fentanyl precursor chemicals and associated
+    manufacturing equipment.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  regulatory_source: FinCEN Advisory FIN-2024-A002, Supplemental Advisory on the Procurement
+    of Precursor Chemicals and Manufacturing Equipment Used for the Synthesis of Illicit
+    Fentanyl and Other Synthetic Opioids
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2024-06-20'
+  risk_level: high
+  category: narcotics_trafficking
+  source_url: https://www.fincen.gov/system/files/advisory/2024-06-20/FinCEN-Supplemental-Advisory-on-Fentanyl-508C.pdf

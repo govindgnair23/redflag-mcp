@@ -1,0 +1,228 @@
+- id: 206-01
+  description: A customer in or around a city hosting a major event has unusually
+    large local travel expenses (e.g., multiple hotel rooms, taxi or ridesharing fares,
+    train tickets) in a relatively short period of time, especially expenses occurring
+    during late night and early morning hours, for no business or apparent lawful
+    purpose.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - canada
+  - mexico
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-02
+  description: A customer’s account has few or no transactions indicative of obtaining
+    or maintaining essential needs (e.g., housing, personal products and nourishment,
+    travel) and may only receive credits from multiple third parties or a direct deposit
+    or paycheck that is immediately transferred to a singular individual or business
+    account.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-03
+  description: A customer’s account has an unusually high number of transactions involving
+    essential needs (e.g., multiple payments for housing or lodging, bulk purchases
+    of personal products and goods for nourishment, travel-related expenses) or bulk
+    purchases of prepaid access cards for no business or apparent lawful purpose.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  - money_transmitter
+  - remittance
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-04
+  description: A customer’s business account does not exhibit normal or expected payroll
+    expenditures for any readily discernible reason. For example, the customer’s business
+    transactions indicate that payroll is nonexistent or extremely low compared to
+    businesses in the same industry with similar profiles.
+  product_types:
+  - depository
+  - ach
+  - wire_transfer
+  industry_types:
+  - payroll
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-05
+  description: A customer deposits funds into an account at a location other than
+    where the customer resides and the funds are quickly withdrawn, typically in a
+    separate location from the deposits, for no business or apparent lawful purpose.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - canada
+  - mexico
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-06
+  description: A customer frequently deposits or withdraws cash at ATMs, especially
+    ATMs located at gas stations, particularly if the transactions occur between 10:00pm
+    and 5:00am. The customer may quickly transfer deposited funds via P2P transfers
+    to a separate account for no business or apparent lawful purpose.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-07
+  description: A customer regularly receives multiple P2P transfers from accounts
+    with which the customer has no previous transactional relationships and for which
+    there is no business or apparent lawful purpose. Payment memos may indicate or
+    contain vague references disguising payment for commercial sex (e.g., “link,”
+    “services,” “donation,” “personal care,” “wellness,” “advertisements,” etc.).
+    These funds are then further sent via P2P, in whole or in part, to another account.
+  product_types:
+  - money_transmitter
+  - remittance
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-08
+  description: A customer receives frequent P2P transfers from multiple accounts and
+    seems to be consolidating funds received by others via P2P transfers for no business
+    or apparent lawful purpose. This activity may be indicative of the movement of
+    funds related to sex trafficking.
+  product_types:
+  - money_transmitter
+  - remittance
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-09
+  description: A customer sends three rapid, sequential P2P transfers to three separate
+    accounts for no business or apparent lawful purpose. Such payments may indicate
+    illicit massage business payments, where a customer is expected to make three
+    payments, specifically a door fee, a service fee, and a tip for services provided.
+  product_types:
+  - money_transmitter
+  - remittance
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+- id: 206-10
+  description: The phone number associated with a customer’s account is listed as
+    a contact method in online commercial sex advertisements.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
+    FIFA World Cup
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf

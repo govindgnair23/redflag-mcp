@@ -1,0 +1,172 @@
+- id: 011_mail_theft_check_fraud-01
+  description: Non-characteristic large withdrawals on a customer’s account via check
+    to a new payee.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-02
+  description: Customer complains of a check or checks stolen from the mail and then
+    deposited into an unknown account.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-03
+  description: Customer complains that a check they mailed was never received by the
+    intended recipient.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-04
+  description: Checks used to withdraw funds from a customer’s account appear to be
+    of a noticeably different check stock than check stock used by the issuing bank
+    and check stock used for known, legitimate transactions.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-05
+  description: Existing customer with no history of check deposits has new sudden
+    check deposits and withdrawal or transfer of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-06
+  description: Non-characteristic, sudden, abnormal deposit of checks, often electronically,
+    followed by rapid withdrawal or transfer of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-07
+  description: Examination of suspect checks reveals faded handwriting underneath
+    darker handwriting, giving the appearance that the original handwriting has been
+    overwritten.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-08
+  description: Suspect accounts may have indicators of other suspicious activity,
+    such as pandemic-related fraud.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-09
+  description: New customer opens an account that is seemingly used only for the deposit
+    of checks followed by frequent withdrawals and transfer of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf
+- id: 011_mail_theft_check_fraud-10
+  description: A non-customer that is attempting to cash a large check or multiple
+    large checks in-person and, when questioned by the financial institution, provides
+    an explanation that is suspicious or potentially indicative of money mule activity.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2023-Alert003
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-02-27'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Mail%20Theft-Related%20Check%20Fraud%20FINAL%20508.pdf

@@ -1,0 +1,529 @@
+- id: 032_covid_medical_scams-01
+  description: A web-based search or review of advertisements indicates that a merchant
+    is selling at-home COVID-19 tests, vaccines, treatments, or cures.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-02
+  description: The customer engages in transactions to or through personal accounts
+    related to the sale of medical supplies, which could indicate that the selling
+    merchant is an unregistered or unlicensed business or is conducting fraudulent
+    medical-related transactions.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-03
+  description: The financial institution’s customer has a website with one or more
+    indicia of suspicion, including a name/web address similar to real and well-known
+    companies, a limited internet presence, a location outside of the United States,
+    and/or the ability to purchase pharmaceuticals without a prescription when one
+    is usually required.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-04
+  description: The product’s branding images found in an online marketplace appear
+    to be slightly different from the legitimate product’s images, which may indicate
+    a counterfeit product.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - retail
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-05
+  description: The merchant is advertising the sale of highly sought-after goods related
+    to the COVID-19 pandemic and response at either deeply discounted or highly inflated
+    prices.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - retail
+  - healthcare
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-06
+  description: The merchant is requesting payments that are unusual for the type of
+    transaction or unusual for the industry’s pattern of behavior. For example, instead
+    of a credit card payment, the merchant requires a pre-paid card, the use of a
+    money services business, convertible virtual currency, or that the buyer send
+    funds via an electronic funds transfer to a high-risk jurisdiction.
+  product_types:
+  - credit_card
+  - prepaid
+  - money_transmitter
+  - crypto
+  - wire_transfer
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - money_services_business
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-07
+  description: Financial institutions might detect patterns of high chargebacks and
+    return rates in their customer’s accounts.
+  product_types:
+  - credit_card
+  - depository
+  - wire_transfer
+  industry_types:
+  - retail
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-08
+  description: The merchant does not appear to have a lengthy corporate history (e.g.,
+    the business was established within the last few months), lacks physical presence
+    or address, or lacks an Employer Identification Number.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-09
+  description: Additionally, if the merchant has an address, there are noticeable
+    discrepancies between the address and a public record search for the company or
+    the street address, multiple businesses at the same address, or the merchant is
+    located in a high-risk jurisdiction or a region that is not usually associated
+    with the merchandise they are selling.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-10
+  description: Searches in corporate databases reveal that the merchant’s listing
+    contains a vague or inappropriate company name, multiple unrelated names, a suspicious
+    number of name variations, multiple “doing business as” (DBA) names, or does not
+    align with its business model.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-11
+  description: Merchants are reluctant to provide the customer or the financial institution
+    that is processing the transactions with invoices or other documentation supporting
+    the stated purpose of trade-related payments.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - healthcare
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-12
+  description: The merchant cannot provide shipment-tracking numbers to the customer
+    or proof of shipment to a financial institution so it may process related financial
+    transactions.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - logistics
+  - healthcare
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-13
+  description: The merchant claims several last minute and suspicious delays in shipment
+    or receipt of goods. For example, the merchant claims that the equipment was seized
+    at port or by authorities, that customs has not released the shipment, or that
+    the shipment is delayed on a vessel and cannot provide any additional information
+    about the vessel to the customer or their financial institution.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - logistics
+  - healthcare
+  customer_profiles:
+  - cross_border_business
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-14
+  description: The merchant cannot explain the source of the goods or how the merchant
+    acquired bulk supplies of highly sought-after goods related to the COVID-19 pandemic.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - retail
+  - healthcare
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-15
+  description: Domestic or foreign governments have identified the merchant or its
+    owners/incorporators as being associated with fraudulent and criminal activities.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-16
+  description: A newly-opened account receives a large wire transaction that the accountholder
+    failed to mention during the account opening process.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: high
+  category: layering
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-17
+  description: In addition to the use of personal accounts for business purposes (see
+    indicator number 3 above), a customer begins using their personal accounts for
+    business-related transactions after January 2020, and sets up a medical supply
+    company or is selling highly sought-after COVID-19-related goods online, such
+    as hand sanitizer, toilet paper, masks, and anti-viral or disinfectant cleaning
+    supplies.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - healthcare
+  - retail
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-18
+  description: The customer begins using their money services or bank account differently.
+    For example, prior to January 2020, the customer never linked their account to
+    the sale of goods on the internet. Since the COVID-19 pandemic began, however,
+    the customer is receiving deposits with payment messages indicating that they
+    are for the sale of medical goods, disinfectants, sanitizers, and paper products
+    sold on the internet.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - wire_transfer
+  industry_types:
+  - retail
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-19
+  description: The customer’s accounts are receiving or sending electronic fund transfers
+    (EFT) to/from a newly established company that has no known physical or internet
+    presence.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-20
+  description: The customer’s account is used in transactions for COVID-19-related
+    goods, such as masks and gloves, with a company that is not a medical supply distributor,
+    is involved in other non-medical-related industries, or is not known to have repurposed
+    its manufacturing to create medical-related goods. For example, the company is
+    currently selling medical and sanitary supplies, and prior to January 2020, the
+    company was listed as an automotive shop, a lumberyard, or a restaurant.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - crypto
+  industry_types:
+  - auto_sales
+  - construction
+  - food_service
+  - retail
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf
+- id: 032_covid_medical_scams-21
+  description: The customer makes unusually large deposits that are inconsistent with
+    the customer’s profile or account history. Upon further investigation, the customer
+    states, or open-source research indicates, that the customer was selling COVID-19-related
+    goods not usually sold by the customer.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - retail
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A002 Advisory on Medical Scams Related to the Coronavirus
+    Disease 2019 (COVID-19)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2020-05-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/system/files/advisory/2020-05-18/Advisory%20Medical%20Fraud%20Covid%2019%20FINAL%20508.pdf

@@ -1,0 +1,506 @@
+- id: 014_russian_belarusian_export_control_evasion-01
+  description: A customer in the maritime industry transports commodities of concern
+    and uses trade corridors known to serve as possible transshipment points for exports
+    to Russia and Belarus.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - belarus
+  - china
+  - mexico
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-02
+  description: The nature of a customer’s underlying business (specifically military
+    or government-related work), type of service(s) or product(s) offered, and geographical
+    presence pose additional risks of unintentional involvement in the evasion of
+    export controls for Russia and Belarus.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - russia
+  - belarus
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-03
+  description: A customer acquires new vessels for no apparent economic or business
+    purpose or for use in shipping corridors involving one or more of the identified
+    transshipment countries.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - belarus
+  - china
+  - mexico
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-04
+  description: A customer purchases or sells vessels or other properties and goods
+    identified as having been involved with or being blocked property under U.S. or
+    partner country sanctions.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-05
+  description: Transactions involving entities with little to no web presence.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: low
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-06
+  description: Transactions involving a change in shipments or payments that were
+    previously scheduled to go to Russia or Belarus, or a company located in Russia
+    or Belarus, but that are now going to a different country/company.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - belarus
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-07
+  description: Transactions involving payments being made from entities located in
+    third-party countries not otherwise involved with the transactions and known to
+    be a potential transshipment point for exports to Russia and Belarus.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - belarus
+  - china
+  - mexico
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-08
+  description: Last-minute changes to transactions associated with an originator or
+    beneficiary located in Russia or Belarus.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - belarus
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-09
+  description: Parties to transactions with addresses that do not appear consistent
+    with the business or are otherwise problematic (e.g., either the physical address
+    does not exist, or it is residential).
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-10
+  description: Transactions involving consolidated shipments of luxury goods that
+    previously would have been destined for Russia or Belarus, but are now destined
+    for a transshipment country or a country without restrictions on exports/re-exports
+    to Russia or Belarus.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - luxury_goods
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - belarus
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-11
+  description: Rapid shifts to new purchasers of transactions involving restricted
+    luxury goods.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - luxury_goods
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-12
+  description: Transactions involving freight-forwarding firms that are also listed
+    as the product’s final end customer, especially items going to traditional Russian
+    transshipment hubs.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-13
+  description: Transactions associated with atypical shipping routes for a product
+    and destination.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-14
+  description: Transactions involving entities whose website or business registration
+    states the entities work on “special purpose projects.”
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-15
+  description: Transactions involving companies that display a certificate from the
+    Federal Security Service of the Russian Federation (FSB RF), which allows these
+    companies to work on projects classified as a state secret.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-16
+  description: Transactions involving companies that are physically co-located with
+    or have shared ownership with an entity on the BIS Entity List or the Department
+    of the Treasury’s Specially Designated Nationals and Blocked Persons List.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-17
+  description: New or existing accounts and transactions by individuals with previous
+    convictions for violating U.S. export control laws, particularly if appearing
+    to involve export and import activities or services.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-18
+  description: When combined with other derogatory information, large dollar or volume
+    purchases, including through the use of business credit cards, of items designated
+    as EAR99 (or large volume or dollar purchases at wholesale electrical/industrial
+    merchants, electrical parts and equipment providers, or electronic parts providers),
+    in the United States or abroad, especially if paired with purchases at shipping
+    companies.
+  product_types:
+  - credit_card
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-19
+  description: Companies or individuals with links to Russian state-owned corporations
+    (including shared ownership, as well as branches of, subsidiaries of, or shareholders
+    in such state-owned corporations) involved in export-related transactions or the
+    provision of export-related services.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-20
+  description: Export transactions identified through correspondent banking activities
+    involving non-U.S. parties that have shared owners or addresses with Russian state-owned
+    entities or designated companies.
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - russia
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-21
+  description: Use of business checking or foreign exchange accounts by U.S.-based
+    merchants involved in the import and export of electronic equipment where transactions
+    are conducted with third-country-based electronics and aerospace firms that also
+    have offices in Russia or Belarus.
+  product_types:
+  - depository
+  - currency_exchange
+  industry_types:
+  - import_export
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - russia
+  - belarus
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
+- id: 014_russian_belarusian_export_control_evasion-22
+  description: Transactions identified through correspondent banking activities connected
+    to Russian petroleum-related firms or firms that resell electronics and other
+    similar items to Russian firms.
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - retail
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - russia
+  regulatory_source: FIN-2022-Alert003 June 28, 2022 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Urge Increased Vigilance for Potential
+    Russian and Belarusian Export Control Evasion Attempts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2022-06-28'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2022-06/FinCEN%20and%20Bis%20Joint%20Alert%20FINAL.pdf
