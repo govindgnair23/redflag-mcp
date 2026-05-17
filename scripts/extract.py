@@ -24,6 +24,7 @@ Requires OPENAI_API_KEY environment variable (or .env file).
 from __future__ import annotations
 
 import json
+import logging
 import os
 import re
 import sys
@@ -56,15 +57,25 @@ from redflag_mcp.config import (  # noqa: E402
     jurisdiction_for_regulator,
 )
 from redflag_mcp.models import RedFlagSource  # noqa: E402
+from build_registry import build_registry  # noqa: E402
 
 DEFAULT_MODEL = "gpt-4o-mini"
 DEFAULT_PARALLEL_WORKERS = 4
 MANIFEST_PATH = SOURCE_DIR / ".extracted_sources.yaml"
+LOGGER = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = PROJECT_ROOT / "red_flag_sources" / "pdf"
 MARKDOWN_DIR = PROJECT_ROOT / "red_flag_sources" / "markdown"
 SOURCES_REGISTRY_PATH = PROJECT_ROOT / "red_flag_sources" / "sources.yaml"
+
+
+def update_registry_after_extraction() -> None:
+    """Rebuild the source registry without failing a successful extraction."""
+    try:
+        build_registry()
+    except Exception as exc:
+        LOGGER.warning("Failed to update registry.csv after extraction: %s", exc)
 
 
 def load_manifest() -> list[dict]:
@@ -594,6 +605,7 @@ def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | 
         final_manifest = [e for e in final_manifest if e.get("source") not in new_sources]
         final_manifest.extend(new_entries)
         save_manifest(final_manifest)
+        update_registry_after_extraction()
         print(f"\nBatch complete. {len(new_entries)} source(s) processed.")
 
 
@@ -662,6 +674,7 @@ def main() -> None:
         updated = [e for e in manifest if e.get("source") != source]
         updated.append(entry)
         save_manifest(updated)
+        update_registry_after_extraction()
     else:
         print(
             f"Usage:\n"

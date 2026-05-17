@@ -13,6 +13,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
+import extract
 from extract import (
     build_extraction_prompt,
     extract_text_from_pdf,
@@ -327,3 +328,85 @@ class TestManifest:
 
     def test_is_already_processed_empty_manifest(self):
         assert is_already_processed("test.pdf", []) is False
+
+
+class TestRegistryUpdate:
+    def test_run_batch_updates_registry_once_after_new_entries(self):
+        with (
+            patch("extract.discover_sources", return_value=["/tmp/001.pdf"]),
+            patch("extract.load_manifest", side_effect=[[], []]),
+            patch("extract.load_sources_registry", return_value={}),
+            patch("extract.get_source_url", return_value="https://example.gov/001.pdf"),
+            patch(
+                "extract.process_one",
+                return_value={
+                    "source": "/tmp/001.pdf",
+                    "slug": "001",
+                    "output_file": "data/source/001.yaml",
+                    "extracted_at": "2026-05-17T12:00:00+00:00",
+                },
+            ),
+            patch("extract.save_manifest") as mock_save_manifest,
+            patch("extract.build_registry") as mock_build_registry,
+        ):
+            extract.run_batch(force=False, workers=None)
+
+        mock_save_manifest.assert_called_once()
+        mock_build_registry.assert_called_once_with()
+
+    def test_run_batch_does_not_update_registry_when_nothing_changed(self):
+        with (
+            patch("extract.discover_sources", return_value=["/tmp/001.pdf"]),
+            patch("extract.load_manifest", return_value=[{"source": "/tmp/001.pdf"}]),
+            patch("extract.load_sources_registry", return_value={}),
+            patch("extract.build_registry") as mock_build_registry,
+        ):
+            extract.run_batch(force=False, workers=None)
+
+        mock_build_registry.assert_not_called()
+
+    def test_run_batch_logs_registry_update_failure_without_failing_extraction(self, caplog):
+        with (
+            patch("extract.discover_sources", return_value=["/tmp/001.pdf"]),
+            patch("extract.load_manifest", side_effect=[[], []]),
+            patch("extract.load_sources_registry", return_value={}),
+            patch("extract.get_source_url", return_value="https://example.gov/001.pdf"),
+            patch(
+                "extract.process_one",
+                return_value={
+                    "source": "/tmp/001.pdf",
+                    "slug": "001",
+                    "output_file": "data/source/001.yaml",
+                    "extracted_at": "2026-05-17T12:00:00+00:00",
+                },
+            ),
+            patch("extract.save_manifest"),
+            patch("extract.build_registry", side_effect=RuntimeError("registry failed")),
+        ):
+            extract.run_batch(force=False, workers=None)
+
+        assert "Failed to update registry.csv" in caplog.text
+
+    def test_main_single_source_updates_registry_after_manifest_save(self):
+        with (
+            patch("extract.sys.argv", ["extract.py", "/tmp/001.pdf"]),
+            patch("extract.load_manifest", return_value=[]),
+            patch("extract.is_already_processed", return_value=False),
+            patch("extract.load_sources_registry", return_value={}),
+            patch("extract.get_source_url", return_value="https://example.gov/001.pdf"),
+            patch(
+                "extract.process_one",
+                return_value={
+                    "source": "/tmp/001.pdf",
+                    "slug": "001",
+                    "output_file": "data/source/001.yaml",
+                    "extracted_at": "2026-05-17T12:00:00+00:00",
+                },
+            ),
+            patch("extract.save_manifest") as mock_save_manifest,
+            patch("extract.build_registry") as mock_build_registry,
+        ):
+            extract.main()
+
+        mock_save_manifest.assert_called_once()
+        mock_build_registry.assert_called_once_with()
