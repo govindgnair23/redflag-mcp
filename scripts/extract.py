@@ -245,24 +245,34 @@ A valid red flag answers: "What would a compliance officer or TM analyst actuall
 
 ## Step 1 — Identify red flags
 
-**Where to look:** Scan the entire document. Sections explicitly labeled "Red Flags," "Risk Indicators," "Suspicious Activity Indicators," or "Warning Signs" are highest yield — extract from those exhaustively. Indicators also appear in narrative form within typology descriptions, advisories, and case discussions — extract those too when they pass the observability test.
+**Explicit section precedence:** First determine whether the document contains an explicit red-flag, risk-factor, or indicator section. Explicit section labels include "Red Flags," "Risk Indicators," "Risk Factors," "Suspicious Activity Indicators," "Warning Signs," "Indicia of Sham Transactions," or closely equivalent headings. If any such section exists, extract only from those explicit sections. Ignore typology examples, enforcement narratives, case studies, designations, penalties, and examples elsewhere in the document, even when they describe suspicious conduct.
 
-**Handling embedded examples:** When an indicator is followed by an example clause introduced by "for example," "e.g.,", "such as," or "including," the example is part of that indicator. Keep the full passage as one entry. Do not split the example into a separate red flag.
+**Unit of extraction in explicit sections:** One explicit bullet or risk-factor heading equals one red flag. If a bullet, numbered item, or headed risk factor contains multiple sentences, keep the complete generic risk-factor text together as one entry. Do not split later sentences under the same bullet into separate red flags, even when a later sentence could read like a generic indicator by itself. Stop the entry at the next bullet, numbered item, risk-factor heading, or section heading.
+
+**Where to look when no explicit section exists:** If the document has no explicit red-flag, risk-factor, or indicator section, scan the entire document. Indicators may appear in narrative form within typology descriptions, advisories, and case discussions — extract those only when they pass the observability and reusable-indicator tests.
+
+**Reusable-indicator test:** A valid red flag must be generally applicable to comparable customers, transactions, counterparties, accounts, or property. It must not depend on an actual named person, named company, enforcement target, or one-off historical fact. Do not extract named persons, named companies, enforcement targets, or one-off factual examples as red flags. If a case example illustrates a generic indicator, extract the generic indicator only when the document itself supports that generic wording.
+
+**Handling embedded examples:** When a generic indicator inside the eligible extraction area is followed by an example clause introduced by "for example," "e.g.,", "such as," or "including," keep the example only if it remains generic and helps define the indicator. Do not extract illustrative case examples as standalone red flags. Do not include actual names or one-off facts from examples.
 
 **Handling indicators embedded in prose:** When an indicator appears within a longer sentence ("Among the patterns observed are X, Y, and Z"), extract the indicator clause itself with its exact wording preserved. Do not paraphrase or generalize.
 
-**Implicit red flags in case narratives:** Regulators often describe control failures, execution lapses, alert-review findings, or case examples without labeling the underlying signal as a red flag. Extract the observable customer behavior, transaction-monitoring signal, adverse-news signal, discrepancy, or CDD/risk-assessment conflict when the narrative shows that it should have raised suspicion. For example, if a regulator says an FI failed to escalate "the discrepancy in Customer G's business activity between the FI's records and corporate registry," extract that discrepancy as the red flag. Preserve the source wording as much as possible, but extract the observable signal rather than the institution's failure to act.
+**Dependent explanatory sentences:** Do not extract dependent explanatory sentences as standalone red flags when they merely explain, elaborate, or refer back to a preceding indicator. Sentences beginning with "Such," "Similarly," "Likewise," "These," "This," or similar referential wording usually depend on the previous sentence. Merge them into the previous indicator only when they are generic, inside an eligible extraction area, and necessary to preserve the indicator's meaning.
+
+**Implicit red flags in case narratives:** Use implicit red flag extraction only when the document has no explicit red-flag, risk-factor, or indicator section. Regulators often describe control failures, execution lapses, alert-review findings, or case examples without labeling the underlying signal as a red flag. Extract the reusable observable customer behavior, transaction-monitoring signal, adverse-news signal, discrepancy, or CDD/risk-assessment conflict when the narrative shows that it should have raised suspicion. For example, if a regulator says an FI failed to escalate "the discrepancy in Customer G's business activity between the FI's records and corporate registry," extract that generic discrepancy as the red flag. Preserve the source wording as much as possible, but extract the observable signal rather than the institution's failure to act. When an explicit section exists, ignore narrative examples, typology examples, enforcement narratives, and case studies outside that section.
 
 **Do NOT extract:**
-- Enforcement actions, historical case summaries, or descriptions of past violations when they do not contain an observable customer or transaction signal
+- Anything outside an explicit red-flag, risk-factor, or indicator section when the document has such a section
+- Actual named persons, named companies, enforcement targets, or one-off factual examples
+- Enforcement actions, historical case summaries, or descriptions of past violations when they do not contain a reusable observable customer or transaction signal
 - SAR filing instructions or recommendations
 - Regulatory directives or institutional compliance obligations
 - General typology explanations that do not describe an observable pattern
 - Document headers, section titles, introductory text, administrative text
 
-Enforcement actions and historical cases are excluded only when they describe institutional failures without an observable red flag. If the same passage identifies suspicious customer activity, TM alerts, adverse news, inconsistencies between public records and FI records, or discrepancies that should trigger CDD/risk review, extract the observable signal and exclude only the institutional lapse language.
+Enforcement actions and historical cases are excluded only when they describe institutional failures without a reusable observable red flag and the document has no explicit indicator section. If there is no explicit section and the same passage identifies suspicious customer activity, TM alerts, adverse news, inconsistencies between public records and FI records, or discrepancies that should trigger CDD/risk review, extract the reusable observable signal and exclude only the institutional lapse language.
 
-**Test before including:** Could a compliance officer or TM system at a financial institution directly observe this? If no, exclude it.
+**Test before including:** Could a compliance officer or TM system at a financial institution directly observe this for any comparable customer, rather than only for a named person or historical target? If no, exclude it.
 
 **Deduplication:** Some indicators appear in multiple sections (e.g., an executive summary up front and a detailed section later). Extract each distinct indicator once. Two passages refer to the same indicator if they describe the same observable pattern, even when worded differently — keep the more specific version.
 
@@ -270,7 +280,7 @@ Enforcement actions and historical cases are excluded only when they describe in
 
 For each indicator identified in Step 1, populate the following fields:
 
-- "description" (string, required): The indicator's exact wording from the source, including any embedded example clause. No paraphrasing, no generalization, no truncation. If the indicator is embedded mid-sentence, extract the indicator clause itself with its wording preserved.
+- "description" (string, required): The indicator's wording from the source, including any generic embedded example clause needed to define the indicator. No truncation. If the indicator is embedded mid-sentence, extract the indicator clause itself with its wording preserved. Do not include actual names or one-off case facts. If a narrative document lacks an explicit indicator section, extract the reusable observable signal rather than institutional failure language.
 
 - "product_types" (list of strings): Financial products or channels offered by the institution that this indicator applies to. Prefer these values when applicable: {sorted(PRODUCT_TYPES)}. Include all that apply. This field is about the institution's product surface, not about who the customer is — customer-side institution categories such as "money transmitter" or "MSB" belong in industry_types.
 
@@ -342,6 +352,61 @@ Source: "Failure to escalate the discrepancy in Customer G's business activity b
   "issued_date": null,
   "risk_level": "medium",
   "category": "customer_due_diligence"
+}}
+
+## Explicit section precedence example
+
+Source excerpt:
+"Examples of sham transactions include:
+• A blocked oligarch transferred ownership of his private jet to a trust, whose sole beneficiary was his unsanctioned wife, while the oligarch continued to use the jet for travel.
+OFAC Blocking Action Disrupts Sham Trust Structure
+Kerimov used a series of legal structures and front persons to obscure his continuing interest in Heritage Trust.
+Red Flags: Indicia of Sham Transactions
+► Transfer to family members or close associates. Transfers by a blocked person to a family member or close associate can be evidence of a sham transaction. Such family members or close associates may be acting as a proxy, facilitator, money manager, or agent for the blocked person."
+
+Because the document has an explicit "Red Flags: Indicia of Sham Transactions" section, extract only reusable indicators from that section.
+
+**Wrong** — extracting an illustrative example before the explicit red-flag section:
+{{
+  "description": "A blocked oligarch transferred ownership of his private jet to a trust, whose sole beneficiary was his unsanctioned wife, while the oligarch continued to use the jet for travel."
+}}
+
+**Wrong** — extracting a named-person case narrative:
+{{
+  "description": "Kerimov used a series of legal structures and front persons to obscure his continuing interest in Heritage Trust."
+}}
+
+**Wrong** — extracting a dependent explanatory sentence as its own red flag:
+{{
+  "description": "Such family members or close associates may be acting as a proxy, facilitator, money manager, or agent for the blocked person."
+}}
+
+**Correct** — extracting the reusable indicator from the explicit red-flag section:
+{{
+  "description": "Transfer to family members or close associates. Transfers by a blocked person to a family member or close associate can be evidence of a sham transaction. Such family members or close associates may be acting as a proxy, facilitator, money manager, or agent for the blocked person.",
+  "product_types": ["depository", "wire_transfer", "private_banking", "securities"],
+  "industry_types": [],
+  "customer_profiles": ["beneficial_owner_obscured"],
+  "geographic_footprints": [],
+  "regulatory_source": "OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions Evasion",
+  "regulator": "OFAC",
+  "issued_date": "2026-03-31",
+  "risk_level": "medium",
+  "category": "sanctions_evasion"
+}}
+
+**Correct when the same explicit bullet continues with more generic sentences** — keep the bullet as one risk factor:
+{{
+  "description": "Transfer to family members or close associates. Transfers by a blocked person to a family member or close associate can be evidence of a sham transaction. Such family members or close associates may be acting as a proxy, facilitator, money manager, or agent for the blocked person. Similarly, the nature and scope of the relationship between the blocked person and a nominal owner of the transferred property may also be relevant. Formal or informal agreements, agent-principal or other close relationships, and other similar factors may indicate that the nominal owner is not independent from the blocked person and is instead holding property for, or acting on behalf of, the blocked person.",
+  "product_types": ["depository", "wire_transfer", "private_banking", "securities"],
+  "industry_types": [],
+  "customer_profiles": ["beneficial_owner_obscured"],
+  "geographic_footprints": [],
+  "regulatory_source": "OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions Evasion",
+  "regulator": "OFAC",
+  "issued_date": "2026-03-31",
+  "risk_level": "medium",
+  "category": "sanctions_evasion"
 }}
 
 ## Output format
