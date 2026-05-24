@@ -54,7 +54,7 @@ from redflag_mcp.models import RedFlagSource  # noqa: E402
 from build_registry import build_registry  # noqa: E402
 from prompts import build_extraction_prompt, build_verification_prompt  # noqa: E402
 
-DEFAULT_MODEL = "gpt-4o-mini"
+DEFAULT_MODEL = "gpt-5.4-mini"
 DEFAULT_PARALLEL_WORKERS = 4
 MANIFEST_PATH = SOURCE_DIR / ".extracted_sources.yaml"
 LOGGER = logging.getLogger(__name__)
@@ -258,13 +258,16 @@ DEFAULT_VERIFICATION_MODEL = "gpt-4o-mini"
 
 
 def verify_red_flags(
-    candidates: list[dict], model: str | None = None
+    candidates: list[dict], model: str | None = None, force_handcrafted: bool = False
 ) -> list[dict]:
     """Classify candidate red flags and return only genuine ones.
 
     Makes a single OpenAI call per batch of candidates. Each candidate
     must have a 'description' key. Returns the subset classified as
     true red flags.
+
+    Pass force_handcrafted=True to use the handcrafted prompt even when
+    data/verifier_prompt.json exists (useful for A/B comparison).
     """
     if not candidates:
         return []
@@ -279,7 +282,7 @@ def verify_red_flags(
     model = model or os.environ.get("OPENAI_VERIFICATION_MODEL", DEFAULT_VERIFICATION_MODEL)
     client = OpenAI(api_key=api_key)
 
-    messages = build_verification_prompt(descriptions)
+    messages = build_verification_prompt(descriptions, force_handcrafted=force_handcrafted)
 
     print(f"Verifying {len(candidates)} candidates with {model}...")
     response = client.chat.completions.create(
@@ -390,7 +393,7 @@ def discover_sources() -> list[str]:
     return sources
 
 
-def process_one(source: str, force: bool, manifest: list[dict], source_url: str | None = None, verify: bool = True) -> dict | None:
+def process_one(source: str, force: bool, manifest: list[dict], source_url: str | None = None, verify: bool = True, force_handcrafted: bool = False) -> dict | None:
     """Process a single source (PDF path or URL).
 
     Returns a manifest entry dict on success, or None on skip/failure.
@@ -447,7 +450,7 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
 
     if verify:
         try:
-            raw_flags = verify_red_flags(raw_flags)
+            raw_flags = verify_red_flags(raw_flags, force_handcrafted=force_handcrafted)
         except Exception as e:
             print(f"Error during verification for {source}: {e}", file=sys.stderr)
             return None
@@ -475,7 +478,7 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
     return manifest_entry
 
 
-def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | None = None, verify: bool = True) -> None:
+def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | None = None, verify: bool = True, force_handcrafted: bool = False) -> None:
     """Discover and process all sources in batch mode."""
     sources = discover_sources()
 
@@ -508,7 +511,7 @@ def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | 
         # Sequential
         for source in pending:
             url = get_source_url(source, registry)
-            entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify)
+            entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify, force_handcrafted=force_handcrafted)
             if entry:
                 new_entries.append(entry)
     else:
@@ -516,7 +519,7 @@ def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | 
         print(f"Running with {workers} parallel worker(s).")
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
-                executor.submit(process_one, source, force, manifest, get_source_url(source, registry), verify): source
+                executor.submit(process_one, source, force, manifest, get_source_url(source, registry), verify, force_handcrafted): source
                 for source in pending
             }
             for future in as_completed(futures):
@@ -549,6 +552,18 @@ def main() -> None:
     verify = "--no-verify" not in args
     if not verify:
         args.remove("--no-verify")
+
+    force_handcrafted = False
+    if "--prompt" in args:
+        idx = args.index("--prompt")
+        args.pop(idx)
+        if idx < len(args):
+            prompt_choice = args.pop(idx)
+            if prompt_choice == "handcrafted":
+                force_handcrafted = True
+            elif prompt_choice != "optimized":
+                print("Error: --prompt must be 'handcrafted' or 'optimized'.", file=sys.stderr)
+                sys.exit(1)
 
     # Parse --parallel [N]
     workers: int | None = None
@@ -583,7 +598,7 @@ def main() -> None:
 
     if len(args) == 0:
         # Batch mode
-        run_batch(force=force, workers=workers, serial_range=serial_range, verify=verify)
+        run_batch(force=force, workers=workers, serial_range=serial_range, verify=verify, force_handcrafted=force_handcrafted)
     elif len(args) == 1:
         # Single-source mode
         if workers is not None:
@@ -600,7 +615,7 @@ def main() -> None:
 
         registry = load_sources_registry()
         url = get_source_url(source, registry)
-        entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify)
+        entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify, force_handcrafted=force_handcrafted)
         if entry is None:
             sys.exit(1)
 

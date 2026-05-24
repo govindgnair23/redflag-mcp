@@ -350,7 +350,7 @@ One entry per candidate, in the same order as the input. No markdown fences, no 
     return "\n".join(parts)
 
 
-def build_verification_prompt(descriptions: list[str]) -> list[dict]:
+def build_verification_prompt(descriptions: list[str], force_handcrafted: bool = False) -> list[dict]:
     """Build the system and user prompts for red-flag verification.
 
     Takes a list of candidate descriptions and asks the LLM to classify
@@ -358,12 +358,17 @@ def build_verification_prompt(descriptions: list[str]) -> list[dict]:
 
     If a DSPy-optimized prompt exists at data/verifier_prompt.json, uses
     that. Otherwise falls back to the handcrafted prompt.
+
+    Pass force_handcrafted=True to always use the handcrafted prompt,
+    even when verifier_prompt.json exists (useful for A/B comparison).
     """
-    optimized = _load_optimized_prompt()
+    optimized = None if force_handcrafted else _load_optimized_prompt()
     if optimized:
         print("  Using DSPy-optimized verification prompt.")
         system_prompt = _build_optimized_system_prompt(optimized)
     else:
+        if force_handcrafted:
+            print("  Using handcrafted verification prompt (--prompt handcrafted).")
         system_prompt = _HANDCRAFTED_SYSTEM_PROMPT
 
     numbered = "\n".join(

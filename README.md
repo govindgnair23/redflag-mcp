@@ -24,16 +24,17 @@ The hosted connector is backed by a verified packaged corpus. End users do not n
 
 ## Overview
 
-Eight distinct workflows:
+Nine distinct workflows:
 
 1. **URL pipeline** — download URLs, optionally inspect local captures, then extract red flags
 2. **Source harvesting** — bulk-download PDFs and web pages from a catalog CSV into `sources.yaml`
 3. **Extraction** — pull AML red flags out of PDFs or web pages using an LLM and save them as YAML
-4. **Source registry** — rebuild `red_flag_sources/registry.csv`, the audit ledger for extracted, downloaded, and not-downloaded sources
-5. **Ingestion** — embed the YAML files and load them into the local vector database
-6. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
-7. **Hosted deployment** — run the ASGI MCP service from a verified corpus package at one public `/mcp` URL
-8. **Query** — MCP server answers search and filtering requests against the configured local or hosted store
+4. **Verification** — second-stage LLM classifier removes false positives (compliance guidance, regulatory instructions, case narratives) from extracted candidates
+5. **Source registry** — rebuild `red_flag_sources/registry.csv`, the audit ledger for extracted, downloaded, and not-downloaded sources
+6. **Ingestion** — embed the YAML files and load them into the local vector database
+7. **Corpus packaging** — build a versioned SQLite FTS5 package for offline lexical runtime use
+8. **Hosted deployment** — run the ASGI MCP service from a verified corpus package at one public `/mcp` URL
+9. **Query** — MCP server answers search and filtering requests against the configured local or hosted store
 
 ---
 
@@ -80,7 +81,17 @@ uv run python scripts/pipeline.py run urls.txt --force
 uv run python scripts/pipeline.py extract --parallel
 uv run python scripts/pipeline.py extract --parallel 8
 uv run python scripts/pipeline.py run urls.txt --parallel 4
+
+# Skip the verification step entirely
+uv run python scripts/pipeline.py extract --no-verify
+uv run python scripts/pipeline.py run urls.txt --no-verify
+
+# Force the handcrafted verification prompt (ignores verifier_prompt.json if present)
+uv run python scripts/pipeline.py extract --prompt handcrafted
+uv run python scripts/pipeline.py run urls.txt --prompt handcrafted
 ```
+
+Verification runs by default on both `extract` and `run`. The optimized prompt (`data/verifier_prompt.json`) is used when available; `--prompt handcrafted` forces the built-in prompt for comparison. See [Red Flag Verification](#red-flag-verification) for details.
 
 Deduplication uses `red_flag_sources/registry.csv` by `source_url`. Re-run `scripts/build_registry.py` first if you manually edited `sources.yaml`, catalog CSVs, or YAML source files and need the pipeline to see the latest status.
 
@@ -218,6 +229,12 @@ uv run python scripts/extract.py --range 001-005 --parallel
 
 # Force re-extract a range
 uv run python scripts/extract.py --force --range 001-005 --parallel
+
+# Skip verification (raw extraction output, no false-positive filtering)
+uv run python scripts/extract.py --no-verify --parallel
+
+# Use handcrafted prompt instead of optimized (useful for A/B comparison)
+uv run python scripts/extract.py --prompt handcrafted --parallel
 ```
 
 > **Note:** `--range` applies only to numbered PDFs. Web URLs in `Weblinks.md` are excluded when a range is active.
@@ -233,6 +250,12 @@ uv run python scripts/extract.py https://example.com/regulatory-guidance
 
 # Re-extract a source that was already processed
 uv run python scripts/extract.py --force red_flag_sources/pdf/001_fincen_alert.pdf
+
+# Re-extract without verification
+uv run python scripts/extract.py --force --no-verify red_flag_sources/pdf/001_fincen_alert.pdf
+
+# Re-extract using handcrafted prompt
+uv run python scripts/extract.py --force --prompt handcrafted red_flag_sources/pdf/001_fincen_alert.pdf
 ```
 
 For single-source PDFs, make sure `sources.yaml` maps the file's serial prefix to the public URL before extraction so the extractor can populate `source_url` in the output. If you maintain the legacy `pdflinks.txt` file, run `build_sources_registry.py` and then `build_registry.py` first.
@@ -241,10 +264,12 @@ For single-source PDFs, make sure `sources.yaml` maps the file's serial prefix t
 
 1. **Fetches the document** — downloads the web page (strips nav/footer/scripts) or reads text from the PDF via pdfplumber
 2. **Sends to OpenAI** — prompts `gpt-4o-mini` (override with `OPENAI_EXTRACTION_MODEL`) to extract every distinct AML red flag indicator as structured JSON
-3. **Validates** — each returned flag is checked against the `RedFlagSource` schema; invalid entries are skipped with a warning
-4. **Writes YAML** — saves to `data/source/<slug>.yaml`, one entry per red flag
-5. **Updates the manifest** — records the source in `data/source/.extracted_sources.yaml` to prevent re-processing
-6. **Rebuilds the source registry** — updates `red_flag_sources/registry.csv` after successful batch or single-source extraction
+3. **Verifies** — a second LLM call classifies each candidate as a genuine red flag or false positive (compliance guidance, regulatory instruction, etc.) and removes false positives. Skip with `--no-verify`. See [Red Flag Verification](#red-flag-verification) below.
+4. **Infers regulator** — when a `source_url` is available, the regulator is inferred deterministically from the URL domain (e.g. `ofac.treasury.gov` → `OFAC`), overriding LLM extraction
+5. **Validates** — each returned flag is checked against the `RedFlagSource` schema; invalid entries are skipped with a warning
+6. **Writes YAML** — saves to `data/source/<slug>.yaml`, one entry per red flag
+7. **Updates the manifest** — records the source in `data/source/.extracted_sources.yaml` to prevent re-processing
+8. **Rebuilds the source registry** — updates `red_flag_sources/registry.csv` after successful batch or single-source extraction
 
 ### Output schema
 
@@ -275,6 +300,105 @@ Each entry in the YAML file has the following fields:
 ### Deduplication
 
 `data/source/.extracted_sources.yaml` tracks every processed source by its canonical path or URL. Sources already in the manifest are skipped in both batch and single-source mode. Use `--force` to re-extract a source regardless.
+
+---
+
+## Red Flag Verification
+
+The extraction pipeline includes a second-stage LLM verifier that filters out false positives — items that look like red flags but are actually compliance guidance, regulatory instructions, case narratives, or general background. The verifier makes a single OpenAI call per document batch.
+
+### How it works
+
+After `extract_red_flags()` returns candidate items, `verify_red_flags()` sends all descriptions to the LLM in one call. Each candidate is classified as a genuine red flag (`true`) or not (`false`). Only candidates classified as `true` proceed to validation and YAML output.
+
+### Controlling which prompt is used
+
+By default the verifier loads `data/verifier_prompt.json` (the DSPy-optimized prompt) when it exists, and falls back to the handcrafted prompt otherwise. Use `--prompt` to override:
+
+```bash
+# Force the handcrafted prompt even when verifier_prompt.json exists
+uv run python scripts/extract.py --prompt handcrafted red_flag_sources/pdf/001*.pdf
+
+# Explicitly request the optimized prompt (default behaviour, but makes intent clear)
+uv run python scripts/extract.py --prompt optimized red_flag_sources/pdf/001*.pdf
+```
+
+### Skipping verification
+
+```bash
+# Extract without the verification step at all
+uv run python scripts/extract.py --force --no-verify red_flag_sources/pdf/048*.pdf
+```
+
+Use `--no-verify` when you want raw extraction output or are debugging the extraction prompt.
+
+### Evaluating verifier accuracy
+
+`scripts/eval_verifier.py` measures verifier performance against hand-labelled data in `data/source/labelled/`. Each labelled YAML file contains items with a `flag: True/False` field.
+
+```bash
+# Run eval with the active prompt (optimized if available, else handcrafted)
+uv run python scripts/eval_verifier.py
+
+# Force the handcrafted prompt for comparison
+uv run python scripts/eval_verifier.py --prompt handcrafted
+
+# A/B comparison in one go
+uv run python scripts/eval_verifier.py --prompt handcrafted
+uv run python scripts/eval_verifier.py --prompt optimized
+
+# Test a specific model
+uv run python scripts/eval_verifier.py --model gpt-4o
+
+# Output as JSON for programmatic consumption
+uv run python scripts/eval_verifier.py --json
+```
+
+The eval reports precision, recall, F1, accuracy, and confusion matrix for both the verifier and a baseline (no verification — all items classified as True). The output header shows which prompt was used.
+
+### Optimizing the verifier prompt with DSPy
+
+`scripts/optimize_verifier.py` uses [DSPy](https://dspy.ai/) to find the best verifier prompt by training on the labelled dataset. It uses `BootstrapFewShotWithRandomSearch` to optimize few-shot demos and instructions.
+
+```bash
+# Install the optimize extra
+uv sync --extra optimize
+
+# Run optimization (uses gpt-5.4-nano by default)
+uv run python scripts/optimize_verifier.py
+
+# Use a different model or strategy
+uv run python scripts/optimize_verifier.py --model openai/gpt-4o-mini
+uv run python scripts/optimize_verifier.py --strategy predict   # direct classification
+uv run python scripts/optimize_verifier.py --strategy cot       # chain-of-thought (default)
+uv run python scripts/optimize_verifier.py --max-demos 6
+```
+
+The optimized prompt is saved to `data/verifier_prompt.json`. Once this file exists, `build_verification_prompt()` automatically loads and uses it instead of the handcrafted prompt. Delete the file to revert to the handcrafted prompt.
+
+After optimization, re-run the eval to confirm improvement:
+
+```bash
+uv run python scripts/eval_verifier.py
+```
+
+### Adding labelled data
+
+To improve the verifier, add more labelled examples in `data/source/labelled/`. Each file follows the standard YAML source format with an additional `flag` field:
+
+```yaml
+- id: example-01
+  description: "Customer structures transactions below reporting thresholds."
+  flag: True    # genuine red flag
+  # ... other fields ...
+
+- id: example-02
+  description: "The organization should conduct an OFAC risk assessment."
+  flag: False   # compliance guidance, not a red flag
+  # ... other fields ...
+```
+
+After adding labelled data, re-run optimization and eval to update the verifier.
 
 ---
 
@@ -510,7 +634,8 @@ For a vague query such as "what should I look for in business accounts?", the ca
 ## Development
 
 ```bash
-uv sync --extra dev              # Install dependencies
+uv sync --extra dev              # Install dev dependencies
+uv sync --extra optimize         # Install DSPy for verifier optimization
 uv run pytest tests/             # Run tests
 uv run ruff check src/           # Lint
 uv run mypy src/                 # Type check

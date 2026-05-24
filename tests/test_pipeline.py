@@ -260,7 +260,7 @@ def test_run_pipeline_downloads_then_extracts(tmp_path):
     assert downloaded == [{"url": "https://example.gov/a.pdf"}]
     assert extracted == [{"source": "001.pdf"}]
     mock_download.assert_called_once_with(urls_file, force=True)
-    mock_extract.assert_called_once_with(force=True, workers=2)
+    mock_extract.assert_called_once_with(force=True, workers=2, verify=True, force_handcrafted=False)
 
 
 def test_main_dispatches_subcommands_and_parallel_defaults(tmp_path):
@@ -272,12 +272,12 @@ def test_main_dispatches_subcommands_and_parallel_defaults(tmp_path):
 
     with patch("pipeline.extract_downloaded_sources") as mock_extract:
         pipeline.main(["extract"])
-    mock_extract.assert_called_once_with(force=False, workers=None)
+    mock_extract.assert_called_once_with(force=False, workers=None, verify=True, force_handcrafted=False)
 
     with patch("pipeline.extract_downloaded_sources") as mock_extract:
         pipeline.main(["extract", "--parallel"])
-    mock_extract.assert_called_once_with(force=False, workers=4)
+    mock_extract.assert_called_once_with(force=False, workers=4, verify=True, force_handcrafted=False)
 
     with patch("pipeline.run_pipeline") as mock_run:
         pipeline.main(["run", str(urls_file), "--force", "--parallel", "2"])
-    mock_run.assert_called_once_with(urls_file, force=True, workers=2)
+    mock_run.assert_called_once_with(urls_file, force=True, workers=2, verify=True, force_handcrafted=False)

@@ -74,7 +74,7 @@ def compute_metrics(
     }
 
 
-def run_eval(model: str | None = None) -> dict:
+def run_eval(model: str | None = None, force_handcrafted: bool = False) -> dict:
     """Run the verifier against labelled data and return metrics."""
     items = load_labelled_data()
     if not items:
@@ -88,15 +88,17 @@ def run_eval(model: str | None = None) -> dict:
     baseline_metrics = compute_metrics(labels, baseline_preds)
 
     # Verifier predictions: run verify_red_flags and check which items survive
-    verified = verify_red_flags(items, model=model)
+    verified = verify_red_flags(items, model=model, force_handcrafted=force_handcrafted)
     verified_descs = {item["description"] for item in verified}
     verifier_preds = [item["description"] in verified_descs for item in items]
     verifier_metrics = compute_metrics(labels, verifier_preds)
 
+    prompt_label = "handcrafted" if force_handcrafted else "optimized (if available)"
     return {
         "baseline": baseline_metrics,
         "verifier": verifier_metrics,
         "model": model or "default",
+        "prompt": prompt_label,
         "labelled_count": len(items),
         "true_count": sum(labels),
         "false_count": sum(not l for l in labels),
@@ -107,7 +109,8 @@ def print_metrics_table(results: dict) -> None:
     """Print a human-readable metrics table."""
     print(f"\nEval Results ({results['labelled_count']} items: "
           f"{results['true_count']} true, {results['false_count']} false)")
-    print(f"Model: {results['model']}")
+    print(f"Model:  {results['model']}")
+    print(f"Prompt: {results['prompt']}")
     print("-" * 60)
     print(f"{'Metric':<12} {'Baseline':>10} {'Verifier':>10}")
     print("-" * 60)
@@ -141,11 +144,23 @@ def main() -> None:
             print("Error: --model requires a value.", file=sys.stderr)
             sys.exit(1)
 
+    force_handcrafted = False
+    if "--prompt" in args:
+        idx = args.index("--prompt")
+        args.pop(idx)
+        if idx < len(args):
+            prompt_choice = args.pop(idx)
+            if prompt_choice == "handcrafted":
+                force_handcrafted = True
+            elif prompt_choice != "optimized":
+                print("Error: --prompt must be 'handcrafted' or 'optimized'.", file=sys.stderr)
+                sys.exit(1)
+
     output_json = "--json" in args
     if output_json:
         args.remove("--json")
 
-    results = run_eval(model=model)
+    results = run_eval(model=model, force_handcrafted=force_handcrafted)
 
     if output_json:
         print(json.dumps(results, indent=2))

@@ -143,7 +143,7 @@ def resolve_downloaded_source(row: dict[str, str], sources_registry: dict[str, d
     return None
 
 
-def extract_downloaded_sources(force: bool = False, workers: int | None = None) -> list[dict]:
+def extract_downloaded_sources(force: bool = False, workers: int | None = None, verify: bool = True, force_handcrafted: bool = False) -> list[dict]:
     rows = load_downloaded_registry_rows(REGISTRY_CSV)
     if not rows:
         LOGGER.info("No downloaded sources to extract.")
@@ -165,13 +165,13 @@ def extract_downloaded_sources(force: bool = False, workers: int | None = None) 
     entries: list[dict] = []
     if workers is None:
         for source, source_url in work_items:
-            entry = process_one(source, force=force, manifest=manifest, source_url=source_url)
+            entry = process_one(source, force=force, manifest=manifest, source_url=source_url, verify=verify, force_handcrafted=force_handcrafted)
             if entry:
                 entries.append(entry)
     else:
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
-                executor.submit(process_one, source, force, manifest, source_url): source
+                executor.submit(process_one, source, force, manifest, source_url, verify, force_handcrafted): source
                 for source, source_url in work_items
             }
             for future in as_completed(futures):
@@ -198,9 +198,11 @@ def run_pipeline(
     urls_file: Path,
     force: bool = False,
     workers: int | None = None,
+    verify: bool = True,
+    force_handcrafted: bool = False,
 ) -> tuple[list[dict[str, object]], list[dict]]:
     downloaded = download_sources(urls_file, force=force)
-    extracted = extract_downloaded_sources(force=force, workers=workers)
+    extracted = extract_downloaded_sources(force=force, workers=workers, verify=verify, force_handcrafted=force_handcrafted)
     return downloaded, extracted
 
 
@@ -219,21 +221,28 @@ def main(argv: list[str] | None = None) -> None:
     extract_parser = subparsers.add_parser("extract", help="Extract all downloaded registry sources.")
     extract_parser.add_argument("--force", action="store_true")
     extract_parser.add_argument("--parallel", nargs="?", const="4")
+    extract_parser.add_argument("--no-verify", action="store_true", help="Skip verification step.")
+    extract_parser.add_argument("--prompt", choices=["handcrafted", "optimized"], default="optimized", help="Which verification prompt to use.")
 
     run_parser = subparsers.add_parser("run", help="Download URLs, then extract downloaded sources.")
     run_parser.add_argument("urls_file", type=Path)
     run_parser.add_argument("--force", action="store_true")
     run_parser.add_argument("--parallel", nargs="?", const="4")
+    run_parser.add_argument("--no-verify", action="store_true", help="Skip verification step.")
+    run_parser.add_argument("--prompt", choices=["handcrafted", "optimized"], default="optimized", help="Which verification prompt to use.")
 
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
+    verify = not args.no_verify if hasattr(args, "no_verify") else True
+    force_handcrafted = getattr(args, "prompt", "optimized") == "handcrafted"
+
     if args.command == "download":
         download_sources(args.urls_file, force=args.force)
     elif args.command == "extract":
-        extract_downloaded_sources(force=args.force, workers=parse_parallel(args.parallel))
+        extract_downloaded_sources(force=args.force, workers=parse_parallel(args.parallel), verify=verify, force_handcrafted=force_handcrafted)
     elif args.command == "run":
-        run_pipeline(args.urls_file, force=args.force, workers=parse_parallel(args.parallel))
+        run_pipeline(args.urls_file, force=args.force, workers=parse_parallel(args.parallel), verify=verify, force_handcrafted=force_handcrafted)
 
 
 if __name__ == "__main__":

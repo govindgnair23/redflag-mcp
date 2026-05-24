@@ -684,3 +684,17 @@ class TestOptimizedPromptIntegration:
             msgs = build_verification_prompt(["test"])
         system = msgs[0]["content"]
         assert "What IS a red flag?" in system
+
+    def test_force_handcrafted_ignores_optimized_file(self, tmp_path):
+        optimized_data = {
+            "signature": {"instructions": "You are an optimized AML classifier."},
+            "demos": [],
+        }
+        prompt_file = tmp_path / "verifier_prompt.json"
+        prompt_file.write_text(json.dumps(optimized_data))
+
+        with patch("prompts.OPTIMIZED_PROMPT_PATH", prompt_file):
+            msgs = build_verification_prompt(["test"], force_handcrafted=True)
+        system = msgs[0]["content"]
+        assert "What IS a red flag?" in system
+        assert "optimized AML classifier" not in system
