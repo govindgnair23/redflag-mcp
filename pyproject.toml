@@ -30,6 +30,9 @@ dev = [
     "ruff>=0.4",
     "mypy>=1.9",
 ]
+optimize = [
+    "dspy>=2.6",
+]
 
 [project.scripts]
 redflag-mcp = "redflag_mcp:main"

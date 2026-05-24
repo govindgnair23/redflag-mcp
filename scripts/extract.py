@@ -52,7 +52,7 @@ from redflag_mcp.config import (  # noqa: E402
 )
 from redflag_mcp.models import RedFlagSource  # noqa: E402
 from build_registry import build_registry  # noqa: E402
-from prompts import build_extraction_prompt  # noqa: E402
+from prompts import build_extraction_prompt, build_verification_prompt  # noqa: E402
 
 DEFAULT_MODEL = "gpt-4o-mini"
 DEFAULT_PARALLEL_WORKERS = 4
@@ -254,6 +254,56 @@ def extract_red_flags(document_text: str, model: str | None = None) -> list[dict
     return parsed.get("red_flags", [])
 
 
+DEFAULT_VERIFICATION_MODEL = "gpt-4o-mini"
+
+
+def verify_red_flags(
+    candidates: list[dict], model: str | None = None
+) -> list[dict]:
+    """Classify candidate red flags and return only genuine ones.
+
+    Makes a single OpenAI call per batch of candidates. Each candidate
+    must have a 'description' key. Returns the subset classified as
+    true red flags.
+    """
+    if not candidates:
+        return []
+
+    descriptions = [c.get("description", "") for c in candidates]
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        print("Error: OPENAI_API_KEY environment variable is not set.", file=sys.stderr)
+        sys.exit(1)
+
+    model = model or os.environ.get("OPENAI_VERIFICATION_MODEL", DEFAULT_VERIFICATION_MODEL)
+    client = OpenAI(api_key=api_key)
+
+    messages = build_verification_prompt(descriptions)
+
+    print(f"Verifying {len(candidates)} candidates with {model}...")
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        response_format={"type": "json_object"},
+        temperature=0.0,
+    )
+
+    content = response.choices[0].message.content
+    parsed = json.loads(content)
+    results = parsed.get("results", [])
+
+    # Build set of indices classified as true
+    verified_indices = {r["index"] for r in results if r.get("flag") is True}
+
+    verified = [c for i, c in enumerate(candidates) if i in verified_indices]
+    removed = len(candidates) - len(verified)
+    if removed:
+        print(f"  Verifier removed {removed} false positive(s), kept {len(verified)}.")
+
+    return verified
+
+
 def validate_and_build_entries(
     raw_flags: list[dict], slug: str, source_url: str | None = None
 ) -> tuple[list[dict], int]:
@@ -340,7 +390,7 @@ def discover_sources() -> list[str]:
     return sources
 
 
-def process_one(source: str, force: bool, manifest: list[dict], source_url: str | None = None) -> dict | None:
+def process_one(source: str, force: bool, manifest: list[dict], source_url: str | None = None, verify: bool = True) -> dict | None:
     """Process a single source (PDF path or URL).
 
     Returns a manifest entry dict on success, or None on skip/failure.
@@ -395,6 +445,13 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
 
     print(f"LLM returned {len(raw_flags)} red flag(s) for {slug}.")
 
+    if verify:
+        try:
+            raw_flags = verify_red_flags(raw_flags)
+        except Exception as e:
+            print(f"Error during verification for {source}: {e}", file=sys.stderr)
+            return None
+
     entries, skipped = validate_and_build_entries(raw_flags, slug, source_url=source_url)
 
     if not entries:
@@ -418,7 +475,7 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
     return manifest_entry
 
 
-def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | None = None) -> None:
+def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | None = None, verify: bool = True) -> None:
     """Discover and process all sources in batch mode."""
     sources = discover_sources()
 
@@ -451,7 +508,7 @@ def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | 
         # Sequential
         for source in pending:
             url = get_source_url(source, registry)
-            entry = process_one(source, force=force, manifest=manifest, source_url=url)
+            entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify)
             if entry:
                 new_entries.append(entry)
     else:
@@ -459,7 +516,7 @@ def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | 
         print(f"Running with {workers} parallel worker(s).")
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
-                executor.submit(process_one, source, force, manifest, get_source_url(source, registry)): source
+                executor.submit(process_one, source, force, manifest, get_source_url(source, registry), verify): source
                 for source in pending
             }
             for future in as_completed(futures):
@@ -488,6 +545,10 @@ def main() -> None:
     force = "--force" in args
     if force:
         args.remove("--force")
+
+    verify = "--no-verify" not in args
+    if not verify:
+        args.remove("--no-verify")
 
     # Parse --parallel [N]
     workers: int | None = None
@@ -522,7 +583,7 @@ def main() -> None:
 
     if len(args) == 0:
         # Batch mode
-        run_batch(force=force, workers=workers, serial_range=serial_range)
+        run_batch(force=force, workers=workers, serial_range=serial_range, verify=verify)
     elif len(args) == 1:
         # Single-source mode
         if workers is not None:
@@ -539,7 +600,7 @@ def main() -> None:
 
         registry = load_sources_registry()
         url = get_source_url(source, registry)
-        entry = process_one(source, force=force, manifest=manifest, source_url=url)
+        entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify)
         if entry is None:
             sys.exit(1)
 

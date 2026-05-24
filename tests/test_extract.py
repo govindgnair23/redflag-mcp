@@ -6,6 +6,8 @@ import sys
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
+import json
+
 import pytest
 import yaml
 
@@ -24,8 +26,10 @@ from extract import (
     slugify,
     source_slug,
     validate_and_build_entries,
+    verify_red_flags,
     write_yaml,
 )
+from prompts import OPTIMIZED_PROMPT_PATH, build_verification_prompt
 from redflag_mcp.config import (
     CATEGORIES,
     CUSTOMER_PROFILES,
@@ -554,3 +558,129 @@ class TestRegulatorFromUrlOverride:
         entries, skipped = validate_and_build_entries(raw, "test-no-url")
         assert skipped == 0
         assert entries[0]["regulator"] == "FinCEN"
+
+
+class TestBuildVerificationPrompt:
+    def test_prompt_contains_classification_criteria(self):
+        msgs = build_verification_prompt(["Some description"])
+        system = msgs[0]["content"]
+        assert "observable" in system.lower()
+        assert "compliance" in system.lower()
+        assert "flag" in system.lower()
+
+    def test_prompt_numbers_descriptions(self):
+        msgs = build_verification_prompt(["Desc A", "Desc B", "Desc C"])
+        user = msgs[1]["content"]
+        assert "[0] Desc A" in user
+        assert "[1] Desc B" in user
+        assert "[2] Desc C" in user
+
+    def test_prompt_returns_system_and_user_messages(self):
+        msgs = build_verification_prompt(["test"])
+        assert len(msgs) == 2
+        assert msgs[0]["role"] == "system"
+        assert msgs[1]["role"] == "user"
+
+
+class TestVerifyRedFlags:
+    def test_empty_candidates_returns_empty(self):
+        result = verify_red_flags([])
+        assert result == []
+
+    def test_filters_false_positives(self):
+        candidates = [
+            {"description": "Customer structures transactions below reporting thresholds."},
+            {"description": "The organization should conduct an OFAC risk assessment."},
+            {"description": "Rapid movement of funds through multiple accounts."},
+        ]
+        mock_response = MagicMock()
+        mock_response.choices = [MagicMock()]
+        mock_response.choices[0].message.content = (
+            '{"results": [{"index": 0, "flag": true}, '
+            '{"index": 1, "flag": false}, '
+            '{"index": 2, "flag": true}]}'
+        )
+
+        with patch.dict("os.environ", {"OPENAI_API_KEY": "test-key"}), \
+             patch("extract.OpenAI") as mock_openai:
+            mock_openai.return_value.chat.completions.create.return_value = mock_response
+            result = verify_red_flags(candidates)
+
+        assert len(result) == 2
+        assert result[0]["description"] == "Customer structures transactions below reporting thresholds."
+        assert result[1]["description"] == "Rapid movement of funds through multiple accounts."
+
+    def test_all_flagged_true_returns_all(self):
+        candidates = [
+            {"description": "Red flag 1"},
+            {"description": "Red flag 2"},
+        ]
+        mock_response = MagicMock()
+        mock_response.choices = [MagicMock()]
+        mock_response.choices[0].message.content = (
+            '{"results": [{"index": 0, "flag": true}, {"index": 1, "flag": true}]}'
+        )
+
+        with patch.dict("os.environ", {"OPENAI_API_KEY": "test-key"}), \
+             patch("extract.OpenAI") as mock_openai:
+            mock_openai.return_value.chat.completions.create.return_value = mock_response
+            result = verify_red_flags(candidates)
+
+        assert len(result) == 2
+
+    def test_all_flagged_false_returns_empty(self):
+        candidates = [
+            {"description": "Compliance guidance 1"},
+            {"description": "Compliance guidance 2"},
+        ]
+        mock_response = MagicMock()
+        mock_response.choices = [MagicMock()]
+        mock_response.choices[0].message.content = (
+            '{"results": [{"index": 0, "flag": false}, {"index": 1, "flag": false}]}'
+        )
+
+        with patch.dict("os.environ", {"OPENAI_API_KEY": "test-key"}), \
+             patch("extract.OpenAI") as mock_openai:
+            mock_openai.return_value.chat.completions.create.return_value = mock_response
+            result = verify_red_flags(candidates)
+
+        assert len(result) == 0
+
+
+class TestOptimizedPromptIntegration:
+    def test_uses_handcrafted_when_no_optimized_file(self):
+        with patch("prompts.OPTIMIZED_PROMPT_PATH", Path("/nonexistent/path.json")):
+            msgs = build_verification_prompt(["test description"])
+        system = msgs[0]["content"]
+        assert "What IS a red flag?" in system
+
+    def test_uses_optimized_when_file_exists(self, tmp_path):
+        optimized_data = {
+            "signature": {
+                "instructions": "You are an optimized AML classifier.",
+            },
+            "demos": [
+                {"description": "Customer moves funds rapidly.", "is_red_flag": True},
+                {"description": "The org should train staff.", "is_red_flag": False},
+            ],
+        }
+        prompt_file = tmp_path / "verifier_prompt.json"
+        prompt_file.write_text(json.dumps(optimized_data))
+
+        with patch("prompts.OPTIMIZED_PROMPT_PATH", prompt_file):
+            msgs = build_verification_prompt(["test description"])
+        system = msgs[0]["content"]
+        assert "optimized AML classifier" in system
+        assert "Customer moves funds rapidly" in system
+        assert "Is Red Flag: true" in system
+        assert "The org should train staff" in system
+        assert "Is Red Flag: false" in system
+
+    def test_falls_back_on_invalid_json(self, tmp_path):
+        prompt_file = tmp_path / "verifier_prompt.json"
+        prompt_file.write_text("not valid json{{{")
+
+        with patch("prompts.OPTIMIZED_PROMPT_PATH", prompt_file):
+            msgs = build_verification_prompt(["test"])
+        system = msgs[0]["content"]
+        assert "What IS a red flag?" in system

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -260,6 +261,119 @@ Return a single JSON object with one key, "red_flags", containing an array of an
 
 ---
 {document_text}
+---"""
+
+    return [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+
+
+OPTIMIZED_PROMPT_PATH = Path(__file__).resolve().parent.parent / "data" / "verifier_prompt.json"
+
+_HANDCRAFTED_SYSTEM_PROMPT = """You are an AML compliance expert reviewing candidate red flags extracted from regulatory documents. Your task is to classify each candidate as a genuine red flag or not.
+
+## What IS a red flag?
+
+A red flag is a description of suspicious, observable behavior by a customer, entity, counterparty, account, ownership/control structure, property, or transaction that a compliance officer or transaction-monitoring system could detect at a financial institution. It indicates potential money laundering, terrorist financing, sanctions evasion, or other financial crime.
+
+A valid red flag answers: "What would a compliance officer or TM analyst actually see at their institution that should raise suspicion?"
+
+## What is NOT a red flag?
+
+- Compliance program guidance, obligations, or controls (what the institution should do)
+- Regulatory directives, instructions, or expectations
+- SAR filing instructions or recommendations
+- Risk assessment frameworks, policies, procedures, training, governance, or audit expectations
+- General typology background or educational context that does not describe an observable pattern
+- Enforcement action summaries or case narratives that describe what happened to a named person or company without identifying a reusable observable signal
+- Document headers, administrative text, or section titles
+- Definitions or glossary entries
+
+## Classification rules
+
+For each candidate, answer:
+1. Does it describe observable suspicious behavior (what a customer, entity, transaction, account, or property is doing)?
+2. Is it reusable — applicable to comparable customers/transactions, not tied to a specific named person or one-off fact?
+3. Could a compliance officer or TM system at any financial institution detect this pattern?
+
+If ALL three answers are yes → flag: true
+If ANY answer is no → flag: false
+
+## Output format
+
+Return a single JSON object: {"results": [{"index": 0, "flag": true}, {"index": 1, "flag": false}, ...]}
+
+One entry per candidate, in the same order as the input. No markdown fences, no commentary — emit valid JSON only."""
+
+
+def _load_optimized_prompt() -> dict | None:
+    """Load the DSPy-optimized prompt if available."""
+    if not OPTIMIZED_PROMPT_PATH.exists():
+        return None
+    try:
+        with open(OPTIMIZED_PROMPT_PATH) as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def _build_optimized_system_prompt(optimized: dict) -> str:
+    """Build system prompt from DSPy-optimized data.
+
+    Uses the optimized instructions and appends few-shot demos.
+    """
+    instructions = optimized.get("signature", {}).get("instructions", "")
+    if not instructions:
+        return _HANDCRAFTED_SYSTEM_PROMPT
+
+    demos = optimized.get("demos", [])
+
+    parts = [instructions]
+
+    if demos:
+        parts.append("\n## Examples\n")
+        for demo in demos:
+            desc = demo.get("description", "")
+            label = demo.get("is_red_flag", "")
+            if isinstance(label, bool):
+                label = "true" if label else "false"
+            parts.append(f"Description: {desc}\nIs Red Flag: {label}\n")
+
+    parts.append("""
+## Output format
+
+Return a single JSON object: {"results": [{"index": 0, "flag": true}, {"index": 1, "flag": false}, ...]}
+
+One entry per candidate, in the same order as the input. No markdown fences, no commentary — emit valid JSON only.""")
+
+    return "\n".join(parts)
+
+
+def build_verification_prompt(descriptions: list[str]) -> list[dict]:
+    """Build the system and user prompts for red-flag verification.
+
+    Takes a list of candidate descriptions and asks the LLM to classify
+    each as a genuine red flag (true) or not (false).
+
+    If a DSPy-optimized prompt exists at data/verifier_prompt.json, uses
+    that. Otherwise falls back to the handcrafted prompt.
+    """
+    optimized = _load_optimized_prompt()
+    if optimized:
+        print("  Using DSPy-optimized verification prompt.")
+        system_prompt = _build_optimized_system_prompt(optimized)
+    else:
+        system_prompt = _HANDCRAFTED_SYSTEM_PROMPT
+
+    numbered = "\n".join(
+        f"[{i}] {desc}" for i, desc in enumerate(descriptions)
+    )
+
+    user_prompt = f"""Classify each candidate below as a genuine red flag (true) or not (false).
+
+---
+{numbered}
 ---"""
 
     return [
