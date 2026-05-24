@@ -1,0 +1,171 @@
+- id: 039_ofac_sham_transactions_advisory-01
+  description: Commercially unreasonable transactions. Transfers of property in which
+    a blocked person once held an interest on terms that are not commercially reasonable,
+    lacking adequate consideration, or otherwise not suggestive of an arm’s length
+    transaction may indicate that the blocked person still retains an interest in
+    the property. Conversely, evidence that a transaction was between unrelated parties,
+    at fair market value, in a competitive market, would tend to demonstrate that
+    a bona fide transfer occurred.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
+    Evasion'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2026-03-31'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/935441/download?inline
+- id: 039_ofac_sham_transactions_advisory-02
+  description: Transfer to family members or close associates. Transfers by a blocked
+    person to a family member or close associate can be evidence of a sham transaction.
+    Such family members or close associates may be acting as a proxy, facilitator,
+    money manager, or agent for the blocked person. Similarly, the nature and scope
+    of the relationship between the blocked person and a nominal owner of the transferred
+    property may also be relevant. Formal or informal agreements, agent-principal
+    or other close relationships, and other similar factors may indicate that the
+    nominal owner is not independent from the blocked person and is instead holding
+    property for, or acting on behalf of, the blocked person.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
+    Evasion'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2026-03-31'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/935441/download?inline
+- id: 039_ofac_sham_transactions_advisory-03
+  description: Unclear purpose of transfer. Transfers lacking apparent business purpose
+    may indicate an attempt to obfuscate a blocked person’s continued interest in
+    property. Likewise, transfers to an individual with little or no relevant experience
+    or expertise with respect to the transferred property may be evidence of a sham
+    transaction.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
+    Evasion'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2026-03-31'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/935441/download?inline
+- id: 039_ofac_sham_transactions_advisory-04
+  description: Unduly complex corporate structures involving higher-risk jurisdictions.
+    The presence of unnecessarily complex legal structures without a discernible legitimate
+    purpose—such as certain multi-layered limited liability companies, partnerships,
+    or trusts—may indicate an effort to conceal an ownership interest. This risk is
+    heightened when holding entities are domiciled in jurisdictions that have little
+    connection to the property they hold, lack robust regulatory and supervisory controls,
+    or offer laws and structures that enable obfuscation in property ownership.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
+    Evasion'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2026-03-31'
+  risk_level: medium
+  category: shell_company
+  source_url: https://ofac.treasury.gov/media/935441/download?inline
+- id: 039_ofac_sham_transactions_advisory-05
+  description: Continued involvement of a blocked person. Facts or circumstances suggesting
+    a blocked person remains involved in the use, management, or disposition of property—including
+    through proxies or intermediaries—may indicate that the blocked person continues
+    to retain an interest in property. In these situations, where a blocked person
+    previously held an ownership interest in the property, the blocked person may
+    still be behind legal structures designed to conceal their interest.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
+    Evasion'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2026-03-31'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/935441/download?inline
+- id: 039_ofac_sham_transactions_advisory-06
+  description: Transfer near the time of designation. Transfers completed close in
+    time to a person’s designation may trigger suspicion warranting further analysis,
+    such as when a purported transfer occurs immediately before or after a designation.
+    For example, shortly before or after being designated by OFAC, blocked drug kingpins
+    have transferred shares in non-U.S. companies to offshore shell companies; such
+    transfers should raise U.S. sanctions compliance concerns.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
+    Evasion'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2026-03-31'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/935441/download?inline
+- id: 039_ofac_sham_transactions_advisory-07
+  description: Evasive or vague responses, or failures to respond to questions from
+    counterparties, key intermediaries, or gatekeepers regarding a blocked person’s
+    involvement in property may be evidence of intent to conceal a continuing interest.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
+    Evasion'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2026-03-31'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/935441/download?inline
