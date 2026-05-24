@@ -82,6 +82,71 @@ class TestBuildExtractionPrompt:
         assert "discrepancy in Customer G's business activity between the FI's records and corporate registry" in system_prompt
         assert "Enforcement actions and historical cases are excluded only when" in system_prompt
 
+    def test_prompt_prioritizes_explicit_red_flag_sections(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "Explicit section precedence" in system_prompt
+        assert "extract only from those explicit sections" in system_prompt
+        assert "Indicia of Sham Transactions" in system_prompt
+
+    def test_prompt_scopes_implicit_extraction_to_docs_without_explicit_sections(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "Use implicit red flag extraction only when the document has no explicit red-flag, risk-factor, or indicator section" in system_prompt
+        assert "When an explicit section exists, ignore narrative examples, typology examples, enforcement narratives, and case studies outside that section" in system_prompt
+
+    def test_prompt_rejects_person_specific_examples_as_red_flags(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "A blocked oligarch transferred ownership of his private jet to a trust" in system_prompt
+        assert "Kerimov used a series of legal structures" in system_prompt
+        assert "Do not extract named persons, named companies, enforcement targets, or one-off factual examples as red flags" in system_prompt
+
+    def test_prompt_rejects_dependent_explanatory_sentences_as_standalone_flags(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "Such family members or close associates may be acting as a proxy, facilitator, money manager, or agent for the blocked person" in system_prompt
+        assert "Do not extract dependent explanatory sentences as standalone red flags" in system_prompt
+
+    def test_prompt_preserves_one_explicit_bullet_as_one_risk_factor(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "One explicit bullet or risk-factor heading equals one red flag" in system_prompt
+        assert "Do not split later sentences under the same bullet into separate red flags" in system_prompt
+        assert "Formal or informal agreements, agent-principal or other close relationships" in system_prompt
+
+    def test_prompt_requires_descriptions_to_begin_with_noun_subject(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "Description subject grammar" in system_prompt
+        assert "Descriptions must begin with a noun subject" in system_prompt
+        assert '"Transactions"' in system_prompt
+        assert "Entities or individuals are non-responsive or refuse to provide additional transaction information" in system_prompt
+
+    def test_prompt_excludes_compliance_control_guidance(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "Compliance guidance exclusion" in system_prompt
+        assert "Do not extract institutional compliance obligations, program components, control expectations, risk assessment processes, policies, procedures, training, governance, audit/testing, remediation, recordkeeping, escalation, reporting, or sanctions compliance framework elements" in system_prompt
+        assert "A compliance framework document can validly produce zero red flags" in system_prompt
+
+    def test_prompt_rejects_ofac_framework_control_examples(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "The organization conducts, or will conduct, an OFAC risk assessment" in system_prompt
+        assert "The organization develops a sanctions risk rating" in system_prompt
+        assert "The organization has implemented internal controls" in system_prompt
+        assert "The organization commits to providing OFAC-related training" in system_prompt
+        assert "The organization ensures that its OFAC-related recordkeeping policies" in system_prompt
+
     def test_representative_regulator_jurisdiction_mappings(self):
         expected = {
             "FinCEN": "US",
