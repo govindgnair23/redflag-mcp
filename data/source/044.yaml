@@ -69,7 +69,7 @@
   regulator_jurisdiction: US
   issued_date: '2024-06-12'
   risk_level: high
-  category: trade_based_money_laundering
+  category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/932436/download
 - id: 044-04
   description: 'Helping companies or individuals evade U.S. sanctions on Russia’s
@@ -80,11 +80,12 @@
     sanctions.'
   product_types:
   - wire_transfer
-  - correspondent_banking
   - depository
+  - correspondent_banking
   - trade_finance
   industry_types: []
-  customer_profiles: []
+  customer_profiles:
+  - foreign_financial_institution
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
@@ -97,18 +98,17 @@
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/932436/download
 - id: 044-05
-  description: Any customers involved in the specified sectors or who conduct business
+  description: Customers involved in the specified sectors or who conduct business
     with persons blocked pursuant to E.O. 14024.
   product_types:
   - depository
   - wire_transfer
   - trade_finance
   - correspondent_banking
-  - insurance
   industry_types:
   - construction
   customer_profiles:
-  - foreign_financial_institution
+  - cross_border_business
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
@@ -121,15 +121,16 @@
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/932436/download
 - id: 044-06
-  description: Any customers that may be involved in the sale, supply, or transfer
-    of the specified items to Russia or to jurisdictions previously identified as
-    posing a high risk of Russian sanctions evasion.
+  description: Customers that may be involved in the sale, supply, or transfer of
+    the specified items to Russia or to jurisdictions previously identified as posing
+    a high risk of Russian sanctions evasion.
   product_types:
   - trade_finance
   - wire_transfer
   - correspondent_banking
   industry_types:
   - import_export
+  - manufacturing
   - logistics
   customer_profiles:
   - cross_border_business
@@ -143,149 +144,41 @@
   regulator_jurisdiction: US
   issued_date: '2024-06-12'
   risk_level: high
-  category: trade_based_money_laundering
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+- id: 044-07
+  description: Customers known to deal in or export specified items.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2024-06-12'
+  risk_level: medium
+  category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/932436/download
 - id: 044-08
-  description: Customers who received large wire transfers from Russian companies,
-    which appear to be payments received for goods shipped to Russia.
-  product_types:
-  - wire_transfer
-  - correspondent_banking
-  industry_types:
-  - import_export
-  - logistics
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - russia
-  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
-    Base'
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issued_date: '2024-06-12'
-  risk_level: high
-  category: trade_based_money_laundering
-  source_url: https://ofac.treasury.gov/media/932436/download
-- id: 044-09
-  description: Customers conducting business with newly formed Russian companies or
-    newly formed companies in third countries known to be potential transshipment
-    points for exports to Russia.
-  product_types:
-  - wire_transfer
-  - trade_finance
-  - correspondent_banking
-  industry_types:
-  - import_export
-  - logistics
-  customer_profiles:
-  - newly_established_business
-  - cross_border_business
-  geographic_footprints:
-  - russia
-  - high_risk_jurisdiction
-  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
-    Base'
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issued_date: '2024-06-12'
-  risk_level: high
-  category: trade_based_money_laundering
-  source_url: https://ofac.treasury.gov/media/932436/download
-- id: 044-10
-  description: Companies or counterparties supposedly involved in production or import-export
-    of sophisticated items with no business history or little-to-no web presence.
-  product_types:
-  - trade_finance
-  - wire_transfer
-  - correspondent_banking
-  industry_types:
-  - import_export
-  customer_profiles:
-  - newly_established_business
-  geographic_footprints: []
-  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
-    Base'
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issued_date: '2024-06-12'
-  risk_level: medium
-  category: trade_based_money_laundering
-  source_url: https://ofac.treasury.gov/media/932436/download
-- id: 044-11
-  description: Customers or counterparties using unusual or atypical payment terms
-    and methods, such as large cash payments, frequent or last-minute changes to end-users
-    or payees, or routing payments through third countries not otherwise involved
-    in the transaction.
-  product_types:
-  - wire_transfer
-  - depository
-  - trade_finance
-  industry_types:
-  - import_export
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
-    Base'
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issued_date: '2024-06-12'
-  risk_level: medium
-  category: layering
-  source_url: https://ofac.treasury.gov/media/932436/download
-- id: 044-12
-  description: Wires with no clear business purpose involving high-risk jurisdictions.
-  product_types:
-  - wire_transfer
-  - correspondent_banking
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
-    Base'
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issued_date: '2024-06-12'
-  risk_level: medium
-  category: layering
-  source_url: https://ofac.treasury.gov/media/932436/download
-- id: 044-13
-  description: A large volume of suspected shell company activity.
-  product_types:
-  - wire_transfer
-  - correspondent_banking
-  - depository
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  - beneficial_owner_obscured
-  geographic_footprints: []
-  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
-    Base'
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issued_date: '2024-06-12'
-  risk_level: medium
-  category: shell_company
-  source_url: https://ofac.treasury.gov/media/932436/download
-- id: 044-14
   description: Customers who sent or received funds from persons blocked pursuant
     to E.O. 14024 prior to their designation.
   product_types:
   - wire_transfer
-  - correspondent_banking
   - depository
+  - correspondent_banking
   industry_types: []
-  customer_profiles: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
@@ -297,7 +190,7 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/932436/download
-- id: 044-17
+- id: 044-09
   description: Customers who received large wire transfers from Russian companies,
     which appear to be payments received for goods shipped to Russia.
   product_types:
@@ -317,5 +210,102 @@
   regulator_jurisdiction: US
   issued_date: '2024-06-12'
   risk_level: high
-  category: trade_based_money_laundering
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+- id: 044-10
+  description: Customers or counterparties engaged in high-risk activity or who fail
+    to respond to requests for information regarding activity of concern.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2024-06-12'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+- id: 044-11
+  description: Customers conducting business with newly formed Russian companies or
+    newly formed companies in third countries known to be potential transshipment
+    points for exports to Russia.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - high_risk_jurisdiction
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2024-06-12'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+- id: 044-12
+  description: Companies or counterparties supposedly involved in production or import-export
+    of sophisticated items with no business history or little-to-no web presence.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2024-06-12'
+  risk_level: medium
+  category: shell_company
+  source_url: https://ofac.treasury.gov/media/932436/download
+- id: 044-13
+  description: Customers or counterparties using unusual or atypical payment terms
+    and methods, such as large cash payments, frequent or last-minute changes to end-users
+    or payees, or routing payments through third countries not otherwise involved
+    in the transaction.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2024-06-12'
+  risk_level: high
+  category: layering
   source_url: https://ofac.treasury.gov/media/932436/download
