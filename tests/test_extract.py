@@ -35,6 +35,7 @@ from redflag_mcp.config import (
     REGULATOR_JURISDICTIONS,
     REGULATORS,
     jurisdiction_for_regulator,
+    regulator_from_url,
 )
 from redflag_mcp.models import RedFlagSource
 
@@ -475,3 +476,81 @@ class TestRegistryUpdate:
 
         mock_save_manifest.assert_called_once()
         mock_build_registry.assert_called_once_with()
+
+
+class TestRegulatorFromUrl:
+    def test_ofac_treasury_domain(self):
+        assert regulator_from_url("https://ofac.treasury.gov/some/page") == "OFAC"
+
+    def test_home_treasury_domain(self):
+        assert regulator_from_url("https://home.treasury.gov/policy") == "OFAC"
+
+    def test_fincen_domain(self):
+        assert regulator_from_url("https://www.fincen.gov/resources/advisories") == "FinCEN"
+
+    def test_unknown_domain_returns_none(self):
+        assert regulator_from_url("https://www.unknown-regulator.org/page") is None
+
+    def test_none_input_returns_none(self):
+        assert regulator_from_url(None) is None
+
+    def test_empty_string_returns_none(self):
+        assert regulator_from_url("") is None
+
+    def test_fatf_domain(self):
+        assert regulator_from_url("https://www.fatf-gafi.org/publications") == "FATF"
+
+    def test_fca_domain(self):
+        assert regulator_from_url("https://www.handbook.fca.org.uk/handbook") == "FCA"
+
+
+class TestRegulatorFromUrlOverride:
+    def test_url_regulator_overrides_llm_extracted_regulator(self):
+        raw = [
+            {
+                "description": "Suspicious wire transfers involving sanctioned entities.",
+                "regulator": "FBI",
+                "risk_level": "high",
+                "category": "sanctions_evasion",
+                "regulatory_source": "OFAC Advisory",
+            }
+        ]
+        entries, skipped = validate_and_build_entries(
+            raw, "test-override",
+            source_url="https://ofac.treasury.gov/some/advisory",
+        )
+        assert skipped == 0
+        assert entries[0]["regulator"] == "OFAC"
+        assert entries[0]["regulator_jurisdiction"] == "US"
+
+    def test_unknown_url_keeps_llm_regulator(self):
+        raw = [
+            {
+                "description": "Suspicious activity related to shell companies.",
+                "regulator": "FBI",
+                "risk_level": "medium",
+                "category": "shell_company",
+                "regulatory_source": "FBI Alert",
+            }
+        ]
+        entries, skipped = validate_and_build_entries(
+            raw, "test-fallback",
+            source_url="https://www.unknown-site.gov/page",
+        )
+        assert skipped == 0
+        assert entries[0]["regulator"] == "FBI"
+        assert entries[0]["regulator_jurisdiction"] == "US"
+
+    def test_no_url_keeps_llm_regulator(self):
+        raw = [
+            {
+                "description": "Unusual transaction patterns.",
+                "regulator": "FinCEN",
+                "risk_level": "medium",
+                "category": "structuring",
+                "regulatory_source": "FinCEN Alert",
+            }
+        ]
+        entries, skipped = validate_and_build_entries(raw, "test-no-url")
+        assert skipped == 0
+        assert entries[0]["regulator"] == "FinCEN"

@@ -1,4 +1,5 @@
 from pathlib import Path
+from urllib.parse import urlparse
 
 # Project root: two levels up from this file (src/redflag_mcp/config.py)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -178,13 +179,16 @@ REGULATORS = {
     # US AML/banking regulators
     "FinCEN", "FinCEN-BIS", "FinCEN-IRS-CI", "OFAC", "FFIEC", "OCC", "FRB", "FDIC", "NCUA",
     # US securities / commodities
-    "SEC", "CFTC",
+    "SEC", "CFTC", "FINRA",
     # US law enforcement
     "DOJ", "FBI", "IRS", "DHS",
     # Europe / UK
     "AMLA", "EBA", "ECB", "ESMA", "Europol", "FCA", "FIU-NL", "BaFin", "AMF-France", "ACPR",
+    "NCA", "OFSI", "CSSF", "AFM",
     # Asia-Pacific
-    "MAS", "HKMA", "SFC-HK", "JFSA", "JFIU", "AUSTRAC", "ASIC", "APRA",
+    "MAS", "HKMA", "SFC-HK", "JFSA", "JFIU", "AUSTRAC", "ASIC", "APRA", "NPA",
+    # Middle East / South Asia
+    "CBUAE", "SAMA", "RBI",
     # Canada / international bodies
     "FINTRAC", "FATF", "INTERPOL", "UN", "UNODC", "WorldBank", "IMF",
 }
@@ -217,15 +221,25 @@ REGULATOR_JURISDICTIONS = {
     "Europol": "EU",
     "FIU-NL": "NL",
     "BaFin": "DE",
+    "NCA": "GB",
+    "OFSI": "GB",
+    "CSSF": "LU",
+    "AFM": "NL",
     # Asia-Pacific
     "MAS": "SG",
     "HKMA": "HK",
     "SFC-HK": "HK",
     "JFSA": "JP",
     "JFIU": "JP",
+    "NPA": "JP",
     "AUSTRAC": "AU",
     "ASIC": "AU",
     "APRA": "AU",
+    # Middle East / South Asia
+    "CBUAE": "AE",
+    "SAMA": "SA",
+    "RBI": "IN",
+    "FINRA": "US",
     # Canada / international bodies
     "FINTRAC": "CA",
     "FATF": "FATF",
@@ -242,6 +256,62 @@ def jurisdiction_for_regulator(regulator: str | None) -> str | None:
     if not regulator:
         return None
     return REGULATOR_JURISDICTIONS.get(regulator)
+
+
+URL_DOMAIN_TO_REGULATOR: dict[str, str] = {
+    "ofac.treasury.gov": "OFAC",
+    "home.treasury.gov": "OFAC",
+    "www.fincen.gov": "FinCEN",
+    "bsaaml.ffiec.gov": "FFIEC",
+    "www.ic3.gov": "FBI",
+    "www.irs.gov": "IRS",
+    "www.finra.org": "FINRA",
+    "fintrac-canafe.canada.ca": "FINTRAC",
+    "www.handbook.fca.org.uk": "FCA",
+    "www.nationalcrimeagency.gov.uk": "NCA",
+    "assets.publishing.service.gov.uk": "OFSI",
+    "www.gov.uk": "OFSI",
+    "www.eba.europa.eu": "EBA",
+    "www.europol.europa.eu": "Europol",
+    "www.afm.nl": "AFM",
+    "www.mas.gov.sg": "MAS",
+    "www.hkma.gov.hk": "HKMA",
+    "www.sfc.hk": "SFC-HK",
+    "www.jfiu.gov.hk": "JFIU",
+    "www.npa.go.jp": "NPA",
+    "www.austrac.gov.au": "AUSTRAC",
+    "www.fatf-gafi.org": "FATF",
+    "www.centralbank.ae": "CBUAE",
+    "rulebook.centralbank.ae": "CBUAE",
+    "www.sama.gov.sa": "SAMA",
+    "www.rbi.org.in": "RBI",
+    "fiuindia.gov.in": "RBI",
+    "fiaumalta.org": "FATF",
+    "www.cssf.lu": "CSSF",
+    "www.coe.int": "FATF",
+    "www.ppatk.go.id": "FATF",
+    "www.amlo.go.th": "FATF",
+    "www.amlc.gov.ph": "FATF",
+    "www.mjib.gov.tw": "FATF",
+    "www.kofiu.go.kr": "FATF",
+    "www.drs.customs.gov.hk": "HKMA",
+    "abs.org.sg": "MAS",
+    "assets.adgm.com": "CBUAE",
+}
+
+
+def regulator_from_url(url: str | None) -> str | None:
+    """Infer the regulator from a source URL's domain.
+
+    Returns the regulator string if the domain is recognised, or None otherwise.
+    """
+    if not url:
+        return None
+    try:
+        domain = urlparse(url).netloc
+    except Exception:
+        return None
+    return URL_DOMAIN_TO_REGULATOR.get(domain)
 
 
 # Valid simulation types from docs/Red_flag_types.md
