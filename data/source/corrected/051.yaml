@@ -1,0 +1,39 @@
+- id: 051-01
+  description: conducted or facilitated significant trade with North Korea
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: DPRK Cyber Threat Advisory
+  regulator: FBI
+  regulator_jurisdiction: US
+  issued_date: '2020-04-15'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/36061/download
+- id: 051-02
+  description: conducted or facilitated a significant transaction on behalf of a person
+    designated under a North Korea-related Executive Order, or under Executive Order
+    13382 (Weapons of Mass Destruction Proliferators and Their Supporters) for North
+    Korea-related activity
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - north_korea
+  regulatory_source: DPRK Cyber Threat Advisory
+  regulator: FBI
+  regulator_jurisdiction: US
+  issued_date: '2020-04-15'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/36061/download

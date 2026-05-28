@@ -1,0 +1,398 @@
+- id: 042_ofac_virtual_currency_sanctions_compliance-01
+  description: "Provide inaccurate or incomplete customer identification or KYC information when attempting to open an account"
+  flag: True
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - individual_consumer
+  - shell_or_front_company
+  geographic_footprints:
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: medium
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - inaccurate customer identification
+  - incomplete KYC information
+  - account opening
+  - virtual currency exchange
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-02
+  description: "Attempt to access a virtual currency exchange from an IP address or VPN connected to a sanctioned jurisdiction"
+  flag: True
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: high
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - VPN
+  - sanctioned jurisdiction
+  - virtual currency exchange
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-03
+  description: "Customers are non-responsive or refuse to provide updated customer identification or KYC information"
+  flag: True
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: medium
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - non-responsive
+  - refuse to provide
+  - updated KYC
+  - customer identification
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-04
+  description: "Are non-responsive or refuse to provide additional transaction information in response to a virtual currency company's request"
+  flag: True
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: medium
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - non-responsive
+  - refuse to provide
+  - transaction information
+  - additional information request
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-05
+  description: "Attempt to transact with a virtual currency address associated with a blocked person or sanctioned jurisdiction"
+  flag: True
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: high
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - virtual currency address
+  - blocked person
+  - SDN List
+  - sanctioned jurisdiction
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-06
+  description: "Red flags indicative of money laundering or other illicit financial activity may also be indicative of potential sanctions evasion"
+  flag: False
+  reasoning: Red flag is not specific about a pattern, it only refers ro other red flags and does not stand alone.
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - individual_consumer
+  - shell_or_front_company
+  geographic_footprints:
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: medium
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - shell_company_usage
+  key_terms:
+  - money laundering indicators
+  - illicit financial activity
+  - sanctions evasion
+  - virtual currency
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-07
+  description: "Individuals received approximately $100 million in virtual currency stolen from cyber intrusions against two virtual currency exchanges and began layering the funds in complex transactions to include purchasing over $1 million in digital music gift cards"
+  flag: True
+  product_types:
+  - crypto
+  - prepaid
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - china
+  - north_korea
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: high
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  - cybercrime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - cryptocurrency_mixing
+  key_terms:
+  - stolen virtual currency
+  - cyber intrusions
+  - layering funds
+  - digital gift cards
+  - complex transactions
+  - North Korean money laundering
+  flag: False
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-08
+  description: "Over 40 percent of the exchange's transaction history had been associated with illicit actors, involving the proceeds from at least eight ransomware variants"
+  flag: False
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: high
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  - cybercrime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - cryptocurrency_mixing
+  key_terms:
+  - illicit actors
+  - ransomware proceeds
+  - virtual currency exchange
+  - transaction history
+  - Russian exchange
+  flag: False
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-09
+  description: "Users located in sanctioned jurisdictions who try to access virtual currency products and services, for example by using the non-custodial secure digital wallet management service with IP addresses located in the Crimea region of Ukraine, Cuba, Iran, Sudan, and Syria"
+  flag: True
+  product_types:
+  - crypto
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  - russia
+  - middle_east
+  - caribbean
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: high
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - sanctioned jurisdiction IP addresses
+  - non-custodial wallet
+  - Crimea
+  - Cuba
+  - Iran
+  - digital wallet service
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-10
+  description: "The same user logging in with an IP address in the United States, and then shortly after with an IP address in Japan, indicating improbable logins that may signal IP misattribution or use of virtual private network (VPN) IP addresses"
+  flag: True
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - domestic_us
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: medium
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - improbable logins
+  - IP misattribution
+  - VPN detection
+  - geolocation anomaly
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-11
+  description: "Unlisted virtual currency addresses that share a wallet with a listed virtual currency address may pose sanctions risk because the sharing of a wallet may indicate an association with a blocked person"
+  flag: True
+  product_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: high
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - shared wallet
+  - listed virtual currency address
+  - SDN List
+  - blocked person association
+  - wallet clustering
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-12
+  description: "Connections to unlisted addresses that have previously transacted with a listed address on the SDN List could also pose sanctions risk depending on the nature of those transactions"
+  flag: True
+  product_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - ofac_sanctioned_country
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: medium
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - unlisted addresses
+  - SDN List transactional connections
+  - historic lookback
+  - blockchain analytics
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-13
+  description: "Use of misspellings or alternative spellings related to sanctioned jurisdictions or variations on capitalization, spacing, or punctuation for names of persons listed on OFAC sanctions lists, for example 'Yalta, Krimea' instead of the standard spelling or 'Krajinvestbank' instead of the listed 'Krayinvestbank'"
+  flag: True
+  product_types:
+  - crypto
+  - currency_exchange
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  - shell_or_front_company
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: medium
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - misspellings
+  - alternative spellings
+  - sanctioned jurisdiction names
+  - fuzzy matching evasion
+  - name variations
+
+- id: 042_ofac_virtual_currency_sanctions_compliance-14
+  description: "Processing virtual currency transactions between a company's customers and persons located in sanctioned jurisdictions, where the company screened direct customers but failed to screen available information about the individuals who used its payment processing platform to buy products from those merchants, including names, addresses, telephone numbers, email addresses, and IP addresses"
+  flag: True
+  product_types:
+  - crypto
+  - money_transmitter
+  customer_profiles:
+  - foreign_individual
+  - third_party_payment_processor
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: "OFAC Sanctions Compliance Guidance for the Virtual Currency Industry"
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-10'
+  risk_level: high
+  category: sanctions_evasion
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - third_party_payments
+  - nested_account_activity
+  key_terms:
+  - payment processing platform
+  - buyer screening failure
+  - sanctioned jurisdiction persons
+  - merchant transactions
+  - indirect sanctions exposure

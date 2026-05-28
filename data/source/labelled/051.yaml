@@ -1,0 +1,242 @@
+- id: 051-17
+  description: special attention to business relationships and transactions with the
+    DPRK, including DPRK companies, financial institutions, and those acting on their
+    behalf
+  flag: False
+  reasoning: This describes best practices for an institution rather than red flags.
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - north_korea
+  regulatory_source: DPRK Cyber Threat Advisory
+  regulator: FBI
+  regulator_jurisdiction: US
+  issued_date: '2020-04-15'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/36061/download
+- id: 051-18
+  description: digital asset service providers should remain alert to changes in customers’
+    activities, as their business may be used to facilitate money laundering, terrorist
+    financing, and proliferation financing
+  flag: False
+  reasoning: This describes best practices for an institution rather than red flags.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: DPRK Cyber Threat Advisory
+  regulator: FBI
+  regulator_jurisdiction: US
+  issued_date: '2020-04-15'
+  risk_level: low
+  category: layering
+  source_url: https://ofac.treasury.gov/media/36061/download
+- id: 051-19
+  description: platforms that provide anonymous payment and account service functionality
+    without transaction monitoring, suspicious activity reporting, and customer due
+    diligence
+  flag: True
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: DPRK Cyber Threat Advisory
+  regulator: FBI
+  regulator_jurisdiction: US
+  issued_date: '2020-04-15'
+  risk_level: low
+  category: layering
+  source_url: https://ofac.treasury.gov/media/36061/download
+- id: 051-20
+  description: conducted or facilitated significant trade with North Korea
+  flag: True
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: DPRK Cyber Threat Advisory
+  regulator: FBI
+  regulator_jurisdiction: US
+  issued_date: '2020-04-15'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/36061/download
+- id: 051-21
+  description: conducted or facilitated a significant transaction on behalf of a person
+    designated under a North Korea-related Executive Order, or under Executive Order
+    13382 (Weapons of Mass Destruction Proliferators and Their Supporters) for North
+    Korea-related activity
+  flag: True
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - north_korea
+  regulatory_source: DPRK Cyber Threat Advisory
+  regulator: FBI
+  regulator_jurisdiction: US
+  issued_date: '2020-04-15'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/36061/download
+- id: 053-22
+  description: Assessing the AIS history of all new clients and refusing to conduct
+    business with vessels that have a history of AIS manipulation not consistent with
+    SOLAS.
+  flag: False
+  reasoning: This represents a best practice and deos not describe suspicous behavior.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-23
+  description: Monitoring AIS transmissions of vessels, especially in the case of
+    vessels capable of transporting cargoes and that are susceptible to ship-to-ship
+    transfers that are known to be used in the evasion of sanctions (e.g., coal, petroleum
+    and petroleum products, and petrochemical products).
+  flag: False
+  reasoning: This kind of monitoring represents a best practice and is not a red flag.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-24
+  description: Identifying the vessels which, in the past two years, have a pattern
+    of AIS disablement or manipulation inconsistent with SOLAS and potentially terminating
+    business relationships with clients that continue to use those vessels.
+  flag: False
+  reasoning: This represents a best practice and is not a red flag.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-25
+  description: Recognizing that purchases of crude and refined petroleum, petrochemicals,
+    and metals at rates significantly below market prices may be red flags indicating
+    illicit behavior.
+  flag: False
+  reasoning: This represents a best practice and is not a red flag.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - precious_metals_jewelry
+  - import_export
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-26
+  description: Assessing the AIS history of all new clients and refusing to conduct
+    business with vessels that have a history of AIS manipulation not consistent with
+    SOLAS.
+  flag: False
+  reasoning: This represents a best practice and is not a red flag.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=

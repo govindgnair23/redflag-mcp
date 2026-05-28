@@ -5,27 +5,27 @@
     "demos": [
       {
         "augmented": true,
-        "description": "the use of shell companies or other legal entities and arrangements to avoid detection",
-        "reasoning": "Using shell companies or other legal entities/arrangements to avoid detection is an observable, suspicious behavior that indicates potential attempts to evade regulatory scrutiny and sanctions.",
+        "description": "the use of offshore buyers with potential links to Russia.",
+        "reasoning": "“Use of offshore buyers with potential links to Russia” is an observable risk-related behavior—using offshore counterparties that may be connected to a sanctioned/high-risk country—where the compliance officer can detect and assess suspicious counterparties, ownership links, or connection indicators.",
         "is_red_flag": true
       },
       {
         "augmented": true,
-        "description": "conducted or facilitated significant trade with North Korea",
-        "reasoning": "The description indicates actual facilitation or involvement in significant trade with North Korea, which is an observable high-risk/suspicious activity and commonly associated with sanctions evasion concerns. A compliance officer could detect and flag this based on transaction and trade records.",
+        "description": "A medium-sized bank in a jurisdiction with a strong trading relationship with Russia is reported in credible open-source media as taking steps to bring in new Russia-related business in order to capitalize on measures other banks have taken to reduce their Russia-related risk. These steps include opening a new representative office in Russia, expanding its Russian language promotional materials and website, and advertising in Russian-language media about services for Russian businesses.",
+        "reasoning": "This is an observable, potentially suspicious conduct: a bank is actively seeking to increase Russia-related business (new office in Russia, targeted Russian-language marketing, and advertising to Russian businesses) specifically to capitalize on risk-reduction actions by other banks—indicating possible circumvention or adverse sanctions/AML risk behavior.",
         "is_red_flag": true
       },
       {
-        "description": "special attention to business relationships and transactions with the DPRK, including DPRK companies, financial institutions, and those acting on their behalf",
-        "is_red_flag": false
+        "description": "Unlisted virtual currency addresses that share a wallet with a listed virtual currency address may pose sanctions risk because the sharing of a wallet may indicate an association with a blocked person",
+        "is_red_flag": true
       },
       {
-        "description": "Any customers that may be involved in the sale, supply, or transfer of the specified items to Russia or to jurisdictions previously identified as posing a high risk of Russian sanctions evasion.",
+        "description": "The same user logging in with an IP address in the United States, and then shortly after with an IP address in Japan, indicating improbable logins that may signal IP misattribution or use of virtual private network (VPN) IP addresses",
         "is_red_flag": true
       }
     ],
     "signature": {
-      "instructions": "Classify whether a candidate description extracted from a regulatory\ndocument is a genuine AML red flag (observable suspicious behavior) or\nnot (compliance guidance, regulatory instruction, case narrative, etc.).",
+      "instructions": "You are an AML/OFAC sanctions compliance analyst reviewing a snippet extracted from a regulatory document. Your job is to classify the snippet as either an **AML red flag** (observable suspicious/illicit conduct or concrete evasion mechanics that a compliance officer could detect) or **not a red flag** (policy, guidance, program commitments, governance/audit/training requirements, or background narration).\n\nInput: a single text `Description`.\n\nRules for labeling:\n- Output `is_red_flag: True` **only** when the snippet describes **conduct, actions, schemes, behaviors, or specific risk mechanics**, such as:\n  - dealings/transactions with **OFAC-sanctioned persons/regions/countries**\n  - **evasion/circumvention** attempts (e.g., concealment, misrepresentation, shell/third-party intermediation, identity/IP anomalies)\n  - indicators involving **sanctions-relevant entities/geographies** or **high-risk conduct** (including virtual currency links where relevant)\n  - any statement that implies the organization or individuals **did** something improper or attempted to bypass controls\n- Output `is_red_flag: False` when the snippet is **forward-looking compliance guidance**, commitments, or describes **program elements** without asserting improper conduct, such as:\n  - training, audit/testing independence, governance, escalation procedures, risk assessments, monitoring requirements\n  - general regulatory instructions, best practices, or descriptions of what a program should include\n  - background/case narrative that does not assert observable suspicious behavior in the snippet\n\nQuality requirements:\n- Base your decision on whether the snippet describes **observable behavior** vs **compliance guidance/requirements**.\n- Be conservative: if it reads like a requirement or best-practice commitment rather than misconduct or evasion mechanics, label it **False**.\n- Provide clear justification in `reasoning`, explicitly tying your decision to the observable-vs-guidance distinction.\n\nReturn structured outputs with exactly these fields:\n- `reasoning`: short explanation of why it is (or is not) an observable red-flag behavior\n- `is_red_flag`: boolean (`True` or `False`)",
       "fields": [
         {
           "prefix": "Description:",

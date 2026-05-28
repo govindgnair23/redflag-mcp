@@ -1,0 +1,92 @@
+- id: 049-01
+  description: North Korean-flagged merchant vessels have physically altered their
+    vessels to obscure their identities and attempt to pass themselves off as different
+    vessels. These physical alterations include painting over vessel names and IMO
+    numbers with alternate ones.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  - east_asia
+  regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
+    Korea’s Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2018-02-23'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/7726/download?inline=
+- id: 049-02
+  description: North Korea has been known to falsify vessel and cargo documents to
+    obscure the origin or destination of cargo.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  - insurance
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
+    Korea’s Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2018-02-23'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://ofac.treasury.gov/media/7726/download?inline=
+- id: 049-03
+  description: North Korean-flagged merchant vessels have been known to intentionally
+    disable their AIS transponders to mask their movements.
+  product_types:
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  - korean_peninsula
+  regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
+    Korea’s Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2018-02-23'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/7726/download?inline=
+- id: 049-04
+  description: North Korean-flagged merchant vessels have also been known to manipulate
+    the data being transmitted via AIS. Such manipulation could include altering vessel
+    names, IMO numbers, Maritime Mobile Service Identities (MMSIs), or other unique
+    identifying information. This tactic could also be used to conceal a vessel’s
+    next port of call or other information regarding its voyage.
+  product_types:
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
+    Korea’s Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2018-02-23'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/7726/download?inline=

@@ -1,0 +1,210 @@
+- id: 048-01
+  description: The organization has failed to appreciate or consider (or, in some
+    instances, actively disregarded) the fact that OFAC sanctions applied to their
+    organization based on their status as a U.S. person, a U.S.-owned or controlled
+    subsidiary (in the Cuba and Iran programs), or dealings in or with U.S. persons,
+    the U.S. financial system, or U.S.-origin goods and technology.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - securities
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - iran
+  - ofac_sanctioned_country
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-02
+  description: Organizations with foreign-based operations and subsidiaries located
+    outside of the United States have engaged in transactions or activity that violated
+    OFAC’s regulations by referring business opportunities to, approving or signing
+    off on transactions conducted by, or otherwise facilitating dealings between their
+    organization’s non-U.S. locations and OFAC-sanctioned countries, regions, or persons.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-03
+  description: Non-U.S. persons have repeatedly purchased U.S.-origin goods with the
+    specific intent of re-exporting, transferring, or selling the items to a person,
+    country, or region subject to OFAC sanctions.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-04
+  description: Organizations have failed to update their sanctions screening software
+    to incorporate updates to the SDN List or SSI List, failed to include pertinent
+    identifiers such as SWIFT Business Identifier Codes for designated, blocked, or
+    sanctioned financial institutions, or did not account for alternative spellings
+    of prohibited countries or parties—particularly in instances in which the organization
+    is domiciled or conducts business in geographies that frequently utilize such
+    alternative spellings (i.e., Habana instead of Havana, Kuba instead of Cuba, Soudan
+    instead of Sudan, etc.).
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - caribbean
+  - africa
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-05
+  description: Organizations have engaged in improper or incomplete due diligence
+    on their customers, such as their ownership, geographic location(s), counter-parties,
+    and transactions, as well as their knowledge and awareness of OFAC sanctions.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: customer_due_diligence
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-06
+  description: Organizations have committed apparent violations due to a de-centralized
+    SCP, often with personnel and decision-makers scattered in various offices or
+    business units.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-07
+  description: Violations have resulted from a de-centralized SCP due to an improper
+    interpretation and application of OFAC’s regulations, the lack of a formal escalation
+    process to review high-risk or potential OFAC customers or transactions, an inefficient
+    or incapable oversight and audit function, or miscommunications regarding the
+    organization’s sanctions-related policies and procedures.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-08
+  description: Organizations attempting to evade or circumvent OFAC sanctions or conceal
+    their activity will implement non-traditional business methods in order to complete
+    their transactions.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-09
+  description: Supervisory, managerial or executive employees of U.S.-owned or controlled
+    entities operating outside of the United States conducted or facilitated dealings
+    or transactions with OFAC-sanctioned persons, regions, or countries, notwithstanding
+    the fact that the U.S. entity had a fulsome sanctions compliance program in place.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-10
+  description: Employees of foreign entities made efforts to obfuscate and conceal
+    their activities from others within the corporate organization, including compliance
+    personnel, as well as from regulators or law enforcement.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline

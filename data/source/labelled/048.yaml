@@ -1,0 +1,842 @@
+- id: 048-01
+  description: The organization conducts, or will conduct, an OFAC risk assessment
+    in a manner, and with a frequency, that adequately accounts for the potential
+    risks. Such risks could be posed by its clients and customers, products, services,
+    supply chain, intermediaries, counter-parties, transactions, and geographic locations,
+    depending on the nature of the organization. As appropriate, the risk assessment
+    will be updated to account for the root causes of any apparent violations or systemic
+    deficiencies identified by the organization during the routine course of business.
+  flag: False
+  reasoning: This is a guideline for organizations to carry out a risk assessment, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-02
+  description: 'On-boarding: The organization develops a sanctions risk rating for
+    customers, customer groups, or account relationships, as appropriate, by leveraging
+    information provided by the customer (for example, through a Know Your Customer
+    or Customer Due Diligence process) and independent research conducted by the organization
+    at the initiation of the customer relationship. This information will guide the
+    timing and scope of future due diligence efforts.'
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-03
+  description: The organization has developed a methodology to identify, analyze,
+    and address the particular risks it identifies. As appropriate, the risk assessment
+    will be updated to account for the conduct and root causes of any apparent violations
+    or systemic deficiencies identified by the organization during the routine course
+    of business, for example, through a testing or audit function.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-04
+  description: The organization has implemented internal controls that adequately
+    address the results of its OFAC risk assessment and profile. These internal controls
+    should enable the organization to clearly and effectively identify, interdict,
+    escalate, and report to appropriate personnel within the organization transactions
+    and activity that may be prohibited by OFAC. To the extent information technology
+    solutions factor into the organization’s internal controls, the organization has
+    selected and calibrated the solutions in a manner that is appropriate to address
+    the organization’s risk profile and compliance needs, and the organization routinely
+    tests the solutions to ensure effectiveness.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-05
+  description: The organization ensures that, upon learning of a weakness in its internal
+    controls pertaining to OFAC compliance, it will take immediate and effective action,
+    to the extent possible, to identify and implement compensating controls until
+    the root cause of the weakness can be determined and remediated.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-06
+  description: The organization has clearly communicated the SCP’s policies and procedures
+    to all relevant staff, including personnel within the SCP program, as well as
+    relevant gatekeepers and business units operating in high-risk areas (e.g., customer
+    acquisition, payments, sales, etc.) and to external parties performing SCP responsibilities
+    on behalf of the organization.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-07
+  description: The organization has appointed personnel for integrating the SCP’s
+    policies and procedures into the daily operations of the company or corporation.
+    This process includes consultations with relevant business units, and confirms
+    the organization’s employees understand the policies and procedures.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-08
+  description: The organization commits to ensuring that its OFAC-related training
+    program provides adequate information and instruction to employees and, as appropriate,
+    stakeholders (for example, clients, suppliers, business partners, and counterparties)
+    in order to support the organization’s OFAC compliance efforts. Such training
+    should be further tailored to high-risk employees within the organization.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-09
+  description: The organization commits to provide OFAC-related training with a scope
+    that is appropriate for the products and services it offers; the customers, clients,
+    and partner relationships it maintains; and the geographic regions in which it
+    operates.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-10
+  description: The organization commits to providing OFAC-related training with a
+    frequency that is appropriate based on its OFAC risk assessment and risk profile.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-11
+  description: The organization commits to ensuring that, upon learning of a confirmed
+    negative testing result or audit finding, or other deficiency pertaining to its
+    SCP, it will take immediate and effective action to provide training to or other
+    corrective action with respect to relevant personnel.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-12
+  description: The organization’s training program includes easily accessible resources
+    and materials that are available to all applicable personnel.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-13
+  description: The organization has developed a methodology to identify, analyze,
+    and address the particular risks it identifies.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-14
+  description: The organization has designed and implemented written policies and
+    procedures outlining the SCP. These policies and procedures are relevant to the
+    organization, capture the organization’s day-to-day operations and procedures,
+    are easy to follow, and designed to prevent employees from engaging in misconduct.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-15
+  description: The organization has implemented internal controls that adequately
+    address the results of its OFAC risk assessment and profile. These internal controls
+    should enable the organization to clearly and effectively identify, interdict,
+    escalate, and report to appropriate personnel within the organization transactions
+    and activity that may be prohibited by OFAC.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - correspondent_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-16
+  description: The organization ensures that its OFAC-related recordkeeping policies
+    and procedures adequately account for its requirements pursuant to the sanctions
+    programs administered by OFAC.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-17
+  description: The organization ensures that, upon learning of a weakness in its internal
+    controls pertaining to OFAC compliance, it will take immediate and effective action,
+    to the extent possible, to identify and implement compensating controls until
+    the root cause of the weakness can be determined and remediated.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-18
+  description: The organization has clearly communicated the SCP’s policies and procedures
+    to all relevant staff, including personnel within the SCP program, as well as
+    relevant gatekeepers and business units operating in high-risk areas (e.g., customer
+    acquisition, payments, sales, etc.) and to external parties performing SCP responsibilities
+    on behalf of the organization.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-19
+  description: The organization has appointed personnel for integrating the SCP’s
+    policies and procedures into the daily operations of the company or corporation.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-20
+  description: The organization commits to ensuring that the testing or audit function
+    is accountable to senior management, is independent of the audited activities
+    and functions, and has sufficient authority, skills, expertise, resources, and
+    authority within the organization.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-21
+  description: The organization commits to ensuring that it employs testing or audit
+    procedures appropriate to the level and sophistication of its SCP and that this
+    function, whether deployed internally or by an external party, reflects a comprehensive
+    and objective assessment of the organization’s OFAC-related risk assessment and
+    internal controls.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-22
+  description: The organization ensures that, upon learning of a confirmed negative
+    testing result or audit finding pertaining to its SCP, it will take immediate
+    and effective action, to the extent possible, to identify and implement compensating
+    controls until the root cause of the weakness can be determined and remediated.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-23
+  description: The organization commits to ensuring that its OFAC-related training
+    program provides adequate information and instruction to employees and, as appropriate,
+    stakeholders (for example, clients, suppliers, business partners, and counterparties)
+    in order to support the organization’s OFAC compliance efforts.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-24
+  description: The organization commits to provide OFAC-related training with a scope
+    that is appropriate for the products and services it offers; the customers, clients,
+    and partner relationships it maintains; and the geographic regions in which it
+    operates.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-25
+  description: The organization commits to providing OFAC-related training with a
+    frequency that is appropriate based on its OFAC risk assessment and risk profile.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-26
+  description: The organization commits to ensuring that, upon learning of a confirmed
+    negative testing result or audit finding, or other deficiency pertaining to its
+    SCP, it will take immediate and effective action to provide training to or other
+    corrective action with respect to relevant personnel.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-27
+  description: The organization’s training program includes easily accessible resources
+    and materials that are available to all applicable personnel.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-28
+  description: The organization develops a sanctions risk rating for customers, customer
+    groups, or account relationships, as appropriate, by leveraging information provided
+    by the customer (for example, through a Know Your Customer or Customer Due Diligence
+    process) and independent research conducted by the organization at the initiation
+    of the customer relationship.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-29
+  description: The organization engages in appropriate due diligence to ensure that
+    sanctions-related issues are identified, escalated to the relevant senior levels,
+    addressed prior to the conclusion of any transaction, and incorporated into the
+    organization’s risk assessment process.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-30
+  description: The organization conducts, or will conduct, an OFAC risk assessment
+    in a manner, and with a frequency, that adequately accounts for the potential
+    risks. Such risks could be posed by its clients and customers, products, services,
+    supply chain, intermediaries, counter-parties, transactions, and geographic locations,
+    depending on the nature of the organization.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-31
+  description: The organization has developed a methodology to identify, analyze,
+    and address the particular risks it identifies. As appropriate, the risk assessment
+    will be updated to account for the conduct and root causes of any apparent violations
+    or systemic deficiencies identified by the organization during the routine course
+    of business, for example, through a testing or audit function.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-32
+  description: The organization has implemented internal controls that adequately
+    address the results of its OFAC risk assessment and profile. These internal controls
+    should enable the organization to clearly and effectively identify, interdict,
+    escalate, and report to appropriate personnel within the organization transactions
+    and activity that may be prohibited by OFAC.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - correspondent_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-33
+  description: The organization has clearly communicated the SCP’s policies and procedures
+    to all relevant staff, including personnel within the SCP program, as well as
+    relevant gatekeepers and business units operating in high-risk areas (e.g., customer
+    acquisition, payments, sales, etc.) and to external parties performing SCP responsibilities
+    on behalf of the organization.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-34
+  description: The organization commits to ensuring that its OFAC-related training
+    program provides adequate information and instruction to employees and, as appropriate,
+    stakeholders (for example, clients, suppliers, business partners, and counterparties)
+    in order to support the organization’s OFAC compliance efforts. Such training
+    should be further tailored to high-risk employees within the organization.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-35
+  description: The organization commits to providing OFAC-related training with a
+    scope that is appropriate for the products and services it offers; the customers,
+    clients, and partner relationships it maintains; and the geographic regions in
+    which it operates.
+  flag: False
+  reasoning: This is a guideline or best practice for an organization, not a red flag.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-36
+  description: The organization commits to providing OFAC-related training with a
+    frequency that is appropriate based on its OFAC risk assessment and risk profile.
+  flag: False
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-37
+  description: The organization commits to ensuring that, upon learning of a confirmed
+    negative testing result or audit finding, or other deficiency pertaining to its
+    SCP, it will take immediate and effective action to provide training to or other
+    corrective action with respect to relevant personnel.
+  flag: False
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-38
+  description: The organization’s training program includes easily accessible resources
+    and materials that are available to all applicable personnel.
+  flag: False
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-39
+  description: The organization has failed to update their sanctions screening software
+    to incorporate updates to the SDN List or SSI List, failed to include pertinent
+    identifiers such as SWIFT Business Identifier Codes for designated, blocked, or
+    sanctioned financial institutions, or did not account for alternative spellings
+    of prohibited countries or parties—particularly in instances in which the organization
+    is domiciled or conducts business in geographies that frequently utilize such
+    alternative spellings (i.e., Habana instead of Havana, Kuba instead of Cuba, Soudan
+    instead of Sudan, etc.),
+  flag: False
+  reasoning: This describes failure modes in an institution's sanctions program rather than red flags.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - caribbean
+  - africa
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-40
+  description: Various administrative actions taken by OFAC involved improper or incomplete
+    due diligence by a company or corporation on its customers, such as their ownership,
+    geographic location(s), counter-parties, and transactions, as well as their knowledge
+    and awareness of OFAC sanctions.
+  flag: False
+  reasoning: This describes failure modes in an institution's sanctions program rather than red flags.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-41
+  description: Several organizations subject to U.S. jurisdiction have committed apparent
+    violations due to a de-centralized SCP, often with personnel and decision-makers
+    scattered in various offices or business units.
+  flag: False
+  reasoning: This describes failure modes in an institution's sanctions program rather than red flags.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-42
+  description: violations have resulted from this arrangement due to an improper interpretation
+    and application of OFAC’s regulations, the lack of a formal escalation process
+    to review high-risk or potential OFAC customers or transactions, an inefficient
+    or incapable oversight and audit function, or miscommunications regarding the
+    organization’s sanctions-related policies and procedures.
+  flag: False
+  reasoning: This describes failure modes in an institution's sanctions program rather than red flags.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-43
+  description: Organizations subject to U.S. jurisdiction are in the best position
+    to determine whether a particular dealing, transaction, or activity is proposed
+    or processed in a manner that is consistent with industry norms and practices.
+    In many instances, organizations attempting to evade or circumvent OFAC sanctions
+    or conceal their activity will implement non-traditional business methods in order
+    to complete their transactions.
+  flag: True
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-44
+  description: In several instances, individual employees—particularly in supervisory,
+    managerial, or executive-level positions—have played integral roles in causing
+    or facilitating violations of the regulations administered by OFAC.
+  flag: False
+  reasoning: This describes failure modes in an institution's sanctions program rather than red flags.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-45
+  description: supervisory, managerial or executive employees of the entities conducted
+    or facilitated dealings or transactions with OFAC-sanctioned persons, regions,
+    or countries, notwithstanding the fact that the U.S. entity had a fulsome sanctions
+    compliance program in place.
+  flag: False
+  reasoning: This describes failure modes in an institution's sanctions program rather than red flags.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline
+- id: 048-46
+  description: the employees of the foreign entities also made efforts to obfuscate
+    and conceal their activities from others within the corporate organization, including
+    compliance personnel, as well as from regulators or law enforcement.
+  flag: False
+  reasoning: This describes failure modes in an institution's sanctions program rather than red flags.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: A Framework for OFAC Compliance Commitments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16331/download?inline

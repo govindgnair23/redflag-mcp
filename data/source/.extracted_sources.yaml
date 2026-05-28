@@ -166,3 +166,39 @@
   slug: 038_payroll_tax_workers_comp_fraud
   output_file: data/source/038_payroll_tax_workers_comp_fraud.yaml
   extracted_at: '2026-05-17T12:57:15.794583+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/039_ofac_sham_transactions_advisory.pdf
+  slug: 039_ofac_sham_transactions_advisory
+  output_file: data/source/039_ofac_sham_transactions_advisory.yaml
+  extracted_at: '2026-05-24T19:45:44.823553+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/042.pdf
+  slug: '042'
+  output_file: data/source/042.yaml
+  extracted_at: '2026-05-24T19:48:45.499877+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/048.pdf
+  slug: 048
+  output_file: data/source/048.yaml
+  extracted_at: '2026-05-24T19:55:01.341895+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/049.pdf
+  slug: 049
+  output_file: data/source/049.yaml
+  extracted_at: '2026-05-24T19:55:08.748125+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/051.pdf
+  slug: '051'
+  output_file: data/source/051.yaml
+  extracted_at: '2026-05-24T19:55:20.985039+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/052.pdf
+  slug: '052'
+  output_file: data/source/052.yaml
+  extracted_at: '2026-05-24T19:55:37.839284+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/044.pdf
+  slug: '044'
+  output_file: data/source/044.yaml
+  extracted_at: '2026-05-24T20:08:22.671908+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/045.pdf
+  slug: '045'
+  output_file: data/source/045.yaml
+  extracted_at: '2026-05-24T20:11:40.619308+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/053.pdf
+  slug: '053'
+  output_file: data/source/053.yaml
+  extracted_at: '2026-05-28T19:41:35.576546+00:00'

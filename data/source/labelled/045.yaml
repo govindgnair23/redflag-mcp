@@ -1,0 +1,196 @@
+- id: 045-01
+  description: Asset transfers to family members or close associates sometimes occur
+    in the period immediately leading up to a designation or closely thereafter, which
+    may indicate an attempt to evade sanctions on the part of the sanctioned individual
+    and the party that facilitated the transfer.
+  flag: True
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-02
+  description: the purchase of real estate, often hiding behind intermediaries, nominees
+    or straw purchasers and/or opaque corporate structures including legal entities
+    or trusts.
+  flag: True
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: medium
+  category: shell_company
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-03
+  description: the purchase of real property below or above its market value
+  flag: True
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-04
+  description: the use of offshore buyers with potential links to Russia.
+  flag: True
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-04
+  description: the use of shell companies or other legal entities and arrangements
+    to avoid detection
+  flag: True
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: medium
+  category: shell_company
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-05
+  description: trust arrangements that may have been designed to thwart sanctions
+    enforcement.
+  flag: True
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-06
+  description: transactions that involve shell companies registered in traditional
+    tax havens conducting international wire transfers using financial institutions
+    in jurisdictions distinct from the company’s registration (non-resident banking).
+  flag: True
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: high
+  category: shell_company
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-07
+  description: One method Russian end-users use is to list a freight forwarding business,
+    often located in third party jurisdictions, as the final destination of a good,
+    when in fact those goods will be further shipped to their intended final destination
+    in Russia.
+  flag: True
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-08
+  description: The entities facilitating these transactions may often appear to have
+    no affiliation with the transaction and may be utilizing a known trans-shipment
+    point.
+  flag: True
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
+- id: 045-09
+  description: These Russian end-users may rely on false documentation, to include
+    bill of lading information and other supporting documentation such as fraudulent
+    trade finance information, to ensure the delivery of goods.
+  flag: True
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  regulatory_source: Global Advisory on Russian Sanctions Evasion
+  issued_date: '2023-03-09'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf

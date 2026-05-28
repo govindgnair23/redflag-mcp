@@ -1,0 +1,54 @@
+{
+  "classify.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "description": "The organization ensures that, upon learning of a weakness in its internal controls pertaining to OFAC compliance, it will take immediate and effective action, to the extent possible, to identify and implement compensating controls until the root cause of the weakness can be determined and remediated.",
+        "reasoning": "This is a regulatory compliance remediation/controls expectation describing appropriate corrective action upon identifying an OFAC-related weakness, not an observable suspicious behavior.",
+        "is_red_flag": false
+      },
+      {
+        "augmented": true,
+        "description": "Using open-source information and past transactional activity to inform due diligence and to conduct proactive investigations into possible sanctions and export control evasion.",
+        "reasoning": "This is compliance guidance describing a prudent approach to due diligence and investigations; it is not an observable suspicious behavior by itself.",
+        "is_red_flag": false
+      },
+      {
+        "description": "The organization commits to ensuring that, upon learning of a confirmed negative testing result or audit finding, or other deficiency pertaining to its SCP, it will take immediate and effective action to provide training to or other corrective action with respect to relevant personnel.",
+        "is_red_flag": false
+      },
+      {
+        "description": "The organization commits to providing OFAC-related training with a scope that is appropriate for the products and services it offers; the customers, clients, and partner relationships it maintains; and the geographic regions in which it operates.",
+        "is_red_flag": false,
+        "reasoning": "This is a guideline or best practice for an organization, not a red flag."
+      }
+    ],
+    "signature": {
+      "instructions": "Classify whether a candidate description extracted from a regulatory\ndocument is a genuine AML red flag (observable suspicious behavior) or\nnot (compliance guidance, regulatory instruction, case narrative, etc.).",
+      "fields": [
+        {
+          "prefix": "Description:",
+          "description": "A candidate red flag description extracted from a regulatory document."
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Is Red Flag:",
+          "description": "True if the description is an observable suspicious behavior that a compliance officer could detect; False if it is compliance guidance, regulatory instruction, case narrative, or background."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

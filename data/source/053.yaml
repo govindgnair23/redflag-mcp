@@ -1,0 +1,759 @@
+- id: 053-01
+  description: Disabling or Manipulating the Automatic Identification System (AIS)
+    on Vessels
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-02
+  description: Physically Altering Vessel Identification
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-03
+  description: Falsifying Cargo and Vessel Documents
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-04
+  description: Ship-to-Ship (STS) Transfers
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-05
+  description: Voyage Irregularities
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-06
+  description: False Flags and Flag Hopping
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-07
+  description: Complex Ownership or Management
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  - private_banking
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: shell_company
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-08
+  description: Signs of AIS transponder manipulation inconsistent with SOLAS
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-09
+  description: A vessel cannot account for its AIS history consistent with SOLAS
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-10
+  description: Ownership of a vessel is transferred between companies controlled by
+    the same beneficial owner and where there is no discernable legitimate purpose
+    for the transfer.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - private_banking
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: shell_company
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-11
+  description: Any significant time period with non-transmission that is not consistent
+    with the International Convention for the Safety of Life at Sea (SOLAS); navigation
+    of suspicious deviations in routes (e.g., changes without what appears to be a
+    legitimate reason to go off-route, such as unsafe ports, extreme weather, or emergencies);
+    a pattern of turning off AIS in a manner inconsistent with SOLAS; and engaging
+    in trade to or from vessels that are not transmitting AIS consistent with SOLAS.
+  product_types:
+  - insurance
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-12
+  description: AIS history of vessels that engage in potentially illegal activities
+    and operate in areas determined to be high-risk areas for sanctions evasion
+  product_types:
+  - insurance
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-13
+  description: AIS transponder manipulation inconsistent with SOLAS
+  product_types:
+  - insurance
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-14
+  description: AIS disablement or manipulation inconsistent with SOLAS
+  product_types:
+  - insurance
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-15
+  description: Routes and destinations that deviate from normal business practices
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: layering
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-16
+  description: Instances of a vessel owner or manager who continues to use a country’s
+    flag after it has been removed from a registry (i.e., “deregistered”), occurrences
+    of a ship claiming a country flag without proper authorization, or instances when
+    a vessel has changed flags frequently in a short period of time in a suspicious
+    manner consistent with flag hopping.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-17
+  description: Complex business structures, including those involving shell companies
+    and/or multiple levels of ownership and management, to disguise the ultimate beneficial
+    owner of cargo or commodities in order to avoid sanctions or other enforcement
+    action, among other reasons.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  - private_banking
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: shell_company
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-18
+  description: Transactions inconsistent with the client’s typical business practices,
+    to include when clients acquire new vessels.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  - newly_established_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-19
+  description: Purchases of crude and refined petroleum, petrochemicals, and metals
+    at rates significantly below market prices
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - precious_metals_jewelry
+  - import_export
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-20
+  description: Client activity for transactions inconsistent with the client’s typical
+    business practices, to include when clients acquire new vessels.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  - newly_established_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-21
+  description: Purchases of crude and refined petroleum, petrochemicals, and metals
+    at rates significantly below market prices may be red flags indicating illicit
+    behavior.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - precious_metals_jewelry
+  - import_export
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-22
+  description: Client activity for transactions inconsistent with the client’s typical
+    business practices, to include when clients acquire new vessels.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  - newly_established_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-23
+  description: Monitoring AIS transmissions of chartered clients, especially in the
+    case of vessels in areas determined to be at high-risk for sanctions evasion via
+    ship-to-ship transfers.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-24
+  description: Identifying the vessels which, in the past two years, have a pattern
+    of AIS disablement or manipulation inconsistent with SOLAS and potentially terminating
+    business relationships with clients that continue to use those vessels.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-25
+  description: Recognizing that purchases of crude and refined petroleum, petrochemicals,
+    and metals at rates significantly below market prices may be red flags indicating
+    illicit behavior.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - precious_metals_jewelry
+  - import_export
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-26
+  description: Monitoring AIS transmissions of vessels, especially in the case of
+    vessels capable of transporting cargoes and that are susceptible to ship-to-ship
+    transfers that are known to be used in the evasion of sanctions (e.g., coal, petroleum
+    and petroleum products, and petrochemical products).
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-27
+  description: Assessing the AIS history of all new clients and refusing to conduct
+    business with vessels that have a history of AIS manipulation not consistent with
+    SOLAS.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - newly_established_business
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-28
+  description: Transactions involving products going to or from Iran, North Korea,
+    and Syria.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-29
+  description: Transactions inconsistent with the client’s typical business practices,
+    to include when clients acquire new vessels.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  - newly_established_business
+  geographic_footprints:
+  - iran
+  - north_korea
+  - syria
+  - middle_east
+  - east_asia
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
+- id: 053-30
+  description: Deliver or finance petroleum shipments to the Government of Syria or
+    government-owned entities
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - syria
+  - middle_east
+  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
+    Sectors, and Related Communities
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2020-05-14'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/37751/download?inline=
