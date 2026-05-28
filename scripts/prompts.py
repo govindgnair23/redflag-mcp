@@ -46,10 +46,6 @@ A valid red flag answers: "What would a compliance officer or TM analyst actuall
 
 **Handling indicators embedded in prose:** When an indicator appears within a longer sentence ("Among the patterns observed are X, Y, and Z"), extract the indicator clause itself with its exact wording preserved. Do not paraphrase or generalize.
 
-**Description subject grammar:** Descriptions must begin with a noun subject, not a verb or orphaned predicate. Prefer a concrete source-supported subject such as "Customers," "Entities," "Individuals," "Account holders," "Nominal owners," "Counterparties," or "Transactions". Use "Entities or individuals" when the source could apply to either. If the source wording starts with a verb phrase or predicate, add the smallest accurate noun subject and keep the rest of the source wording intact.
-
-**Dependent explanatory sentences:** Do not extract dependent explanatory sentences as standalone red flags when they merely explain, elaborate, or refer back to a preceding indicator. Sentences beginning with "Such," "Similarly," "Likewise," "These," "This," or similar referential wording usually depend on the previous sentence. Merge them into the previous indicator only when they are generic, inside an eligible extraction area, and necessary to preserve the indicator's meaning.
-
 **Implicit red flags in case narratives:** Use implicit red flag extraction only when the document has no explicit red-flag, risk-factor, or indicator section. Regulators often describe control failures, execution lapses, alert-review findings, or case examples without labeling the underlying signal as a red flag. Extract the reusable observable customer behavior, transaction-monitoring signal, adverse-news signal, discrepancy, or CDD/risk-assessment conflict when the narrative shows that it should have raised suspicion. For example, if a regulator says an FI failed to escalate "the discrepancy in Customer G's business activity between the FI's records and corporate registry," extract that generic discrepancy as the red flag. Preserve the source wording as much as possible, but extract the observable signal rather than the institution's failure to act. When an explicit section exists, ignore narrative examples, typology examples, enforcement narratives, and case studies outside that section.
 
 **Do NOT extract:**
@@ -72,7 +68,7 @@ Enforcement actions and historical cases are excluded only when they describe in
 
 For each indicator identified in Step 1, populate the following fields:
 
-- "description" (string, required): The indicator's wording from the source, including any generic embedded example clause needed to define the indicator. No truncation. If the indicator is embedded mid-sentence, extract the indicator clause itself with its wording preserved, but ensure it begins with a noun subject. Do not include actual names or one-off case facts. If a narrative document lacks an explicit indicator section, extract the reusable observable signal rather than institutional failure language.
+- "description" (string, required): The indicator's wording from the source, including any generic embedded example clause needed to define the indicator. No truncation. If the indicator is embedded mid-sentence, extract the indicator clause itself with its wording preserved. Do not include actual names or one-off case facts. If a narrative document lacks an explicit indicator section, extract the reusable observable signal rather than institutional failure language. A downstream pass will normalize grammar — do not worry about subject phrasing here.
 
 - "product_types" (list of strings): Financial products or channels offered by the institution that this indicator applies to. Prefer these values when applicable: {sorted(PRODUCT_TYPES)}. Include all that apply. This field is about the institution's product surface, not about who the customer is — customer-side institution categories such as "money transmitter" or "MSB" belong in industry_types.
 
@@ -80,7 +76,7 @@ For each indicator identified in Step 1, populate the following fields:
 
 - "customer_profiles" (list of strings): Customer archetypes involved. Prefer these values when applicable: {sorted(CUSTOMER_PROFILES)}. Empty list when no profile is implied.
 
-- "geographic_footprints" (list of strings): Geographies, corridors, or regional footprints involved. Prefer these values when applicable: {sorted(GEOGRAPHIC_FOOTPRINTS)}. Empty list when none is implied.
+- "geographic_footprints" (list of strings): Geographies, corridors, or regional footprints involved. Prefer these values when applicable: {sorted(GEOGRAPHIC_FOOTPRINTS)}. Use the full document context to infer geography, including embedded examples, country lists, and the document's overall scope — not just country names appearing in the description itself. For example, an indicator about "alternative spellings of prohibited countries (i.e., Habana instead of Havana, Kuba instead of Cuba, Soudan instead of Sudan)" implies caribbean and west_africa even though the description is otherwise geography-neutral. Map illustrative country mentions to the closest enum values (e.g., Cuba → caribbean, Sudan → west_africa, Venezuela → venezuela, Iran → iran). Include sanctioned_jurisdiction or ofac_sanctioned_country when the broader context concerns sanctions programs. Empty list only when nothing in the document — description, examples, or surrounding context — implies a geography.
 
 - "regulatory_source" (string): Full name of the issuing document or authority (e.g., "FinCEN Alert FIN-2022-Alert001", "FFIEC BSA/AML Examination Manual Appendix F").
 
@@ -120,29 +116,6 @@ Source: "Non-routine foreign exchange transactions that may indirectly involve s
   "regulator": "FinCEN",
   "issued_date": "2022-06",
   "risk_level": "high",
-  "category": "sanctions_evasion"
-}}
-
-## Description grammar example
-
-Source: "Are non-responsive or refuse to provide additional transaction information in response to a virtual currency company's request."
-
-**Wrong** — begins with a verb phrase:
-{{
-  "description": "Are non-responsive or refuse to provide additional transaction information in response to a virtual currency company's request."
-}}
-
-**Correct** — adds the smallest accurate noun subject:
-{{
-  "description": "Entities or individuals are non-responsive or refuse to provide additional transaction information in response to a virtual currency company's request.",
-  "product_types": ["virtual_assets"],
-  "industry_types": [],
-  "customer_profiles": [],
-  "geographic_footprints": [],
-  "regulatory_source": "Virtual currency sanctions compliance guidance",
-  "regulator": null,
-  "issued_date": null,
-  "risk_level": "medium",
   "category": "sanctions_evasion"
 }}
 
@@ -269,6 +242,54 @@ Return a single JSON object with one key, "red_flags", containing an array of an
     ]
 
 
+_SHAPING_SYSTEM_PROMPT = """You normalize the grammar of candidate AML red-flag descriptions. Each input is one description, possibly multiple sentences. Rewrite only what is needed; preserve the source's substance and specificity.
+
+## Rules
+
+1. **Noun subject.** The description must begin with a concrete noun subject — for example "Customers," "Entities," "Individuals," "Account holders," "Nominal owners," "Counterparties," "Beneficial owners," or "Transactions". Use "Entities or individuals" when the source could apply to either. If the input already begins with a suitable noun subject, leave it alone. If it begins with a verb phrase or orphaned predicate (e.g., "Are non-responsive..."), add the smallest accurate noun subject and keep the rest of the wording intact ("Entities or individuals are non-responsive...").
+
+2. **Merge dependent explanatory sentences.** When a sentence starting with "Such," "Similarly," "Likewise," "These," "This," or other clearly referential wording elaborates the preceding sentence, merge it into the preceding sentence so the description reads as one indicator. Do not invent new content. Do not merge sentences that introduce a new, independent indicator.
+
+3. **Strip one-off facts.** If named persons, named companies, or one-off case facts slipped through, remove them. Keep generic "for example / e.g. / such as / including" clauses that help define the indicator.
+
+4. **Generalize case-specific numbers and counts.** When a description contains specific dollar amounts, percentages, or quantities drawn from a particular case, rewrite them as generic phrasing and keep the original value as a parenthetical "e.g." example so the indicator becomes reusable. Drop small case-specific counts of entities ("two exchanges", "at least eight variants") entirely — they describe one incident, not a pattern. Examples:
+   - "received approximately $100 million in virtual currency stolen from cyber intrusions against two virtual currency exchanges and began layering the funds ... to include purchasing over $1 million in digital music gift cards" → "received large sums (e.g., $100 million) in virtual currency stolen from cyber intrusions against virtual currency exchanges and began layering the funds ... to include purchasing large values (e.g., $1 million) of goods such as digital music gift cards"
+   - "Over 40 percent of the exchange's transaction history had been associated with illicit actors, involving the proceeds from at least eight ransomware variants" → "A significant percentage (e.g., 40%) of an exchange's transaction history is associated with illicit actors, involving proceeds from ransomware variants"
+
+   Do not generalize numbers that are part of the indicator's substance (e.g., reporting thresholds like "$10,000", structuring just below "$10,000", "within a 24-hour period") — those define the behavior itself, not a case-specific value.
+
+5. **No other paraphrasing.** Do not generalize, shorten, or reword beyond what rules 1–4 require. If no change is needed, return the input verbatim.
+
+## Output format
+
+Return a single JSON object: {"results": [{"index": 0, "description": "..."}, {"index": 1, "description": "..."}, ...]}
+
+One entry per input, same order, same length. No markdown fences, no commentary — emit valid JSON only."""
+
+
+def build_shaping_prompt(descriptions: list[str]) -> list[dict]:
+    """Build the system and user prompts for shaping candidate descriptions.
+
+    Takes a list of raw extracted descriptions and asks the LLM to
+    rewrite each into the project's expected grammar (noun-subject
+    leading, dependent-explanatory sentences merged).
+    """
+    numbered = "\n".join(
+        f"[{i}] {desc}" for i, desc in enumerate(descriptions)
+    )
+
+    user_prompt = f"""Normalize each candidate description below per the rules.
+
+---
+{numbered}
+---"""
+
+    return [
+        {"role": "system", "content": _SHAPING_SYSTEM_PROMPT},
+        {"role": "user", "content": user_prompt},
+    ]
+
+
 OPTIMIZED_PROMPT_PATH = Path(__file__).resolve().parent.parent / "data" / "verifier_prompt.json"
 
 _HANDCRAFTED_SYSTEM_PROMPT = """You are an AML compliance expert reviewing candidate red flags extracted from regulatory documents. Your task is to classify each candidate as a genuine red flag or not.
@@ -296,8 +317,9 @@ For each candidate, answer:
 1. Does it describe observable suspicious behavior (what a customer, entity, transaction, account, or property is doing)?
 2. Is it reusable — applicable to comparable customers/transactions, not tied to a specific named person or one-off fact?
 3. Could a compliance officer or TM system at any financial institution detect this pattern?
+4. Does it stand independently and make sense without any additional context ?
 
-If ALL three answers are yes → flag: true
+If ALL four answers are yes → flag: true
 If ANY answer is no → flag: false
 
 ## Output format

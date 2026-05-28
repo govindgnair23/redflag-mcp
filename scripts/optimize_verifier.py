@@ -6,10 +6,17 @@ Usage:
     uv run --extra optimize python scripts/optimize_verifier.py --model openai/gpt-4o-mini
     uv run --extra optimize python scripts/optimize_verifier.py --max-demos 4
     uv run --extra optimize python scripts/optimize_verifier.py --strategy predict  # or cot
+    uv run --extra optimize python scripts/optimize_verifier.py --optimizer mipro
+    uv run --extra optimize python scripts/optimize_verifier.py --optimizer mipro --auto light
 
-Loads labelled data from data/source/labelled/, trains a DSPy program
-using BootstrapFewShotWithRandomSearch, and saves the optimized prompt
-to data/verifier_prompt.json.
+Optimizer options:
+    bootstrap  (default) BootstrapFewShotWithRandomSearch — fast, demos only
+    mipro      MIPROv2 — optimizes both instructions and demos jointly (more LLM calls)
+
+For mipro, --auto controls intensity: light / medium (default) / heavy
+
+Loads labelled data from data/source/labelled/, trains a DSPy program,
+and saves the optimized prompt to data/verifier_prompt.json.
 
 Requires OPENAI_API_KEY and the 'optimize' extra: uv sync --extra optimize
 """
@@ -41,6 +48,8 @@ OUTPUT_PATH = Path(__file__).resolve().parent.parent / "data" / "verifier_prompt
 DEFAULT_MODEL = "openai/gpt-5.4-nano"
 DEFAULT_MAX_DEMOS = 4
 DEFAULT_STRATEGY = "cot"  # "predict" or "cot"
+DEFAULT_OPTIMIZER = "bootstrap"  # "bootstrap" or "mipro"
+DEFAULT_AUTO = "medium"  # mipro intensity: "light", "medium", or "heavy"
 
 
 class RedFlagClassifier(dspy.Signature):
@@ -134,6 +143,8 @@ def run_optimization(
     model: str = DEFAULT_MODEL,
     max_demos: int = DEFAULT_MAX_DEMOS,
     strategy: str = DEFAULT_STRATEGY,
+    optimizer: str = DEFAULT_OPTIMIZER,
+    auto: str = DEFAULT_AUTO,
     seed: int = 42,
 ) -> None:
     """Run DSPy optimization and save the optimized program."""
@@ -173,16 +184,29 @@ def run_optimization(
         program = RedFlagCoT()
 
     # Optimize
-    print(f"Running BootstrapFewShotWithRandomSearch (max_demos={max_demos})...")
-    optimizer = dspy.BootstrapFewShotWithRandomSearch(
-        metric=precision_weighted_metric,
-        max_bootstrapped_demos=max_demos,
-        max_labeled_demos=max_demos,
-        num_candidate_programs=8,
-        num_threads=4,
-    )
-
-    optimized = optimizer.compile(program, trainset=train_set)
+    if optimizer == "mipro":
+        print(f"Running MIPROv2 (auto={auto}) — optimizes instructions + demos jointly.")
+        print("  This makes significantly more LLM calls than bootstrap.")
+        opt = dspy.MIPROv2(
+            metric=precision_weighted_metric,
+            auto=auto,
+            num_threads=4,
+        )
+        optimized = opt.compile(
+            program,
+            trainset=train_set,
+            requires_permission_to_run=False,
+        )
+    else:
+        print(f"Running BootstrapFewShotWithRandomSearch (max_demos={max_demos})...")
+        opt = dspy.BootstrapFewShotWithRandomSearch(
+            metric=precision_weighted_metric,
+            max_bootstrapped_demos=max_demos,
+            max_labeled_demos=max_demos,
+            num_candidate_programs=8,
+            num_threads=4,
+        )
+        optimized = opt.compile(program, trainset=train_set)
 
     # Evaluate on test set
     print("\nEvaluating on test set...")
@@ -251,6 +275,26 @@ def main() -> None:
         if idx < len(args):
             strategy = args.pop(idx)
 
+    optimizer = DEFAULT_OPTIMIZER
+    if "--optimizer" in args:
+        idx = args.index("--optimizer")
+        args.pop(idx)
+        if idx < len(args):
+            optimizer = args.pop(idx)
+            if optimizer not in ("bootstrap", "mipro"):
+                print("Error: --optimizer must be 'bootstrap' or 'mipro'.", file=sys.stderr)
+                sys.exit(1)
+
+    auto = DEFAULT_AUTO
+    if "--auto" in args:
+        idx = args.index("--auto")
+        args.pop(idx)
+        if idx < len(args):
+            auto = args.pop(idx)
+            if auto not in ("light", "medium", "heavy"):
+                print("Error: --auto must be 'light', 'medium', or 'heavy'.", file=sys.stderr)
+                sys.exit(1)
+
     seed = 42
     if "--seed" in args:
         idx = args.index("--seed")
@@ -258,7 +302,14 @@ def main() -> None:
         if idx < len(args):
             seed = int(args.pop(idx))
 
-    run_optimization(model=model, max_demos=max_demos, strategy=strategy, seed=seed)
+    run_optimization(
+        model=model,
+        max_demos=max_demos,
+        strategy=strategy,
+        optimizer=optimizer,
+        auto=auto,
+        seed=seed,
+    )
 
 
 if __name__ == "__main__":

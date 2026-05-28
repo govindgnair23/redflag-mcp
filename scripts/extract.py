@@ -18,6 +18,11 @@ Usage:
 Outputs YAML files in data/source/ conforming to the RedFlagSource schema.
 Tracks processed sources in data/source/.extracted_sources.yaml to avoid
 re-processing. Use --force to bypass the duplicate check.
+
+Pipeline: extract → shape → verify. Each pass can be skipped:
+    --no-shape   skip the shaping pass (descriptions written verbatim from extraction)
+    --no-verify  skip the verification pass (all extracted candidates kept)
+
 Requires OPENAI_API_KEY environment variable (or .env file).
 """
 
@@ -52,7 +57,11 @@ from redflag_mcp.config import (  # noqa: E402
 )
 from redflag_mcp.models import RedFlagSource  # noqa: E402
 from build_registry import build_registry  # noqa: E402
-from prompts import build_extraction_prompt, build_verification_prompt  # noqa: E402
+from prompts import (  # noqa: E402
+    build_extraction_prompt,
+    build_shaping_prompt,
+    build_verification_prompt,
+)
 
 DEFAULT_MODEL = "gpt-5.4-mini"
 DEFAULT_PARALLEL_WORKERS = 4
@@ -254,6 +263,62 @@ def extract_red_flags(document_text: str, model: str | None = None) -> list[dict
     return parsed.get("red_flags", [])
 
 
+DEFAULT_SHAPING_MODEL = "gpt-5.4-mini"
+
+
+def shape_red_flags(candidates: list[dict], model: str | None = None) -> list[dict]:
+    """Rewrite the 'description' field on each candidate via a second LLM pass.
+
+    The extraction prompt now returns descriptions in source-faithful wording;
+    this pass normalizes them to noun-subject grammar and merges dependent
+    explanatory sentences. Metadata fields are untouched.
+    """
+    if not candidates:
+        return candidates
+
+    descriptions = [c.get("description", "") for c in candidates]
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        print("Error: OPENAI_API_KEY environment variable is not set.", file=sys.stderr)
+        sys.exit(1)
+
+    model = model or os.environ.get("OPENAI_SHAPING_MODEL", DEFAULT_SHAPING_MODEL)
+    client = OpenAI(api_key=api_key)
+
+    messages = build_shaping_prompt(descriptions)
+
+    print(f"Shaping {len(candidates)} candidate descriptions with {model}...")
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        response_format={"type": "json_object"},
+        temperature=0.0,
+    )
+
+    content = response.choices[0].message.content
+    parsed = json.loads(content)
+    results = parsed.get("results", [])
+
+    shaped_by_index = {
+        r["index"]: r["description"]
+        for r in results
+        if isinstance(r.get("index"), int) and isinstance(r.get("description"), str)
+    }
+
+    rewritten = 0
+    shaped_candidates = []
+    for i, candidate in enumerate(candidates):
+        new_desc = shaped_by_index.get(i)
+        if new_desc and new_desc != candidate.get("description"):
+            candidate = {**candidate, "description": new_desc}
+            rewritten += 1
+        shaped_candidates.append(candidate)
+
+    print(f"  Shaper rewrote {rewritten} of {len(candidates)} description(s).")
+    return shaped_candidates
+
+
 DEFAULT_VERIFICATION_MODEL = "gpt-4o-mini"
 
 
@@ -393,7 +458,7 @@ def discover_sources() -> list[str]:
     return sources
 
 
-def process_one(source: str, force: bool, manifest: list[dict], source_url: str | None = None, verify: bool = True, force_handcrafted: bool = False) -> dict | None:
+def process_one(source: str, force: bool, manifest: list[dict], source_url: str | None = None, shape: bool = True, verify: bool = True, force_handcrafted: bool = False) -> dict | None:
     """Process a single source (PDF path or URL).
 
     Returns a manifest entry dict on success, or None on skip/failure.
@@ -448,6 +513,13 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
 
     print(f"LLM returned {len(raw_flags)} red flag(s) for {slug}.")
 
+    if shape:
+        try:
+            raw_flags = shape_red_flags(raw_flags)
+        except Exception as e:
+            print(f"Error during shaping for {source}: {e}", file=sys.stderr)
+            return None
+
     if verify:
         try:
             raw_flags = verify_red_flags(raw_flags, force_handcrafted=force_handcrafted)
@@ -478,7 +550,7 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
     return manifest_entry
 
 
-def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | None = None, verify: bool = True, force_handcrafted: bool = False) -> None:
+def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | None = None, shape: bool = True, verify: bool = True, force_handcrafted: bool = False) -> None:
     """Discover and process all sources in batch mode."""
     sources = discover_sources()
 
@@ -511,7 +583,7 @@ def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | 
         # Sequential
         for source in pending:
             url = get_source_url(source, registry)
-            entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify, force_handcrafted=force_handcrafted)
+            entry = process_one(source, force=force, manifest=manifest, source_url=url, shape=shape, verify=verify, force_handcrafted=force_handcrafted)
             if entry:
                 new_entries.append(entry)
     else:
@@ -519,7 +591,7 @@ def run_batch(force: bool, workers: int | None, serial_range: tuple[int, int] | 
         print(f"Running with {workers} parallel worker(s).")
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
-                executor.submit(process_one, source, force, manifest, get_source_url(source, registry), verify, force_handcrafted): source
+                executor.submit(process_one, source, force, manifest, get_source_url(source, registry), shape, verify, force_handcrafted): source
                 for source in pending
             }
             for future in as_completed(futures):
@@ -548,6 +620,10 @@ def main() -> None:
     force = "--force" in args
     if force:
         args.remove("--force")
+
+    shape = "--no-shape" not in args
+    if not shape:
+        args.remove("--no-shape")
 
     verify = "--no-verify" not in args
     if not verify:
@@ -598,7 +674,7 @@ def main() -> None:
 
     if len(args) == 0:
         # Batch mode
-        run_batch(force=force, workers=workers, serial_range=serial_range, verify=verify, force_handcrafted=force_handcrafted)
+        run_batch(force=force, workers=workers, serial_range=serial_range, shape=shape, verify=verify, force_handcrafted=force_handcrafted)
     elif len(args) == 1:
         # Single-source mode
         if workers is not None:
@@ -615,7 +691,7 @@ def main() -> None:
 
         registry = load_sources_registry()
         url = get_source_url(source, registry)
-        entry = process_one(source, force=force, manifest=manifest, source_url=url, verify=verify, force_handcrafted=force_handcrafted)
+        entry = process_one(source, force=force, manifest=manifest, source_url=url, shape=shape, verify=verify, force_handcrafted=force_handcrafted)
         if entry is None:
             sys.exit(1)
 
