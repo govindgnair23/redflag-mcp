@@ -230,10 +230,16 @@ uv run python scripts/extract.py --range 001-005 --parallel
 # Force re-extract a range
 uv run python scripts/extract.py --force --range 001-005 --parallel
 
+# Skip shaping (descriptions stay verbatim from extraction; useful for A/B comparison)
+uv run python scripts/extract.py --no-shape --parallel
+
 # Skip verification (raw extraction output, no false-positive filtering)
 uv run python scripts/extract.py --no-verify --parallel
 
-# Use handcrafted prompt instead of optimized (useful for A/B comparison)
+# Skip both passes (raw extractor output only)
+uv run python scripts/extract.py --no-shape --no-verify --parallel
+
+# Use handcrafted verifier prompt instead of optimized (useful for A/B comparison)
 uv run python scripts/extract.py --prompt handcrafted --parallel
 ```
 
@@ -263,13 +269,14 @@ For single-source PDFs, make sure `sources.yaml` maps the file's serial prefix t
 ### What it does
 
 1. **Fetches the document** — downloads the web page (strips nav/footer/scripts) or reads text from the PDF via pdfplumber
-2. **Sends to OpenAI** — prompts `gpt-4o-mini` (override with `OPENAI_EXTRACTION_MODEL`) to extract every distinct AML red flag indicator as structured JSON
-3. **Verifies** — a second LLM call classifies each candidate as a genuine red flag or false positive (compliance guidance, regulatory instruction, etc.) and removes false positives. Skip with `--no-verify`. See [Red Flag Verification](#red-flag-verification) below.
-4. **Infers regulator** — when a `source_url` is available, the regulator is inferred deterministically from the URL domain (e.g. `ofac.treasury.gov` → `OFAC`), overriding LLM extraction
-5. **Validates** — each returned flag is checked against the `RedFlagSource` schema; invalid entries are skipped with a warning
-6. **Writes YAML** — saves to `data/source/<slug>.yaml`, one entry per red flag
-7. **Updates the manifest** — records the source in `data/source/.extracted_sources.yaml` to prevent re-processing
-8. **Rebuilds the source registry** — updates `red_flag_sources/registry.csv` after successful batch or single-source extraction
+2. **Extracts** — prompts the configured OpenAI model (override with `OPENAI_EXTRACTION_MODEL`) to extract every distinct AML red flag indicator and tag all metadata fields as structured JSON. Descriptions are returned in source-faithful wording.
+3. **Shapes** — a second LLM call rewrites only the `description` field: prepends a noun subject when missing, merges dependent explanatory sentences, generalizes case-specific numbers, and strips stray named facts. Skip with `--no-shape`. See [Red Flag Shaping](#red-flag-shaping) below.
+4. **Verifies** — a third LLM call classifies each candidate as a genuine red flag or false positive (compliance guidance, regulatory instruction, etc.) and removes false positives. Skip with `--no-verify`. See [Red Flag Verification](#red-flag-verification) below.
+5. **Infers regulator** — when a `source_url` is available, the regulator is inferred deterministically from the URL domain (e.g. `ofac.treasury.gov` → `OFAC`), overriding LLM extraction
+6. **Validates** — each returned flag is checked against the `RedFlagSource` schema; invalid entries are skipped with a warning
+7. **Writes YAML** — saves to `data/source/<slug>.yaml`, one entry per red flag
+8. **Updates the manifest** — records the source in `data/source/.extracted_sources.yaml` to prevent re-processing
+9. **Rebuilds the source registry** — updates `red_flag_sources/registry.csv` after successful batch or single-source extraction
 
 ### Output schema
 
@@ -303,9 +310,36 @@ Each entry in the YAML file has the following fields:
 
 ---
 
+## Red Flag Shaping
+
+Between extraction and verification, a shaping pass rewrites only the `description` field on each candidate so the corpus reads consistently. It does not touch metadata.
+
+### What it does
+
+- Prepends a concrete noun subject ("Customers," "Entities or individuals," "Transactions," etc.) when the source wording starts with a verb phrase or orphaned predicate.
+- Merges dependent explanatory sentences ("Such…", "Similarly…", "These…") into the preceding sentence so each indicator reads as one unit.
+- Generalizes case-specific dollar amounts, percentages, and counts (`"$100 million"` → `"large sums (e.g., $100 million)"`; `"two exchanges"` → `"exchanges"`), while leaving structural numbers like CTR thresholds alone.
+- Strips named persons, companies, or one-off facts that slipped through extraction.
+
+The shaper uses the same default model as extraction (`gpt-5.4-mini`); override with `OPENAI_SHAPING_MODEL`.
+
+### Skipping shaping
+
+```bash
+# Single source — keep descriptions verbatim from extraction
+uv run python scripts/extract.py --force --no-shape red_flag_sources/pdf/048*.pdf
+
+# Skip both shaping and verification (raw extractor output)
+uv run python scripts/extract.py --force --no-shape --no-verify red_flag_sources/pdf/048*.pdf
+```
+
+Use `--no-shape` when debugging the extraction prompt or comparing shaped vs. raw output.
+
+---
+
 ## Red Flag Verification
 
-The extraction pipeline includes a second-stage LLM verifier that filters out false positives — items that look like red flags but are actually compliance guidance, regulatory instructions, case narratives, or general background. The verifier makes a single OpenAI call per document batch.
+The extraction pipeline includes a third-stage LLM verifier that filters out false positives — items that look like red flags but are actually compliance guidance, regulatory instructions, case narratives, or general background. The verifier makes a single OpenAI call per document batch.
 
 ### How it works
 
