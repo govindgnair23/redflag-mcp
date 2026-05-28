@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSPy — How It Works &amp; How We Use It</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #f7f8fa;
+      color: #1a1d23;
+      line-height: 1.65;
+      font-size: 15px;
+    }
+
+    /* ── Layout ─────────────────────────────────────────────── */
+    .page { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    h2 { font-size: 1.25rem; font-weight: 700; margin: 48px 0 16px; color: #111; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; }
+    h3 { font-size: 1rem; font-weight: 700; margin: 28px 0 10px; color: #374151; }
+    p  { margin-bottom: 14px; color: #374151; }
+    ul { padding-left: 20px; margin-bottom: 14px; color: #374151; }
+    li { margin-bottom: 6px; }
+
+    .subtitle { color: #6b7280; font-size: 1rem; margin-bottom: 40px; }
+
+    /* ── Cards ──────────────────────────────────────────────── */
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .card-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+    @media (max-width: 600px) { .card-row { grid-template-columns: 1fr; } }
+
+    /* ── Code ───────────────────────────────────────────────── */
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 8px;
+      padding: 18px 20px;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      overflow-x: auto;
+      margin-bottom: 16px;
+    }
+    code { font-family: "SF Mono", "Fira Code", "Consolas", monospace; }
+    .kw  { color: #93c5fd; }   /* blue  — keywords */
+    .st  { color: #86efac; }   /* green — strings  */
+    .cm  { color: #64748b; }   /* gray  — comments */
+    .fn  { color: #fde68a; }   /* amber — functions */
+    .cl  { color: #f9a8d4; }   /* pink  — classes  */
+    .nu  { color: #fb923c; }   /* orange — numbers  */
+
+    /* ── Callouts ───────────────────────────────────────────── */
+    .callout {
+      display: flex;
+      gap: 14px;
+      background: #f0f9ff;
+      border-left: 4px solid #38bdf8;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+    }
+    .callout.green  { background: #f0fdf4; border-color: #4ade80; }
+    .callout.amber  { background: #fffbeb; border-color: #fbbf24; }
+    .callout.purple { background: #faf5ff; border-color: #a855f7; }
+    .callout-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
+    .callout-body p:last-child { margin-bottom: 0; }
+
+    /* ── Pipeline diagram ───────────────────────────────────── */
+    .pipeline {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      margin: 24px 0;
+      overflow-x: auto;
+    }
+    .pipe-step {
+      flex: 1;
+      min-width: 120px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #374151;
+      position: relative;
+    }
+    .pipe-step .step-num {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #9ca3af;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    .pipe-step.highlight { background: #eff6ff; border-color: #93c5fd; color: #1d4ed8; }
+    .pipe-step.verify    { background: #faf5ff; border-color: #c4b5fd; color: #7c3aed; }
+    .pipe-step.shape     { background: #f0fdf4; border-color: #86efac; color: #166534; }
+    .pipe-arrow {
+      display: flex;
+      align-items: center;
+      color: #9ca3af;
+      font-size: 1.1rem;
+      padding: 0 4px;
+      flex-shrink: 0;
+    }
+
+    /* ── DSPy flow diagram ──────────────────────────────────── */
+    .dspy-flow {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 16px;
+      align-items: center;
+      margin: 24px 0;
+    }
+    .flow-box {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 0.82rem;
+    }
+    .flow-box h4 { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #9ca3af; margin-bottom: 8px; }
+    .flow-box ul { padding-left: 14px; margin: 0; }
+    .flow-box li { margin-bottom: 4px; }
+    .flow-arrow { text-align: center; font-size: 1.5rem; color: #9ca3af; }
+
+    /* ── Badge ──────────────────────────────────────────────── */
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 99px;
+      margin-right: 6px;
+    }
+    .badge-blue   { background: #dbeafe; color: #1d4ed8; }
+    .badge-green  { background: #dcfce7; color: #166534; }
+    .badge-purple { background: #f3e8ff; color: #7c3aed; }
+    .badge-amber  { background: #fef3c7; color: #92400e; }
+    .badge-red    { background: #fee2e2; color: #991b1b; }
+
+    /* ── Comparison table ───────────────────────────────────── */
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    @media (max-width: 600px) { .compare { grid-template-columns: 1fr; } }
+    .compare-col h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 8px 14px;
+      border-radius: 6px 6px 0 0;
+      margin: 0;
+    }
+    .compare-col.hand h4 { background: #fef3c7; color: #92400e; }
+    .compare-col.opt  h4 { background: #f3e8ff; color: #7c3aed; }
+    .compare-col pre { border-radius: 0 0 8px 8px; margin: 0; font-size: 0.75rem; }
+
+    /* ── Demo card ──────────────────────────────────────────── */
+    .demo-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 12px;
+      font-size: 0.82rem;
+    }
+    .demo-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      background: #f9fafb;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #6b7280;
+    }
+    .demo-body { padding: 12px 14px; }
+    .demo-body p { margin-bottom: 6px; font-size: 0.82rem; }
+    .demo-body .label { font-weight: 700; color: #6b7280; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.3px; }
+    .demo-body .value { color: #111; }
+    .demo-body .reasoning { color: #6b7280; font-style: italic; }
+
+    /* ── Separator ──────────────────────────────────────────── */
+    hr { border: none; border-top: 1px solid #e5e7eb; margin: 40px 0; }
+
+    /* ── TOC ─────────────────────────────────────────────────── */
+    .toc {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+    .toc h3 { margin: 0 0 12px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: #9ca3af; }
+    .toc ol { padding-left: 20px; margin: 0; }
+    .toc li { margin-bottom: 4px; }
+    .toc a { color: #2563eb; text-decoration: none; font-size: 0.88rem; }
+    .toc a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ── Header ──────────────────────────────────────────────── -->
+  <h1>DSPy — How It Works &amp; How We Use It</h1>
+  <p class="subtitle">A guide to programmatic prompt optimization in the redflag-mcp pipeline</p>
+
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#what-is-dspy">What is DSPy?</a></li>
+      <li><a href="#core-concepts">Core Concepts</a></li>
+      <li><a href="#pipeline">Where DSPy fits in the extraction pipeline</a></li>
+      <li><a href="#our-setup">Our DSPy setup</a></li>
+      <li><a href="#optimization-loop">The optimization loop</a></li>
+      <li><a href="#labelled-data">Labelled data and reasoning</a></li>
+      <li><a href="#optimized-prompt">What the optimized prompt looks like</a></li>
+      <li><a href="#production">How the optimized prompt is used in production</a></li>
+      <li><a href="#iteration">Iterating when you find new failure modes</a></li>
+    </ol>
+  </div>
+
+  <!-- ── 1. What is DSPy ─────────────────────────────────────── -->
+  <h2 id="what-is-dspy">1. What is DSPy?</h2>
+
+  <p>DSPy is a framework from Stanford that treats prompts as <strong>learnable programs</strong> rather than hand-written strings. Instead of manually tuning a prompt by trial and error, you define <em>what</em> you want the LLM to do (the Signature), wire it into a Module, write a metric, point it at labelled examples, and let the optimizer search for the best prompt automatically.</p>
+
+  <div class="callout">
+    <span class="callout-icon">💡</span>
+    <div class="callout-body">
+      <p><strong>The key insight:</strong> DSPy doesn't change model weights. It searches over the discrete space of <em>(instruction text, few-shot example subsets)</em> and picks the combination that scores highest on your metric. No gradient descent — just structured search.</p>
+    </div>
+  </div>
+
+  <div class="card-row">
+    <div class="card">
+      <h3>Traditional approach</h3>
+      <ul>
+        <li>Write a long, detailed system prompt</li>
+        <li>Test it manually on a few examples</li>
+        <li>Tweak wording when you find failures</li>
+        <li>Repeat indefinitely</li>
+        <li>No systematic way to know if you're improving</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>DSPy approach</h3>
+      <ul>
+        <li>Define the task as a Signature</li>
+        <li>Collect labelled examples</li>
+        <li>Write a metric (what "good" means)</li>
+        <li>Run the optimizer — it searches automatically</li>
+        <li>Measure improvement on a held-out test set</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── 2. Core Concepts ────────────────────────────────────── -->
+  <h2 id="core-concepts">2. Core Concepts</h2>
+
+  <h3>Signature — what the task is</h3>
+  <p>A Signature declares the task's inputs and outputs. The docstring becomes the instruction to the LLM. DSPy can rewrite this during optimization.</p>
+
+<pre><code><span class="kw">class</span> <span class="cl">RedFlagClassifier</span>(dspy.Signature):
+    <span class="st">"""Classify whether a candidate description extracted from a regulatory
+    document is a genuine AML red flag (observable suspicious behavior) or
+    not (compliance guidance, regulatory instruction, case narrative, etc.)."""</span>
+
+    description: <span class="cl">str</span> = dspy.InputField(
+        desc=<span class="st">"A candidate red flag description extracted from a regulatory document."</span>
+    )
+    is_red_flag: <span class="cl">bool</span> = dspy.OutputField(
+        desc=<span class="st">"True if observable suspicious behavior; False if compliance guidance."</span>
+    )</code></pre>
+
+  <h3>Module — how the task is called</h3>
+  <p>A Module wraps the Signature and controls <em>how</em> the LLM is prompted. Two common options:</p>
+
+  <div class="card-row">
+    <div class="card">
+      <span class="badge badge-blue">Predict</span>
+      <h3 style="margin-top:10px">Direct classification</h3>
+      <p>Description → Is Red Flag</p>
+      <p>Faster and cheaper. Works well when the boundary is clear.</p>
+<pre><code>dspy.Predict(RedFlagClassifier)</code></pre>
+    </div>
+    <div class="card">
+      <span class="badge badge-purple">ChainOfThought</span>
+      <h3 style="margin-top:10px">Reason then classify</h3>
+      <p>Description → <em>Reasoning</em> → Is Red Flag</p>
+      <p>More accurate on subtle cases. Costs one extra field per call. <strong>This is what we use.</strong></p>
+<pre><code>dspy.ChainOfThought(RedFlagClassifier)</code></pre>
+    </div>
+  </div>
+
+  <h3>Optimizer — how the prompt is improved</h3>
+  <p>We use <code>BootstrapFewShotWithRandomSearch</code>. It:</p>
+  <ol style="padding-left:20px; margin-bottom:14px; color:#374151;">
+    <li>Runs the current module on training examples</li>
+    <li>Collects traces where the model got the right answer — these become <strong>candidate few-shot demos</strong></li>
+    <li>Randomly samples different subsets of those demos (8 candidate programs)</li>
+    <li>Scores each candidate against the training set using your metric</li>
+    <li>Returns the highest-scoring combination of instructions + demos</li>
+  </ol>
+
+  <h3>Metric — what "good" means</h3>
+  <p>Our metric penalizes false positives more than false negatives, reflecting the goal of eliminating compliance guidance from the output:</p>
+
+<pre><code><span class="kw">def</span> <span class="fn">precision_weighted_metric</span>(example, prediction, trace=<span class="kw">None</span>) -> <span class="cl">float</span>:
+    <span class="kw">if</span> label == predicted:   <span class="kw">return</span> <span class="nu">1.0</span>    <span class="cm"># correct</span>
+    <span class="kw">if</span> predicted <span class="kw">and not</span> label: <span class="kw">return</span> <span class="nu">-0.5</span> <span class="cm"># false positive — penalise harder</span>
+    <span class="kw">return</span> <span class="nu">0.0</span>                              <span class="cm"># false negative</span></code></pre>
+
+  <!-- ── 3. Pipeline ─────────────────────────────────────────── -->
+  <h2 id="pipeline">3. Where DSPy fits in the extraction pipeline</h2>
+
+  <p>The full extraction pipeline for each document is:</p>
+
+  <div class="pipeline">
+    <div class="pipe-step highlight">
+      <span class="step-num">Step 1</span>
+      Extract
+      <div style="font-size:0.68rem;font-weight:400;color:#6b7280;margin-top:4px">LLM reads the PDF/URL and pulls out candidate indicators</div>
+    </div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-step shape">
+      <span class="step-num">Step 2</span>
+      Shape
+      <div style="font-size:0.68rem;font-weight:400;color:#6b7280;margin-top:4px">Rewrites descriptions — adds noun subjects, merges dependent sentences</div>
+    </div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-step verify">
+      <span class="step-num">Step 3</span>
+      Verify ← DSPy
+      <div style="font-size:0.68rem;font-weight:400;color:#6b7280;margin-top:4px">Classifies each candidate as genuine red flag or false positive</div>
+    </div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-step">
+      <span class="step-num">Step 4</span>
+      Validate &amp; Write
+      <div style="font-size:0.68rem;font-weight:400;color:#6b7280;margin-top:4px">Schema validation, regulator inference, YAML output</div>
+    </div>
+  </div>
+
+  <p>DSPy is involved <strong>only in Step 3</strong>. It is offline — it runs once during optimization and produces a <code>data/verifier_prompt.json</code> file. At runtime, the verifier makes a single direct OpenAI API call per document using that saved prompt. DSPy itself is not involved at inference time.</p>
+
+  <div class="callout amber">
+    <span class="callout-icon">⚠️</span>
+    <div class="callout-body">
+      <p><strong>Online vs Offline:</strong> DSPy runs <em>offline</em> (once, to find the best prompt). The production verifier runs <em>online</em> (every extraction), using the saved result. You only need <code>uv sync --extra optimize</code> to run optimization — not for everyday extractions.</p>
+    </div>
+  </div>
+
+  <!-- ── 4. Our setup ────────────────────────────────────────── -->
+  <h2 id="our-setup">4. Our DSPy setup</h2>
+
+<pre><code><span class="cm"># scripts/optimize_verifier.py</span>
+
+<span class="cm"># 1. Configure the LLM</span>
+lm = dspy.LM(<span class="st">"openai/gpt-5.4-nano"</span>)   <span class="cm"># cheap model for optimization search</span>
+dspy.configure(lm=lm)
+
+<span class="cm"># 2. Create the module (ChainOfThought = reason before classifying)</span>
+program = <span class="cl">RedFlagCoT</span>()   <span class="cm"># wraps dspy.ChainOfThought(RedFlagClassifier)</span>
+
+<span class="cm"># 3. Run the optimizer</span>
+optimizer = dspy.BootstrapFewShotWithRandomSearch(
+    metric=precision_weighted_metric,
+    max_bootstrapped_demos=<span class="nu">4</span>,    <span class="cm"># up to 4 demos bootstrapped from training</span>
+    max_labeled_demos=<span class="nu">4</span>,         <span class="cm"># up to 4 demos from human-labelled examples</span>
+    num_candidate_programs=<span class="nu">8</span>,     <span class="cm"># try 8 different demo subsets</span>
+    num_threads=<span class="nu">4</span>,
+)
+optimized = optimizer.compile(program, trainset=train_set)
+
+<span class="cm"># 4. Save — this is what the production verifier loads</span>
+optimized.save(<span class="st">"data/verifier_prompt.json"</span>)</code></pre>
+
+  <div class="card-row">
+    <div class="card">
+      <h3>Model choice</h3>
+      <p><code>gpt-5.4-nano</code> is used for optimization because the search runs ~700 LLM calls (8 candidates × 88 examples). A cheap model keeps the one-time cost manageable. The <em>production</em> verifier defaults to <code>gpt-4o-mini</code>.</p>
+    </div>
+    <div class="card">
+      <h3>Train / test split</h3>
+      <p>88 labelled examples are split 70/30. The optimizer sees only the 70% training set. The 30% test set is used after optimization to measure real-world improvement.</p>
+    </div>
+  </div>
+
+  <!-- ── 5. Optimization loop ────────────────────────────────── -->
+  <h2 id="optimization-loop">5. The optimization loop</h2>
+
+  <div class="dspy-flow">
+    <div class="flow-box">
+      <h4>Input</h4>
+      <ul>
+        <li>88 labelled examples<br><small style="color:#9ca3af">(description + flag + reasoning)</small></li>
+        <li>70% train / 30% test split</li>
+        <li>Precision-weighted metric</li>
+        <li>Signature + ChainOfThought module</li>
+      </ul>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box">
+      <h4>BootstrapFewShotWithRandomSearch</h4>
+      <ul>
+        <li>Run module on training examples</li>
+        <li>Collect traces where prediction = label<br><small style="color:#9ca3af">(these become candidate demos)</small></li>
+        <li>Randomly sample 8 different demo subsets</li>
+        <li>Score each subset on training set</li>
+        <li>Pick highest-scoring program</li>
+      </ul>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box">
+      <h4>Output</h4>
+      <ul>
+        <li>Optimized instructions</li>
+        <li>Best few-shot demo set<br><small style="color:#9ca3af">(with reasoning traces)</small></li>
+        <li>Saved to <code>verifier_prompt.json</code></li>
+        <li>Test set metrics reported</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout purple">
+    <span class="callout-icon">🔍</span>
+    <div class="callout-body">
+      <p><strong>Bootstrap = self-generated labels.</strong> When DSPy runs the current program on training examples and the model gets it right, it saves that reasoning trace as a "bootstrapped demo". This is how it creates the few-shot examples — not from scratch, but by keeping the traces that already work. Human-labelled reasoning overrides bootstrapped reasoning when present.</p>
+    </div>
+  </div>
+
+  <!-- ── 6. Labelled data ────────────────────────────────────── -->
+  <h2 id="labelled-data">6. Labelled data and reasoning</h2>
+
+  <p>Our labelled data lives in <code>data/source/labelled/</code>. Each YAML item has the standard red flag fields plus <code>flag</code> (True/False) and optionally <code>reasoning</code>.</p>
+
+  <div class="compare">
+    <div class="compare-col hand">
+      <h4>Without reasoning — DSPy bootstraps its own</h4>
+<pre><code>- id: 042-01
+  description: >-
+    Transactions or customers connected
+    to jurisdictions under OFAC sanctions.
+  flag: True</code></pre>
+    </div>
+    <div class="compare-col opt">
+      <h4>With reasoning — DSPy uses yours directly</h4>
+<pre><code>- id: 048-01
+  description: >-
+    The organization conducts an OFAC
+    risk assessment in a manner...
+  flag: False
+  reasoning: >-
+    This describes what the institution
+    must do, not observable suspicious
+    behavior. It is a compliance
+    program obligation.</code></pre>
+    </div>
+  </div>
+
+  <div class="callout green">
+    <span class="callout-icon">✅</span>
+    <div class="callout-body">
+      <p><strong>Why reasoning on False examples matters most.</strong> The hardest classification problem is distinguishing <em>"looks like a red flag but is actually a regulatory instruction"</em>. Human-written reasoning on these edge cases gives DSPy precise signal about the failure mode, rather than letting it guess from the label alone. Currently 52 of 96 examples have human reasoning — all the False cases.</p>
+    </div>
+  </div>
+
+  <p>In <code>optimize_verifier.py</code>, examples with reasoning are loaded as labeled demos with the full chain-of-thought trace included. DSPy treats these as higher-quality signal than bootstrapped traces:</p>
+
+<pre><code><span class="kw">kwargs</span> = {
+    <span class="st">"description"</span>: item[<span class="st">"description"</span>],
+    <span class="st">"is_red_flag"</span>: <span class="cl">bool</span>(item[<span class="st">"flag"</span>]),
+}
+<span class="kw">if</span> item.get(<span class="st">"reasoning"</span>):
+    kwargs[<span class="st">"reasoning"</span>] = item[<span class="st">"reasoning"</span>]   <span class="cm"># human trace → labeled demo</span>
+
+ex = dspy.Example(**kwargs).with_inputs(<span class="st">"description"</span>)</code></pre>
+
+  <!-- ── 7. What the optimized prompt looks like ─────────────── -->
+  <h2 id="optimized-prompt">7. What the optimized prompt looks like</h2>
+
+  <p>DSPy doesn't just add examples to our handcrafted prompt — it <strong>replaces the instructions</strong> with something it found worked better, and adds its own few-shot demos with reasoning traces. Here's what our actual <code>data/verifier_prompt.json</code> contains:</p>
+
+  <h3>Instructions — simplified dramatically</h3>
+  <div class="compare">
+    <div class="compare-col hand">
+      <h4>Handcrafted (our prompts.py)</h4>
+<pre style="font-size:0.72rem"><code>You are an AML compliance expert...
+
+## What IS a red flag?
+A red flag is a description of suspicious,
+observable behavior...
+
+## What is NOT a red flag?
+- Compliance program guidance...
+- Regulatory directives...
+- SAR filing instructions...
+[8 more exclusions]
+
+## Classification rules
+1. Does it describe observable behavior?
+2. Is it reusable?
+3. Could a TM system detect this?
+4. Does it stand alone?
+
+If ALL four answers are yes → flag: true
+...</code></pre>
+    </div>
+    <div class="compare-col opt">
+      <h4>DSPy-optimized (verifier_prompt.json)</h4>
+<pre style="font-size:0.72rem"><code>Classify whether a candidate description
+extracted from a regulatory document is a
+genuine AML red flag (observable suspicious
+behavior) or not (compliance guidance,
+regulatory instruction, case narrative,
+etc.).</code></pre>
+      <p style="font-size:0.8rem; color:#7c3aed; margin-top:8px;">One sentence. DSPy found that detailed rules were less useful than concrete examples with reasoning.</p>
+    </div>
+  </div>
+
+  <h3>Demos — the real value</h3>
+  <p>DSPy selected 4 few-shot examples from the training set. These appear in every verification call:</p>
+
+  <div class="demo-card">
+    <div class="demo-header">
+      <span class="badge badge-green">True</span>
+      Demo 1 — bootstrapped (DSPy generated reasoning)
+    </div>
+    <div class="demo-body">
+      <p><span class="label">Description</span><br><span class="value">The use of shell companies or other legal entities and arrangements to avoid detection</span></p>
+      <p><span class="label">Reasoning</span><br><span class="reasoning">Using shell companies or other legal entities/arrangements to avoid detection is an observable, suspicious behavior that indicates potential attempts to evade regulatory scrutiny and sanctions.</span></p>
+    </div>
+  </div>
+
+  <div class="demo-card">
+    <div class="demo-header">
+      <span class="badge badge-green">True</span>
+      Demo 2 — bootstrapped
+    </div>
+    <div class="demo-body">
+      <p><span class="label">Description</span><br><span class="value">Conducted or facilitated significant trade with North Korea</span></p>
+      <p><span class="label">Reasoning</span><br><span class="reasoning">Actual facilitation or involvement in significant trade with North Korea is an observable high-risk activity. A compliance officer could detect and flag this based on transaction and trade records.</span></p>
+    </div>
+  </div>
+
+  <div class="demo-card">
+    <div class="demo-header">
+      <span class="badge badge-red">False</span>
+      Demo 3 — labelled (no reasoning) — subtle boundary case
+    </div>
+    <div class="demo-body">
+      <p><span class="label">Description</span><br><span class="value">Special attention to business relationships and transactions with the DPRK, including DPRK companies, financial institutions, and those acting on their behalf</span></p>
+      <p style="font-size:0.78rem; color:#9ca3af; font-style:italic;">This looks like a red flag about DPRK exposure — but it is a regulatory instruction telling institutions what to watch for, not an observation of suspicious behavior. DSPy found this boundary case from the labelled data.</p>
+    </div>
+  </div>
+
+  <div class="demo-card">
+    <div class="demo-header">
+      <span class="badge badge-green">True</span>
+      Demo 4 — labelled
+    </div>
+    <div class="demo-body">
+      <p><span class="label">Description</span><br><span class="value">Any customers that may be involved in the sale, supply, or transfer of the specified items to Russia or to jurisdictions previously identified as posing a high risk of Russian sanctions evasion.</span></p>
+    </div>
+  </div>
+
+  <!-- ── 8. Production use ────────────────────────────────────── -->
+  <h2 id="production">8. How the optimized prompt is used in production</h2>
+
+  <p>Once <code>data/verifier_prompt.json</code> exists, <code>build_verification_prompt()</code> in <code>prompts.py</code> loads it automatically. The production verifier makes a <strong>single direct OpenAI API call</strong> — no DSPy involved at runtime.</p>
+
+<pre><code><span class="cm"># prompts.py — simplified</span>
+<span class="kw">def</span> <span class="fn">build_verification_prompt</span>(descriptions, force_handcrafted=<span class="kw">False</span>):
+    optimized = <span class="kw">None if</span> force_handcrafted <span class="kw">else</span> _load_optimized_prompt()
+
+    <span class="kw">if</span> optimized:
+        <span class="cm"># Use DSPy-optimized instructions + inject demos as examples</span>
+        system_prompt = _build_optimized_system_prompt(optimized)
+    <span class="kw">else</span>:
+        <span class="cm"># Fall back to handcrafted prompt</span>
+        system_prompt = _HANDCRAFTED_SYSTEM_PROMPT
+
+    <span class="cm"># Same user message either way: numbered list of descriptions</span>
+    user_prompt = <span class="st">f"Classify each candidate...\n[0] {desc0}\n[1] {desc1}..."</span>
+    <span class="kw">return</span> [{<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: system_prompt},
+            {<span class="st">"role"</span>: <span class="st">"user"</span>,   <span class="st">"content"</span>: user_prompt}]</code></pre>
+
+  <h3>Prompt selection at runtime</h3>
+  <table style="width:100%;border-collapse:collapse;font-size:0.83rem;margin-bottom:16px;">
+    <thead>
+      <tr style="background:#f9fafb;">
+        <th style="text-align:left;padding:8px 12px;border:1px solid #e5e7eb;">Condition</th>
+        <th style="text-align:left;padding:8px 12px;border:1px solid #e5e7eb;">Prompt used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>verifier_prompt.json</code> exists (default)</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><span class="badge badge-purple">Optimized</span> DSPy instructions + demos</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>verifier_prompt.json</code> missing</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><span class="badge badge-amber">Handcrafted</span> prompts.py fallback</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>--prompt handcrafted</code> flag</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><span class="badge badge-amber">Handcrafted</span> even if JSON exists</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>--no-verify</code> flag</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><span class="badge badge-red">Skip</span> verification entirely</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ── 9. Iterating ────────────────────────────────────────── -->
+  <h2 id="iteration">9. Iterating when you find new failure modes</h2>
+
+  <div class="callout amber">
+    <span class="callout-icon">⚠️</span>
+    <div class="callout-body">
+      <p><strong>Changing the handcrafted prompt in <code>prompts.py</code> has no effect while <code>verifier_prompt.json</code> exists.</strong> The optimized prompt completely overrides it. You must either delete the JSON file or re-run optimization after updating labelled data.</p>
+    </div>
+  </div>
+
+  <h3>Recommended workflow for a new failure mode</h3>
+
+  <div class="card">
+    <ol style="padding-left:20px; color:#374151;">
+      <li style="margin-bottom:14px;">
+        <strong>Update the handcrafted prompt</strong> in <code>prompts.py</code> to handle the new case. This is your human-readable specification.<br>
+        <code style="font-size:0.8rem; color:#7c3aed;">scripts/prompts.py → _HANDCRAFTED_SYSTEM_PROMPT</code>
+      </li>
+      <li style="margin-bottom:14px;">
+        <strong>Add the failure case to labelled data</strong> in <code>data/source/labelled/</code> with <code>flag</code> and a <code>reasoning</code> field explaining why it is/isn't a red flag.
+      </li>
+      <li style="margin-bottom:14px;">
+        <strong>Test the handcrafted prompt</strong> to confirm it handles the new case:<br>
+        <code style="font-size:0.8rem;">uv run python scripts/eval_verifier.py --prompt handcrafted</code>
+      </li>
+      <li style="margin-bottom:14px;">
+        <strong>Re-run optimization</strong> to produce a new <code>verifier_prompt.json</code>:<br>
+        <code style="font-size:0.8rem;">uv run python scripts/optimize_verifier.py</code>
+      </li>
+      <li style="margin-bottom:0;">
+        <strong>Compare prompts</strong> to confirm the optimized prompt is better:<br>
+        <code style="font-size:0.8rem;">uv run python scripts/eval_verifier.py --prompt handcrafted</code><br>
+        <code style="font-size:0.8rem;">uv run python scripts/eval_verifier.py --prompt optimized</code>
+      </li>
+    </ol>
+  </div>
+
+  <h3>Key files at a glance</h3>
+  <table style="width:100%;border-collapse:collapse;font-size:0.83rem;">
+    <thead>
+      <tr style="background:#f9fafb;">
+        <th style="text-align:left;padding:8px 12px;border:1px solid #e5e7eb;">File</th>
+        <th style="text-align:left;padding:8px 12px;border:1px solid #e5e7eb;">Purpose</th>
+        <th style="text-align:left;padding:8px 12px;border:1px solid #e5e7eb;">When to edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>scripts/prompts.py</code></td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">Handcrafted verification prompt — human specification</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">When you find a new failure mode</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>data/source/labelled/</code></td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">Labelled examples with flag + reasoning</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">Add new examples for every failure mode</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>scripts/optimize_verifier.py</code></td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">Runs DSPy optimization — one-time offline</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">After adding labelled data</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>data/verifier_prompt.json</code></td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">DSPy output — optimized instructions + demos</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">Never edit manually; regenerate via optimizer</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;"><code>scripts/eval_verifier.py</code></td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">Measures precision/recall on labelled data</td>
+        <td style="padding:8px 12px;border:1px solid #e5e7eb;">After any change to prompt or labelled data</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <p style="font-size:0.78rem; color:#9ca3af; text-align:center;">redflag-mcp · DSPy verifier documentation</p>
+
+</div>
+</body>
+</html>

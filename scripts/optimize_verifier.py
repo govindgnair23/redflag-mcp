@@ -75,8 +75,15 @@ class RedFlagCoT(dspy.Module):
 
 
 def load_labelled_examples() -> list[dspy.Example]:
-    """Load labelled YAML files and convert to DSPy Examples."""
+    """Load labelled YAML files and convert to DSPy Examples.
+
+    When a 'reasoning' field is present, it is included as a labeled
+    demonstration so DSPy uses the human-written reasoning rather than
+    bootstrapping its own. This is particularly useful for False examples
+    where the distinction from a genuine red flag is subtle.
+    """
     examples = []
+    with_reasoning = 0
     for path in sorted(LABELLED_DIR.glob("*.yaml")):
         with open(path) as f:
             docs = yaml.safe_load(f)
@@ -85,11 +92,16 @@ def load_labelled_examples() -> list[dspy.Example]:
         for item in docs:
             if "flag" not in item or "description" not in item:
                 continue
-            ex = dspy.Example(
-                description=item["description"],
-                is_red_flag=bool(item["flag"]),
-            ).with_inputs("description")
+            kwargs: dict = {
+                "description": item["description"],
+                "is_red_flag": bool(item["flag"]),
+            }
+            if item.get("reasoning"):
+                kwargs["reasoning"] = item["reasoning"]
+                with_reasoning += 1
+            ex = dspy.Example(**kwargs).with_inputs("description")
             examples.append(ex)
+    print(f"  {len(examples)} examples loaded ({with_reasoning} with human reasoning).")
     return examples
 
 

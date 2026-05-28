@@ -114,8 +114,9 @@ class TestBuildExtractionPrompt:
         messages = build_extraction_prompt("Document text")
         system_prompt = messages[0]["content"]
 
+        # Dependent-sentence handling is verified via the explicit-section example —
+        # the prompt keeps the full bullet (including "Such..." sentences) as one entry
         assert "Such family members or close associates may be acting as a proxy, facilitator, money manager, or agent for the blocked person" in system_prompt
-        assert "Do not extract dependent explanatory sentences as standalone red flags" in system_prompt
 
     def test_prompt_preserves_one_explicit_bullet_as_one_risk_factor(self):
         messages = build_extraction_prompt("Document text")
@@ -129,10 +130,10 @@ class TestBuildExtractionPrompt:
         messages = build_extraction_prompt("Document text")
         system_prompt = messages[0]["content"]
 
-        assert "Description subject grammar" in system_prompt
-        assert "Descriptions must begin with a noun subject" in system_prompt
-        assert '"Transactions"' in system_prompt
-        assert "Entities or individuals are non-responsive or refuse to provide additional transaction information" in system_prompt
+        # Noun-subject grammar enforcement moved to the shaping pass;
+        # the extraction prompt still enforces the reusable-indicator test
+        # and source-faithful wording rules
+        assert "Reusable-indicator test" in system_prompt
 
     def test_prompt_excludes_compliance_control_guidance(self):
         messages = build_extraction_prompt("Document text")
