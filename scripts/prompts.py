@@ -17,6 +17,8 @@ from redflag_mcp.config import (  # noqa: E402
     PRODUCT_TYPES,
     REGULATORS,
     RISK_LEVELS,
+    TRANSACTION_PATTERNS,
+    TYPOLOGY_FAMILIES,
 )
 
 
@@ -95,6 +97,12 @@ For each indicator identified in Step 1, populate the following fields:
 
 - "category" (string): Primary AML typology. Choose from: {sorted(CATEGORIES)}. When multiple apply, choose the one most specific to the observable behavior described, not the broadest.
 
+- "typology_family" (list of strings): Higher-level AML typology families this indicator belongs to. Prefer these values when applicable: {sorted(TYPOLOGY_FAMILIES)}. Use free-form strings only when no listed value fits. This is broader than "category" — an indicator can sit under multiple families (e.g., a structuring pattern tied to drug proceeds belongs to both "narcotics_proceeds" and a structuring-focused family if applicable). Empty list when no family is implied.
+
+- "transaction_patterns" (list of strings): Observable transaction-level patterns described or implied by the indicator. Prefer these values when applicable: {sorted(TRANSACTION_PATTERNS)}. Use free-form strings only when no listed value fits. Include all that apply. Empty list when the indicator is not transaction-pattern oriented (e.g., a pure KYC discrepancy).
+
+- "key_terms" (list of strings): Short, searchable phrases drawn from or implied by the indicator — instrument names, dollar thresholds, regulatory references, entity types, AML acronyms (e.g., "SAR", "CTR", "$10,000", "hawala", "shell company", "Bank Secrecy Act"). Free-form. Keep terms short — words or short phrases, not full sentences. Empty list when nothing distinctive applies.
+
 When in doubt about any metadata field, prefer narrower lists over speculation.
 
 ## Example
@@ -116,7 +124,10 @@ Source: "Non-routine foreign exchange transactions that may indirectly involve s
   "regulator": "FinCEN",
   "issued_date": "2022-06",
   "risk_level": "high",
-  "category": "sanctions_evasion"
+  "category": "sanctions_evasion",
+  "typology_family": ["sanctions_evasion"],
+  "transaction_patterns": ["unusual_international_wires", "pass_through_account_activity"],
+  "key_terms": ["foreign exchange", "sanctioned financial institutions", "import/export companies"]
 }}
 
 ## Compliance framework exclusion example
@@ -168,7 +179,10 @@ Source: "Failure to escalate the discrepancy in Customer G's business activity b
   "regulator": null,
   "issued_date": null,
   "risk_level": "medium",
-  "category": "customer_due_diligence"
+  "category": "customer_due_diligence",
+  "typology_family": [],
+  "transaction_patterns": ["identity_misrepresentation"],
+  "key_terms": ["CDD", "corporate registry", "business activity discrepancy"]
 }}
 
 ## Explicit section precedence example
@@ -209,7 +223,10 @@ Because the document has an explicit "Red Flags: Indicia of Sham Transactions" s
   "regulator": "OFAC",
   "issued_date": "2026-03-31",
   "risk_level": "medium",
-  "category": "sanctions_evasion"
+  "category": "sanctions_evasion",
+  "typology_family": ["sanctions_evasion"],
+  "transaction_patterns": ["third_party_payments", "shell_company_usage"],
+  "key_terms": ["blocked person", "sham transaction", "nominal owner", "proxy"]
 }}
 
 **Correct when the same explicit bullet continues with more generic sentences** — keep the bullet as one risk factor:
@@ -223,7 +240,10 @@ Because the document has an explicit "Red Flags: Indicia of Sham Transactions" s
   "regulator": "OFAC",
   "issued_date": "2026-03-31",
   "risk_level": "medium",
-  "category": "sanctions_evasion"
+  "category": "sanctions_evasion",
+  "typology_family": ["sanctions_evasion"],
+  "transaction_patterns": ["third_party_payments", "shell_company_usage"],
+  "key_terms": ["blocked person", "sham transaction", "nominal owner", "proxy", "agent-principal"]
 }}
 
 ## Output format
