@@ -69,6 +69,7 @@ INDUSTRY_TYPES = {
     "legal_accounting",           # NEW — FATF DNFBP, corruption advisories
     "logistics",
     "luxury_goods",               # NEW — autos, yachts, watches; cash-structuring vector
+    "manufacturing",              # NEW — export-control / dual-use sector
     "maritime_shipping",
     "money_services_business",    # was "money_services" — naming consistency
     "oil_and_gas",                # "energy" dropped — oil_and_gas is the AML-relevant subset
@@ -107,13 +108,16 @@ CUSTOMER_PROFILES = {
 }
 
 GEOGRAPHIC_FOOTPRINTS = {
+    "belarus",
     "canada",
     "caribbean",
     "central_america",
     "china",
     "domestic_us",
+    "east_asia",
     "eastern_europe",
     "high_risk_jurisdiction",
+    "hong_kong",
     "iran",
     "latin_america",
     "mexico",
@@ -125,6 +129,7 @@ GEOGRAPHIC_FOOTPRINTS = {
     "south_asia",
     "south_east_asia",
     "southwest_border",
+    "syria",
     "uk_eu",
     "venezuela",
     "west_africa",
@@ -152,6 +157,7 @@ TYPOLOGY_FAMILIES = {
 
 TRANSACTION_PATTERNS = {
     "account_takeover",
+    "bulk_cash_smuggling",
     "cash_deposits_below_threshold",
     "cash_intensive_behavior",
     "cryptocurrency_mixing",
