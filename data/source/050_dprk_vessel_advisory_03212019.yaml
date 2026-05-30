@@ -1,0 +1,636 @@
+- id: 050_dprk_vessel_advisory_03212019-01
+  description: North Korea-flagged merchant vessels often intentionally disable their
+    AIS transponders to mask their movements. Similarly, vessels with which North
+    Korea conducts ship-to-ship transfers will typically disable AIS to evade detection
+    to facilitate illicit trade. This tactic, whether employed by North Korea-flagged
+    vessels or third-country vessels involved in trade with North Korea, is a red
+    flag for potentially illicit activity, as it is a violation of international regulations
+    and is often done to conceal the origin or destination of cargo associated with
+    North Korea.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - east_asia
+  - south_east_asia
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  - unusual_international_wires
+  key_terms:
+  - AIS
+  - ship-to-ship transfers
+  - North Korea
+  - transponders
+- id: 050_dprk_vessel_advisory_03212019-02
+  description: North Korea-flagged vessels have illegitimately painted over vessel
+    names and IMO numbers to obscure their identities and pass themselves off as different
+    vessels.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IMO number
+  - vessel name
+  - vessel spoofing
+- id: 050_dprk_vessel_advisory_03212019-03
+  description: North Korea-flagged vessels sometimes manipulate the data transmitted
+    via AIS. Such manipulation could include altering vessel names, IMO numbers, Maritime
+    Mobile Service Identities (MMSIs), or other unique identifying information. This
+    tactic can conceal a vessel’s next port of call or other information regarding
+    its voyage.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - AIS
+  - MMSI
+  - IMO number
+  - next port of call
+- id: 050_dprk_vessel_advisory_03212019-04
+  description: Any indication of manipulated shipping documentation is a red flag
+    for potential illicit activity and should be investigated fully prior to continuing
+    with the transaction.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - shipping documentation
+  - transaction
+  - cargo
+  - origin
+  - destination
+- id: 050_dprk_vessel_advisory_03212019-05
+  description: Any transactions or dealings involving the property or interests in
+    property of the Government of North Korea or the Workers’ Party of Korea;
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  - insurance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - Government of North Korea
+  - Workers’ Party of Korea
+  - property
+  - interests in property
+- id: 050_dprk_vessel_advisory_03212019-06
+  description: Direct or indirect exports and imports to or from North Korea of nearly
+    all goods, services, and technology;
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - exports
+  - imports
+  - North Korea
+- id: 050_dprk_vessel_advisory_03212019-07
+  description: Vessels that have called at a port in North Korea in the previous 180
+    days, and vessels that have engaged in a ship-to-ship transfer with such a vessel
+    in the previous 180 days, from calling at a port in the United States;
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  - domestic_us
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - 180 days
+  - port in North Korea
+  - ship-to-ship transfer
+  - port in the United States
+- id: 050_dprk_vessel_advisory_03212019-08
+  description: Registering a vessel in North Korea, obtaining authorization for a
+    vessel to fly the North Korea flag, and owning, leasing, operating, and insuring
+    any vessel flagged by North Korea.
+  product_types:
+  - insurance
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - North Korea flag
+  - registering a vessel
+  - owning
+  - leasing
+  - operating
+  - insuring
+- id: 050_dprk_vessel_advisory_03212019-09
+  description: Owning, leasing, operating, chartering, or providing vessel classification,
+    certification or associated service and insurance or re-insurance, to any DPRK-flagged,
+    -owned, -controlled, or -operated vessel;
+  product_types:
+  - insurance
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - DPRK-flagged
+  - owned
+  - controlled
+  - operated
+  - re-insurance
+- id: 050_dprk_vessel_advisory_03212019-10
+  description: Providing insurance or re-insurance services to vessels Member States
+    have reasonable grounds to believe were involved in activities or the transport
+    of items prohibited by the relevant resolutions;
+  product_types:
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - insurance
+  - re-insurance
+  - prohibited items
+  - relevant resolutions
+- id: 050_dprk_vessel_advisory_03212019-11
+  description: Providing bunkering or servicing of North Korean vessels suspected
+    of carrying prohibited items;
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - bunkering
+  - servicing
+  - prohibited items
+- id: 050_dprk_vessel_advisory_03212019-12
+  description: Ship-to-ship transfers to or from North Korea-flagged vessels of any
+    goods or items that are supplied, sold, or transferred to or from North Korea;
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  - insurance
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - ship-to-ship transfers
+  - North Korea-flagged vessels
+- id: 050_dprk_vessel_advisory_03212019-13
+  description: Port entry of vessels if designated by the UNSC or if a State has information
+    that provides reasonable grounds to believe that the vessel is owned, controlled,
+    or operated by persons or entities designated by the UNSC.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - UNSC designated
+  - owned
+  - controlled
+  - operated
+  - port entry
+- id: 050_dprk_vessel_advisory_03212019-14
+  description: Provide significant amounts of fuel or supplies, provide bunkering
+    services, or facilitate a significant transaction or transactions to operate or
+    maintain a vessel or aircraft that is designated under a North Korea-related E.O.
+    or UNSCR, or that is owned or controlled by a person designated under a North
+    Korea-related E.O. or UNSCR;
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - bunkering
+  - significant transaction
+  - designated
+  - owned or controlled
+- id: 050_dprk_vessel_advisory_03212019-15
+  description: Insure, register, facilitate the registration of, or maintain insurance
+    or registration for, a vessel owned or controlled by the Government of North Korea.
+  product_types:
+  - insurance
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - Government of North Korea
+  - insurance
+  - registration
+- id: 050_dprk_vessel_advisory_03212019-16
+  description: Engages in a significant export to or import from North Korea;
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - significant export
+  - significant import
+  - North Korea
+- id: 050_dprk_vessel_advisory_03212019-17
+  description: The use of fraudulent vessel identities undermines the effective implementation
+    of the UN Security Council resolutions and potentially undermines a Flag State’s
+    registry if it fails to accurately verify the identity of a vessel seeking to
+    reflag to its registry.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - fraudulent vessel identities
+  - reflag
+  - registry
+- id: 050_dprk_vessel_advisory_03212019-18
+  description: If the IMO number and ship name do not clearly match, additional investigation
+    should be conducted prior to registering the vessel.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IMO number
+  - ship name
+  - registration
+- id: 050_dprk_vessel_advisory_03212019-19
+  description: The vessel has a pattern of AIS disablement or manipulation, which
+    could indicate involvement in illicit activities.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - east_asia
+  - south_east_asia
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - AIS disablement
+  - AIS manipulation
+  - pattern
+- id: 050_dprk_vessel_advisory_03212019-20
+  description: The use of fraudulent vessel identities undermines the effective implementation
+    of the UN Security Council resolutions and potentially undermines a Flag State’s
+    registry if it fails to accurately verify the identity of a vessel seeking to
+    reflag to its registry.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - insurance
+  industry_types:
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - north_korea
+  regulatory_source: 'North Korea Sanctions Advisory: Updated Guidance on Addressing
+    North Korea’s Illicit Shipping Practices'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2019-03-21'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/16506/download?inline=
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - fraudulent vessel identities
+  - reflag
+  - registry

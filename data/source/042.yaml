@@ -1,82 +1,126 @@
 - id: 042-01
-  description: Individuals or entities provide inaccurate or incomplete customer identification
+  description: Customers provide inaccurate or incomplete customer identification
     or KYC information when attempting to open an account
   product_types:
   - crypto
-  industry_types: []
+  industry_types:
+  - crypto
   customer_profiles: []
   geographic_footprints: []
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
   risk_level: medium
-  category: sanctions_evasion
+  category: fraud_nexus
   source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - KYC
+  - customer identification
+  - open an account
 - id: 042-02
-  description: Individuals or entities attempt to access a virtual currency exchange
+  description: Entities or individuals attempt to access a virtual currency exchange
     from an IP address or VPN connected to a sanctioned jurisdiction
   product_types:
   - crypto
-  industry_types: []
+  industry_types:
+  - crypto
   customer_profiles: []
   geographic_footprints:
   - sanctioned_jurisdiction
+  - ofac_sanctioned_country
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - VPN
+  - sanctioned jurisdiction
 - id: 042-03
-  description: Individuals or entities are non-responsive or refuse to provide updated
-    customer identification or KYC information
+  description: Customers are non-responsive or refuse to provide updated customer
+    identification or KYC information
   product_types:
   - crypto
-  industry_types: []
+  industry_types:
+  - crypto
   customer_profiles: []
   geographic_footprints: []
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
-  risk_level: medium
-  category: sanctions_evasion
+  risk_level: low
+  category: fraud_nexus
   source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - KYC
+  - updated customer identification
 - id: 042-04
-  description: Individuals or entities are non-responsive or refuse to provide additional
-    transaction information in response to a virtual currency company’s request
+  description: Customers are non-responsive or refuse to provide additional transaction
+    information in response to a virtual currency company’s request
   product_types:
   - crypto
-  industry_types: []
+  industry_types:
+  - crypto
   customer_profiles: []
   geographic_footprints: []
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
-  risk_level: medium
-  category: sanctions_evasion
+  risk_level: low
+  category: fraud_nexus
   source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - transaction information
+  - request
 - id: 042-05
-  description: Individuals or entities attempt to transact with a virtual currency
-    address associated with a blocked person or sanctioned jurisdiction
+  description: Customers attempt to transact with a virtual currency address associated
+    with a blocked person or sanctioned jurisdiction
   product_types:
   - crypto
-  industry_types: []
+  industry_types:
+  - crypto
   customer_profiles: []
   geographic_footprints:
   - sanctioned_jurisdiction
+  - ofac_sanctioned_country
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - virtual currency address
+  - blocked person
+  - sanctioned jurisdiction
 - id: 042-06
   description: Unlisted virtual currency addresses that share a wallet with a listed
     virtual currency address may pose sanctions risk because the sharing of a wallet
     may indicate an association with a blocked person
   product_types:
   - crypto
-  industry_types: []
+  industry_types:
+  - crypto
   customer_profiles: []
   geographic_footprints: []
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
@@ -85,3 +129,88 @@
   risk_level: medium
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - wallet
+  - listed virtual currency address
+  - blocked person
+- id: 042-07
+  description: Transactions involving virtual currency addresses or other identifying
+    information (e.g., originator, beneficiary, originating and beneficiary exchanges,
+    and underlying transactional data) associated with sanctioned individuals and
+    entities listed on the SDN List or other sanctions lists, or located in sanctioned
+    jurisdictions
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - SDN List
+  - sanctions lists
+  - originator
+  - beneficiary
+- id: 042-08
+  description: Users located in sanctioned jurisdictions who try to access virtual
+    currency products and services
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - sanctioned jurisdictions
+  - access virtual currency
+- id: 042-09
+  description: Same user logging in with an IP address in the United States, and then
+    shortly after with an IP address in Japan
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - east_asia
+  regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
+  regulator: OFAC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/media/913571/download?inline
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - VPN
+  - improbable logins

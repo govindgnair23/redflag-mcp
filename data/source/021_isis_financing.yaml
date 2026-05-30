@@ -7,7 +7,12 @@
   - depository
   industry_types: []
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - middle_east
+  - south_asia
+  - east_asia
+  - africa
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
@@ -16,6 +21,17 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - ISIS
+  - credit card
+  - bank account
+  - travel
+  - accommodation
 - id: 021_isis_financing-02
   description: Fundraisers are attached to social media profiles that show support
     for ISIS or display ISIS-related iconography or refer to supporting the “mujahideen”
@@ -26,18 +42,34 @@
   product_types:
   - money_transmitter
   - crypto
-  industry_types: []
-  customer_profiles: []
+  - prepaid
+  - depository
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
   geographic_footprints:
+  - iraq
+  - syria
   - middle_east
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-04-01'
-  risk_level: high
+  risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - social media
+  - ISIS-related iconography
+  - mujahideen
+  - kufar
+  - fundraising
 - id: 021_isis_financing-03
   description: A customer collects small amounts through P2P transfers, social media,
     or virtual currency payments over a short period of time and then sends them in
@@ -45,15 +77,14 @@
   product_types:
   - money_transmitter
   - crypto
+  - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints:
   - middle_east
+  - africa
   - south_asia
-  - south_east_asia
-  - west_africa
-  - central_america
-  - eastern_europe
+  - east_asia
   - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
@@ -63,6 +94,17 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - virtual_currency
+  key_terms:
+  - P2P transfers
+  - social media
+  - virtual currency
+  - lump sum
 - id: 021_isis_financing-04
   description: A customer sends remittances with no known legitimate purpose from
     the United States to multiple individuals in jurisdictions, such as Türkiye, known
@@ -73,19 +115,28 @@
   - wire_transfer
   industry_types: []
   customer_profiles:
-  - cross_border_business
+  - individual_consumer
   geographic_footprints:
   - domestic_us
   - middle_east
-  - high_risk_jurisdiction
+  - south_asia
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-04-01'
-  risk_level: high
+  risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - remittances
+  - Türkiye
+  - ISIS facilitation activity
 - id: 021_isis_financing-05
   description: A customer attempts to purchase plane or other travel tickets after
     abruptly liquidating assets, closing accounts, cancelling subscriptions, or receiving
@@ -93,8 +144,9 @@
     should also be regarded as suspicious, even if the customer eventually resumes
     transactions within the United States.
   product_types:
-  - depository
   - credit_card
+  - depository
+  - wire_transfer
   industry_types: []
   customer_profiles:
   - individual_consumer
@@ -108,6 +160,15 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - plane tickets
+  - liquidating assets
+  - account dormancy
+  - cash
 - id: 021_isis_financing-06
   description: A customer abruptly appears to seek as many lines of credit as possible,
     for example, by acquiring several credit cards and taking out one or more loans
@@ -119,7 +180,6 @@
   product_types:
   - credit_card
   - depository
-  - crypto
   industry_types: []
   customer_profiles:
   - individual_consumer
@@ -132,6 +192,17 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - monetary_instrument_purchases
+  - cash_intensive_behavior
+  - virtual_currency
+  key_terms:
+  - credit cards
+  - loans
+  - cash advances
+  - virtual currencies
 - id: 021_isis_financing-07
   description: A customer begins receiving a sudden influx of unexplained cash deposits,
     especially if that customer is unemployed or these deposits are in addition to
@@ -139,17 +210,16 @@
     is prevalent, but where the customer is not known to reside or have traveled.
   product_types:
   - depository
+  - ach
   industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints:
-  - high_risk_jurisdiction
   - middle_east
+  - africa
   - south_asia
-  - south_east_asia
-  - west_africa
-  - central_america
-  - eastern_europe
+  - east_asia
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
@@ -158,6 +228,16 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - unexplained
+  - ATM
+  - paycheck
 - id: 021_isis_financing-08
   description: A customer suddenly adopts or increases their use of financial methods
     that conceal the ultimate source or end use of funds, for example P2P transfers,
@@ -167,7 +247,6 @@
   - money_transmitter
   - depository
   - prepaid
-  - credit_card
   - crypto
   - wire_transfer
   industry_types: []
@@ -179,25 +258,36 @@
   regulator_jurisdiction: US
   issued_date: '2025-04-01'
   risk_level: medium
-  category: terrorist_financing
+  category: layering
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - account_takeover
+  key_terms:
+  - P2P transfers
+  - ATM withdrawals
+  - third party processors
+  - prepaid cards
+  - virtual currency
 - id: 021_isis_financing-09
   description: A customer makes deposits in an account locally which are then withdrawn
     from other locations, including from abroad, where the individual is not known
     to reside or have traveled but where ISIS is prevalent.
   product_types:
   - depository
+  - wire_transfer
   industry_types: []
-  customer_profiles:
-  - individual_consumer
+  customer_profiles: []
   geographic_footprints:
-  - high_risk_jurisdiction
+  - domestic_us
   - middle_east
+  - africa
   - south_asia
-  - south_east_asia
-  - west_africa
-  - central_america
-  - eastern_europe
+  - east_asia
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
@@ -206,6 +296,15 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - deposits
+  - withdrawn
+  - abroad
 - id: 021_isis_financing-10
   description: A customer places virtual currency in a virtual currency wallet using
     an IP address in one location which is then withdrawn from virtual currency kiosks
@@ -214,26 +313,34 @@
     prevalent.
   product_types:
   - crypto
-  - money_transmitter
   industry_types:
   - crypto
   customer_profiles: []
   geographic_footprints:
-  - high_risk_jurisdiction
   - middle_east
+  - africa
   - south_asia
-  - south_east_asia
-  - west_africa
-  - central_america
-  - eastern_europe
+  - east_asia
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-04-01'
-  risk_level: high
+  risk_level: medium
   category: virtual_currency
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  - terrorist_financing
+  transaction_patterns:
+  - rapid_fund_movement
+  - virtual_currency
+  key_terms:
+  - virtual currency wallet
+  - IP address
+  - virtual currency kiosks
+  - fiat currency
 - id: 021_isis_financing-11
   description: A customer’s account appears to have been accessed in multiple countries
     at the same time or within a very short time period, particularly if the account
@@ -241,22 +348,28 @@
   product_types:
   - depository
   - crypto
-  - money_transmitter
+  - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints:
-  - high_risk_jurisdiction
   - middle_east
+  - africa
   - south_asia
-  - south_east_asia
-  - west_africa
-  - central_america
-  - eastern_europe
+  - east_asia
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Financing of the Islamic State of Iraq
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-04-01'
   risk_level: medium
-  category: terrorist_financing
+  category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2025-04-01/FinCEN-Advisory-ISIS-508C.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - multiple countries
+  - account accessed
+  - ISIS

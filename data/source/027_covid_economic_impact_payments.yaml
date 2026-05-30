@@ -1,68 +1,79 @@
 - id: 027_covid_economic_impact_payments-01
-  description: An account holder attempts to deposit one or more checks that appear
-    to be issued by the U.S. Treasury, but are fraudulent or counterfeit checks.
+  description: 'An account holder attempts to deposit one or more checks that appear
+    to be issued by the U.S. Treasury, but are fraudulent or counterfeit checks. When
+    questioned, the customer may disclose that he or she: (i) was sent a partial payment,
+    and needed to verify his or her PII or financial information before receiving
+    the full EIP; or (ii) received the check purportedly from a current or former
+    employer with instructions that the check was the customer’s “stimulus payment”
+    and that he or she was to buy prepaid cards and send them to another individual.'
   product_types:
   - depository
-  - check_cashing
+  - prepaid
   industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: high
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - monetary_instrument_purchases
+  key_terms:
+  - U.S. Treasury
+  - fraudulent checks
+  - counterfeit checks
+  - PII
+  - prepaid cards
+  - stimulus payment
 - id: 027_covid_economic_impact_payments-02
-  description: 'When questioned, the customer may disclose that he or she: (i) was
-    sent a partial payment, and needed to verify his or her PII or financial information
-    before receiving the full EIP; or (ii) received the check purportedly from a current
-    or former employer with instructions that the check was the customer’s “stimulus
-    payment” and that he or she was to buy prepaid cards and send them to another
-    individual.'
+  description: An existing account receives, or an account holder makes, multiple
+    EIP-related deposits for individuals other than the account holder(s), and the
+    individuals named on the checks reside outside the geographic region of the account
+    holder, or do not have a history at the account holder’s purported address. This
+    may be indicative of funnel account activities in which multiple EIPs are deposited
+    or transferred throughout the United States into one account, which may be held
+    by a fraudster or a money mule working for the fraudster.
   product_types:
   - depository
+  - wire_transfer
   - prepaid
-  industry_types:
-  - payroll
+  industry_types: []
   customer_profiles:
+  - money_services_business
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - funnel_account_activity
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - EIP-related deposits
+  - funnel account
+  - money mule
 - id: 027_covid_economic_impact_payments-03
-  description: An existing account receives, or an account holder makes, multiple
-    EIP-related deposits for individuals other than the account holder(s), and the
-    individuals named on the checks reside outside the geographic region of the account
-    holder, or do not have a history at the account holder’s purported address.
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles:
-  - money_services_business
-  - shell_or_front_company
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2021-02-24'
-  risk_level: medium
-  category: layering
-  source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-04
   description: An existing account receives an excessive number of EIPs via U.S. Treasury
     check or deposits related to a prepaid debit card linked to the same address (e.g.,
     an account receiving more checks than expected relative to the customer’s profile
@@ -71,18 +82,28 @@
   - depository
   - prepaid
   industry_types: []
-  customer_profiles: []
+  customer_profiles:
+  - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-05
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - U.S. Treasury check
+  - prepaid debit card
+  - customer due diligence
+- id: 027_covid_economic_impact_payments-04
   description: A customer opens a new account with an EIP check or debit card, and
     the name of the potential account holder is different from that of the depositor
     or the payee of EIP.
@@ -95,15 +116,26 @@
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
-  risk_level: high
+  risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-06
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  key_terms:
+  - EIP check
+  - debit card
+  - depositor
+  - payee
+- id: 027_covid_economic_impact_payments-05
   description: The EIP check is deposited, or the debit card’s funds are transferred,
     into dormant accounts with little or no prior activity.
   product_types:
@@ -113,17 +145,25 @@
   customer_profiles: []
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
-  category: layering
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-07
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - dormant accounts
+  - little or no prior activity
+- id: 027_covid_economic_impact_payments-06
   description: Individual accounts opened after the U.S. government announced the
-    EIP program, receive U.S. Treasury checks or direct deposits from the U.S. Treasury
+    EIP program receive U.S. Treasury checks or direct deposits from the U.S. Treasury
     that could indicate multiple EIPs, and for individuals other than the account
     holder.
   product_types:
@@ -133,15 +173,24 @@
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-08
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - U.S. Treasury checks
+  - direct deposits
+  - multiple EIPs
+- id: 027_covid_economic_impact_payments-07
   description: The account holder is a child under age 17 at the end of the taxable
     year, but the account received numerous EIPs.
   product_types:
@@ -152,69 +201,71 @@
   - elderly_or_vulnerable_person
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-09
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - under age 17
+  - numerous EIPs
+- id: 027_covid_economic_impact_payments-08
   description: Rapid transfers of multiple EIPs into one account could indicate that
-    bad actors are consolidating the payments.
+    bad actors are consolidating the payments. After the funds are consolidated, the
+    funds may be quickly (a) withdrawn via large cash withdrawals or serial ATM withdrawals;
+    (b) used to purchase convertible virtual currencies (CVC); (c) transferred out
+    of the account via a money services business such as cryptocurrency exchangers
+    and peer-to-peer mobile payment systems, or wire transfers to other accounts;
+    (d) used for large purchases at merchants that offer cash back as an option, in
+    amounts not typical of this type of merchant; or (e) transferred onto prepaid
+    debit or gift cards.
   product_types:
   - depository
   - wire_transfer
+  - crypto
   - money_transmitter
   - prepaid
-  - crypto
   industry_types:
-  - crypto
-  customer_profiles:
-  - money_services_business
-  - third_party_payment_processor
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2021-02-24'
-  risk_level: medium
-  category: layering
-  source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-10
-  description: After the funds are consolidated, the funds may be quickly (a) withdrawn
-    via large cash withdrawals or serial ATM withdrawals; (b) used to purchase convertible
-    virtual currencies (CVC); (c) transferred out of the account via a money services
-    business such as cryptocurrency exchangers and peer-to-peer mobile payment systems,
-    or wire transfers to other accounts; (d) used for large purchases at merchants
-    that offer cash back as an option, in amounts not typical of this type of merchant;
-    or (e) transferred onto prepaid debit or gift cards.
-  product_types:
-  - depository
-  - wire_transfer
-  - money_transmitter
-  - prepaid
-  - crypto
-  industry_types:
-  - crypto
   - retail
+  - crypto
   customer_profiles:
   - money_services_business
-  - third_party_payment_processor
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: high
-  category: layering
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-11
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  - cryptocurrency_mixing
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - CVC
+  - cryptocurrency exchangers
+  - peer-to-peer mobile payment systems
+  - cash back
+  - prepaid debit cards
+  - gift cards
+- id: 027_covid_economic_impact_payments-09
   description: An account receives several EIP-related deposits and almost immediately
     thereafter (a) disburses funds for large purchases at merchants that offer cash
     back as an option, in amounts not typical of this type of merchant, or (b) has
@@ -227,18 +278,32 @@
   customer_profiles: []
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
-  category: layering
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-12
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - cash back
+  - prepaid debit cards
+  - gift cards
+- id: 027_covid_economic_impact_payments-10
   description: Deposits of one or more EIP U.S. Treasury checks or electronic deposits
     made into an account held by (a) a retail business, or (b) a personal account
     of a business owner or employee and the account holder is not the payee/endorser.
+    This may indicate that the business is using identifiers of its employees or customers
+    to apply for their EIP benefits for the purpose of inappropriately collecting
+    the payments.
   product_types:
   - depository
   industry_types:
@@ -247,15 +312,25 @@
   - small_business
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-13
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - identity_misrepresentation
+  key_terms:
+  - EIP U.S. Treasury checks
+  - payee/endorser
+  - employees or customers
+- id: 027_covid_economic_impact_payments-11
   description: The same Internet Protocol (IP) address is used to transfer funds from
     several EIP debit cards to a bank account, especially if that IP address is located
     outside of the United States or associated with a business.
@@ -266,90 +341,112 @@
   customer_profiles: []
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-14
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - account_takeover
+  - money_mule_activity
+  - rapid_fund_movement
+  key_terms:
+  - IP address
+  - EIP debit cards
+  - outside of the United States
+- id: 027_covid_economic_impact_payments-12
   description: An account receives (a) numerous deposits or electronic funds transfers
     (EFTs) that indicate the payments are linked to EIPs, and (b) unemployment insurance
     payments from one or more states in names that do not match the account holder(s).
   product_types:
   - depository
-  - ach
-  industry_types:
-  - government_benefits
+  - wire_transfer
+  industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-15
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - EIPs
+  - unemployment insurance payments
+  - names that do not match
+- id: 027_covid_economic_impact_payments-13
   description: An account with several EIP deposits also receives numerous tax refunds
     from federal and state governments for individuals other than the account holder(s).
+    The names indicated on the EIPs and tax returns may be the same but are not those
+    of the account holder(s).
   product_types:
   - depository
-  industry_types:
-  - government_benefits
+  industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-16
-  description: The names indicated on the EIPs and tax returns may be the same but
-    are not those of the account holder(s).
-  product_types:
-  - depository
-  industry_types:
-  - government_benefits
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2021-02-24'
-  risk_level: medium
-  category: fraud_nexus
-  source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
-- id: 027_covid_economic_impact_payments-17
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - tax_evasion
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - tax refunds
+  - federal and state governments
+  - EIP deposits
+- id: 027_covid_economic_impact_payments-14
   description: Deposits of one or more EIP checks or electronic deposits are made
     into a nursing home or assisted living facility’s business account and those payments
-    have not been returned to the resident.
+    have not been returned to the resident. This may be an indication that the business
+    is inappropriately withholding residents’ EIP funds.
   product_types:
   - depository
   industry_types:
   - healthcare
   customer_profiles:
-  - charity_or_nonprofit
+  - elderly_or_vulnerable_person
+  - small_business
   geographic_footprints:
   - domestic_us
-  regulatory_source: FinCEN Advisory FIN-2021-A002, Advisory on Financial Crimes Targeting
-    COVID-19 Economic Impact Payments
+  regulatory_source: FIN-2021-A002 Advisory on Financial Crimes Targeting COVID-19
+    Economic Impact Payments
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2021-02-24'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2021-02-25/Advisory%20EIP%20FINAL%20508.pdf
+  typology_family:
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - nursing home
+  - assisted living facility
+  - EIP funds

@@ -1,8 +1,8 @@
 - id: 008_hamas_terrorist_financing-01
   description: A customer or a customer’s counterparty conducts transactions with
     OFAC-designated entities and individuals, or transactions that contain a nexus
-    to identifiers listed for OFAC-designated entities and individuals, to include,
-    email addresses, physical addresses, phone numbers, or passport numbers, or virtual
+    to identifiers listed for OFAC-designated entities and individuals, to include
+    email addresses, physical addresses, phone numbers, passport numbers, or virtual
     currency addresses.
   product_types:
   - depository
@@ -10,7 +10,11 @@
   - crypto
   industry_types: []
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - iran
+  - middle_east
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -18,6 +22,16 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  - unusual_international_wires
+  - cryptocurrency_mixing
+  key_terms:
+  - OFAC-designated
+  - virtual currency addresses
+  - passport numbers
 - id: 008_hamas_terrorist_financing-02
   description: Information included in a transaction between customers indicates support
     for terrorist campaigns.
@@ -27,7 +41,13 @@
   - crypto
   industry_types: []
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - middle_east
+  - iran
+  - sudan
+  - turkey
+  - algeria
+  - qatar
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -35,6 +55,11 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - terrorist campaigns
 - id: 008_hamas_terrorist_financing-03
   description: A customer conducts transactions with a Money Services Business (MSB)
     or other financial institution, including one that offers services in virtual
@@ -43,18 +68,22 @@
     opaque ownership, or otherwise fails to comply with anti-money laundering/combatting
     the financing of terrorism (AML/CFT) best practices.
   product_types:
-  - depository
-  - wire_transfer
-  - crypto
   - money_transmitter
-  - remittance
+  - crypto
+  - wire_transfer
+  - depository
   industry_types:
   - money_services_business
-  - crypto
   customer_profiles:
   - money_services_business
   geographic_footprints:
   - high_risk_jurisdiction
+  - middle_east
+  - iran
+  - sudan
+  - turkey
+  - algeria
+  - qatar
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -62,68 +91,91 @@
   risk_level: medium
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - nested_account_activity
+  - unusual_international_wires
+  key_terms:
+  - MSB
+  - virtual currency
+  - CDD
+  - opaque ownership
+  - AML/CFT
 - id: 008_hamas_terrorist_financing-04
   description: A customer conducts transactions that originate with, are directed
     to, or otherwise involve entities that are shell corporations, general “trading
     companies,” or other companies that have a nexus with Iran or other Iran-supported
     terrorist groups, such as Hizballah and Palestine Islamic Jihad.
   product_types:
-  - depository
   - wire_transfer
   - trade_finance
-  - crypto
+  - depository
+  - correspondent_banking
   industry_types:
   - import_export
+  - professional_services
   customer_profiles:
   - shell_or_front_company
   geographic_footprints:
   - iran
+  - middle_east
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2023-Alert006
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2023-10-20'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
+  typology_family:
+  - terrorist_financing
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  - wire_transfer_chains
+  - trade_document_manipulation
+  key_terms:
+  - shell corporations
+  - trading companies
+  - Hizballah
+  - Palestine Islamic Jihad
+- id: 008_hamas_terrorist_financing-05
+  description: A customer that is a charitable organization or nonprofit organization
+    (NPO) solicits donations but does not appear to provide any charitable services
+    or openly supports Hamas’s terrorist activity or operations. In some cases, these
+    organizations may post on social media platforms or encrypted messaging apps to
+    solicit donations, including in virtual currency.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
   - middle_east
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-10-20'
   risk_level: high
-  category: shell_company
-  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
-- id: 008_hamas_terrorist_financing-05
-  description: A customer that is a charitable organization or nonprofit organization
-    (NPO) solicits donations but does not appear to provide any charitable services
-    or openly supports Hamas’s terrorist activity or operations.
-  product_types:
-  - depository
-  - wire_transfer
-  - crypto
-  industry_types:
-  - charity_or_nonprofit
-  customer_profiles:
-  - charity_or_nonprofit
-  geographic_footprints: []
-  regulatory_source: FinCEN Alert FIN-2023-Alert006
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2023-10-20'
-  risk_level: high
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - NPO
+  - charitable organization
+  - social media
+  - encrypted messaging apps
+  - virtual currency
 - id: 008_hamas_terrorist_financing-06
-  description: In some cases, these organizations may post on social media platforms
-    or encrypted messaging apps to solicit donations, including in virtual currency.
-  product_types:
-  - crypto
-  industry_types:
-  - charity_or_nonprofit
-  customer_profiles:
-  - charity_or_nonprofit
-  geographic_footprints: []
-  regulatory_source: FinCEN Alert FIN-2023-Alert006
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2023-10-20'
-  risk_level: medium
-  category: terrorist_financing
-  source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
-- id: 008_hamas_terrorist_financing-07
   description: A customer that is a charitable organization or NPO receives large
     donations from an unknown source over a short period of time and then sends significant
     wire transfers or checks to other charitable organizations or NPOs.
@@ -141,9 +193,20 @@
   regulator_jurisdiction: US
   issued_date: '2023-10-20'
   risk_level: medium
-  category: layering
+  category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
-- id: 008_hamas_terrorist_financing-08
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - NPO
+  - large donations
+  - unknown source
+  - wire transfers
+  - checks
+- id: 008_hamas_terrorist_financing-07
   description: A customer conducts transactions with known or suspected virtual currency
     addresses tied to terrorism or terrorist financing donation campaigns.
   product_types:
@@ -151,7 +214,8 @@
   industry_types:
   - crypto
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - middle_east
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -159,3 +223,12 @@
   risk_level: high
   category: terrorist_financing
   source_url: https://www.fincen.gov/system/files/2025-09/FinCEN_Alert_Terrorist_Financing_proof1.pdf
+  typology_family:
+  - terrorist_financing
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - virtual currency addresses
+  - terrorism
+  - donation campaigns

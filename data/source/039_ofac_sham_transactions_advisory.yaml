@@ -23,6 +23,15 @@
   risk_level: medium
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/935441/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - blocked person
+  - arm’s length transaction
+  - fair market value
+  - bona fide transfer
 - id: 039_ofac_sham_transactions_advisory-02
   description: Transfer to family members or close associates. Transfers by a blocked
     person to a family member or close associate can be evidence of a sham transaction.
@@ -50,6 +59,17 @@
   risk_level: medium
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/935441/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - third_party_payments
+  - shell_company_usage
+  key_terms:
+  - blocked person
+  - sham transaction
+  - nominal owner
+  - proxy
+  - agent-principal
 - id: 039_ofac_sham_transactions_advisory-03
   description: Unclear purpose of transfer. Transfers lacking apparent business purpose
     may indicate an attempt to obfuscate a blocked person’s continued interest in
@@ -73,6 +93,15 @@
   risk_level: medium
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/935441/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - third_party_payments
+  - shell_company_usage
+  key_terms:
+  - blocked person
+  - business purpose
+  - sham transaction
 - id: 039_ofac_sham_transactions_advisory-04
   description: Unduly complex corporate structures involving higher-risk jurisdictions.
     The presence of unnecessarily complex legal structures without a discernible legitimate
@@ -86,8 +115,10 @@
   - private_banking
   - securities
   - wire_transfer
+  - correspondent_banking
   industry_types: []
   customer_profiles:
+  - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints:
   - high_risk_jurisdiction
@@ -99,6 +130,15 @@
   risk_level: medium
   category: shell_company
   source_url: https://ofac.treasury.gov/media/935441/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - limited liability companies
+  - partnerships
+  - trusts
+  - ownership interest
 - id: 039_ofac_sham_transactions_advisory-05
   description: Continued involvement of a blocked person. Facts or circumstances suggesting
     a blocked person remains involved in the use, management, or disposition of property—including
@@ -123,6 +163,16 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/935441/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - blocked person
+  - proxy
+  - intermediaries
+  - ownership interest
 - id: 039_ofac_sham_transactions_advisory-06
   description: Transfer near the time of designation. Transfers completed close in
     time to a person’s designation may trigger suspicion warranting further analysis,
@@ -138,7 +188,9 @@
   industry_types: []
   customer_profiles:
   - beneficial_owner_obscured
+  - shell_or_front_company
   geographic_footprints:
+  - ofac_sanctioned_country
   - high_risk_jurisdiction
   regulatory_source: 'OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions
     Evasion'
@@ -148,15 +200,26 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/935441/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - designation
+  - offshore shell companies
+  - shares
+  - blocked drug kingpins
 - id: 039_ofac_sham_transactions_advisory-07
-  description: Evasive or vague responses, or failures to respond to questions from
-    counterparties, key intermediaries, or gatekeepers regarding a blocked person’s
-    involvement in property may be evidence of intent to conceal a continuing interest.
+  description: Evasive responses regarding a blocked person’s involvement. Evasive
+    or vague responses, or failures to respond to questions from counterparties, key
+    intermediaries, or gatekeepers regarding a blocked person’s involvement in property
+    may be evidence of intent to conceal a continuing interest.
   product_types:
   - depository
   - private_banking
   - securities
   - wire_transfer
+  - correspondent_banking
   industry_types: []
   customer_profiles:
   - beneficial_owner_obscured
@@ -169,3 +232,11 @@
   risk_level: medium
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/935441/download?inline
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - blocked person
+  - counterparties
+  - gatekeepers
+  - continuing interest

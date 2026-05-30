@@ -4,24 +4,36 @@
     countries;
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
-  - money_services_business
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints:
-  - china
+  - east_asia
   - eastern_europe
-  - south_east_asia
+  - north_america
+  - uk_eu
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
   issued_date: '2022-05-16'
   risk_level: medium
-  category: cyber_enabled
+  category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - IP addresses
+  - multiple logins
+  - different countries
 - id: 052-02
   description: Router port or other technical configurations associated with use of
     remote desktop sharing software, such as port 3389 in the router used to access
@@ -29,12 +41,13 @@
     company practice;
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
-  - money_services_business
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints: []
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
@@ -44,18 +57,28 @@
   risk_level: medium
   category: cyber_enabled
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - port 3389
+  - remote desktop sharing software
+  - VPN
+  - VPS
 - id: 052-03
   description: Developer accounts use a fraudulent client account to increase developer
     account ratings, but both the client and developer accounts use the same PayPal
     account to transfer/withdraw money (paying themselves with their own money);
   product_types:
-  - money_transmitter
   - prepaid
+  - money_transmitter
+  - depository
   industry_types:
-  - money_services_business
-  - online_marketplace
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints: []
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
@@ -65,19 +88,60 @@
   risk_level: high
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - round_tripping
+  - third_party_payments
+  key_terms:
+  - fraudulent client account
+  - PayPal
+  - ratings
 - id: 052-04
+  description: Frequent use of document templates for things such as bidding documents
+    and project communication methods, especially the same templates being used across
+    different developer accounts;
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - document templates
+  - bidding documents
+  - project communication
+- id: 052-05
   description: Multiple developer accounts receiving high ratings from one client
     account in a short period, with similar or identical documentation used to establish
     the developer accounts and/or the client account;
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
-  - money_services_business
-  - online_marketplace
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints: []
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
@@ -87,41 +151,91 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-05
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - high ratings
+  - similar documentation
+  - client account
+- id: 052-06
+  description: Extensive bidding on projects, and a low number of accepted project
+    bids compared to the number of projects bids on by a developer;
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - bidding
+  - accepted project bids
+- id: 052-07
   description: Frequent transfers of money through payment platforms, especially to
     PRC-based bank accounts, and sometimes routed through one or more companies to
     disguise the ultimate destination of the funds.
   product_types:
   - money_transmitter
-  - prepaid
   - depository
+  - wire_transfer
   industry_types:
-  - money_services_business
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
+  - cross_border_business
   geographic_footprints:
   - china
+  - east_asia
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
   issued_date: '2022-05-16'
-  risk_level: high
+  risk_level: medium
   category: layering
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-06
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  - pass_through_account_activity
+  key_terms:
+  - payment platforms
+  - PRC-based bank accounts
+  - disguise the ultimate destination
+- id: 052-08
   description: If a freelance software development website or payment platform account
     has been shut down or the worker contacts the employer requesting use of a different
     account, especially if registered to a different name;
   product_types:
-  - depository
   - money_transmitter
   - prepaid
+  - depository
   industry_types:
-  - money_services_business
-  - online_marketplace
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints: []
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
@@ -131,22 +245,35 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-07
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - shut down account
+  - different account
+  - different name
+- id: 052-09
   description: Inconsistencies in name spelling, nationality, claimed work location,
     contact information, educational history, work history, and other details across
     a developer’s freelance platform profiles, social media profiles, external portfolio
     websites, payment platform profiles, and assessed location and hours;
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
-  - money_services_business
   - professional_services
-  - online_marketplace
+  - technology
   customer_profiles:
-  - third_party_payment_processor
-  geographic_footprints: []
+  - money_services_business
+  - foreign_individual
+  geographic_footprints:
+  - east_asia
+  - eastern_europe
+  - north_america
+  - uk_eu
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
   regulator: OFAC
@@ -155,19 +282,29 @@
   risk_level: high
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-08
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - inconsistencies
+  - freelance platform profiles
+  - social media profiles
+  - portfolio websites
+- id: 052-10
   description: Requests to communicate with clients and potential clients on a separate
     platform than the original freelance platform website where the client found the
     IT worker;
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
-  - money_services_business
-  - online_marketplace
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints: []
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
@@ -177,7 +314,15 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-09
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - separate platform
+  - freelance platform website
+- id: 052-11
   description: An employer proposes to send documents or work-related equipment such
     as a laptop to a developer, and the developer requests that items be sent to an
     address not listed on the developer’s identification documentation. Be particularly
@@ -185,13 +330,14 @@
     identification documentation;
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
   - professional_services
-  - online_marketplace
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
+  - foreign_individual
   geographic_footprints: []
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
@@ -201,19 +347,318 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-10
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identification documentation
+  - laptop
+  - unfamiliar address
+- id: 052-12
   description: Seeking payment in virtual currency in an effort to evade KYC/AML measures
     and use of the formal financial system;
   product_types:
   - crypto
   - money_transmitter
+  - depository
+  industry_types:
+  - professional_services
+  - technology
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - virtual currency
+  - KYC/AML
+  - formal financial system
+- id: 052-13
+  description: Requesting payment for contracts without meeting production benchmarks
+    or check-in meetings;
+  product_types:
+  - money_transmitter
+  - depository
   - prepaid
   industry_types:
-  - money_services_business
-  - online_marketplace
+  - professional_services
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - production benchmarks
+  - check-in meetings
+  - payment for contracts
+- id: 052-14
+  description: Incorrect or changing contact information, specifically phone numbers
+    and emails;
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - contact information
+  - phone numbers
+  - emails
+- id: 052-15
+  description: Biographical information which does not appear to match the applicant;
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - biographical information
+  - applicant
+- id: 052-16
+  description: Asking co-workers to borrow some of their personal information to obtain
+    other contracts.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - personal information
+  - other contracts
+- id: 052-17
+  description: Regularly use port checking capabilities to determine if the platform
+    is being accessed remotely via desktop sharing software or a VPN or VPS, particularly
+    if usage of remote desktop sharing software or VPN services to access accounts
+    is not standard practice;
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - VPN
+  - VPS
+  - desktop sharing software
+  - port checking
+- id: 052-18
+  description: Be cautious of a developer requesting to communicate on a separate
+    platform outside the original freelance platform website where a company initially
+    found the IT worker;
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - separate platform
+  - freelance platform website
+- id: 052-19
+  description: If sending to a developer documents or work-related equipment such
+    as a laptop, only send to the address listed on the developer’s identification
+    documents and obtain additional documentation if the developer requests that the
+    laptop or other items be sent to an unfamiliar address. Be suspicious if a developer
+    cannot receive items at the address on their identification documentation;
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identification documents
+  - unfamiliar address
+  - laptop
+- id: 052-20
+  description: Be vigilant for unauthorized, small-scale transactions that may be
+    fraudulently conducted by contracted IT workers. In one case, DPRK IT workers
+    employed as developers by a U.S. company fraudulently charged the U.S. company’s
+    payment account and stole over USD 50,000 in 30 small installments over a matter
+    of months. The U.S. company was not aware the developers were North Korean or
+    of the ongoing theft activity due to the slight amounts.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  - credit_card
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - rapid_fund_movement
+  key_terms:
+  - small-scale transactions
+  - payment account
+  - 30 small installments
+- id: 052-21
+  description: DPRK IT workers use virtual currency exchanges and trading platforms
+    to manage digital payments they receive for contract work as well as to launder
+    and move funds they receive.
+  product_types:
+  - crypto
+  - money_transmitter
+  - depository
+  industry_types:
+  - crypto
+  - professional_services
+  - technology
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - china
+  - east_asia
+  - russia
+  - eastern_europe
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
   regulator: OFAC
@@ -222,16 +667,256 @@
   risk_level: high
   category: virtual_currency
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-11
-  description: Requesting payment for contracts without meeting production benchmarks
-    or check-in meetings;
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  - cybercrime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - cryptocurrency_mixing
+  key_terms:
+  - virtual currency exchanges
+  - trading platforms
+  - launder and move funds
+- id: 052-22
+  description: DPRK IT workers deliberately obfuscate their identities, locations,
+    and nationality online, often using non-Korean names as aliases.
   product_types:
-  - money_transmitter
-  - prepaid
   - depository
+  - prepaid
+  - money_transmitter
   industry_types:
   - professional_services
-  - online_marketplace
+  - technology
+  customer_profiles:
+  - foreign_individual
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - east_asia
+  - eastern_europe
+  - north_america
+  - uk_eu
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - aliases
+  - obfuscate identities
+  - nationality
+- id: 052-23
+  description: They will also use virtual private networks (VPNs), virtual private
+    servers (VPSs), or utilized third-country IP addresses to appear as though they
+    are connecting to the internet from inconspicuous locations and reduce the likelihood
+    of scrutiny of their DPRK location or relationships.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - north_korea
+  - east_asia
+  - eastern_europe
+  - north_america
+  - uk_eu
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - VPNs
+  - VPSs
+  - third-country IP addresses
+  - DPRK location
+- id: 052-24
+  description: DPRK IT workers generally rely on the anonymity of telework arrangements,
+    use proxies for account creation and maintenance, and favor the use of intermediaries
+    and communications through text-based chat instead of video calls.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - third_party_payment_processor
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - proxies
+  - account creation
+  - text-based chat
+  - video calls
+- id: 052-25
+  description: DPRK IT workers use proxy accounts to bid on, win, work on, and get
+    paid for projects on freelance software developer websites.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - beneficial_owner_obscured
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - third_party_payments
+  key_terms:
+  - proxy accounts
+  - freelance software developer websites
+- id: 052-26
+  description: These proxy accounts belong to third-party individuals, some of whom
+    sell their identification and account information to the DPRK IT workers.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - beneficial_owner_obscured
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - account_takeover
+  key_terms:
+  - proxy accounts
+  - identification and account information
+- id: 052-27
+  description: In some cases, DPRK IT workers pay fees to these individuals for use
+    of their legitimate platform accounts.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - third_party_payment_processor
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - account_takeover
+  key_terms:
+  - legitimate platform accounts
+  - fees
+- id: 052-28
+  description: DPRK IT workers may populate freelance platform profiles with the real
+    affiliations and work experience of the proxy.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - freelance platform profiles
+  - real affiliations
+  - work experience
+- id: 052-29
+  description: At times, DPRK IT workers engage other non-North Korean freelance workers
+    on platforms to propose collaboration on development projects.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
@@ -243,16 +928,428 @@
   risk_level: low
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-12
-  description: Incorrect or changing contact information, specifically phone numbers
-    and emails;
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - collaboration
+  - development projects
+- id: 052-30
+  description: A DPRK IT worker takes advantage of these business relationships to
+    gain access to new contracts and virtual currency accounts used to conduct the
+    IT work over U.S. or European virtual infrastructure, bypassing security measures
+    intended to prevent fraudulent use.
+  product_types:
+  - crypto
+  - money_transmitter
+  - depository
+  industry_types:
+  - crypto
+  - professional_services
+  - technology
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - rapid_fund_movement
+  key_terms:
+  - virtual currency accounts
+  - U.S. or European virtual infrastructure
+  - fraudulent use
+- id: 052-31
+  description: In establishing accounts with the aid of other freelance workers, DPRK
+    IT workers may claim to be third-country nationals who need U.S. or other Western
+    identification documents and freelance platform accounts to earn more money.
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
   - professional_services
-  - online_marketplace
+  - technology
+  customer_profiles:
+  - foreign_individual
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - third-country nationals
+  - identification documents
+  - freelance platform accounts
+- id: 052-32
+  description: DPRK IT workers may also use single, dedicated devices for each of
+    their accounts, especially for banking services, to evade detection by fraud prevention,
+    sanctions compliance, and anti-money laundering measures.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  - sanctions_evasion
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - dedicated devices
+  - banking services
+  - fraud prevention
+  - sanctions compliance
+  - AML measures
+- id: 052-33
+  description: DPRK IT workers routinely use counterfeit, altered, or falsified documents,
+    including identification documents, and forged signatures—either that they have
+    made themselves using software such as Photoshop, or that they have paid a document
+    forgery company to alter, combining the IT worker’s own or a provided photo with
+    the identifying information of a real person.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - beneficial_owner_obscured
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - counterfeit documents
+  - falsified documents
+  - forged signatures
+  - Photoshop
+- id: 052-34
+  description: In some instances, these identities are stolen, while in others the
+    DPRK IT workers have solicited a non-North Korean national to set up an account
+    using their own personal information or information to which they have access,
+    after which control of the account is transferred to the DPRK IT workers for a
+    fee.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - beneficial_owner_obscured
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - stolen identities
+  - account is transferred
+  - for a fee
+- id: 052-35
+  description: Each IT worker often uses multiple identities and accounts, which can
+    also be shared between IT workers on the same team.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - multiple identities
+  - shared accounts
+- id: 052-36
+  description: DPRK IT workers may steal the customer account information of U.S.
+    or international banks to verify their identities with freelance platforms, payment
+    providers, and companies employing the DPRK IT workers.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  - north_america
+  - uk_eu
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - customer account information
+  - banks
+  - verify their identities
+- id: 052-37
+  description: In at least one case, DPRK IT workers forged checks using stolen bank
+    account information.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  - north_america
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - forged checks
+  - stolen bank account information
+- id: 052-38
+  description: Accounts and resumes associated with DPRK IT worker’s proxy identities
+    often include falsified, but realistic and detailed education and employment history
+    information, including false contact information for educational institutions
+    and previous employers.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - beneficial_owner_obscured
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - resumes
+  - education and employment history
+  - false contact information
+- id: 052-39
+  description: DPRK IT workers may also populate their online developer profiles’
+    employment sections with the names of small or mid-sized Western companies so
+    that the DPRK IT workers appear to be reputable Americans or Europeans when bidding
+    on projects. They may use the names of actual employees and email addresses that
+    appear similar to the Western company’s legitimate domain.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - north_america
+  - uk_eu
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - Western companies
+  - actual employees
+  - similar domain
+- id: 052-40
+  description: DPRK IT workers additionally falsify statement of work agreements,
+    invoices, client communication documentation, and other documents for use with
+    freelancing platforms, likely to satisfy know-your-customer and anti-money laundering
+    (KYC/AML) measures or similar procedures that platforms have in place to ensure
+    the legitimacy of user activity. These falsified documents may have minimal contact
+    details to deter verification.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - statement of work
+  - invoices
+  - KYC/AML
+  - minimal contact details
+- id: 052-41
+  description: DPRK IT workers may also attempt to mask their nationality by representing
+    themselves as South Korean or simply “Korean” citizens.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - east_asia
+  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
+    Technology Workers
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2022-05-16'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - South Korean
+  - Korean citizens
+  - mask their nationality
+- id: 052-42
+  description: DPRK IT workers who obtain freelance positions with an unwitting company
+    have also been known to subsequently recommend to the company the freelance employment
+    of additional DPRK IT workers.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - technology
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
@@ -264,44 +1361,46 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-13
-  description: Biographical information which does not appear to match the applicant;
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - unwitting company
+  - additional DPRK IT workers
+- id: 052-43
+  description: DPRK IT workers build “portfolio” websites, generally simple in design,
+    in an effort to boost the credibility of their fabricated, freelance developer
+    personas. These virtual portfolios represent the work of DPRK IT workers’ personas
+    and are often linked to their online freelance developer accounts. Information
+    on these websites, including contact information and location, as well as work
+    history and education, is likely to be false.
   product_types:
   - depository
-  - money_transmitter
   - prepaid
+  - money_transmitter
   industry_types:
   - professional_services
-  - online_marketplace
+  - technology
   customer_profiles:
-  - third_party_payment_processor
+  - beneficial_owner_obscured
+  - foreign_individual
   geographic_footprints: []
   regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
   issued_date: '2022-05-16'
-  risk_level: medium
+  risk_level: high
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
-- id: 052-14
-  description: Asking co-workers to borrow some of their personal information to obtain
-    other contracts.
-  product_types:
-  - depository
-  - money_transmitter
-  - prepaid
-  industry_types:
-  - professional_services
-  - online_marketplace
-  customer_profiles:
-  - third_party_payment_processor
-  geographic_footprints: []
-  regulatory_source: Guidance on the Democratic People’s Republic of Korea Information
-    Technology Workers
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issued_date: '2022-05-16'
-  risk_level: medium
-  category: fraud_nexus
-  source_url: https://ofac.treasury.gov/system/files/126/20220516_dprk_it_worker_advisory.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - portfolio websites
+  - fabricated personas
+  - false contact information

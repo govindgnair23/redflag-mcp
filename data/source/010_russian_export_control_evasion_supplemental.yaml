@@ -1,16 +1,18 @@
 - id: 010_russian_export_control_evasion_supplemental-01
   description: Transactions related to payments for defense or dual-use products from
-    a company incorporated after February 24, 2022, and based in a non-GECC country.
+    Entities incorporated after February 24, 2022, and based in a non-GECC country.
   product_types:
   - wire_transfer
   - trade_finance
   - correspondent_banking
   industry_types:
   - import_export
+  - manufacturing
   customer_profiles:
   - newly_established_business
   - cross_border_business
   geographic_footprints:
+  - eastern_europe
   - high_risk_jurisdiction
   regulatory_source: 'FIN-2023-Alert004 Supplemental Alert: FinCEN and the U.S. Department
     of Commerce’s Bureau of Industry and Security Urge Continued Vigilance for Potential
@@ -21,6 +23,17 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  - trade_document_manipulation
+  key_terms:
+  - defense
+  - dual-use products
+  - non-GECC country
+  - February 24, 2022
 - id: 010_russian_export_control_evasion_supplemental-02
   description: A new customer whose line of business is in trade of products associated
     with the nine HS codes, is based in a non-GECC country, and was incorporated after
@@ -31,6 +44,7 @@
   - correspondent_banking
   industry_types:
   - import_export
+  - manufacturing
   customer_profiles:
   - newly_established_business
   - cross_border_business
@@ -45,6 +59,14 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - HS codes
+  - non-GECC country
+  - incorporated after February 24, 2022
 - id: 010_russian_export_control_evasion_supplemental-03
   description: An existing customer who did not receive exports associated with the
     nine HS codes prior to February 24, 2022, but who is receiving such items now.
@@ -54,6 +76,7 @@
   - correspondent_banking
   industry_types:
   - import_export
+  - manufacturing
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
@@ -66,6 +89,15 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - HS codes
+  - February 24, 2022
+  - exports
 - id: 010_russian_export_control_evasion_supplemental-04
   description: An existing customer, based outside the United States, received exports
     associated with one or more of the nine HS codes prior to February 24, 2022, and
@@ -77,10 +109,12 @@
   - correspondent_banking
   industry_types:
   - import_export
+  - manufacturing
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - domestic_us
+  - high_risk_jurisdiction
   regulatory_source: 'FIN-2023-Alert004 Supplemental Alert: FinCEN and the U.S. Department
     of Commerce’s Bureau of Industry and Security Urge Continued Vigilance for Potential
     Russian Export Control Evasion Attempts'
@@ -90,6 +124,16 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - HS codes
+  - significant increase in exports
+  - outside the United States
 - id: 010_russian_export_control_evasion_supplemental-05
   description: A customer lacks or refuses to provide details to banks, shippers,
     or third parties, including about end users, intended end-use, or company ownership.
@@ -99,6 +143,7 @@
   - correspondent_banking
   industry_types:
   - import_export
+  - manufacturing
   customer_profiles:
   - beneficial_owner_obscured
   - shell_or_front_company
@@ -109,29 +154,53 @@
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-05-19'
-  risk_level: high
+  risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - shell_company
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - end user
+  - end-use
+  - company ownership
 - id: 010_russian_export_control_evasion_supplemental-06
   description: Transactions involving smaller-volume payments from the same end user’s
     foreign bank account to multiple, similar suppliers of dual-use products.
   product_types:
   - wire_transfer
   - correspondent_banking
+  - trade_finance
   industry_types:
   - import_export
+  - manufacturing
   customer_profiles:
   - cross_border_business
-  geographic_footprints: []
+  geographic_footprints:
+  - foreign_financial_institution
+  - high_risk_jurisdiction
   regulatory_source: 'FIN-2023-Alert004 Supplemental Alert: FinCEN and the U.S. Department
     of Commerce’s Bureau of Industry and Security Urge Continued Vigilance for Potential
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-05-19'
-  risk_level: high
-  category: layering
+  risk_level: medium
+  category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - pass_through_account_activity
+  - wire_transfer_chains
+  key_terms:
+  - smaller-volume payments
+  - foreign bank account
+  - dual-use products
 - id: 010_russian_export_control_evasion_supplemental-07
   description: Parties to transactions listed as ultimate consignees or listed in
     the “consign to” field do not typically engage in business consistent with consuming
@@ -144,7 +213,7 @@
   industry_types:
   - logistics
   customer_profiles:
-  - third_party_payment_processor
+  - cross_border_business
   geographic_footprints: []
   regulatory_source: 'FIN-2023-Alert004 Supplemental Alert: FinCEN and the U.S. Department
     of Commerce’s Bureau of Industry and Security Urge Continued Vigilance for Potential
@@ -152,9 +221,18 @@
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-05-19'
-  risk_level: high
+  risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - ultimate consignees
+  - consign to
+  - mail centers
+  - logistics companies
 - id: 010_russian_export_control_evasion_supplemental-08
   description: The customer is significantly overpaying for a commodity based on known
     market prices.
@@ -164,6 +242,7 @@
   - correspondent_banking
   industry_types:
   - import_export
+  - manufacturing
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
@@ -176,6 +255,14 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - overpaying
+  - market prices
+  - commodity
 - id: 010_russian_export_control_evasion_supplemental-09
   description: The customer or its address is similar to one of the parties on a proscribed
     parties list, such as the BIS Entity List, the SDN List, or the U.S. Department
@@ -184,11 +271,16 @@
   - wire_transfer
   - trade_finance
   - correspondent_banking
+  - depository
   industry_types: []
   customer_profiles:
-  - shell_or_front_company
   - beneficial_owner_obscured
-  geographic_footprints: []
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - iran
+  - china
+  - sanctioned_jurisdiction
   regulatory_source: 'FIN-2023-Alert004 Supplemental Alert: FinCEN and the U.S. Department
     of Commerce’s Bureau of Industry and Security Urge Continued Vigilance for Potential
     Russian Export Control Evasion Attempts'
@@ -198,3 +290,11 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20and%20BIS%20Joint%20Alert%20_FINAL_508C.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - BIS Entity List
+  - SDN List
+  - Statutorily Debarred Parties List

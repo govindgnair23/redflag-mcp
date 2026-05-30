@@ -8,8 +8,42 @@
   - trade_finance
   - wire_transfer
   industry_types:
-  - maritime_shipping
   - oil_and_gas
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
+    Activities, Shadow Banking Networks, and Weapons Procurement Efforts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-06-06'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - maritime database
+  - Iranian port
+  - shipping documents
+  - payment processing
+- id: 020_iran_illicit_oil_smuggling-02
+  description: Documentation associated with a customer’s oil-related transactions
+    makes reference to vessels that, according to maritime databases, have undergone
+    recent or multiple name or flag changes, or transfer of ownership or operation
+    to another person following OFAC’s designation of its owner or operator, but the
+    designated owner or operator appears to maintain an interest in the vessel.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - maritime_shipping
   customer_profiles:
   - cross_border_business
   geographic_footprints:
@@ -22,29 +56,17 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
-- id: 020_iran_illicit_oil_smuggling-02
-  description: Documentation associated with a customer’s oil-related transactions
-    makes reference to vessels that, according to maritime databases, have undergone
-    recent or multiple name or flag changes, or transfer of ownership or operation
-    to another person following OFAC’s designation of its owner or operator, but the
-    designated owner or operator appears to maintain an interest in the vessel.
-  product_types:
-  - trade_finance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  - oil_and_gas
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints: []
-  regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
-    Activities, Shadow Banking Networks, and Weapons Procurement Efforts
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2025-06-06'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  - shell_company_usage
+  key_terms:
+  - OFAC designation
+  - name changes
+  - flag changes
+  - transfer of ownership
+  - vessel
 - id: 020_iran_illicit_oil_smuggling-03
   description: Documentation associated with a customer’s oil-related transactions
     makes reference to vessels that claim an International Maritime Organization (IMO)
@@ -54,11 +76,12 @@
   - trade_finance
   - wire_transfer
   industry_types:
-  - maritime_shipping
   - oil_and_gas
+  - maritime_shipping
   customer_profiles:
   - cross_border_business
-  geographic_footprints: []
+  geographic_footprints:
+  - iran
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
   regulator: FinCEN
@@ -67,6 +90,16 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  - trade_document_manipulation
+  key_terms:
+  - IMO number
+  - scrapped
+  - maritime databases
+  - vessel
 - id: 020_iran_illicit_oil_smuggling-04
   description: Documentation associated with a customer’s oil-related transactions
     makes reference to “Malaysian blend” oil, particularly if the vessel is bound
@@ -77,8 +110,8 @@
   - trade_finance
   - wire_transfer
   industry_types:
-  - maritime_shipping
   - oil_and_gas
+  - maritime_shipping
   customer_profiles:
   - cross_border_business
   geographic_footprints:
@@ -92,6 +125,16 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - Malaysian blend
+  - AIS irregularities
+  - ship-to-ship transfer
+  - maritime databases
 - id: 020_iran_illicit_oil_smuggling-05
   description: Transactions involving a petroleum or shipping company reveal that
     it does business with counterparties that have ties to Iran or transports goods
@@ -101,8 +144,8 @@
   - trade_finance
   - wire_transfer
   industry_types:
-  - maritime_shipping
   - oil_and_gas
+  - maritime_shipping
   customer_profiles:
   - cross_border_business
   geographic_footprints:
@@ -115,6 +158,15 @@
   risk_level: medium
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - counterparties
+  - Iran
+  - maritime databases
+  - vessels
 - id: 020_iran_illicit_oil_smuggling-06
   description: A customer makes oil-related transactions and wire transfers involving
     vessels that have been previously linked to suspicious financial activities or
@@ -125,8 +177,8 @@
   - trade_finance
   - wire_transfer
   industry_types:
-  - maritime_shipping
   - oil_and_gas
+  - maritime_shipping
   customer_profiles:
   - cross_border_business
   geographic_footprints:
@@ -139,6 +191,16 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - bills of lading
+  - shipping invoices
+  - no consignees
+  - Iranian nexus
 - id: 020_iran_illicit_oil_smuggling-07
   description: A customer makes transactions that move through multiple exchange houses
     and/or trading companies, adding additional fees and costs as the transactions
@@ -147,14 +209,16 @@
   product_types:
   - wire_transfer
   - correspondent_banking
-  - remittance
+  - money_transmitter
   industry_types:
   - money_services_business
   - professional_services
+  - import_export
   customer_profiles:
   - money_services_business
   - cross_border_business
-  geographic_footprints: []
+  geographic_footprints:
+  - iran
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
   regulator: FinCEN
@@ -163,6 +227,16 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - wire_transfer_chains
+  - rapid_fund_movement
+  key_terms:
+  - exchange houses
+  - trading companies
+  - fees
+  - commercial practices
 - id: 020_iran_illicit_oil_smuggling-08
   description: An exchange house or trading company in a jurisdiction in close geographical
     proximity to Iran uses forged or falsified documents to conceal the identity of
@@ -178,8 +252,8 @@
   - money_services_business
   - cross_border_business
   geographic_footprints:
-  - middle_east
-  - south_asia
+  - iran
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
   regulator: FinCEN
@@ -188,6 +262,17 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - exchange house
+  - forged documents
+  - correspondent banking
+  - U.S. dollars
 - id: 020_iran_illicit_oil_smuggling-09
   description: A customer receives wire transfers or deposits that do not contain
     any information about the source of funds, contain incomplete information about
@@ -198,8 +283,10 @@
   - wire_transfer
   - depository
   industry_types: []
-  customer_profiles: []
+  customer_profiles:
+  - cross_border_business
   geographic_footprints:
+  - iran
   - high_risk_jurisdiction
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
@@ -209,6 +296,16 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - source of funds
+  - wire transfers
+  - deposits
+  - line of business
 - id: 020_iran_illicit_oil_smuggling-10
   description: A general trading company registered in a commercial free trade zone
     in the UAE with opaque ownership and whose trading counterparties are companies
@@ -219,44 +316,16 @@
   - wire_transfer
   - correspondent_banking
   industry_types:
-  - professional_services
   - import_export
+  - professional_services
   customer_profiles:
   - shell_or_front_company
   - beneficial_owner_obscured
   - cross_border_business
   geographic_footprints:
-  - uk_eu
+  - hong_kong
+  - east_asia
   - south_east_asia
-  regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
-    Activities, Shadow Banking Networks, and Weapons Procurement Efforts
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2025-06-06'
-  risk_level: medium
-  category: shell_company
-  source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
-- id: 020_iran_illicit_oil_smuggling-11
-  description: A company based in Hong Kong, that banks using a Chinese non-resident
-    account, has little to no web presence, is co-located with numerous other similar
-    companies, or is recently incorporated yet transmitting large payments with no
-    adequate explanation for the source of funds, makes numerous payments in large
-    figures to UAE general trading companies with no clear business purpose.
-  product_types:
-  - depository
-  - wire_transfer
-  - correspondent_banking
-  industry_types:
-  - professional_services
-  - import_export
-  customer_profiles:
-  - shell_or_front_company
-  - beneficial_owner_obscured
-  - newly_established_business
-  - cross_border_business
-  geographic_footprints:
-  - china
-  - uk_eu
   - middle_east
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
@@ -266,6 +335,57 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - nested_account_activity
+  - shell_company_usage
+  key_terms:
+  - general trading company
+  - free trade zone
+  - opaque ownership
+  - UAE financial institutions
+- id: 020_iran_illicit_oil_smuggling-11
+  description: A company based in Hong Kong, that banks using a Chinese non-resident
+    account, has little to no web presence, is co-located with numerous other similar
+    companies, or is recently incorporated yet transmitting large payments with no
+    adequate explanation for the source of funds, makes numerous payments in large
+    figures to UAE general trading companies with no clear business purpose.
+  product_types:
+  - wire_transfer
+  - depository
+  - correspondent_banking
+  industry_types:
+  - import_export
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - newly_established_business
+  geographic_footprints:
+  - hong_kong
+  - china
+  - middle_east
+  regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
+    Activities, Shadow Banking Networks, and Weapons Procurement Efforts
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-06-06'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - shell_company
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - Hong Kong
+  - non-resident account
+  - web presence
+  - source of funds
 - id: 020_iran_illicit_oil_smuggling-12
   description: A customer makes transactions involving companies that originate with,
     or are directed to, entities that are general trading companies, suspected front
@@ -276,15 +396,14 @@
     sanctioned.
   product_types:
   - wire_transfer
-  - trade_finance
   - depository
+  - correspondent_banking
   industry_types:
-  - professional_services
   - import_export
+  - professional_services
   customer_profiles:
   - shell_or_front_company
   - beneficial_owner_obscured
-  - cross_border_business
   geographic_footprints:
   - iran
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
@@ -295,6 +414,17 @@
   risk_level: high
   category: shell_company
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - shell_company
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - nested_account_activity
+  key_terms:
+  - front company
+  - opaque ownership
+  - residential address
+  - sanctioned
 - id: 020_iran_illicit_oil_smuggling-13
   description: A customer declares information about the nature of its business that
     is inconsistent with other available information, such as previous transaction
@@ -306,11 +436,14 @@
   - wire_transfer
   industry_types:
   - import_export
-  - professional_services
+  - manufacturing
   customer_profiles:
   - cross_border_business
   geographic_footprints:
   - iran
+  - china
+  - hong_kong
+  - south_east_asia
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
   regulator: FinCEN
@@ -319,6 +452,17 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - business activity
+  - trade data
+  - shipments to and from Iran
+  - chemical suppliers
 - id: 020_iran_illicit_oil_smuggling-14
   description: A customer makes transactions that are directed to companies that operate
     in unrelated businesses, and which do not seem to align with the customer due
@@ -329,12 +473,17 @@
   product_types:
   - wire_transfer
   - trade_finance
+  - depository
   industry_types:
-  - professional_services
   - import_export
+  - retail
+  - manufacturing
   customer_profiles:
   - cross_border_business
-  geographic_footprints: []
+  geographic_footprints:
+  - iran
+  - hong_kong
+  - china
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
   regulator: FinCEN
@@ -343,32 +492,57 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - layering
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - unusual_international_wires
+  key_terms:
+  - CDD
+  - onboarding
+  - commodities trading companies
+  - electronics suppliers
 - id: 020_iran_illicit_oil_smuggling-15
   description: Multiple companies incorporated at roughly the same time share counterparties,
     addresses, owners, or name similarities and demonstrate similar transaction profiles.
     Such companies may have little to no web presence and transact in large, recurring
     amounts.
   product_types:
-  - depository
   - wire_transfer
-  - trade_finance
+  - depository
+  - correspondent_banking
   industry_types:
-  - professional_services
   - import_export
+  - professional_services
   customer_profiles:
   - shell_or_front_company
   - beneficial_owner_obscured
   - newly_established_business
-  - cross_border_business
-  geographic_footprints: []
+  geographic_footprints:
+  - iran
+  - hong_kong
+  - middle_east
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-06-06'
-  risk_level: medium
+  risk_level: high
   category: shell_company
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - shell_company
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  - nested_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - incorporated at roughly the same time
+  - shared counterparties
+  - name similarities
+  - web presence
 - id: 020_iran_illicit_oil_smuggling-16
   description: A company based in the Middle East with links to Iran or that shows
     indications of being a front company receives payments primarily from petroleum
@@ -377,10 +551,10 @@
   product_types:
   - wire_transfer
   - trade_finance
+  - depository
   industry_types:
-  - professional_services
   - import_export
-  - oil_and_gas
+  - manufacturing
   customer_profiles:
   - shell_or_front_company
   - beneficial_owner_obscured
@@ -388,13 +562,25 @@
   geographic_footprints:
   - middle_east
   - iran
-  - china
   - hong_kong
+  - china
   regulatory_source: FinCEN Advisory on the Iranian Regime’s Illicit Oil Smuggling
     Activities, Shadow Banking Networks, and Weapons Procurement Efforts
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-06-06'
-  risk_level: medium
+  risk_level: high
   category: layering
   source_url: https://www.fincen.gov/system/files/FinCEN-Advisory-Illicit-Oil-Smuggling-508.pdf
+  typology_family:
+  - layering
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - front company
+  - petroleum companies
+  - electronics companies
+  - Middle East

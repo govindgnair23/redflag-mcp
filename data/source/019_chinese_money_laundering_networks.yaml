@@ -1,21 +1,4 @@
 - id: 019_chinese_money_laundering_networks-01
-  description: a customer’s historical financial activity, whether the transactions
-    are in line with prevailing business practices, and whether the customer exhibits
-    multiple red flags, before determining if a behavior or transaction is suspicious
-    or otherwise indicative of a connection to a CMLN.
-  product_types: []
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
-    by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2025-08-28'
-  risk_level: low
-  category: layering
-  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-02
   description: A customer, especially a customer who presented a Chinese passport
     as identification during the onboarding process, regularly receives funds that
     are not commensurate with the reported occupation or income, and the source of
@@ -27,7 +10,10 @@
   industry_types: []
   customer_profiles:
   - foreign_individual
-  geographic_footprints: []
+  - individual_consumer
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -36,7 +22,15 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-03
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - Chinese passport
+  - unexplained wealth
+  - payroll
+- id: 019_chinese_money_laundering_networks-02
   description: During the onboarding process, a customer presents a Chinese passport
     and a visa that contain the same photograph despite being allegedly issued years
     apart.
@@ -45,8 +39,10 @@
   industry_types: []
   customer_profiles:
   - foreign_individual
+  - individual_consumer
   geographic_footprints:
   - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -55,7 +51,15 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-04
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - Chinese passport
+  - visa
+  - same photograph
+- id: 019_chinese_money_laundering_networks-03
   description: A customer, especially a Chinese national, creates an account at a
     financial institution and reports their occupation as a student during the onboarding
     process. This customer then regularly deposits cash into their account or receives
@@ -67,11 +71,14 @@
   - depository
   - wire_transfer
   - credit_card
-  industry_types: []
+  industry_types:
+  - travel_hospitality
   customer_profiles:
-  - student
   - foreign_individual
-  geographic_footprints: []
+  - student
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -80,7 +87,18 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-05
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - student
+  - tuition
+  - living expenses
+  - P2P
+- id: 019_chinese_money_laundering_networks-04
   description: A customer, especially a Chinese national, reports their occupation
     during customer onboarding as a student, retiree, housewife, or other low-income
     occupation but has unexplained wealth.
@@ -88,10 +106,12 @@
   - depository
   industry_types: []
   customer_profiles:
+  - foreign_individual
   - student
   - elderly_or_vulnerable_person
-  - foreign_individual
-  geographic_footprints: []
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -100,20 +120,29 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-06
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - student
+  - retiree
+  - housewife
+  - unexplained wealth
+- id: 019_chinese_money_laundering_networks-05
   description: A customer, especially a Chinese national with unexplained wealth,
     initiates a wire transfer related to a real estate purchase or purchases cashier’s
     checks made payable to a real estate company. The customer may be accompanied
     by a real estate agent at the time of purchasing the cashier’s checks.
   product_types:
   - wire_transfer
-  - check_cashing
   - depository
   industry_types:
   - real_estate
   customer_profiles:
   - foreign_individual
-  geographic_footprints: []
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -122,7 +151,17 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-07
+  typology_family:
+  - real_estate_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - real_estate_transactions
+  - unusual_international_wires
+  key_terms:
+  - cashier’s checks
+  - real estate company
+  - real estate agent
+- id: 019_chinese_money_laundering_networks-06
   description: A customer, especially a Chinese national, regularly deposits large
     volumes of cash or cashier’s checks, or receives multiple wire, ACH, or P2P transfers
     for no business or apparent lawful purpose. The customer then subsequently uses
@@ -137,15 +176,29 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-08-28'
-  risk_level: high
+  risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-08
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - cashier’s check
+  - ACH
+  - P2P
+  - high-risk jurisdictions
+- id: 019_chinese_money_laundering_networks-07
   description: A customer’s account, especially a Chinese national, receives numerous
     transfers or deposits, and has a significant number of withdrawals or transfers,
     none of which appear to be related to routine payroll, living expenses, or customer’s
@@ -157,7 +210,9 @@
   industry_types: []
   customer_profiles:
   - foreign_individual
-  geographic_footprints: []
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -166,16 +221,25 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-09
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - payroll
+  - living expenses
+  - expected activity
+- id: 019_chinese_money_laundering_networks-08
   description: A customer, especially a Chinese national, has large amounts of cash
     funding cashier’s checks, which are then deposited at another financial institution.
   product_types:
-  - check_cashing
   - depository
   industry_types: []
   customer_profiles:
   - foreign_individual
-  geographic_footprints: []
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -184,7 +248,15 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-10
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - cashier’s checks
+  - another financial institution
+- id: 019_chinese_money_laundering_networks-09
   description: A customer, especially a Chinese national, is reluctant or refuses
     to provide information regarding the source of funds deposited or transferred
     into their account or acts evasive when questioned about the purpose of a transaction
@@ -195,7 +267,9 @@
   industry_types: []
   customer_profiles:
   - foreign_individual
-  geographic_footprints: []
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -204,7 +278,13 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-11
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+  - repayment of a loan
+- id: 019_chinese_money_laundering_networks-10
   description: A customer that is a U.S.-based escrow company receives funds from
     an unaffiliated, foreign-based shell company or entity in a disparate line of
     business that are used to purchase real estate in the United States.
@@ -217,6 +297,9 @@
   - shell_or_front_company
   geographic_footprints:
   - domestic_us
+  - china
+  - hong_kong
+  - middle_east
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -225,7 +308,18 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-12
+  typology_family:
+  - real_estate_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  - real_estate_transactions
+  - third_party_payments
+  key_terms:
+  - escrow company
+  - shell company
+  - real estate
+- id: 019_chinese_money_laundering_networks-11
   description: A business owned by a Chinese national regularly receives deposits
     from online marketplaces, but rarely, or never, engages in transactions that indicate
     the purchase of goods to maintain inventory.
@@ -237,7 +331,10 @@
   - retail
   customer_profiles:
   - foreign_individual
-  geographic_footprints: []
+  - small_business
+  geographic_footprints:
+  - china
+  - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
@@ -246,22 +343,33 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-13
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  - pass_through_account_activity
+  key_terms:
+  - online marketplaces
+  - inventory
+- id: 019_chinese_money_laundering_networks-12
   description: A business owned by a Chinese national regularly receives wire transfers
     indicating the export of goods to foreign countries including Mexico, China, Hong
     Kong, and the United Arab Emirates, but rarely, or never, engages in transactions
     that indicate the purchase of goods to maintain inventory.
   product_types:
   - wire_transfer
-  - trade_finance
+  - depository
   industry_types:
   - import_export
   customer_profiles:
   - foreign_individual
+  - small_business
+  - cross_border_business
   geographic_footprints:
   - mexico
   - china
-  - south_east_asia
+  - hong_kong
   - middle_east
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
@@ -271,21 +379,31 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-14
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  - unusual_international_wires
+  key_terms:
+  - export of goods
+  - inventory
+- id: 019_chinese_money_laundering_networks-13
   description: A small U.S.-based business in the electronics or real estate industry
     receives wires from Mexico, China, Hong Kong, and the United Arab Emirates and
     has no known nexus to these countries.
   product_types:
   - wire_transfer
+  - depository
   industry_types:
-  - retail
   - real_estate
+  - retail
   customer_profiles:
   - small_business
   geographic_footprints:
   - mexico
   - china
-  - south_east_asia
+  - hong_kong
   - middle_east
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
@@ -295,7 +413,15 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-15
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - electronics
+  - real estate
+  - no known nexus
+- id: 019_chinese_money_laundering_networks-14
   description: A customer, especially a Chinese national, regularly receives P2P or
     wire transfers from unknown individuals and subsequently uses those funds to make
     a substantial credit card payment. If questioned about the source of the funds,
@@ -309,6 +435,7 @@
   customer_profiles:
   - foreign_individual
   geographic_footprints:
+  - china
   - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
@@ -318,7 +445,16 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-16
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - P2P
+  - credit card payment
+  - family members
+- id: 019_chinese_money_laundering_networks-15
   description: A customer, especially a Chinese national, regularly uses a credit
     card to purchase large volumes of electronics or other luxury goods.
   product_types:
@@ -326,9 +462,39 @@
   industry_types:
   - retail
   - luxury_goods
-  - precious_metals_jewelry
   customer_profiles:
   - foreign_individual
+  geographic_footprints:
+  - china
+  - domestic_us
+  regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
+    by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2025-08-28'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - credit card
+  - electronics
+  - luxury goods
+- id: 019_chinese_money_laundering_networks-16
+  description: A business that sells electronics or other luxury goods has income
+    that is not commensurate with the size and scale of the business.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - retail
+  - luxury_goods
+  customer_profiles:
+  - small_business
   geographic_footprints: []
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
@@ -338,28 +504,15 @@
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - income not commensurate
+  - electronics
+  - luxury goods
 - id: 019_chinese_money_laundering_networks-17
-  description: A business that sells electronics or other luxury goods has income
-    that is not commensurate with the size and scale of the business.
-  product_types:
-  - depository
-  - credit_card
-  industry_types:
-  - retail
-  - luxury_goods
-  - precious_metals_jewelry
-  customer_profiles:
-  - small_business
-  geographic_footprints: []
-  regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
-    by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2025-08-28'
-  risk_level: medium
-  category: layering
-  source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-18
   description: A business that sells electronics or other luxury goods makes payments
     for multiple credit cards associated with various individuals, who are seemingly
     unrelated to the business.
@@ -369,7 +522,6 @@
   industry_types:
   - retail
   - luxury_goods
-  - precious_metals_jewelry
   customer_profiles:
   - small_business
   geographic_footprints: []
@@ -381,14 +533,21 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
-- id: 019_chinese_money_laundering_networks-19
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - multiple credit cards
+  - unrelated to the business
+- id: 019_chinese_money_laundering_networks-18
   description: Hong Kong registered trading companies with shell-like characteristics
     send funds to Chinese nationals residing in the United States, real estate escrow
     or title insurance companies, and other international destinations with no apparent
     business or economic purpose.
   product_types:
   - wire_transfer
-  - trade_finance
+  - depository
   industry_types:
   - import_export
   - real_estate
@@ -396,13 +555,25 @@
   - shell_or_front_company
   - foreign_individual
   geographic_footprints:
-  - south_east_asia
+  - hong_kong
+  - china
   - domestic_us
   regulatory_source: FinCEN Advisory on the Use of Chinese Money Laundering Networks
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2025-08-28'
-  risk_level: high
+  risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2025-08/FinCEN-Advisory-CMLN-508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - Hong Kong registered trading companies
+  - shell-like characteristics
+  - title insurance companies

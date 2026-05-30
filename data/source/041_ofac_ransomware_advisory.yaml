@@ -1,0 +1,93 @@
+- id: 041_ofac_ransomware_advisory-01
+  description: Virtual currency exchanges that facilitate financial transactions for
+    ransomware actors, involving illicit proceeds from ransomware variants, may be
+    designated by OFAC.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Updated Advisory on Potential Sanctions Risks for Facilitating
+    Ransomware Payments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-09-21'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://ofac.treasury.gov/media/912981/download?inline
+  typology_family:
+  - crypto_asset_money_laundering
+  - ransomware
+  transaction_patterns:
+  - rapid_fund_movement
+  - nested_account_activity
+  key_terms:
+  - virtual currency exchange
+  - ransomware actors
+  - illicit proceeds
+- id: 041_ofac_ransomware_advisory-02
+  description: Analysis of known transactions showed that a significant percentage
+    (e.g., over 40%) of a virtual currency exchange’s known transaction history was
+    associated with illicit actors.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Updated Advisory on Potential Sanctions Risks for Facilitating
+    Ransomware Payments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-09-21'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://ofac.treasury.gov/media/912981/download?inline
+  typology_family:
+  - crypto_asset_money_laundering
+  - ransomware
+  transaction_patterns:
+  - rapid_fund_movement
+  - nested_account_activity
+  key_terms:
+  - transaction history
+  - illicit actors
+- id: 041_ofac_ransomware_advisory-03
+  description: The risk that a ransomware payment may involve an SDN or blocked person,
+    or a comprehensively embargoed jurisdiction.
+  product_types:
+  - crypto
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  - caribbean
+  - eastern_europe
+  - iran
+  - north_korea
+  - syria
+  regulatory_source: Updated Advisory on Potential Sanctions Risks for Facilitating
+    Ransomware Payments
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issued_date: '2021-09-21'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/912981/download?inline
+  typology_family:
+  - sanctions_evasion
+  - ransomware
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - SDN
+  - blocked person
+  - embargoed jurisdiction

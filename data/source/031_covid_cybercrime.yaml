@@ -5,22 +5,28 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
-  category: cyber_enabled
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - online onboarding
+  - government-issued identity documentation
 - id: 031_covid_cybercrime-02
   description: Pictures in identity documentation, especially areas around faces,
     are blurry or low resolution, or have aberrations. Pictures in identity documentation
@@ -31,22 +37,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
-  category: cyber_enabled
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identity documentation
+  - remote identity verification
+  - image manipulation
 - id: 031_covid_cybercrime-03
   description: Images of identity documentation have visual irregularities that indicate
     digital manipulation of the images, especially around information fields likely
@@ -56,22 +69,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
-  category: cyber_enabled
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - synthetic identity fraud
+  - identity documentation
+  - digital manipulation
 - id: 031_covid_cybercrime-04
   description: A customer’s physical description on identity documentation does not
     match other images of the customer.
@@ -79,22 +99,28 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
-  category: cyber_enabled
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identity documentation
+  - customer images
 - id: 031_covid_cybercrime-05
   description: A customer refuses to provide supplemental identity documentation or
     delays producing supplemental documentation.
@@ -102,22 +128,26 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
-  category: cyber_enabled
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - supplemental identity documentation
 - id: 031_covid_cybercrime-06
   description: Customer logins occur from a single device or Internet Protocol (IP)
     address across multiple seemingly unrelated accounts, often within a short period
@@ -126,22 +156,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
-  - third_party_payment_processor
-  - money_services_business
   - individual_consumer
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
-  risk_level: high
+  risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - IP address
+  - multiple accounts
+  - login
 - id: 031_covid_cybercrime-07
   description: The IP address associated with logins does not match the stated address
     in identity documentation.
@@ -149,22 +186,28 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - identity documentation
 - id: 031_covid_cybercrime-08
   description: Customer logins occur within a pattern of high network traffic with
     decreased login success rates and increased password reset rates.
@@ -172,22 +215,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - password reset
+  - login success rates
+  - network traffic
 - id: 031_covid_cybercrime-09
   description: A customer calls a financial institution to change account communication
     methods and authentication information, then quickly attempts to conduct transactions
@@ -196,22 +246,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - foreign_individual
-  - non_resident_alien
+  - small_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
-  risk_level: high
-  category: cyber_enabled
+  risk_level: medium
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  - rapid_fund_movement
+  key_terms:
+  - authentication information
+  - account communication methods
 - id: 031_covid_cybercrime-10
   description: Information technology enterprise activity related to transaction processes
     or information is connected to cyber indicators that have been associated with
@@ -221,19 +278,26 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
-  risk_level: medium
+  risk_level: low
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - system log files
+  - network traffic
+  - file information
 - id: 031_covid_cybercrime-11
   description: Email addresses purportedly related to COVID-19 do not match the name
     of the sender or the corresponding domain of the company allegedly sending the
@@ -242,24 +306,32 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types:
   - healthcare
+  - manufacturing
   - professional_services
   customer_profiles:
   - individual_consumer
   - small_business
-  - newly_established_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - COVID-19
+  - email address
+  - domain
 - id: 031_covid_cybercrime-12
   description: Unsolicited emails related to COVID-19 from untrusted sources encourage
     readers to open embedded links/files or to provide personal or financial information,
@@ -268,22 +340,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
   - small_business
-  - newly_established_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
-  risk_level: high
+  risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - phishing
+  - usernames and passwords
+  - account credentials
 - id: 031_covid_cybercrime-13
   description: Emails from untrusted sources or addresses similar to legitimate telework
     vendor accounts offer remote application software, often advertised at no or reduced
@@ -292,23 +371,28 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types:
   - professional_services
-  - healthcare
+  - technology
   customer_profiles:
   - small_business
-  - newly_established_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - telework vendor
+  - remote application software
 - id: 031_covid_cybercrime-14
   description: 'Emails contain subject lines identified by government or industry
     as associated with phishing campaigns (e.g., “Coronavirus Updates,” “2019-nCov:
@@ -318,22 +402,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
   customer_profiles:
   - individual_consumer
   - small_business
-  - newly_established_business
-  geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  geographic_footprints:
+  - east_asia
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - phishing campaigns
+  - Coronavirus Updates
+  - 2019-nCov
 - id: 031_covid_cybercrime-15
   description: Text messages have embedded links purporting to be from or associated
     with government relief programs and payments.
@@ -341,23 +432,29 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types:
   - government_benefits
   customer_profiles:
   - individual_consumer
-  - elderly_or_vulnerable_person
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  geographic_footprints: []
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns: []
+  key_terms:
+  - government relief programs
+  - embedded links
+  - text messages
 - id: 031_covid_cybercrime-16
   description: Embedded links or webpage addresses for purported COVID-19 resources
     have irregular uniform resource locators (URLs) that do not match that of the
@@ -368,68 +465,89 @@
   - depository
   - prepaid
   - money_transmitter
-  - remittance
-  - crypto
+  - wire_transfer
+  - credit_card
   industry_types: []
-  customer_profiles:
-  - individual_consumer
-  - small_business
-  - newly_established_business
+  customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
-  risk_level: high
+  risk_level: medium
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - URLs
+  - domain variations
+  - COVID-19 resources
 - id: 031_covid_cybercrime-17
   description: A customer’s transaction instructions contain different language, timing,
     and amounts in comparison to prior transaction instructions, especially regarding
     transactions involving healthcare providers or supplies purchases.
   product_types:
-  - wire_transfer
-  - ach
-  - check_cashing
   - depository
+  - ach
+  - wire_transfer
+  - check_cashing
+  - money_transmitter
   industry_types:
   - healthcare
   customer_profiles:
   - small_business
-  - newly_established_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - transaction instructions
+  - healthcare providers
+  - supplies purchases
 - id: 031_covid_cybercrime-18
   description: Transaction instructions, typically involving a healthcare-sector counterparty
     or referencing purchase of healthcare or emergency response supplies, originate
     from an email account closely resembling, but not identical to, a known customer’s
     email account.
   product_types:
-  - wire_transfer
-  - ach
   - depository
+  - ach
+  - wire_transfer
+  - money_transmitter
   industry_types:
   - healthcare
   customer_profiles:
   - small_business
-  - newly_established_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: high
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  key_terms:
+  - email account
+  - healthcare-sector counterparty
+  - emergency response supplies
 - id: 031_covid_cybercrime-19
   description: Emailed transaction instructions direct payment to a different account
     for a known beneficiary. The transmitter may claim a need to change the destination
@@ -437,40 +555,58 @@
     a financial institution in a jurisdiction less affected by the disease, and assert
     urgency to conduct the transaction.
   product_types:
-  - wire_transfer
-  - ach
   - depository
+  - ach
+  - wire_transfer
+  - money_transmitter
   industry_types: []
   customer_profiles:
   - small_business
-  - newly_established_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: high
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - known beneficiary
+  - destination account
+  - COVID-19 pandemic response
 - id: 031_covid_cybercrime-20
   description: Emailed transaction instructions request to move payment methods from
     checks to ACH transfers as a response to the pandemic.
   product_types:
-  - ach
-  - check_cashing
   - depository
+  - ach
+  - wire_transfer
+  - check_cashing
+  - money_transmitter
   industry_types: []
   customer_profiles:
   - small_business
-  - newly_established_business
   geographic_footprints: []
-  regulatory_source: FIN-2020-A005 July 30, 2020 Advisory on Cybercrime and Cyber-Enabled
-    Crime Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
+  regulatory_source: FIN-2020-A005 Advisory on Cybercrime and Cyber-Enabled Crime
+    Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/advisory/2020-07-30/FinCEN%20Advisory%20Covid%20Cybercrime%20508%20FINAL.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - checks
+  - ACH transfers
+  - pandemic

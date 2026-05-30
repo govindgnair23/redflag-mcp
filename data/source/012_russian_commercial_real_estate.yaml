@@ -5,36 +5,45 @@
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
   industry_types:
   - real_estate
   customer_profiles:
   - politically_exposed_person
   - foreign_individual
-  - high_net_worth_individual
+  - cross_border_business
   geographic_footprints:
-  - high_risk_jurisdiction
   - russia
+  - domestic_us
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-01-25'
-  risk_level: high
+  risk_level: medium
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - private investment vehicle
+  - offshore
+  - CRE
+  - PEPs
+  - sanctioned Russian elites
 - id: 012_russian_commercial_real_estate-02
   description: When asked questions about the ultimate beneficial owners or controllers
     of a legal entity or arrangement, customers decline to provide information.
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
   industry_types: []
   customer_profiles:
-  - shell_or_front_company
   - beneficial_owner_obscured
+  - shell_or_front_company
   geographic_footprints: []
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
@@ -43,6 +52,14 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - ultimate beneficial owners
+  - controllers
+  - legal entity
+  - arrangement
 - id: 012_russian_commercial_real_estate-03
   description: Multiple limited liability companies, corporations, partnerships, or
     trusts are involved in a transaction with ties to sanctioned Russian elites and
@@ -50,7 +67,6 @@
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
   industry_types:
   - real_estate
@@ -59,6 +75,7 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - russia
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -66,6 +83,16 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - LLCs
+  - corporations
+  - partnerships
+  - trusts
+  - name variations
 - id: 012_russian_commercial_real_estate-04
   description: The use of legal entities or arrangements, such as trusts, to purchase
     CRE that involves friends, associates, family members, or others with a close
@@ -73,7 +100,6 @@
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
   industry_types:
   - real_estate
@@ -82,26 +108,37 @@
   - shell_or_front_company
   geographic_footprints:
   - russia
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-01-25'
-  risk_level: high
-  category: sanctions_evasion
+  risk_level: medium
+  category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - legal entities
+  - arrangements
+  - trusts
+  - CRE
 - id: 012_russian_commercial_real_estate-05
   description: Ownership of CRE through legal entities in multiple jurisdictions (often
     involving a trust based outside the United States) without a clear business purpose.
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
   industry_types:
   - real_estate
   customer_profiles:
   - shell_or_front_company
   - beneficial_owner_obscured
+  - cross_border_business
   geographic_footprints:
   - domestic_us
   - high_risk_jurisdiction
@@ -112,6 +149,15 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - multiple jurisdictions
+  - trust
+  - business purpose
+  - CRE
 - id: 012_russian_commercial_real_estate-06
   description: Transfers of assets from a PEP or Russian elite to a family member,
     business associate, or associated trust in close temporal proximity to a legal
@@ -119,14 +165,16 @@
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
+  - private_banking
   industry_types: []
   customer_profiles:
   - politically_exposed_person
-  - high_net_worth_individual
+  - foreign_individual
+  - beneficial_owner_obscured
   geographic_footprints:
   - russia
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -134,6 +182,17 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - PEP
+  - Russian elite
+  - OFAC designation
+  - trust
 - id: 012_russian_commercial_real_estate-07
   description: Implementation of legal instruments (e.g., deeds of exclusion) that
     are intended to transfer an interest in CRE from a PEP or Russian elite to a family
@@ -142,15 +201,17 @@
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
+  - private_banking
   industry_types:
   - real_estate
   customer_profiles:
   - politically_exposed_person
-  - high_net_worth_individual
+  - foreign_individual
+  - beneficial_owner_obscured
   geographic_footprints:
   - russia
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -158,6 +219,16 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - deeds of exclusion
+  - CRE
+  - OFAC designation
+  - legal instruments
 - id: 012_russian_commercial_real_estate-08
   description: Private investment funds or other companies that submit revised ownership
     disclosures to financial institutions showing sanctioned individuals or PEPs that
@@ -166,39 +237,59 @@
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
   industry_types: []
   customer_profiles:
   - politically_exposed_person
   - beneficial_owner_obscured
+  - shell_or_front_company
   geographic_footprints:
   - russia
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-01-25'
-  risk_level: high
-  category: sanctions_evasion
+  risk_level: medium
+  category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  key_terms:
+  - ownership disclosures
+  - 50 percent
+  - fund
+  - PEP
+  - sanctioned individuals
 - id: 012_russian_commercial_real_estate-09
   description: There is limited discernable business value in the CRE investment or
     the investment is outside of the client’s normal business operations.
   product_types:
   - depository
   - securities
-  - private_banking
   - wire_transfer
   industry_types:
   - real_estate
   customer_profiles:
-  - high_net_worth_individual
+  - cross_border_business
   - shell_or_front_company
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-01-25'
-  risk_level: medium
+  risk_level: low
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN%20Alert%20Real%20Estate%20FINAL%20508_1-25-23%20FINAL%20FINAL.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - business value
+  - normal business operations
+  - CRE investment

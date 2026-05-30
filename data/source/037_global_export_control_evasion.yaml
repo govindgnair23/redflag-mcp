@@ -4,21 +4,28 @@
     commercial invoice, do not list the actual end-user.
   product_types:
   - trade_finance
-  - wire_transfer
   industry_types:
   - import_export
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
-  risk_level: high
+  risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - letter of credit
+  - commercial invoice
+  - end-user
 - id: 037_global_export_control_evasion-02
   description: Transactions involving entities with little to no web presence, such
     as a website or a domain-based email account.
@@ -30,15 +37,22 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - web presence
+  - domain-based email
 - id: 037_global_export_control_evasion-03
   description: A customer lacks or refuses to provide details to banks, shippers,
     or third parties, including details about end-users, intended end-use(s), or company
@@ -53,15 +67,23 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - end-user
+  - end-use
+  - company ownership
 - id: 037_global_export_control_evasion-04
   description: Transactions involving customers with phone numbers with country codes
     that do not match the destination country.
@@ -72,16 +94,23 @@
   - import_export
   customer_profiles:
   - cross_border_business
-  geographic_footprints: []
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
-  risk_level: medium
+  risk_level: low
   category: layering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - country codes
+  - destination country
 - id: 037_global_export_control_evasion-05
   description: Parties to transactions listed as ultimate consignees or listed in
     the “consign to” field appear to be mail centers, trading companies, or logistics
@@ -90,21 +119,30 @@
   - trade_finance
   - wire_transfer
   industry_types:
-  - logistics
   - import_export
+  - logistics
   customer_profiles:
-  - shell_or_front_company
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
-  risk_level: high
+  risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - ultimate consignee
+  - consign to
+  - mail centers
+  - trading companies
+  - logistics companies
 - id: 037_global_export_control_evasion-06
   description: The item (commodity, software or technology) does not fit the purchaser’s
     line of business.
@@ -113,19 +151,30 @@
   - wire_transfer
   industry_types:
   - import_export
+  - manufacturing
+  - retail
+  - logistics
   customer_profiles:
-  - shell_or_front_company
-  - newly_established_business
+  - cross_border_business
   geographic_footprints: []
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - line of business
+  - commodity
+  - software
+  - technology
 - id: 037_global_export_control_evasion-07
   description: The customer name or its address is similar to one of the parties on
     a proscribed parties list, such as the BIS Lists of Parties of Concern (e.g.,
@@ -140,19 +189,28 @@
   industry_types: []
   customer_profiles:
   - beneficial_owner_obscured
-  - shell_or_front_company
   geographic_footprints:
-  - ofac_sanctioned_country
   - sanctioned_jurisdiction
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  - ofac_sanctioned_country
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - Entity List
+  - Unverified List
+  - Denied Persons List
+  - SDN List
+  - Statutorily Debarred Parties List
 - id: 037_global_export_control_evasion-08
   description: Transactions involve a purported civil end-user, but basic research
     indicates the address is a military facility or co-located with military facilities
@@ -166,15 +224,25 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  - russia
+  - belarus
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: high
   category: proliferation_financing
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - proliferation_financing
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - civil end-user
+  - military facility
+  - country of concern
 - id: 037_global_export_control_evasion-09
   description: Transactions involving companies that are physically co-located, or
     have shared ownership, with an entity on the Entity List or the SDN List.
@@ -188,23 +256,32 @@
   - shell_or_front_company
   - beneficial_owner_obscured
   geographic_footprints:
-  - ofac_sanctioned_country
   - sanctioned_jurisdiction
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  - ofac_sanctioned_country
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: high
-  category: sanctions_evasion
+  category: shell_company
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - shell_company
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - Entity List
+  - SDN List
+  - shared ownership
+  - co-located
 - id: 037_global_export_control_evasion-10
   description: Transactions that use open accounts/open lines of credit when the payment
     services are conducted in conjunction with known transshipment jurisdictions and/or
     the products listed in payment memos align with those identified by BIS as a disruptive
-    technology (see the “Disruptive Technology Strike Force” highlighted below) or
-    included on the CCL.
+    technology or included on the CCL.
   product_types:
   - trade_finance
   - wire_transfer
@@ -216,15 +293,29 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  - russia
+  - belarus
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: high
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - open accounts
+  - open lines of credit
+  - transshipment jurisdictions
+  - CCL
+  - payment memos
 - id: 037_global_export_control_evasion-11
   description: The customer is significantly overpaying for an item based on known
     market prices.
@@ -233,18 +324,27 @@
   - wire_transfer
   industry_types:
   - import_export
+  - retail
+  - manufacturing
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - overpaying
+  - market prices
 - id: 037_global_export_control_evasion-12
   description: Transactions involve a last-minute change in payment routing that was
     previously scheduled from a country of concern but now routed through a different
@@ -259,15 +359,25 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  - russia
+  - belarus
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
   risk_level: high
-  category: layering
+  category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - wire_transfer_chains
+  - unusual_international_wires
+  key_terms:
+  - payment routing
+  - country of concern
 - id: 037_global_export_control_evasion-13
   description: Transactions involve payments being made from entities located at potential
     transshipment points or involve atypical shipping routes to reach a destination.
@@ -282,12 +392,22 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FinCEN and the U.S. Department of Commerce’s Bureau of Industry
-    and Security Announce New Reporting Key Term and Highlight Red Flags Relating
-    to Global Evasion of U.S. Export Controls (FIN-2023-NTC2)
+  - south_east_asia
+  - middle_east
+  regulatory_source: FIN-2023-NTC2 November 6, 2023 FinCEN and the U.S. Department
+    of Commerce’s Bureau of Industry and Security Announce New Reporting Key Term
+    and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2023-11-06'
-  risk_level: high
+  risk_level: medium
   category: trade_based_money_laundering
   source_url: https://www.fincen.gov/system/files/shared/FinCEN_Joint_Notice_US_Export_Controls_FINAL508.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - transshipment points
+  - shipping routes

@@ -21,6 +21,13 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns: []
+  key_terms:
+  - Health Care Benefit Program
+  - recently established
+  - owner or employee
 - id: 018_health_care_fraud-02
   description: A customer is a health care provider or supplier registered with a
     Health Care Benefit Program that has beneficial owners with prior health care
@@ -31,7 +38,8 @@
   - healthcare
   customer_profiles:
   - beneficial_owner_obscured
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -40,6 +48,13 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - beneficial owners
+  - fraud convictions
+  - Health Care Benefit Program
 - id: 018_health_care_fraud-03
   description: A customer is the nominal or beneficial owner of a health care provider
     or supplier registered with a Health Care Benefit Program and has familial or
@@ -51,7 +66,8 @@
   - healthcare
   customer_profiles:
   - beneficial_owner_obscured
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -60,6 +76,13 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - nominal owner
+  - beneficial owner
+  - fraud convictions
 - id: 018_health_care_fraud-04
   description: A customer is a health care provider or supplier registered with a
     Health Care Benefit Program, and the account is accessed through an Internet Protocol
@@ -71,6 +94,7 @@
   - healthcare
   customer_profiles: []
   geographic_footprints:
+  - domestic_us
   - high_risk_jurisdiction
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
@@ -78,8 +102,16 @@
   regulator_jurisdiction: US
   issued_date: '2026-03-30'
   risk_level: medium
-  category: layering
+  category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - Device ID
+  - multiple accounts
 - id: 018_health_care_fraud-05
   description: A customer is a health care provider or supplier registered with a
     Health Care Benefit Program and has nominal and beneficial owners listed on the
@@ -91,7 +123,8 @@
   - healthcare
   customer_profiles:
   - beneficial_owner_obscured
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -100,6 +133,14 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - nominal owners
+  - beneficial owners
+  - separate and distinct health care providers or suppliers
 - id: 018_health_care_fraud-06
   description: A customer is a recently established or purchased health care provider
     or supplier registered with a Health Care Benefit Program, and there are changes
@@ -111,7 +152,8 @@
   - healthcare
   customer_profiles:
   - newly_established_business
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -120,6 +162,14 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - beneficiaries
+  - Tax Identification Number
+  - recently established
 - id: 018_health_care_fraud-07
   description: A customer that is a recently established or purchased health care
     provider or supplier receives a significant amount of reimbursements from a Health
@@ -135,7 +185,8 @@
   customer_profiles:
   - newly_established_business
   - shell_or_front_company
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -144,6 +195,16 @@
   risk_level: high
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - rapid_fund_movement
+  - shell_company_usage
+  - pass_through_account_activity
+  key_terms:
+  - reimbursements
+  - online presence
+  - shell company
 - id: 018_health_care_fraud-08
   description: A customer is a recently established health care provider or supplier
     that receives a significant number of reimbursements from a Health Care Benefit
@@ -154,7 +215,8 @@
   - healthcare
   customer_profiles:
   - newly_established_business
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -163,6 +225,13 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - reimbursements
+  - soon after starting operations
 - id: 018_health_care_fraud-09
   description: A customer is a health care provider or supplier registered with a
     Health Care Benefit Program that is receiving a significant increase in reimbursements
@@ -173,7 +242,8 @@
   - healthcare
   customer_profiles:
   - beneficial_owner_obscured
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -182,6 +252,13 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - beneficial ownership
+  - reimbursements
 - id: 018_health_care_fraud-10
   description: A customer is a health care provider or supplier that suddenly has
     a significant increase in reimbursements from Health Care Benefit Programs or
@@ -191,7 +268,8 @@
   industry_types:
   - healthcare
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -200,20 +278,28 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - reimbursements
+  - commercial insurers
 - id: 018_health_care_fraud-11
   description: A customer is a recently established or purchased health care provider
-    or supplier registered with Health Care Benefit Programs or commercial insurers
-    that receives a significant amount of reimbursements inconsistent with the customer’s
-    profile (e.g., receiving a significant amount of payments from Medicare Part A
-    and Part B MACs for reimbursements beyond the expected activity of other similar
-    health care providers or suppliers).
+    or supplier registered with Health Care Programs or commercial insurers that receives
+    a significant amount of reimbursements inconsistent with the customer’s profile
+    (e.g., receiving a significant amount of payments from Medicare Part A and Part
+    B MACs for reimbursements beyond the expected activity of other similar health
+    care providers or suppliers).
   product_types:
   - depository
   industry_types:
   - healthcare
   customer_profiles:
   - newly_established_business
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -222,6 +308,14 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - Medicare Part A
+  - Part B
+  - MACs
+  - reimbursements
 - id: 018_health_care_fraud-12
   description: A customer is a health care provider or supplier that receives significant
     volumes of reimbursements from a Health Care Benefit Program or commercial insurers
@@ -233,7 +327,8 @@
   industry_types:
   - healthcare
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -242,6 +337,14 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - DME MACs
+  - DME
+  - business expenses
 - id: 018_health_care_fraud-13
   description: A customer is a health care provider or supplier that receives a significant
     volume of reimbursements from a single Health Care Benefit Program as opposed
@@ -253,7 +356,8 @@
   industry_types:
   - healthcare
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -262,6 +366,13 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - MAC
+  - DME
+  - reimbursements
 - id: 018_health_care_fraud-14
   description: A customer is a health care provider or supplier with a significant
     amount of transactional activity consisting of “consulting fees,” “marketing fees,”
@@ -272,7 +383,8 @@
   industry_types:
   - healthcare
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -281,6 +393,15 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - consulting fees
+  - marketing fees
+  - invoices
 - id: 018_health_care_fraud-15
   description: A customer is a health care provider or supplier that receives a significant
     volume of reimbursements from a Health Care Benefit Program and transfers the
@@ -302,6 +423,13 @@
   risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - reimbursements
+  - residential address
 - id: 018_health_care_fraud-16
   description: A customer is a health care provider or supplier that has outgoing
     transactions to, or expenditures related to, companies that have no apparent related
@@ -327,6 +455,16 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - residential real estate
+  - luxury goods
+  - art
+  - jewelry
 - id: 018_health_care_fraud-17
   description: A customer is a health care provider or supplier with consistently
     low to moderate billing for a year or more and then suddenly begins to file a
@@ -336,7 +474,8 @@
   industry_types:
   - healthcare
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -345,15 +484,25 @@
   risk_level: medium
   category: fraud_nexus
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - spike billing
+  - claims
 - id: 018_health_care_fraud-18
   description: A customer is a health care provider or supplier with a pattern of
     making significant cash withdrawals for no readily apparent business reason.
   product_types:
   - depository
+  - check_cashing
   industry_types:
   - healthcare
-  customer_profiles: []
-  geographic_footprints: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -362,35 +511,55 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash withdrawals
+  - business reason
 - id: 018_health_care_fraud-19
   description: A customer is a health care provider or supplier with a significant
     increase in cash withdrawals correlating to a significant increase in billings
     (i.e., customer is potentially paying kickbacks).
   product_types:
   - depository
+  - check_cashing
   industry_types:
   - healthcare
-  customer_profiles: []
-  geographic_footprints: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2026-03-30'
-  risk_level: high
+  risk_level: medium
   category: corruption
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - corruption_and_bribery
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash withdrawals
+  - billings
+  - kickbacks
 - id: 018_health_care_fraud-20
   description: A customer is a health care provider or supplier that is transferring
     a significant volume of funds to individuals via high-value checks.
   product_types:
-  - check_cashing
   - depository
+  - check_cashing
   industry_types:
   - healthcare
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -399,17 +568,24 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - high-value checks
 - id: 018_health_care_fraud-21
   description: Without credible explanation, a customer routinely cashes high-value
     checks drawn from accounts associated with a health care provider or supplier.
   product_types:
-  - check_cashing
   - depository
+  - check_cashing
   industry_types:
   - healthcare
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -418,6 +594,13 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - high-value checks
 - id: 018_health_care_fraud-22
   description: A customer that is a health care provider or supplier, or the customer’s
     employee, engages in behavior suggesting efforts to evade the Currency Transaction
@@ -441,6 +624,15 @@
   risk_level: high
   category: structuring
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - CTR
+  - recordkeeping
+  - $10,000
 - id: 018_health_care_fraud-23
   description: A customer is a recently established or purchased health care provider
     or supplier registered with a Health Care Benefit Program that sends a significant
@@ -454,6 +646,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
@@ -462,24 +655,43 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - wire transfers
+  - foreign jurisdictions
 - id: 018_health_care_fraud-24
   description: A customer is a health care provider or supplier registered with a
     Health Care Benefit Program that sends money transfers to VASPs, brokerage accounts,
     and online betting platforms for no seemingly legitimate business reason.
   product_types:
   - wire_transfer
-  - securities
   - crypto
+  - securities
   industry_types:
   - healthcare
   - crypto
   customer_profiles: []
-  geographic_footprints: []
+  geographic_footprints:
+  - domestic_us
   regulatory_source: FIN-2026-A001 FinCEN Advisory on Health Care Fraud Schemes Targeting
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2026-03-30'
-  risk_level: high
+  risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-03/FinCEN-Advisory-Health-Care-Fraud.pdf
+  typology_family:
+  - fraud_proceeds
+  - layering
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - VASPs
+  - brokerage accounts
+  - online betting platforms
