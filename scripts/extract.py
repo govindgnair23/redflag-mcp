@@ -19,7 +19,7 @@ Outputs YAML files in data/source/ conforming to the RedFlagSource schema.
 Tracks processed sources in data/source/.extracted_sources.yaml to avoid
 re-processing. Use --force to bypass the duplicate check.
 
-Pipeline: extract → shape → verify. Each pass can be skipped:
+Pipeline: extract → verify → shape. Each pass can be skipped:
     --no-shape   skip the shaping pass (descriptions written verbatim from extraction)
     --no-verify  skip the verification pass (all extracted candidates kept)
 
@@ -513,18 +513,18 @@ def process_one(source: str, force: bool, manifest: list[dict], source_url: str 
 
     print(f"LLM returned {len(raw_flags)} red flag(s) for {slug}.")
 
-    if shape:
-        try:
-            raw_flags = shape_red_flags(raw_flags)
-        except Exception as e:
-            print(f"Error during shaping for {source}: {e}", file=sys.stderr)
-            return None
-
     if verify:
         try:
             raw_flags = verify_red_flags(raw_flags, force_handcrafted=force_handcrafted)
         except Exception as e:
             print(f"Error during verification for {source}: {e}", file=sys.stderr)
+            return None
+
+    if shape:
+        try:
+            raw_flags = shape_red_flags(raw_flags)
+        except Exception as e:
+            print(f"Error during shaping for {source}: {e}", file=sys.stderr)
             return None
 
     entries, skipped = validate_and_build_entries(raw_flags, slug, source_url=source_url)
