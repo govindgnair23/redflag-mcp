@@ -3,7 +3,7 @@
     benefit program that suddenly receives and disburses a significant number of reimbursements
     in a short timeframe inconsistent with the customer profile of other similar entities.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -33,7 +33,7 @@
     benefit program that is suddenly receiving a significant amount of Federal payments
     soon after starting its operations.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -64,7 +64,7 @@
     benefit program receiving payments to their accounts that are inconsistent with
     their customer profile.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -94,7 +94,7 @@
     but is unable to verify its status to the financial institution or its customer
     profile is not commensurate with other similar entities.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -122,7 +122,7 @@
   description: A customer is a company or NPO enrolled in a government benefit program
     that is receiving a significant amount of reimbursements despite limited operations.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -151,7 +151,7 @@
   description: A customer is a recently established company or NPO enrolled in a government
     benefit program with a limited online presence.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -180,7 +180,7 @@
     that has minimal to no operating costs other than payments for “consulting fees”
     and nondescriptive, repetitive invoices (i.e. food supplies).
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -208,7 +208,7 @@
   description: A customer that is a company or NPO enrolled in a government benefit
     program makes a significant amount of cash withdrawals.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -236,7 +236,7 @@
   description: A customer with previous fraud convictions is an employee of a company
     or NPO enrolled in a government benefit program.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -265,7 +265,7 @@
     benefit program that is frequently purchasing or redeeming cashier’s checks for
     no clear purpose.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -297,7 +297,7 @@
     with multiple cash transactions for under $10,000), as well as avoiding recordkeeping
     requirements.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - charity_or_nonprofit
   customer_profiles:
@@ -328,7 +328,7 @@
     meant for U.S. citizens and lawful permanent residents that is sending a significant
     amount of wire transfers to individuals and companies located in foreign jurisdictions.
   product_types:
-  - deposits
+  - depository
   - correspondent_banking
   - remittance
   industry_types:
@@ -361,7 +361,7 @@
     that is sending payments abroad for residential and commercial real estate, vehicles,
     aircraft, airline tickets, and designer clothing.
   product_types:
-  - deposits
+  - depository
   - correspondent_banking
   - remittance
   industry_types:

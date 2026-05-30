@@ -7,7 +7,7 @@
     business in the United States they own and operate, or purchases a large volume
     of goods.
   product_types:
-  - deposits
+  - depository
   - correspondent_banking
   - remittance
   - trade_finance
@@ -44,7 +44,7 @@
     to Mexico.
   product_types:
   - remittance
-  - deposits
+  - depository
   industry_types:
   - money_services_business
   customer_profiles:
@@ -77,7 +77,7 @@
     affiliated Mexico-based business, receives a large credit from a U.S.-based ACS
     into their account at a U.S.-based financial institution.
   product_types:
-  - deposits
+  - depository
   industry_types: []
   customer_profiles:
   - cross_border_business
@@ -106,7 +106,7 @@
     cash into the U.S.-based financial institution’s vault at a U.S.-based ACS secure
     storage facility.
   product_types:
-  - deposits
+  - depository
   industry_types:
   - money_services_business
   - import_export
@@ -137,7 +137,7 @@
     wire transfer to their account at a U.S.-based financial institution from a Canada-based
     financial institution.
   product_types:
-  - deposits
+  - depository
   - correspondent_banking
   - remittance
   industry_types: []
@@ -171,7 +171,7 @@
     purpose, before it is finally delivered to a U.S.-based financial institution
     or a Federal Reserve Bank location.
   product_types:
-  - deposits
+  - depository
   - correspondent_banking
   industry_types: []
   customer_profiles:
@@ -204,7 +204,7 @@
     is the currency originator or where the funds are destined in Part II of a FinCEN
     Form 105 (CMIR).
   product_types:
-  - deposits
+  - depository
   - remittance
   industry_types:
   - money_services_business
@@ -236,7 +236,7 @@
     of USD into the United States, that are not commensurate with the size of the
     business or the business profile.
   product_types:
-  - deposits
+  - depository
   - remittance
   industry_types:
   - money_services_business
@@ -268,7 +268,7 @@
     of the transaction. The U.S.-based ACS then receives a request to transport the
     funds to a financial institution.
   product_types:
-  - deposits
+  - depository
   - correspondent_banking
   industry_types: []
   customer_profiles:
@@ -301,7 +301,7 @@
     or accepted by a U.S. financial institution but does not provide a clear explanation
     of the source of the funds.
   product_types:
-  - deposits
+  - depository
   industry_types: []
   customer_profiles:
   - individual_consumer
