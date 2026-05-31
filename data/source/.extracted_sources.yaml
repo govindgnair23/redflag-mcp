@@ -210,3 +210,31 @@
   slug: '052'
   output_file: data/source/052.yaml
   extracted_at: '2026-05-30T18:30:15.009293+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/054.md
+  slug: '054'
+  output_file: data/source/054.yaml
+  extracted_at: '2026-05-31T15:11:07.498959+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/059.md
+  slug: 059
+  output_file: data/source/059.yaml
+  extracted_at: '2026-05-31T15:22:38.302100+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/060.pdf
+  slug: '060'
+  output_file: data/source/060.yaml
+  extracted_at: '2026-05-31T15:27:26.689151+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/061.md
+  slug: '061'
+  output_file: data/source/061.yaml
+  extracted_at: '2026-05-31T15:31:48.919429+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/062.md
+  slug: '062'
+  output_file: data/source/062.yaml
+  extracted_at: '2026-05-31T15:33:07.469532+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/063.md
+  slug: '063'
+  output_file: data/source/063.yaml
+  extracted_at: '2026-05-31T15:34:00.232871+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/064.md
+  slug: '064'
+  output_file: data/source/064.yaml
+  extracted_at: '2026-05-31T15:34:19.332074+00:00'

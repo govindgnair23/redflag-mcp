@@ -1,0 +1,3269 @@
+- id: 062-01
+  description: There is an inability to properly identify the client or there are
+    questions surrounding the client's identity.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - client identity
+- id: 062-02
+  description: The client refuses or tries to avoid providing information required,
+    or provides information that is misleading, vague, or difficult to verify.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - misleading information
+  - vague information
+- id: 062-03
+  description: The client refuses to provide information regarding the beneficial
+    owners, or provides information that is false, conflicting, misleading or substantially
+    incorrect.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - beneficial owners
+- id: 062-04
+  description: The identification document presented by the client cannot be authenticated.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identification document
+- id: 062-05
+  description: There are inconsistencies in the identification documents or different
+    identifiers provided by the client, such as name, address, date of birth or phone
+    number.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identification documents
+  - name
+  - address
+  - date of birth
+  - phone number
+- id: 062-06
+  description: Client produces seemingly false information or identification that
+    appears to be counterfeited, altered or inaccurate.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - counterfeited
+  - altered
+  - inaccurate identification
+- id: 062-07
+  description: Client displays a pattern of name variations from one transaction to
+    another or uses aliases.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - name variations
+  - aliases
+- id: 062-08
+  description: Client alters the transaction after being asked for identity documents.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identity documents
+- id: 062-09
+  description: The client provides only a non-civic address or disguises a post office
+    box as a civic address for the purpose of concealing their physical residence.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - non-civic address
+  - post office box
+- id: 062-10
+  description: Common identifiers (e.g. addresses, phone numbers, etc.) are used by
+    multiple clients that do not appear to be related.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - common identifiers
+  - addresses
+  - phone numbers
+- id: 062-11
+  description: Common identifiers (e.g. addresses, phone numbers, etc.) are used by
+    multiple clients conducting similar transactions.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - common identifiers
+  - addresses
+  - phone numbers
+- id: 062-12
+  description: Use of the same hotel address by one or more clients.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types:
+  - travel_hospitality
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - hotel address
+- id: 062-13
+  description: Transactions involve persons or entities identified by the media, law
+    enforcement and/or intelligence agencies as being linked to criminal activities.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - media
+  - law enforcement
+  - intelligence agencies
+- id: 062-14
+  description: Attempts to verify the information provided by a new or prospective
+    client are difficult.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - new or prospective client
+- id: 062-15
+  description: Client makes statements about involvement in criminal activities.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - criminal activities
+- id: 062-16
+  description: Client conducts transactions at different physical locations, or approaches
+    different employees.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - different physical locations
+  - different employees
+- id: 062-17
+  description: Evidence of untruthfulness on behalf of the client (e.g. providing
+    false or misleading information).
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false information
+  - misleading information
+- id: 062-18
+  description: Client exhibits nervous behaviour.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - nervous behaviour
+- id: 062-19
+  description: Client refuses to provide information when required, or is reluctant
+    to provide information.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - refuses to provide information
+- id: 062-20
+  description: Client has a defensive stance to questioning.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - defensive stance
+- id: 062-21
+  description: Client presents confusing details about the transaction or knows few
+    details about its purpose.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - transaction purpose
+- id: 062-22
+  description: Client avoids contact with reporting entity employees.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - avoids contact
+- id: 062-23
+  description: Client refuses to identify a source for funds or provides information
+    that is false, misleading, or substantially incorrect.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - source of funds
+- id: 062-24
+  description: Client exhibits a lack of concern about higher than normal transaction
+    costs or fees.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - fees
+- id: 062-25
+  description: Client makes inquiries/statements indicating a desire to avoid reporting
+    or tries to persuade the reporting entity not to file/maintain required reports.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - avoid reporting
+  - required reports
+- id: 062-26
+  description: Insufficient explanation for the source of funds.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+- id: 062-27
+  description: The transactional activity far exceeds the projected activity at beginning
+    of the relationship.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - projected activity
+- id: 062-28
+  description: The transactional activity (level or volume) is inconsistent with the
+    client's apparent financial standing, their usual pattern of activities or occupational
+    information (e.g. student, unemployed, social assistance, etc.).
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - student
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - financial standing
+  - usual pattern
+  - occupational information
+- id: 062-29
+  description: The transactional activity is inconsistent with what is expected from
+    a declared business
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - declared business
+- id: 062-30
+  description: The volume of transactional activity exceeds the norm for geographical
+    area.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - geographical area
+- id: 062-31
+  description: Client appears to be living beyond their means.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - living beyond their means
+- id: 062-32
+  description: Large and/or rapid movement of funds not commensurate with the client's
+    financial profile.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - large movement of funds
+- id: 062-33
+  description: Rounded sum transactions atypical of what would be expected from the
+    client.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - rounded sum transactions
+- id: 062-34
+  description: Size or type of transactions atypical of what is expected from the
+    client.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - transaction size
+  - transaction type
+- id: 062-35
+  description: Conducting transactions when the client's address or employment address
+    is outside the local service area without a reasonable explanation.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - local service area
+  - employment address
+- id: 062-36
+  description: There is a sudden change in the client's financial profile, pattern
+    of activity or transactions.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - sudden change
+- id: 062-37
+  description: Client uses notes, monetary instruments, or products and/or services
+    that are unusual for such a client.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - notes
+  - monetary instruments
+- id: 062-38
+  description: A product and/or service initiated on behalf of a person or entity
+    that is inconsistent based on what you know about that client.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - on behalf of
+- id: 062-39
+  description: Frequent and/or atypical transfers between the client's products for
+    no apparent reason.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - transfers between products
+- id: 062-40
+  description: A series of complicated transfers of funds that seems to be an attempt
+    to hide the source and intended use of the funds.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - complicated transfers
+  - source and intended use
+- id: 062-41
+  description: Transactions displaying financial connections between persons or entities
+    that are not usually connected (e.g. a food importer dealing with an automobile
+    parts exporter).
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types:
+  - import_export
+  - food_service
+  - auto_sales
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - financial connections
+  - food importer
+  - automobile parts exporter
+- id: 062-42
+  description: Transaction is unnecessarily complex for its stated purpose.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - unnecessarily complex
+- id: 062-43
+  description: Client presents notes or financial instruments that are packed, transported
+    or wrapped in an uncommon way.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - packed
+  - transported
+  - wrapped
+- id: 062-44
+  description: Client's transactions have no apparent business or economic purpose.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - no apparent business purpose
+- id: 062-45
+  description: Transaction is consistent with a publicly known trend in criminal activity.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - criminal activity
+- id: 062-46
+  description: Client uses musty, odd smelling or extremely dirty bills.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - dirty bills
+- id: 062-47
+  description: Transaction involves a suspected shell entity (an entity that does
+    not have an economical or logical reason to exist).
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell entity
+- id: 062-48
+  description: Client frequently exchanges small bills for larger bills.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - small bills
+  - larger bills
+- id: 062-49
+  description: Suspicious pattern emerges from a client's transactions (e.g. transactions
+    take place at the same time of day).
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - same time of day
+- id: 062-50
+  description: Atypical transfers between the client's products.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - transfers between products
+- id: 062-51
+  description: Atypical transfers by client on an in-and-out basis, or other methods
+    of moving funds quickly, such as a currency exchange followed immediately by a
+    wire transfer of the funds out.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - in-and-out basis
+  - currency exchange
+  - wire transfer
+- id: 062-52
+  description: Funds transferred in and out on the same day or within a relatively
+    short period of time.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - same day
+  - short period of time
+- id: 062-53
+  description: Unusual amount of self-use by agent/owner.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - agent
+  - owner
+- id: 062-54
+  description: You become aware of the structuring of wire transfers at multiple locations.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  - wire_transfer_chains
+  key_terms:
+  - structuring
+  - wire transfers
+  - multiple locations
+- id: 062-55
+  description: Client appears to be structuring amounts to avoid client identification
+    or reporting thresholds.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - reporting thresholds
+  - identification thresholds
+- id: 062-56
+  description: Client appears to be collaborating with others to avoid client identification
+    or reporting thresholds.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - collaborating
+  - reporting thresholds
+- id: 062-57
+  description: The structuring of wire transfers through multiple locations of the
+    same MSB or by groups of persons who enter a single location at the same time.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  - wire_transfer_chains
+  key_terms:
+  - MSB
+  - wire transfers
+  - multiple locations
+- id: 062-58
+  description: Multiple transactions conducted below the reporting threshold within
+    a short period.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - reporting threshold
+- id: 062-59
+  description: Client makes inquiries that would indicate a desire to avoid reporting.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - avoid reporting
+- id: 062-60
+  description: Client exhibits knowledge of reporting thresholds.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - reporting thresholds
+- id: 062-61
+  description: Client conducts transactions at different physical locations or with
+    different representatives in an apparent attempt to avoid detection.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - different physical locations
+  - different representatives
+- id: 062-62
+  description: Client is unaware of details surrounding incoming wire transfers, such
+    as the ordering client details, amounts or reasons.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - incoming wire transfers
+  - ordering client details
+- id: 062-63
+  description: Client does not appear to know the sender of the wire transfer from
+    whom the wire transfer was received, or the recipient to whom they are sending
+    the wire transfer.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - sender
+  - recipient
+- id: 062-64
+  description: Client frequents multiple locations utilizing cash, prepaid credit
+    cards or money orders/cheques/drafts to send wire transfers overseas.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - cash
+  - prepaid credit cards
+  - money orders
+  - overseas
+- id: 062-65
+  description: The client sends wire transfers or receives wire transfers to or from
+    multiple beneficiaries that do not correspond with the expected activity of the
+    client.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - multiple beneficiaries
+- id: 062-66
+  description: Client is accompanied by persons who appear to be instructing the sending
+    or receiving of wire transfers on their behalf.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - on their behalf
+- id: 062-67
+  description: Multiple persons are sending wire transfers that are similar in amounts,
+    receiver names, security questions, addresses or destination country.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - receiver names
+  - security questions
+  - destination country
+- id: 062-68
+  description: Client attempts to specify the routing of an international wire transfer.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - routing
+  - international wire transfer
+- id: 062-69
+  description: Client conducts wire transfers that do not include theirs or the beneficiary's
+    requisite information.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - requisite information
+- id: 062-70
+  description: Client utilizes structured cash transactions to send wire transfers
+    in an effort to avoid record keeping requirements.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  - cash_deposits_below_threshold
+  - wire_transfer_chains
+  key_terms:
+  - structured cash transactions
+  - record keeping requirements
+- id: 062-71
+  description: Multiple clients have sent wire transfers over a short period of time
+    to the same recipient.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - same recipient
+- id: 062-72
+  description: Large and/or frequent wire transfers between senders and receivers
+    with no apparent relationship.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - no apparent relationship
+- id: 062-73
+  description: Client sending to, or receiving wire transfers from, multiple clients.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - multiple clients
+- id: 062-74
+  description: Transactions with jurisdictions that are known to produce or transit
+    drugs or precursor chemicals, or are sources of other types of criminality.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - drugs
+  - precursor chemicals
+- id: 062-75
+  description: Transactions with jurisdictions that are known to be at a higher risk
+    of ML/TF.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - higher risk of ML/TF
+- id: 062-76
+  description: Transaction/business activity involving locations of concern, which
+    can include jurisdictions where there are ongoing conflicts (and periphery areas),
+    countries with weak ML/TF controls, or countries with highly secretive banking
+    or other transactional laws such as transfer limits set by a government.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - locations of concern
+  - weak ML/TF controls
+  - transfer limits
+- id: 062-77
+  description: Transactions involving any countries deemed high risk or non-cooperative
+    by the Financial Action Task Force.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - FATF
+  - high risk
+  - non-cooperative
+- id: 062-78
+  description: Client makes frequent overseas transfers, not in line with their financial
+    profile.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - overseas transfers
+- id: 062-79
+  description: A client conducts transaction(s) while accompanied, overseen or directed
+    by another party.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - accompanied
+  - overseen
+  - directed by another party
+- id: 062-80
+  description: Wire transfers to or from unrelated parties (foreign or domestic).
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - unrelated parties
+- id: 062-81
+  description: Client appears to be or states they are acting on behalf of another
+    party.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - acting on behalf of
+- id: 062-82
+  description: Client is involved in transactions that are suspicious but refuses
+    or is unable to answer questions related to the transactions.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - refuses to answer questions
+- id: 062-83
+  description: Gatekeeper avoids identifying their client or disclosing their client's
+    identity when such identification would be normal during the course of a transaction.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - gatekeeper
+  - client identity
+- id: 062-84
+  description: Gatekeeper is willing to pay higher fees and seeks to conduct the transaction
+    quickly when there is no apparent need for such expediency.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - gatekeeper
+  - higher fees
+  - quickly
+- id: 062-85
+  description: Gatekeeper is processing transactions not typical of their business
+    (e.g. excessive amount of cash, payment to non-clients or parties of transactions).
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - gatekeeper
+  - excessive amount of cash
+  - non-clients
+- id: 062-86
+  description: A client is a politically exposed foreign person operating in a high-risk
+    jurisdiction where they are responsible for granting authorizations, licenses,
+    or contracts to businesses.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - politically exposed foreign person
+  - authorizations
+  - licenses
+  - contracts
+- id: 062-87
+  description: A client is a family member or known associate of a politically exposed
+    foreign person.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - family member
+  - known associate
+  - politically exposed foreign person
+- id: 062-88
+  description: A client engages in high-value transactions with politically exposed
+    domestic or foreign persons, including their family members or known associates.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - high-value transactions
+  - politically exposed persons
+- id: 062-89
+  description: Transactions involving long-term government contracts that may have
+    been awarded through an opaque selection process to a legal entity or multiple
+    legal entities with similar beneficial owners.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - government contracts
+  - opaque selection process
+  - beneficial owners
+- id: 062-90
+  description: Transactions involving services provided to state-owned companies or
+    public institutions by companies registered in high-risk jurisdictions for corruption.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - state-owned companies
+  - public institutions
+- id: 062-91
+  description: Transactions involving government business being conducted through
+    personal accounts, which may indicate an attempt to divert or misuse public funds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - government_official
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - government business
+  - personal accounts
+  - public funds
+- id: 062-92
+  description: 'Transactions involving entities, intermediaries, or consultants that:
+    Did not take part in the related project. Would not typically be involved in the
+    client’s industry or line of business.'
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - intermediaries
+  - consultants
+  - related project
+- id: 062-93
+  description: A client makes high-value payments for services, such as consulting
+    fees, in jurisdictions identified as high-risk for corruption.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - consulting fees
+  - high-value payments
+- id: 062-94
+  description: A client makes commission payments into offshore bank accounts, particularly
+    when the accounts are located in jurisdictions with weak anti-money laundering
+    and anti-terrorist activity financing controls or secrecy laws.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - commission payments
+  - offshore bank accounts
+  - secrecy laws
+- id: 062-95
+  description: A client transacts with newly established, opaque, or unidentified
+    entities. This includes entities registered at the address of an offshore company
+    service provider, especially when there is no apparent business relationship between
+    the client and the entity.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - newly established
+  - opaque
+  - offshore company service provider
+- id: 062-96
+  description: Funds move through intermediaries in third countries or through countries
+    with which the client does not appear to have any legitimate business or personal
+    ties.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - intermediaries
+  - third countries
+- id: 062-97
+  description: Transactions involve fictitious email addresses or false invoices used
+    to justify payments, particularly in the context of international transactions.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - import_export
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - trade_based_money_laundering
+  - corruption_and_bribery
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - false invoices
+  - fictitious email addresses
+  - international transactions
+- id: 062-98
+  description: A client uses intermediaries, professional facilitators, or complex
+    legal entity structures to hide the origin or ownership of funds. For example,
+    the client may use such structures to obscure the purchase or sale of real estate.
+  product_types:
+  - wire_transfer
+  - depository
+  - private_banking
+  - securities
+  industry_types:
+  - real_estate
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  - real_estate_money_laundering
+  transaction_patterns:
+  - shell_company_usage
+  - real_estate_transactions
+  key_terms:
+  - intermediaries
+  - complex legal entity structures
+  - real estate
+- id: 062-99
+  description: 'A client conducts transactions that involve: Vague or incomplete payment
+    details. Fraudulent documentation used to justify the transfer of funds.'
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - import_export
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - trade_based_money_laundering
+  - corruption_and_bribery
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - vague payment details
+  - fraudulent documentation
+- id: 062-100
+  description: A client who is a politically exposed domestic or foreign person exhibits
+    a significant increase in net worth that cannot be reasonably explained by their
+    reported income, assets, or legitimate sources of wealth.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - net worth
+  - politically exposed person
+- id: 062-101
+  description: A client employs or has business connections with a politically exposed
+    foreign person, or their family members or close associates.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - business connections
+  - politically exposed foreign person
+- id: 062-102
+  description: Payments are made for the travel and lodging of politically exposed
+    domestic or foreign persons, or their family members, which may indicate attempts
+    to curry favor or provide undue benefits.
+  product_types:
+  - depository
+  - wire_transfer
+  - credit_card
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - travel and lodging
+  - politically exposed persons
+- id: 062-103
+  description: 'Transactions involving politically exposed domestic or foreign persons
+    related to the acquisition of high-value assets, such as real estate, luxury vehicles,
+    or other luxury goods, that are: Inconsistent with the client’s reported source
+    of wealth. Outside the individual’s normal pattern of activity or lifestyle.'
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types:
+  - real_estate
+  - luxury_goods
+  - auto_sales
+  customer_profiles:
+  - politically_exposed_person
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: corruption
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - high-value assets
+  - source of wealth
+  - lifestyle
+- id: 062-104
+  description: A client who is a politically exposed domestic or foreign person owns
+    or controls a legal entity, particularly one located offshore, which appears to
+    serve little or no legitimate commercial purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - offshore
+  - commercial purpose
+- id: 062-105
+  description: Assets are held in the name of legal entities whose beneficial owners
+    are tied to a politically exposed domestic or foreign person, their family members,
+    or close associates.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - beneficial owners
+  - legal entities
+- id: 062-106
+  description: A client who is a politically exposed domestic or foreign person maintains
+    multiple bank accounts, particularly when there is no apparent commercial or legitimate
+    reason for doing so.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - multiple bank accounts
+- id: 062-107
+  description: 'Transactions involving politically exposed domestic or foreign persons
+    that deviate significantly from the individual’s expected financial profile. Examples
+    may include: Multiple cash deposits into their account. Multiple electronic funds
+    transfers from different senders within a short time frame. Situations where the
+    politically exposed person is both the ordering and beneficiary client for electronic
+    funds transfers.'
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - wire_transfer_chains
+  - third_party_payments
+  key_terms:
+  - politically exposed persons
+  - electronic funds transfers
+  - ordering and beneficiary
+- id: 062-108
+  description: Transactions involving certain high-risk jurisdictions such as locations
+    in the midst of or in proximity to, armed conflict where terrorist groups operate
+    or locations which are subject to weaker ML/TF controls.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - armed conflict
+  - terrorist groups
+  - weaker ML/TF controls
+- id: 062-109
+  description: Transactions in the name of an entity, a foundation or association,
+    which may be linked or involved with a suspected terrorist organization.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - foundation
+  - association
+  - terrorist organization
+- id: 062-110
+  description: The use of funds by a non-profit organization is not consistent with
+    the purpose for which it was established.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - non-profit organization
+  - purpose
+- id: 062-111
+  description: Raising donations in an unofficial or unregistered manner.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - donations
+  - unofficial
+  - unregistered
+- id: 062-112
+  description: Client identified by media or law enforcement as having travelled,
+    attempted or intended to travel to high-risk jurisdictions (including cities or
+    districts of concern), specifically countries (and adjacent countries) under conflict
+    and/or political instability or known to support terrorist activities and organizations.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - travelled
+  - intended to travel
+  - terrorist activities
+- id: 062-113
+  description: Transactions involve persons or entities identified by media and/or
+    sanctions lists as being linked to a terrorist organization or terrorist activities.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - sanctions lists
+  - terrorist organization
+- id: 062-114
+  description: Law enforcement information provided which indicates persons or entities
+    may be linked to a terrorist organization or terrorist activities.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - law enforcement information
+  - terrorist organization
+- id: 062-115
+  description: Client conducted travel-related purchases (e.g. purchase of airline
+    tickets, travel visa, passport, etc.) linked to high-risk jurisdictions (including
+    cities or districts of concern), specifically countries (and adjacent countries)
+    under conflict and/or political instability or known to support terrorist activities
+    and organizations. Person or entity's online presence supports violent extremism
+    or radicalization.
+  product_types:
+  - credit_card
+  - depository
+  - money_transmitter
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - travel-related purchases
+  - violent extremism
+  - radicalization
+- id: 062-116
+  description: Client donates to a cause that is subject to derogatory information
+    that is publicly available (e.g. crowdfunding initiative, charity, NPO, NGO, etc.).
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - derogatory information
+  - crowdfunding
+  - NGO
+- id: 062-117
+  description: Client requests a transaction at a foreign exchange rate that exceeds
+    the posted rate.
+  product_types:
+  - currency_exchange
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - foreign exchange rate
+  - posted rate
+- id: 062-118
+  description: Client wants to pay transaction fees that exceed the posted fees.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - transaction fees
+  - posted fees
+- id: 062-119
+  description: Client exchanges currency and requests the largest possible denomination
+    bills in a foreign currency.
+  product_types:
+  - currency_exchange
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - largest possible denomination
+  - foreign currency
+- id: 062-120
+  description: Client knows little about address and contact details for the payee,
+    is reluctant to disclose this information, or requests a bearer instrument.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - payee
+  - bearer instrument
+- id: 062-121
+  description: Client wants a cheque issued in the same currency to replace the one
+    being cashed.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - cheque
+  - same currency
+- id: 062-122
+  description: Client wants cash converted to a cheque and you are not normally involved
+    in issuing cheques.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - cash converted to a cheque
+- id: 062-123
+  description: Client wants to exchange cash for numerous postal money orders in small
+    amounts for numerous other parties.
+  product_types:
+  - money_transmitter
+  - depository
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  - third_party_payments
+  key_terms:
+  - postal money orders
+  - small amounts
+  - other parties
+- id: 062-124
+  description: Client enters into transactions with counter parties in locations that
+    are unusual for the client.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - counter parties
+  - unusual locations
+- id: 062-125
+  description: Client instructs that funds are to be picked up by another party on
+    behalf of the payee.
+  product_types:
+  - money_transmitter
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - picked up
+  - on behalf of the payee
+- id: 062-126
+  description: Client makes large purchases of traveller's cheques not consistent
+    with known travel plans.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - traveller's cheques
+  - travel plans
+- id: 062-127
+  description: Client makes purchases of money orders in large volumes.
+  product_types:
+  - money_transmitter
+  - depository
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - money orders
+  - large volumes
+- id: 062-128
+  description: Client requests numerous cheques in small amounts and various names,
+    which total the amount of the exchange.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - monetary_instrument_purchases
+  - structuring
+  key_terms:
+  - cheques
+  - small amounts
+  - various names
+- id: 062-129
+  description: Client requests that a cheque or money order be made out to the bearer.
+  product_types:
+  - check_cashing
+  - money_transmitter
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - bearer
+  - money order
+- id: 062-130
+  description: Client requests that a large amount of foreign currency be exchanged
+    to another foreign currency.
+  product_types:
+  - currency_exchange
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - foreign currency
+  - another foreign currency
+- id: 062-131
+  description: Client purchases a large volume of money orders and changes payment
+    type to avoid reporting requirements.
+  product_types:
+  - money_transmitter
+  - depository
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Money services
+    businesses
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/msb_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  - monetary_instrument_purchases
+  key_terms:
+  - money orders
+  - avoid reporting requirements

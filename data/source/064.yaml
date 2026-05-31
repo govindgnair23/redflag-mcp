@@ -1,0 +1,647 @@
+- id: 064-01
+  description: Client portfolio only consists of privacy coins or has a high value
+    in privacy coins.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - privacy coins
+- id: 064-02
+  description: Client transfers Bitcoin in large volumes in exchange for privacy coins.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - Bitcoin
+  - privacy coins
+- id: 064-03
+  description: Client is unwilling or unable to provide information about the source
+    of privacy coins they once held or currently have.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - privacy coins
+  - source of funds
+- id: 064-04
+  description: VC addresses match addresses on recognized watch lists such as the
+    list of the Office of Foreign Assets Control (OFAC) or law enforcement information.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - VC addresses
+  - watch lists
+  - OFAC
+- id: 064-05
+  description: Many clients register with the exchange within a short period using
+    a shared address, mobile device, phone number, IP addresses and other common identity
+    indicators.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - shared address
+  - IP addresses
+- id: 064-06
+  description: The client's VC wallet or address is linked to fraudulent activity
+    in media reports and/or cyber security bulletins.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - wallet address
+  - fraudulent activity
+  - cyber security bulletins
+- id: 064-07
+  description: A platform receives unusual or persistent requests from other exchanges/vendors/service
+    providers in respect of a client's deposited funds or VC.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: low
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - exchanges
+  - vendors
+  - service providers
+- id: 064-08
+  description: A broker charges abnormally high commission fees compared to the industry
+    standard.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - broker
+  - commission fees
+- id: 064-09
+  description: The white paper is of poor quality, incomplete, misleading, and has
+    limited information.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - white paper
+- id: 064-10
+  description: Publicity is created around the initial coin offering (ICO) (advertisements,
+    celebrity endorsements, social media ads), also known as pump and dump ICOs.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - ICO
+  - pump and dump
+- id: 064-11
+  description: The developers are anonymous or information provided about the ICO
+    cannot be verified.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - developers
+  - ICO
+- id: 064-12
+  description: There is no access to the smart contract, to the code or to technical
+    information about the token's creation.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - smart contract
+  - token
+- id: 064-13
+  description: There is no possibility to sell the investment or to exit the project
+    to recover the invested funds.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - investment
+  - exit the project
+- id: 064-14
+  description: A series of complicated transfers of funds or VC to multiple addresses
+    or wallets that seems to be an attempt to hide the source and/or intended use
+    of the funds or VC.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - wire_transfer_chains
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - multiple addresses
+  - wallets
+  - hide the source
+- id: 064-15
+  description: Transactions take place at the same time of day. Transfers from fiat
+    to VC and VC to fiat.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - fiat to VC
+  - VC to fiat
+- id: 064-16
+  description: High volume and frequency of transfers between different types of VCs.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - different types of VCs
+- id: 064-17
+  description: Client provides an anonymous email address obtained through an encrypted
+    email service.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - anonymous email address
+  - encrypted email service
+- id: 064-18
+  description: Funds or VC are added or withdrawn from a VC address or wallet with
+    direct and indirect exposure links to known suspicious sources, including darknet
+    marketplaces, mixing/tumbling services, questionable gambling sites, illegal activities
+    (for example, ransomware) and/or theft reports.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  - casinos
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - cybercrime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - darknet marketplaces
+  - mixing/tumbling services
+  - ransomware
+  - theft reports
+- id: 064-19
+  description: The VC flows through a large number of intermediate addresses in a
+    very short period of time prior to being added to a client's wallet, or just after
+    being withdrawn.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - intermediate addresses
+  - wallet
+- id: 064-20
+  description: The VC passes through mixers/tumblers and is transferred to multiple
+    wallets, where the VC is exchanged for funds.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - mixers
+  - tumblers
+- id: 064-21
+  description: The VC originated from an over-the-counter trade broker that advertises
+    its services as privacy-oriented/anonymous.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - over-the-counter
+  - privacy-oriented
+  - anonymous
+- id: 064-22
+  description: Client's wallet address has links or hops to or from a wallet address
+    that has appeared on online platforms indicating support for violent extremism
+    or radicalization (including social media, ads on fundraising sites, sites on
+    Tor or messaging sites).
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - wallet address
+  - violent extremism
+  - radicalization
+  - Tor
+- id: 064-23
+  description: The source of funds used for the purchase of large amounts of VC is
+    unknown.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+  - large amounts of VC
+- id: 064-24
+  description: The email address used in the transaction is linked to advertisements
+    for the sale of VC on peer to peer exchange platforms. These advertisements may
+    suggest that the client is buying and selling VC on a commercial scale through
+    a business as a non-registered money services business.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - peer to peer exchange platforms
+  - non-registered money services business
+- id: 064-25
+  description: The client frequently receives funds from multiple payment processors.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - payment processors
+- id: 064-26
+  description: The client makes frequent payments or transfers to companies, post
+    office mailing services or uses money orders from agents of the Crown for the
+    purchase of computer software or hardware.
+  product_types:
+  - crypto
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Virtual currency
+    transactions
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2021-11-19'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/vc_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - money orders
+  - computer software
+  - computer hardware

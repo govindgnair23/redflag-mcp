@@ -1,0 +1,3151 @@
+- id: 054-01
+  description: A customer uses unusual or suspicious identification documents that
+    cannot be readily verified.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identification documents
+- id: 054-02
+  description: A customer provides an individual taxpayer identification number after
+    having previously used a Social Security number.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - ITIN
+  - Social Security number
+- id: 054-03
+  description: A customer uses different taxpayer identification numbers with variations
+    of his or her name.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - taxpayer identification numbers
+- id: 054-04
+  description: A business is reluctant, when establishing a new account, to provide
+    complete information about the nature and purpose of its business, anticipated
+    account activity, prior banking relationships, the names of its officers and directors,
+    or information on its business location.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - new account
+  - officers and directors
+  - business location
+- id: 054-05
+  description: A customer’s home or business telephone is disconnected.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns: []
+  key_terms:
+  - disconnected telephone
+- id: 054-06
+  description: The customer’s background differs from that which would be expected
+    on the basis of his or her business activities.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - background
+  - business activities
+- id: 054-07
+  description: A customer makes frequent or large transactions and has no record of
+    past or present employment experience.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - employment experience
+- id: 054-08
+  description: A customer is a trust, shell company, or Private Investment Company
+    that is reluctant to provide information on controlling parties and underlying
+    beneficiaries. Beneficial owners may hire nominee incorporation services to establish
+    shell companies and open bank accounts for those shell companies while shielding
+    the owner’s identity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - trust
+  - shell company
+  - Private Investment Company
+  - nominee incorporation services
+- id: 054-09
+  description: A customer or group tries to persuade a bank employee not to file required
+    reports or maintain required records.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - reports
+  - records
+- id: 054-10
+  description: A customer is reluctant to provide information needed to file a mandatory
+    report, to have the report filed, or to proceed with a transaction after being
+    informed that the report must be filed.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - mandatory report
+- id: 054-11
+  description: A customer is reluctant to furnish identification when purchasing negotiable
+    instruments in recordable amounts.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - negotiable instruments
+- id: 054-12
+  description: A business or customer asks to be exempted from reporting or recordkeeping
+    requirements.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - reporting requirements
+  - recordkeeping requirements
+- id: 054-13
+  description: A person customarily uses the automated teller machine to make several
+    bank deposits below a specified threshold.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  key_terms:
+  - ATM
+  - below a specified threshold
+- id: 054-14
+  description: A customer deposits funds into several accounts, usually in amounts
+    of less than $3,000, which are subsequently consolidated into a master account
+    and transferred outside of the country, particularly to or through a location
+    of specific concern (e.g., countries designated by national authorities and Financial
+    Action Task Force on Money Laundering (FATF) as noncooperative countries and territories).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  - sanctions_evasion
+  transaction_patterns:
+  - funnel_account_activity
+  - structuring
+  - unusual_international_wires
+  key_terms:
+  - $3,000
+  - master account
+  - FATF
+  - noncooperative countries and territories
+- id: 054-15
+  description: A customer accesses a safe deposit box after completing a transaction
+    involving a large withdrawal of currency, or accesses a safe deposit box before
+    making currency deposits structured at or just under $10,000, to evade CTR filing
+    requirements.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  - cash_intensive_behavior
+  key_terms:
+  - safe deposit box
+  - $10,000
+  - CTR
+- id: 054-16
+  description: Many funds transfers are sent in large, round dollar, hundred dollar,
+    or thousand dollar amounts.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - wire_transfer_chains
+  key_terms:
+  - round dollar
+  - hundred dollar
+  - thousand dollar
+- id: 054-17
+  description: Funds transfer activity occurs to or from a financial secrecy haven,
+    or to or from a higher-risk geographic location without an apparent business reason
+    or when the activity is inconsistent with the customer’s business or history.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - financial secrecy haven
+  - higher-risk geographic location
+- id: 054-18
+  description: Funds transfer activity occurs to or from a financial institution located
+    in a higher risk jurisdiction distant from the customer's operations.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - higher risk jurisdiction
+- id: 054-19
+  description: Many small, incoming transfers of funds are received, or deposits are
+    made using checks and money orders. Almost immediately, all or most of the transfers
+    or deposits are wired to another city or country in a manner inconsistent with
+    the customer’s business or history.
+  product_types:
+  - wire_transfer
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - wire_transfer_chains
+  key_terms:
+  - checks
+  - money orders
+- id: 054-20
+  description: Large, incoming funds transfers are received on behalf of a foreign
+    client, with little or no explicit reason.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - foreign client
+- id: 054-21
+  description: Funds transfer activity is unexplained, repetitive, or shows unusual
+    patterns.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  - rapid_fund_movement
+  key_terms:
+  - unusual patterns
+- id: 054-22
+  description: Payments or receipts with no apparent links to legitimate contracts,
+    goods, or services are received.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - contracts
+  - goods
+  - services
+- id: 054-23
+  description: Funds transfers are sent or received from the same person to or from
+    different accounts.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - different accounts
+- id: 054-24
+  description: Funds transfers contain limited content and lack related party information.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - related party information
+- id: 054-25
+  description: Large-value, automated clearing house (ACH) transactions are frequently
+    initiated through third-party service providers (TPSP) by originators that are
+    not bank customers and for which the bank has no or insufficient due diligence.
+  product_types:
+  - ach
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - ACH
+  - TPSP
+  - due diligence
+- id: 054-26
+  description: TPSPs have a history of violating ACH network rules or generating illegal
+    transactions, or processing manipulated or fraudulent transactions on behalf of
+    their customers.
+  product_types:
+  - ach
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - TPSP
+  - ACH network rules
+  - fraudulent transactions
+- id: 054-27
+  description: Multiple layers of TPSPs that appear to be unnecessarily involved in
+    transactions.
+  product_types:
+  - ach
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - third_party_payments
+  key_terms:
+  - TPSPs
+- id: 054-28
+  description: Unusually high level of transactions initiated over the Internet or
+    by telephone.
+  product_types:
+  - depository
+  - wire_transfer
+  - ach
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - Internet
+  - telephone
+- id: 054-29
+  description: The currency transaction patterns of a business show a sudden change
+    inconsistent with normal activities.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - currency transaction patterns
+- id: 054-30
+  description: A large volume of cashier’s checks, money orders, or funds transfers
+    is deposited into, or purchased through, an account when the nature of the accountholder’s
+    business would not appear to justify such activity.
+  product_types:
+  - depository
+  - wire_transfer
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - cashier’s checks
+  - money orders
+- id: 054-31
+  description: A retail business has dramatically different patterns of currency deposits
+    from similar businesses in the same general location.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - currency deposits
+- id: 054-32
+  description: Unusual transfers of funds occur among related accounts or among accounts
+    that involve the same or related principals.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - related accounts
+  - related principals
+- id: 054-33
+  description: The owner of both a retail business and a check-cashing service does
+    not ask for currency when depositing checks, possibly indicating the availability
+    of another source of currency.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - check-cashing service
+  - currency
+- id: 054-34
+  description: Goods or services purchased by the business do not match the customer’s
+    stated line of business.
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - line of business
+- id: 054-35
+  description: Payments for goods or services are made by checks, money orders, or
+    bank drafts not drawn from the account of the entity that made the purchase.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - checks
+  - money orders
+  - bank drafts
+- id: 054-36
+  description: Loans secured by pledged assets held by third parties unrelated to
+    the borrower.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  key_terms:
+  - pledged assets
+  - third parties
+- id: 054-37
+  description: Loan secured by deposits or other readily marketable assets, such as
+    securities, particularly when owned by apparently unrelated third parties.
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  key_terms:
+  - deposits
+  - securities
+- id: 054-38
+  description: Borrower defaults on a cash-secured loan or any loan that is secured
+    by assets which are readily convertible into currency.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  key_terms:
+  - cash-secured loan
+- id: 054-39
+  description: Loans are made for, or are paid on behalf of, a third party with no
+    reasonable explanation.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - loan_back_scheme
+  key_terms:
+  - third party
+- id: 054-40
+  description: To secure a loan, the customer purchases a certificate of deposit using
+    an unknown source of funds, particularly when funds are provided via currency
+    or multiple monetary instruments.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - monetary_instrument_purchases
+  key_terms:
+  - certificate of deposit
+  - monetary instruments
+- id: 054-41
+  description: Loans that lack a legitimate business purpose, provide the bank with
+    significant fees for assuming little or no risk, or tend to obscure the movement
+    of funds (e.g., loans made to a borrower and immediately sold to an entity related
+    to the borrower).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  - wire_transfer_chains
+  key_terms:
+  - legitimate business purpose
+- id: 054-42
+  description: The size and frequency of currency deposits increases rapidly with
+    no corresponding increase in noncurrency deposits.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - currency deposits
+- id: 054-43
+  description: A bank is unable to track the true accountholder of correspondent or
+    concentration account transactions.
+  product_types:
+  - correspondent_banking
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - correspondent account
+  - concentration account
+- id: 054-44
+  description: The turnover in large-denomination bills is significant and appears
+    uncharacteristic, given the bank’s location.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - large-denomination bills
+- id: 054-45
+  description: Changes in currency-shipment patterns between correspondent banks are
+    significant.
+  product_types:
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - currency-shipment patterns
+- id: 054-46
+  description: U.S. bank increases sales or exchanges of large denomination U.S. bank
+    notes to Mexican financial institution(s).
+  product_types:
+  - currency_exchange
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - large denomination U.S. bank notes
+  - Mexican financial institution
+- id: 054-47
+  description: Large volumes of small denomination U.S. banknotes being sent from
+    Mexican casas de cambio to their U.S. accounts via armored transport or sold directly
+    to U.S. banks. These sales or exchanges may involve jurisdictions outside of Mexico.
+  product_types:
+  - currency_exchange
+  - depository
+  - correspondent_banking
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - Mexican casas de cambio
+  - armored transport
+- id: 054-48
+  description: Casas de cambio direct the remittance of funds via multiple funds transfers
+    to jurisdictions outside of Mexico that bear no apparent business relationship
+    with the casas de cambio. Funds transfer recipients may include individuals, businesses,
+    and other entities in free trade zones.
+  product_types:
+  - remittance
+  - wire_transfer
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - mexico
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - wire_transfer_chains
+  key_terms:
+  - casas de cambio
+  - free trade zones
+- id: 054-49
+  description: Casas de cambio deposit numerous third-party items, including sequentially
+    numbered monetary instruments, to their accounts at U.S. banks.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - monetary_instrument_purchases
+  key_terms:
+  - third-party items
+  - sequentially numbered monetary instruments
+- id: 054-50
+  description: Casas de cambio direct the remittance of funds transfers from their
+    accounts at Mexican financial institutions to accounts at U.S. banks. These funds
+    transfers follow the deposit of currency and third-party items by the casas de
+    cambio into their Mexican financial institution.
+  product_types:
+  - wire_transfer
+  - depository
+  - correspondent_banking
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - wire_transfer_chains
+  key_terms:
+  - Mexican financial institutions
+- id: 054-51
+  description: An increase in the sale of large denomination U.S. bank notes to foreign
+    financial institutions by U.S. banks.
+  product_types:
+  - currency_exchange
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - large denomination U.S. bank notes
+- id: 054-52
+  description: Large volumes of small denomination U.S. bank notes being sent from
+    foreign nonbank financial institutions to their accounts in the United States
+    via armored transport, or sold directly to U.S. banks.
+  product_types:
+  - currency_exchange
+  - depository
+  - correspondent_banking
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - foreign nonbank financial institutions
+  - armored transport
+- id: 054-53
+  description: Multiple wire transfers initiated by foreign nonbank financial institutions
+    that direct U.S. banks to remit funds to other jurisdictions that bear no apparent
+    business relationship with that foreign nonbank financial institution. Recipients
+    may include individuals, businesses, and other entities in free trade zones and
+    other locations.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - wire_transfer_chains
+  key_terms:
+  - foreign nonbank financial institutions
+  - free trade zones
+- id: 054-54
+  description: The exchange of small denomination U.S. bank notes for large denomination
+    U.S. bank notes that may be sent to foreign countries.
+  product_types:
+  - currency_exchange
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - small denomination U.S. bank notes
+  - large denomination U.S. bank notes
+- id: 054-55
+  description: Deposits by foreign nonbank financial institutions to their accounts
+    at U.S. banks that include third-party items, including sequentially numbered
+    monetary instruments.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - monetary_instrument_purchases
+  key_terms:
+  - third-party items
+  - sequentially numbered monetary instruments
+- id: 054-56
+  description: Deposits of currency and third-party items by foreign nonbank financial
+    institutions to their accounts at foreign financial institutions and thereafter
+    direct wire transfers to the foreign nonbank financial institution's accounts
+    at U.S. banks.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - wire_transfer_chains
+  key_terms:
+  - foreign nonbank financial institutions
+- id: 054-57
+  description: Items shipped that are inconsistent with the nature of the customer’s
+    business (e.g., a steel company that starts dealing in paper products, or an information
+    technology company that starts dealing in bulk pharmaceuticals).
+  product_types:
+  - trade_finance
+  industry_types:
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - shipped items
+  - paper products
+  - bulk pharmaceuticals
+- id: 054-58
+  description: Customers conducting business in higher-risk jurisdictions.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - higher-risk jurisdictions
+- id: 054-59
+  description: Customers shipping items through higher-risk jurisdictions, including
+    transit through noncooperative countries.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - transit
+  - noncooperative countries
+- id: 054-60
+  description: Customers involved in potentially higher-risk activities, including
+    activities that may be subject to export/import restrictions (e.g., equipment
+    for military or police organizations of foreign governments, weapons, ammunition,
+    chemical mixtures, classified defense articles, sensitive technical data, nuclear
+    materials, precious gems, or certain natural resources such as metals, ore, and
+    crude oil).
+  product_types:
+  - trade_finance
+  industry_types:
+  - arms_dual_use_goods
+  - precious_metals_jewelry
+  - oil_and_gas
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - export/import restrictions
+  - weapons
+  - nuclear materials
+  - crude oil
+- id: 054-61
+  description: Obvious over- or under-pricing of goods and services.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - over-pricing
+  - under-pricing
+- id: 054-62
+  description: Obvious misrepresentation of quantity or type of goods imported or
+    exported.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - quantity
+  - type of goods
+- id: 054-63
+  description: Transaction structure appears unnecessarily complex and designed to
+    obscure the true nature of the transaction.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - wire_transfer_chains
+  key_terms:
+  - complex
+  - obscure the true nature
+- id: 054-64
+  description: Customer requests payment of proceeds to an unrelated third party.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - unrelated third party
+  - proceeds
+- id: 054-65
+  description: Shipment locations or description of goods not consistent with letter
+    of credit.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - letter of credit
+- id: 054-66
+  description: Significantly amended letters of credit without reasonable justification
+    or changes to the beneficiary or location of payment. Any changes in the names
+    of parties should prompt additional OFAC review.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - letters of credit
+  - OFAC review
+- id: 054-67
+  description: Automated teller machine (ATM) activity levels are high in comparison
+    with other privately owned or bank-owned ATMs in comparable geographic and demographic
+    locations.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - ATM activity levels
+- id: 054-68
+  description: Sources of currency for the ATM cannot be identified or confirmed through
+    withdrawals from account, armored car contracts, lending arrangements, or other
+    appropriate documentation.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - ATM
+  - armored car contracts
+- id: 054-69
+  description: A customer purchases products with termination features without concern
+    for the product’s investment performance.
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - termination features
+- id: 054-70
+  description: A customer purchases insurance products using a single, large premium
+    payment, particularly when payment is made through unusual methods such as currency
+    or currency equivalents.
+  product_types:
+  - insurance
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - single, large premium payment
+  - currency equivalents
+- id: 054-71
+  description: A customer purchases a product that appears outside the customer’s
+    normal range of financial wealth or estate planning needs.
+  product_types:
+  - insurance
+  - securities
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - estate planning needs
+- id: 054-72
+  description: A customer borrows against the cash surrender value of permanent life
+    insurance policies, particularly when payments are made to apparently unrelated
+    third parties.
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - loan_back_scheme
+  key_terms:
+  - cash surrender value
+  - permanent life insurance
+- id: 054-73
+  description: Policies are purchased that allow for the transfer of beneficial ownership
+    interests without the knowledge and consent of the insurance issuer. This would
+    include secondhand endowment and bearer insurance policies.
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - beneficial ownership interests
+  - bearer insurance policies
+- id: 054-74
+  description: A customer is known to purchase several insurance products and uses
+    the proceeds from an early policy surrender to purchase other financial assets.
+  product_types:
+  - insurance
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - early policy surrender
+- id: 054-75
+  description: A customer uses multiple currency equivalents (e.g., cashier's checks
+    and money orders) from different banks and money services businesses to make insurance
+    policy or annuity payments.
+  product_types:
+  - insurance
+  - depository
+  - check_cashing
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - monetary_instrument_purchases
+  key_terms:
+  - cashier's checks
+  - money orders
+  - annuity payments
+- id: 054-76
+  description: A bank is unable to obtain sufficient information or information is
+    unavailable to positively identify originators or beneficiaries of accounts or
+    other banking activity (using Internet, commercial database searches, or direct
+    inquiries to a respondent bank).
+  product_types:
+  - correspondent_banking
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - originators
+  - beneficiaries
+  - respondent bank
+- id: 054-77
+  description: Payments to or from the company have no stated purpose, do not reference
+    goods or services, or identify only a contract or invoice number.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - contract
+  - invoice number
+- id: 054-78
+  description: Goods or services, if identified, do not match profile of company provided
+    by respondent bank or character of the financial activity; a company references
+    remarkably dissimilar goods and services in related funds transfers; explanation
+    given by foreign respondent bank is inconsistent with observed funds transfer
+    activity.
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - invoice_mismatch
+  - wire_transfer_chains
+  key_terms:
+  - respondent bank
+  - goods and services
+- id: 054-79
+  description: Transacting businesses share the same address, provide only a registered
+    agent’s address, or have other address inconsistencies.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - registered agent’s address
+  - address inconsistencies
+- id: 054-80
+  description: Unusually large number and variety of beneficiaries are receiving funds
+    transfers from one company.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - beneficiaries
+  - one company
+- id: 054-81
+  description: Frequent involvement of multiple jurisdictions or beneficiaries located
+    in higher-risk offshore financial centers.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - offshore financial centers
+- id: 054-82
+  description: A foreign correspondent bank exceeds the expected volume in its client
+    profile for funds transfers, or an individual company exhibits a high volume and
+    pattern of funds transfers that is inconsistent with its normal business activity.
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - correspondent bank
+  - funds transfers
+- id: 054-83
+  description: Multiple high-value payments or transfers between shell companies with
+    no apparent legitimate business purpose.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  - wire_transfer_chains
+  key_terms:
+  - shell companies
+  - legitimate business purpose
+- id: 054-84
+  description: Purpose of the shell company is unknown or unclear.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell company
+- id: 054-85
+  description: Official embassy business is conducted through personal accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - government_official
+  geographic_footprints:
+  - foreign_individual
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: corruption
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - embassy
+  - personal accounts
+- id: 054-86
+  description: Account activity is not consistent with the purpose of the account,
+    such as pouch activity or payable upon proper identification transactions.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - government_official
+  geographic_footprints:
+  - foreign_individual
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - pouch activity
+  - payable upon proper identification
+- id: 054-87
+  description: Accounts are funded through substantial currency transactions.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - government_official
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: corruption
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - substantial currency transactions
+- id: 054-88
+  description: Accounts directly fund personal expenses of foreign nationals without
+    appropriate controls, including, but not limited to, expenses for college students.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - student
+  geographic_footprints:
+  - foreign_individual
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - personal expenses
+  - college students
+- id: 054-89
+  description: Employee exhibits a lavish lifestyle that cannot be supported by his
+    or her salary.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: corruption
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - lavish lifestyle
+- id: 054-90
+  description: Employee fails to conform to recognized policies, procedures, and processes,
+    particularly in private banking.
+  product_types:
+  - private_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: corruption
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - private banking
+- id: 054-91
+  description: Employee is reluctant to take a vacation.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: corruption
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - vacation
+- id: 054-92
+  description: Employee overrides a hold placed on an account identified as suspicious
+    so that transactions can occur in the account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - hold
+  - suspicious account
+- id: 054-93
+  description: Customer frequently exchanges small-dollar denominations for large-dollar
+    denominations.
+  product_types:
+  - depository
+  - currency_exchange
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - small-dollar denominations
+  - large-dollar denominations
+- id: 054-94
+  description: Customer frequently deposits currency wrapped in currency straps or
+    currency wrapped in rubber bands that is disorganized and does not balance when
+    counted.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - currency straps
+  - rubber bands
+- id: 054-95
+  description: Customer purchases a number of cashier’s checks, money orders, or traveler’s
+    checks for large amounts under a specified threshold.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - monetary_instrument_purchases
+  - structuring
+  key_terms:
+  - cashier’s checks
+  - money orders
+  - traveler’s checks
+- id: 054-96
+  description: Customer purchases a number of open-end prepaid cards for large amounts.
+    Purchases of prepaid cards are not commensurate with normal business activities.
+  product_types:
+  - prepaid
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - prepaid cards
+- id: 054-97
+  description: Customer receives large and frequent deposits from online payments
+    systems yet has no apparent online or auction business.
+  product_types:
+  - depository
+  industry_types:
+  - online_marketplace
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - online payments systems
+- id: 054-98
+  description: Monetary instruments deposited by mail are numbered sequentially or
+    have unusual symbols or stamps on them.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - deposited by mail
+  - sequentially
+- id: 054-99
+  description: Suspicious movements of funds occur from one bank to another, and then
+    funds are moved back to the first bank.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - round_tripping
+  - wire_transfer_chains
+  key_terms:
+  - moved back
+- id: 054-100
+  description: Deposits are structured through multiple branches of the same bank
+    or by groups of people who enter a single branch at the same time.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  - funnel_account_activity
+  key_terms:
+  - multiple branches
+  - single branch
+- id: 054-101
+  description: Currency is deposited or withdrawn in amounts just below identification
+    or reporting thresholds.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  key_terms:
+  - identification thresholds
+  - reporting thresholds
+- id: 054-102
+  description: Customer visits a safe deposit box or uses a safe custody account on
+    an unusually frequent basis.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - safe deposit box
+  - safe custody account
+- id: 054-103
+  description: Safe deposit boxes or safe custody accounts opened by individuals who
+    do not reside or work in the institution’s service area, despite the availability
+    of such services at an institution closer to them.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - service area
+  - safe deposit boxes
+- id: 054-104
+  description: Customer repeatedly uses a bank or branch location that is geographically
+    distant from the customer's home or office without sufficient business purpose.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - geographically distant
+- id: 054-105
+  description: Customer exhibits unusual traffic patterns in the safe deposit box
+    area or unusual use of safe custody accounts. For example, several individuals
+    arrive together, enter frequently, or carry bags or other containers that could
+    conceal large amounts of currency, monetary instruments, or small valuable items.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - safe deposit box area
+  - safe custody accounts
+- id: 054-106
+  description: Customer rents multiple safe deposit boxes to store large amounts of
+    currency, monetary instruments, or high-value assets awaiting conversion to currency,
+    for placement into the banking system. Similarly, a customer establishes multiple
+    safe custody accounts to park large amounts of securities awaiting sale and conversion
+    into currency, monetary instruments, outgoing funds transfers, or a combination
+    thereof, for placement into the banking system.
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - safe deposit boxes
+  - safe custody accounts
+- id: 054-107
+  description: Unusual use of trust funds in business transactions or other financial
+    activity.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - trust funds
+- id: 054-108
+  description: Customer uses a personal account for business purposes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - personal account
+  - business purposes
+- id: 054-109
+  description: Customer has established multiple accounts in various corporate or
+    individual names that lack sufficient business purpose for the account complexities
+    or appear to be an effort to hide the beneficial ownership from the bank.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - nested_account_activity
+  - shell_company_usage
+  key_terms:
+  - beneficial ownership
+  - multiple accounts
+- id: 054-110
+  description: Customer makes multiple and frequent currency deposits to various accounts
+    that are purportedly unrelated.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - funnel_account_activity
+  - structuring
+  key_terms:
+  - currency deposits
+  - unrelated accounts
+- id: 054-111
+  description: Customer conducts large deposits and withdrawals during a short time
+    period after opening and then subsequently closes the account or the account becomes
+    dormant. Conversely, an account with little activity may suddenly experience large
+    deposit and withdrawal activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - dormant
+  - large deposit and withdrawal activity
+- id: 054-112
+  description: Customer makes high-value transactions not commensurate with the customer's
+    known incomes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - known incomes
+- id: 054-113
+  description: Funds are generated by a business owned by persons of the same origin
+    or by a business that involves persons of the same origin from higher-risk countries
+    (e.g., countries designated by national authorities and FATF as noncooperative
+    countries and territories).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - same origin
+  - noncooperative countries and territories
+- id: 054-114
+  description: The stated occupation of the customer is not commensurate with the
+    type or level of activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - occupation
+- id: 054-115
+  description: Persons involved in currency transactions share an address or phone
+    number, particularly when the address is also a business location or does not
+    seem to correspond to the stated occupation (e.g., student, unemployed, or self-employed).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - student
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - address
+  - phone number
+- id: 054-116
+  description: Regarding nonprofit or charitable organizations, financial transactions
+    occur for which there appears to be no logical economic purpose or in which there
+    appears to be no link between the stated activity of the organization and the
+    other parties in the transaction.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - third_party_payments
+  - wire_transfer_chains
+  key_terms:
+  - nonprofit
+  - charitable organizations
+- id: 054-117
+  description: A safe deposit box opened on behalf of a commercial entity when the
+    business activity of the customer is unknown or such activity does not appear
+    to justify the use of a safe deposit box.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: shell_company
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - shell_company
+  transaction_patterns: []
+  key_terms:
+  - safe deposit box
+  - commercial entity
+- id: 054-118
+  description: A large number of incoming or outgoing funds transfers take place through
+    a business account, and there appears to be no logical business or other economic
+    purpose for the transfers, particularly when this activity involves higher-risk
+    locations.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - wire_transfer_chains
+  - unusual_international_wires
+  key_terms:
+  - business account
+  - higher-risk locations
+- id: 054-119
+  description: Funds transfers are ordered in small amounts in an apparent effort
+    to avoid triggering identification or reporting requirements.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: structuring
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  - unusual_international_wires
+  key_terms:
+  - identification
+  - reporting requirements
+- id: 054-120
+  description: Funds transfers do not include information on the originator, or the
+    person on whose behalf the transaction is conducted, when the inclusion of such
+    information would be expected.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - originator
+  - on whose behalf
+- id: 054-121
+  description: Multiple personal and business accounts or the accounts of nonprofit
+    organizations or charities are used to collect and funnel funds to a small number
+    of foreign beneficiaries.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  - third_party_payment_processor
+  geographic_footprints:
+  - foreign_individual
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - funnel_account_activity
+  - wire_transfer_chains
+  key_terms:
+  - foreign beneficiaries
+- id: 054-122
+  description: Foreign exchange transactions are performed on behalf of a customer
+    by a third party, followed by funds transfers to locations having no apparent
+    business connection with the customer or to higher-risk countries.
+  product_types:
+  - currency_exchange
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - foreign exchange
+  - third party
+- id: 054-123
+  description: Transactions involving foreign currency exchanges are followed within
+    a short time by funds transfers to higher-risk locations.
+  product_types:
+  - currency_exchange
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - foreign currency exchanges
+- id: 054-124
+  description: Multiple accounts are used to collect and funnel funds to a small number
+    of foreign beneficiaries, both persons and businesses, particularly in higher-risk
+    locations.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - foreign_individual
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - funnel_account_activity
+  - wire_transfer_chains
+  key_terms:
+  - foreign beneficiaries
+  - higher-risk locations
+- id: 054-125
+  description: A customer obtains a credit instrument or engages in commercial financial
+    transactions involving the movement of funds to or from higher-risk locations
+    when there appear to be no logical business reasons for dealing with those locations.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - credit instrument
+  - higher-risk locations
+- id: 054-126
+  description: Banks from higher-risk locations open accounts.
+  product_types:
+  - depository
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - banks from higher-risk locations
+- id: 054-127
+  description: Funds are sent or received via international transfers from or to higher-risk
+    locations.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - international transfers
+  - higher-risk locations
+- id: 054-128
+  description: Insurance policy loans or policy surrender values that are subject
+    to a substantial surrender charge.
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FFIEC BSA/AML Appendices - Appendix F – Money Laundering and
+    Terrorist Financing Red Flags
+  regulator: FFIEC
+  regulator_jurisdiction: US
+  risk_level: low
+  category: layering
+  source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  key_terms:
+  - policy surrender values
+  - surrender charge

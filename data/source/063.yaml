@@ -1,0 +1,2218 @@
+- id: 063-01
+  description: There is an inability to properly identify the client or there are
+    questions surrounding the client's identity.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - client identity
+- id: 063-02
+  description: The client refuses or tries to avoid providing information required,
+    or provides information that is misleading, vague, or difficult to verify.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - misleading
+  - vague
+  - difficult to verify
+- id: 063-03
+  description: The client refuses to provide information or provides information that
+    is false, conflicting, misleading or substantially incorrect.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - 'false'
+  - conflicting
+  - misleading
+- id: 063-04
+  description: The identification document presented by the client cannot be authenticated.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identification document
+- id: 063-05
+  description: There are inconsistencies in the identification documents or different
+    identifiers provided by the client, such as name, address, date of birth or phone
+    number.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identification documents
+  - name
+  - address
+  - date of birth
+  - phone number
+- id: 063-06
+  description: Client produces seemingly false information or identification that
+    appears to be counterfeited, altered or inaccurate.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - counterfeited
+  - altered
+  - inaccurate
+- id: 063-07
+  description: Client displays a pattern of name variations from one transaction to
+    another or uses aliases.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - aliases
+  - name variations
+- id: 063-08
+  description: Client alters the transaction after being asked for identity documents.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identity documents
+- id: 063-09
+  description: The client provides only a non-civic address or disguises a post office
+    box as a civic address for the purpose of concealing their physical residence.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - post office box
+  - civic address
+- id: 063-10
+  description: Common identifiers (e.g. addresses, phone numbers, etc.) are used by
+    multiple clients purchasing properties that do not appear to be related.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - addresses
+  - phone numbers
+- id: 063-11
+  description: Transactions involve persons or entities identified by the media, law
+    enforcement and/or intelligence agencies as being linked to criminal activities.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - media
+  - law enforcement
+  - intelligence agencies
+- id: 063-12
+  description: Attempts to verify the information provided by a new or prospective
+    client are difficult.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - new or prospective client
+- id: 063-13
+  description: Client makes statements about involvement in criminal activities.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - criminal activities
+- id: 063-14
+  description: Evidence of untruthfulness on behalf of the client (e.g. providing
+    false or misleading information).
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false or misleading information
+- id: 063-15
+  description: Client exhibits nervous behaviour.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - nervous behaviour
+- id: 063-16
+  description: The client refuses to provide information when required, or is reluctant
+    to provide information.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - reluctant
+- id: 063-17
+  description: Client has a defensive stance to questioning.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - defensive
+- id: 063-18
+  description: Client presents confusing details about the transaction or knows few
+    details about its purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - purpose
+- id: 063-19
+  description: Client avoids contact with reporting entity employees.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - avoids contact
+- id: 063-20
+  description: The client refuses to identify a source of funds, or provides information
+    that is false, misleading, or substantially incorrect.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - source of funds
+- id: 063-21
+  description: The client exhibits a lack of concern about higher than normal transaction
+    costs or fees.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - fees
+- id: 063-22
+  description: Client makes enquiries/statements indicating a desire to avoid reporting,
+    or tries to persuade the reporting entity not to file/maintain required reports.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - reporting
+  - required reports
+- id: 063-23
+  description: Insufficient explanation for the source of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+- id: 063-24
+  description: The transactional activity (level or volume) suddenly changes and/or
+    is inconsistent with the client's apparent financial standing, their usual pattern
+    of activities or occupational information (e.g. student, unemployed, social assistance,
+    etc.).
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - student
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - transactional activity
+  - financial standing
+- id: 063-25
+  description: Client appears to be living beyond their means.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - living beyond their means
+- id: 063-26
+  description: Rounded sum transactions atypical of what would be expected from the
+    client.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - rounded sum
+- id: 063-27
+  description: Size or type of transactions atypical of what is expected from the
+    client.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - transaction size
+  - transaction type
+- id: 063-28
+  description: There is a sudden change in the client's financial profile, pattern
+    of activity or transactions.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - financial profile
+- id: 063-29
+  description: Client uses notes, monetary instruments, or products and/or services
+    that are unusual for such a client.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - prepaid
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - notes
+  - monetary instruments
+- id: 063-30
+  description: Client uses multiple accounts at several financial institutions for
+    no apparent reason.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - multiple accounts
+- id: 063-31
+  description: Suspected use of personal funds for business purposes, or vice-versa.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - personal funds
+  - business purposes
+- id: 063-32
+  description: Use of multiple foreign bank accounts for no apparent reason.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - foreign bank accounts
+- id: 063-33
+  description: A series of complicated transfers of funds for a deposit that seems
+    to be an attempt to hide the source of the funds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - wire_transfer_chains
+  - rapid_fund_movement
+  key_terms:
+  - deposit
+  - source of the funds
+- id: 063-34
+  description: Transaction is unnecessarily complex for its stated purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - complex
+- id: 063-35
+  description: Client presents notes or financial instruments that are packed, transported
+    or wrapped in an uncommon way.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - prepaid
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - monetary_instrument_purchases
+  key_terms:
+  - notes
+  - financial instruments
+- id: 063-36
+  description: Transaction is consistent with a publicly known trend in criminal activity.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - criminal activity
+- id: 063-37
+  description: Client transacts using musty, odd smelling or extremely dirty bills.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  - prepaid
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - musty
+  - odd smelling
+  - dirty bills
+- id: 063-38
+  description: Transaction involves a suspected shell entity (an entity that does
+    not have an economical or logical reason to exist).
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell entity
+- id: 063-39
+  description: Client appears to be structuring amounts to avoid client identification
+    or reporting thresholds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - reporting thresholds
+  - identification thresholds
+- id: 063-40
+  description: Client appears to be collaborating with others to avoid client identification
+    or reporting thresholds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  - third_party_payments
+  key_terms:
+  - reporting thresholds
+  - identification thresholds
+- id: 063-41
+  description: Multiple transactions conducted below the reporting threshold within
+    a short period.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - reporting threshold
+- id: 063-42
+  description: Client makes enquiries that would indicate a desire to avoid reporting.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - reporting
+- id: 063-43
+  description: Client exhibits knowledge of reporting thresholds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - reporting thresholds
+- id: 063-44
+  description: Transactions with a person who lives in, or an entity that operates
+    out of, a jurisdiction that is known to be at a higher risk to facilitate ML/TF.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - higher risk
+  - jurisdiction
+- id: 063-45
+  description: Transactions involving a person who lives in, or an entity that operates
+    out of, a location of concern, which can include jurisdictions where there are
+    ongoing conflicts (and periphery areas), countries with weak ML/TF controls, or
+    countries with highly secretive banking or other transactional laws such as transfer
+    limits set by a government.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - location of concern
+  - transfer limits
+- id: 063-46
+  description: Transactions involving any countries deemed high risk or non-cooperative
+    by the Financial Action Task Force.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - FATF
+  - high risk
+  - non-cooperative
+- id: 063-47
+  description: Transactions involving a person who lives in, or an entity that operates
+    out of, certain high-risk jurisdictions such as locations in the midst of or in
+    proximity to, armed conflict where terrorist groups operate or locations which
+    are subject to weaker ML/TF controls.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - armed conflict
+  - terrorist groups
+- id: 063-48
+  description: Client identified by media or law enforcement as having travelled,
+    attempted or intended to travel to high-risk jurisdictions (including cities or
+    districts of concern), specifically countries (and adjacent countries) under conflict
+    and/or political instability or known to support terrorist activities and organizations.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - travelled
+  - intended to travel
+  - terrorist activities
+- id: 063-49
+  description: Transactions involve persons or entities identified by media and/or
+    sanctions lists as being linked to a terrorist organization or terrorist activities.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - sanctions lists
+  - terrorist organization
+- id: 063-50
+  description: Law enforcement information provided which indicates persons or entities
+    may be linked to a terrorist organization or terrorist activities.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - law enforcement
+  - terrorist organization
+- id: 063-51
+  description: Person or entity states or eludes that they support violent extremism
+    or radicalization.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - violent extremism
+  - radicalization
+- id: 063-52
+  description: Client provides multiple variations on their name, address, phone number
+    or additional identifiers.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - name
+  - address
+  - phone number
+  - identifiers
+- id: 063-53
+  description: Client arrives at a real estate closing with a significant amount of
+    cash or funds.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - closing
+- id: 063-54
+  description: Client purchases property in someone else's name such as an associate
+    or a relative (other than a spouse).
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - third_party_payments
+  - identity_misrepresentation
+  key_terms:
+  - someone else's name
+  - associate
+  - relative
+- id: 063-55
+  description: Client does not want to put his or her name on any document that would
+    connect him or her with the property, or uses different names on offers to purchase,
+    closing documents and deposit receipts.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - different names
+  - deposit receipts
+- id: 063-56
+  description: Client inadequately explains the last minute substitution of the purchasing
+    party's name.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - last minute substitution
+- id: 063-57
+  description: Client negotiates a purchase for the market value or above the asked
+    price, but requests that a lower value be recorded on documents, offering to pay
+    the difference "under the table".
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - under the table
+  - lower value
+- id: 063-58
+  description: Client pays initial deposit with a cheque from another party, other
+    than a spouse or a parent.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - cheque
+  - initial deposit
+- id: 063-59
+  description: Client pays substantial down payment in cash and balance is financed
+    by an unusual source (for example a private lender) or offshore bank.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - down payment
+  - private lender
+  - offshore bank
+- id: 063-60
+  description: Client purchases personal use property through his or her company when
+    this type of transaction is inconsistent with the ordinary business practice of
+    the client.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - company
+  - personal use property
+- id: 063-61
+  description: Client purchases multiple properties in a short period, and seems to
+    have few concerns about the location, condition, and anticipated repair costs,
+    etc. of each property.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - multiple properties
+- id: 063-62
+  description: Client insists on providing signature on documents by fax only.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - fax only
+- id: 063-63
+  description: Client over justifies or over explains the purchase.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - over explains
+- id: 063-64
+  description: Client's home or business telephone number has been disconnected or
+    there is no such number.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - disconnected
+  - telephone number
+- id: 063-65
+  description: Client uses a General Delivery address where other options are available.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - General Delivery address
+- id: 063-66
+  description: Client wants to build a luxury house in non-prime locations.
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - luxury house
+  - non-prime locations
+- id: 063-67
+  description: Client exhibits unusual concerns regarding the brokerage's compliance
+    with government reporting requirements and anti-ML or anti-TF policies.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - government reporting requirements
+  - anti-ML
+  - anti-TF
+- id: 063-68
+  description: Client exhibits a lack of concern regarding risks, commissions, or
+    other transaction costs.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - commissions
+  - transaction costs
+- id: 063-69
+  description: Client persists in representing their financial situation in a way
+    that is unrealistic or that could not be supported by documents.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - financial situation
+  - documents
+- id: 063-70
+  description: Transactions carried out on behalf of minors, incapacitated persons
+    or other persons who, although not included in these categories, appear to lack
+    the economic capacity to make such purchases.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - elder_financial_exploitation
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - minors
+  - incapacitated persons
+  - economic capacity
+- id: 063-71
+  description: A transaction involving legal entities, when there does not seem to
+    be any relationship between the transaction and the activity carried out by the
+    buying company, or when the company has no business activity.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - legal entities
+  - no business activity
+- id: 063-72
+  description: Transactions in which the parties show a strong interest in completing
+    the transaction quickly, without there being good cause.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - quickly
+- id: 063-73
+  description: Transactions in which the parties are foreign or non-resident for tax
+    purposes and their only purpose is a capital investment (that is, they do not
+    show any interest in living at the property they are buying).
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  - non_resident_alien
+  - cross_border_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - non-resident
+  - capital investment
+- id: 063-74
+  description: Transactions involving payments in cash or in negotiable instruments
+    which do not state the true payer (for example, bank drafts), where the accumulated
+    amount is considered to be significant in relation to the total amount of the
+    transaction.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - bank drafts
+  - true payer
+- id: 063-75
+  description: Transactions in which the party asks for the payment to be divided
+    into smaller parts with a short interval between them.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - divided into smaller parts
+- id: 063-76
+  description: Transactions in which payment is made in cash, bank notes, bearer cheques
+    or other anonymous instruments.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - bank notes
+  - bearer cheques
+  - anonymous instruments
+- id: 063-77
+  description: Transactions which are not completed in seeming disregard of a contract
+    clause penalizing the buyer with loss of the deposit if the sale does not go ahead.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - deposit
+  - contract clause
+- id: 063-78
+  description: Recording of the sale of a building plot followed by the recording
+    of the declaration of a completely finished new building at the location at an
+    interval less than the minimum time needed to complete the construction, bearing
+    in mind its characteristics.
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - building plot
+  - finished new building
+- id: 063-79
+  description: Transaction is completely anonymous—transaction conducted by lawyer—all
+    deposit cheques drawn on lawyer's trust account.
+  product_types:
+  - depository
+  - check_cashing
+  - wire_transfer
+  industry_types:
+  - legal_accounting
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  - nested_account_activity
+  key_terms:
+  - lawyer
+  - trust account
+- id: 063-80
+  description: Client sells property below market value with an additional "under
+    the table" payment offer.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - below market value
+  - under the table
+- id: 063-81
+  description: Client purchases property without viewing it.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - without viewing
+- id: 063-82
+  description: Client is known to have paid large remodeling or home improvement invoices
+    with cash, on a property for which property management services are provided.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - remodeling
+  - home improvement
+  - cash
+- id: 063-83
+  description: Client buys back a property that he or she recently sold.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - real_estate_transactions
+  key_terms:
+  - buys back
+  - recently sold
+- id: 063-84
+  description: Frequent change of ownership of same property, particularly between
+    related or acquainted parties.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - shell_company_usage
+  key_terms:
+  - change of ownership
+  - related parties
+- id: 063-85
+  description: If a property is re-sold shortly after purchase at a significantly
+    different purchase price, without corresponding changes in market values in the
+    same area.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - canada
+  regulatory_source: Money laundering and terrorist financing indicators—Real estate
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issued_date: '2025-11-24'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/real_mltf-eng
+  typology_family:
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - real_estate_transactions
+  key_terms:
+  - re-sold shortly after purchase
+  - market values
