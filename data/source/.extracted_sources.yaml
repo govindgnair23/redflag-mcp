@@ -238,3 +238,19 @@
   slug: '064'
   output_file: data/source/064.yaml
   extracted_at: '2026-05-31T15:34:19.332074+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/067.md
+  slug: '067'
+  output_file: data/source/067.yaml
+  extracted_at: '2026-05-31T19:24:35.525310+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/068.md
+  slug: 068
+  output_file: data/source/068.yaml
+  extracted_at: '2026-05-31T19:25:31.432599+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/069.md
+  slug: 069
+  output_file: data/source/069.yaml
+  extracted_at: '2026-05-31T19:25:53.622076+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/070.md
+  slug: '070'
+  output_file: data/source/070.yaml
+  extracted_at: '2026-05-31T19:26:07.959577+00:00'
