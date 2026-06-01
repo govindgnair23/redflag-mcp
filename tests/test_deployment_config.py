@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import tomllib
 from pathlib import Path
 
@@ -24,6 +25,16 @@ def test_railway_config_launches_hosted_asgi_app() -> None:
     assert "healthcheck.railway.app" in variables["REDFLAG_ALLOWED_HOSTS"]
     assert "REDFLAG_CORPUS_RELEASE_INDEX" in variables
     assert "REDFLAG_CORPUS_VERSION" in variables
+
+
+def test_railway_config_pins_latest_packaged_corpus() -> None:
+    config = tomllib.loads((PROJECT_ROOT / "railway.toml").read_text())
+    release_index = json.loads((PROJECT_ROOT / "dist/corpus/releases.json").read_text())
+
+    assert (
+        config["variables"]["REDFLAG_CORPUS_VERSION"]
+        == release_index["latest_compatible_version"]
+    )
 
 
 def test_hosted_docs_capture_public_privacy_and_rollback() -> None:
