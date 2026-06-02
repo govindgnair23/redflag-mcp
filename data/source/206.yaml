@@ -7,15 +7,16 @@
   product_types:
   - depository
   - credit_card
-  - prepaid
   - money_transmitter
-  - remittance
-  industry_types: []
-  customer_profiles: []
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
   geographic_footprints:
-  - domestic_us
   - canada
   - mexico
+  - domestic_us
   regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
     FIFA World Cup
   regulator: FinCEN
@@ -24,6 +25,18 @@
   risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - hotel rooms
+  - taxi
+  - ridesharing
+  - train tickets
+  - late night
+  - early morning
 - id: 206-02
   description: A customer’s account has few or no transactions indicative of obtaining
     or maintaining essential needs (e.g., housing, personal products and nourishment,
@@ -33,11 +46,10 @@
   product_types:
   - depository
   - money_transmitter
-  - remittance
+  - prepaid
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - third_party_payment_processor
   geographic_footprints: []
   regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
     FIFA World Cup
@@ -47,6 +59,16 @@
   risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - essential needs
+  - direct deposit
+  - paycheck
+  - multiple third parties
 - id: 206-03
   description: A customer’s account has an unusually high number of transactions involving
     essential needs (e.g., multiple payments for housing or lodging, bulk purchases
@@ -57,7 +79,6 @@
   - credit_card
   - prepaid
   - money_transmitter
-  - remittance
   industry_types:
   - travel_hospitality
   customer_profiles:
@@ -71,6 +92,15 @@
   risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - essential needs
+  - housing
+  - lodging
+  - prepaid access cards
 - id: 206-04
   description: A customer’s business account does not exhibit normal or expected payroll
     expenditures for any readily discernible reason. For example, the customer’s business
@@ -81,10 +111,13 @@
   - ach
   - wire_transfer
   industry_types:
-  - payroll
+  - travel_hospitality
+  - food_service
+  - construction
+  - retail
   customer_profiles:
   - small_business
-  - newly_established_business
+  - cash_intensive_business
   geographic_footprints: []
   regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
     FIFA World Cup
@@ -94,12 +127,20 @@
   risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns: []
+  key_terms:
+  - payroll
+  - nonexistent
+  - extremely low
 - id: 206-05
   description: A customer deposits funds into an account at a location other than
     where the customer resides and the funds are quickly withdrawn, typically in a
     separate location from the deposits, for no business or apparent lawful purpose.
   product_types:
   - depository
+  - ach
   industry_types: []
   customer_profiles:
   - individual_consumer
@@ -115,6 +156,14 @@
   risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - deposits
+  - withdrawn
+  - location other than where the customer resides
 - id: 206-06
   description: A customer frequently deposits or withdraws cash at ATMs, especially
     ATMs located at gas stations, particularly if the transactions occur between 10:00pm
@@ -123,7 +172,7 @@
   product_types:
   - depository
   - money_transmitter
-  - remittance
+  - prepaid
   industry_types: []
   customer_profiles:
   - individual_consumer
@@ -136,6 +185,18 @@
   risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - funnel_account_activity
+  key_terms:
+  - ATM
+  - gas stations
+  - 10:00pm
+  - 5:00am
+  - P2P transfers
 - id: 206-07
   description: A customer regularly receives multiple P2P transfers from accounts
     with which the customer has no previous transactional relationships and for which
@@ -145,13 +206,12 @@
     These funds are then further sent via P2P, in whole or in part, to another account.
   product_types:
   - money_transmitter
-  - remittance
   - prepaid
+  - depository
   industry_types:
   - adult_entertainment
   customer_profiles:
   - individual_consumer
-  - third_party_payment_processor
   geographic_footprints: []
   regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
     FIFA World Cup
@@ -161,6 +221,22 @@
   risk_level: high
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - P2P transfers
+  - payment memos
+  - commercial sex
+  - link
+  - services
+  - donation
+  - personal care
+  - wellness
+  - advertisements
 - id: 206-08
   description: A customer receives frequent P2P transfers from multiple accounts and
     seems to be consolidating funds received by others via P2P transfers for no business
@@ -168,12 +244,12 @@
     funds related to sex trafficking.
   product_types:
   - money_transmitter
-  - remittance
   - prepaid
+  - depository
   industry_types: []
   customer_profiles:
   - individual_consumer
-  - third_party_payment_processor
+  - money_services_business
   geographic_footprints: []
   regulatory_source: FinCEN Notice on the Threat of Human Trafficking During the 2026
     FIFA World Cup
@@ -183,6 +259,16 @@
   risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - funnel_account_activity
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - P2P transfers
+  - consolidating funds
+  - sex trafficking
 - id: 206-09
   description: A customer sends three rapid, sequential P2P transfers to three separate
     accounts for no business or apparent lawful purpose. Such payments may indicate
@@ -190,9 +276,10 @@
     payments, specifically a door fee, a service fee, and a tip for services provided.
   product_types:
   - money_transmitter
-  - remittance
   - prepaid
+  - depository
   industry_types:
+  - healthcare
   - travel_hospitality
   customer_profiles:
   - individual_consumer
@@ -202,16 +289,26 @@
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2026-05-11'
-  risk_level: high
+  risk_level: medium
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - P2P transfers
+  - door fee
+  - service fee
+  - tip
+  - illicit massage business
 - id: 206-10
   description: The phone number associated with a customer’s account is listed as
     a contact method in online commercial sex advertisements.
   product_types:
   - depository
   - money_transmitter
-  - remittance
   - prepaid
   industry_types:
   - adult_entertainment
@@ -226,3 +323,10 @@
   risk_level: high
   category: human_trafficking
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-WCHT-Notice.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - phone number
+  - online commercial sex advertisements

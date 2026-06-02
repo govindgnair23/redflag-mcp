@@ -1,11 +1,119 @@
 - id: 207-01
-  description: Transactions involving a petroleum or shipping company reveal that
-    it does business with counterparties that have ties to Iran or transport goods
-    using “shadow fleet” vessels that have ties to Iran or that maritime databases
-    indicate have made stops at Iranian ports.
+  description: Shipping Companies with Iranian Counterparties. Transactions involving
+    a petroleum or shipping company reveal that it does business with counterparties
+    that have ties to Iran or transport goods using “shadow fleet” vessels that have
+    ties to Iran or that maritime databases indicate have made stops at Iranian ports.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  regulatory_source: FinCEN Alert FIN-2026-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - shadow fleet
+  - Iranian counterparties
+  - maritime databases
+  - Iranian ports
+- id: 207-02
+  description: Irregularities in Shipping Documentation that may be Intended to Hide
+    Activities Involving Iran. A customer makes oil-related transactions and wire
+    transfers involving vessels that have been previously linked to suspicious financial
+    activities or that include documentation, such as bills of lading or shipping
+    invoices, with no consignees, that appear to be falsified, or that omit key information,
+    to obfuscate the Iranian nexus.
   product_types:
   - wire_transfer
   - trade_finance
+  industry_types:
+  - maritime_shipping
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  regulatory_source: FinCEN Alert FIN-2026-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - bills of lading
+  - shipping invoices
+  - no consignees
+  - falsified
+  - Iranian nexus
+- id: 207-03
+  description: Efforts to Disguise Vessel Information and Ownership. Documentation
+    associated with a customer’s oil-related transactions references vessels that,
+    according to maritime databases, have undergone recent or multiple name or flag
+    changes, or transfer of ownership or operation to another person following OFAC’s
+    designation of its owner or operator, but the designated owner or operator appears
+    to maintain an interest in the vessel.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - maritime_shipping
+  - oil_and_gas
+  customer_profiles:
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  regulatory_source: FinCEN Alert FIN-2026-Alert002
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issued_date: '2026-05-11'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - shell_company_usage
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  key_terms:
+  - maritime databases
+  - name changes
+  - flag changes
+  - transfer of ownership
+  - OFAC designation
+- id: 207-04
+  description: Efforts to Disguise Oil Origins. Documentation associated with a customer’s
+    oil-related transactions references “Malaysian blend” oil, particularly if the
+    vessel is bound for China by way of Southeast Asia and if maritime databases indicate
+    that the vessel displayed Automatic Information System (AIS) irregularities during
+    its voyage or reveal evidence of a ship-to-ship transfer in geographic areas of
+    concern or without commercial need.
+  product_types:
+  - trade_finance
+  - wire_transfer
   - correspondent_banking
   industry_types:
   - maritime_shipping
@@ -13,77 +121,8 @@
   customer_profiles:
   - cross_border_business
   geographic_footprints:
-  - iran
-  regulatory_source: FinCEN Alert FIN-2026-Alert002
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2026-05-11'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
-- id: 207-02
-  description: A customer makes oil-related transactions and wire transfers involving
-    vessels that have been previously linked to suspicious financial activities or
-    that include documentation, such as bills of lading or shipping invoices, with
-    no consignees, that appear to be falsified, or that omit key information, to obfuscate
-    the Iranian nexus.
-  product_types:
-  - wire_transfer
-  - trade_finance
-  industry_types:
-  - maritime_shipping
-  - oil_and_gas
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  regulatory_source: FinCEN Alert FIN-2026-Alert002
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2026-05-11'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
-- id: 207-03
-  description: Documentation associated with a customer’s oil-related transactions
-    references vessels that, according to maritime databases, have undergone recent
-    or multiple name or flag changes, or transfer of ownership or operation to another
-    person following OFAC’s designation of its owner or operator, but the designated
-    owner or operator appears to maintain an interest in the vessel.
-  product_types:
-  - trade_finance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  - oil_and_gas
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  regulatory_source: FinCEN Alert FIN-2026-Alert002
-  regulator: FinCEN
-  regulator_jurisdiction: US
-  issued_date: '2026-05-11'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
-- id: 207-04
-  description: Documentation associated with a customer’s oil-related transactions
-    references “Malaysian blend” oil, particularly if the vessel is bound for China
-    by way of Southeast Asia and if maritime databases indicate that the vessel displayed
-    Automatic Information System (AIS) irregularities during its voyage or reveal
-    evidence of a ship-to-ship transfer in geographic areas of concern or without
-    commercial need.
-  product_types:
-  - trade_finance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  - oil_and_gas
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
   - china
+  - east_asia
   - south_east_asia
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
@@ -92,17 +131,29 @@
   risk_level: high
   category: sanctions_evasion
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - Malaysian blend
+  - AIS irregularities
+  - ship-to-ship transfer
+  - oil origins
 - id: 207-05
-  description: A customer receives wire transfers or deposits that do not contain
-    any information about the source of funds, contain incomplete information about
-    the source of funds, or do not match the customer’s line of business, and they
-    involve entities in a high-risk jurisdiction for Iranian illicit finance-related
-    activity.
+  description: Unclear Sources of Funds. A customer receives wire transfers or deposits
+    that do not contain any information about the source of funds, contain incomplete
+    information about the source of funds, or do not match the customer’s line of
+    business, and they involve entities in a high-risk jurisdiction for Iranian illicit
+    finance-related activity.
   product_types:
   - wire_transfer
   - depository
   industry_types: []
-  customer_profiles: []
+  customer_profiles:
+  - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
   - iran
@@ -113,57 +164,81 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - source of funds
+  - incomplete information
+  - line of business
+  - high-risk jurisdiction
 - id: 207-06
-  description: A general trading company with opaque ownership registered in a commercial
-    free trade zone in the UAE or other location and whose trading counterparties
-    are companies mostly located in jurisdictions such as Singapore and Hong Kong
-    has bank accounts at multiple financial institutions in locations such as China,
-    Hong Kong, Oman, or the UAE.
+  description: Use of Company Types and Jurisdictions at High-Risk for IRGC Abuse.
+    A general trading company with opaque ownership registered in a commercial free
+    trade zone in the UAE or other location and whose trading counterparties are companies
+    mostly located in jurisdictions such as Singapore and Hong Kong has bank accounts
+    at multiple financial institutions in locations such as China, Hong Kong, Oman,
+    or the UAE.
   product_types:
   - depository
   - wire_transfer
+  - trade_finance
   - correspondent_banking
   industry_types:
   - import_export
+  - retail
   customer_profiles:
   - shell_or_front_company
   - beneficial_owner_obscured
   - cross_border_business
   geographic_footprints:
-  - china
   - hong_kong
+  - china
   - middle_east
-  - high_risk_jurisdiction
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
   issued_date: '2026-05-11'
-  risk_level: high
+  risk_level: medium
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - opaque ownership
+  - free trade zone
+  - general trading company
+  - multiple financial institutions
 - id: 207-07
-  description: A company registered in Hong Kong that banks using a Chinese non-resident
-    account has little to no web presence, is co-located with numerous other similar
-    companies, or is recently incorporated yet transmitting large, round dollar payments
-    with no adequate explanation for the source of funds, or makes numerous payments
-    in large figures to UAE general trading companies or commercial free trade zone-based
-    intermediaries with no clear business purpose.
+  description: Likely Front Companies that Exhibit Transaction Patterns Typical of
+    IRGC Shadow Banking. A company registered in Hong Kong that banks using a Chinese
+    non-resident account has little to no web presence, is co-located with numerous
+    other similar companies, or is recently incorporated yet transmitting large, round
+    dollar payments with no adequate explanation for the source of funds, or makes
+    numerous payments in large figures to UAE general trading companies or commercial
+    free trade zone-based intermediaries with no clear business purpose.
   product_types:
   - depository
   - wire_transfer
   - correspondent_banking
+  - trade_finance
   industry_types:
   - import_export
+  - professional_services
   customer_profiles:
   - shell_or_front_company
-  - newly_established_business
   - beneficial_owner_obscured
-  - cross_border_business
+  - newly_established_business
   geographic_footprints:
   - hong_kong
   - china
   - middle_east
-  - high_risk_jurisdiction
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -171,22 +246,39 @@
   risk_level: high
   category: shell_company
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - Hong Kong
+  - Chinese non-resident account
+  - large, round dollar payments
+  - no clear business purpose
 - id: 207-08
-  description: A customer makes transactions that move through multiple exchange houses
-    and/or trading companies, adding additional fees and costs as the transactions
-    progress, where the fees, number of transactions, or pattern of transactions do
-    not reflect standard and customary commercial practices.
+  description: Unusual Use of Exchange Houses. A customer makes transactions that
+    move through multiple exchange houses and/or trading companies, adding additional
+    fees and costs as the transactions progress, where the fees, number of transactions,
+    or pattern of transactions do not reflect standard and customary commercial practices.
   product_types:
+  - money_transmitter
   - wire_transfer
   - remittance
   - currency_exchange
-  industry_types: []
+  industry_types:
+  - money_services_business
+  - import_export
   customer_profiles:
   - money_services_business
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
   - middle_east
+  - hong_kong
+  - eastern_europe
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -194,16 +286,31 @@
   risk_level: medium
   category: layering
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - wire_transfer_chains
+  - informal_value_transfer
+  - rapid_fund_movement
+  key_terms:
+  - exchange houses
+  - trading companies
+  - additional fees
+  - customary commercial practices
 - id: 207-09
-  description: A company engaged in a line of business with potential exposure to
-    Iranian oil smuggling deviates from normal business practices to send or receive
+  description: Unusual Digital Asset Payments by Petroleum, Shipping, Trading, or
+    Trust Companies. A company engaged in a line of business with potential exposure
+    to Iranian oil smuggling deviates from normal business practices to send or receive
     payments using digital assets.
   product_types:
   - crypto
+  - wire_transfer
+  - trade_finance
   industry_types:
   - oil_and_gas
   - maritime_shipping
-  - trade_finance
+  - import_export
+  - professional_services
   customer_profiles:
   - cross_border_business
   geographic_footprints:
@@ -215,11 +322,21 @@
   risk_level: medium
   category: virtual_currency
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - digital assets
+  - oil smuggling
+  - deviates from normal business practices
 - id: 207-10
-  description: A customer in a high-risk jurisdiction for Iranian illicit finance-related
-    activities receives a stablecoin payment that does not match the customer’s line
-    of business and fails to provide information about the source of funds or provides
-    documentation indicating a potential link to Iranian illicit finance.
+  description: Stablecoin Payments with an Unclear Source of Funds. A customer in
+    a high-risk jurisdiction for Iranian illicit finance-related activities receives
+    a stablecoin payment that does not match the customer’s line of business and fails
+    to provide information about the source of funds or provides documentation indicating
+    a potential link to Iranian illicit finance.
   product_types:
   - crypto
   industry_types: []
@@ -235,19 +352,30 @@
   risk_level: medium
   category: virtual_currency
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - stablecoin
+  - source of funds
+  - Iranian illicit finance
 - id: 207-11
-  description: A customer of a stablecoin issuer, particularly a foreign entity such
-    as an overseas purported trust company, opens an account and subsequently engages
-    in mint activity requiring multiple rate/limit increases in a short period of
-    time, or otherwise transacts in a manner that does not appear consistent with
-    its reported business profile.
+  description: Unusual Stablecoin Account Activity. A customer of a stablecoin issuer,
+    particularly a foreign entity such as an overseas purported trust company, opens
+    an account and subsequently engages in mint activity requiring multiple rate/limit
+    increases in a short period of time, or otherwise transacts in a manner that does
+    not appear consistent with its reported business profile.
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - foreign_individual
   - shell_or_front_company
-  geographic_footprints: []
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -255,14 +383,26 @@
   risk_level: medium
   category: virtual_currency
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - stablecoin issuer
+  - mint activity
+  - rate/limit increases
+  - reported business profile
 - id: 207-12
-  description: Blockchain analysis indicates that a customer account transacted directly
-    or indirectly with a digital asset address attributed to an Iranian entity.
+  description: Payments to or from an Iran-located DASP. Blockchain analysis indicates
+    that a customer account transacted directly or indirectly with a digital asset
+    address attributed to an Iranian entity.
   product_types:
   - crypto
   industry_types:
   - crypto
-  customer_profiles: []
+  customer_profiles:
+  - cross_border_business
   geographic_footprints:
   - iran
   regulatory_source: FinCEN Alert FIN-2026-Alert002
@@ -270,18 +410,28 @@
   regulator_jurisdiction: US
   issued_date: '2026-05-11'
   risk_level: high
-  category: sanctions_evasion
+  category: virtual_currency
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - blockchain analysis
+  - digital asset address
+  - Iranian entity
+  - DASP
 - id: 207-13
-  description: Authentication and account activity indicates that a user may be conducting
-    digital asset transactions from Iran. For example, activity logs may show connections
-    from Iranian IP addresses, or sharing IP addresses or common devices with users
-    previously identified as having an Iranian nexus, authentication using an Iranian
-    email service or Iranian telephone number, or use of a device with time zone,
-    language, and other settings consistent with a location in Iran. Connection through
-    a virtual private network (VPN), residential proxy network, or Tor exit node—when
-    combined with other evidence of a location in Iran—may indicate an attempt by
-    an Iranian user to circumvent geofencing.
+  description: Iran-related Cyber Indicators. Authentication and account activity
+    indicates that a user may be conducting digital asset transactions from Iran.
+    For example, activity logs may show connections from Iranian IP addresses, or
+    sharing IP addresses or common devices with users previously identified as having
+    an Iranian nexus, authentication using an Iranian email service or Iranian telephone
+    number, or use of a device with time zone, language, and other settings consistent
+    with a location in Iran. Connection through a virtual private network (VPN), residential
+    proxy network, or Tor exit node—when combined with other evidence of a location
+    in Iran—may indicate an attempt by an Iranian user to circumvent geofencing.
   product_types:
   - crypto
   industry_types:
@@ -297,9 +447,22 @@
   risk_level: high
   category: cyber_enabled
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - identity_misrepresentation
+  - account_takeover
+  key_terms:
+  - Iranian IP addresses
+  - VPN
+  - Tor exit node
+  - geofencing
+  - Iranian email service
 - id: 207-14
-  description: Account activity indicates that a customer may operate as an unregistered
-    P2P exchanger, foreign-located MSB, or nested DASP that provides services in Iran.
+  description: Unregistered P2P Exchangers, Foreign-Located MSBs, and Nested DASPs.
+    Account activity indicates that a customer may operate as an unregistered P2P
+    exchanger, foreign-located MSB, or nested DASP that provides services in Iran.
     For example, a customer of a DASP who is located in a high-risk jurisdiction for
     Iranian illicit finance-related activity appears to be using liquidity provided
     by the DASP to execute large numbers of offsetting transactions.
@@ -307,13 +470,14 @@
   - crypto
   - money_transmitter
   industry_types:
-  - crypto
   - money_services_business
+  - crypto
   customer_profiles:
   - money_services_business
+  - third_party_payment_processor
   geographic_footprints:
-  - high_risk_jurisdiction
   - iran
+  - high_risk_jurisdiction
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
@@ -321,3 +485,16 @@
   risk_level: high
   category: virtual_currency
   source_url: https://www.fincen.gov/system/files/2026-05/FinCEN-Alert-IRGC.pdf
+  typology_family:
+  - sanctions_evasion
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - nested_account_activity
+  - funnel_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - P2P exchanger
+  - foreign-located MSB
+  - nested DASP
+  - offsetting transactions
+  - liquidity
