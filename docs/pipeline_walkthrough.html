@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>redflag-mcp — Pipeline Walkthrough</title>
+<style>
+  :root {
+    --fg: #1f2933;
+    --muted: #52606d;
+    --line: #cbd2d9;
+    --accent: #2b6cb0;
+    --bg: #ffffff;
+    --code-bg: #f5f7fa;
+    --note-bg: #fff8e1;
+    --note-border: #f0b429;
+    --tip-bg: #e6fffa;
+    --tip-border: #2c7a7b;
+    --phase-bg: #edf2f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.55;
+    max-width: 980px;
+    margin: 40px auto;
+    padding: 0 28px;
+  }
+  h1 { font-size: 2.1rem; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+  h2 {
+    font-size: 1.5rem; margin-top: 2.5rem;
+    background: var(--phase-bg); padding: 10px 14px; border-left: 4px solid var(--accent);
+  }
+  h3 { font-size: 1.15rem; margin-top: 2rem; color: var(--accent); }
+  h4 { font-size: 1rem; margin-top: 1.4rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  code, pre { font-family: "SF Mono", Consolas, Menlo, monospace; font-size: 0.88rem; }
+  code { background: var(--code-bg); padding: 1px 6px; border-radius: 3px; }
+  pre {
+    background: var(--code-bg); border: 1px solid var(--line); border-radius: 6px;
+    padding: 12px 14px; overflow-x: auto; line-height: 1.45;
+  }
+  pre code { background: none; padding: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; font-size: 0.92rem; }
+  th { background: var(--phase-bg); }
+  .note, .tip {
+    border-left: 4px solid; padding: 10px 14px; margin: 14px 0; border-radius: 4px;
+  }
+  .note { background: var(--note-bg); border-color: var(--note-border); }
+  .tip  { background: var(--tip-bg);  border-color: var(--tip-border); }
+  .pill {
+    display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem;
+    background: var(--phase-bg); color: var(--muted); margin-right: 6px; font-weight: 600;
+  }
+  .toc { background: var(--code-bg); padding: 16px 24px; border-radius: 6px; }
+  .toc ol { margin: 0; padding-left: 22px; }
+  .toc li { margin: 4px 0; }
+  .arrow { color: var(--accent); font-weight: bold; }
+  .file { font-family: "SF Mono", monospace; font-size: 0.85rem; color: var(--muted); }
+  .diagram {
+    background: var(--code-bg); border: 1px solid var(--line); border-radius: 6px;
+    padding: 18px; font-family: "SF Mono", monospace; font-size: 0.82rem;
+    white-space: pre; overflow-x: auto; line-height: 1.6;
+  }
+  hr { border: none; border-top: 1px solid var(--line); margin: 36px 0; }
+</style>
+</head>
+<body>
+
+<h1>redflag-mcp — Pipeline Walkthrough</h1>
+
+<p>This document explains, step by step, what each part of the <code>redflag-mcp</code> repository does. The project ingests AML (Anti-Money Laundering) regulatory documents, extracts red flag indicators using LLMs, stores them in a searchable corpus, and serves them through an MCP server that compliance officers can query.</p>
+
+<div class="tip">
+<strong>One-line summary.</strong> A regulatory PDF/web page goes in &mdash; structured, validated, embedded red flag records come out and become queryable over MCP.
+</div>
+
+<h3>End-to-end data flow</h3>
+<div class="diagram">URL list / catalog CSV
+       │
+       ▼  (1) harvest_sources.py / pipeline.py download
+red_flag_sources/pdf/*.pdf    red_flag_sources/markdown/*.md    sources.yaml
+       │
+       ▼  (2) extract.py  ─── LLM call ───▶  raw red-flag candidates
+       │
+       ▼  (3) verify_red_flags()    ─── LLM call ───▶  drops false positives
+       │
+       ▼  (4) shape_red_flags()     ─── LLM call ───▶  grammar-normalized descriptions
+       │
+       ▼  validate against Pydantic schema + controlled vocabularies
+data/source/&lt;NNN&gt;_&lt;slug&gt;.yaml                       (5) build_registry.py  ──▶  registry.csv
+       │
+       ▼  (6) ingest.py  ─── nomic embeddings ───▶  data/vectors/red_flags.lance   (LanceDB)
+       │
+       ▼  (7) build_corpus.py                       ──▶  packaged SQLite FTS5 + manifest.json
+       │
+       ▼  (8) server.py + tools.py                  ──▶  MCP tools served over stdio or HTTP</div>
+
+<div class="toc">
+<strong>Table of contents</strong>
+<ol>
+  <li><a href="#phase-1">Phase 1 &mdash; Source acquisition</a></li>
+  <li><a href="#phase-2">Phase 2 &mdash; Extraction</a></li>
+  <li><a href="#phase-3">Phase 3 &mdash; Verification &amp; shaping</a></li>
+  <li><a href="#phase-4">Phase 4 &mdash; Registry &amp; manifest</a></li>
+  <li><a href="#phase-5">Phase 5 &mdash; Ingestion (vector store)</a></li>
+  <li><a href="#phase-6">Phase 6 &mdash; Corpus packaging</a></li>
+  <li><a href="#phase-7">Phase 7 &mdash; MCP server &amp; tools</a></li>
+  <li><a href="#phase-8">Phase 8 &mdash; Evaluation &amp; optimization</a></li>
+  <li><a href="#schema">Data schema reference</a></li>
+  <li><a href="#vocab">Controlled vocabularies</a></li>
+  <li><a href="#modules">Module map</a></li>
+</ol>
+</div>
+
+<hr>
+
+<h2 id="phase-1">Phase 1 &mdash; Source acquisition</h2>
+<p>Get regulator-published material onto disk so it can be processed.</p>
+
+<h3>1a. <code>scripts/harvest_sources.py</code> &mdash; bulk catalog download</h3>
+<p><span class="pill">batch</span><span class="pill">idempotent</span></p>
+<pre><code>uv run python scripts/harvest_sources.py red_flag_sources/Global_AML_CFT_Sanctions_Red_Flag_Catalog.csv</code></pre>
+<ul>
+  <li>Reads the <code>Direct URL</code> column from a catalog CSV row by row.</li>
+  <li>Classifies each URL as PDF or web page via <code>classify_url()</code>.</li>
+  <li>PDFs &rarr; downloaded with a browser-like user agent into <span class="file">red_flag_sources/pdf/</span>.</li>
+  <li>Web pages &rarr; fetched through the <strong>Jina Reader API</strong> (<code>https://r.jina.ai/&lt;url&gt;</code>) which returns clean markdown; saved into <span class="file">red_flag_sources/markdown/</span>.</li>
+  <li>Every download appends an entry to <span class="file">red_flag_sources/sources.yaml</span> &mdash; the canonical "where did this file come from" record. Deduplication is by URL.</li>
+  <li>Files are named with a zero-padded serial (<code>043.pdf</code>, <code>061.md</code>) assigned by <code>next_serial()</code>.</li>
+</ul>
+
+<h3>1b. <code>scripts/pipeline.py</code> &mdash; URL-by-URL workflow</h3>
+<p>Same building blocks as harvesting, but driven by a plain-text URL list (one URL per line) and bundled with the extraction step:</p>
+<pre><code># end-to-end: download + extract + manifest + registry refresh
+uv run python scripts/pipeline.py run urls.txt
+
+# two-step: download first, inspect captures, then extract
+uv run python scripts/pipeline.py download urls.txt
+uv run python scripts/pipeline.py extract</code></pre>
+<p>Useful flags: <code>--force</code> (bypass dedup), <code>--parallel N</code>, <code>--no-verify</code>, <code>--prompt handcrafted</code>.</p>
+
+<div class="note">
+<strong>Archive folders are skipped.</strong> <code>red_flag_sources/pdf/archive/</code> and <code>red_flag_sources/markdown/archive/</code> are excluded by virtue of non-recursive <code>glob("*.pdf")</code> / <code>glob("*.md")</code> in <code>discover_sources()</code>.
+</div>
+
+<hr>
+
+<h2 id="phase-2">Phase 2 &mdash; Extraction</h2>
+
+<h3>2a. <code>scripts/extract.py</code></h3>
+<p>The heart of the pipeline. Reads PDFs (via <code>pdfplumber</code>) or Jina markdown captures, sends the full document text to an LLM with the extraction prompt, and parses out a list of candidate red flags.</p>
+
+<h4>Per-source flow (<code>process_one</code>)</h4>
+<ol>
+  <li><strong>Resolve slug</strong> from the filename via the registry &mdash; e.g. <code>007_employee_retention_credit_fraud.pdf &rarr; "007_employee_retention_credit_fraud"</code>.</li>
+  <li><strong>Skip-if-exists</strong> check against <span class="file">data/source/.extracted_sources.yaml</span>, unless <code>--force</code>.</li>
+  <li><strong>Text extraction</strong>: <code>extract_text_from_pdf()</code> walks all pages; <code>extract_text_from_markdown()</code> strips the Jina frontmatter.</li>
+  <li><strong>LLM call</strong> with <code>build_extraction_prompt()</code> from <code>scripts/prompts.py</code>.</li>
+  <li><strong>Verify</strong> (LLM #2) &mdash; drops false positives. <em>See Phase 3.</em></li>
+  <li><strong>Shape</strong> (LLM #3) &mdash; rewrites grammar so every description begins with a noun subject. <em>See Phase 3.</em></li>
+  <li><strong>Validate</strong> each candidate against the <code>RedFlagSource</code> Pydantic model and write to <span class="file">data/source/&lt;slug&gt;.yaml</span>.</li>
+  <li><strong>Append</strong> a manifest entry to <span class="file">.extracted_sources.yaml</span>.</li>
+</ol>
+
+<h4>The extraction prompt (<code>scripts/prompts.py :: build_extraction_prompt</code>)</h4>
+<p>The prompt is the most important piece of business logic in the project. It tells the LLM:</p>
+<ul>
+  <li><strong>What a red flag is</strong> &mdash; observable customer/transaction behavior, not compliance-program text.</li>
+  <li><strong>Explicit-section precedence</strong> &mdash; if the document has a "Red Flags" / "Risk Indicators" heading, only extract from there. Otherwise scan the whole document.</li>
+  <li><strong>Reusable-indicator test</strong> &mdash; reject named persons, named companies, one-off facts.</li>
+  <li><strong>Compliance-guidance exclusion</strong> &mdash; reject anything describing what an FI should do (training, audit, recordkeeping, etc.).</li>
+  <li><strong>One-bullet-one-flag rule</strong> &mdash; do not split sentences inside a single bullet.</li>
+  <li><strong>Per-field metadata guidance</strong> for every output field (product_types, industry_types, customer_profiles, geographic_footprints, regulator, issued_date, risk_level, category, typology_family, transaction_patterns, key_terms), each anchored to a controlled vocabulary from <code>config.py</code>.</li>
+  <li><strong>Four worked examples</strong> &mdash; correct vs. wrong extractions.</li>
+</ul>
+
+<hr>
+
+<h2 id="phase-3">Phase 3 &mdash; Verification &amp; shaping</h2>
+
+<h3>3a. Verification &mdash; remove false positives</h3>
+<p><code>verify_red_flags()</code> in <code>extract.py</code> sends each candidate description to a second LLM call that classifies it as a genuine red flag (<code>true</code>) or not (<code>false</code>). Candidates marked <code>false</code> are dropped.</p>
+<p>Two prompt variants:</p>
+<table>
+<tr><th>Variant</th><th>Source</th><th>When used</th></tr>
+<tr><td><strong>Handcrafted</strong></td><td><code>_HANDCRAFTED_SYSTEM_PROMPT</code> in <code>scripts/prompts.py</code></td><td>Fallback; forced with <code>--prompt handcrafted</code></td></tr>
+<tr><td><strong>DSPy-optimized</strong></td><td><span class="file">data/verifier_prompt.json</span></td><td>Auto-loaded if present (default)</td></tr>
+</table>
+
+<h3>3b. Shaping &mdash; normalize grammar</h3>
+<p><code>shape_red_flags()</code> sends surviving descriptions to a third LLM call that:</p>
+<ul>
+  <li>Ensures each description starts with a concrete noun subject (<em>"Customers..."</em>, <em>"Transactions..."</em>).</li>
+  <li>Merges dependent explanatory sentences ("Such...", "Similarly...") back into the preceding sentence.</li>
+  <li>Strips one-off names or case facts that slipped through.</li>
+  <li>Generalizes case-specific dollar amounts (<em>"$100M stolen" &rarr; "large sums (e.g., $100M) stolen"</em>) so the indicator becomes reusable.</li>
+</ul>
+
+<div class="note">
+<strong>Order matters.</strong> The pipeline runs <code>extract &rarr; verify &rarr; shape</code> so shaping LLM calls are not spent rewording false positives that verification would drop.
+</div>
+
+<hr>
+
+<h2 id="phase-4">Phase 4 &mdash; Registry &amp; manifest</h2>
+
+<h3>4a. <code>scripts/build_registry.py</code></h3>
+<p>Builds <span class="file">red_flag_sources/registry.csv</span> &mdash; a unified audit ledger combining:</p>
+<ul>
+  <li>Catalog CSVs (the canonical list of intended sources)</li>
+  <li><code>sources.yaml</code> (what was successfully downloaded)</li>
+  <li><code>data/source/.extracted_sources.yaml</code> (what was successfully extracted)</li>
+  <li>YAML files in <code>data/source/</code> (the final, structured red flags)</li>
+</ul>
+<p>Each registry row gets a <code>status</code>: <code>extracted</code>, <code>downloaded</code>, or <code>not_downloaded</code>. This file drives deduplication in <code>pipeline.py</code> and answers "how much of the catalog have we processed?"</p>
+
+<h3>4b. <code>scripts/build_sources_registry.py</code></h3>
+<p>A narrower variant that just rebuilds <code>sources.yaml</code> from disk by re-inspecting downloaded files. Used to repair drift between filesystem and registry.</p>
+
+<h3>4c. <code>scripts/review_markdown_sources.py</code></h3>
+<p>Interactive review tool for Jina markdown captures, used before extraction to weed out junk pages (404 captures, navigation-only stubs).</p>
+
+<hr>
+
+<h2 id="phase-5">Phase 5 &mdash; Ingestion (vector store)</h2>
+
+<h3><code>scripts/ingest.py</code> &mdash; load YAML into LanceDB</h3>
+<pre><code>uv run python scripts/ingest.py</code></pre>
+<ol>
+  <li><strong>Discover</strong> every <code>*.yaml</code> under <code>data/source/</code>.</li>
+  <li><strong>Parse</strong> each into <code>RedFlagSource</code> via Pydantic.</li>
+  <li><strong>Auto-tag missing metadata</strong> &mdash; if any of the metadata fields are blank, call OpenAI (<code>gpt-4o-mini</code>) with the tagger prompt to fill them. Free-form values outside the controlled vocabularies emit a warning.</li>
+  <li><strong>Embed</strong> the description with <code>nomic-embed-text-v1.5</code>:
+    <ul>
+      <li>Documents prefixed with <code>"search_document: "</code> (768-dim vector, L2-normalized).</li>
+      <li>Queries later get the <code>"search_query: "</code> prefix &mdash; this asymmetric scheme is required by the Nomic model.</li>
+    </ul>
+  </li>
+  <li><strong>Upsert</strong> into the <code>red_flags</code> table in <span class="file">data/vectors/red_flags.lance</span>. Schema is PyArrow with vector + all metadata fields including list-typed <code>typology_family</code>, <code>transaction_patterns</code>, <code>key_terms</code>.</li>
+  <li><strong>Optional write-back</strong>: <code>--write-back-yaml</code> serializes enriched records back to source YAMLs so the enrichment becomes durable.</li>
+</ol>
+
+<div class="tip">
+<strong>Why this is a separate step.</strong> The Nomic model is ~275 MB and downloads on first call. Doing it during ingestion (not at MCP server startup) avoids Claude Desktop connection timeouts.
+</div>
+
+<hr>
+
+<h2 id="phase-6">Phase 6 &mdash; Corpus packaging</h2>
+
+<h3><code>scripts/build_corpus.py</code></h3>
+<p>Builds a versioned, hash-pinned <strong>SQLite FTS5</strong> package for offline / hosted deployment that does <em>not</em> require Python, OpenAI keys, or the embedding model.</p>
+<ol>
+  <li>Reads all source YAMLs.</li>
+  <li>Creates a SQLite database with FTS5 (full-text search) tables over descriptions and key terms.</li>
+  <li>Bundles the DB + <code>manifest.json</code> (version, SHA256, source list, schema version) into a ZIP package.</li>
+</ol>
+
+<h3><code>scripts/verify_corpus.py</code></h3>
+<p>Validates a packaged corpus ZIP: schema version, manifest integrity, hash match, record count. Run before deploying.</p>
+
+<h3>Runtime activation: <code>src/redflag_mcp/corpus_install.py</code></h3>
+<p>At server startup in <strong>hosted-corpus</strong> mode, the server fetches the configured package URL, verifies the SHA256, extracts it to a cache directory, and opens the SQLite store. The release index (<code>release_index.json</code>) supports auto-update to a newer version.</p>
+
+<hr>
+
+<h2 id="phase-7">Phase 7 &mdash; MCP server &amp; tools</h2>
+
+<h3><code>src/redflag_mcp/server.py</code></h3>
+<p>Builds a <code>FastMCP</code> server with three runtime modes:</p>
+<table>
+<tr><th>Mode</th><th>Storage</th><th>Embedding model loaded?</th><th>Use case</th></tr>
+<tr><td><code>VECTOR_DEV</code> (default)</td><td>LanceDB at <code>data/vectors/</code></td><td>Yes &mdash; for semantic search</td><td>Local dev with full vector search</td></tr>
+<tr><td><code>LOCAL_CORPUS</code></td><td>Packaged SQLite FTS5</td><td>No</td><td>Air-gapped institutional deployment</td></tr>
+<tr><td><code>HOSTED_CORPUS</code></td><td>Packaged SQLite FTS5 (fetched)</td><td>No</td><td>Public hosted connector at <code>/mcp</code></td></tr>
+</table>
+
+<p>Transport switches by env var <code>MCP_TRANSPORT=stdio|http</code>. <strong>Critical</strong>: in stdio mode, stdout is the JSON-RPC channel; any <code>print()</code> would corrupt the protocol &mdash; the code uses <code>logging</code> exclusively.</p>
+
+<h3><code>src/redflag_mcp/tools.py</code> &mdash; the seven MCP tools</h3>
+<table>
+<tr><th>Tool</th><th>What it does</th></tr>
+<tr><td><code>classify_red_flag_request</code></td><td>Triage helper. Given a user request, recommends whether to use <code>search_red_flags</code> or <code>filter_red_flags</code>, and what filter values to apply. Use this <em>before</em> searching for vague requests.</td></tr>
+<tr><td><code>search_red_flags</code></td><td>Semantic search. Embeds the query, retrieves top-k by vector similarity (LanceDB) or BM25 ranking (FTS5). Supports metadata filters.</td></tr>
+<tr><td><code>filter_red_flags</code></td><td>Pure metadata filter, no semantic ranking. For requests like "all red flags from FCA" or "all sanctions-evasion red flags in trade_finance".</td></tr>
+<tr><td><code>get_red_flag</code></td><td>Fetch one red flag's full record by ID.</td></tr>
+<tr><td><code>list_filters</code></td><td>Returns the valid values for every filterable field &mdash; the controlled vocabularies, plus actually-observed values.</td></tr>
+<tr><td><code>list_sources</code></td><td>Summary of every regulatory source represented in the corpus (one row per regulator document).</td></tr>
+<tr><td><code>get_source</code></td><td>Detail view for one source: citations, aggregate metadata, related red flag IDs, snippets.</td></tr>
+</table>
+
+<h3>Supporting registrations</h3>
+<ul>
+  <li><code>resources.py</code> &mdash; registers MCP <em>resources</em>: <code>source_catalog</code> (JSON dump of all sources) and <code>source_detail/{source_id}</code> for client-side preview.</li>
+  <li><code>prompts.py</code> (server-side) &mdash; registers MCP <em>prompts</em> for guided querying.</li>
+  <li><code>http_app.py</code> &mdash; ASGI app for HTTP transport; used by hosted deployment.</li>
+</ul>
+
+<hr>
+
+<h2 id="phase-8">Phase 8 &mdash; Evaluation &amp; optimization</h2>
+
+<h3><code>scripts/eval_verifier.py</code></h3>
+<p>Measures the verifier's precision, recall, F1, and accuracy against hand-labelled YAML files under <code>data/source/labelled/</code>. Also reports a "no verifier" baseline (everything classified <code>true</code>) for comparison.</p>
+
+<h3><code>scripts/optimize_verifier.py</code></h3>
+<p>Uses <strong>DSPy</strong> to programmatically improve the verifier prompt:</p>
+<ul>
+  <li><strong>BootstrapFewShotWithRandomSearch</strong> (default) &mdash; learns good few-shot demonstrations to attach to the handcrafted instructions.</li>
+  <li><strong>MIPROv2</strong> (<code>--optimizer mipro</code>) &mdash; jointly optimizes instructions <em>and</em> demos. More LLM calls, often better.</li>
+</ul>
+<p>Output: <span class="file">data/verifier_prompt.json</span> with optimized instructions + few-shot demos. The verifier auto-loads this if present.</p>
+<p>Requires the optional <code>optimize</code> extra: <code>uv sync --extra optimize</code>.</p>
+
+<h3><code>scripts/evaluate_retrieval.py</code></h3>
+<p>Small benchmark suite for the retrieval layer: loads a query set, runs each against a corpus package, and reports recall@k.</p>
+
+<hr>
+
+<h2 id="schema">Data schema reference</h2>
+<p>Defined in <code>src/redflag_mcp/models.py</code>. Three related Pydantic models:</p>
+<table>
+<tr><th>Model</th><th>Purpose</th><th>Has vector?</th></tr>
+<tr><td><code>RedFlagSource</code></td><td>YAML input format (what the extractor writes)</td><td>No</td></tr>
+<tr><td><code>RedFlagRecord</code></td><td>LanceDB row format (storage)</td><td>Yes &mdash; 768-dim</td></tr>
+<tr><td><code>RedFlagResult</code></td><td>MCP response format (no vector leaks to client)</td><td>No</td></tr>
+</table>
+
+<h4>Key fields</h4>
+<table>
+<tr><th>Field</th><th>Type</th><th>Source</th></tr>
+<tr><td><code>id</code></td><td>str</td><td>Required &mdash; e.g. <code>007_employee_retention_credit_fraud-03</code></td></tr>
+<tr><td><code>description</code></td><td>str</td><td>The red flag text (after shaping)</td></tr>
+<tr><td><code>product_types</code></td><td>list[str]</td><td>Vocab: <code>PRODUCT_TYPES</code></td></tr>
+<tr><td><code>industry_types</code></td><td>list[str]</td><td>Vocab: <code>INDUSTRY_TYPES</code></td></tr>
+<tr><td><code>customer_profiles</code></td><td>list[str]</td><td>Vocab: <code>CUSTOMER_PROFILES</code></td></tr>
+<tr><td><code>geographic_footprints</code></td><td>list[str]</td><td>Vocab: <code>GEOGRAPHIC_FOOTPRINTS</code></td></tr>
+<tr><td><code>typology_family</code></td><td>list[str]</td><td>Vocab: <code>TYPOLOGY_FAMILIES</code></td></tr>
+<tr><td><code>transaction_patterns</code></td><td>list[str]</td><td>Vocab: <code>TRANSACTION_PATTERNS</code></td></tr>
+<tr><td><code>key_terms</code></td><td>list[str]</td><td>Free-form lexical-search hooks</td></tr>
+<tr><td><code>category</code></td><td>str</td><td>Vocab: <code>CATEGORIES</code> &mdash; primary AML typology</td></tr>
+<tr><td><code>risk_level</code></td><td>str</td><td>high / medium / low</td></tr>
+<tr><td><code>regulator</code></td><td>str</td><td>Vocab: <code>REGULATORS</code></td></tr>
+<tr><td><code>regulator_jurisdiction</code></td><td>str</td><td>Derived deterministically from <code>regulator</code> via <code>REGULATOR_JURISDICTIONS</code></td></tr>
+<tr><td><code>issued_date</code></td><td>str</td><td>ISO 8601 (YYYY, YYYY-MM, or YYYY-MM-DD)</td></tr>
+</table>
+
+<hr>
+
+<h2 id="vocab">Controlled vocabularies (<code>src/redflag_mcp/config.py</code>)</h2>
+<p>These are <em>suggested</em> &mdash; the prompt prefers them but allows free-form values when nothing fits. Free-form values are logged as warnings so the vocabulary can evolve.</p>
+<ul>
+  <li><code>RISK_LEVELS</code> &mdash; high, medium, low</li>
+  <li><code>PRODUCT_TYPES</code> &mdash; institution-facing channels (depository, wire_transfer, correspondent_banking, &hellip;)</li>
+  <li><code>CATEGORIES</code> &mdash; primary AML typologies (structuring, sanctions_evasion, &hellip;)</li>
+  <li><code>INDUSTRY_TYPES</code> &mdash; customer industries (real_estate, manufacturing, casinos, &hellip;)</li>
+  <li><code>CUSTOMER_PROFILES</code> &mdash; archetypes (politically_exposed_person, money_services_business, &hellip;)</li>
+  <li><code>GEOGRAPHIC_FOOTPRINTS</code> &mdash; regions and sanctioned countries (iran, syria, east_asia, &hellip;)</li>
+  <li><code>TYPOLOGY_FAMILIES</code> &mdash; broader-than-category families (narcotics_proceeds, &hellip;)</li>
+  <li><code>TRANSACTION_PATTERNS</code> &mdash; observable patterns (structuring, bulk_cash_smuggling, &hellip;)</li>
+  <li><code>REGULATORS</code> + <code>REGULATOR_JURISDICTIONS</code> &mdash; issuing authorities and their country codes</li>
+  <li><code>URL_DOMAIN_TO_REGULATOR</code> &mdash; deterministic regulator inference from a source URL's domain (e.g. <code>www.fincen.gov &rarr; FinCEN</code>). Overrides the LLM's regulator guess when the domain is recognized.</li>
+</ul>
+
+<hr>
+
+<h2 id="modules">Module map</h2>
+
+<h3>scripts/ &mdash; operator-run pipelines</h3>
+<table>
+<tr><th>File</th><th>Role</th></tr>
+<tr><td><code>harvest_sources.py</code></td><td>Bulk download PDFs and web pages from catalog CSVs</td></tr>
+<tr><td><code>pipeline.py</code></td><td>URL-list driven download + extract orchestrator</td></tr>
+<tr><td><code>extract.py</code></td><td>Per-source extraction: text &rarr; LLM &rarr; verify &rarr; shape &rarr; YAML</td></tr>
+<tr><td><code>prompts.py</code></td><td>The three LLM prompts: extraction, verification, shaping</td></tr>
+<tr><td><code>ingest.py</code></td><td>YAML &rarr; metadata auto-tag &rarr; embed &rarr; LanceDB upsert</td></tr>
+<tr><td><code>build_registry.py</code></td><td>Rebuild unified <code>registry.csv</code> audit ledger</td></tr>
+<tr><td><code>build_sources_registry.py</code></td><td>Rebuild <code>sources.yaml</code> from filesystem state</td></tr>
+<tr><td><code>build_corpus.py</code></td><td>Build versioned SQLite FTS5 corpus package</td></tr>
+<tr><td><code>verify_corpus.py</code></td><td>Validate a corpus package's integrity</td></tr>
+<tr><td><code>eval_verifier.py</code></td><td>Precision / recall / F1 for the verifier</td></tr>
+<tr><td><code>optimize_verifier.py</code></td><td>DSPy-based verifier prompt optimization</td></tr>
+<tr><td><code>evaluate_retrieval.py</code></td><td>Retrieval-quality benchmark</td></tr>
+<tr><td><code>review_markdown_sources.py</code></td><td>Interactive review of Jina markdown captures</td></tr>
+</table>
+
+<h3>src/redflag_mcp/ &mdash; the runtime package</h3>
+<table>
+<tr><th>File</th><th>Role</th></tr>
+<tr><td><code>config.py</code></td><td>Paths, embedding dim, all controlled vocabularies</td></tr>
+<tr><td><code>models.py</code></td><td>Pydantic schemas (<code>RedFlagSource</code>, <code>RedFlagRecord</code>, <code>RedFlagResult</code>, source summaries)</td></tr>
+<tr><td><code>embeddings.py</code></td><td>Nomic model loader + <code>encode_documents()</code> / <code>encode_query()</code></td></tr>
+<tr><td><code>vectorstore.py</code></td><td>LanceDB schema, upsert, vector + metadata search</td></tr>
+<tr><td><code>lexicalstore.py</code></td><td>SQLite FTS5 corpus reader (used in hosted/local-corpus modes)</td></tr>
+<tr><td><code>corpus.py</code> / <code>corpus_install.py</code></td><td>Download, verify, and activate packaged corpora</td></tr>
+<tr><td><code>server.py</code></td><td><code>FastMCP</code> server setup, lifespan, transport selection</td></tr>
+<tr><td><code>tools.py</code></td><td>The seven MCP tools + <code>RedFlagService</code> business layer</td></tr>
+<tr><td><code>resources.py</code></td><td>MCP resources (<code>source_catalog</code>, <code>source_detail/{id}</code>)</td></tr>
+<tr><td><code>prompts.py</code></td><td>Server-side MCP prompt templates (different from <code>scripts/prompts.py</code>)</td></tr>
+<tr><td><code>http_app.py</code></td><td>ASGI app for HTTP transport</td></tr>
+<tr><td><code>__main__.py</code></td><td>Entry point for <code>python -m redflag_mcp</code></td></tr>
+</table>
+
+<hr>
+
+<h3>Common operator workflows</h3>
+
+<h4>Add a new regulatory document</h4>
+<pre><code># 1. Drop the URL into urls.txt
+echo "https://www.fincen.gov/new-advisory.pdf" >> urls.txt
+
+# 2. Run the pipeline (download + extract + verify + shape)
+uv run python scripts/pipeline.py run urls.txt
+
+# 3. Review the generated YAML in data/source/&lt;NNN&gt;_&lt;slug&gt;.yaml
+
+# 4. Re-ingest so the new flags are searchable
+uv run python scripts/ingest.py</code></pre>
+
+<h4>Re-extract everything after a prompt change</h4>
+<pre><code># Forces re-extraction even for sources already in .extracted_sources.yaml
+uv run python scripts/pipeline.py extract --force --parallel 4</code></pre>
+
+<h4>Ship a new hosted corpus</h4>
+<pre><code>uv run python scripts/build_corpus.py
+uv run python scripts/verify_corpus.py data/corpus/&lt;package&gt;.zip
+# Publish the package + update release_index.json on the hosted bucket</code></pre>
+
+<h4>Run the MCP server locally</h4>
+<pre><code># stdio (Claude Desktop / Claude Code)
+uv run python -m redflag_mcp
+
+# HTTP transport (OpenAI agents, web clients)
+MCP_TRANSPORT=http MCP_PORT=8080 uv run python -m redflag_mcp</code></pre>
+
+<hr>
+
+<p style="color: var(--muted); font-size: 0.85rem; margin-top: 40px;">
+Generated for understanding the <code>redflag-mcp</code> repository pipeline. Every script and module path mentioned exists at the time of writing; refer to source files for current behavior.
+</p>
+
+</body>
+</html>
