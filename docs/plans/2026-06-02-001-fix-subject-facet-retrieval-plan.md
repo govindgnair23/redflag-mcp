@@ -185,7 +185,7 @@ flowchart LR
 
 ## Implementation Units
 
-- [ ] **Unit 1: Add Subject Vocabulary and Matching Semantics**
+- [x] **Unit 1: Add Subject Vocabulary and Matching Semantics**
 
 **Goal:** Define the public subject vocabulary and the deterministic mapping from subject tokens to existing metadata fields.
 
@@ -228,7 +228,7 @@ flowchart LR
 **Verification:**
 - Subject matching hides category-vs-typology disagreement without changing raw field semantics.
 
-- [ ] **Unit 1A: Add Industry Group Vocabulary and Matching Semantics**
+- [x] **Unit 1A: Add Industry Group Vocabulary and Matching Semantics**
 
 **Goal:** Define broad industry-group aliases that expand to existing exact `industry_types` values without weakening the base industry taxonomy.
 
@@ -263,7 +263,7 @@ flowchart LR
 **Verification:**
 - Industry grouping broadens client discoverability without collapsing precise industry facets.
 
-- [ ] **Unit 2: Expose Subjects Through MCP Tools and Discovery**
+- [x] **Unit 2: Expose Subjects Through MCP Tools and Discovery**
 
 **Goal:** Make bounded exact facets, `subjects`, and `industry_groups` visible and obvious to hosted clients through tool schemas, `list_filters`, descriptions, and prompt guidance.
 
@@ -315,7 +315,7 @@ flowchart LR
 **Verification:**
 - A hosted LLM client inspecting tool metadata can discover and use `subjects` without knowing the internal category/typology split, and can use `industry_groups` without guessing which exact industry values should be unioned.
 
-- [ ] **Unit 3: Add Completeness Metadata and Cursor Pagination for Exact Filters**
+- [x] **Unit 3: Add Completeness Metadata and Cursor Pagination for Exact Filters**
 
 **Goal:** Make exact metadata enumeration audit-safe by surfacing total matches, truncation, and pagination for all `filter_red_flags` calls.
 
@@ -358,7 +358,7 @@ flowchart LR
 **Verification:**
 - Exact-filter results cannot look complete when capped or paginated, including when an already narrow multi-facet cell exceeds the cap.
 
-- [ ] **Unit 4: Add FINTRAC Human-Trafficking Regression Coverage**
+- [x] **Unit 4: Add FINTRAC Human-Trafficking Regression Coverage**
 
 **Goal:** Lock the observed FINTRAC/OA001 failure into tests or evaluation fixtures so the subject facet cannot regress back to category-only behavior.
 
@@ -395,7 +395,7 @@ flowchart LR
 **Verification:**
 - The specific client-reported failure mode is covered by tests and, where possible, evaluation data.
 
-- [ ] **Unit 5: Fix Corpus Integrity Metadata Surfaced to Clients**
+- [x] **Unit 5: Fix Corpus Integrity Metadata Surfaced to Clients**
 
 **Goal:** Prevent clients from seeing `integrity_status="verified"` with an all-zero SQLite file hash.
 

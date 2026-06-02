@@ -8,6 +8,7 @@ from dataclasses import dataclass, field as dataclass_field
 from pathlib import Path
 from typing import Any, Literal, cast
 
+from redflag_mcp.config import INDUSTRY_GROUP_MAPPINGS, SUBJECT_MAPPINGS
 from redflag_mcp.models import (
     CorpusMetadata,
     RedFlagRecord,
@@ -41,6 +42,8 @@ class LexicalRedFlagFilters:
     geographic_footprints: list[str] | None = None
     typology_family: list[str] | None = None
     transaction_patterns: list[str] | None = None
+    subjects: list[str] | None = None
+    industry_groups: list[str] | None = None
     category: str | None = None
     risk_level: str | None = None
     regulator: str | None = None
@@ -54,6 +57,9 @@ class LexicalRedFlagFilters:
     def has_any(self) -> bool:
         return any(
             _clean_list(getattr(self, field_name)) for field_name in LIST_FILTER_FIELDS
+        ) or any(
+            _clean_list(getattr(self, field_name))
+            for field_name in ("subjects", "industry_groups")
         ) or any(
             getattr(self, field_name)
             for field_name in (
@@ -106,14 +112,18 @@ class LexicalStore:
             integrity_status = _required_metadata_value(connection, "integrity_status")
             if integrity_status not in {"unverified", "verified", "failed"}:
                 raise ValueError(f"Unsupported integrity status: {integrity_status}")
+            file_hashes = json.loads(_required_metadata_value(connection, "file_hashes"))
+            if (
+                integrity_status == "verified"
+                and file_hashes.get("redflags.sqlite") == "0" * 64
+            ):
+                integrity_status = "unverified"
             corpus = CorpusMetadata(
                 version=_required_metadata_value(connection, "version"),
                 schema_version=int(schema_version),
                 build_timestamp=_required_metadata_value(connection, "build_timestamp"),
                 package_id=_required_metadata_value(connection, "package_id"),
-                file_hashes=json.loads(
-                    _required_metadata_value(connection, "file_hashes")
-                ),
+                file_hashes=file_hashes,
                 integrity_status=cast(
                     Literal["unverified", "verified", "failed"],
                     integrity_status,
@@ -134,10 +144,12 @@ class LexicalStore:
         limit: int = 5,
         product_types: list[str] | None = None,
         industry_types: list[str] | None = None,
+        industry_groups: list[str] | None = None,
         customer_profiles: list[str] | None = None,
         geographic_footprints: list[str] | None = None,
         typology_family: list[str] | None = None,
         transaction_patterns: list[str] | None = None,
+        subjects: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
         regulator: str | None = None,
@@ -150,10 +162,12 @@ class LexicalStore:
         filters = LexicalRedFlagFilters(
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
             typology_family=typology_family,
             transaction_patterns=transaction_patterns,
+            subjects=subjects,
             category=category,
             risk_level=risk_level,
             regulator=regulator,
@@ -557,6 +571,10 @@ def _metadata_fit_signals(
 
 def _matches_all_filters(row: dict[str, Any], filters: LexicalRedFlagFilters) -> bool:
     decoded = _decode_row(dict(row))
+    if not _matches_subjects(decoded, filters.subjects):
+        return False
+    if not _matches_industry_groups(decoded, filters.industry_groups):
+        return False
     for field in LIST_FILTER_FIELDS:
         required = _clean_list(getattr(filters, field))
         if required and not set(required).intersection(decoded.get(field) or []):
@@ -570,6 +588,41 @@ def _matches_all_filters(row: dict[str, Any], filters: LexicalRedFlagFilters) ->
     if filters.issued_before and (decoded.get("issued_date") or "") > filters.issued_before:
         return False
     return True
+
+
+def _matches_subjects(row: dict[str, Any], subjects: list[str] | None) -> bool:
+    requested = _clean_list(subjects)
+    if not requested:
+        return True
+    return any(_matches_subject(row, subject) for subject in requested)
+
+
+def _matches_subject(row: dict[str, Any], subject: str) -> bool:
+    mapping = SUBJECT_MAPPINGS.get(subject)
+    if mapping is None:
+        return False
+    if row.get("category") in mapping["category"]:
+        return True
+    if set(mapping["typology_family"]).intersection(row.get("typology_family") or []):
+        return True
+    return bool(
+        set(mapping["transaction_patterns"]).intersection(
+            row.get("transaction_patterns") or []
+        )
+    )
+
+
+def _matches_industry_groups(
+    row: dict[str, Any], industry_groups: list[str] | None
+) -> bool:
+    requested = _clean_list(industry_groups)
+    if not requested:
+        return True
+    industry_types = set(row.get("industry_types") or [])
+    return any(
+        industry_types.intersection(INDUSTRY_GROUP_MAPPINGS.get(group, ()))
+        for group in requested
+    )
 
 
 def _clean_list(values: list[str] | None) -> list[str]:

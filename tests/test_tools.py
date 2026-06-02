@@ -169,6 +169,9 @@ def test_list_filters_returns_all_dimensions(tmp_vectors_dir):
     assert filters["category"] == ["fraud_nexus", "layering"]
     assert filters["risk_level"] == ["high", "medium"]
     assert filters["regulator_jurisdiction"] == ["US"]
+    assert "human_trafficking" in filters["subjects"]
+    assert "pass_through_account_activity" in filters["subjects"]
+    assert "trade_logistics" in filters["industry_groups"]
 
 
 def test_search_returns_clamped_sourced_results(tmp_vectors_dir):
@@ -306,6 +309,106 @@ def test_filter_red_flags_returns_direct_metadata_matches_without_embeddings(
     assert "vector" not in response["results"][0]
 
 
+def test_filter_red_flags_accepts_subjects_and_industry_groups(tmp_vectors_dir):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record(
+                "trafficking-category",
+                category="human_trafficking",
+                regulator="FINTRAC",
+            ),
+            make_record(
+                "trafficking-typology",
+                category="layering",
+                typology_family=["human_trafficking_proceeds"],
+                regulator="FINTRAC",
+            ),
+            make_record(
+                "trade-logistics",
+                category="fraud_nexus",
+                industry_types=["maritime_shipping"],
+            ),
+        ],
+    )
+    service = RedFlagService(table=table, embedding_model=FailingModel())
+
+    subject_response = service.filter_red_flags(
+        subjects=["human_trafficking"],
+        regulator="FINTRAC",
+        limit=10,
+    )
+    industry_response = service.filter_red_flags(
+        industry_groups=["trade_logistics"],
+        limit=10,
+    )
+
+    assert [result["id"] for result in subject_response["results"]] == [
+        "trafficking-category",
+        "trafficking-typology",
+    ]
+    assert [result["id"] for result in industry_response["results"]] == [
+        "trade-logistics"
+    ]
+
+
+def test_fintrac_human_trafficking_subject_regression_includes_typology_only_records(
+    tmp_vectors_dir,
+):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record(
+                "fintrac-category",
+                category="human_trafficking",
+                regulator="FINTRAC",
+            ),
+            make_record(
+                "fintrac-layering",
+                category="layering",
+                typology_family=["human_trafficking_proceeds"],
+                regulator="FINTRAC",
+            ),
+            make_record(
+                "fintrac-virtual-currency",
+                category="virtual_currency",
+                typology_family=["human_trafficking_proceeds"],
+                regulator="FINTRAC",
+            ),
+            make_record(
+                "fincen-trafficking",
+                category="human_trafficking",
+                typology_family=["human_trafficking_proceeds"],
+                regulator="FinCEN",
+            ),
+        ],
+    )
+    service = RedFlagService(table=table, embedding_model=FailingModel())
+
+    category_only = service.filter_red_flags(
+        category="human_trafficking",
+        regulator="FINTRAC",
+        limit=10,
+    )
+    subject = service.filter_red_flags(
+        subjects=["human_trafficking"],
+        regulator="FINTRAC",
+        limit=10,
+    )
+
+    assert [result["id"] for result in category_only["results"]] == [
+        "fintrac-category"
+    ]
+    assert [result["id"] for result in subject["results"]] == [
+        "fintrac-category",
+        "fintrac-layering",
+        "fintrac-virtual-currency",
+    ]
+    assert subject["total_matched"] > category_only["total_matched"]
+
+
 def test_filter_red_flags_requires_at_least_one_filter(tmp_vectors_dir):
     service = seeded_service(tmp_vectors_dir)
 
@@ -323,6 +426,77 @@ def test_filter_red_flags_returns_empty_without_semantic_fallback(tmp_vectors_di
 
     assert response["results"] == []
     assert response["match_type"] == "metadata_filter"
+
+
+def test_filter_red_flags_returns_completeness_metadata_and_cursor(tmp_vectors_dir):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record(
+                f"flag-{index:02d}",
+                product_types=["depository"],
+                risk_level="medium",
+            )
+            for index in range(25)
+        ],
+    )
+    service = RedFlagService(table=table, embedding_model=FailingModel())
+
+    first_page = service.filter_red_flags(product_types=["depository"], limit=50)
+    second_page = service.filter_red_flags(
+        product_types=["depository"],
+        limit=50,
+        cursor=first_page["next_cursor"],
+    )
+
+    assert first_page["requested_limit"] == 50
+    assert first_page["applied_limit"] == MAX_SEARCH_LIMIT
+    assert first_page["limit"] == MAX_SEARCH_LIMIT
+    assert first_page["returned"] == MAX_SEARCH_LIMIT
+    assert first_page["total_matched"] == 25
+    assert first_page["truncated"] is True
+    assert first_page["next_cursor"] is not None
+    assert [result["id"] for result in first_page["results"]] == [
+        f"flag-{index:02d}" for index in range(20)
+    ]
+    assert second_page["returned"] == 5
+    assert second_page["total_matched"] == 25
+    assert second_page["truncated"] is False
+    assert second_page["next_cursor"] is None
+    assert [result["id"] for result in second_page["results"]] == [
+        f"flag-{index:02d}" for index in range(20, 25)
+    ]
+
+
+def test_filter_red_flags_rejects_malformed_cursor(tmp_vectors_dir):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.filter_red_flags(
+        product_types=["depository"],
+        cursor="not-a-valid-cursor",
+    )
+
+    assert response["results"] == []
+    assert response["returned"] == 0
+    assert response["total_matched"] == 0
+    assert response["truncated"] is False
+    assert response["next_cursor"] is None
+    assert "Invalid cursor" in response["message"]
+
+
+def test_search_returns_limit_transparency(tmp_vectors_dir):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.search_red_flags(
+        query="oil smuggling",
+        limit=MAX_SEARCH_LIMIT + 10,
+    )
+
+    assert response["requested_limit"] == MAX_SEARCH_LIMIT + 10
+    assert response["applied_limit"] == MAX_SEARCH_LIMIT
+    assert response["returned"] == len(response["results"])
+    assert response["truncated"] is False
 
 
 def test_corpus_search_uses_lexical_store_without_embeddings(tmp_path):
@@ -403,6 +577,26 @@ def test_classify_red_flag_request_routes_metadata_only_context(tmp_vectors_dir)
         "industry_types": ["oil_and_gas"],
     }
     assert response["follow_up_question"] is None
+
+
+def test_classify_red_flag_request_routes_subject_context_to_filter(
+    tmp_vectors_dir,
+):
+    service = seeded_service(tmp_vectors_dir)
+    service.embedding_model = FailingModel()
+
+    response = service.classify_red_flag_request(
+        query="FINTRAC human trafficking red flags",
+        subjects=["human_trafficking"],
+    )
+
+    assert response["route"] == "metadata_filter"
+    assert response["recommended_tool"] == "filter_red_flags"
+    assert response["recommended_arguments"] == {
+        "limit": 5,
+        "subjects": ["human_trafficking"],
+    }
+    assert response["inferred_filters"] == {"subjects": ["human_trafficking"]}
 
 
 def test_classify_red_flag_request_requires_two_metadata_filters(
@@ -571,6 +765,8 @@ def test_fastmcp_tool_metadata_includes_consultation_guidance(tmp_vectors_dir):
     assert "filter_red_flags" in search_description
     assert "exact metadata" in search_description
     assert "industry_types" in by_name["search_red_flags"].inputSchema["properties"]
+    assert "subjects" in by_name["search_red_flags"].inputSchema["properties"]
+    assert "industry_groups" in by_name["search_red_flags"].inputSchema["properties"]
     classifier_description = by_name["classify_red_flag_request"].description
     assert "before searching" in classifier_description
     assert "needs_more_context" in classifier_description
@@ -582,9 +778,54 @@ def test_fastmcp_tool_metadata_includes_consultation_guidance(tmp_vectors_dir):
     ].inputSchema["properties"]
     assert "exact metadata" in by_name["filter_red_flags"].description
     assert "search_red_flags" in by_name["filter_red_flags"].description
+    assert "subjects" in by_name["filter_red_flags"].inputSchema["properties"]
+    assert "industry_groups" in by_name["filter_red_flags"].inputSchema["properties"]
     assert "source coverage" in by_name["list_sources"].description
     assert "citations" in by_name["list_sources"].description
     assert "get_red_flag" in by_name["get_source"].description
+
+
+def test_fastmcp_tool_schema_exposes_stable_filter_enums(tmp_vectors_dir):
+    app = create_server(vector_dir=tmp_vectors_dir, embedding_model=FakeModel())
+    tools = asyncio.run(app.list_tools())
+    by_name = {tool.name: tool for tool in tools}
+    properties = by_name["filter_red_flags"].inputSchema["properties"]
+
+    assert "human_trafficking" in _schema_enum_values(properties["category"])
+    assert {"high", "medium", "low"}.issubset(
+        _schema_enum_values(properties["risk_level"])
+    )
+    assert "FINTRAC" in _schema_enum_values(properties["regulator"])
+    assert "US" in _schema_enum_values(properties["regulator_jurisdiction"])
+    assert "human_trafficking_proceeds" in _schema_enum_values(
+        properties["typology_family"]
+    )
+    assert "pass_through_account_activity" in _schema_enum_values(
+        properties["transaction_patterns"]
+    )
+    assert "crypto" in _schema_enum_values(properties["product_types"])
+    assert "money_services_business" in _schema_enum_values(
+        properties["customer_profiles"]
+    )
+    assert "maritime_shipping" in _schema_enum_values(properties["industry_types"])
+    assert "human_trafficking" in _schema_enum_values(properties["subjects"])
+    assert "trade_logistics" in _schema_enum_values(properties["industry_groups"])
+
+
+def _schema_enum_values(schema: dict[str, object]) -> set[str]:
+    values: set[str] = set()
+    enum = schema.get("enum")
+    if isinstance(enum, list):
+        values.update(str(value) for value in enum)
+    items = schema.get("items")
+    if isinstance(items, dict):
+        values.update(_schema_enum_values(items))
+    any_of = schema.get("anyOf")
+    if isinstance(any_of, list):
+        for option in any_of:
+            if isinstance(option, dict):
+                values.update(_schema_enum_values(option))
+    return values
 
 
 def test_server_imports_via_mcp_dev_loader_without_sys_modules_registration():

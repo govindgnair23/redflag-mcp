@@ -38,6 +38,11 @@ def test_consultation_prompt_guides_followup_and_tool_routing(tmp_vectors_dir):
     assert "rich narrative" in text
     assert "list_filters" in text
     assert "filter_red_flags" in text
+    assert "subjects" in text
+    assert "industry_groups" in text
+    assert "human trafficking red flags" in text
+    assert "trade logistics red flags" in text
+    assert "next_cursor" in text
     assert 'regulator_jurisdiction="FR"' in text
     assert "search_red_flags" in text
     assert "list_sources" in text

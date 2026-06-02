@@ -31,6 +31,8 @@ def make_record(
     regulator: str | None = None,
     regulator_jurisdiction: str | None = None,
     source_url: str | None = "https://example.com/source.pdf",
+    typology_family: list[str] | None = None,
+    transaction_patterns: list[str] | None = None,
 ) -> RedFlagRecord:
     return RedFlagRecord(
         id=record_id,
@@ -45,6 +47,8 @@ def make_record(
         risk_level=risk_level,
         category=category,
         source_url=source_url,
+        typology_family=typology_family or [],
+        transaction_patterns=transaction_patterns or [],
         vector=vector,
     )
 
@@ -414,6 +418,113 @@ def test_filter_red_flags_uses_intersection_semantics_for_list_dimensions(
     )
 
     assert [result.id for result in results] == ["match"]
+
+
+def test_filter_red_flags_subjects_union_category_typology_and_patterns(
+    tmp_vectors_dir,
+):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record(
+                "category-only",
+                vector(1.0),
+                category="human_trafficking",
+                typology_family=[],
+            ),
+            make_record(
+                "typology-only",
+                vector(1.0),
+                category="layering",
+                typology_family=["human_trafficking_proceeds"],
+            ),
+            make_record(
+                "overlap",
+                vector(1.0),
+                category="human_trafficking",
+                typology_family=["human_trafficking_proceeds"],
+            ),
+            make_record(
+                "pattern-only",
+                vector(1.0),
+                category="fraud_nexus",
+                transaction_patterns=["pass_through_account_activity"],
+            ),
+            make_record(
+                "generic-pattern",
+                vector(1.0),
+                category="fraud_nexus",
+                transaction_patterns=["third_party_payments"],
+            ),
+        ],
+    )
+
+    human_trafficking = filter_red_flags(
+        table,
+        limit=10,
+        filters=RedFlagFilters(subjects=["human_trafficking"]),
+    )
+    pattern = filter_red_flags(
+        table,
+        limit=10,
+        filters=RedFlagFilters(subjects=["pass_through_account_activity"]),
+    )
+    category_only = filter_red_flags(
+        table,
+        limit=10,
+        filters=RedFlagFilters(category="human_trafficking"),
+    )
+
+    assert [result.id for result in human_trafficking] == [
+        "category-only",
+        "overlap",
+        "typology-only",
+    ]
+    assert [result.id for result in pattern] == ["pattern-only"]
+    assert [result.id for result in category_only] == ["category-only", "overlap"]
+
+
+def test_filter_red_flags_industry_groups_expand_to_exact_industries(
+    tmp_vectors_dir,
+):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record("importer", vector(1.0), industry_types=["import_export"]),
+            make_record("maritime", vector(1.0), industry_types=["maritime_shipping"]),
+            make_record("transport", vector(1.0), industry_types=["transportation"]),
+            make_record("retail", vector(1.0), industry_types=["retail"]),
+        ],
+    )
+
+    trade_logistics = filter_red_flags(
+        table,
+        limit=10,
+        filters=RedFlagFilters(industry_groups=["trade_logistics"]),
+    )
+    cross_border_trade = filter_red_flags(
+        table,
+        limit=10,
+        filters=RedFlagFilters(industry_groups=["cross_border_trade"]),
+    )
+    maritime_only = filter_red_flags(
+        table,
+        limit=10,
+        filters=RedFlagFilters(
+            industry_groups=["trade_logistics"],
+            industry_types=["maritime_shipping"],
+        ),
+    )
+
+    assert [result.id for result in trade_logistics] == [
+        "importer",
+        "maritime",
+        "transport",
+    ]
+    assert [result.id for result in cross_border_trade] == ["importer", "maritime"]
+    assert [result.id for result in maritime_only] == ["maritime"]
 
 
 def test_filter_red_flags_returns_deterministic_order(tmp_vectors_dir):

@@ -604,11 +604,11 @@ MCP_TRANSPORT=http MCP_HOST=0.0.0.0 MCP_PORT=8000 uv run python -m redflag_mcp
 REDFLAG_CORPUS_PACKAGE=dist/corpus/redflag-corpus-2026.04.29.zip uv run python -m redflag_mcp
 ```
 
-The server exposes hosted-client-compatible tools for request routing, semantic search, exact metadata filtering, source browsing, and filter discovery:
+The server exposes hosted-client-compatible tools for request routing, ranked relevance search, exact metadata filtering, source browsing, and filter discovery:
 
-- `classify_red_flag_request` for deciding whether a request needs more context, exact metadata filtering, filtered semantic search, or direct semantic search
+- `classify_red_flag_request` for deciding whether a request needs more context, exact metadata filtering, filtered ranked search, or direct ranked search
 - `search_red_flags` for natural-language relevance search with sourced, ranked results
-- `filter_red_flags` for exact metadata requests that should not use embedding search. Filters include `product_types`, `industry_types`, `customer_profiles`, `geographic_footprints`, `typology_family`, `transaction_patterns`, `category`, `risk_level`, `regulator`, `regulator_jurisdiction`, `issued_after`, `issued_before`, `regulatory_source`, `source_url`, and `source_id`.
+- `filter_red_flags` for exact metadata requests that should not use embedding search. Filters include `subjects`, `industry_groups`, `product_types`, `industry_types`, `customer_profiles`, `geographic_footprints`, `typology_family`, `transaction_patterns`, `category`, `risk_level`, `regulator`, `regulator_jurisdiction`, `issued_after`, `issued_before`, `regulatory_source`, `source_url`, and `source_id`. Exact filter responses include `total_matched`, `returned`, `truncated`, and `next_cursor` for complete pagination.
 - `get_red_flag` for the full text and citation metadata for one red flag
 - `list_filters` for available metadata filter values
 - `list_sources` and `get_source` for ingested source coverage and citation context
@@ -651,6 +651,8 @@ list_filters
 list_sources
 classify_red_flag_request(query="what red flags apply to my crypto product?")
 filter_red_flags(product_types=["depository"], category="fraud_nexus", risk_level="medium")
+filter_red_flags(subjects=["human_trafficking"], regulator="FINTRAC")
+filter_red_flags(industry_groups=["trade_logistics"])
 filter_red_flags(typology_family=["trade_based_money_laundering"], transaction_patterns=["trade_document_manipulation"])
 filter_red_flags(regulator="FinCEN", issued_after="2024", issued_before="2026")
 filter_red_flags(regulator_jurisdiction="FR")
@@ -661,7 +663,7 @@ search_red_flags(query="bulk cash moved by armored car service to Mexico")
 get_red_flag(red_flag_id="001_federal_child_nutrition_fraud-01")
 ```
 
-For a vague query such as "what should I look for in business accounts?", the calling agent should call `classify_red_flag_request` and ask a brief consultation question covering product/channel, industry, customer profile, geography, and transaction channel or volume when the route is `needs_more_context`. For exact metadata requests such as "show medium-risk fraud nexus red flags for depository products" or "red flags from regulators in France", it should call `filter_red_flags` instead of semantic search, translating country names to `regulator_jurisdiction` codes such as `FR`, `SG`, `AU`, `GB`, `US`, and `EU`. For requests with both usable filters and a rich narrative, it should call `search_red_flags` with filters so metadata controls eligibility and embeddings rank the matching records.
+For a vague query such as "what should I look for in business accounts?", the calling agent should call `classify_red_flag_request` and ask a brief consultation question covering product/channel, industry, customer profile, geography, and transaction channel or volume when the route is `needs_more_context`. For broad investigative topics such as "human trafficking red flags", use `subjects` instead of raw `category` so broader typology-family matches are included. For broad sector requests such as "trade logistics red flags", use `industry_groups`; keep raw `industry_types` for exact sector values such as `maritime_shipping`. For exact metadata requests such as "show medium-risk fraud nexus red flags for depository products" or "red flags from regulators in France", call `filter_red_flags` instead of ranked search, translating country names to `regulator_jurisdiction` codes such as `FR`, `SG`, `AU`, `GB`, `US`, and `EU`. If a `filter_red_flags` response has `truncated=true`, continue with `next_cursor` until `truncated=false` before presenting an exhaustive answer. For requests with both usable filters and a rich narrative, call `search_red_flags` with filters so metadata controls eligibility while the query ranks the matching records.
 
 ---
 

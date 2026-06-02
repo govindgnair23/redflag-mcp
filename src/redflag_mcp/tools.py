@@ -1,13 +1,30 @@
 from __future__ import annotations
 
+import base64
+import binascii
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Annotated, Any, TypeAlias
 
 from mcp.server.fastmcp import Context, FastMCP
+from pydantic import Field
 
-from redflag_mcp.config import VECTORS_DIR
+from redflag_mcp.config import (
+    CATEGORIES,
+    CUSTOMER_PROFILES,
+    INDUSTRY_GROUPS,
+    INDUSTRY_TYPES,
+    PRODUCT_TYPES,
+    REGULATOR_JURISDICTIONS,
+    REGULATORS,
+    RISK_LEVELS,
+    SUBJECTS,
+    TRANSACTION_PATTERNS,
+    TYPOLOGY_FAMILIES,
+    VECTORS_DIR,
+)
 from redflag_mcp.embeddings import EmbeddingModel, encode_query
 from redflag_mcp.lexicalstore import LexicalRedFlagFilters, LexicalStore
 from redflag_mcp.models import RedFlagResult
@@ -90,9 +107,62 @@ PRE_INGESTION_MESSAGE = (
     "to populate the local vector store before querying."
 )
 
+def _string_enum_schema(values: set[str] | frozenset[str]) -> dict[str, object]:
+    return {"enum": sorted(values)}
+
+
+def _list_enum_schema(values: set[str] | frozenset[str]) -> dict[str, object]:
+    return {"items": {"type": "string", "enum": sorted(values)}}
+
+
+CategoryValue: TypeAlias = Annotated[
+    str,
+    Field(json_schema_extra=_string_enum_schema(CATEGORIES)),
+]
+CustomerProfilesValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(CUSTOMER_PROFILES)),
+]
+IndustryGroupsValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(INDUSTRY_GROUPS)),
+]
+IndustryTypesValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(INDUSTRY_TYPES)),
+]
+ProductTypesValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(PRODUCT_TYPES)),
+]
+RegulatorJurisdictionValue: TypeAlias = Annotated[
+    str,
+    Field(json_schema_extra=_string_enum_schema(frozenset(REGULATOR_JURISDICTIONS.values()))),
+]
+RegulatorValue: TypeAlias = Annotated[
+    str,
+    Field(json_schema_extra=_string_enum_schema(REGULATORS)),
+]
+RiskLevelValue: TypeAlias = Annotated[
+    str,
+    Field(json_schema_extra=_string_enum_schema(RISK_LEVELS)),
+]
+SubjectsValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(SUBJECTS)),
+]
+TransactionPatternsValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(TRANSACTION_PATTERNS)),
+]
+TypologyFamiliesValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(TYPOLOGY_FAMILIES)),
+]
+
 SEARCH_DESCRIPTION = """Search AML red flags using natural-language context and optional filters.
 
-Agent guidance: use classify_red_flag_request before searching for ambiguous "what red flags apply" requests. If the user's request is vague, briefly ask for product/channel, industry, customer profile, geography, and transaction channel or volume before searching. If the request already names those details or has a specific scenario, search directly. Call list_filters when you need valid filter values. Use filter_red_flags for exact metadata requests; use search_red_flags for semantic relevance questions. For country or jurisdiction requests, translate names to regulator_jurisdiction codes before filtering, such as France -> FR, Singapore -> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> US, and European Union/EU regulators -> EU."""
+Agent guidance: use classify_red_flag_request before searching for ambiguous "what red flags apply" requests. If the user's request is vague, briefly ask for product/channel, industry, customer profile, geography, and transaction channel or volume before searching. If the request already names those details or has a specific scenario, search directly. Call list_filters when you need valid filter values. Use filter_red_flags for exact metadata requests and exhaustive enumeration; use search_red_flags for ranked relevance questions. For broad investigative topics such as human trafficking red flags, use subjects as an eligibility filter. For broad sector requests such as trade logistics red flags, use industry_groups as an eligibility filter. For country or jurisdiction requests, translate names to regulator_jurisdiction codes before filtering, such as France -> FR, Singapore -> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> US, and European Union/EU regulators -> EU."""
 
 
 @dataclass
@@ -127,8 +197,10 @@ class RedFlagService:
         limit: int = 5,
         product_types: list[str] | None = None,
         industry_types: list[str] | None = None,
+        industry_groups: list[str] | None = None,
         customer_profiles: list[str] | None = None,
         geographic_footprints: list[str] | None = None,
+        subjects: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
         regulator_jurisdiction: str | None = None,
@@ -137,8 +209,10 @@ class RedFlagService:
             query=query,
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
+            subjects=subjects,
         )
         if validation_error is not None:
             return {"message": validation_error, "results": []}
@@ -153,8 +227,10 @@ class RedFlagService:
                 limit=clamped_limit,
                 product_types=product_types,
                 industry_types=industry_types,
+                industry_groups=industry_groups,
                 customer_profiles=customer_profiles,
                 geographic_footprints=geographic_footprints,
+                subjects=subjects,
                 category=category,
                 risk_level=risk_level,
                 regulator_jurisdiction=regulator_jurisdiction,
@@ -163,6 +239,10 @@ class RedFlagService:
                 {
                     "query": query,
                     "limit": clamped_limit,
+                    "requested_limit": limit,
+                    "applied_limit": clamped_limit,
+                    "returned": len(results),
+                    "truncated": len(results) >= clamped_limit,
                     "results": [
                         result.model_dump(exclude_none=True) for result in results
                     ],
@@ -176,8 +256,10 @@ class RedFlagService:
             limit=clamped_limit,
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
+            subjects=subjects,
             category=category,
             risk_level=risk_level,
             regulator_jurisdiction=regulator_jurisdiction,
@@ -196,6 +278,10 @@ class RedFlagService:
             {
                 "query": query,
                 "limit": clamped_limit,
+                "requested_limit": limit,
+                "applied_limit": clamped_limit,
+                "returned": len(results),
+                "truncated": len(results) >= clamped_limit,
                 "results": [result.model_dump(exclude_none=True) for result in results],
             }
         )
@@ -204,12 +290,15 @@ class RedFlagService:
         self,
         *,
         limit: int = 5,
+        cursor: str | None = None,
         product_types: list[str] | None = None,
         industry_types: list[str] | None = None,
+        industry_groups: list[str] | None = None,
         customer_profiles: list[str] | None = None,
         geographic_footprints: list[str] | None = None,
         typology_family: list[str] | None = None,
         transaction_patterns: list[str] | None = None,
+        subjects: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
         regulator: str | None = None,
@@ -223,11 +312,23 @@ class RedFlagService:
         validation_error = _validate_filter_cardinality(
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
             typology_family=typology_family,
             transaction_patterns=transaction_patterns,
+            subjects=subjects,
         )
+        if validation_error is None:
+            validation_error = _validate_known_filter_values(
+                product_types=product_types,
+                industry_types=industry_types,
+                industry_groups=industry_groups,
+                customer_profiles=customer_profiles,
+                typology_family=typology_family,
+                transaction_patterns=transaction_patterns,
+                subjects=subjects,
+            )
         if validation_error is not None:
             return {
                 "message": validation_error,
@@ -247,10 +348,12 @@ class RedFlagService:
             LexicalRedFlagFilters(
                 product_types=product_types,
                 industry_types=industry_types,
+                industry_groups=industry_groups,
                 customer_profiles=customer_profiles,
                 geographic_footprints=geographic_footprints,
                 typology_family=typology_family,
                 transaction_patterns=transaction_patterns,
+                subjects=subjects,
                 category=category,
                 risk_level=risk_level,
                 regulator=regulator,
@@ -265,10 +368,12 @@ class RedFlagService:
             else RedFlagFilters(
                 product_types=product_types,
                 industry_types=industry_types,
+                industry_groups=industry_groups,
                 customer_profiles=customer_profiles,
                 geographic_footprints=geographic_footprints,
                 typology_family=typology_family,
                 transaction_patterns=transaction_patterns,
+                subjects=subjects,
                 category=category,
                 risk_level=risk_level,
                 regulator=regulator,
@@ -293,21 +398,53 @@ class RedFlagService:
             )
 
         clamped_limit = min(max(limit, 1), MAX_SEARCH_LIMIT)
+        cursor_offset, cursor_error = _decode_cursor(cursor)
+        if cursor_error is not None:
+            return self._with_corpus(
+                {
+                    "message": cursor_error,
+                    "match_type": "metadata_filter",
+                    "limit": clamped_limit,
+                    "requested_limit": limit,
+                    "applied_limit": clamped_limit,
+                    "returned": 0,
+                    "total_matched": 0,
+                    "truncated": False,
+                    "next_cursor": None,
+                    "results": [],
+                }
+            )
+
+        total_rows = self.table.count_rows()
         if isinstance(self.table, LexicalStore):
             assert isinstance(filters, LexicalRedFlagFilters)
-            results = self.table.filter_red_flags(limit=clamped_limit, filters=filters)
+            all_results = self.table.filter_red_flags(limit=total_rows, filters=filters)
         else:
             assert isinstance(filters, RedFlagFilters)
-            results = filter_records(
+            all_results = filter_records(
                 self.table,
-                limit=clamped_limit,
+                limit=total_rows,
                 filters=filters,
             )
+        total_matched = len(all_results)
+        page_results = all_results[cursor_offset : cursor_offset + clamped_limit]
+        next_offset = cursor_offset + len(page_results)
+        next_cursor = (
+            _encode_cursor(next_offset) if next_offset < total_matched else None
+        )
         return self._with_corpus(
             {
                 "match_type": "metadata_filter",
                 "limit": clamped_limit,
-                "results": [result.model_dump(exclude_none=True) for result in results],
+                "requested_limit": limit,
+                "applied_limit": clamped_limit,
+                "returned": len(page_results),
+                "total_matched": total_matched,
+                "truncated": next_cursor is not None,
+                "next_cursor": next_cursor,
+                "results": [
+                    result.model_dump(exclude_none=True) for result in page_results
+                ],
             }
         )
 
@@ -334,6 +471,8 @@ class RedFlagService:
             if self._is_corpus_mode()
             else list_distinct_values(self.table)
         )
+        filters["subjects"] = sorted(SUBJECTS)
+        filters["industry_groups"] = sorted(INDUSTRY_GROUPS)
         if self.table.count_rows() == 0:
             return self._with_corpus(
                 {"message": PRE_INGESTION_MESSAGE, "filters": filters}
@@ -347,8 +486,10 @@ class RedFlagService:
         limit: int = 5,
         product_types: list[str] | None = None,
         industry_types: list[str] | None = None,
+        industry_groups: list[str] | None = None,
         customer_profiles: list[str] | None = None,
         geographic_footprints: list[str] | None = None,
+        subjects: list[str] | None = None,
         category: str | None = None,
         risk_level: str | None = None,
     ) -> dict[str, Any]:
@@ -356,8 +497,10 @@ class RedFlagService:
         filters = _clean_filter_arguments(
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
+            subjects=subjects,
             category=category,
             risk_level=risk_level,
         )
@@ -484,12 +627,14 @@ def register_tools(mcp: FastMCP) -> None:
     def classify_red_flag_request(
         query: str,
         limit: int = 5,
-        product_types: list[str] | None = None,
-        industry_types: list[str] | None = None,
-        customer_profiles: list[str] | None = None,
+        product_types: ProductTypesValue | None = None,
+        industry_types: IndustryTypesValue | None = None,
+        industry_groups: IndustryGroupsValue | None = None,
+        customer_profiles: CustomerProfilesValue | None = None,
         geographic_footprints: list[str] | None = None,
-        category: str | None = None,
-        risk_level: str | None = None,
+        subjects: SubjectsValue | None = None,
+        category: CategoryValue | None = None,
+        risk_level: RiskLevelValue | None = None,
         ctx: Context | None = None,
     ) -> dict[str, Any]:
         """Return routing guidance for an AML red flag request."""
@@ -498,8 +643,10 @@ def register_tools(mcp: FastMCP) -> None:
             limit=limit,
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
+            subjects=subjects,
             category=category,
             risk_level=risk_level,
         )
@@ -508,13 +655,15 @@ def register_tools(mcp: FastMCP) -> None:
     def search_red_flags(
         query: str,
         limit: int = 5,
-        product_types: list[str] | None = None,
-        industry_types: list[str] | None = None,
-        customer_profiles: list[str] | None = None,
+        product_types: ProductTypesValue | None = None,
+        industry_types: IndustryTypesValue | None = None,
+        industry_groups: IndustryGroupsValue | None = None,
+        customer_profiles: CustomerProfilesValue | None = None,
         geographic_footprints: list[str] | None = None,
-        category: str | None = None,
-        risk_level: str | None = None,
-        regulator_jurisdiction: str | None = None,
+        subjects: SubjectsValue | None = None,
+        category: CategoryValue | None = None,
+        risk_level: RiskLevelValue | None = None,
+        regulator_jurisdiction: RegulatorJurisdictionValue | None = None,
         ctx: Context | None = None,
     ) -> dict[str, Any]:
         """Search for relevant AML red flags and return sourced results."""
@@ -523,8 +672,10 @@ def register_tools(mcp: FastMCP) -> None:
             limit=limit,
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
+            subjects=subjects,
             category=category,
             risk_level=risk_level,
             regulator_jurisdiction=regulator_jurisdiction,
@@ -533,8 +684,12 @@ def register_tools(mcp: FastMCP) -> None:
     @mcp.tool(
         description=(
             "Return AML red flags for exact metadata criteria without semantic "
-            "embedding search. Use this for exact metadata requests such as high-risk "
-            "depository structuring red flags or red flags from regulators in France. "
+            "embedding search. Use this for exact metadata requests, broad "
+            "investigative subjects, and broad industry groups, such as high-risk "
+            "depository structuring red flags, FINTRAC human trafficking red flags "
+            "with subjects, trade logistics red flags with industry_groups, or red "
+            "flags from regulators in France. Paginate with next_cursor whenever "
+            "truncated is true. "
             "For country or jurisdiction requests, translate names to ISO-style "
             "regulator_jurisdiction codes before filtering: France -> FR, Singapore "
             "-> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> "
@@ -546,16 +701,19 @@ def register_tools(mcp: FastMCP) -> None:
     )
     def filter_red_flags(
         limit: int = 5,
-        product_types: list[str] | None = None,
-        industry_types: list[str] | None = None,
-        customer_profiles: list[str] | None = None,
+        cursor: str | None = None,
+        product_types: ProductTypesValue | None = None,
+        industry_types: IndustryTypesValue | None = None,
+        industry_groups: IndustryGroupsValue | None = None,
+        customer_profiles: CustomerProfilesValue | None = None,
         geographic_footprints: list[str] | None = None,
-        typology_family: list[str] | None = None,
-        transaction_patterns: list[str] | None = None,
-        category: str | None = None,
-        risk_level: str | None = None,
-        regulator: str | None = None,
-        regulator_jurisdiction: str | None = None,
+        typology_family: TypologyFamiliesValue | None = None,
+        transaction_patterns: TransactionPatternsValue | None = None,
+        subjects: SubjectsValue | None = None,
+        category: CategoryValue | None = None,
+        risk_level: RiskLevelValue | None = None,
+        regulator: RegulatorValue | None = None,
+        regulator_jurisdiction: RegulatorJurisdictionValue | None = None,
         issued_after: str | None = None,
         issued_before: str | None = None,
         regulatory_source: str | None = None,
@@ -566,12 +724,15 @@ def register_tools(mcp: FastMCP) -> None:
         """Filter red flags by exact stored metadata."""
         return _service_from_context(ctx).filter_red_flags(
             limit=limit,
+            cursor=cursor,
             product_types=product_types,
             industry_types=industry_types,
+            industry_groups=industry_groups,
             customer_profiles=customer_profiles,
             geographic_footprints=geographic_footprints,
             typology_family=typology_family,
             transaction_patterns=transaction_patterns,
+            subjects=subjects,
             category=category,
             risk_level=risk_level,
             regulator=regulator,
@@ -703,17 +864,30 @@ def _validate_public_search_inputs(
     query: str,
     product_types: list[str] | None = None,
     industry_types: list[str] | None = None,
+    industry_groups: list[str] | None = None,
     customer_profiles: list[str] | None = None,
     geographic_footprints: list[str] | None = None,
+    subjects: list[str] | None = None,
 ) -> str | None:
     if len(query) > MAX_QUERY_LENGTH:
         return f"Search query is too long; maximum length is {MAX_QUERY_LENGTH} characters."
 
-    return _validate_filter_cardinality(
+    cardinality_error = _validate_filter_cardinality(
         product_types=product_types,
         industry_types=industry_types,
+        industry_groups=industry_groups,
         customer_profiles=customer_profiles,
         geographic_footprints=geographic_footprints,
+        subjects=subjects,
+    )
+    if cardinality_error is not None:
+        return cardinality_error
+    return _validate_known_filter_values(
+        product_types=product_types,
+        industry_types=industry_types,
+        industry_groups=industry_groups,
+        customer_profiles=customer_profiles,
+        subjects=subjects,
     )
 
 
@@ -727,7 +901,49 @@ def _validate_filter_cardinality(**filters: list[str] | None) -> str | None:
     return None
 
 
+def _validate_known_filter_values(**filters: list[str] | None) -> str | None:
+    vocabularies = {
+        "product_types": PRODUCT_TYPES,
+        "industry_types": INDUSTRY_TYPES,
+        "industry_groups": INDUSTRY_GROUPS,
+        "customer_profiles": CUSTOMER_PROFILES,
+        "typology_family": TYPOLOGY_FAMILIES,
+        "transaction_patterns": TRANSACTION_PATTERNS,
+        "subjects": SUBJECTS,
+    }
+    for field_name, values in filters.items():
+        valid_values = vocabularies[field_name]
+        unknown = sorted(set(values or []) - set(valid_values))
+        if unknown:
+            return (
+                f"Unknown {field_name} value(s): {', '.join(unknown)}. "
+                "Call list_filters for valid values."
+            )
+    return None
+
+
+def _encode_cursor(offset: int) -> str:
+    payload = json.dumps({"offset": offset}, separators=(",", ":")).encode("utf-8")
+    return base64.urlsafe_b64encode(payload).decode("ascii")
+
+
+def _decode_cursor(cursor: str | None) -> tuple[int, str | None]:
+    if cursor is None:
+        return 0, None
+    try:
+        decoded = base64.urlsafe_b64decode(cursor.encode("ascii"))
+        payload = json.loads(decoded.decode("utf-8"))
+    except (binascii.Error, json.JSONDecodeError, UnicodeDecodeError, ValueError):
+        return 0, "Invalid cursor. Use the next_cursor value from the previous page."
+    offset = payload.get("offset") if isinstance(payload, dict) else None
+    if not isinstance(offset, int) or offset < 0:
+        return 0, "Invalid cursor. Use the next_cursor value from the previous page."
+    return offset, None
+
+
 def _has_enough_context_filters(filters: dict[str, Any]) -> bool:
+    if filters.get("subjects") or filters.get("industry_groups"):
+        return True
     return sum(1 for field_name in PRIMARY_FILTER_FIELDS if filters.get(field_name)) >= 2
 
 

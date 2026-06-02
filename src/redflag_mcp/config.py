@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import TypeAlias
 from urllib.parse import urlparse
 
 # Project root: two levels up from this file (src/redflag_mcp/config.py)
@@ -180,6 +181,185 @@ TRANSACTION_PATTERNS = {
     "unusual_international_wires",
     "wire_transfer_chains",
 }
+
+SubjectMapping: TypeAlias = dict[str, tuple[str, ...]]
+
+SUBJECT_MAPPINGS: dict[str, SubjectMapping] = {
+    "corruption": {
+        "category": ("corruption",),
+        "typology_family": ("corruption_and_bribery",),
+        "transaction_patterns": (),
+    },
+    "cyber_enabled": {
+        "category": ("cyber_enabled",),
+        "typology_family": ("cybercrime_proceeds",),
+        "transaction_patterns": (),
+    },
+    "fraud_nexus": {
+        "category": ("fraud_nexus",),
+        "typology_family": (
+            "fraud_proceeds",
+            "scam_proceeds",
+            "elder_financial_exploitation",
+        ),
+        "transaction_patterns": (),
+    },
+    "human_smuggling": {
+        "category": ("human_smuggling",),
+        "typology_family": ("human_smuggling_proceeds",),
+        "transaction_patterns": (),
+    },
+    "human_trafficking": {
+        "category": ("human_trafficking",),
+        "typology_family": ("human_trafficking_proceeds",),
+        "transaction_patterns": (),
+    },
+    "narcotics_trafficking": {
+        "category": ("narcotics_trafficking",),
+        "typology_family": ("narcotics_proceeds",),
+        "transaction_patterns": (),
+    },
+    "proliferation_financing": {
+        "category": ("proliferation_financing",),
+        "typology_family": ("proliferation_financing",),
+        "transaction_patterns": (),
+    },
+    "sanctions_evasion": {
+        "category": ("sanctions_evasion",),
+        "typology_family": ("sanctions_evasion",),
+        "transaction_patterns": (),
+    },
+    "tax_evasion": {
+        "category": ("tax_evasion",),
+        "typology_family": ("tax_evasion",),
+        "transaction_patterns": (),
+    },
+    "terrorist_financing": {
+        "category": ("terrorist_financing",),
+        "typology_family": ("terrorist_financing",),
+        "transaction_patterns": (),
+    },
+    "trade_based_money_laundering": {
+        "category": ("trade_based_money_laundering",),
+        "typology_family": ("trade_based_money_laundering",),
+        "transaction_patterns": ("invoice_mismatch", "trade_document_manipulation"),
+    },
+    "virtual_currency": {
+        "category": ("virtual_currency",),
+        "typology_family": ("crypto_asset_money_laundering",),
+        "transaction_patterns": ("cryptocurrency_mixing",),
+    },
+    "shell_company": {
+        "category": ("shell_company",),
+        "typology_family": (),
+        "transaction_patterns": ("shell_company_usage",),
+    },
+    "structuring": {
+        "category": ("structuring",),
+        "typology_family": (),
+        "transaction_patterns": ("structuring", "cash_deposits_below_threshold"),
+    },
+    "layering": {
+        "category": ("layering",),
+        "typology_family": (),
+        "transaction_patterns": (
+            "funnel_account_activity",
+            "pass_through_account_activity",
+            "rapid_fund_movement",
+            "round_tripping",
+            "wire_transfer_chains",
+            "nested_account_activity",
+        ),
+    },
+    "real_estate_money_laundering": {
+        "category": (),
+        "typology_family": ("real_estate_money_laundering",),
+        "transaction_patterns": ("real_estate_transactions",),
+    },
+    "ransomware": {
+        "category": ("ransomware",),
+        "typology_family": (),
+        "transaction_patterns": (),
+    },
+    "organized_crime": {
+        "category": (),
+        "typology_family": ("organized_crime_proceeds",),
+        "transaction_patterns": (),
+    },
+    "environmental_crime": {
+        "category": (),
+        "typology_family": ("environmental_crime_proceeds",),
+        "transaction_patterns": (),
+    },
+}
+
+for _pattern in TRANSACTION_PATTERNS:
+    SUBJECT_MAPPINGS.setdefault(
+        _pattern,
+        {
+            "category": (),
+            "typology_family": (),
+            "transaction_patterns": (_pattern,),
+        },
+    )
+
+SUBJECTS = frozenset(SUBJECT_MAPPINGS)
+
+INDUSTRY_GROUP_MAPPINGS: dict[str, tuple[str, ...]] = {
+    "trade_logistics": (
+        "import_export",
+        "logistics",
+        "maritime_shipping",
+        "transportation",
+    ),
+    "cross_border_trade": ("import_export", "logistics", "maritime_shipping"),
+    "dnfbp": (
+        "art_antiquities",
+        "casinos",
+        "legal_accounting",
+        "precious_metals_jewelry",
+        "professional_services",
+        "real_estate",
+    ),
+    "professional_gatekeepers": (
+        "legal_accounting",
+        "professional_services",
+        "real_estate",
+    ),
+    "high_value_assets": (
+        "art_antiquities",
+        "auto_sales",
+        "luxury_goods",
+        "precious_metals_jewelry",
+        "real_estate",
+    ),
+    "cash_intensive_businesses": (
+        "adult_entertainment",
+        "auto_sales",
+        "casinos",
+        "food_service",
+        "retail",
+    ),
+    "nonbank_financial_services": ("crypto", "money_services_business", "casinos"),
+    "government_programs": (
+        "government_benefits",
+        "healthcare",
+        "charity_or_nonprofit",
+        "food_service",
+        "payroll",
+    ),
+    "sanctions_trade_exposure": (
+        "arms_dual_use_goods",
+        "import_export",
+        "logistics",
+        "manufacturing",
+        "maritime_shipping",
+        "oil_and_gas",
+    ),
+    "online_commerce": ("online_marketplace", "crypto", "retail"),
+}
+
+INDUSTRY_GROUPS = frozenset(INDUSTRY_GROUP_MAPPINGS)
 
 REGULATORS = {
     # US AML/banking regulators

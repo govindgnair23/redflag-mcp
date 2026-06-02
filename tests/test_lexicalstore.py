@@ -64,6 +64,19 @@ def corpus_metadata() -> CorpusMetadata:
     )
 
 
+def corpus_metadata_with_placeholder_hash() -> CorpusMetadata:
+    return CorpusMetadata(
+        version="2026.04.29",
+        schema_version=1,
+        build_timestamp="2026-04-29T12:00:00Z",
+        package_id="redflag-corpus-2026.04.29",
+        file_hashes={"redflags.sqlite": "0" * 64},
+        integrity_status="verified",
+        record_count=0,
+        source_count=0,
+    )
+
+
 def test_search_expands_tbml_alias_without_embeddings(tmp_path):
     db_path = tmp_path / "redflags.sqlite"
     create_lexical_store(
@@ -235,6 +248,104 @@ def test_filter_red_flags_supports_enriched_metadata(tmp_path):
     assert [result.id for result in results] == ["match"]
 
 
+def test_filter_red_flags_subjects_union_category_typology_and_patterns(tmp_path):
+    db_path = tmp_path / "redflags.sqlite"
+    create_lexical_store(
+        db_path,
+        [
+            make_record(
+                "category-only",
+                category="human_trafficking",
+                typology_family=[],
+            ),
+            make_record(
+                "typology-only",
+                category="layering",
+                typology_family=["human_trafficking_proceeds"],
+            ),
+            make_record(
+                "overlap",
+                category="human_trafficking",
+                typology_family=["human_trafficking_proceeds"],
+            ),
+            make_record(
+                "pattern-only",
+                category="fraud_nexus",
+                transaction_patterns=["pass_through_account_activity"],
+            ),
+            make_record(
+                "generic-pattern",
+                category="fraud_nexus",
+                transaction_patterns=["third_party_payments"],
+            ),
+        ],
+        corpus=corpus_metadata(),
+        aliases={},
+    )
+    store = LexicalStore.open(db_path)
+
+    human_trafficking = store.filter_red_flags(
+        limit=10,
+        filters=LexicalRedFlagFilters(subjects=["human_trafficking"]),
+    )
+    pattern = store.filter_red_flags(
+        limit=10,
+        filters=LexicalRedFlagFilters(subjects=["pass_through_account_activity"]),
+    )
+    category_only = store.filter_red_flags(
+        limit=10,
+        filters=LexicalRedFlagFilters(category="human_trafficking"),
+    )
+
+    assert [result.id for result in human_trafficking] == [
+        "category-only",
+        "overlap",
+        "typology-only",
+    ]
+    assert [result.id for result in pattern] == ["pattern-only"]
+    assert [result.id for result in category_only] == ["category-only", "overlap"]
+
+
+def test_filter_red_flags_industry_groups_expand_to_exact_industries(tmp_path):
+    db_path = tmp_path / "redflags.sqlite"
+    create_lexical_store(
+        db_path,
+        [
+            make_record("importer", industry_types=["import_export"]),
+            make_record("maritime", industry_types=["maritime_shipping"]),
+            make_record("transport", industry_types=["transportation"]),
+            make_record("retail", industry_types=["retail"]),
+        ],
+        corpus=corpus_metadata(),
+        aliases={},
+    )
+    store = LexicalStore.open(db_path)
+
+    trade_logistics = store.filter_red_flags(
+        limit=10,
+        filters=LexicalRedFlagFilters(industry_groups=["trade_logistics"]),
+    )
+    cross_border_trade = store.filter_red_flags(
+        limit=10,
+        filters=LexicalRedFlagFilters(industry_groups=["cross_border_trade"]),
+    )
+    maritime_only = store.filter_red_flags(
+        limit=10,
+        filters=LexicalRedFlagFilters(
+            industry_groups=["trade_logistics"],
+            industry_types=["maritime_shipping"],
+        ),
+    )
+
+    assert [result.id for result in trade_logistics] == [
+        "importer",
+        "maritime",
+        "transport",
+    ]
+    assert [result.id for result in cross_border_trade] == ["importer", "maritime"]
+    assert [result.id for result in maritime_only] == ["maritime"]
+
+
 def test_list_distinct_values_includes_enriched_filters(tmp_path):
     db_path = tmp_path / "redflags.sqlite"
     create_lexical_store(
@@ -301,6 +412,21 @@ def test_no_lexical_matches_returns_empty_results_with_corpus_metadata(tmp_path)
 
     assert store.search("nonexistent phrase") == []
     assert store.corpus.version == "2026.04.29"
+
+
+def test_open_does_not_surface_verified_placeholder_sqlite_hash(tmp_path):
+    db_path = tmp_path / "redflags.sqlite"
+    create_lexical_store(
+        db_path,
+        [make_record("one")],
+        corpus=corpus_metadata_with_placeholder_hash(),
+        aliases={},
+    )
+
+    corpus = LexicalStore.open(db_path).corpus
+
+    assert corpus.file_hashes["redflags.sqlite"] == "0" * 64
+    assert corpus.integrity_status == "unverified"
 
 
 def test_opening_wrong_schema_version_fails(tmp_path):

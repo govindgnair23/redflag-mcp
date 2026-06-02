@@ -9,7 +9,12 @@ from typing import Any
 import lancedb  # type: ignore[import-untyped]
 import pyarrow as pa  # type: ignore[import-untyped]
 
-from redflag_mcp.config import EMBEDDING_DIM, VECTORS_DIR
+from redflag_mcp.config import (
+    EMBEDDING_DIM,
+    INDUSTRY_GROUP_MAPPINGS,
+    SUBJECT_MAPPINGS,
+    VECTORS_DIR,
+)
 from redflag_mcp.models import (
     RedFlagRecord,
     RedFlagResult,
@@ -41,6 +46,8 @@ class RedFlagFilters:
     geographic_footprints: list[str] | None = None
     typology_family: list[str] | None = None
     transaction_patterns: list[str] | None = None
+    subjects: list[str] | None = None
+    industry_groups: list[str] | None = None
     category: str | None = None
     risk_level: str | None = None
     regulator: str | None = None
@@ -54,6 +61,9 @@ class RedFlagFilters:
     def has_any(self) -> bool:
         return any(
             _clean_list(getattr(self, field_name)) for field_name in LIST_FILTER_FIELDS
+        ) or any(
+            _clean_list(getattr(self, field_name))
+            for field_name in ("subjects", "industry_groups")
         ) or any(
             getattr(self, field_name)
             for field_name in (
@@ -139,8 +149,10 @@ def search(
     limit: int = 5,
     product_types: list[str] | None = None,
     industry_types: list[str] | None = None,
+    industry_groups: list[str] | None = None,
     customer_profiles: list[str] | None = None,
     geographic_footprints: list[str] | None = None,
+    subjects: list[str] | None = None,
     category: str | None = None,
     risk_level: str | None = None,
     regulator: str | None = None,
@@ -154,8 +166,10 @@ def search(
     filters = RedFlagFilters(
         product_types=product_types,
         industry_types=industry_types,
+        industry_groups=industry_groups,
         customer_profiles=customer_profiles,
         geographic_footprints=geographic_footprints,
+        subjects=subjects,
         category=category,
         risk_level=risk_level,
         regulator=regulator,
@@ -372,6 +386,10 @@ def _clean_list(values: list[str] | None) -> list[str]:
 
 
 def _matches_filters(row: dict[str, Any], filters: RedFlagFilters) -> bool:
+    if not _matches_subjects(row, filters.subjects):
+        return False
+    if not _matches_industry_groups(row, filters.industry_groups):
+        return False
     for field in LIST_FILTER_FIELDS:
         required = _clean_list(getattr(filters, field))
         if required and not set(required).intersection(row.get(field) or []):
@@ -383,8 +401,46 @@ def _matches_filters(row: dict[str, Any], filters: RedFlagFilters) -> bool:
     return True
 
 
+def _matches_subjects(row: dict[str, Any], subjects: list[str] | None) -> bool:
+    requested = _clean_list(subjects)
+    if not requested:
+        return True
+    return any(_matches_subject(row, subject) for subject in requested)
+
+
+def _matches_subject(row: dict[str, Any], subject: str) -> bool:
+    mapping = SUBJECT_MAPPINGS.get(subject)
+    if mapping is None:
+        return False
+    if row.get("category") in mapping["category"]:
+        return True
+    if set(mapping["typology_family"]).intersection(row.get("typology_family") or []):
+        return True
+    return bool(
+        set(mapping["transaction_patterns"]).intersection(
+            row.get("transaction_patterns") or []
+        )
+    )
+
+
+def _matches_industry_groups(
+    row: dict[str, Any], industry_groups: list[str] | None
+) -> bool:
+    requested = _clean_list(industry_groups)
+    if not requested:
+        return True
+    industry_types = set(row.get("industry_types") or [])
+    return any(
+        industry_types.intersection(INDUSTRY_GROUP_MAPPINGS.get(group, ()))
+        for group in requested
+    )
+
+
 def _has_list_filters(filters: RedFlagFilters) -> bool:
-    return any(_clean_list(getattr(filters, field)) for field in LIST_FILTER_FIELDS)
+    return any(
+        _clean_list(getattr(filters, field))
+        for field in (*LIST_FILTER_FIELDS, "subjects", "industry_groups")
+    )
 
 
 def _metadata_result_sort_key(row: dict[str, Any]) -> tuple[int, str, str]:
