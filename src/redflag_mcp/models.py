@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
@@ -74,6 +75,14 @@ class RedFlagResult(BaseModel):
     score: float | None = None
     fit_explanation: str | None = None
     fit_signals: list[str] = Field(default_factory=list)
+
+
+@dataclass(frozen=True)
+class RedFlagResultPage:
+    """Internal page of exact metadata filter results."""
+
+    results: list[RedFlagResult]
+    total_matched: int
 
 
 class CorpusMetadata(BaseModel):

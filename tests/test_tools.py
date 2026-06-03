@@ -485,6 +485,43 @@ def test_filter_red_flags_rejects_malformed_cursor(tmp_vectors_dir):
     assert "Invalid cursor" in response["message"]
 
 
+def test_filter_red_flags_rejects_cursor_for_different_filters(tmp_vectors_dir):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record(
+                f"depository-{index:02d}",
+                product_types=["depository"],
+                risk_level="medium",
+            )
+            for index in range(25)
+        ]
+        + [
+            make_record(
+                f"trade-{index:02d}",
+                product_types=["trade_finance"],
+                risk_level="medium",
+            )
+            for index in range(25)
+        ],
+    )
+    service = RedFlagService(table=table, embedding_model=FailingModel())
+    first_page = service.filter_red_flags(product_types=["depository"], limit=10)
+
+    response = service.filter_red_flags(
+        product_types=["trade_finance"],
+        cursor=first_page["next_cursor"],
+    )
+
+    assert response["results"] == []
+    assert response["returned"] == 0
+    assert response["total_matched"] == 0
+    assert response["truncated"] is False
+    assert response["next_cursor"] is None
+    assert "does not match" in response["message"]
+
+
 def test_search_returns_limit_transparency(tmp_vectors_dir):
     service = seeded_service(tmp_vectors_dir)
 

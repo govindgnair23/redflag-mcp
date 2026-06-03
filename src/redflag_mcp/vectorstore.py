@@ -11,13 +11,13 @@ import pyarrow as pa  # type: ignore[import-untyped]
 
 from redflag_mcp.config import (
     EMBEDDING_DIM,
-    INDUSTRY_GROUP_MAPPINGS,
-    SUBJECT_MAPPINGS,
     VECTORS_DIR,
 )
+from redflag_mcp.filtering import matches_industry_groups, matches_subjects
 from redflag_mcp.models import (
     RedFlagRecord,
     RedFlagResult,
+    RedFlagResultPage,
     RedFlagSourceDetail,
     RedFlagSourceSummary,
     SourceRedFlagSnippet,
@@ -218,23 +218,42 @@ def filter_red_flags(
     limit: int = 20,
     filters: RedFlagFilters | None = None,
 ) -> list[RedFlagResult]:
+    return filter_red_flags_page(table, limit=limit, offset=0, filters=filters).results
+
+
+def filter_red_flags_page(
+    table: lancedb.table.LanceTable,
+    *,
+    limit: int = 20,
+    offset: int = 0,
+    filters: RedFlagFilters | None = None,
+) -> RedFlagResultPage:
     if limit <= 0 or table.count_rows() == 0:
-        return []
+        return RedFlagResultPage(results=[], total_matched=0)
 
     filters = filters or RedFlagFilters()
-    matching_rows = (
-        row
-        for row in _all_rows(table)
-        if _matches_filters(row, filters)
-        and (
-            filters.regulatory_source is None
-            or row.get("regulatory_source") == filters.regulatory_source
-        )
-        and (filters.source_url is None or row.get("source_url") == filters.source_url)
-        and (filters.source_id is None or _source_id(row) == filters.source_id)
+    keep_count = offset + limit
+    total_matched = 0
+    candidates: list[dict[str, Any]] = []
+    for row in _all_rows(table):
+        if not _matches_filter_red_flags_row(row, filters):
+            continue
+        total_matched += 1
+        if keep_count <= 0:
+            continue
+        candidates.append(row)
+        if len(candidates) > keep_count:
+            candidates = heapq.nsmallest(
+                keep_count,
+                candidates,
+                key=_metadata_result_sort_key,
+            )
+    rows = heapq.nsmallest(keep_count, candidates, key=_metadata_result_sort_key)
+    page_rows = rows[offset : offset + limit]
+    return RedFlagResultPage(
+        results=[_row_to_record(row).to_result() for row in page_rows],
+        total_matched=total_matched,
     )
-    rows = heapq.nsmallest(limit, matching_rows, key=_metadata_result_sort_key)
-    return [_row_to_record(row).to_result() for row in rows]
 
 
 def get_by_id(
@@ -386,9 +405,9 @@ def _clean_list(values: list[str] | None) -> list[str]:
 
 
 def _matches_filters(row: dict[str, Any], filters: RedFlagFilters) -> bool:
-    if not _matches_subjects(row, filters.subjects):
+    if not matches_subjects(row, filters.subjects):
         return False
-    if not _matches_industry_groups(row, filters.industry_groups):
+    if not matches_industry_groups(row, filters.industry_groups):
         return False
     for field in LIST_FILTER_FIELDS:
         required = _clean_list(getattr(filters, field))
@@ -401,38 +420,15 @@ def _matches_filters(row: dict[str, Any], filters: RedFlagFilters) -> bool:
     return True
 
 
-def _matches_subjects(row: dict[str, Any], subjects: list[str] | None) -> bool:
-    requested = _clean_list(subjects)
-    if not requested:
-        return True
-    return any(_matches_subject(row, subject) for subject in requested)
-
-
-def _matches_subject(row: dict[str, Any], subject: str) -> bool:
-    mapping = SUBJECT_MAPPINGS.get(subject)
-    if mapping is None:
-        return False
-    if row.get("category") in mapping["category"]:
-        return True
-    if set(mapping["typology_family"]).intersection(row.get("typology_family") or []):
-        return True
-    return bool(
-        set(mapping["transaction_patterns"]).intersection(
-            row.get("transaction_patterns") or []
+def _matches_filter_red_flags_row(row: dict[str, Any], filters: RedFlagFilters) -> bool:
+    return (
+        _matches_filters(row, filters)
+        and (
+            filters.regulatory_source is None
+            or row.get("regulatory_source") == filters.regulatory_source
         )
-    )
-
-
-def _matches_industry_groups(
-    row: dict[str, Any], industry_groups: list[str] | None
-) -> bool:
-    requested = _clean_list(industry_groups)
-    if not requested:
-        return True
-    industry_types = set(row.get("industry_types") or [])
-    return any(
-        industry_types.intersection(INDUSTRY_GROUP_MAPPINGS.get(group, ()))
-        for group in requested
+        and (filters.source_url is None or row.get("source_url") == filters.source_url)
+        and (filters.source_id is None or _source_id(row) == filters.source_id)
     )
 
 

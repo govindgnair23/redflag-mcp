@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import base64
 import binascii
+import dataclasses
+import hashlib
 import json
 import re
 from dataclasses import dataclass
@@ -30,7 +32,7 @@ from redflag_mcp.lexicalstore import LexicalRedFlagFilters, LexicalStore
 from redflag_mcp.models import RedFlagResult
 from redflag_mcp.vectorstore import (
     RedFlagFilters,
-    filter_red_flags as filter_records,
+    filter_red_flags_page as filter_record_page,
     get_by_id,
     get_or_create_table,
     get_source as get_source_detail,
@@ -398,7 +400,14 @@ class RedFlagService:
             )
 
         clamped_limit = min(max(limit, 1), MAX_SEARCH_LIMIT)
-        cursor_offset, cursor_error = _decode_cursor(cursor)
+        cursor_fingerprint = _cursor_fingerprint(
+            filters,
+            store_identity=self._cursor_store_identity(),
+        )
+        cursor_offset, cursor_error = _decode_cursor(
+            cursor,
+            expected_fingerprint=cursor_fingerprint,
+        )
         if cursor_error is not None:
             return self._with_corpus(
                 {
@@ -415,22 +424,27 @@ class RedFlagService:
                 }
             )
 
-        total_rows = self.table.count_rows()
         if isinstance(self.table, LexicalStore):
             assert isinstance(filters, LexicalRedFlagFilters)
-            all_results = self.table.filter_red_flags(limit=total_rows, filters=filters)
-        else:
-            assert isinstance(filters, RedFlagFilters)
-            all_results = filter_records(
-                self.table,
-                limit=total_rows,
+            page = self.table.filter_red_flags_page(
+                limit=clamped_limit,
+                offset=cursor_offset,
                 filters=filters,
             )
-        total_matched = len(all_results)
-        page_results = all_results[cursor_offset : cursor_offset + clamped_limit]
-        next_offset = cursor_offset + len(page_results)
+        else:
+            assert isinstance(filters, RedFlagFilters)
+            page = filter_record_page(
+                self.table,
+                limit=clamped_limit,
+                offset=cursor_offset,
+                filters=filters,
+            )
+        total_matched = page.total_matched
+        next_offset = cursor_offset + len(page.results)
         next_cursor = (
-            _encode_cursor(next_offset) if next_offset < total_matched else None
+            _encode_cursor(next_offset, cursor_fingerprint)
+            if next_offset < total_matched
+            else None
         )
         return self._with_corpus(
             {
@@ -438,12 +452,12 @@ class RedFlagService:
                 "limit": clamped_limit,
                 "requested_limit": limit,
                 "applied_limit": clamped_limit,
-                "returned": len(page_results),
+                "returned": len(page.results),
                 "total_matched": total_matched,
                 "truncated": next_cursor is not None,
                 "next_cursor": next_cursor,
                 "results": [
-                    result.model_dump(exclude_none=True) for result in page_results
+                    result.model_dump(exclude_none=True) for result in page.results
                 ],
             }
         )
@@ -612,6 +626,11 @@ class RedFlagService:
             response = dict(response)
             response["corpus"] = self.table.corpus.model_dump(exclude_none=True)
         return response
+
+    def _cursor_store_identity(self) -> str:
+        if self._is_corpus_mode():
+            return self.table.corpus.package_id
+        return f"vectors:{self.table.count_rows()}"
 
 
 def register_tools(mcp: FastMCP) -> None:
@@ -922,12 +941,19 @@ def _validate_known_filter_values(**filters: list[str] | None) -> str | None:
     return None
 
 
-def _encode_cursor(offset: int) -> str:
-    payload = json.dumps({"offset": offset}, separators=(",", ":")).encode("utf-8")
+def _encode_cursor(offset: int, fingerprint: str) -> str:
+    payload = json.dumps(
+        {"offset": offset, "fingerprint": fingerprint},
+        separators=(",", ":"),
+    ).encode("utf-8")
     return base64.urlsafe_b64encode(payload).decode("ascii")
 
 
-def _decode_cursor(cursor: str | None) -> tuple[int, str | None]:
+def _decode_cursor(
+    cursor: str | None,
+    *,
+    expected_fingerprint: str,
+) -> tuple[int, str | None]:
     if cursor is None:
         return 0, None
     try:
@@ -938,7 +964,34 @@ def _decode_cursor(cursor: str | None) -> tuple[int, str | None]:
     offset = payload.get("offset") if isinstance(payload, dict) else None
     if not isinstance(offset, int) or offset < 0:
         return 0, "Invalid cursor. Use the next_cursor value from the previous page."
+    if payload.get("fingerprint") != expected_fingerprint:
+        return 0, "Invalid cursor. Cursor does not match the current filter request."
     return offset, None
+
+
+def _cursor_fingerprint(
+    filters: LexicalRedFlagFilters | RedFlagFilters,
+    *,
+    store_identity: str,
+) -> str:
+    payload = {
+        "filters": _normalize_cursor_value(dataclasses.asdict(filters)),
+        "store_identity": store_identity,
+    }
+    encoded = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def _normalize_cursor_value(value: object) -> object:
+    if isinstance(value, dict):
+        return {
+            key: _normalize_cursor_value(inner)
+            for key, inner in sorted(value.items())
+            if inner not in (None, [], "")
+        }
+    if isinstance(value, list):
+        return sorted(value)
+    return value
 
 
 def _has_enough_context_filters(filters: dict[str, Any]) -> bool:

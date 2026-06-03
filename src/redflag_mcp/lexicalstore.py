@@ -8,11 +8,12 @@ from dataclasses import dataclass, field as dataclass_field
 from pathlib import Path
 from typing import Any, Literal, cast
 
-from redflag_mcp.config import INDUSTRY_GROUP_MAPPINGS, SUBJECT_MAPPINGS
+from redflag_mcp.filtering import matches_industry_groups, matches_subjects
 from redflag_mcp.models import (
     CorpusMetadata,
     RedFlagRecord,
     RedFlagResult,
+    RedFlagResultPage,
     RedFlagSourceDetail,
     RedFlagSourceSummary,
     SourceRedFlagSnippet,
@@ -216,8 +217,21 @@ class LexicalStore:
         limit: int = 20,
         filters: LexicalRedFlagFilters | None = None,
     ) -> list[RedFlagResult]:
+        return self.filter_red_flags_page(
+            limit=limit,
+            offset=0,
+            filters=filters,
+        ).results
+
+    def filter_red_flags_page(
+        self,
+        *,
+        limit: int = 20,
+        offset: int = 0,
+        filters: LexicalRedFlagFilters | None = None,
+    ) -> RedFlagResultPage:
         if limit <= 0:
-            return []
+            return RedFlagResultPage(results=[], total_matched=0)
         filters = filters or LexicalRedFlagFilters()
         rows = [
             row
@@ -231,7 +245,11 @@ class LexicalStore:
             and (filters.source_id is None or _source_id(row) == filters.source_id)
         ]
         rows.sort(key=_metadata_result_sort_key)
-        return [_row_to_record(row).to_result() for row in rows[:limit]]
+        page_rows = rows[offset : offset + limit]
+        return RedFlagResultPage(
+            results=[_row_to_record(row).to_result() for row in page_rows],
+            total_matched=len(rows),
+        )
 
     def get_by_id(self, red_flag_id: str) -> RedFlagResult | None:
         with _connect(self.db_path) as connection:
@@ -571,9 +589,9 @@ def _metadata_fit_signals(
 
 def _matches_all_filters(row: dict[str, Any], filters: LexicalRedFlagFilters) -> bool:
     decoded = _decode_row(dict(row))
-    if not _matches_subjects(decoded, filters.subjects):
+    if not matches_subjects(decoded, filters.subjects):
         return False
-    if not _matches_industry_groups(decoded, filters.industry_groups):
+    if not matches_industry_groups(decoded, filters.industry_groups):
         return False
     for field in LIST_FILTER_FIELDS:
         required = _clean_list(getattr(filters, field))
@@ -588,41 +606,6 @@ def _matches_all_filters(row: dict[str, Any], filters: LexicalRedFlagFilters) ->
     if filters.issued_before and (decoded.get("issued_date") or "") > filters.issued_before:
         return False
     return True
-
-
-def _matches_subjects(row: dict[str, Any], subjects: list[str] | None) -> bool:
-    requested = _clean_list(subjects)
-    if not requested:
-        return True
-    return any(_matches_subject(row, subject) for subject in requested)
-
-
-def _matches_subject(row: dict[str, Any], subject: str) -> bool:
-    mapping = SUBJECT_MAPPINGS.get(subject)
-    if mapping is None:
-        return False
-    if row.get("category") in mapping["category"]:
-        return True
-    if set(mapping["typology_family"]).intersection(row.get("typology_family") or []):
-        return True
-    return bool(
-        set(mapping["transaction_patterns"]).intersection(
-            row.get("transaction_patterns") or []
-        )
-    )
-
-
-def _matches_industry_groups(
-    row: dict[str, Any], industry_groups: list[str] | None
-) -> bool:
-    requested = _clean_list(industry_groups)
-    if not requested:
-        return True
-    industry_types = set(row.get("industry_types") or [])
-    return any(
-        industry_types.intersection(INDUSTRY_GROUP_MAPPINGS.get(group, ()))
-        for group in requested
-    )
 
 
 def _clean_list(values: list[str] | None) -> list[str]:
