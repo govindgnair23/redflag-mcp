@@ -18,6 +18,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: high
   category: sanctions_evasion
@@ -56,6 +57,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: high
   category: sanctions_evasion
@@ -92,6 +94,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: high
   category: trade_based_money_laundering
@@ -128,6 +131,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: high
   category: sanctions_evasion
@@ -164,6 +168,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: sanctions_evasion
@@ -199,6 +204,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: high
   category: trade_based_money_laundering
@@ -235,6 +241,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: sanctions_evasion
@@ -268,6 +275,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: shell_company
@@ -303,6 +311,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: sanctions_evasion
@@ -341,6 +350,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: high
   category: shell_company
@@ -382,6 +392,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: high
   category: sanctions_evasion
@@ -419,6 +430,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: low
   category: sanctions_evasion
@@ -446,6 +458,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: sanctions_evasion
@@ -482,6 +495,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: sanctions_evasion
@@ -515,6 +529,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: shell_company
@@ -550,6 +565,7 @@
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-06-12'
   risk_level: medium
   category: sanctions_evasion

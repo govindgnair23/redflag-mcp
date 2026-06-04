@@ -12,6 +12,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: shell_company
@@ -39,6 +40,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: shell_company
@@ -66,6 +68,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: shell_company
@@ -98,6 +101,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: high
   category: sanctions_evasion
@@ -125,6 +129,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: trade_based_money_laundering
@@ -154,6 +159,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: trade_based_money_laundering
@@ -186,6 +192,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: sanctions_evasion
@@ -217,6 +224,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: sanctions_evasion
@@ -244,6 +252,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: trade_based_money_laundering
@@ -275,6 +284,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: layering
@@ -305,6 +315,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: layering
@@ -336,6 +347,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: layering
@@ -367,6 +379,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: layering
@@ -396,6 +409,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: shell_company
@@ -425,6 +439,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: medium
   category: shell_company
@@ -458,6 +473,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: low
   category: shell_company
@@ -484,6 +500,7 @@
   regulatory_source: Networks & Shadow Fleets
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-11
   risk_level: low
   category: shell_company

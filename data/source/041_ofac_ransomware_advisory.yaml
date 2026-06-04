@@ -14,6 +14,7 @@
     Ransomware Payments
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-09-21'
   risk_level: high
   category: virtual_currency
@@ -44,6 +45,7 @@
     Ransomware Payments
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-09-21'
   risk_level: medium
   category: virtual_currency
@@ -78,6 +80,7 @@
     Ransomware Payments
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-09-21'
   risk_level: high
   category: sanctions_evasion

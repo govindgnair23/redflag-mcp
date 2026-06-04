@@ -13,6 +13,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: ransomware
@@ -42,6 +47,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: medium
   category: cyber_enabled
@@ -69,6 +79,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: cyber_enabled
@@ -97,6 +112,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: virtual_currency
@@ -125,6 +145,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: medium
   category: cyber_enabled
@@ -156,6 +181,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: sanctions_evasion
@@ -187,6 +217,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: sanctions_evasion
@@ -217,6 +252,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: sanctions_evasion
@@ -246,6 +286,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: cyber_enabled
@@ -275,6 +320,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: medium
   category: sanctions_evasion
@@ -298,6 +348,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: cyber_enabled
@@ -325,6 +380,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: fraud_nexus
@@ -350,6 +410,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: medium
   category: ransomware
@@ -375,6 +440,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: fraud_nexus
@@ -399,6 +469,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: cyber_enabled
@@ -422,6 +497,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: fraud_nexus
@@ -446,6 +526,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: virtual_currency
@@ -475,6 +560,11 @@
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - State
+  - Treasury
+  - DHS
+  - FBI
   issued_date: '2020-04-15'
   risk_level: high
   category: virtual_currency

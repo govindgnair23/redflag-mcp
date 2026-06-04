@@ -17,6 +17,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: sanctions_evasion
@@ -50,6 +51,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: sanctions_evasion
@@ -88,6 +90,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: sanctions_evasion
@@ -127,6 +130,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: sanctions_evasion
@@ -160,6 +164,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: layering
@@ -200,6 +205,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: shell_company
@@ -242,6 +248,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: shell_company
@@ -282,6 +289,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: layering
@@ -318,6 +326,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: virtual_currency
@@ -348,6 +357,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: virtual_currency
@@ -379,6 +389,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: virtual_currency
@@ -408,6 +419,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: virtual_currency
@@ -443,6 +455,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: cyber_enabled
@@ -481,6 +494,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: virtual_currency

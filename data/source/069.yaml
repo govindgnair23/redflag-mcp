@@ -20,6 +20,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -53,6 +54,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -85,6 +87,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -117,6 +120,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -148,6 +152,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: low
   category: layering
@@ -179,6 +184,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -208,6 +214,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -235,6 +242,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: fraud_nexus
@@ -272,6 +280,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: high
   category: trade_based_money_laundering
@@ -305,6 +314,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -341,6 +351,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -375,6 +386,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -408,6 +420,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -443,6 +456,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -475,6 +489,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -508,6 +523,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -540,6 +556,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -571,6 +588,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: low
   category: layering
@@ -603,6 +621,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: shell_company
@@ -635,6 +654,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: shell_company
@@ -665,6 +685,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -697,6 +718,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: high
   category: trade_based_money_laundering
@@ -733,6 +755,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -771,6 +794,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -804,6 +828,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: high
   category: layering
@@ -840,6 +865,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -875,6 +901,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -903,6 +930,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: medium
   category: layering
@@ -935,6 +963,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2023-07
   risk_level: low
   category: layering

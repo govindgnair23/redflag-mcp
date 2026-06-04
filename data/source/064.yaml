@@ -11,6 +11,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: virtual_currency
@@ -32,6 +33,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: virtual_currency
@@ -56,6 +58,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: virtual_currency
@@ -81,6 +84,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: high
   category: sanctions_evasion
@@ -107,6 +111,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: fraud_nexus
@@ -131,6 +136,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: fraud_nexus
@@ -157,6 +163,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: low
   category: layering
@@ -182,6 +189,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: low
   category: fraud_nexus
@@ -206,6 +214,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: low
   category: fraud_nexus
@@ -229,6 +238,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: fraud_nexus
@@ -253,6 +263,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: shell_company
@@ -278,6 +289,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: low
   category: fraud_nexus
@@ -301,6 +313,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: low
   category: fraud_nexus
@@ -325,6 +338,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: layering
@@ -352,6 +366,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: layering
@@ -375,6 +390,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: virtual_currency
@@ -399,6 +415,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: low
   category: fraud_nexus
@@ -426,6 +443,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: high
   category: cyber_enabled
@@ -454,6 +472,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: layering
@@ -479,6 +498,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: high
   category: virtual_currency
@@ -505,6 +525,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: layering
@@ -531,6 +552,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: high
   category: terrorist_financing
@@ -556,6 +578,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: virtual_currency
@@ -583,6 +606,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: virtual_currency
@@ -606,6 +630,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: medium
   category: layering
@@ -633,6 +658,7 @@
     transactions
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2021-11-19'
   risk_level: low
   category: fraud_nexus

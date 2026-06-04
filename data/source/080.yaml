@@ -12,6 +12,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: shell_company
@@ -36,6 +37,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: low
   category: shell_company
@@ -59,6 +61,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: tax_evasion
@@ -84,6 +87,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: fraud_nexus
@@ -112,6 +116,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: layering
@@ -144,6 +149,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: layering
@@ -172,6 +178,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: high
   category: shell_company
@@ -201,6 +208,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: high
   category: shell_company
@@ -229,6 +237,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: shell_company
@@ -257,6 +266,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: fraud_nexus
@@ -285,6 +295,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: layering
@@ -317,6 +328,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: layering
@@ -345,6 +357,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: high
   category: shell_company
@@ -377,6 +390,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: human_smuggling
@@ -405,6 +419,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: low
   category: layering
@@ -428,6 +443,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: low
   category: layering
@@ -452,6 +468,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: high
   category: layering
@@ -480,6 +497,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: layering
@@ -508,6 +526,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: layering
@@ -532,6 +551,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: low
   category: layering
@@ -553,6 +573,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: virtual_currency
@@ -576,6 +597,7 @@
   regulatory_source: UKFIU SARs in Action, Issue 31
   regulator: NCA
   regulator_jurisdiction: GB
+  issuing_agencies: []
   issued_date: 2025-04
   risk_level: medium
   category: fraud_nexus

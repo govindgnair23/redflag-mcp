@@ -12,6 +12,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -35,6 +36,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -61,6 +63,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: shell_company
@@ -83,6 +86,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -107,6 +111,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -134,6 +139,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -159,6 +165,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -182,6 +189,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -206,6 +214,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -230,6 +239,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -255,6 +265,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -280,6 +291,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -303,6 +315,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: fraud_nexus
@@ -329,6 +342,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -351,6 +365,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: fraud_nexus
@@ -375,6 +390,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: structuring
@@ -399,6 +415,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -422,6 +439,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -444,6 +462,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -466,6 +485,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -488,6 +508,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -510,6 +531,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -532,6 +554,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -556,6 +579,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -578,6 +602,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -601,6 +626,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -624,6 +650,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -650,6 +677,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -675,6 +703,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -698,6 +727,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: layering
@@ -720,6 +750,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -742,6 +773,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -765,6 +797,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: structuring
@@ -788,6 +821,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -812,6 +846,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -835,6 +870,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -858,6 +894,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -881,6 +918,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -904,6 +942,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -927,6 +966,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -956,6 +996,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -980,6 +1021,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1003,6 +1045,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -1026,6 +1069,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1048,6 +1092,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -1071,6 +1116,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -1095,6 +1141,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: shell_company
@@ -1118,6 +1165,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1142,6 +1190,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: layering
@@ -1163,6 +1212,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1187,6 +1237,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1212,6 +1263,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1236,6 +1288,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -1258,6 +1311,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1284,6 +1338,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1308,6 +1363,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1333,6 +1389,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1359,6 +1416,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1381,6 +1439,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1403,6 +1462,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: structuring
@@ -1427,6 +1487,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1450,6 +1511,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1474,6 +1536,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1499,6 +1562,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1525,6 +1589,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1547,6 +1612,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1571,6 +1637,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1595,6 +1662,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1618,6 +1686,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1641,6 +1710,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -1666,6 +1736,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1688,6 +1759,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1709,6 +1781,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1734,6 +1807,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1762,6 +1836,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1790,6 +1865,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1818,6 +1894,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1845,6 +1922,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1868,6 +1946,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1893,6 +1972,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1916,6 +1996,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -1939,6 +2020,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: fraud_nexus
@@ -1963,6 +2045,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -1989,6 +2072,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: layering
@@ -2016,6 +2100,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -2046,6 +2131,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2074,6 +2160,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2100,6 +2187,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2127,6 +2215,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2156,6 +2245,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2181,6 +2271,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: corruption
@@ -2210,6 +2301,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -2238,6 +2330,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2265,6 +2358,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: corruption
@@ -2296,6 +2390,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: shell_company
@@ -2324,6 +2419,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -2353,6 +2449,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: trade_based_money_laundering
@@ -2386,6 +2483,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: shell_company
@@ -2417,6 +2515,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: trade_based_money_laundering
@@ -2445,6 +2544,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: corruption
@@ -2471,6 +2571,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2498,6 +2599,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: corruption
@@ -2530,6 +2632,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: corruption
@@ -2561,6 +2664,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: shell_company
@@ -2589,6 +2693,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: shell_company
@@ -2614,6 +2719,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -2642,6 +2748,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -2673,6 +2780,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: terrorist_financing
@@ -2702,6 +2810,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: terrorist_financing
@@ -2730,6 +2839,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: terrorist_financing
@@ -2755,6 +2865,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: terrorist_financing
@@ -2784,6 +2895,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: terrorist_financing
@@ -2811,6 +2923,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: terrorist_financing
@@ -2836,6 +2949,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: terrorist_financing
@@ -2867,6 +2981,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: terrorist_financing
@@ -2894,6 +3009,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: terrorist_financing
@@ -2919,6 +3035,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -2941,6 +3058,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: low
   category: fraud_nexus
@@ -2965,6 +3083,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -2989,6 +3108,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -3012,6 +3132,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -3035,6 +3156,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -3059,6 +3181,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -3086,6 +3209,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -3109,6 +3233,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: layering
@@ -3134,6 +3259,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -3158,6 +3284,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: structuring
@@ -3181,6 +3308,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring
@@ -3206,6 +3334,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -3231,6 +3360,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: medium
   category: layering
@@ -3256,6 +3386,7 @@
     businesses
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2025-11-24'
   risk_level: high
   category: structuring

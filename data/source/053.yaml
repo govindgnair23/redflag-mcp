@@ -19,6 +19,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -52,6 +56,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -84,6 +92,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: trade_based_money_laundering
@@ -120,6 +132,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -154,6 +170,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: sanctions_evasion
@@ -188,6 +208,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -221,6 +245,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: shell_company
@@ -254,6 +282,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -285,6 +317,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: layering
@@ -314,6 +350,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -347,6 +387,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: sanctions_evasion
@@ -379,6 +423,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -410,6 +458,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -439,6 +491,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: sanctions_evasion
@@ -471,6 +527,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: shell_company
@@ -505,6 +565,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -538,6 +602,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: layering
@@ -569,6 +637,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: fraud_nexus
@@ -602,6 +674,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -632,6 +708,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: fraud_nexus
@@ -663,6 +743,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -696,6 +780,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: sanctions_evasion
@@ -725,6 +813,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -757,6 +849,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: fraud_nexus
@@ -790,6 +886,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: sanctions_evasion
@@ -819,6 +919,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -849,6 +953,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -879,6 +987,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -909,6 +1021,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -942,6 +1058,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: medium
   category: sanctions_evasion
@@ -974,6 +1094,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -1007,6 +1131,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -1042,6 +1170,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -1077,6 +1209,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -1112,6 +1248,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -1148,6 +1288,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -1181,6 +1325,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion
@@ -1213,6 +1361,10 @@
     Sectors, and Related Communities
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2020-05-14'
   risk_level: high
   category: sanctions_evasion

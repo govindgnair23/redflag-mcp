@@ -12,6 +12,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -39,6 +40,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -66,6 +68,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -92,6 +95,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -116,6 +120,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -140,6 +145,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -166,6 +172,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -189,6 +196,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -212,6 +220,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -234,6 +243,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -258,6 +268,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -280,6 +291,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -304,6 +316,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: virtual_currency
@@ -333,6 +346,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: virtual_currency
@@ -364,6 +378,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: virtual_currency
@@ -391,6 +406,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -415,6 +431,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -440,6 +457,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -464,6 +482,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -488,6 +507,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -510,6 +530,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -536,6 +557,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -562,6 +584,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -590,6 +613,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -615,6 +639,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: layering
@@ -644,6 +669,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -668,6 +694,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -692,6 +719,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -723,6 +751,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -751,6 +780,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -775,6 +805,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -800,6 +831,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -823,6 +855,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -846,6 +879,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -870,6 +904,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: fraud_nexus
@@ -898,6 +933,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: shell_company
@@ -929,6 +965,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: shell_company
@@ -956,6 +993,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -983,6 +1021,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -1011,6 +1050,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1033,6 +1073,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1055,6 +1096,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1081,6 +1123,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1105,6 +1148,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1128,6 +1172,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1155,6 +1200,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1179,6 +1225,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: shell_company
@@ -1202,6 +1249,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -1227,6 +1275,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -1251,6 +1300,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: fraud_nexus
@@ -1278,6 +1328,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1307,6 +1358,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: human_smuggling
@@ -1330,6 +1382,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_smuggling
@@ -1353,6 +1406,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_smuggling
@@ -1376,6 +1430,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_smuggling
@@ -1399,6 +1454,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_smuggling
@@ -1421,6 +1477,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_smuggling
@@ -1448,6 +1505,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_smuggling
@@ -1476,6 +1534,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -1507,6 +1566,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1535,6 +1595,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_smuggling
@@ -1563,6 +1624,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -1589,6 +1651,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -1614,6 +1677,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -1643,6 +1707,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -1669,6 +1734,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: virtual_currency
@@ -1703,6 +1769,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1732,6 +1799,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_trafficking
@@ -1756,6 +1824,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -1777,6 +1846,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1803,6 +1873,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: structuring
@@ -1830,6 +1901,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1857,6 +1929,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -1882,6 +1955,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1907,6 +1981,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -1933,6 +2008,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -1956,6 +2032,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -1981,6 +2058,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -2008,6 +2086,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -2033,6 +2112,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -2059,6 +2139,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -2084,6 +2165,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -2109,6 +2191,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -2134,6 +2217,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -2158,6 +2242,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -2184,6 +2269,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -2206,6 +2292,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: low
   category: fraud_nexus
@@ -2227,6 +2314,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_trafficking
@@ -2250,6 +2338,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: human_trafficking
@@ -2274,6 +2363,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -2300,6 +2390,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: layering
@@ -2326,6 +2417,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: layering
@@ -2354,6 +2446,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -2378,6 +2471,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: fraud_nexus
@@ -2404,6 +2498,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: fraud_nexus
@@ -2427,6 +2522,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: high
   category: fraud_nexus
@@ -2451,6 +2547,7 @@
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: 2021-07
   risk_level: medium
   category: shell_company

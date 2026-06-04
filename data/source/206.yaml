@@ -21,6 +21,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -55,6 +56,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -88,6 +90,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -123,6 +126,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -152,6 +156,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -181,6 +186,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -217,6 +223,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: human_trafficking
@@ -255,6 +262,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -288,6 +296,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: medium
   category: human_trafficking
@@ -319,6 +328,7 @@
     FIFA World Cup
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-05-11'
   risk_level: high
   category: human_trafficking

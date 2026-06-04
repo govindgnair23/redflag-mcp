@@ -18,6 +18,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: sanctions_evasion
@@ -52,6 +56,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: layering
@@ -84,6 +92,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: sanctions_evasion
@@ -122,6 +134,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: high
   category: sanctions_evasion
@@ -162,6 +178,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: layering
@@ -195,6 +215,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: high
   category: shell_company
@@ -226,6 +250,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: shell_company
@@ -258,6 +286,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: shell_company
@@ -289,6 +321,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: sanctions_evasion
@@ -321,6 +357,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: shell_company
@@ -351,6 +391,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: high
   category: shell_company
@@ -387,6 +431,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: sanctions_evasion
@@ -418,6 +466,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: sanctions_evasion
@@ -451,6 +503,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: sanctions_evasion
@@ -481,6 +537,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: low
   category: shell_company
@@ -506,6 +566,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: low
   category: layering
@@ -535,6 +599,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: layering
@@ -566,6 +634,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: high
   category: trade_based_money_laundering
@@ -599,6 +671,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: medium
   category: trade_based_money_laundering
@@ -630,6 +706,10 @@
   regulatory_source: Global Advisory on Russian Sanctions Evasion
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - DOJ
+  - REPO Task Force
   issued_date: '2023-03-09'
   risk_level: high
   category: trade_based_money_laundering

@@ -10,6 +10,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -35,6 +36,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -58,6 +60,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -79,6 +82,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -102,6 +106,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -126,6 +131,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -154,6 +160,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -180,6 +187,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/913571/download?inline
@@ -203,6 +211,7 @@
   regulatory_source: Sanctions Compliance Guidance for the Virtual Currency Industry
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://ofac.treasury.gov/media/913571/download?inline

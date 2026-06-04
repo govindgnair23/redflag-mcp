@@ -23,6 +23,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -60,6 +64,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -98,6 +106,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: trade_based_money_laundering
@@ -143,6 +155,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -178,6 +194,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -211,6 +231,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -245,6 +269,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -277,6 +305,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: medium
   category: sanctions_evasion
@@ -308,6 +340,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -341,6 +377,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion
@@ -373,6 +413,10 @@
     Korea’s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - USCG
   issued_date: '2018-02-23'
   risk_level: high
   category: sanctions_evasion

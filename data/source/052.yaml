@@ -20,6 +20,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -53,6 +57,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: cyber_enabled
@@ -84,6 +92,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -116,6 +128,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -147,6 +163,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -177,6 +197,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: low
   category: fraud_nexus
@@ -209,6 +233,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: layering
@@ -241,6 +269,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -278,6 +310,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -310,6 +346,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -343,6 +383,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -374,6 +418,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: virtual_currency
@@ -405,6 +453,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: low
   category: fraud_nexus
@@ -436,6 +488,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -466,6 +522,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -495,6 +555,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -526,6 +590,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: cyber_enabled
@@ -557,6 +625,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -590,6 +662,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -626,6 +702,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -663,6 +743,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: virtual_currency
@@ -700,6 +784,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -737,6 +825,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -770,6 +862,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -802,6 +898,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -833,6 +933,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -864,6 +968,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -894,6 +1002,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -924,6 +1036,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: low
   category: fraud_nexus
@@ -958,6 +1074,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: virtual_currency
@@ -993,6 +1113,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1024,6 +1148,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -1061,6 +1189,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1096,6 +1228,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1127,6 +1263,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1161,6 +1301,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1193,6 +1337,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1225,6 +1373,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1260,6 +1412,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1294,6 +1450,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1326,6 +1486,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus
@@ -1357,6 +1521,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: medium
   category: fraud_nexus
@@ -1391,6 +1559,10 @@
     Technology Workers
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies:
+  - OFAC
+  - State
+  - FBI
   issued_date: '2022-05-16'
   risk_level: high
   category: fraud_nexus

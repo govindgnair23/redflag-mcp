@@ -10,6 +10,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -33,6 +34,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -56,6 +58,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -80,6 +83,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -102,6 +106,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -122,6 +127,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -145,6 +151,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -172,6 +179,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -196,6 +204,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -218,6 +227,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -240,6 +250,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -261,6 +272,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -284,6 +296,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -314,6 +327,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -344,6 +358,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -368,6 +383,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -396,6 +412,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -421,6 +438,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -447,6 +465,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -473,6 +492,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -494,6 +514,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -519,6 +540,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -543,6 +565,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -564,6 +587,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -588,6 +612,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -614,6 +639,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -639,6 +665,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -663,6 +690,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -687,6 +715,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -712,6 +741,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -738,6 +768,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -760,6 +791,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -787,6 +819,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -812,6 +845,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -835,6 +869,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -858,6 +893,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -881,6 +917,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -903,6 +940,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -925,6 +963,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -949,6 +988,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -974,6 +1014,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -997,6 +1038,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1020,6 +1062,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1045,6 +1088,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1067,6 +1111,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1092,6 +1137,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1122,6 +1168,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1152,6 +1199,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1180,6 +1228,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1211,6 +1260,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1236,6 +1286,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1264,6 +1315,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1294,6 +1346,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1318,6 +1371,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1345,6 +1399,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1376,6 +1431,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1401,6 +1457,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1428,6 +1485,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1453,6 +1511,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1484,6 +1543,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1510,6 +1570,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1534,6 +1595,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1559,6 +1621,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1585,6 +1648,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1609,6 +1673,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1634,6 +1699,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: trade_based_money_laundering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1659,6 +1725,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1682,6 +1749,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1705,6 +1773,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1727,6 +1796,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1751,6 +1821,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1772,6 +1843,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1797,6 +1869,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1821,6 +1894,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1847,6 +1921,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1875,6 +1950,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1900,6 +1976,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1928,6 +2005,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1953,6 +2031,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -1976,6 +2055,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2001,6 +2081,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2025,6 +2106,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2049,6 +2131,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2073,6 +2156,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2096,6 +2180,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: corruption
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2120,6 +2205,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2142,6 +2228,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: corruption
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2167,6 +2254,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2189,6 +2277,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: corruption
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2209,6 +2298,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: corruption
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2228,6 +2318,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: corruption
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2248,6 +2339,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2272,6 +2364,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2297,6 +2390,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2321,6 +2415,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2345,6 +2440,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2368,6 +2464,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2391,6 +2488,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2414,6 +2512,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2438,6 +2537,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2462,6 +2562,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2486,6 +2587,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2510,6 +2612,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2532,6 +2635,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2555,6 +2659,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2583,6 +2688,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2607,6 +2713,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2630,6 +2737,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2656,6 +2764,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2681,6 +2790,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2708,6 +2818,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2732,6 +2843,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2759,6 +2871,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2782,6 +2895,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: fraud_nexus
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2806,6 +2920,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2833,6 +2948,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2859,6 +2975,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: shell_company
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2886,6 +3003,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2909,6 +3027,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: structuring
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2933,6 +3052,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2961,6 +3081,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -2988,6 +3109,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -3014,6 +3136,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -3041,6 +3164,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: high
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -3070,6 +3194,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -3094,6 +3219,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -3117,6 +3243,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: medium
   category: terrorist_financing
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07
@@ -3139,6 +3266,7 @@
     Terrorist Financing Red Flags
   regulator: FFIEC
   regulator_jurisdiction: US
+  issuing_agencies: []
   risk_level: low
   category: layering
   source_url: https://bsaaml.ffiec.gov/manual/Appendices/07

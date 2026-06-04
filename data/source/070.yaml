@@ -24,6 +24,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: high
   category: trade_based_money_laundering
@@ -64,6 +65,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: high
   category: trade_based_money_laundering
@@ -107,6 +109,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: medium
   category: trade_based_money_laundering
@@ -145,6 +148,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: medium
   category: shell_company
@@ -195,6 +199,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: high
   category: trade_based_money_laundering
@@ -230,6 +235,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: medium
   category: trade_based_money_laundering
@@ -259,6 +265,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: medium
   category: layering
@@ -290,6 +297,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: medium
   category: layering
@@ -317,6 +325,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: medium
   category: layering
@@ -346,6 +355,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: medium
   category: layering
@@ -397,6 +407,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: high
   category: layering
@@ -451,6 +462,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: high
   category: layering
@@ -498,6 +510,7 @@
     and money services businesses'
   regulator: FINTRAC
   regulator_jurisdiction: CA
+  issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: high
   category: layering

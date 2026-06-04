@@ -19,6 +19,7 @@
     Evasion'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-31'
   risk_level: medium
   category: sanctions_evasion
@@ -55,6 +56,7 @@
     Evasion'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-31'
   risk_level: medium
   category: sanctions_evasion
@@ -89,6 +91,7 @@
     Evasion'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-31'
   risk_level: medium
   category: sanctions_evasion
@@ -126,6 +129,7 @@
     Evasion'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-31'
   risk_level: medium
   category: shell_company
@@ -159,6 +163,7 @@
     Evasion'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-31'
   risk_level: high
   category: sanctions_evasion
@@ -196,6 +201,7 @@
     Evasion'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-31'
   risk_level: high
   category: sanctions_evasion
@@ -228,6 +234,7 @@
     Evasion'
   regulator: OFAC
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-31'
   risk_level: medium
   category: sanctions_evasion
