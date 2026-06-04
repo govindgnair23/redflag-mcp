@@ -82,7 +82,7 @@ def test_build_and_verify_corpus_package(tmp_path):
     assert result.package_path.name == "redflag-corpus-2026.04.29.zip"
     assert verification.status == "verified"
     assert verification.version == "2026.04.29"
-    assert verification.schema_version == 3
+    assert verification.schema_version == 4
     assert verification.record_count == 1
     assert verification.file_hashes["redflags.sqlite"] == result.manifest["file_hashes"]["redflags.sqlite"]
 
@@ -353,7 +353,7 @@ def test_manifest_includes_hosted_release_provenance_fields(tmp_path):
 
     manifest = result.manifest
     assert manifest["build_timestamp"] == "2026-04-29T12:00:00Z"
-    assert manifest["schema_version"] == 3
+    assert manifest["schema_version"] == 4
     assert manifest["source_record_hashes"]["001-test-01"]
     assert manifest["build_inputs"]["aliases_sha256"] == sha256_file(aliases)
     assert manifest["build_inputs"]["source_metadata_sha256"] == sha256_file(source_metadata)
@@ -387,6 +387,28 @@ def test_enriched_yaml_fields_are_included_in_lexical_index(tmp_path):
     assert results[0].typology_family == ["trade_based_money_laundering"]
     assert results[0].transaction_patterns == ["invoice_mismatch"]
     assert results[0].key_terms == ["TBML"]
+
+
+def test_built_corpus_sqlite_metadata_does_not_surface_zero_hash(tmp_path):
+    source = tmp_path / "source.yaml"
+    write_source(source)
+    result = build_corpus_package(
+        [source],
+        output_dir=tmp_path / "dist",
+        version="2026.04.29",
+        build_timestamp="2026-04-29T12:00:00Z",
+    )
+
+    from redflag_mcp.lexicalstore import LexicalStore
+
+    with zipfile.ZipFile(result.package_path) as archive:
+        sqlite_path = tmp_path / "redflags.sqlite"
+        sqlite_path.write_bytes(archive.read("redflags.sqlite"))
+
+    corpus = LexicalStore.open(sqlite_path).corpus
+
+    assert "redflags.sqlite" not in corpus.file_hashes
+    assert result.manifest["file_hashes"]["redflags.sqlite"] != "0" * 64
 
 
 def sha256_file(path: Path) -> str:

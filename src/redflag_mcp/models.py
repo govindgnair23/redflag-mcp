@@ -26,6 +26,7 @@ class RedFlagSource(BaseModel):
     regulatory_source: str | None = None
     regulator: str | None = None
     regulator_jurisdiction: str | None = None
+    issuing_agencies: list[str] | None = None
     issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
@@ -64,6 +65,7 @@ class RedFlagResult(BaseModel):
     regulatory_source: str | None = None
     regulator: str | None = None
     regulator_jurisdiction: str | None = None
+    issuing_agencies: list[str] = Field(default_factory=list)
     issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
@@ -192,6 +194,7 @@ class RedFlagSourceSummary(BaseModel):
     categories: list[str] = Field(default_factory=list)
     risk_levels: list[str] = Field(default_factory=list)
     product_types: list[str] = Field(default_factory=list)
+    issuing_agencies: list[str] = Field(default_factory=list)
     red_flag_ids: list[str] = Field(default_factory=list)
 
 
@@ -216,6 +219,7 @@ class RedFlagRecord(BaseModel):
     regulatory_source: str | None = None
     regulator: str | None = None
     regulator_jurisdiction: str | None = None
+    issuing_agencies: list[str] = Field(default_factory=list)
     issued_date: str | None = None
     risk_level: str | None = None
     category: str | None = None
@@ -261,6 +265,7 @@ class RedFlagRecord(BaseModel):
             regulatory_source=source.regulatory_source,
             regulator=source.regulator,
             regulator_jurisdiction=source.regulator_jurisdiction,
+            issuing_agencies=_list_or_empty(source.issuing_agencies),
             issued_date=source.issued_date,
             risk_level=source.risk_level,
             category=source.category,
@@ -283,6 +288,7 @@ class RedFlagRecord(BaseModel):
             regulatory_source=self.regulatory_source,
             regulator=self.regulator,
             regulator_jurisdiction=self.regulator_jurisdiction,
+            issuing_agencies=self.issuing_agencies,
             issued_date=self.issued_date,
             risk_level=self.risk_level,
             category=self.category,

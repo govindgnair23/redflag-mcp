@@ -87,6 +87,6 @@ Before public launch or corpus updates:
      --benchmark data/eval/hosted_retrieval_queries.yaml
    ```
 4. Deploy to Railway and confirm `/ready` returns corpus metadata.
-5. Smoke-test `/mcp` in a target hosted client or MCP Inspector: anonymous URL accepted, tools visible, first query succeeds.
+5. Smoke-test `/mcp` in a target hosted client or MCP Inspector: anonymous URL accepted, first query succeeds, and the tool manifest includes the discovery tools referenced by descriptions, including `list_filters`, `list_sources`, and `get_source`.
 
 If a target hosted client rejects anonymous Streamable HTTP, treat the smallest auth fallback as a launch blocker or follow-up before public release.

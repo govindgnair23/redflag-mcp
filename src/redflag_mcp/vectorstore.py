@@ -108,6 +108,7 @@ def red_flag_schema() -> pa.Schema:
             pa.field("regulatory_source", pa.string()),
             pa.field("regulator", pa.string()),
             pa.field("regulator_jurisdiction", pa.string()),
+            pa.field("issuing_agencies", pa.list_(pa.string())),
             pa.field("issued_date", pa.string()),
             pa.field("risk_level", pa.string()),
             pa.field("category", pa.string()),
@@ -348,6 +349,7 @@ def _source_summary(group: _SourceGroup) -> RedFlagSourceSummary:
         categories=_sorted_scalar_values(rows, "category"),
         risk_levels=_sorted_scalar_values(rows, "risk_level"),
         product_types=_sorted_list_values(rows, "product_types"),
+        issuing_agencies=_sorted_list_values(rows, "issuing_agencies"),
         red_flag_ids=[row["id"] for row in rows],
     )
 

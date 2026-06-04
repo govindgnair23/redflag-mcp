@@ -79,6 +79,14 @@ class TestBuildExtractionPrompt:
         assert "regulator_jurisdiction" in system_prompt
         assert "Do not emit regulator_jurisdiction" in system_prompt
 
+    def test_issuing_agencies_are_extracted_for_joint_advisories(self):
+        messages = build_extraction_prompt("Document text")
+        system_prompt = messages[0]["content"]
+
+        assert "issuing_agencies" in system_prompt
+        assert "joint or interagency" in system_prompt
+        assert "multiple agencies" in system_prompt
+
     def test_prompt_extracts_implicit_red_flags_from_case_narratives(self):
         messages = build_extraction_prompt("Document text")
         system_prompt = messages[0]["content"]
@@ -515,6 +523,7 @@ class TestRegulatorFromUrlOverride:
             {
                 "description": "Suspicious wire transfers involving sanctioned entities.",
                 "regulator": "FBI",
+                "issuing_agencies": ["FinCEN", "State", "FBI"],
                 "risk_level": "high",
                 "category": "sanctions_evasion",
                 "regulatory_source": "OFAC Advisory",
@@ -527,6 +536,7 @@ class TestRegulatorFromUrlOverride:
         assert skipped == 0
         assert entries[0]["regulator"] == "OFAC"
         assert entries[0]["regulator_jurisdiction"] == "US"
+        assert entries[0]["issuing_agencies"] == ["FinCEN", "State", "FBI"]
 
     def test_unknown_url_keeps_llm_regulator(self):
         raw = [

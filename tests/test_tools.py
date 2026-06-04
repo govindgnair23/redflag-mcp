@@ -208,6 +208,19 @@ def test_search_rejects_too_many_filter_values_before_store_access():
     assert "too many filter values" in response["message"]
 
 
+def test_search_rejects_unknown_geographic_footprint_before_store_access():
+    service = RedFlagService(table=FailingTable(), embedding_model=FailingModel())
+
+    response = service.search_red_flags(
+        query="DPRK cyber advisory",
+        geographic_footprints=["dprk"],
+    )
+
+    assert response["results"] == []
+    assert "Unknown geographic_footprints value(s): dprk" in response["message"]
+    assert "list_filters" in response["message"]
+
+
 def test_filter_red_flags_rejects_too_many_filter_values_before_store_access():
     service = RedFlagService(table=FailingTable(), embedding_model=FailingModel())
 
@@ -217,6 +230,18 @@ def test_filter_red_flags_rejects_too_many_filter_values_before_store_access():
 
     assert response["results"] == []
     assert "too many filter values" in response["message"]
+
+
+def test_filter_red_flags_rejects_unknown_geographic_footprint_before_store_access():
+    service = RedFlagService(table=FailingTable(), embedding_model=FailingModel())
+
+    response = service.filter_red_flags(geographic_footprints=["North Korea"])
+
+    assert response["results"] == []
+    assert (
+        "Unknown geographic_footprints value(s): North Korea" in response["message"]
+    )
+    assert "list_filters" in response["message"]
 
 
 def test_search_with_rich_filters_excludes_non_matching_records(tmp_vectors_dir):
@@ -281,10 +306,10 @@ def test_search_fit_explanation_handles_missing_metadata(tmp_vectors_dir):
     response = service.search_red_flags(query="unusual activity")
 
     assert response["results"][0]["fit_explanation"] == (
-        "Semantic match to the query context."
+        "Ranked relevance match to the query context."
     )
     assert response["results"][0]["fit_signals"] == [
-        "Semantic match to the query context."
+        "Ranked relevance match to the query context."
     ]
 
 
@@ -307,6 +332,41 @@ def test_filter_red_flags_returns_direct_metadata_matches_without_embeddings(
     assert response["match_type"] == "metadata_filter"
     assert "score" not in response["results"][0]
     assert "vector" not in response["results"][0]
+
+
+def test_filter_red_flags_concise_detail_returns_small_enumeration_shape(
+    tmp_vectors_dir,
+):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.filter_red_flags(
+        product_types=["trade_finance"],
+        detail="concise",
+    )
+
+    assert response["returned"] == 1
+    assert response["total_matched"] == 1
+    assert response["truncated"] is False
+    assert response["next_cursor"] is None
+    assert response["results"] == [
+        {
+            "id": "oil-01",
+            "description": "Small oil company wires funds near the southwest border.",
+            "regulatory_source": "FinCEN Alert FIN-2025-Alert001",
+            "regulator_jurisdiction": "US",
+            "risk_level": "high",
+            "source_url": "https://example.com/source.pdf",
+        }
+    ]
+
+
+def test_filter_red_flags_rejects_unknown_detail_before_store_access():
+    service = RedFlagService(table=FailingTable(), embedding_model=FailingModel())
+
+    response = service.filter_red_flags(product_types=["depository"], detail="brief")
+
+    assert response["results"] == []
+    assert "Unknown detail value: brief" in response["message"]
 
 
 def test_filter_red_flags_accepts_subjects_and_industry_groups(tmp_vectors_dir):
@@ -652,7 +712,7 @@ def test_classify_red_flag_request_requires_two_metadata_filters(
     assert "industry" in response["follow_up_question"]
 
 
-def test_classify_red_flag_request_routes_filtered_semantic_context(
+def test_classify_red_flag_request_routes_filtered_relevance_context(
     tmp_vectors_dir,
 ):
     service = seeded_service(tmp_vectors_dir)
@@ -667,7 +727,7 @@ def test_classify_red_flag_request_routes_filtered_semantic_context(
         limit=50,
     )
 
-    assert response["route"] == "filtered_semantic_search"
+    assert response["route"] == "filtered_relevance_search"
     assert response["recommended_tool"] == "search_red_flags"
     assert response["recommended_arguments"] == {
         "query": (
@@ -680,7 +740,7 @@ def test_classify_red_flag_request_routes_filtered_semantic_context(
     }
 
 
-def test_classify_red_flag_request_routes_direct_semantic_for_rich_narrative(
+def test_classify_red_flag_request_routes_direct_relevance_for_rich_narrative(
     tmp_vectors_dir,
 ):
     service = seeded_service(tmp_vectors_dir)
@@ -692,7 +752,7 @@ def test_classify_red_flag_request_routes_direct_semantic_for_rich_narrative(
         )
     )
 
-    assert response["route"] == "direct_semantic_search"
+    assert response["route"] == "direct_relevance_search"
     assert response["recommended_tool"] == "search_red_flags"
     assert response["recommended_arguments"]["query"] == (
         "small importers moving goods through Laredo with frequent third-party wires"
@@ -807,14 +867,19 @@ def test_fastmcp_tool_metadata_includes_consultation_guidance(tmp_vectors_dir):
     classifier_description = by_name["classify_red_flag_request"].description
     assert "before searching" in classifier_description
     assert "needs_more_context" in classifier_description
-    assert "filtered_semantic_search" in classifier_description
-    assert "direct_semantic_search" in classifier_description
+    assert "filtered_relevance_search" in classifier_description
+    assert "direct_relevance_search" in classifier_description
+    assert "filtered_semantic_search" not in classifier_description
+    assert "direct_semantic_search" not in classifier_description
     assert "query" in by_name["classify_red_flag_request"].inputSchema["properties"]
     assert "product_types" in by_name[
         "classify_red_flag_request"
     ].inputSchema["properties"]
     assert "exact metadata" in by_name["filter_red_flags"].description
     assert "search_red_flags" in by_name["filter_red_flags"].description
+    assert "category is the primary" in by_name["filter_red_flags"].description
+    assert "subjects" in by_name["list_filters"].description
+    assert "geographic_footprints" in by_name["list_filters"].description
     assert "subjects" in by_name["filter_red_flags"].inputSchema["properties"]
     assert "industry_groups" in by_name["filter_red_flags"].inputSchema["properties"]
     assert "source coverage" in by_name["list_sources"].description
@@ -845,6 +910,12 @@ def test_fastmcp_tool_schema_exposes_stable_filter_enums(tmp_vectors_dir):
         properties["customer_profiles"]
     )
     assert "maritime_shipping" in _schema_enum_values(properties["industry_types"])
+    assert "north_korea" in _schema_enum_values(properties["geographic_footprints"])
+    assert "sanctioned_jurisdiction" in _schema_enum_values(
+        properties["geographic_footprints"]
+    )
+    assert "east_asia" in _schema_enum_values(properties["geographic_footprints"])
+    assert "uk_eu" in _schema_enum_values(properties["geographic_footprints"])
     assert "human_trafficking" in _schema_enum_values(properties["subjects"])
     assert "trade_logistics" in _schema_enum_values(properties["industry_groups"])
 

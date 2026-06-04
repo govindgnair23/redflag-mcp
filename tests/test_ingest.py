@@ -10,6 +10,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 from ingest import (  # noqa: E402
+    build_tagging_prompt,
     build_records,
     discover_source_files,
     filter_source_paths_by_range,
@@ -248,6 +249,48 @@ def test_tagger_enriches_missing_new_fields():
     assert records[0].typology_family == ["trade_based_money_laundering"]
     assert records[0].transaction_patterns == ["trade_document_manipulation"]
     assert records[0].key_terms == ["TBML", "invoice fraud"]
+
+
+def test_tagger_enriches_missing_issuing_agencies():
+    source = RedFlagSource(
+        id="joint-agencies-missing-01",
+        description="Joint advisory about DPRK cyber activity",
+        product_types=["depository"],
+        industry_types=["crypto"],
+        customer_profiles=["foreign_individual"],
+        geographic_footprints=["north_korea"],
+        regulatory_source="Joint DPRK Cyber Advisory",
+        risk_level="high",
+        category="sanctions_evasion",
+        regulator="OFAC",
+        issued_date="2020",
+        typology_family=["sanctions_evasion"],
+        transaction_patterns=["identity_misrepresentation"],
+        key_terms=["DPRK"],
+    )
+
+    def tagger(_source: RedFlagSource, missing: list[str]) -> dict:
+        assert "issuing_agencies" in missing
+        return {"issuing_agencies": ["OFAC", "FBI", "CISA", "State"]}
+
+    records, enriched_count = build_records(
+        [source],
+        embedding_model=FakeModel(),
+        tagger=tagger,
+    )
+
+    assert enriched_count == 1
+    assert records[0].issuing_agencies == ["OFAC", "FBI", "CISA", "State"]
+
+
+def test_tagging_prompt_requests_issuing_agencies_as_joint_issuer_field():
+    source = RedFlagSource(id="prompt-01", description="Joint advisory")
+
+    prompt = build_tagging_prompt(source, ["issuing_agencies"])[0]["content"]
+
+    assert "issuing_agencies" in prompt
+    assert "joint or interagency" in prompt
+    assert "multiple agencies" in prompt
 
 
 def test_merge_metadata_normalizes_scalar_list_field_patch():

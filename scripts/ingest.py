@@ -47,6 +47,7 @@ LIST_METADATA_FIELDS = (
     "industry_types",
     "customer_profiles",
     "geographic_footprints",
+    "issuing_agencies",
     "typology_family",
     "transaction_patterns",
     "key_terms",
@@ -150,12 +151,26 @@ def load_sources(source_paths: Sequence[Path]) -> tuple[list[RedFlagSource], int
 def missing_metadata_fields(source: RedFlagSource) -> list[str]:
     missing: list[str] = []
     for field in LIST_METADATA_FIELDS:
+        if field == "issuing_agencies" and not should_request_issuing_agencies(source):
+            continue
         if not getattr(source, field):
             missing.append(field)
     for field in SCALAR_METADATA_FIELDS:
         if not getattr(source, field):
             missing.append(field)
     return missing
+
+
+def should_request_issuing_agencies(source: RedFlagSource) -> bool:
+    source_text = " ".join(
+        value
+        for value in (
+            source.regulatory_source,
+            source.description,
+        )
+        if value
+    ).lower()
+    return any(term in source_text for term in ("joint", "interagency", "multi-agency"))
 
 
 def derive_regulator_jurisdiction(source: RedFlagSource) -> RedFlagSource:
@@ -287,6 +302,7 @@ For list fields, return lists of strings. Prefer these suggested values when app
 - key_terms: free-form list of short, searchable phrases (instrument names, dollar thresholds, \
 regulatory references, entity types — not full sentences)
 - regulator: {sorted(REGULATORS)} — abbreviated issuing authority; infer from the regulatory_source value
+- issuing_agencies: list of all agencies that issued the source when the regulatory document was issued by multiple agencies, including joint or interagency advisories and other multi-agency issuances. Include the regulator when it is one of the issuers. Use an empty list when no multiple-agency issuer information is implied
 - issued_date: ISO 8601 date string (YYYY-MM-DD or YYYY-MM or YYYY) — publication date of the source \
 document; infer from the regulatory_source name if the date is embedded there
 

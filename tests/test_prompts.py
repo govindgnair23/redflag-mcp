@@ -33,12 +33,19 @@ def test_consultation_prompt_guides_followup_and_tool_routing(tmp_vectors_dir):
     assert "classify_red_flag_request" in text
     assert "needs_more_context" in text
     assert "metadata_filter" in text
-    assert "filtered_semantic_search" in text
-    assert "direct_semantic_search" in text
+    assert "filtered_relevance_search" in text
+    assert "direct_relevance_search" in text
+    assert "filtered_semantic_search" not in text
+    assert "direct_semantic_search" not in text
     assert "rich narrative" in text
     assert "list_filters" in text
     assert "filter_red_flags" in text
     assert "subjects" in text
+    assert "category is the primary" in text
+    assert 'category="virtual_currency"' in text
+    assert 'subjects=["human_trafficking"]' in text
+    assert "geographic_footprints" in text
+    assert "regulator_jurisdiction describes issuer jurisdiction" in text
     assert "industry_groups" in text
     assert "human trafficking red flags" in text
     assert "trade logistics red flags" in text

@@ -47,6 +47,8 @@ def test_hosted_docs_capture_public_privacy_and_rollback() -> None:
     assert "/mcp" in docs
     assert "healthcheck.railway.app" in docs
     assert "single instance" in docs.lower()
+    assert "tool manifest" in docs.lower()
+    assert "list_filters" in docs
 
 
 def test_readme_leads_with_hosted_connector_setup() -> None:

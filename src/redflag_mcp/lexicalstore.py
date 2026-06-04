@@ -19,7 +19,7 @@ from redflag_mcp.models import (
     SourceRedFlagSnippet,
 )
 
-LEXICAL_SCHEMA_VERSION = 3
+LEXICAL_SCHEMA_VERSION = 4
 SOURCE_DETAIL_SNIPPET_LIMIT = 10
 LIST_FILTER_FIELDS = (
     "product_types",
@@ -31,7 +31,7 @@ LIST_FILTER_FIELDS = (
 )
 SCALAR_FILTER_FIELDS = ("category", "risk_level", "regulator", "regulator_jurisdiction")
 DISTINCT_FILTER_FIELDS = LIST_FILTER_FIELDS + SCALAR_FILTER_FIELDS
-JSON_LIST_FIELDS = (*LIST_FILTER_FIELDS, "key_terms")
+JSON_LIST_FIELDS = (*LIST_FILTER_FIELDS, "issuing_agencies", "key_terms")
 RISK_ORDER = {"high": 0, "medium": 1, "low": 2}
 
 
@@ -119,6 +119,11 @@ class LexicalStore:
                 and file_hashes.get("redflags.sqlite") == "0" * 64
             ):
                 integrity_status = "unverified"
+                file_hashes = {
+                    file_name: digest
+                    for file_name, digest in file_hashes.items()
+                    if digest != "0" * 64
+                }
             corpus = CorpusMetadata(
                 version=_required_metadata_value(connection, "version"),
                 schema_version=int(schema_version),
@@ -376,11 +381,11 @@ def create_lexical_store(
                 INSERT INTO red_flags (
                     id, description, product_types, industry_types, customer_profiles,
                     geographic_footprints, regulatory_source, regulator,
-                    regulator_jurisdiction, issued_date,
+                    regulator_jurisdiction, issuing_agencies, issued_date,
                     risk_level, category, simulation_type, source_url,
                     typology_family, transaction_patterns, key_terms
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     row["id"],
@@ -392,6 +397,7 @@ def create_lexical_store(
                     row.get("regulatory_source"),
                     row.get("regulator"),
                     row.get("regulator_jurisdiction"),
+                    json.dumps(row["issuing_agencies"], sort_keys=True),
                     row.get("issued_date"),
                     row.get("risk_level"),
                     row.get("category"),
@@ -426,6 +432,7 @@ def _create_schema(connection: sqlite3.Connection) -> None:
             regulatory_source TEXT,
             regulator TEXT,
             regulator_jurisdiction TEXT,
+            issuing_agencies TEXT NOT NULL,
             issued_date TEXT,
             risk_level TEXT,
             category TEXT,
@@ -645,6 +652,7 @@ def _source_summary(group: _SourceGroup) -> RedFlagSourceSummary:
         categories=_sorted_scalar_values(rows, "category"),
         risk_levels=_sorted_scalar_values(rows, "risk_level"),
         product_types=_sorted_list_values(rows, "product_types"),
+        issuing_agencies=_sorted_list_values(rows, "issuing_agencies"),
         red_flag_ids=[row["id"] for row in rows],
     )
 

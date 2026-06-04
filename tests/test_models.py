@@ -50,6 +50,23 @@ def test_current_yaml_validates():
     assert len(parsed) == 14
 
 
+def test_source_files_001_through_038_have_empty_issuing_agencies():
+    source_dir = Path(__file__).resolve().parent.parent / "data/source"
+    paths = sorted(source_dir.glob("0[0-3][0-9]*.yaml"))
+    scoped_paths = [
+        path
+        for path in paths
+        if path.name[:3].isdigit() and 1 <= int(path.name[:3]) <= 38
+    ]
+
+    assert len(scoped_paths) == 38
+
+    for path in scoped_paths:
+        records = yaml.safe_load(path.read_text())
+        for record in records:
+            assert record["issuing_agencies"] == [], f"{path.name} {record['id']}"
+
+
 def test_enriched_yaml_metadata_validates_and_is_preserved():
     source = RedFlagSource(
         id="enriched-01",
@@ -346,12 +363,14 @@ def test_record_from_source_carries_regulator_and_date():
         regulator="OFAC",
         regulator_jurisdiction="US",
         issued_date="2023-06",
+        issuing_agencies=["OFAC", "FBI", "CISA", "State"],
     )
     vector = [0.0] * EMBEDDING_DIM
     record = RedFlagRecord.from_source(source, vector)
     assert record.regulator == "OFAC"
     assert record.regulator_jurisdiction == "US"
     assert record.issued_date == "2023-06"
+    assert record.issuing_agencies == ["OFAC", "FBI", "CISA", "State"]
 
 
 def test_result_carries_regulator_and_date():
@@ -361,6 +380,7 @@ def test_result_carries_regulator_and_date():
         regulator="FATF",
         regulator_jurisdiction="FATF",
         issued_date="2021",
+        issuing_agencies=["FATF", "World Bank"],
     )
     vector = [0.0] * EMBEDDING_DIM
     record = RedFlagRecord.from_source(source, vector)
@@ -368,6 +388,7 @@ def test_result_carries_regulator_and_date():
     assert result.regulator == "FATF"
     assert result.regulator_jurisdiction == "FATF"
     assert result.issued_date == "2021"
+    assert result.issuing_agencies == ["FATF", "World Bank"]
     assert "vector" not in result.model_dump()
 
 

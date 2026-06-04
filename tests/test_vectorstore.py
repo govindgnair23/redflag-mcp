@@ -30,6 +30,7 @@ def make_record(
     regulatory_source: str | None = "FinCEN Alert",
     regulator: str | None = None,
     regulator_jurisdiction: str | None = None,
+    issuing_agencies: list[str] | None = None,
     source_url: str | None = "https://example.com/source.pdf",
     typology_family: list[str] | None = None,
     transaction_patterns: list[str] | None = None,
@@ -44,6 +45,7 @@ def make_record(
         regulatory_source=regulatory_source,
         regulator=regulator,
         regulator_jurisdiction=regulator_jurisdiction,
+        issuing_agencies=issuing_agencies or [],
         risk_level=risk_level,
         category=category,
         source_url=source_url,
@@ -64,6 +66,27 @@ def test_upsert_updates_existing_record(tmp_vectors_dir):
 
     assert table.count_rows() == 1
     assert get_by_id(table, "one").description == "New"
+
+
+def test_issuing_agencies_round_trip_through_vector_store(tmp_vectors_dir):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            make_record(
+                "joint",
+                vector(1.0),
+                regulator="OFAC",
+                regulator_jurisdiction="US",
+                issuing_agencies=["OFAC", "FBI", "CISA", "State"],
+            )
+        ],
+    )
+
+    result = get_by_id(table, "joint")
+
+    assert result.issuing_agencies == ["OFAC", "FBI", "CISA", "State"]
+    assert result.regulator == "OFAC"
 
 
 def test_search_returns_ranked_results(tmp_vectors_dir):

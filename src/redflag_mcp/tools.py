@@ -16,6 +16,7 @@ from pydantic import Field
 from redflag_mcp.config import (
     CATEGORIES,
     CUSTOMER_PROFILES,
+    GEOGRAPHIC_FOOTPRINTS,
     INDUSTRY_GROUPS,
     INDUSTRY_TYPES,
     PRODUCT_TYPES,
@@ -45,10 +46,11 @@ from redflag_mcp.vectorstore import (
 MAX_SEARCH_LIMIT = 20
 MAX_QUERY_LENGTH = 1000
 MAX_FILTER_VALUES = 25
+RESPONSE_DETAILS = frozenset({"full", "concise"})
 ROUTE_NEEDS_MORE_CONTEXT = "needs_more_context"
 ROUTE_METADATA_FILTER = "metadata_filter"
-ROUTE_FILTERED_SEMANTIC_SEARCH = "filtered_semantic_search"
-ROUTE_DIRECT_SEMANTIC_SEARCH = "direct_semantic_search"
+ROUTE_FILTERED_RELEVANCE_SEARCH = "filtered_relevance_search"
+ROUTE_DIRECT_RELEVANCE_SEARCH = "direct_relevance_search"
 PRIMARY_FILTER_FIELDS = (
     "product_types",
     "industry_types",
@@ -129,6 +131,10 @@ IndustryGroupsValue: TypeAlias = Annotated[
     list[str],
     Field(json_schema_extra=_list_enum_schema(INDUSTRY_GROUPS)),
 ]
+GeographicFootprintsValue: TypeAlias = Annotated[
+    list[str],
+    Field(json_schema_extra=_list_enum_schema(GEOGRAPHIC_FOOTPRINTS)),
+]
 IndustryTypesValue: TypeAlias = Annotated[
     list[str],
     Field(json_schema_extra=_list_enum_schema(INDUSTRY_TYPES)),
@@ -161,10 +167,14 @@ TypologyFamiliesValue: TypeAlias = Annotated[
     list[str],
     Field(json_schema_extra=_list_enum_schema(TYPOLOGY_FAMILIES)),
 ]
+ResponseDetailValue: TypeAlias = Annotated[
+    str,
+    Field(json_schema_extra=_string_enum_schema(RESPONSE_DETAILS)),
+]
 
 SEARCH_DESCRIPTION = """Search AML red flags using natural-language context and optional filters.
 
-Agent guidance: use classify_red_flag_request before searching for ambiguous "what red flags apply" requests. If the user's request is vague, briefly ask for product/channel, industry, customer profile, geography, and transaction channel or volume before searching. If the request already names those details or has a specific scenario, search directly. Call list_filters when you need valid filter values. Use filter_red_flags for exact metadata requests and exhaustive enumeration; use search_red_flags for ranked relevance questions. For broad investigative topics such as human trafficking red flags, use subjects as an eligibility filter. For broad sector requests such as trade logistics red flags, use industry_groups as an eligibility filter. For country or jurisdiction requests, translate names to regulator_jurisdiction codes before filtering, such as France -> FR, Singapore -> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> US, and European Union/EU regulators -> EU."""
+Agent guidance: use classify_red_flag_request before searching for ambiguous "what red flags apply" requests; skip that extra call when the user already gives specific metadata filters or a concrete scenario. If the user's request is vague, briefly ask for product/channel, industry, customer profile, geography, and transaction channel or volume before searching. If the request already names those details or has a specific scenario, search directly. Call list_filters when you need valid filter values. Use filter_red_flags for exact metadata requests and exhaustive enumeration; use search_red_flags for ranked relevance questions and increase limit for more ranked results because search has no cursor. For broad investigative topics such as human trafficking red flags, use subjects as an eligibility filter. Category is the primary record classification; subjects is a broader eligibility layer that catches cross-category flags; typology_family is a broader proceeds or typology grouping. For example, a human-trafficking-relevant darknet crypto flag can have category="virtual_currency" while matching subjects=["human_trafficking"]. For broad sector requests such as trade logistics red flags, use industry_groups as an eligibility filter. regulator_jurisdiction describes issuer jurisdiction; geographic_footprints describes affected geography or typology geography. For country or jurisdiction requests about issuing regulators, translate names to regulator_jurisdiction codes before filtering, such as France -> FR, Singapore -> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> US, and European Union/EU regulators -> EU."""
 
 
 @dataclass
@@ -293,6 +303,7 @@ class RedFlagService:
         *,
         limit: int = 5,
         cursor: str | None = None,
+        detail: str = "full",
         product_types: list[str] | None = None,
         industry_types: list[str] | None = None,
         industry_groups: list[str] | None = None,
@@ -311,6 +322,15 @@ class RedFlagService:
         source_url: str | None = None,
         source_id: str | None = None,
     ) -> dict[str, Any]:
+        if detail not in RESPONSE_DETAILS:
+            return {
+                "message": (
+                    f"Unknown detail value: {detail}. Use one of: "
+                    f"{', '.join(sorted(RESPONSE_DETAILS))}."
+                ),
+                "match_type": "metadata_filter",
+                "results": [],
+            }
         validation_error = _validate_filter_cardinality(
             product_types=product_types,
             industry_types=industry_types,
@@ -327,6 +347,7 @@ class RedFlagService:
                 industry_types=industry_types,
                 industry_groups=industry_groups,
                 customer_profiles=customer_profiles,
+                geographic_footprints=geographic_footprints,
                 typology_family=typology_family,
                 transaction_patterns=transaction_patterns,
                 subjects=subjects,
@@ -457,7 +478,8 @@ class RedFlagService:
                 "truncated": next_cursor is not None,
                 "next_cursor": next_cursor,
                 "results": [
-                    result.model_dump(exclude_none=True) for result in page.results
+                    _dump_filter_result(result, detail=detail)
+                    for result in page.results
                 ],
             }
         )
@@ -527,13 +549,13 @@ class RedFlagService:
         rich_narrative = _has_rich_narrative(query)
 
         if enough_filters and rich_narrative:
-            route = ROUTE_FILTERED_SEMANTIC_SEARCH
+            route = ROUTE_FILTERED_RELEVANCE_SEARCH
             recommended_tool = "search_red_flags"
             recommended_arguments = {"query": query, "limit": clamped_limit, **filters}
             follow_up_question = None
             reason = (
                 "The request includes usable metadata filters and a specific "
-                "scenario for semantic ranking."
+                "scenario for ranked relevance search."
             )
         elif enough_filters:
             route = ROUTE_METADATA_FILTER
@@ -542,16 +564,16 @@ class RedFlagService:
             follow_up_question = None
             reason = (
                 "The request includes enough structured metadata and no rich "
-                "scenario requiring semantic ranking."
+                "scenario requiring ranked relevance search."
             )
         elif rich_narrative:
-            route = ROUTE_DIRECT_SEMANTIC_SEARCH
+            route = ROUTE_DIRECT_RELEVANCE_SEARCH
             recommended_tool = "search_red_flags"
             recommended_arguments = {"query": query, "limit": clamped_limit, **filters}
             follow_up_question = None
             reason = (
                 "The request lacks enough metadata filters but has enough "
-                "narrative detail for direct semantic search."
+                "narrative detail for direct ranked relevance search."
             )
         else:
             route = ROUTE_NEEDS_MORE_CONTEXT
@@ -563,7 +585,7 @@ class RedFlagService:
             )
             reason = (
                 "The request lacks enough structured metadata and is too vague "
-                "for useful semantic ranking."
+                "for useful ranked relevance search."
             )
 
         return {
@@ -639,8 +661,10 @@ def register_tools(mcp: FastMCP) -> None:
             "Classify an AML red flag request before searching when the user asks "
             "which red flags apply to a product, customer, geography, industry, "
             "scenario, transaction pattern, or institution profile. Returns one "
-            "route: needs_more_context, metadata_filter, filtered_semantic_search, "
-            "or direct_semantic_search, plus the recommended next tool and arguments."
+            "route: needs_more_context, metadata_filter, filtered_relevance_search, "
+            "or direct_relevance_search, plus the recommended next tool and arguments. "
+            "Use it for ambiguous 'what red flags apply' requests; skip it when "
+            "the user already gives specific metadata filters or a concrete scenario."
         )
     )
     def classify_red_flag_request(
@@ -650,7 +674,7 @@ def register_tools(mcp: FastMCP) -> None:
         industry_types: IndustryTypesValue | None = None,
         industry_groups: IndustryGroupsValue | None = None,
         customer_profiles: CustomerProfilesValue | None = None,
-        geographic_footprints: list[str] | None = None,
+        geographic_footprints: GeographicFootprintsValue | None = None,
         subjects: SubjectsValue | None = None,
         category: CategoryValue | None = None,
         risk_level: RiskLevelValue | None = None,
@@ -678,7 +702,7 @@ def register_tools(mcp: FastMCP) -> None:
         industry_types: IndustryTypesValue | None = None,
         industry_groups: IndustryGroupsValue | None = None,
         customer_profiles: CustomerProfilesValue | None = None,
-        geographic_footprints: list[str] | None = None,
+        geographic_footprints: GeographicFootprintsValue | None = None,
         subjects: SubjectsValue | None = None,
         category: CategoryValue | None = None,
         risk_level: RiskLevelValue | None = None,
@@ -702,30 +726,39 @@ def register_tools(mcp: FastMCP) -> None:
 
     @mcp.tool(
         description=(
-            "Return AML red flags for exact metadata criteria without semantic "
-            "embedding search. Use this for exact metadata requests, broad "
+            "Return AML red flags for exact metadata criteria without ranked "
+            "relevance search. Use this for exact metadata requests, broad "
             "investigative subjects, and broad industry groups, such as high-risk "
             "depository structuring red flags, FINTRAC human trafficking red flags "
             "with subjects, trade logistics red flags with industry_groups, or red "
-            "flags from regulators in France. Paginate with next_cursor whenever "
-            "truncated is true. "
+            "flags from regulators in France. category is the primary record "
+            "classification; subjects is a broader eligibility layer that catches "
+            "cross-category flags; typology_family is a broader proceeds or "
+            "typology grouping. For example, a human-trafficking-relevant darknet "
+            "crypto flag can have category=\"virtual_currency\" while matching "
+            "subjects=[\"human_trafficking\"]. Paginate with next_cursor whenever "
+            "truncated is true; search_red_flags is ranked and limit-based, with "
+            "no cursor. "
             "For country or jurisdiction requests, translate names to ISO-style "
             "regulator_jurisdiction codes before filtering: France -> FR, Singapore "
             "-> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> "
             "US, and European Union/EU regulators -> EU. Prefer "
             "filter_red_flags(regulator_jurisdiction=\"FR\") for requests like "
-            "\"red flags from regulators in France.\" Use search_red_flags instead "
-            "for open-ended relevance questions."
+            "\"red flags from regulators in France.\" regulator_jurisdiction "
+            "describes issuer jurisdiction; geographic_footprints describes affected "
+            "geography or typology geography. Use search_red_flags instead for "
+            "open-ended relevance questions."
         )
     )
     def filter_red_flags(
         limit: int = 5,
         cursor: str | None = None,
+        detail: ResponseDetailValue = "full",
         product_types: ProductTypesValue | None = None,
         industry_types: IndustryTypesValue | None = None,
         industry_groups: IndustryGroupsValue | None = None,
         customer_profiles: CustomerProfilesValue | None = None,
-        geographic_footprints: list[str] | None = None,
+        geographic_footprints: GeographicFootprintsValue | None = None,
         typology_family: TypologyFamiliesValue | None = None,
         transaction_patterns: TransactionPatternsValue | None = None,
         subjects: SubjectsValue | None = None,
@@ -744,6 +777,7 @@ def register_tools(mcp: FastMCP) -> None:
         return _service_from_context(ctx).filter_red_flags(
             limit=limit,
             cursor=cursor,
+            detail=detail,
             product_types=product_types,
             industry_types=industry_types,
             industry_groups=industry_groups,
@@ -773,11 +807,14 @@ def register_tools(mcp: FastMCP) -> None:
     @mcp.tool(
         description=(
             "List available filter values for product_types, industry_types, "
-            "customer_profiles, geographic_footprints, typology_family, "
-            "transaction_patterns, category, risk_level, regulator, and "
-            "regulator_jurisdiction. Agents should call this before or during "
-            "consultation when they need valid local filter values, especially "
-            "when unsure which regulator_jurisdiction codes are available."
+            "industry_groups, customer_profiles, geographic_footprints, subjects, "
+            "typology_family, transaction_patterns, category, risk_level, regulator, "
+            "and regulator_jurisdiction. Agents should call this before or during "
+            "consultation when they need valid local filter values. category is the "
+            "primary record classification; subjects is the broad investigative "
+            "eligibility layer; typology_family is a broader proceeds or typology "
+            "grouping. regulator_jurisdiction describes issuer jurisdiction; "
+            "geographic_footprints describes affected geography or typology geography."
         )
     )
     def list_filters(ctx: Context | None = None) -> dict[str, Any]:
@@ -814,6 +851,27 @@ def _service_from_context(ctx: Context | None) -> RedFlagService:
     if state.service is None:
         raise RuntimeError(state.readiness.message)
     return state.service
+
+
+def _dump_filter_result(result: RedFlagResult, *, detail: str) -> dict[str, Any]:
+    if detail == "full":
+        return result.model_dump(exclude_none=True)
+    concise_fields = (
+        "id",
+        "description",
+        "regulatory_source",
+        "regulator",
+        "regulator_jurisdiction",
+        "issuing_agencies",
+        "risk_level",
+        "source_url",
+    )
+    payload = result.model_dump(include=set(concise_fields), exclude_none=True)
+    return {
+        field: payload[field]
+        for field in concise_fields
+        if field in payload and payload[field] not in (None, [], "")
+    }
 
 
 def _add_fit_explanations(
@@ -861,7 +919,7 @@ def _add_fit_explanations(
         if result.regulator:
             signals.append(f"Regulator is {result.regulator}.")
         if not signals:
-            signals.append("Semantic match to the query context.")
+            signals.append("Ranked relevance match to the query context.")
         result.fit_signals = signals
         result.fit_explanation = " ".join(signals[:3])
 
@@ -906,6 +964,7 @@ def _validate_public_search_inputs(
         industry_types=industry_types,
         industry_groups=industry_groups,
         customer_profiles=customer_profiles,
+        geographic_footprints=geographic_footprints,
         subjects=subjects,
     )
 
@@ -926,6 +985,7 @@ def _validate_known_filter_values(**filters: list[str] | None) -> str | None:
         "industry_types": INDUSTRY_TYPES,
         "industry_groups": INDUSTRY_GROUPS,
         "customer_profiles": CUSTOMER_PROFILES,
+        "geographic_footprints": GEOGRAPHIC_FOOTPRINTS,
         "typology_family": TYPOLOGY_FAMILIES,
         "transaction_patterns": TRANSACTION_PATTERNS,
         "subjects": SUBJECTS,

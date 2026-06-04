@@ -84,6 +84,8 @@ For each indicator identified in Step 1, populate the following fields:
 
 - "regulator" (string): Abbreviated name of the issuing regulatory authority. Choose from: {sorted(REGULATORS)}. Use null when the issuing authority is not represented in the list or cannot be identified from the document.
 
+- "issuing_agencies" (list of strings): All agencies that issued the source document when the regulatory document was issued by multiple agencies, including joint or interagency advisories and other multi-agency issuances. Include the primary regulator when it is one of the issuers. Use an empty list when no multiple-agency issuer information is implied.
+
 - Do not emit regulator_jurisdiction. It is assigned deterministically by code from the extracted regulator after validation.
 
 - "issued_date" (string): Publication date of the issuing document in ISO 8601 format (YYYY-MM-DD). Use YYYY-MM if only the month is known, YYYY if only the year is known. Use null if the date cannot be determined from the document.
@@ -122,6 +124,7 @@ Source: "Non-routine foreign exchange transactions that may indirectly involve s
   "geographic_footprints": [],
   "regulatory_source": "FinCEN Alert FIN-2022-Alert001",
   "regulator": "FinCEN",
+  "issuing_agencies": [],
   "issued_date": "2022-06",
   "risk_level": "high",
   "category": "sanctions_evasion",
@@ -177,6 +180,7 @@ Source: "Failure to escalate the discrepancy in Customer G's business activity b
   "geographic_footprints": [],
   "regulatory_source": "Regulatory case narrative",
   "regulator": null,
+  "issuing_agencies": [],
   "issued_date": null,
   "risk_level": "medium",
   "category": "customer_due_diligence",
@@ -221,6 +225,7 @@ Because the document has an explicit "Red Flags: Indicia of Sham Transactions" s
   "geographic_footprints": [],
   "regulatory_source": "OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions Evasion",
   "regulator": "OFAC",
+  "issuing_agencies": [],
   "issued_date": "2026-03-31",
   "risk_level": "medium",
   "category": "sanctions_evasion",
@@ -238,6 +243,7 @@ Because the document has an explicit "Red Flags: Indicia of Sham Transactions" s
   "geographic_footprints": [],
   "regulatory_source": "OFAC Sanctions Advisory: Guidance on Sham Transactions and Sanctions Evasion",
   "regulator": "OFAC",
+  "issuing_agencies": [],
   "issued_date": "2026-03-31",
   "risk_level": "medium",
   "category": "sanctions_evasion",

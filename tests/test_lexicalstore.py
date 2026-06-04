@@ -25,6 +25,7 @@ def make_record(
     regulatory_source: str | None = "FinCEN Alert",
     regulator: str | None = None,
     regulator_jurisdiction: str | None = None,
+    issuing_agencies: list[str] | None = None,
     issued_date: str | None = None,
     source_url: str | None = "https://example.com/source.pdf",
     typology_family: list[str] | None = None,
@@ -41,6 +42,7 @@ def make_record(
         regulatory_source=regulatory_source,
         regulator=regulator,
         regulator_jurisdiction=regulator_jurisdiction,
+        issuing_agencies=issuing_agencies or [],
         issued_date=issued_date,
         risk_level=risk_level,
         category=category,
@@ -190,6 +192,7 @@ def test_enriched_metadata_round_trips_through_lexical_store(tmp_path):
                 key_terms=["TBML", "invoice mismatch"],
                 regulator="FinCEN",
                 regulator_jurisdiction="US",
+                issuing_agencies=["FinCEN", "State", "FBI"],
                 issued_date="2022-06",
             )
         ],
@@ -205,6 +208,7 @@ def test_enriched_metadata_round_trips_through_lexical_store(tmp_path):
     assert result.key_terms == ["TBML", "invoice mismatch"]
     assert result.regulator == "FinCEN"
     assert result.regulator_jurisdiction == "US"
+    assert result.issuing_agencies == ["FinCEN", "State", "FBI"]
     assert result.issued_date == "2022-06"
 
 
@@ -425,7 +429,7 @@ def test_open_does_not_surface_verified_placeholder_sqlite_hash(tmp_path):
 
     corpus = LexicalStore.open(db_path).corpus
 
-    assert corpus.file_hashes["redflags.sqlite"] == "0" * 64
+    assert "redflags.sqlite" not in corpus.file_hashes
     assert corpus.integrity_status == "unverified"
 
 
