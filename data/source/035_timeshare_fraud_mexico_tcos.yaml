@@ -18,6 +18,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -57,6 +58,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -90,6 +92,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: structuring
@@ -123,6 +126,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -158,6 +162,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: shell_company
@@ -190,6 +195,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: shell_company
@@ -222,6 +228,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: shell_company
@@ -257,6 +264,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: high
   category: fraud_nexus
@@ -294,6 +302,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -327,6 +336,7 @@
     Fraud Associated with Mexico-Based Transnational Criminal Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-07-16'
   risk_level: high
   category: sanctions_evasion

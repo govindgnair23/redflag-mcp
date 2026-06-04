@@ -9,6 +9,7 @@
   regulatory_source: FinCEN Alert FIN-2020-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -38,6 +39,7 @@
   regulatory_source: FinCEN Alert FIN-2020-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -67,6 +69,7 @@
   regulatory_source: FinCEN Alert FIN-2020-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -93,6 +96,7 @@
   regulatory_source: FinCEN Alert FIN-2020-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -119,6 +123,7 @@
   regulatory_source: FinCEN Alert FIN-2020-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-16'
   risk_level: medium
   category: fraud_nexus
@@ -147,6 +152,7 @@
   regulatory_source: FinCEN Alert FIN-2020-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-16'
   risk_level: high
   category: fraud_nexus

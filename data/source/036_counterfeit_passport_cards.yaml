@@ -14,6 +14,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -40,6 +41,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -67,6 +69,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -93,6 +96,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -121,6 +125,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -147,6 +152,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -174,6 +180,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: medium
   category: fraud_nexus
@@ -203,6 +210,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: medium
   category: fraud_nexus
@@ -228,6 +236,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: medium
   category: fraud_nexus
@@ -254,6 +263,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -281,6 +291,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: medium
   category: fraud_nexus
@@ -310,6 +321,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -341,6 +353,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: medium
   category: fraud_nexus
@@ -369,6 +382,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -400,6 +414,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: fraud_nexus
@@ -428,6 +443,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: medium
   category: fraud_nexus
@@ -456,6 +472,7 @@
     Perpetrate Identity Theft and Fraud Schemes at Financial Institutions
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-04-15'
   risk_level: high
   category: structuring

@@ -16,6 +16,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: high
   category: cyber_enabled
@@ -47,6 +48,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: high
   category: cyber_enabled
@@ -73,6 +75,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: high
   category: virtual_currency
@@ -106,6 +109,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: medium
   category: cyber_enabled
@@ -134,6 +138,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: medium
   category: virtual_currency
@@ -168,6 +173,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: medium
   category: fraud_nexus
@@ -197,6 +203,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: medium
   category: virtual_currency
@@ -227,6 +234,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: medium
   category: virtual_currency
@@ -260,6 +268,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: medium
   category: virtual_currency
@@ -288,6 +297,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: high
   category: virtual_currency
@@ -318,6 +328,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: high
   category: virtual_currency
@@ -343,6 +354,7 @@
     System to Facilitate Ransom Payments
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-11-08'
   risk_level: medium
   category: virtual_currency

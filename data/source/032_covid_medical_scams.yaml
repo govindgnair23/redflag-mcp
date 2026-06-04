@@ -17,6 +17,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -51,6 +52,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -87,6 +89,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -121,6 +124,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -154,6 +158,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -191,6 +196,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -222,6 +228,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: low
   category: fraud_nexus
@@ -259,6 +266,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: shell_company
@@ -295,6 +303,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: shell_company
@@ -329,6 +338,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: trade_based_money_laundering
@@ -362,6 +372,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: low
   category: shell_company
@@ -394,6 +405,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: trade_based_money_laundering
@@ -429,6 +441,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: trade_based_money_laundering
@@ -462,6 +475,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -495,6 +509,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -522,6 +537,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -556,6 +572,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -592,6 +609,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -626,6 +644,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: shell_company
@@ -662,6 +681,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -698,6 +718,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -732,6 +753,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -769,6 +791,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: medium
   category: fraud_nexus
@@ -800,6 +823,7 @@
     Disease 2019 (COVID-19)
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-05-18'
   risk_level: low
   category: fraud_nexus

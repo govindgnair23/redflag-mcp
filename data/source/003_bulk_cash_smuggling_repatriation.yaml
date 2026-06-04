@@ -22,6 +22,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: high
   category: layering
@@ -56,6 +57,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: high
   category: layering
@@ -86,6 +88,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: medium
   category: layering
@@ -117,6 +120,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: medium
   category: layering
@@ -149,6 +153,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: medium
   category: layering
@@ -183,6 +188,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: high
   category: layering
@@ -217,6 +223,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: medium
   category: layering
@@ -248,6 +255,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: medium
   category: layering
@@ -280,6 +288,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: high
   category: layering
@@ -312,6 +321,7 @@
   regulatory_source: FinCEN Alert FIN-2025-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-03-31'
   risk_level: medium
   category: layering

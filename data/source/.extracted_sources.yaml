@@ -262,3 +262,7 @@
   slug: 083
   output_file: data/source/083.yaml
   extracted_at: '2026-06-03T00:14:27.592499+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/084.pdf
+  slug: 084
+  output_file: data/source/084.yaml
+  extracted_at: '2026-06-04T01:12:00.339845+00:00'

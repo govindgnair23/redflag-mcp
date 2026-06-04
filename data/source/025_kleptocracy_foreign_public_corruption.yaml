@@ -14,6 +14,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: corruption
@@ -41,6 +42,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: corruption
@@ -67,6 +69,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: corruption
@@ -98,6 +101,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: corruption
@@ -126,6 +130,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: corruption
@@ -156,6 +161,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: shell_company
@@ -190,6 +196,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: trade_based_money_laundering
@@ -219,6 +226,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: fraud_nexus
@@ -248,6 +256,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: fraud_nexus
@@ -278,6 +287,7 @@
   regulatory_source: FIN-2022-A001 Advisory on Kleptocracy and Foreign Public Corruption
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-04-14'
   risk_level: medium
   category: shell_company

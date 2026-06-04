@@ -15,6 +15,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: structuring
@@ -45,6 +46,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: high
   category: structuring
@@ -74,6 +76,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: virtual_currency
@@ -107,6 +110,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: high
   category: fraud_nexus
@@ -138,6 +142,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: fraud_nexus
@@ -165,6 +170,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: high
   category: fraud_nexus
@@ -194,6 +200,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: high
   category: fraud_nexus
@@ -227,6 +234,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: high
   category: fraud_nexus
@@ -258,6 +266,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: fraud_nexus
@@ -290,6 +299,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: structuring
@@ -320,6 +330,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: shell_company
@@ -347,6 +358,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: fraud_nexus
@@ -374,6 +386,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: high
   category: fraud_nexus
@@ -406,6 +419,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: medium
   category: fraud_nexus
@@ -433,6 +447,7 @@
     for Scam Payments and Other Illicit Activity
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-04'
   risk_level: high
   category: structuring

@@ -17,6 +17,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: medium
   category: human_smuggling
@@ -47,6 +48,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: medium
   category: human_smuggling
@@ -77,6 +79,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: medium
   category: human_smuggling
@@ -104,6 +107,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: low
   category: human_smuggling
@@ -131,6 +135,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: medium
   category: human_smuggling
@@ -157,6 +162,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: low
   category: human_smuggling
@@ -182,6 +188,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: medium
   category: human_smuggling
@@ -209,6 +216,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-13'
   risk_level: medium
   category: layering

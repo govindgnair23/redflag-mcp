@@ -18,6 +18,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -49,6 +50,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -79,6 +81,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -109,6 +112,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -141,6 +145,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: layering
@@ -172,6 +177,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -198,6 +204,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -226,6 +233,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: shell_company
@@ -254,6 +262,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: low
   category: fraud_nexus
@@ -282,6 +291,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -312,6 +322,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: layering
@@ -346,6 +357,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: layering
@@ -384,6 +396,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -418,6 +431,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: high
   category: fraud_nexus
@@ -450,6 +464,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus
@@ -480,6 +495,7 @@
     Care-Related Fraud
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2021-02-02'
   risk_level: medium
   category: fraud_nexus

@@ -18,6 +18,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -47,6 +48,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: fraud_nexus
@@ -83,6 +85,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -116,6 +119,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -147,6 +151,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -182,6 +187,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -217,6 +223,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -244,6 +251,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -274,6 +282,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -304,6 +313,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: shell_company
@@ -339,6 +349,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -375,6 +386,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -409,6 +421,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -441,6 +454,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -471,6 +485,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -500,6 +515,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -529,6 +545,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: layering
@@ -562,6 +579,7 @@
     by Mexico-Based Transnational Criminal Organizations to Launder Illicit Proceeds
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-08-28'
   risk_level: medium
   category: shell_company

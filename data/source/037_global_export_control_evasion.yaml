@@ -14,6 +14,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: medium
   category: trade_based_money_laundering
@@ -42,6 +43,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: medium
   category: shell_company
@@ -72,6 +74,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: medium
   category: shell_company
@@ -101,6 +104,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: low
   category: layering
@@ -129,6 +133,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: medium
   category: trade_based_money_laundering
@@ -162,6 +167,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: medium
   category: trade_based_money_laundering
@@ -197,6 +203,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: high
   category: sanctions_evasion
@@ -231,6 +238,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: high
   category: proliferation_financing
@@ -263,6 +271,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: high
   category: shell_company
@@ -300,6 +309,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: high
   category: trade_based_money_laundering
@@ -334,6 +344,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: medium
   category: trade_based_money_laundering
@@ -366,6 +377,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: high
   category: sanctions_evasion
@@ -399,6 +411,7 @@
     and Highlight Red Flags Relating to Global Evasion of U.S. Export Controls
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-11-06'
   risk_level: medium
   category: trade_based_money_laundering

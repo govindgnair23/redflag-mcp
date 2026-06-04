@@ -17,6 +17,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -56,6 +57,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -90,6 +92,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -124,6 +127,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -156,6 +160,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -188,6 +193,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -224,6 +230,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -256,6 +263,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: layering
@@ -292,6 +300,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: terrorist_financing
@@ -326,6 +335,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: virtual_currency
@@ -361,6 +371,7 @@
     and Syria (ISIS) and its Global Affiliates
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-04-01'
   risk_level: medium
   category: cyber_enabled

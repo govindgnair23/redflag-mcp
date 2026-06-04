@@ -24,6 +24,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -53,6 +54,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: low
   category: sanctions_evasion
@@ -90,6 +92,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -126,6 +129,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: high
   category: sanctions_evasion
@@ -151,6 +155,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: low
   category: shell_company
@@ -181,6 +186,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -220,6 +226,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -251,6 +258,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -280,6 +288,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: shell_company
@@ -318,6 +327,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -348,6 +358,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -384,6 +395,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -413,6 +425,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: trade_based_money_laundering
@@ -439,6 +452,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: shell_company
@@ -466,6 +480,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: high
   category: sanctions_evasion
@@ -496,6 +511,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: high
   category: sanctions_evasion
@@ -530,6 +546,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -566,6 +583,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: proliferation_financing
@@ -599,6 +617,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -631,6 +650,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: high
   category: sanctions_evasion
@@ -668,6 +688,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion
@@ -702,6 +723,7 @@
     Russian and Belarusian Export Control Evasion Attempts
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-06-28'
   risk_level: medium
   category: sanctions_evasion

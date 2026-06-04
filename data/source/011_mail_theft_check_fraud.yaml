@@ -11,6 +11,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus
@@ -36,6 +37,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus
@@ -61,6 +63,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: low
   category: fraud_nexus
@@ -86,6 +89,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus
@@ -111,6 +115,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus
@@ -136,6 +141,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus
@@ -162,6 +168,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus
@@ -187,6 +194,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: low
   category: fraud_nexus
@@ -212,6 +220,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus
@@ -240,6 +249,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert003
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-02-27'
   risk_level: medium
   category: fraud_nexus

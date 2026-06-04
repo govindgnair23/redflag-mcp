@@ -19,6 +19,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: trade_based_money_laundering
@@ -55,6 +56,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: trade_based_money_laundering
@@ -85,6 +87,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: trade_based_money_laundering
@@ -120,6 +123,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: trade_based_money_laundering
@@ -153,6 +157,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: shell_company
@@ -187,6 +192,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: trade_based_money_laundering
@@ -220,6 +226,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: trade_based_money_laundering
@@ -251,6 +258,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: medium
   category: trade_based_money_laundering
@@ -286,6 +294,7 @@
     Russian Export Control Evasion Attempts'
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-05-19'
   risk_level: high
   category: sanctions_evasion

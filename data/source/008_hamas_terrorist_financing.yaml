@@ -18,6 +18,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-10-20'
   risk_level: high
   category: sanctions_evasion
@@ -51,6 +52,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-10-20'
   risk_level: medium
   category: terrorist_financing
@@ -87,6 +89,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-10-20'
   risk_level: medium
   category: terrorist_financing
@@ -125,6 +128,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-10-20'
   risk_level: high
   category: terrorist_financing
@@ -160,6 +164,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-10-20'
   risk_level: high
   category: terrorist_financing
@@ -191,6 +196,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-10-20'
   risk_level: medium
   category: terrorist_financing
@@ -219,6 +225,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert006
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-10-20'
   risk_level: high
   category: terrorist_financing

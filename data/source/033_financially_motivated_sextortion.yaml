@@ -18,6 +18,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus
@@ -50,6 +51,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus
@@ -80,6 +82,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus
@@ -112,6 +115,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: virtual_currency
@@ -142,6 +146,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus
@@ -173,6 +178,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus
@@ -203,6 +209,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus
@@ -236,6 +243,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus
@@ -271,6 +279,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: virtual_currency
@@ -301,6 +310,7 @@
   regulatory_source: FinCEN Notice on Financially Motivated Sextortion
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-09-08'
   risk_level: medium
   category: fraud_nexus

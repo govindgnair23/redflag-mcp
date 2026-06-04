@@ -22,6 +22,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -56,6 +57,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -90,6 +92,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: shell_company
@@ -125,6 +128,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -158,6 +162,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -193,6 +198,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -226,6 +232,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -261,6 +268,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: shell_company
@@ -295,6 +303,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -331,6 +340,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -366,6 +376,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: trade_based_money_laundering
@@ -400,6 +411,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: high
   category: shell_company
@@ -432,6 +444,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: shell_company
@@ -472,6 +485,7 @@
     Schemes on the U.S. Southwest Border Associated with Mexico-Based Cartels
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2025-05-01'
   risk_level: medium
   category: sanctions_evasion

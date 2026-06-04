@@ -17,6 +17,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: shell_company
@@ -44,6 +45,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -72,6 +74,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -100,6 +103,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -129,6 +133,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: shell_company
@@ -158,6 +163,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: shell_company
@@ -191,6 +197,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: high
   category: shell_company
@@ -221,6 +228,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -248,6 +256,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: shell_company
@@ -274,6 +283,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -304,6 +314,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -333,6 +344,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -362,6 +374,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -389,6 +402,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: layering
@@ -419,6 +433,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: shell_company
@@ -451,6 +466,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: layering
@@ -480,6 +496,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: fraud_nexus
@@ -507,6 +524,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: layering
@@ -536,6 +554,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: corruption
@@ -564,6 +583,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: layering
@@ -590,6 +610,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: layering
@@ -620,6 +641,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: high
   category: structuring
@@ -651,6 +673,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: layering
@@ -681,6 +704,7 @@
     Medicare, Medicaid, and Other Federal and State Health Care Benefit Programs
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-03-30'
   risk_level: medium
   category: layering

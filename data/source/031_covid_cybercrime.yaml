@@ -16,6 +16,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -48,6 +49,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -80,6 +82,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -110,6 +113,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -139,6 +143,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -167,6 +172,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -197,6 +203,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -226,6 +233,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -257,6 +265,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -287,6 +296,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: low
   category: cyber_enabled
@@ -320,6 +330,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -351,6 +362,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -383,6 +395,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -414,6 +427,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -443,6 +457,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -474,6 +489,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: cyber_enabled
@@ -504,6 +520,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus
@@ -535,6 +552,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: high
   category: fraud_nexus
@@ -568,6 +586,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: high
   category: fraud_nexus
@@ -598,6 +617,7 @@
     Exploiting the Coronavirus Disease 2019 (COVID-19) Pandemic
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2020-07-30'
   risk_level: medium
   category: fraud_nexus

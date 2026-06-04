@@ -19,6 +19,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: medium
   category: sanctions_evasion
@@ -48,6 +49,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: medium
   category: shell_company
@@ -79,6 +81,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: medium
   category: shell_company
@@ -112,6 +115,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: medium
   category: shell_company
@@ -145,6 +149,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: medium
   category: shell_company
@@ -178,6 +183,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: high
   category: sanctions_evasion
@@ -215,6 +221,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: high
   category: sanctions_evasion
@@ -249,6 +256,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: medium
   category: shell_company
@@ -281,6 +289,7 @@
   regulatory_source: FinCEN Alert FIN-2023-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-01-25'
   risk_level: low
   category: layering

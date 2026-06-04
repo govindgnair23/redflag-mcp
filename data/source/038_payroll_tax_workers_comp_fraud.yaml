@@ -17,6 +17,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: shell_company
@@ -46,6 +47,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: shell_company
@@ -74,6 +76,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: shell_company
@@ -106,6 +109,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: fraud_nexus
@@ -136,6 +140,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: layering
@@ -167,6 +172,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: high
   category: structuring
@@ -199,6 +205,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: layering
@@ -231,6 +238,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: fraud_nexus
@@ -261,6 +269,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: tax_evasion
@@ -290,6 +299,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: low
   category: layering
@@ -320,6 +330,7 @@
     Workers’ Compensation Fraud in the Construction Sector
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2023-08-15'
   risk_level: medium
   category: fraud_nexus

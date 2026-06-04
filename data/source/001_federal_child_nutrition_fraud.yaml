@@ -13,6 +13,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
@@ -44,6 +45,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
@@ -75,6 +77,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
@@ -104,6 +107,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
@@ -132,6 +136,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
@@ -162,6 +167,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: low
   category: fraud_nexus
@@ -190,6 +196,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
@@ -218,6 +225,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: fraud_nexus
@@ -246,6 +254,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: low
   category: fraud_nexus
@@ -275,6 +284,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: layering
@@ -308,6 +318,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: high
   category: structuring
@@ -341,6 +352,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: layering
@@ -376,6 +388,7 @@
   regulatory_source: FinCEN Alert FIN-2026-Alert001
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2026-01-09'
   risk_level: medium
   category: layering

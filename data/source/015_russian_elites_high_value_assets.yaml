@@ -22,6 +22,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: high
   category: sanctions_evasion
@@ -59,6 +60,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: shell_company
@@ -93,6 +95,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: virtual_currency
@@ -125,6 +128,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: high
   category: sanctions_evasion
@@ -158,6 +162,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: shell_company
@@ -188,6 +193,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: sanctions_evasion
@@ -222,6 +228,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: high
   category: shell_company
@@ -258,6 +265,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: sanctions_evasion
@@ -290,6 +298,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: layering
@@ -319,6 +328,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: sanctions_evasion
@@ -350,6 +360,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: sanctions_evasion
@@ -382,6 +393,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: shell_company
@@ -412,6 +424,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: high
   category: sanctions_evasion
@@ -444,6 +457,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: high
   category: shell_company
@@ -479,6 +493,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: layering
@@ -512,6 +527,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: low
   category: layering
@@ -541,6 +557,7 @@
   regulatory_source: FinCEN Alert FIN-2022-Alert002
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2022-03-16'
   risk_level: medium
   category: layering

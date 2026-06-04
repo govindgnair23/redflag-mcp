@@ -24,6 +24,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: high
   category: terrorist_financing
@@ -60,6 +61,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: medium
   category: terrorist_financing
@@ -99,6 +101,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: medium
   category: terrorist_financing
@@ -141,6 +144,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: high
   category: shell_company
@@ -181,6 +185,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: high
   category: terrorist_financing
@@ -216,6 +221,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: medium
   category: terrorist_financing
@@ -254,6 +260,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: medium
   category: terrorist_financing
@@ -289,6 +296,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: medium
   category: terrorist_financing
@@ -328,6 +336,7 @@
     of Iran-Backed Terrorist Organizations
   regulator: FinCEN
   regulator_jurisdiction: US
+  issuing_agencies: []
   issued_date: '2024-05-08'
   risk_level: medium
   category: shell_company
