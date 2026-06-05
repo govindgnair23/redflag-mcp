@@ -38,6 +38,8 @@ A valid red flag answers: "What would a compliance officer or TM analyst actuall
 
 **Unit of extraction in explicit sections:** One explicit bullet or risk-factor heading equals one red flag. If a bullet, numbered item, or headed risk factor contains multiple sentences, keep the complete generic risk-factor text together as one entry. Do not split later sentences under the same bullet into separate red flags, even when a later sentence could read like a generic indicator by itself. Stop the entry at the next bullet, numbered item, risk-factor heading, or section heading.
 
+**Handling shared-subject lead-ins:** When a list of bullets is introduced by a lead-in sentence that supplies a subject for every bullet (e.g., "A customer is an individual that:", "The following indicators apply when a customer:", "Red flags include accounts that:"), each bullet is a predicate fragment, not a standalone sentence. Treat the lead-in subject as if it appears at the start of each bullet, and write each red flag's `description` as a complete sentence formed by joining the lead-in's subject with the bullet's predicate. Preserve any qualifiers from the lead-in (e.g., "that, while operating from a sanctioned jurisdiction,") and apply them to every bullet. Stop each bullet at its own terminator (semicolon, period, or next bullet). Never emit an orphaned predicate beginning with a bare verb such as "Uses...", "Opens...", or "Cashes...". Ignore any footnote references, citations, or administrative lines interleaved between bullets (e.g., "51. See ICE, News Releases and Statements.") — they are not red flags and do not break the shared-subject context.
+
 **Where to look when no explicit section exists:** If the document has no explicit red-flag, risk-factor, or indicator section, scan the entire document. Indicators may appear in narrative form within typology descriptions, advisories, and case discussions — extract those only when they pass the observability and reusable-indicator tests.
 
 **Reusable-indicator test:** A valid red flag must be generally applicable to comparable customers, transactions, counterparties, accounts, or property. It must not depend on an actual named person, named company, enforcement target, or one-off historical fact. Do not extract named persons, named companies, enforcement targets, or one-off factual examples as red flags. If a case example illustrates a generic indicator, extract the generic indicator only when the document itself supports that generic wording.
@@ -58,7 +60,7 @@ A valid red flag answers: "What would a compliance officer or TM analyst actuall
 - SAR filing instructions or recommendations
 - Regulatory directives or institutional compliance obligations
 - General typology explanations that do not describe an observable pattern
-- Document headers, section titles, introductory text, administrative text
+- Document headers, section titles, introductory text, footnote references (e.g., "51. See ICE, News Releases and Statements."), administrative text
 
 Enforcement actions and historical cases are excluded only when they describe institutional failures without a reusable observable red flag and the document has no explicit indicator section. If there is no explicit section and the same passage identifies suspicious customer activity, TM alerts, adverse news, inconsistencies between public records and FI records, or discrepancies that should trigger CDD/risk review, extract the reusable observable signal and exclude only the institutional lapse language.
 
@@ -250,6 +252,63 @@ Because the document has an explicit "Red Flags: Indicia of Sham Transactions" s
   "typology_family": ["sanctions_evasion"],
   "transaction_patterns": ["third_party_payments", "shell_company_usage"],
   "key_terms": ["blocked person", "sham transaction", "nominal owner", "proxy", "agent-principal"]
+}}
+
+## Shared-subject lead-in example
+
+Source excerpt:
+"A customer is an individual that:
+51. See ICE, News Releases and Statements.
+Uses an SSN that, upon verification, does not match or is inconsistent with the SSA's records;
+Opens an account using a non-U.S. passport or ITIN claiming to be self-employed or operating a small business in the agriculture, construction, domestic service, hospitality, or staffing industries and is receiving a significant amount and volume of recurring check deposits from multiple companies before either making a significant and repetitive amount of structured cash withdrawals or issuing low-dollar checks to multiple individuals;
+Cashes a significant volume of checks drawn on accounts owned by companies in the agriculture, construction, domestic service, hospitality, or staffing industries on a recurring basis at an MSB, including a check cashier;"
+
+The lead-in "A customer is an individual that:" supplies the subject for every bullet. The footnote "51. See ICE, News Releases and Statements." is administrative text and must be ignored without breaking the shared-subject context.
+
+**Wrong** — emitting an orphaned predicate that begins with a bare verb:
+{{
+  "description": "Uses an SSN that, upon verification, does not match or is inconsistent with the SSA's records"
+}}
+
+**Wrong** — extracting the footnote as a red flag:
+{{
+  "description": "See ICE, News Releases and Statements."
+}}
+
+**Correct** — fold the lead-in subject into each bullet so the description is a complete sentence:
+{{
+  "description": "A customer is an individual that uses an SSN that, upon verification, does not match or is inconsistent with the SSA's records.",
+  "product_types": ["depository"],
+  "industry_types": [],
+  "customer_profiles": ["individual_consumer"],
+  "geographic_footprints": ["domestic_us"],
+  "regulatory_source": "FinCEN Advisory on Labor Trafficking",
+  "regulator": "FinCEN",
+  "issuing_agencies": [],
+  "issued_date": null,
+  "risk_level": "medium",
+  "category": "human_trafficking",
+  "typology_family": ["human_trafficking_proceeds"],
+  "transaction_patterns": ["identity_misrepresentation"],
+  "key_terms": ["SSN", "SSA", "identity verification"]
+}}
+
+**Correct** — preserve the bullet's qualifying clauses verbatim while folding in the lead-in subject:
+{{
+  "description": "A customer is an individual that cashes a significant volume of checks drawn on accounts owned by companies in the agriculture, construction, domestic service, hospitality, or staffing industries on a recurring basis at an MSB, including a check cashier.",
+  "product_types": ["check_cashing", "money_transmitter"],
+  "industry_types": ["agriculture", "construction", "food_service", "travel_hospitality"],
+  "customer_profiles": ["individual_consumer", "migrant_worker"],
+  "geographic_footprints": ["domestic_us"],
+  "regulatory_source": "FinCEN Advisory on Labor Trafficking",
+  "regulator": "FinCEN",
+  "issuing_agencies": [],
+  "issued_date": null,
+  "risk_level": "medium",
+  "category": "human_trafficking",
+  "typology_family": ["human_trafficking_proceeds"],
+  "transaction_patterns": ["cash_intensive_behavior", "third_party_payments"],
+  "key_terms": ["check cashing", "MSB", "labor-intensive industries"]
 }}
 
 ## Output format
