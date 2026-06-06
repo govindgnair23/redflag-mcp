@@ -63,11 +63,47 @@ def write_registry(registry: dict[str, dict], path: Path) -> None:
         yaml.dump(registry, f, default_flow_style=False, sort_keys=True, allow_unicode=True)
 
 
+def _filesystem_serials() -> set[int]:
+    """Scan PDF and markdown directories (non-recursive) for filenames whose
+    leading digits look like a serial. Returns the parsed integer set.
+
+    Catches files placed manually (e.g. "208-some-advisory.pdf") that were
+    never registered in sources.yaml, preventing key collisions in
+    download_single_url().
+    """
+    import re
+
+    serials: set[int] = set()
+    for directory in (PDFS_DIR, MARKDOWN_DIR):
+        if not directory.exists():
+            continue
+        for entry in directory.iterdir():
+            if not entry.is_file():
+                continue
+            match = re.match(r"(\d+)", entry.stem)
+            if match:
+                serials.add(int(match.group(1)))
+    return serials
+
+
 def next_serial(registry: dict[str, dict]) -> int:
-    """Return the next available serial number (1 if registry is empty)."""
-    if not registry:
+    """Return the next available serial number.
+
+    Considers both `sources.yaml` keys and leading-digit prefixes on files
+    present in `red_flag_sources/pdf/` and `red_flag_sources/markdown/`, so
+    a manually placed file like "208-some-advisory.pdf" cannot collide with
+    a newly assigned serial.
+    """
+    used: set[int] = set()
+    for key in registry:
+        try:
+            used.add(int(key))
+        except (TypeError, ValueError):
+            continue
+    used.update(_filesystem_serials())
+    if not used:
         return 1
-    return max(int(k) for k in registry) + 1
+    return max(used) + 1
 
 
 def is_blank_or_invalid(url: str) -> bool:
@@ -143,14 +179,70 @@ def fetch_web(url: str, dest_path: Path, client: httpx.Client) -> int:
     return len(text)
 
 
+def download_single_url(
+    url: str,
+    *,
+    force: bool = False,
+    client: httpx.Client | None = None,
+) -> dict[str, object] | None:
+    """Download one URL into sources.yaml + the right local directory.
+
+    Reuses an existing serial if the URL is already registered, otherwise
+    assigns the next serial. If the URL is already registered and `force`
+    is False, returns None without re-downloading. Returns a dict describing
+    what was written on success, or None on skip/failure. Does NOT rebuild
+    registry.csv — that is the caller's responsibility.
+    """
+    if is_blank_or_invalid(url):
+        LOGGER.warning("Skipping invalid URL: %r", url)
+        return None
+
+    PDFS_DIR.mkdir(parents=True, exist_ok=True)
+    MARKDOWN_DIR.mkdir(parents=True, exist_ok=True)
+
+    registry, _ = load_registry(SOURCES_YAML)
+    url_to_key = {
+        entry["url"]: key
+        for key, entry in registry.items()
+        if isinstance(entry, dict) and entry.get("url")
+    }
+    if url in url_to_key:
+        key = url_to_key[url]
+        if not force:
+            LOGGER.info("Already registered, skipping: %s", url)
+            return None
+    else:
+        key = f"{next_serial(registry):03d}"
+
+    owns_client = client is None
+    active_client = client or httpx.Client(headers={"User-Agent": USER_AGENT})
+    try:
+        kind = classify_url(url, active_client)
+        dest_path = PDFS_DIR / f"{key}.pdf" if kind == "pdf" else MARKDOWN_DIR / f"{key}.md"
+        if kind == "pdf":
+            fetch_pdf(url, dest_path, active_client)
+        else:
+            fetch_web(url, dest_path, active_client)
+    except Exception as exc:
+        LOGGER.error("Failed to download %s: %s", url, exc)
+        return None
+    finally:
+        if owns_client:
+            active_client.close()
+
+    registry[key] = {"url": url}
+    write_registry(registry, SOURCES_YAML)
+    return {"key": key, "url": url, "kind": kind, "path": dest_path}
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(
-        description="Download PDFs and web pages from an AML catalog CSV into the sources registry."
+        description="Download PDFs and web pages from a catalog CSV or a single URL into the sources registry."
     )
     parser.add_argument(
-        "csv_path",
-        type=Path,
-        help="Path to the CSV file containing a 'Direct URL' column.",
+        "source",
+        type=str,
+        help="CSV file path (with a 'Direct URL' column) or a single http(s) URL.",
     )
     parser.add_argument(
         "--force",
@@ -162,7 +254,20 @@ def main(argv: list[str] | None = None) -> None:
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
-    csv_path: Path = args.csv_path
+    source: str = args.source
+
+    # Single URL mode
+    if source.startswith(("http://", "https://")):
+        result = download_single_url(source, force=args.force)
+        if result is None:
+            sys.exit(1)
+        LOGGER.info(
+            "Downloaded %s (%s) -> %s",
+            result["key"], result["kind"], result["path"],
+        )
+        return
+
+    csv_path = Path(source)
     if not csv_path.exists():
         parser.error(f"CSV file not found: {csv_path}")
 

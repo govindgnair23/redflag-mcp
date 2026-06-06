@@ -18,13 +18,9 @@ from harvest_sources import (
     PDFS_DIR,
     SOURCES_YAML,
     USER_AGENT,
-    classify_url,
-    fetch_pdf,
-    fetch_web,
+    download_single_url,
     is_blank_or_invalid,
     load_registry,
-    next_serial,
-    write_registry,
 )
 
 REGISTRY_CSV = DEFAULT_REGISTRY_PATH
@@ -41,6 +37,20 @@ def read_urls_file(path: Path) -> list[str]:
             continue
         urls.append(url)
     return urls
+
+
+def resolve_urls(source: str) -> list[str]:
+    """Resolve a positional source argument to a list of URLs.
+
+    Accepts either an http(s) URL string or a path to a file containing one
+    URL per line.
+    """
+    if source.startswith(("http://", "https://")):
+        if is_blank_or_invalid(source):
+            LOGGER.warning("Skipping invalid URL: %r", source)
+            return []
+        return [source]
+    return read_urls_file(Path(source))
 
 
 def load_registry_source_urls(path: Path = REGISTRY_CSV) -> set[str]:
@@ -62,23 +72,13 @@ def update_status_registry() -> None:
 
 
 def download_sources(
-    urls_file: Path,
+    source: str | Path,
     force: bool = False,
     client: httpx.Client | None = None,
 ) -> list[dict[str, object]]:
-    urls = read_urls_file(urls_file)
+    urls = resolve_urls(str(source))
     registry_urls = load_registry_source_urls(REGISTRY_CSV)
-    sources_registry, _existing_urls = load_registry(SOURCES_YAML)
-    url_to_key = {
-        normalize_url(entry["url"]): key
-        for key, entry in sources_registry.items()
-        if isinstance(entry, dict) and entry.get("url")
-    }
-    serial = next_serial(sources_registry)
     downloaded: list[dict[str, object]] = []
-
-    PDFS_DIR.mkdir(parents=True, exist_ok=True)
-    MARKDOWN_DIR.mkdir(parents=True, exist_ok=True)
 
     owns_client = client is None
     active_client = client or httpx.Client(headers={"User-Agent": USER_AGENT})
@@ -88,32 +88,11 @@ def download_sources(
             if normalized_url in registry_urls and not force:
                 LOGGER.info("Already in registry, skipping: %s", url)
                 continue
-
-            if normalized_url in url_to_key:
-                key = url_to_key[normalized_url]
-                is_new_key = False
-            else:
-                key = f"{serial:03d}"
-                is_new_key = True
-
-            try:
-                kind = classify_url(url, active_client)
-                dest_path = PDFS_DIR / f"{key}.pdf" if kind == "pdf" else MARKDOWN_DIR / f"{key}.md"
-                if kind == "pdf":
-                    fetch_pdf(url, dest_path, active_client)
-                else:
-                    fetch_web(url, dest_path, active_client)
-            except Exception as exc:
-                LOGGER.error("Failed to download %s: %s", url, exc)
+            result = download_single_url(url, force=force, client=active_client)
+            if result is None:
                 continue
-
-            sources_registry[key] = {"url": url}
-            write_registry(sources_registry, SOURCES_YAML)
             registry_urls.add(normalized_url)
-            url_to_key[normalized_url] = key
-            if is_new_key:
-                serial += 1
-            downloaded.append({"key": key, "url": url, "kind": kind, "path": dest_path})
+            downloaded.append(result)
             update_status_registry()
     finally:
         if owns_client:
@@ -195,13 +174,13 @@ def extract_downloaded_sources(force: bool = False, workers: int | None = None, 
 
 
 def run_pipeline(
-    urls_file: Path,
+    source: str | Path,
     force: bool = False,
     workers: int | None = None,
     verify: bool = True,
     force_handcrafted: bool = False,
 ) -> tuple[list[dict[str, object]], list[dict]]:
-    downloaded = download_sources(urls_file, force=force)
+    downloaded = download_sources(source, force=force)
     extracted = extract_downloaded_sources(force=force, workers=workers, verify=verify, force_handcrafted=force_handcrafted)
     return downloaded, extracted
 
@@ -215,7 +194,7 @@ def main(argv: list[str] | None = None) -> None:
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     download_parser = subparsers.add_parser("download", help="Download URLs into local sources.")
-    download_parser.add_argument("urls_file", type=Path)
+    download_parser.add_argument("source", type=str, help="URL file or single URL")
     download_parser.add_argument("--force", action="store_true")
 
     extract_parser = subparsers.add_parser("extract", help="Extract all downloaded registry sources.")
@@ -225,7 +204,7 @@ def main(argv: list[str] | None = None) -> None:
     extract_parser.add_argument("--prompt", choices=["handcrafted", "optimized"], default="optimized", help="Which verification prompt to use.")
 
     run_parser = subparsers.add_parser("run", help="Download URLs, then extract downloaded sources.")
-    run_parser.add_argument("urls_file", type=Path)
+    run_parser.add_argument("source", type=str, help="URL file or single URL")
     run_parser.add_argument("--force", action="store_true")
     run_parser.add_argument("--parallel", nargs="?", const="4")
     run_parser.add_argument("--no-verify", action="store_true", help="Skip verification step.")
@@ -238,11 +217,11 @@ def main(argv: list[str] | None = None) -> None:
     force_handcrafted = getattr(args, "prompt", "optimized") == "handcrafted"
 
     if args.command == "download":
-        download_sources(args.urls_file, force=args.force)
+        download_sources(args.source, force=args.force)
     elif args.command == "extract":
         extract_downloaded_sources(force=args.force, workers=parse_parallel(args.parallel), verify=verify, force_handcrafted=force_handcrafted)
     elif args.command == "run":
-        run_pipeline(args.urls_file, force=args.force, workers=parse_parallel(args.parallel), verify=verify, force_handcrafted=force_handcrafted)
+        run_pipeline(args.source, force=args.force, workers=parse_parallel(args.parallel), verify=verify, force_handcrafted=force_handcrafted)
 
 
 if __name__ == "__main__":

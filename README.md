@@ -40,9 +40,9 @@ Nine distinct workflows:
 
 ## URL Pipeline
 
-Use `scripts/pipeline.py` for day-to-day source onboarding from URLs. It supports both a one-shot workflow and a review checkpoint between download and extraction.
+Use `scripts/pipeline.py` for day-to-day source onboarding from URLs. The `download` and `run` subcommands accept **either a URL file or a single URL** as the positional argument. It supports both a one-shot workflow and a review checkpoint between download and extraction.
 
-Create a plain text file with one URL per line:
+For batches, create a plain text file with one URL per line:
 
 ```text
 https://example.gov/report.pdf
@@ -54,7 +54,11 @@ Blank lines and non-HTTP(S) lines are skipped.
 ### One-shot download and extraction
 
 ```bash
+# From a URL file
 uv run python scripts/pipeline.py run urls.txt
+
+# Or directly with a single URL
+uv run python scripts/pipeline.py run https://example.gov/report.pdf
 ```
 
 Use this when you trust the source list and want to download each URL, register it in `red_flag_sources/sources.yaml`, extract red flags, update `data/source/.extracted_sources.yaml`, and rebuild `red_flag_sources/registry.csv`.
@@ -64,6 +68,7 @@ Use this when you trust the source list and want to download each URL, register 
 ```bash
 # Download PDFs/web captures and update sources.yaml + registry.csv
 uv run python scripts/pipeline.py download urls.txt
+uv run python scripts/pipeline.py download https://example.gov/report.pdf
 
 # Inspect red_flag_sources/pdf/ and red_flag_sources/markdown/, then extract downloaded rows
 uv run python scripts/pipeline.py extract
@@ -99,23 +104,31 @@ Deduplication uses `red_flag_sources/registry.csv` by `source_url`. Re-run `scri
 
 ## Source Harvesting
 
-`scripts/harvest_sources.py` automates acquisition of regulatory documents from the Global AML/CFT/Sanctions Red Flag Catalog. It reads the `Direct URL` column, classifies each URL as a PDF or web page, downloads the file, and registers it in `red_flag_sources/sources.yaml`.
+`scripts/harvest_sources.py` is the canonical download utility. It accepts **either a catalog CSV path or a single http(s) URL** as the positional argument, classifies each URL as a PDF or web page, downloads the file, and registers it in `red_flag_sources/sources.yaml`. No extraction is triggered — that is `pipeline.py`'s job.
 
 ```bash
+# Bulk download from a catalog CSV
 uv run python scripts/harvest_sources.py red_flag_sources/Global_AML_CFT_Sanctions_Red_Flag_Catalog.csv
+
+# Download a single URL
+uv run python scripts/harvest_sources.py https://example.gov/report.pdf
+
+# Re-download even if already registered
+uv run python scripts/harvest_sources.py --force https://example.gov/report.pdf
 ```
 
 **What it does:**
 
-1. Reads the `Direct URL` column from each CSV row
-2. Skips blank, malformed, or already-registered URLs
-3. Classifies the URL as PDF via path heuristics (`.pdf` suffix, `/download`, `/file`) — falls back to an HTTP HEAD check for ambiguous cases
-4. Downloads PDFs to `red_flag_sources/pdf/NNN.pdf`
-5. Fetches web pages via the [Jina Reader API](https://r.jina.ai/) and saves cleaned markdown to `red_flag_sources/markdown/NNN.md`
-6. Appends each new entry to `sources.yaml` (written once at the end)
-7. Prints a final summary: PDFs downloaded, web pages fetched, skipped, failed
+1. Detects whether the positional argument is a URL or a CSV path
+2. **CSV mode** — reads the `Direct URL` column from each row; skips blank, malformed, or already-registered URLs
+3. **URL mode** — skips immediately if the URL is already registered (use `--force` to override)
+4. Classifies each URL as PDF via path heuristics (`.pdf` suffix, `/download`, `/file`) — falls back to an HTTP HEAD check for ambiguous cases
+5. Downloads PDFs to `red_flag_sources/pdf/NNN.pdf`
+6. Fetches web pages via the [Jina Reader API](https://r.jina.ai/) and saves cleaned markdown to `red_flag_sources/markdown/NNN.md`
+7. Appends each new entry to `sources.yaml`
+8. In CSV mode, prints a final summary: PDFs downloaded, web pages fetched, skipped, failed
 
-The script is **idempotent** — re-running against the same CSV produces no new files or registry entries. Per-URL failures are logged and skipped without aborting the run.
+The script is **idempotent** — re-running against the same CSV or URL produces no new files or registry entries (unless `--force` is set). Per-URL failures are logged and skipped without aborting a CSV run.
 
 ```
 red_flag_sources/
@@ -137,7 +150,13 @@ uv run python scripts/extract.py --parallel
 uv run python scripts/extract.py --range 039-060 --parallel
 ```
 
-Use `harvest_sources.py` when the input is a catalog CSV. Use `pipeline.py` when the input is a simple URL list or when you want the download-inspect-extract workflow.
+**When to use which script:**
+
+| Goal | Use |
+|---|---|
+| Download a catalog CSV or a single URL (no extraction) | `harvest_sources.py` |
+| Download + extract from a URL file or single URL in one step | `pipeline.py run` |
+| Extract from already-downloaded local files | `extract.py` |
 
 > **Note:** `sources.yaml` is the shared URL registry for `pipeline.py`, `harvest_sources.py`, and `build_sources_registry.py`. Do not run these scripts concurrently — each can overwrite `sources.yaml` after updating it.
 
@@ -145,7 +164,9 @@ Use `harvest_sources.py` when the input is a catalog CSV. Use `pipeline.py` when
 
 ## Extraction Pipeline
 
-`scripts/extract.py` takes a regulatory document (PDF file or URL), sends its text to an OpenAI model, and writes a structured YAML file into `data/source/`. Each extracted entry includes a `source_url` linking back to the original document.
+`scripts/extract.py` takes a **downloaded regulatory document** (local PDF or markdown file path), sends its text to an OpenAI model, and writes a structured YAML file into `data/source/`. Each extracted entry includes a `source_url` linking back to the original document (resolved from `sources.yaml`).
+
+> `extract.py` no longer downloads URLs. To fetch a URL, use `harvest_sources.py` (download only) or `pipeline.py run` (download + extract). This keeps each script's responsibility clean.
 
 ### Prerequisites
 
@@ -251,8 +272,8 @@ uv run python scripts/extract.py --prompt handcrafted --parallel
 # Extract from a local PDF
 uv run python scripts/extract.py red_flag_sources/pdf/001_fincen_alert.pdf
 
-# Extract from a URL
-uv run python scripts/extract.py https://example.com/regulatory-guidance
+# Extract from a local markdown capture
+uv run python scripts/extract.py red_flag_sources/markdown/061.md
 
 # Re-extract a source that was already processed
 uv run python scripts/extract.py --force red_flag_sources/pdf/001_fincen_alert.pdf
@@ -264,11 +285,22 @@ uv run python scripts/extract.py --force --no-verify red_flag_sources/pdf/001_fi
 uv run python scripts/extract.py --force --prompt handcrafted red_flag_sources/pdf/001_fincen_alert.pdf
 ```
 
+`extract.py` requires the file to exist locally already. To fetch a URL first:
+
+```bash
+# Download only, then extract separately
+uv run python scripts/harvest_sources.py https://example.gov/report.pdf
+uv run python scripts/extract.py red_flag_sources/pdf/NNN.pdf
+
+# Or download + extract in one step
+uv run python scripts/pipeline.py run https://example.gov/report.pdf
+```
+
 For single-source PDFs, make sure `sources.yaml` maps the file's serial prefix to the public URL before extraction so the extractor can populate `source_url` in the output. If you maintain the legacy `pdflinks.txt` file, run `build_sources_registry.py` and then `build_registry.py` first.
 
 ### What it does
 
-1. **Fetches the document** — downloads the web page (strips nav/footer/scripts) or reads text from the PDF via pdfplumber
+1. **Reads the document** — extracts text from the local PDF via pdfplumber, or reads the body of a Jina Reader markdown capture
 2. **Extracts** — prompts the configured OpenAI model (override with `OPENAI_EXTRACTION_MODEL`) to extract every distinct AML red flag indicator and tag all metadata fields as structured JSON. Descriptions are returned in source-faithful wording.
 3. **Shapes** — a second LLM call rewrites only the `description` field: prepends a noun subject when missing, merges dependent explanatory sentences, generalizes case-specific numbers, and strips stray named facts. Skip with `--no-shape`. See [Red Flag Shaping](#red-flag-shaping) below.
 4. **Verifies** — a third LLM call classifies each candidate as a genuine red flag or false positive (compliance guidance, regulatory instruction, etc.) and removes false positives. Skip with `--no-verify`. See [Red Flag Verification](#red-flag-verification) below.
