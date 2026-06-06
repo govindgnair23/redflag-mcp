@@ -160,6 +160,17 @@ uv run python scripts/extract.py --range 039-060 --parallel
 
 > **Note:** `sources.yaml` is the shared URL registry for `pipeline.py`, `harvest_sources.py`, and `build_sources_registry.py`. Do not run these scripts concurrently — each can overwrite `sources.yaml` after updating it.
 
+### Web-page capture via Jina Reader
+
+Web pages (non-PDF URLs) are fetched through [**Jina Reader**](https://jina.ai/reader/), a hosted service that takes a URL, strips navigation/footer/scripts/ads, and returns clean, LLM-ready markdown.
+
+- **Endpoint**: `https://r.jina.ai/<url>` — prepend the target URL to capture it
+- **Caller**: `fetch_web()` in `scripts/harvest_sources.py`; also used internally by `pipeline.py` via `download_single_url()`
+- **Auth**: used unauthenticated in this repo. Jina's free tier works without an API key; supplying one as a `Bearer` token raises rate limits if you hit them
+- **Why this service**: regulator pages mix substance with heavy chrome (menus, related-links, cookie banners). Jina Reader gives the LLM only the article body, which materially improves extraction quality and reduces token spend
+
+If a captured markdown file in `red_flag_sources/markdown/` looks empty or wrong, inspect it before extraction — the page may have been blocked, paywalled, or rendered client-side. Re-run with `--force` after fixing the URL.
+
 ---
 
 ## Extraction Pipeline
