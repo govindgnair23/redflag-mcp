@@ -270,3 +270,11 @@
   slug: 208-fincen-advisory-non-work-authorized-populations
   output_file: data/source/208-fincen-advisory-non-work-authorized-populations.yaml
   extracted_at: '2026-06-05T17:09:06.096779+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/085.pdf
+  slug: 085
+  output_file: data/source/085.yaml
+  extracted_at: '2026-06-06T12:10:26.591616+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/markdown/209.md
+  slug: '209'
+  output_file: data/source/209.yaml
+  extracted_at: '2026-06-06T12:28:01.117846+00:00'

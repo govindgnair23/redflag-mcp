@@ -1,0 +1,351 @@
+- id: 085-01
+  description: 'The following activity can be associated with bank accounts linked
+    to businesses in the art sector involved in money laundering: quick movements
+    of funds out of the account.'
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - quick movements
+  - art sector
+- id: 085-02
+  description: 'The following activity can be associated with bank accounts linked
+    to businesses in the art sector involved in money laundering: debit covering the
+    purchase, followed quickly by a credit for the proceeds of the subsequent sale
+    by the purchaser, particularly where there is a significant discrepancy in price
+    and transaction amounts.'
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - debit
+  - credit
+  - significant discrepancy
+  - purchase
+  - sale
+- id: 085-03
+  description: 'The following activity can be associated with bank accounts linked
+    to businesses in the art sector involved in money laundering: high volumes of
+    third-party transactions, particularly to move funds offshore.'
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - third-party transactions
+  - offshore
+- id: 085-04
+  description: 'The following activity can be associated with bank accounts linked
+    to businesses in the art sector involved in money laundering: high volumes of
+    cash deposits.'
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+- id: 085-05
+  description: 'The following activity can be associated with bank accounts linked
+    to businesses in the art sector involved in money laundering: transaction references
+    such as ‘artwork’, ‘sale of painting’ and ‘xxx name of auction house or gallery’
+    could be used to provide a seemingly legitimate reason for funds being sent to
+    or received from other accounts.'
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: low
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - artwork
+  - sale of painting
+  - auction house
+  - gallery
+- id: 085-06
+  description: 'The following activity can be associated with bank accounts linked
+    to businesses in the art sector involved in money laundering: regular / excessive
+    / unexpected / prolonged payments to freeports.'
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - freeports
+  - payments
+- id: 085-07
+  description: Sellers involved in laundering money may use both business and personal
+    accounts to deposit and receive business transactions.
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - business accounts
+  - personal accounts
+- id: 085-08
+  description: Transactions completed via intermediaries acting as a middle layer
+    between the buyer and seller, so that the end ultimate buyers/ sellers remain
+    unknown to each other.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - intermediaries
+  - middle layer
+  - ultimate buyers
+  - sellers
+- id: 085-09
+  description: Businesses may have unusual activity such as unusual turnover or exclusive
+    relationships (where they appear to be trading with one or two other businesses
+    that also do not trade with any other businesses).
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - unusual turnover
+  - exclusive relationships
+- id: 085-10
+  description: Shell companies may be used to purchase and sell art to distance and
+    disguise the ultimate beneficial owner.
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell companies
+  - ultimate beneficial owner
+  - UBO
+- id: 085-11
+  description: In respect of antiquity dealers, regular travel to source countries
+    combined with shipping costs to the UK may be indicative of possible smuggling.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - art_antiquities
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'Amber Alert: Art Market Participants, AML Regulations and Financial
+    Crime Vulnerabilities'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - JMLIT
+  issued_date: 2021-05
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/516-necc-art-market-participants-aml-regulations-and-financial-crime-vulnerabilities/file
+  typology_family:
+  - organized_crime_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - antiquity dealers
+  - source countries
+  - shipping costs
+  - smuggling

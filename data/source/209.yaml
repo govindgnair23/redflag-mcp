@@ -1,0 +1,358 @@
+- id: 209-01
+  description: Non-resident aliens and foreign nationals with deposit accounts who
+    are citizens of countries or jurisdictions that are identified as non-cooperative
+    by the Financial Action Task Force (FATF), identified as Jurisdictions of Concern
+    or Jurisdictions of Primary Concern in the U.S. Department of State’s annual International
+    Narcotics Control Strategy Report (INCSR), designated as jurisdictions of primary
+    money laundering concern or subject to special measures through regulations issued
+    by FinCEN, pursuant to Section 311 of the USA PATRIOT Act, or sanctioned by the
+    Office of Foreign Assets Control (OFAC), including those with state sponsored
+    terrorism.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - non_resident_alien
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - FATF
+  - INCSR
+  - Section 311
+  - OFAC
+  - state sponsored terrorism
+- id: 209-02
+  description: Customers with significant levels of gambling (e.g., in amounts of
+    $3,000 - $10,000 inclusive) that are non-accountholders and for which identification
+    is not known and is unavailable.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - $3,000 - $10,000
+  - non-accountholders
+  - identification
+- id: 209-03
+  description: Customers that pose higher risks based on type of account, account
+    activity, types of products and services used, geographic locality, or player
+    ratings, etc.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: low
+  category: layering
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - account activity
+  - player ratings
+- id: 209-04
+  description: Customers that engage in a relatively high level of spending.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: low
+  category: layering
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - high level of spending
+- id: 209-05
+  description: Customers engaged in high value gambling that are inconsistent with
+    a casino or card club’s information about levels or sources of assets or incomes,
+    or inconsistent with information about occupations in casino credit/marker account
+    records (e.g., credit/marker applications) or other records.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - credit/marker account
+  - applications
+  - sources of assets
+  - incomes
+- id: 209-06
+  description: Customers using deposit accounts for non-gambling purposes.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: low
+  category: layering
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - deposit accounts
+- id: 209-07
+  description: Customers observed borrowing money from non-conventional sources, including
+    other customers.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - borrowing money
+  - other customers
+- id: 209-08
+  description: Customers conducting transfers of significant or unusual amounts of
+    funds through depository institutions.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - casinos
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - significant or unusual amounts
+  - depository institutions
+- id: 209-09
+  description: Customers using domestic or international money orders in amounts just
+    below the threshold for recordkeeping requirements, traveler’s checks denominated
+    in foreign currency, domestic wire transfers in amounts just below the threshold
+    for recordkeeping requirements, debit cards, and prepaid access (stored value)
+    cards either in significant numbers or with significant total monetary value.
+  product_types:
+  - wire_transfer
+  - prepaid
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  - monetary_instrument_purchases
+  key_terms:
+  - money orders
+  - traveler’s checks
+  - prepaid access
+  - recordkeeping requirements
+  - threshold
+- id: 209-10
+  description: Customers conducting large transactions with minimal casino play.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - large transactions
+  - minimal casino play
+- id: 209-11
+  description: Regular customers with unusual spending pattern changes (e.g., dramatic
+    or rapid increases in the size and frequency of transactions).
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unusual spending pattern changes
+  - dramatic or rapid increases
+- id: 209-12
+  description: Customers listed on a so-called "barred patron list" and their known
+    associates.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - barred patron list
+  - known associates
+- id: 209-13
+  description: Customer player rating and slot club accounts with P.O. Boxes only
+    instead of permanent street addresses.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - P.O. Boxes
+  - player rating
+  - slot club accounts
+  - permanent street addresses
+- id: 209-14
+  description: Dollar value of intercompany transfers of funds from customers’ accounts
+    for front money deposit or marker redemption conducted between casinos in the
+    United States and their affiliated casinos located in other countries.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - casinos
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Guidance for Casinos and Card Clubs
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/statutes-regulations/guidance/casino-or-card-club-risk-based-compliance-indicators
+  typology_family: []
+  transaction_patterns:
+  - wire_transfer_chains
+  - unusual_international_wires
+  key_terms:
+  - intercompany transfers
+  - front money deposit
+  - marker redemption
+  - affiliated casinos
