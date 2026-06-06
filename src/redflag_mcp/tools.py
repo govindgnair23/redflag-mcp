@@ -47,6 +47,13 @@ MAX_SEARCH_LIMIT = 20
 MAX_QUERY_LENGTH = 1000
 MAX_FILTER_VALUES = 25
 RESPONSE_DETAILS = frozenset({"full", "concise"})
+DISPLAY_TABLE_COLUMNS = (
+    {"key": "description", "label": "Red flag"},
+    {"key": "risk_level", "label": "Risk"},
+    {"key": "transaction_patterns", "label": "Pattern"},
+    {"key": "regulator", "label": "Regulator"},
+    {"key": "source_url", "label": "Source"},
+)
 ROUTE_NEEDS_MORE_CONTEXT = "needs_more_context"
 ROUTE_METADATA_FILTER = "metadata_filter"
 ROUTE_FILTERED_RELEVANCE_SEARCH = "filtered_relevance_search"
@@ -111,6 +118,7 @@ PRE_INGESTION_MESSAGE = (
     "to populate the local vector store before querying."
 )
 
+
 def _string_enum_schema(values: set[str] | frozenset[str]) -> dict[str, object]:
     return {"enum": sorted(values)}
 
@@ -145,7 +153,11 @@ ProductTypesValue: TypeAlias = Annotated[
 ]
 RegulatorJurisdictionValue: TypeAlias = Annotated[
     str,
-    Field(json_schema_extra=_string_enum_schema(frozenset(REGULATOR_JURISDICTIONS.values()))),
+    Field(
+        json_schema_extra=_string_enum_schema(
+            frozenset(REGULATOR_JURISDICTIONS.values())
+        )
+    ),
 ]
 RegulatorValue: TypeAlias = Annotated[
     str,
@@ -173,6 +185,8 @@ ResponseDetailValue: TypeAlias = Annotated[
 ]
 
 SEARCH_DESCRIPTION = """Search AML red flags using natural-language context and optional filters.
+
+Successful responses include table-ready display hints in `display` and a portable Markdown fallback in `markdown_table`; clients decide how to render them.
 
 Agent guidance: use classify_red_flag_request before searching for ambiguous "what red flags apply" requests; skip that extra call when the user already gives specific metadata filters or a concrete scenario. If the user's request is vague, briefly ask for product/channel, industry, customer profile, geography, and transaction channel or volume before searching. If the request already names those details or has a specific scenario, search directly. Call list_filters when you need valid filter values. Use filter_red_flags for exact metadata requests and exhaustive enumeration; use search_red_flags for ranked relevance questions and increase limit for more ranked results because search has no cursor. For broad investigative topics such as human trafficking red flags, use subjects as an eligibility filter. Category is the primary record classification; subjects is a broader eligibility layer that catches cross-category flags; typology_family is a broader proceeds or typology grouping. For example, a human-trafficking-relevant darknet crypto flag can have category="virtual_currency" while matching subjects=["human_trafficking"]. For broad sector requests such as trade logistics red flags, use industry_groups as an eligibility filter. regulator_jurisdiction describes issuer jurisdiction; geographic_footprints describes affected geography or typology geography. For country or jurisdiction requests about issuing regulators, translate names to regulator_jurisdiction codes before filtering, such as France -> FR, Singapore -> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> US, and European Union/EU regulators -> EU."""
 
@@ -247,18 +261,22 @@ class RedFlagService:
                 risk_level=risk_level,
                 regulator_jurisdiction=regulator_jurisdiction,
             )
+            result_payloads = [
+                result.model_dump(exclude_none=True) for result in results
+            ]
             return self._with_corpus(
-                {
-                    "query": query,
-                    "limit": clamped_limit,
-                    "requested_limit": limit,
-                    "applied_limit": clamped_limit,
-                    "returned": len(results),
-                    "truncated": len(results) >= clamped_limit,
-                    "results": [
-                        result.model_dump(exclude_none=True) for result in results
-                    ],
-                }
+                _with_table_display(
+                    {
+                        "query": query,
+                        "limit": clamped_limit,
+                        "requested_limit": limit,
+                        "applied_limit": clamped_limit,
+                        "returned": len(result_payloads),
+                        "truncated": len(result_payloads) >= clamped_limit,
+                        "results": result_payloads,
+                    },
+                    title=_search_display_title(query),
+                )
             )
 
         query_vector = encode_query(query, model=self.embedding_model)
@@ -286,16 +304,20 @@ class RedFlagService:
             risk_level=risk_level,
             regulator_jurisdiction=regulator_jurisdiction,
         )
+        result_payloads = [result.model_dump(exclude_none=True) for result in results]
         return self._with_corpus(
-            {
-                "query": query,
-                "limit": clamped_limit,
-                "requested_limit": limit,
-                "applied_limit": clamped_limit,
-                "returned": len(results),
-                "truncated": len(results) >= clamped_limit,
-                "results": [result.model_dump(exclude_none=True) for result in results],
-            }
+            _with_table_display(
+                {
+                    "query": query,
+                    "limit": clamped_limit,
+                    "requested_limit": limit,
+                    "applied_limit": clamped_limit,
+                    "returned": len(result_payloads),
+                    "truncated": len(result_payloads) >= clamped_limit,
+                    "results": result_payloads,
+                },
+                title=_search_display_title(query),
+            )
         )
 
     def filter_red_flags(
@@ -467,21 +489,24 @@ class RedFlagService:
             if next_offset < total_matched
             else None
         )
+        result_payloads = [
+            _dump_filter_result(result, detail=detail) for result in page.results
+        ]
         return self._with_corpus(
-            {
-                "match_type": "metadata_filter",
-                "limit": clamped_limit,
-                "requested_limit": limit,
-                "applied_limit": clamped_limit,
-                "returned": len(page.results),
-                "total_matched": total_matched,
-                "truncated": next_cursor is not None,
-                "next_cursor": next_cursor,
-                "results": [
-                    _dump_filter_result(result, detail=detail)
-                    for result in page.results
-                ],
-            }
+            _with_table_display(
+                {
+                    "match_type": "metadata_filter",
+                    "limit": clamped_limit,
+                    "requested_limit": limit,
+                    "applied_limit": clamped_limit,
+                    "returned": len(result_payloads),
+                    "total_matched": total_matched,
+                    "truncated": next_cursor is not None,
+                    "next_cursor": next_cursor,
+                    "results": result_payloads,
+                },
+                title="Filtered red flags",
+            )
         )
 
     def get_red_flag(self, red_flag_id: str) -> dict[str, Any]:
@@ -625,9 +650,7 @@ class RedFlagService:
 
     def get_source(self, source_id: str) -> dict[str, Any]:
         if self.table.count_rows() == 0:
-            return self._with_corpus(
-                {"message": PRE_INGESTION_MESSAGE, "source": None}
-            )
+            return self._with_corpus({"message": PRE_INGESTION_MESSAGE, "source": None})
 
         source = (
             self.table.get_source(source_id)
@@ -735,19 +758,21 @@ def register_tools(mcp: FastMCP) -> None:
             "classification; subjects is a broader eligibility layer that catches "
             "cross-category flags; typology_family is a broader proceeds or "
             "typology grouping. For example, a human-trafficking-relevant darknet "
-            "crypto flag can have category=\"virtual_currency\" while matching "
-            "subjects=[\"human_trafficking\"]. Paginate with next_cursor whenever "
+            'crypto flag can have category="virtual_currency" while matching '
+            'subjects=["human_trafficking"]. Paginate with next_cursor whenever '
             "truncated is true; search_red_flags is ranked and limit-based, with "
             "no cursor. "
             "For country or jurisdiction requests, translate names to ISO-style "
             "regulator_jurisdiction codes before filtering: France -> FR, Singapore "
             "-> SG, Australia -> AU, United Kingdom/UK -> GB, United States/US -> "
             "US, and European Union/EU regulators -> EU. Prefer "
-            "filter_red_flags(regulator_jurisdiction=\"FR\") for requests like "
-            "\"red flags from regulators in France.\" regulator_jurisdiction "
+            'filter_red_flags(regulator_jurisdiction="FR") for requests like '
+            '"red flags from regulators in France." regulator_jurisdiction '
             "describes issuer jurisdiction; geographic_footprints describes affected "
             "geography or typology geography. Use search_red_flags instead for "
-            "open-ended relevance questions."
+            "open-ended relevance questions. Successful responses include table-ready "
+            "display hints in `display` and a portable Markdown fallback in "
+            "`markdown_table`; clients decide how to render them."
         )
     )
     def filter_red_flags(
@@ -853,6 +878,71 @@ def _service_from_context(ctx: Context | None) -> RedFlagService:
     return state.service
 
 
+def _with_table_display(
+    response: dict[str, Any],
+    *,
+    title: str,
+) -> dict[str, Any]:
+    results = response.get("results", [])
+    if not isinstance(results, list):
+        results = []
+    response = dict(response)
+    response["display"] = {
+        "suggested_format": "table",
+        "title": title,
+        "columns": [dict(column) for column in DISPLAY_TABLE_COLUMNS],
+        "row_count": len(results),
+    }
+    response["markdown_table"] = _build_markdown_table(results)
+    return response
+
+
+def _search_display_title(query: str) -> str:
+    cleaned = _normalize_table_text(query)
+    return f"Red flags for {cleaned}" if cleaned else "AML Red Flags"
+
+
+def _build_markdown_table(results: list[dict[str, Any]]) -> str:
+    labels = [column["label"] for column in DISPLAY_TABLE_COLUMNS]
+    keys = [column["key"] for column in DISPLAY_TABLE_COLUMNS]
+    lines = [
+        "| " + " | ".join(labels) + " |",
+        "|" + "|".join("---" for _ in labels) + "|",
+    ]
+    lines.extend(
+        "| "
+        + " | ".join(_format_table_cell(result.get(key), key=key) for key in keys)
+        + " |"
+        for result in results
+    )
+    return "\n".join(lines)
+
+
+def _format_table_cell(value: Any, *, key: str) -> str:
+    if key == "source_url" and isinstance(value, str) and value:
+        return f"[Source]({_escape_markdown_link_url(value)})"
+    if isinstance(value, list):
+        return _escape_markdown_table_cell(", ".join(str(item) for item in value))
+    return _escape_markdown_table_cell(value)
+
+
+def _escape_markdown_table_cell(value: Any) -> str:
+    normalized = _normalize_table_text(value)
+    if not normalized:
+        return "-"
+    return normalized.replace("|", "\\|")
+
+
+def _normalize_table_text(value: Any) -> str:
+    if value is None:
+        return ""
+    return re.sub(r"\s+", " ", str(value)).strip()
+
+
+def _escape_markdown_link_url(value: str) -> str:
+    return value.replace(")", "%29")
+
+
 def _dump_filter_result(result: RedFlagResult, *, detail: str) -> dict[str, Any]:
     if detail == "full":
         return result.model_dump(exclude_none=True)
@@ -913,7 +1003,9 @@ def _add_fit_explanations(
         ):
             signals.append(f"Regulator jurisdiction matches {regulator_jurisdiction}.")
         elif result.regulator_jurisdiction:
-            signals.append(f"Regulator jurisdiction is {result.regulator_jurisdiction}.")
+            signals.append(
+                f"Regulator jurisdiction is {result.regulator_jurisdiction}."
+            )
         if result.regulatory_source:
             signals.append(f"Source is {result.regulatory_source}.")
         if result.regulator:
@@ -1057,7 +1149,9 @@ def _normalize_cursor_value(value: object) -> object:
 def _has_enough_context_filters(filters: dict[str, Any]) -> bool:
     if filters.get("subjects") or filters.get("industry_groups"):
         return True
-    return sum(1 for field_name in PRIMARY_FILTER_FIELDS if filters.get(field_name)) >= 2
+    return (
+        sum(1 for field_name in PRIMARY_FILTER_FIELDS if filters.get(field_name)) >= 2
+    )
 
 
 def _has_rich_narrative(query: str) -> bool:

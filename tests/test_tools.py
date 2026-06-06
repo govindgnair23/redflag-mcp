@@ -156,6 +156,24 @@ def seeded_service(tmp_vectors_dir) -> RedFlagService:
     return RedFlagService(table=table, embedding_model=FakeModel())
 
 
+EXPECTED_DISPLAY_COLUMNS = [
+    {"key": "description", "label": "Red flag"},
+    {"key": "risk_level", "label": "Risk"},
+    {"key": "transaction_patterns", "label": "Pattern"},
+    {"key": "regulator", "label": "Regulator"},
+    {"key": "source_url", "label": "Source"},
+]
+
+
+def assert_table_display(response: dict, *, row_count: int) -> None:
+    assert response["display"]["suggested_format"] == "table"
+    assert response["display"]["columns"] == EXPECTED_DISPLAY_COLUMNS
+    assert response["display"]["row_count"] == row_count
+    assert response["markdown_table"].startswith(
+        "| Red flag | Risk | Pattern | Regulator | Source |\n|---|---|---|---|---|"
+    )
+
+
 def test_list_filters_returns_all_dimensions(tmp_vectors_dir):
     service = seeded_service(tmp_vectors_dir)
 
@@ -185,6 +203,20 @@ def test_search_returns_clamped_sourced_results(tmp_vectors_dir):
     assert len(response["results"]) == 2
     assert response["results"][0]["source_url"] == "https://example.com/source.pdf"
     assert "vector" not in response["results"][0]
+
+
+def test_search_returns_table_display_hints_and_markdown(tmp_vectors_dir):
+    service = seeded_service(tmp_vectors_dir)
+
+    response = service.search_red_flags(query="oil smuggling")
+
+    assert_table_display(response, row_count=2)
+    assert response["display"]["title"] == "Red flags for oil smuggling"
+    assert (
+        "Small oil company wires funds near the southwest border."
+        in response["markdown_table"]
+    )
+    assert "[Source](https://example.com/source.pdf)" in response["markdown_table"]
 
 
 def test_search_rejects_overlong_query_before_store_access():
@@ -238,9 +270,7 @@ def test_filter_red_flags_rejects_unknown_geographic_footprint_before_store_acce
     response = service.filter_red_flags(geographic_footprints=["North Korea"])
 
     assert response["results"] == []
-    assert (
-        "Unknown geographic_footprints value(s): North Korea" in response["message"]
-    )
+    assert "Unknown geographic_footprints value(s): North Korea" in response["message"]
     assert "list_filters" in response["message"]
 
 
@@ -313,6 +343,30 @@ def test_search_fit_explanation_handles_missing_metadata(tmp_vectors_dir):
     ]
 
 
+def test_search_table_markdown_escapes_pipes_and_newlines(tmp_vectors_dir):
+    table = get_or_create_table(open_store(tmp_vectors_dir))
+    upsert_records(
+        table,
+        [
+            RedFlagRecord(
+                id="escaped",
+                description="Payments | receipts\nwithout contracts.",
+                risk_level="high",
+                transaction_patterns=["invoice_mismatch", "third_party_payments"],
+                source_url="https://example.com/source.pdf",
+                vector=vector(1.0),
+            )
+        ],
+    )
+    service = RedFlagService(table=table, embedding_model=FakeModel())
+
+    response = service.search_red_flags(query="payments")
+
+    assert_table_display(response, row_count=1)
+    assert "Payments \\| receipts without contracts." in response["markdown_table"]
+    assert "invoice_mismatch, third_party_payments" in response["markdown_table"]
+
+
 def test_filter_red_flags_returns_direct_metadata_matches_without_embeddings(
     tmp_vectors_dir,
 ):
@@ -332,6 +386,12 @@ def test_filter_red_flags_returns_direct_metadata_matches_without_embeddings(
     assert response["match_type"] == "metadata_filter"
     assert "score" not in response["results"][0]
     assert "vector" not in response["results"][0]
+    assert_table_display(response, row_count=1)
+    assert response["display"]["title"] == "Filtered red flags"
+    assert (
+        "Small oil company wires funds near the southwest border."
+        in response["markdown_table"]
+    )
 
 
 def test_filter_red_flags_concise_detail_returns_small_enumeration_shape(
@@ -358,6 +418,11 @@ def test_filter_red_flags_concise_detail_returns_small_enumeration_shape(
             "source_url": "https://example.com/source.pdf",
         }
     ]
+    assert_table_display(response, row_count=1)
+    assert (
+        "| Small oil company wires funds near the southwest border. | high | - | - |"
+        in response["markdown_table"]
+    )
 
 
 def test_filter_red_flags_rejects_unknown_detail_before_store_access():
@@ -458,9 +523,7 @@ def test_fintrac_human_trafficking_subject_regression_includes_typology_only_rec
         limit=10,
     )
 
-    assert [result["id"] for result in category_only["results"]] == [
-        "fintrac-category"
-    ]
+    assert [result["id"] for result in category_only["results"]] == ["fintrac-category"]
     assert [result["id"] for result in subject["results"]] == [
         "fintrac-category",
         "fintrac-layering",
@@ -486,6 +549,11 @@ def test_filter_red_flags_returns_empty_without_semantic_fallback(tmp_vectors_di
 
     assert response["results"] == []
     assert response["match_type"] == "metadata_filter"
+    assert response["total_matched"] == 0
+    assert_table_display(response, row_count=0)
+    assert response["markdown_table"] == (
+        "| Red flag | Risk | Pattern | Regulator | Source |\n|---|---|---|---|---|"
+    )
 
 
 def test_filter_red_flags_returns_completeness_metadata_and_cursor(tmp_vectors_dir):
@@ -517,6 +585,7 @@ def test_filter_red_flags_returns_completeness_metadata_and_cursor(tmp_vectors_d
     assert first_page["total_matched"] == 25
     assert first_page["truncated"] is True
     assert first_page["next_cursor"] is not None
+    assert_table_display(first_page, row_count=MAX_SEARCH_LIMIT)
     assert [result["id"] for result in first_page["results"]] == [
         f"flag-{index:02d}" for index in range(20)
     ]
@@ -524,6 +593,7 @@ def test_filter_red_flags_returns_completeness_metadata_and_cursor(tmp_vectors_d
     assert second_page["total_matched"] == 25
     assert second_page["truncated"] is False
     assert second_page["next_cursor"] is None
+    assert_table_display(second_page, row_count=5)
     assert [result["id"] for result in second_page["results"]] == [
         f"flag-{index:02d}" for index in range(20, 25)
     ]
@@ -596,12 +666,23 @@ def test_search_returns_limit_transparency(tmp_vectors_dir):
     assert response["truncated"] is False
 
 
+def test_corpus_search_returns_empty_table_display_for_no_matches(tmp_path):
+    service = seeded_corpus_service(tmp_path)
+
+    response = service.search_red_flags(query="zzzz unmatched query")
+
+    assert response["results"] == []
+    assert response["corpus"]["version"] == "2026.04.29"
+    assert_table_display(response, row_count=0)
+
+
 def test_corpus_search_uses_lexical_store_without_embeddings(tmp_path):
     service = seeded_corpus_service(tmp_path)
 
     response = service.search_red_flags(query="TBML invoices")
 
     assert [result["id"] for result in response["results"]] == ["tbml-01"]
+    assert_table_display(response, row_count=1)
     assert response["corpus"]["version"] == "2026.04.29"
     assert response["corpus"]["integrity_status"] == "verified"
     assert any("TBML" in signal for signal in response["results"][0]["fit_signals"])
@@ -622,6 +703,7 @@ def test_corpus_filter_lookup_sources_include_corpus_metadata(tmp_path):
     assert sources["source_count"] == 1
     assert source["source"]["red_flags"]
     assert filtered["corpus"]["package_id"] == "redflag-corpus-2026.04.29"
+    assert_table_display(filtered, row_count=1)
     assert red_flag["corpus"]["version"] == "2026.04.29"
     assert filters["corpus"]["version"] == "2026.04.29"
     assert sources["corpus"]["version"] == "2026.04.29"
@@ -719,8 +801,7 @@ def test_classify_red_flag_request_routes_filtered_relevance_context(
 
     response = service.classify_red_flag_request(
         query=(
-            "trade finance customers receive third-party wires tied to "
-            "unusual invoices"
+            "trade finance customers receive third-party wires tied to unusual invoices"
         ),
         product_types=["trade_finance"],
         geographic_footprints=["southwest_border"],
@@ -731,8 +812,7 @@ def test_classify_red_flag_request_routes_filtered_relevance_context(
     assert response["recommended_tool"] == "search_red_flags"
     assert response["recommended_arguments"] == {
         "query": (
-            "trade finance customers receive third-party wires tied to "
-            "unusual invoices"
+            "trade finance customers receive third-party wires tied to unusual invoices"
         ),
         "limit": MAX_SEARCH_LIMIT,
         "product_types": ["trade_finance"],
@@ -861,6 +941,8 @@ def test_fastmcp_tool_metadata_includes_consultation_guidance(tmp_vectors_dir):
     assert "classify_red_flag_request" in search_description
     assert "filter_red_flags" in search_description
     assert "exact metadata" in search_description
+    assert "display" in search_description
+    assert "markdown_table" in search_description
     assert "industry_types" in by_name["search_red_flags"].inputSchema["properties"]
     assert "subjects" in by_name["search_red_flags"].inputSchema["properties"]
     assert "industry_groups" in by_name["search_red_flags"].inputSchema["properties"]
@@ -872,12 +954,15 @@ def test_fastmcp_tool_metadata_includes_consultation_guidance(tmp_vectors_dir):
     assert "filtered_semantic_search" not in classifier_description
     assert "direct_semantic_search" not in classifier_description
     assert "query" in by_name["classify_red_flag_request"].inputSchema["properties"]
-    assert "product_types" in by_name[
-        "classify_red_flag_request"
-    ].inputSchema["properties"]
+    assert (
+        "product_types"
+        in by_name["classify_red_flag_request"].inputSchema["properties"]
+    )
     assert "exact metadata" in by_name["filter_red_flags"].description
     assert "search_red_flags" in by_name["filter_red_flags"].description
     assert "category is the primary" in by_name["filter_red_flags"].description
+    assert "display" in by_name["filter_red_flags"].description
+    assert "markdown_table" in by_name["filter_red_flags"].description
     assert "subjects" in by_name["list_filters"].description
     assert "geographic_footprints" in by_name["list_filters"].description
     assert "subjects" in by_name["filter_red_flags"].inputSchema["properties"]

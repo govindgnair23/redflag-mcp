@@ -656,6 +656,29 @@ The server exposes hosted-client-compatible tools for request routing, ranked re
 - `list_filters` for available metadata filter values, including geography tokens such as `north_korea` when present in the active corpus
 - `list_sources` and `get_source` for ingested source coverage and citation context
 
+Successful `search_red_flags` and `filter_red_flags` responses include the raw `results` records plus presentation helpers for chat clients:
+
+```json
+{
+  "results": [],
+  "display": {
+    "suggested_format": "table",
+    "title": "Red flags for TBML invoice mismatch",
+    "columns": [
+      {"key": "description", "label": "Red flag"},
+      {"key": "risk_level", "label": "Risk"},
+      {"key": "transaction_patterns", "label": "Pattern"},
+      {"key": "regulator", "label": "Regulator"},
+      {"key": "source_url", "label": "Source"}
+    ],
+    "row_count": 0
+  },
+  "markdown_table": "| Red flag | Risk | Pattern | Regulator | Source |..."
+}
+```
+
+`display` is a rendering hint for clients or models that choose to build a table UI from structured results. `markdown_table` is the portable fallback for ChatGPT, Claude, and other Markdown-capable clients; MCP does not guarantee a native table widget.
+
 It is fully offline after ingestion or corpus installation — no API keys required at query time.
 
 ### Use from Codex
