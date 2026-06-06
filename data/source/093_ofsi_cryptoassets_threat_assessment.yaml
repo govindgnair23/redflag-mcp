@@ -1,0 +1,578 @@
+- id: 093_ofsi_cryptoassets_threat_assessment-01
+  description: Large or unusual transactions immediately following sanctions announcements
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - russia
+  - iran
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - sanctions announcements
+- id: 093_ofsi_cryptoassets_threat_assessment-02
+  description: Exposure to counterparties with known associations to DPs
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - russia
+  - iran
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - counterparties
+  - DPs
+- id: 093_ofsi_cryptoassets_threat_assessment-03
+  description: Sudden changes in transaction patterns, which may indicate attempts
+    to circumvent compliance measures or otherwise obfuscate on-chain activity
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - transaction patterns
+  - on-chain activity
+- id: 093_ofsi_cryptoassets_threat_assessment-04
+  description: Repeated payments from individual addresses for very low amounts
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: low
+  category: layering
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - low amounts
+  - individual addresses
+- id: 093_ofsi_cryptoassets_threat_assessment-05
+  description: Rapid movement of assets through multiple addresses
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns:
+  - wire_transfer_chains
+  - rapid_fund_movement
+  key_terms:
+  - multiple addresses
+- id: 093_ofsi_cryptoassets_threat_assessment-06
+  description: Newly created wallets receiving large transfers, or dormant wallets
+    with no prior transaction history suddenly becoming active
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - newly created wallets
+  - dormant wallets
+- id: 093_ofsi_cryptoassets_threat_assessment-07
+  description: Multiple wallets controlled by the same entity (address clustering)
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  - shell_company_usage
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - address clustering
+- id: 093_ofsi_cryptoassets_threat_assessment-08
+  description: Increasing reliance on DEXs over regulated exchanges
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - DEXs
+  - regulated exchanges
+- id: 093_ofsi_cryptoassets_threat_assessment-09
+  description: Exposure to services lacking a KYC requirement or transactions involving
+    services that do not require user identification
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - KYC
+  - user identification
+- id: 093_ofsi_cryptoassets_threat_assessment-10
+  description: Exposure to services lacking Anti-Money Laundering procedures
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: low
+  category: layering
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns: []
+  key_terms:
+  - AML procedures
+- id: 093_ofsi_cryptoassets_threat_assessment-11
+  description: Frequent address changes
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - address changes
+- id: 093_ofsi_cryptoassets_threat_assessment-12
+  description: Use of anonymity enhanced cryptocurrencies (privacy coins)
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - privacy coins
+- id: 093_ofsi_cryptoassets_threat_assessment-13
+  description: Use of anonymity-enhancing technology such as privacy wallets
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - privacy wallets
+- id: 093_ofsi_cryptoassets_threat_assessment-14
+  description: Use of mixing/tumbling services
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - mixing
+  - tumbling
+- id: 093_ofsi_cryptoassets_threat_assessment-15
+  description: Cross-chain bridge usage to obscure transaction trails
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - wire_transfer_chains
+  key_terms:
+  - cross-chain bridge
+  - transaction trails
+- id: 093_ofsi_cryptoassets_threat_assessment-16
+  description: Cross-chain transfers (chain hopping), particularly to privacy-focused
+    blockchains
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - chain hopping
+  - privacy-focused blockchains
+- id: 093_ofsi_cryptoassets_threat_assessment-17
+  description: One customer account generating hundreds / thousands of new deposit
+    addresses via Application Programming Interface (API)
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - API
+  - deposit addresses
+- id: 093_ofsi_cryptoassets_threat_assessment-18
+  description: Concentrated inflows from mixers, darknet or ransomware wallets, followed
+    by immediate withdrawals
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  - ransomware
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - mixers
+  - darknet
+  - ransomware wallets
+- id: 093_ofsi_cryptoassets_threat_assessment-19
+  description: Large cumulative volumes built from multiple small transfers (e.g.,
+    <£10k)
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: structuring
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - <£10 k
+  - small transfers
+- id: 093_ofsi_cryptoassets_threat_assessment-20
+  description: Public marketing of “no-passport cash-out” or “sanctions-proof” services
+    on social media
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - no-passport cash-out
+  - sanctions-proof
+  - social media
+- id: 093_ofsi_cryptoassets_threat_assessment-21
+  description: Transactions originating from or directed to sanctioned jurisdictions
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - russia
+  - iran
+  - north_korea
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - sanctioned jurisdictions
+- id: 093_ofsi_cryptoassets_threat_assessment-22
+  description: VPN usage masking true geographic location of a counterparty
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - russia
+  - iran
+  - north_korea
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - VPN
+- id: 093_ofsi_cryptoassets_threat_assessment-23
+  description: Counterparties refusing standard compliance checks or failing to provide
+    transaction documentation
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - layering
+  transaction_patterns: []
+  key_terms:
+  - compliance checks
+  - transaction documentation
+- id: 093_ofsi_cryptoassets_threat_assessment-24
+  description: Inconsistent or unexplained source of assets explanations
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Cryptoassets OFSI Threat Assessment
+  regulator: OFSI
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2025-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
+  typology_family:
+  - fraud_proceeds
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - source of assets

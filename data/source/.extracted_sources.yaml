@@ -290,3 +290,11 @@
   slug: 090
   output_file: data/source/090.yaml
   extracted_at: '2026-06-06T15:47:17.409582+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/092.pdf
+  slug: 092
+  output_file: data/source/092.yaml
+  extracted_at: '2026-06-06T23:07:56.076470+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/093_OFSI_Cryptoassets_Threat_Assessment.pdf
+  slug: 093_ofsi_cryptoassets_threat_assessment
+  output_file: data/source/093_ofsi_cryptoassets_threat_assessment.yaml
+  extracted_at: '2026-06-06T23:08:18.018211+00:00'
