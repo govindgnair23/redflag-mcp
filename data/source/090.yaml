@@ -1,0 +1,699 @@
+- id: 090-01
+  description: Suspicious cargo movements, including use of dark fleet vessels and
+    private jets
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - dark fleet
+  - private jets
+  - cargo movements
+- id: 090-02
+  description: Incomplete or incorrect paperwork such as bills of lading
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - bills of lading
+  - paperwork
+- id: 090-03
+  description: Cash based transactions
+  product_types:
+  - depository
+  - currency_exchange
+  - money_transmitter
+  - check_cashing
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+- id: 090-04
+  description: Gold originates from or has been transported through a conflict-affected
+    or high-risk area
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - conflict-affected area
+  - high-risk area
+- id: 090-05
+  description: Gold is claimed to originate from a country that has limited known
+    reserves or stocks, likely resources or expected production levels of gold (i.e.
+    the declared volumes of gold from that country are out of keeping with its known
+    reserves or expected production levels)
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - reserves
+  - expected production levels
+  - declared volumes
+- id: 090-06
+  description: Gold is claimed to originate from a country through which gold from
+    conflict-affected and high-risk areas is known or reasonably suspected to transit
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - transit
+  - conflict-affected and high-risk areas
+- id: 090-07
+  description: The gold is claimed to originate from recyclable/scrap or mixed sources
+    and has been refined in a country where gold from conflict-affected and high-risk
+    areas is known or reasonably suspected to transit
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - recyclable gold
+  - scrap
+  - mixed sources
+  - refined
+- id: 090-08
+  description: New recycled gold provider/s without an established trading reputation
+    or limited ability to verify upstream supply chain
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - recycled gold
+  - upstream supply chain
+- id: 090-09
+  description: New customers demanding high volumes of recycled gold in supply chain
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - recycled gold
+  - high volumes
+- id: 090-10
+  description: Suppliers or other known upstream companies operate in one of the above-mentioned
+    red flag locations of gold origin and transit, or have shareholder or other interests
+    in suppliers of gold from one of the above-mentioned red flag locations of gold
+    origin and transit
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - upstream companies
+  - shareholder interests
+  - origin and transit
+- id: 090-11
+  description: Suppliers or other known upstream companies are known to have sourced
+    gold from a red flag location of gold origin and transit in the last 12 months
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - last 12 months
+  - upstream companies
+  - origin and transit
+- id: 090-12
+  description: An absence of gold (or other precious metals) being hallmarked with
+    cartage before sale, allowing for misrepresentation of the true value of the gold
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - fraud_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - hallmarked
+  - cartage
+  - misrepresentation
+- id: 090-13
+  description: Gold passing between entities without proof of ownership
+  product_types:
+  - trade_finance
+  - depository
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - shell_company_usage
+  - sanctions_evasion
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - proof of ownership
+  - entities
+- id: 090-14
+  description: Unexplained wealth on company tax returns
+  product_types:
+  - depository
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - tax returns
+  - unexplained wealth
+- id: 090-15
+  description: Significant increase in volume of gold being processed/ volume of trade
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - volume of gold
+  - volume of trade
+- id: 090-16
+  description: Use of jurisdictions in which anti-money laundering laws, anti-corruption
+    laws, customs controls and other relevant governmental oversight laws are weakly
+    enforced; informal banking systems operate, and cash is extensively used
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - informal_value_transfer
+  - cash_intensive_behavior
+  key_terms:
+  - weakly enforced
+  - informal banking systems
+  - cash
+- id: 090-17
+  description: Patterns of movement that suggest organisation to obfuscate due diligence
+  product_types:
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - movement
+  - obfuscate due diligence
+- id: 090-18
+  description: An absence of gold (or other precious metals) being hallmarked with
+    cartage before sale, allowing for misrepresentation of the true value of the gold
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - fraud_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - hallmarked
+  - cartage
+  - misrepresentation
+- id: 090-19
+  description: Unusual customer patterns for recasting of existing jewellery or gold,
+    such as high numbers of small volume transactions, or numerous customers requesting
+    similar transactions
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - fraud_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - structuring
+  - rapid_fund_movement
+  key_terms:
+  - recasting
+  - small volume transactions
+- id: 090-20
+  description: Unrealistic pricing of gold for sale
+  product_types:
+  - trade_finance
+  - depository
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - trade_based_money_laundering
+  - fraud_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - pricing
+  - gold for sale
+- id: 090-21
+  description: Stated origin of recycled or scrap jewellery not matching the expected
+    quality or grade for that origin
+  product_types:
+  - trade_finance
+  - depository
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - recycled jewellery
+  - scrap jewellery
+  - origin
+  - quality
+  - grade
+- id: 090-22
+  description: Cash based transactions
+  product_types:
+  - depository
+  - currency_exchange
+  - money_transmitter
+  - check_cashing
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - National Economic Crime Centre
+  - National Crime Agency
+  - HM Treasury’s Office of Financial Sanctions Implementation
+  - Foreign, Commonwealth & Development Office
+  issued_date: 2023-11
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash

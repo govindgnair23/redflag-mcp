@@ -1,0 +1,434 @@
+- id: 087-01
+  description: School staff show unexpected interest in specific student applications,
+    or request to circumvent normal application requirements.
+  product_types:
+  - depository
+  industry_types:
+  - education
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - student applications
+  - circumvent
+  - normal application requirements
+- id: 087-02
+  description: The student comes from a jurisdiction considered of higher risk for
+    money laundering.
+  product_types:
+  - depository
+  industry_types:
+  - education
+  customer_profiles:
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: low
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - higher risk
+  - money laundering
+- id: 087-03
+  description: Funds coming to the school to pay for a child’s fees, where the funds
+    are not coming from either a UK account, or from the same jurisdiction the child
+    is a national of.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - education
+  customer_profiles:
+  - foreign_individual
+  - non_resident_alien
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - school fees
+  - UK account
+  - same jurisdiction
+- id: 087-04
+  description: Payments for school fees that do not come directly from parents.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - education
+  customer_profiles:
+  - foreign_individual
+  - non_resident_alien
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - school fees
+  - parents
+- id: 087-05
+  description: Cash deposits into accounts funding outgoing payments to schools.
+  product_types:
+  - depository
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - schools
+- id: 087-06
+  description: Cash deposits paid directly into independent schools’ accounts for
+    fees, obscuring the source of funds.
+  product_types:
+  - depository
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - school fees
+  - source of funds
+- id: 087-07
+  description: Accounts are funded by a number of un-associated third parties, with
+    the income exceeding the profile of the customer.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - un-associated third parties
+  - income exceeding profile
+- id: 087-08
+  description: Transactions to schools of a size that may indicate that multiple years’
+    fees are being paid up front.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - multiple years’ fees
+  - paid up front
+- id: 087-09
+  description: Account activity which is not aligned to the purpose of the account
+    such as the use of custody accounts for school payments.
+  product_types:
+  - securities
+  industry_types:
+  - education
+  customer_profiles:
+  - high_net_worth_individual
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - custody accounts
+  - school payments
+- id: 087-10
+  description: The client cannot, or will not, provide further detail around the underlying
+    customer.
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - underlying customer
+- id: 087-11
+  description: Clients classified as PEPs paying school fees.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - education
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - PEPs
+  - school fees
+- id: 087-12
+  description: Clients classified as PEPs and also originating from a country that
+    has controls in place around PEPs holding offshore accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
+    Case Studies and Red Flags'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - NECC
+  - Home Office
+  - Independent Schools Council
+  - Independent Schools Bursars Association
+  - Office of Financial Sanctions Implementation
+  - HM Treasury
+  - JMLIT
+  issued_date: 2020-10
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - PEPs
+  - offshore accounts
