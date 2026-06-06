@@ -83,14 +83,32 @@ class TestWriteRegistry:
 
 
 class TestNextSerial:
+    """next_serial considers both registry keys AND filesystem prefixes.
+
+    These tests patch out the filesystem scan so we can verify the
+    registry-only behavior independently.
+    """
+
     def test_non_empty_registry(self):
-        assert next_serial({"038": {"url": "x"}, "001": {"url": "y"}}) == 39
+        with patch("harvest_sources._filesystem_serials", return_value=set()):
+            assert next_serial({"038": {"url": "x"}, "001": {"url": "y"}}) == 39
 
     def test_empty_registry(self):
-        assert next_serial({}) == 1
+        with patch("harvest_sources._filesystem_serials", return_value=set()):
+            assert next_serial({}) == 1
 
     def test_single_entry(self):
-        assert next_serial({"005": {"url": "x"}}) == 6
+        with patch("harvest_sources._filesystem_serials", return_value=set()):
+            assert next_serial({"005": {"url": "x"}}) == 6
+
+    def test_picks_up_filesystem_serials(self):
+        """A manually placed file (e.g. 208-foo.pdf) should be visible."""
+        with patch("harvest_sources._filesystem_serials", return_value={208}):
+            assert next_serial({"005": {"url": "x"}}) == 209
+
+    def test_filesystem_only_when_registry_empty(self):
+        with patch("harvest_sources._filesystem_serials", return_value={100}):
+            assert next_serial({}) == 101
 
 
 # ---------------------------------------------------------------------------

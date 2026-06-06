@@ -63,11 +63,12 @@ def test_download_sources_downloads_urls_and_updates_sources_registry(tmp_path):
     with (
         patch("pipeline.SOURCES_YAML", sources_yaml),
         patch("pipeline.REGISTRY_CSV", registry_csv),
-        patch("pipeline.PDFS_DIR", pdf_dir),
-        patch("pipeline.MARKDOWN_DIR", markdown_dir),
-        patch("pipeline.classify_url", side_effect=["pdf", "web"]),
-        patch("pipeline.fetch_pdf", return_value=10) as mock_fetch_pdf,
-        patch("pipeline.fetch_web", return_value=20) as mock_fetch_web,
+        patch("harvest_sources.SOURCES_YAML", sources_yaml),
+        patch("harvest_sources.PDFS_DIR", pdf_dir),
+        patch("harvest_sources.MARKDOWN_DIR", markdown_dir),
+        patch("harvest_sources.classify_url", side_effect=["pdf", "web"]),
+        patch("harvest_sources.fetch_pdf", return_value=10) as mock_fetch_pdf,
+        patch("harvest_sources.fetch_web", return_value=20) as mock_fetch_web,
         patch("pipeline.build_registry") as mock_build_registry,
     ):
         downloaded = pipeline.download_sources(urls_file, force=False, client=client)
@@ -97,10 +98,11 @@ def test_download_sources_skips_registry_duplicates_unless_forced(tmp_path):
     with (
         patch("pipeline.SOURCES_YAML", sources_yaml),
         patch("pipeline.REGISTRY_CSV", registry_csv),
-        patch("pipeline.PDFS_DIR", tmp_path / "pdf"),
-        patch("pipeline.MARKDOWN_DIR", tmp_path / "markdown"),
-        patch("pipeline.classify_url", return_value="pdf") as mock_classify_url,
-        patch("pipeline.fetch_pdf", return_value=10) as mock_fetch_pdf,
+        patch("harvest_sources.SOURCES_YAML", sources_yaml),
+        patch("harvest_sources.PDFS_DIR", tmp_path / "pdf"),
+        patch("harvest_sources.MARKDOWN_DIR", tmp_path / "markdown"),
+        patch("harvest_sources.classify_url", return_value="pdf") as mock_classify_url,
+        patch("harvest_sources.fetch_pdf", return_value=10) as mock_fetch_pdf,
         patch("pipeline.build_registry") as mock_build_registry,
     ):
         assert pipeline.download_sources(urls_file, force=False, client=client) == []
@@ -123,10 +125,11 @@ def test_download_sources_continues_after_download_failure(tmp_path):
     with (
         patch("pipeline.SOURCES_YAML", sources_yaml),
         patch("pipeline.REGISTRY_CSV", registry_csv),
-        patch("pipeline.PDFS_DIR", tmp_path / "pdf"),
-        patch("pipeline.MARKDOWN_DIR", tmp_path / "markdown"),
-        patch("pipeline.classify_url", return_value="pdf"),
-        patch("pipeline.fetch_pdf", side_effect=[RuntimeError("boom"), 10]),
+        patch("harvest_sources.SOURCES_YAML", sources_yaml),
+        patch("harvest_sources.PDFS_DIR", tmp_path / "pdf"),
+        patch("harvest_sources.MARKDOWN_DIR", tmp_path / "markdown"),
+        patch("harvest_sources.classify_url", return_value="pdf"),
+        patch("harvest_sources.fetch_pdf", side_effect=[RuntimeError("boom"), 10]),
         patch("pipeline.build_registry") as mock_build_registry,
     ):
         downloaded = pipeline.download_sources(urls_file, force=False, client=client)
@@ -268,7 +271,7 @@ def test_main_dispatches_subcommands_and_parallel_defaults(tmp_path):
 
     with patch("pipeline.download_sources") as mock_download:
         pipeline.main(["download", str(urls_file)])
-    mock_download.assert_called_once_with(urls_file, force=False)
+    mock_download.assert_called_once_with(str(urls_file), force=False)
 
     with patch("pipeline.extract_downloaded_sources") as mock_extract:
         pipeline.main(["extract"])
@@ -280,4 +283,4 @@ def test_main_dispatches_subcommands_and_parallel_defaults(tmp_path):
 
     with patch("pipeline.run_pipeline") as mock_run:
         pipeline.main(["run", str(urls_file), "--force", "--parallel", "2"])
-    mock_run.assert_called_once_with(urls_file, force=True, workers=2, verify=True, force_handcrafted=False)
+    mock_run.assert_called_once_with(str(urls_file), force=True, workers=2, verify=True, force_handcrafted=False)
