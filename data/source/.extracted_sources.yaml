@@ -310,3 +310,7 @@
   slug: '100'
   output_file: data/source/100.yaml
   extracted_at: '2026-06-07T12:09:46.398644+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/106.pdf
+  slug: '106'
+  output_file: data/source/106.yaml
+  extracted_at: '2026-06-07T16:58:45.271593+00:00'

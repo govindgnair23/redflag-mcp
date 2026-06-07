@@ -1,0 +1,2024 @@
+- id: 106-01
+  description: Legal entities with complex structures
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - complex structures
+  - UBO
+- id: 106-02
+  description: Institutions not subject to a form of supervision
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: low
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms: []
+- id: 106-03
+  description: Customers in professions that are closely associated with money laundering
+    and fraud.
+  product_types: []
+  industry_types:
+  - cash_intensive_business
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - money laundering
+  - fraud
+- id: 106-04
+  description: Customers employed in businesses that are cash-intensive (for instance,
+    the hospitality sector, massage salons, car dealerships, scrap dealers).
+  product_types:
+  - depository
+  industry_types:
+  - travel_hospitality
+  - auto_sales
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: low
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash-intensive
+- id: 106-05
+  description: Customers who execute or give instructions for transactions in unusual
+    circumstances.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unusual circumstances
+- id: 106-06
+  description: Frequent and inexplicable switching to other institutions
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - switching to other institutions
+- id: 106-07
+  description: Inexplicable changes of accounts in various geographic locations.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - accounts
+  - geographic locations
+- id: 106-08
+  description: Investments in goods that are difficult to value (art, antiques, whisky,
+    real estate)
+  product_types:
+  - securities
+  - trade_finance
+  - depository
+  industry_types:
+  - art_antiquities
+  - real_estate
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - real_estate_money_laundering
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - art
+  - antiques
+  - whisky
+  - real estate
+- id: 106-09
+  description: Transactions executed in private bilateral agreements
+  product_types:
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - private bilateral agreements
+- id: 106-10
+  description: Crypto products or products that are unusually complex.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - crypto products
+  - unusually complex
+- id: 106-11
+  description: Collaboration with other financial institutions based in a high-risk
+    country
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - high-risk country
+- id: 106-12
+  description: The use of national or foreign intermediaries
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: low
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - intermediaries
+- id: 106-13
+  description: The country in which the customer lives or is established or has their
+    place of business is designated as a country involving a higher risk of money
+    laundering or terrorist financing as listed by the European Commission in Article
+    9 of the revised fourth anti-money laundering Directive.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - Article 9
+  - high-risk country
+- id: 106-14
+  description: Countries or geographical regions have been identified by independent
+    sources as involving a high level of corruption or other criminal activity
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - corruption
+  - criminal activity
+- id: 106-15
+  description: Countries against which the UN or the EU has imposed sanctions also
+    qualify as high-risk countries.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - UN
+  - EU
+  - sanctions
+- id: 106-16
+  description: (Potential) relations appearing on sanction lists;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - sanction lists
+- id: 106-17
+  description: Shell banks (banks with no physical presence in the country in which
+    they are located but which have a licence);
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - shell banks
+- id: 106-18
+  description: Legal entities with an opaque organisational structure (particularly
+    if this structure is aimed at tax evasion);
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - tax_evasion
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - opaque organisational structure
+  - tax evasion
+- id: 106-19
+  description: Natural persons or legal entities suspected of involvement with a criminal
+    organisation;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - criminal organisation
+- id: 106-20
+  description: Customers who wish to remain anonymous or provide false identity information;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - anonymous
+  - false identity information
+- id: 106-21
+  description: Customers who refuse to provide the legally required information documents;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - required information documents
+- id: 106-22
+  description: Professional counterparties that do not hold the required licences,
+    known as illegal financial firms.
+  product_types:
+  - securities
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - illegal financial firms
+  - licences
+- id: 106-23
+  description: Transactions giving the institution reason to believe that the transaction
+    could be linked to money laundering or terrorist financing
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - unusual transaction
+- id: 106-24
+  description: Lack of clarity regarding the underlying parties or ultimate beneficiaries,
+    for instance by the use of front men;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - front men
+  - ultimate beneficiaries
+- id: 106-25
+  description: Pretence of a legal source of funds by wrongfully describing these
+    as consultancy fees, commissions, or loans;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types:
+  - professional_services
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - consultancy fees
+  - commissions
+  - loans
+- id: 106-26
+  description: Unusual sources of funds, for instance from countries featuring a high
+    level of corruption and political instability, or the involvement of offshore
+    companies;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - offshore_company_usage
+  key_terms:
+  - offshore companies
+  - corruption
+  - political instability
+- id: 106-27
+  description: Funds originating from foreign accounts held by Dutch citizens opened
+    with the aim of keeping these funds out of sight of the Dutch authorities;
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: tax_evasion
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - foreign accounts
+  - Dutch authorities
+- id: 106-28
+  description: Unusual and unaccounted for income, such as a false inheritance, lottery
+    winnings or failure to cite sources other than non-verifiable sources to account
+    for the funds;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false inheritance
+  - lottery winnings
+  - non-verifiable sources
+- id: 106-29
+  description: Absence of accountability documentation, such as invoices, bank statements,
+    purchase contracts or loan agreements;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - invoices
+  - bank statements
+  - purchase contracts
+  - loan agreements
+- id: 106-30
+  description: Refusal by the client to account for the source of the funds;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - source of the funds
+- id: 106-31
+  description: Transactions or investments that by nature or volume are unusual for
+    the client in question;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unusual
+  - investments
+- id: 106-32
+  description: The client is an unregulated nominee company with unknown shareholders;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - nominee company
+  - unknown shareholders
+- id: 106-33
+  description: The client resides or is located in a jurisdiction with a higher risk
+    of money laundering and terrorism financing or high-risk countries, such as tax
+    havens, countries with banking secrecy, countries in which many offshore companies
+    are established or countries producing illegal drugs;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - tax havens
+  - banking secrecy
+  - offshore companies
+  - illegal drugs
+- id: 106-34
+  description: The client is also a financial enterprise, but is not registered or
+    is registered in a jurisdiction with weak AML/CFT supervision;
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - weak AML/CFT supervision
+- id: 106-35
+  description: The client is involved in or derives their assets or income from potentially
+    high-risk activities or sectors, such as cash-intensive activities, the real estate
+    sector, the trust sector, money transfers or offshore companies;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types:
+  - real_estate
+  - money_services_business
+  customer_profiles:
+  - cash_intensive_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - real_estate_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - cash-intensive
+  - real estate
+  - trust sector
+  - money transfers
+  - offshore companies
+- id: 106-36
+  description: The client is a legal entity with 'floating assets', such as a Trust,
+    a Stiftung (German foundation), a Treuhand (Swiss trust) or an Anstalt (an ‘Establishment’
+    in Liechtenstein).
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - eastern_europe
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - Trust
+  - Stiftung
+  - Treuhand
+  - Anstalt
+- id: 106-37
+  description: The client uses products or services that could lead to anonymity or
+    lack of clear information on underlying customer transactions (such as bearer
+    shares or omnibus accounts).
+  product_types:
+  - securities
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - bearer shares
+  - omnibus accounts
+- id: 106-38
+  description: There are no grounds for suspicion, or if there is any doubt as to
+    whether the UBO is indeed the ultimate owner or exercises control.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - UBO
+  - ultimate owner
+  - control
+- id: 106-39
+  description: The institution is unable to establish the identity of a UBO or designate
+    a pseudo-UBO, for example due to suspicions, it may not enter into a business
+    relationship with the client and/or may not execute the requested transaction.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - UBO
+  - pseudo-UBO
+- id: 106-40
+  description: The client is not resident or established in the Netherlands, the institution
+    will have to ask additional questions to determine why the client wishes to purchase
+    products or services from the institution in the Netherlands.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: low
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - Netherlands
+- id: 106-41
+  description: A client fails to cooperate with a review into the source of funds;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+- id: 106-42
+  description: Transactions with cryptos by their nature involve a higher risk of
+    money laundering or terrorist financing
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - crypto
+- id: 106-43
+  description: Transactions giving the institution reason to believe that the transaction
+    could be linked to money laundering or terrorist financing
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - unusual transaction
+- id: 106-44
+  description: Lack of clarity regarding the underlying parties or ultimate beneficiaries,
+    for instance by the use of front men;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - front men
+  - ultimate beneficiaries
+- id: 106-45
+  description: Pretence of a legal source of funds by wrongfully describing these
+    as consultancy fees, commissions, or loans;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types:
+  - professional_services
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - consultancy fees
+  - commissions
+  - loans
+- id: 106-46
+  description: Unusual sources of funds, for instance from countries featuring a high
+    level of corruption and political instability, or the involvement of offshore
+    companies;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - offshore_company_usage
+  key_terms:
+  - offshore companies
+  - corruption
+  - political instability
+- id: 106-47
+  description: Funds originating from foreign accounts held by Dutch citizens opened
+    with the aim of keeping these funds out of sight of the Dutch authorities;
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: tax_evasion
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - foreign accounts
+  - Dutch authorities
+- id: 106-48
+  description: Unusual and unaccounted for income, such as a false inheritance, lottery
+    winnings or failure to cite sources other than non-verifiable sources to account
+    for the funds;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false inheritance
+  - lottery winnings
+  - non-verifiable sources
+- id: 106-49
+  description: Absence of accountability documentation, such as invoices, bank statements,
+    purchase contracts or loan agreements;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - invoices
+  - bank statements
+  - purchase contracts
+  - loan agreements
+- id: 106-50
+  description: Refusal by the client to account for the source of the funds;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - source of the funds
+- id: 106-51
+  description: Transactions or investments that by nature or volume are unusual for
+    the client in question;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unusual
+  - investments
+- id: 106-52
+  description: The client is an unregulated nominee company with unknown shareholders;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - nominee company
+  - unknown shareholders
+- id: 106-53
+  description: The client resides or is located in a jurisdiction with a higher risk
+    of money laundering and terrorism financing or high-risk countries, such as tax
+    havens, countries with banking secrecy, countries in which many offshore companies
+    are established or countries producing illegal drugs;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - tax havens
+  - banking secrecy
+  - offshore companies
+  - illegal drugs
+- id: 106-54
+  description: The client is also a financial enterprise, but is not registered or
+    is registered in a jurisdiction with weak AML/CFT supervision;
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - weak AML/CFT supervision
+- id: 106-55
+  description: The client is involved in or derives their assets or income from potentially
+    high-risk activities or sectors, such as cash-intensive activities, the real estate
+    sector, the trust sector, money transfers or offshore companies;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types:
+  - real_estate
+  - money_services_business
+  customer_profiles:
+  - cash_intensive_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - real_estate_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - cash-intensive
+  - real estate
+  - trust sector
+  - money transfers
+  - offshore companies
+- id: 106-56
+  description: The client is a legal entity with 'floating assets', such as a Trust,
+    a Stiftung (German foundation), a Treuhand (Swiss trust) or an Anstalt (an ‘Establishment’
+    in Liechtenstein).
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - eastern_europe
+  - high_risk_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - Trust
+  - Stiftung
+  - Treuhand
+  - Anstalt
+- id: 106-57
+  description: The client uses products or services that could lead to anonymity or
+    lack of clear information on underlying customer transactions (such as bearer
+    shares or omnibus accounts).
+  product_types:
+  - securities
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - bearer shares
+  - omnibus accounts
+- id: 106-58
+  description: There are no grounds for suspicion, or if there is any doubt as to
+    whether the UBO is indeed the ultimate owner or exercises control.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - UBO
+  - ultimate owner
+  - control
+- id: 106-59
+  description: The institution is unable to establish the identity of a UBO or designate
+    a pseudo-UBO, for example due to suspicions, it may not enter into a business
+    relationship with the client and/or may not execute the requested transaction.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - UBO
+  - pseudo-UBO
+- id: 106-60
+  description: The client is not resident or established in the Netherlands, the institution
+    will have to ask additional questions to determine why the client wishes to purchase
+    products or services from the institution in the Netherlands.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: low
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - Netherlands
+- id: 106-61
+  description: A client fails to cooperate with a review into the source of funds;
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+- id: 106-62
+  description: Transactions with cryptos by their nature involve a higher risk of
+    money laundering or terrorist financing
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - crypto
+- id: 106-63
+  description: Regular changing of payment details at the client's request;
+  product_types:
+  - securities
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - payment details
+- id: 106-64
+  description: There is no economic rationale for the investments;
+  product_types:
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - economic rationale
+- id: 106-65
+  description: The client wishes to purchase or sell long-term investments shortly
+    after their initial investment, with no economic reason to do so and in particular
+    if large losses or high transaction costs are involved.
+  product_types:
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - long-term investments
+  - transaction costs
+- id: 106-66
+  description: The financial service provider is confronted with the circumstance
+    that the life insurance policy is not in the name of the actual beneficiary;
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - life insurance policy
+  - actual beneficiary
+- id: 106-67
+  description: The financial service provider encounters problems with the identification
+    of the actual beneficiary and/or observes irregularities with regard to the name
+    on the policy;
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - actual beneficiary
+  - name on the policy
+- id: 106-68
+  description: The client asks the institution about paying the premium in a different
+    way (for instance in cash);
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - premium
+  - cash
+- id: 106-69
+  description: There is a large lump-sum payment for a policy and the source of the
+    funds is unclear.
+  product_types:
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: medium
+  category: layering
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - lump-sum payment
+  - source of the funds
+- id: 106-70
+  description: The identity of a relation corresponds to a natural or legal person
+    or entity listed in the sanctions regulations
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - sanctions regulations
+- id: 106-71
+  description: There is a transaction or proposed transaction with an existing or
+    new relation included in a sanctions list
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - insurance
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Guidelines to the Dutch Money Laundering and Terrorist Financing
+    (Prevention) Act (‘Wet ter voorkoming van witwassen en financieren van terrorisme,
+    Wwft’) and the Sanctions Act of 1977 ('Sanctiewet 1977, Sanctiewet’)
+  regulator: AFM
+  regulator_jurisdiction: NL
+  issuing_agencies:
+  - The Dutch Authority for the Financial Markets
+  issued_date: '2022-10-13'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.afm.nl/~/profmedia/files/wet-regelgeving/beleidsuitingen/leidraden/guidelines-wwft-sw.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - sanctions list
+  - transaction
