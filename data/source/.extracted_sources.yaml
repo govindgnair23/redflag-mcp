@@ -298,3 +298,15 @@
   slug: 093_ofsi_cryptoassets_threat_assessment
   output_file: data/source/093_ofsi_cryptoassets_threat_assessment.yaml
   extracted_at: '2026-06-06T23:08:18.018211+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/098.pdf
+  slug: 098
+  output_file: data/source/098.yaml
+  extracted_at: '2026-06-07T12:08:07.598939+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/096.pdf
+  slug: 096
+  output_file: data/source/096.yaml
+  extracted_at: '2026-06-07T12:08:52.242003+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/100.pdf
+  slug: '100'
+  output_file: data/source/100.yaml
+  extracted_at: '2026-06-07T12:09:46.398644+00:00'

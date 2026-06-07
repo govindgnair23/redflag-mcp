@@ -1,0 +1,273 @@
+- id: 098-01
+  description: Has the NPO been linked by relevant, reliable and independent sources
+    to extremism, extremist propaganda or terrorist sympathies and activities?
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - NPO
+  - extremism
+  - extremist propaganda
+  - terrorist sympathies
+- id: 098-02
+  description: Has the NPO been involved in misconduct or criminal activities, including
+    ML/TF-related cases, according to relevant, reliable and independent sources?
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - NPO
+  - misconduct
+  - criminal activities
+  - ML/TF-related cases
+- id: 098-03
+  description: Does the NPO’s funding methods carry ML/TF risks? Does it rely entirely
+    or largely on cash donations, crypto assets or crowdfunding? Or are the NPO’s
+    sources of funds channelled through the payments system?
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - wire_transfer
+  - crypto
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints: []
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: medium
+  category: layering
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - NPO
+  - cash donations
+  - crypto assets
+  - crowdfunding
+  - payments system
+- id: 098-04
+  description: Is the NPO funded partly or largely by private donors or donors from
+    jurisdictions associated with higher ML/TF risks or high-risk third countries
+    identified as having strategic deficiencies in their AML/CFT regime?
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - NPO
+  - private donors
+  - high-risk third countries
+  - AML/CFT regime
+- id: 098-05
+  description: Does the NPO operate or deliver assistance in jurisdictions associated
+    with higher ML/TF risks (as assessed based on risk factors presented in Title
+    I of these guidelines) or in high-risk third countries (as identified by the Commission
+    pursuant to Article 9(2) of Directive (EU) 2015/849) or in conflict zones?
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - NPO
+  - conflict zones
+  - high-risk third countries
+  - assistance
+- id: 098-06
+  description: In such situations, does the NPO rely on third parties or intermediaries
+    to perform its activities and is it able to explain the nature of the discharge?
+    In this context, is the NPO able to monitor and have adequate oversight of the
+    discharge by these third parties?
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: medium
+  category: layering
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - terrorist_financing
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - NPO
+  - third parties
+  - intermediaries
+  - oversight
+  - discharge
+- id: 098-07
+  description: Is the business relationship with the NPO likely to involve the execution
+    of transactions with a respondent institution located in jurisdictions associated
+    with higher ML/TF risks or in high-risk third countries?
+  product_types:
+  - correspondent_banking
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: medium
+  category: layering
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  - wire_transfer_chains
+  key_terms:
+  - NPO
+  - respondent institution
+  - high-risk third countries
+  - transactions
+- id: 098-08
+  description: The NPO is conducting activities in jurisdictions subject to EU or
+    UN sanctions.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: Final Report on Guidelines amending the ML/TF Risk Factors Guidelines
+    in relation to NPO
+  regulator: EBA
+  regulator_jurisdiction: EU
+  issuing_agencies: []
+  issued_date: '2023-03-31'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - NPO
+  - EU sanctions
+  - UN sanctions
+  - humanitarian exemptions
+  - derogations
