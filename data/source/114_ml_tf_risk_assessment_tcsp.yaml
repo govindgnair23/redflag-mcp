@@ -1,0 +1,2278 @@
+- id: 114_ml_tf_risk_assessment_tcsp-01
+  description: Legal entity has banking activity outside of its domiciliation jurisdiction
+    without any apparent justification
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - domiciliation jurisdiction
+  - banking activity
+- id: 114_ml_tf_risk_assessment_tcsp-02
+  description: Legal entity has a relationship with foreign professional intermediaries
+    in the absence of geniune business transaction in the professional’s country of
+    operation
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - foreign professional intermediaries
+  - genuine business transaction
+- id: 114_ml_tf_risk_assessment_tcsp-03
+  description: Complex structures are used which do not appear to legitimately require
+    that level of complexity or which do not make commercial sense
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - complex structures
+  - commercial sense
+- id: 114_ml_tf_risk_assessment_tcsp-04
+  description: Informal nominee shareholders and directors are used (e.g. close associates
+    or family members)
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - nominee shareholders
+  - nominee directors
+- id: 114_ml_tf_risk_assessment_tcsp-05
+  description: Legal structure has been altered frequently and/or without adequate
+    explanation (e.g. name changes, transfer of ownership, change of beneficiaries,
+    change of trustee or protector, change of partners, change of directors or officers)
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - name changes
+  - transfer of ownership
+  - change of beneficiaries
+- id: 114_ml_tf_risk_assessment_tcsp-06
+  description: Conflict of interest is evident between entity, relationship manager,
+    external advisor and/or intermediary
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - conflict of interest
+  - intermediary
+- id: 114_ml_tf_risk_assessment_tcsp-07
+  description: Employee of professional intermediary/third party firm is acting as
+    nominee director or shareholder.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - nominee director
+  - nominee shareholder
+  - third party firm
+- id: 114_ml_tf_risk_assessment_tcsp-08
+  description: Power of representation (or Attorney) is given in unusual conditions
+    and the stated reason for it is unclear or illogical
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - power of attorney
+  - representation
+- id: 114_ml_tf_risk_assessment_tcsp-09
+  description: Client is introduced by an unknown / unfamiliar intermediary
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - intermediary
+  - introduced
+- id: 114_ml_tf_risk_assessment_tcsp-10
+  description: Bearer shares are used without appropriate registration with a custodian
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - bearer shares
+  - custodian
+- id: 114_ml_tf_risk_assessment_tcsp-11
+  description: Professional requests unusual contract terms
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - contract terms
+- id: 114_ml_tf_risk_assessment_tcsp-12
+  description: Legal person uses a complex set-up without clear economic or patrimonial
+    justification, or which appears designed to conceal information (e.g. trusts from
+    jurisdiction with no requirement to disclose beneficiaries)
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - tax_evasion
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - complex set-up
+  - beneficiaries
+  - trusts
+- id: 114_ml_tf_risk_assessment_tcsp-13
+  description: Legal person has no real business activities
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - no real business activities
+- id: 114_ml_tf_risk_assessment_tcsp-14
+  description: Legal person is not paying taxes, superannuation, retirement funds
+    contributions or social benefits
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - taxes
+  - social benefits
+- id: 114_ml_tf_risk_assessment_tcsp-15
+  description: Legal person has been identified as non-tax compliant in Luxembourg
+    or another jurisdiction
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - non-tax compliant
+- id: 114_ml_tf_risk_assessment_tcsp-16
+  description: Legal person is receiving loans from private third parties without
+    any supporting loan agreements, collateral or regular interest repayments
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - tax_evasion
+  - layering
+  transaction_patterns:
+  - loan_back_scheme
+  - third_party_payments
+  key_terms:
+  - private third parties
+  - loan agreements
+  - collateral
+- id: 114_ml_tf_risk_assessment_tcsp-17
+  description: Legal person and TCSPs are receiving directions and decisions via foreign
+    professional intermediaries
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - uk_eu
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - foreign professional intermediaries
+  - directions and decisions
+- id: 114_ml_tf_risk_assessment_tcsp-18
+  description: Complicated transaction routings are used without sufficient explanations
+    or trade records
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - wire_transfer_chains
+  key_terms:
+  - transaction routings
+  - trade records
+- id: 114_ml_tf_risk_assessment_tcsp-19
+  description: Findings of anomalies in documentation justifying transactions, and
+    notably atypical or unusual transactions (e.g. no VAT number, no invoice number,
+    circular transactions)
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - round_tripping
+  key_terms:
+  - VAT number
+  - invoice number
+  - circular transactions
+- id: 114_ml_tf_risk_assessment_tcsp-20
+  description: Request to have hardcopy documents retained for a short time only or
+    personal collection with long time spans in between
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: tax_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - hold mail
+- id: 114_ml_tf_risk_assessment_tcsp-21
+  description: Hold mail not collected and the client or their beneficial owners have
+    not visited Luxembourg for an extended period
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - non_resident_alien
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: tax_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - hold mail
+  - Luxembourg
+- id: 114_ml_tf_risk_assessment_tcsp-22
+  description: Legal person or arrangement is used exclusively to facilitate transit
+    of transactions and does not appear to generate wealth or income
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - layering
+  - tax_evasion
+  - corruption_and_bribery
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - transit
+  - wealth or income
+- id: 114_ml_tf_risk_assessment_tcsp-23
+  description: Funds are sent to, or received from, a foreign country when there is
+    no apparent connection between the country and the client
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - tax_evasion
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - foreign country
+  - no apparent connection
+- id: 114_ml_tf_risk_assessment_tcsp-24
+  description: Funds are sent to, or received from, a jurisdiction with higher risk
+    of tax crimes or international trade
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - tax_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - higher risk of tax crimes
+  - international trade
+- id: 114_ml_tf_risk_assessment_tcsp-25
+  description: Payment or reception of fees to or from foreign companies without business
+    activities or without substance or link between the counterparties and whose purpose
+    seems to be economically unjustified re-invoicing
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - import_export
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - uk_eu
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  - tax_evasion
+  transaction_patterns:
+  - invoice_mismatch
+  - third_party_payments
+  key_terms:
+  - re-invoicing
+  - foreign companies
+  - substance
+- id: 114_ml_tf_risk_assessment_tcsp-26
+  description: Transactions are executed in an apparent cyclical way
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - layering
+  - tax_evasion
+  transaction_patterns:
+  - round_tripping
+  key_terms:
+  - cyclical
+  - transactions
+- id: 114_ml_tf_risk_assessment_tcsp-27
+  description: The client is a PEP or a person closely associated or related to PEPs
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - PEP
+- id: 114_ml_tf_risk_assessment_tcsp-28
+  description: Legal entity has no real business or commerical activity
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - business activity
+  - commercial activity
+- id: 114_ml_tf_risk_assessment_tcsp-29
+  description: Client base includes industries or sectors (e.g. pharmaceutical, healthcare,
+    emerging technologies, oil and gas, arms, luxury goods, dual-use goods, etc.)
+    where opportunities for ML/TF via bribery and corruption are particularly prevalent
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - healthcare
+  - oil_and_gas
+  - arms_dual_use_goods
+  - luxury_goods
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - pharmaceutical
+  - healthcare
+  - oil and gas
+  - arms
+  - luxury goods
+  - dual-use goods
+- id: 114_ml_tf_risk_assessment_tcsp-30
+  description: Client has flawed background or reputation (e.g. convicted of a criminal
+    offence; subject or linked to a judicial investigation; subject to negative press
+    articles; corruption identified in previous audit reports)
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - negative press
+  - judicial investigation
+  - audit reports
+- id: 114_ml_tf_risk_assessment_tcsp-31
+  description: Legal entity or TCSP has a relationship with foreign professional intermediaries
+    in the absence of geniune business transaction in the professional’s country of
+    operation, especially if those intermediaries are located in non-transparent jurisdictions
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - uk_eu
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - foreign professional intermediaries
+  - non-transparent jurisdictions
+- id: 114_ml_tf_risk_assessment_tcsp-32
+  description: Nominee shareholder(s) and director(s) are used when clients involved
+    are PEPs or persons closely associated or related to PEPs
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - nominee shareholder
+  - nominee director
+  - PEP
+- id: 114_ml_tf_risk_assessment_tcsp-33
+  description: Client refuses to provide required documentation
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - documentation
+- id: 114_ml_tf_risk_assessment_tcsp-34
+  description: Legal entity or arrangement is exclusively facilitating transit transaction
+    and does not appear to generate wealth or income
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  - layering
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - transit transaction
+  - wealth or income
+- id: 114_ml_tf_risk_assessment_tcsp-35
+  description: Funds are sent to, or received from, a jurisdiction with higher risk
+    of tax crime, an international trade or country with known high levels of corruption
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  - tax_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - corruption
+  - international trade
+- id: 114_ml_tf_risk_assessment_tcsp-36
+  description: Bearer shares are used without appropriate registration with a custodian
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - bearer shares
+  - custodian
+- id: 114_ml_tf_risk_assessment_tcsp-37
+  description: Connections between parties are questionable, or generate doubts, and
+    cannot be sufficiently explained by the client
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - questionable connections
+- id: 114_ml_tf_risk_assessment_tcsp-38
+  description: Transactions are executed from a business account but appear to fund
+    personal purchases, including assets and recreational activities
+  product_types:
+  - depository
+  - wire_transfer
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - business account
+  - personal purchases
+- id: 114_ml_tf_risk_assessment_tcsp-39
+  description: Link between the client and/or beneficial owner and a negatively known
+    company
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - negatively known company
+- id: 114_ml_tf_risk_assessment_tcsp-40
+  description: Link between the client and/or beneficial owner and a convicted person
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - convicted person
+- id: 114_ml_tf_risk_assessment_tcsp-41
+  description: Link between the client and/or beneficial owner and a person who has
+    been involved in a corruption case
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - corruption case
+- id: 114_ml_tf_risk_assessment_tcsp-42
+  description: Link between the client and/or beneficial owner and a person who has
+    been the subject of a judicial inquiry
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - judicial inquiry
+- id: 114_ml_tf_risk_assessment_tcsp-43
+  description: Link between the client and/or beneficial owner and a corruption case
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - corruption case
+- id: 114_ml_tf_risk_assessment_tcsp-44
+  description: Link between the prospect new client and/or beneficial owner and an
+    existing client who has been involved in a corruption case
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - existing client
+  - corruption case
+- id: 114_ml_tf_risk_assessment_tcsp-45
+  description: Link between a company related to the client and/or beneficial owner
+    and the award of public contracts
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - construction
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - public contracts
+- id: 114_ml_tf_risk_assessment_tcsp-46
+  description: Link between funds from a client and/or beneficial owner and a corruption
+    case
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: corruption
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - corruption case
+- id: 114_ml_tf_risk_assessment_tcsp-47
+  description: During on-boarding, a customer provides vague or incomplete information
+    about their proposed trading activities. Customer is reluctant to provide additional
+    information about their activities when queried.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: proliferation_financing
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - proposed trading activities
+  - export control
+- id: 114_ml_tf_risk_assessment_tcsp-48
+  description: During subsequent stages of due diligence, a customer, particularly
+    a trade entity, its owners or senior managers, appear in financial restrictive
+    measures lists or negative news, e.g. past ML schemes, fraud, other criminal activities,
+    or ongoing or past investigations or convictions, including appearing on a list
+    of denied persons for the purposes of export control regimes.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: proliferation_financing
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - proliferation_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - restrictive measures lists
+  - denied persons
+  - export control
+- id: 114_ml_tf_risk_assessment_tcsp-49
+  description: The customer is a person connected with a country of proliferation
+    or diversion concern, e.g. through business or trade relations.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: proliferation_financing
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - proliferation_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - proliferation
+  - diversion concern
+- id: 114_ml_tf_risk_assessment_tcsp-50
+  description: The customer is a person dealing with dual-use goods or goods subject
+    to export control goods or complex equipment for which he/she lacks technical
+    background, or which is incongruent with their stated line of activity.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: proliferation_financing
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - dual-use goods
+  - export control
+  - technical background
+- id: 114_ml_tf_risk_assessment_tcsp-51
+  description: A customer engages in complex trade deals involving numerous third-party
+    intermediaries in lines of business that do not accord with their stated business
+    profile established at onboarding.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  - third_party_payments
+  key_terms:
+  - trade deals
+  - third-party intermediaries
+  - business profile
+- id: 114_ml_tf_risk_assessment_tcsp-52
+  description: A customer affiliated with a university or research institution is
+    involved in the trading of dual-use goods or goods subject to export control.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: proliferation_financing
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - university
+  - research institution
+  - dual-use goods
+- id: 114_ml_tf_risk_assessment_tcsp-53
+  description: Use of virtual assets and other anonymous means of payment and wealth
+    transfer within the transaction without apparent legal, tax, business, economic
+    or other legitimate reason.
+  product_types:
+  - crypto
+  - wire_transfer
+  - depository
+  industry_types:
+  - crypto
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - virtual assets
+  - anonymous means of payment
+- id: 114_ml_tf_risk_assessment_tcsp-54
+  description: Transactions using unusual means of payment.
+  product_types:
+  - depository
+  - wire_transfer
+  - prepaid
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - unusual means of payment
+- id: 114_ml_tf_risk_assessment_tcsp-55
+  description: The postponement of a payment for an asset or service delivered immediately
+    to a date far from the moment at which payment would normally be expected to occur,
+    without appropriate assurances that the payment will be made.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  key_terms:
+  - postponement of a payment
+- id: 114_ml_tf_risk_assessment_tcsp-56
+  description: Successive capital or other contributions in a short period of time
+    to the same company with no apparent legal, tax, business, economic or other legitimate
+    reason.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - capital contributions
+- id: 114_ml_tf_risk_assessment_tcsp-57
+  description: Acquisitions of businesses in liquidation with no apparent legal, tax,
+    business, economic or other legitimate reason.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types:
+  - retail
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - businesses in liquidation
+- id: 114_ml_tf_risk_assessment_tcsp-58
+  description: Repayment of debts during bankruptcy proceedings using forged documents,
+    which may indicate an attempt to conceal illicit funds or manipulate the insolvency
+    process.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - fraud_proceeds
+  - layering
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - bankruptcy proceedings
+  - forged documents
+- id: 114_ml_tf_risk_assessment_tcsp-59
+  description: Transactions involve possible companies with opaque ownership structures,
+    front companies, or shell companies, e.g. companies do not have a high level of
+    capitalisation or display other shell company indicators.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - opaque ownership structures
+  - front companies
+  - shell companies
+- id: 114_ml_tf_risk_assessment_tcsp-60
+  description: Companies remaining dormant for long periods of followed by a surge
+    of activity.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - dormant
+  - surge of activity
+- id: 114_ml_tf_risk_assessment_tcsp-61
+  description: Companies conducting financial transactions in a circuitous manner.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - wire_transfer_chains
+  key_terms:
+  - circuitous manner
+- id: 114_ml_tf_risk_assessment_tcsp-62
+  description: Transactions where the originator or beneficiary of associated financial
+    institutions is domiciled in a country with weak implementation of relevant UNSCR
+    obligations and FATF Standards or a weak export control regime.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - sanctions_evasion
+  - proliferation_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - UNSCR obligations
+  - export control regime
+- id: 114_ml_tf_risk_assessment_tcsp-63
+  description: A trade entity is registered at an address that is likely to be a mass
+    registration address, e.g. high-density residential buildings, post-box addresses,
+    commercial buildings or industrial complexes, especially when there is no reference
+    to a specific unit.
+  product_types:
+  - trade_finance
+  - depository
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - mass registration address
+  - post-box addresses
+- id: 114_ml_tf_risk_assessment_tcsp-64
+  description: The destination of a shipment is different from the importer’s location.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - shipment destination
+  - importer
+- id: 114_ml_tf_risk_assessment_tcsp-65
+  description: Inconsistencies are identified across contracts, invoices, or other
+    trade documents, e.g. contradictions between the name of the exporting entity
+    and the name of the recipient of the payment; differing prices on invoices and
+    underlying contracts; or discrepancies between the quantity, quality, volume,
+    or value of the actual commodities and their descriptions.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - contracts
+  - invoices
+  - trade documents
+- id: 114_ml_tf_risk_assessment_tcsp-66
+  description: Shipment of goods have a low declared value vis-à-vis the shipping
+    cost.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - declared value
+  - shipping cost
+- id: 114_ml_tf_risk_assessment_tcsp-67
+  description: Shipment of goods incompatible with the technical level of the country
+    to which it is being shipped, e.g. semiconductor manufacturing equipment being
+    shipped to a country that has no electronics industry.
+  product_types:
+  - trade_finance
+  industry_types:
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - technical level
+  - semiconductor manufacturing equipment
+- id: 114_ml_tf_risk_assessment_tcsp-68
+  description: Shipment of goods is made in a circuitous fashion (if information is
+    available), including multiple destinations with no apparent business or commercial
+    purpose, indications of frequent flags hopping, or using a small or old fleet.
+  product_types:
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - flags hopping
+  - small or old fleet
+- id: 114_ml_tf_risk_assessment_tcsp-69
+  description: Shipment of goods is inconsistent with normal geographic trade patterns,
+    e.g. the destination country does not normally export or import the goods listed
+    in trade transaction documents.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - geographic trade patterns
+- id: 114_ml_tf_risk_assessment_tcsp-70
+  description: Shipment of goods is routed through a country with weak implementation
+    of relevant UNSCR obligations and FATF Standards, export control laws or weak
+    enforcement of export control laws.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - sanctions_evasion
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - export control laws
+  - UNSCR obligations
+- id: 114_ml_tf_risk_assessment_tcsp-71
+  description: Payment for imported commodities is made by an entity other than the
+    consignee of the commodities with no clear economic reasons, e.g. by a shell or
+    front company not involved in the trade transaction.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  - shell_company_usage
+  transaction_patterns:
+  - third_party_payments
+  - shell_company_usage
+  key_terms:
+  - imported commodities
+  - consignee
+  - shell or front company
+- id: 114_ml_tf_risk_assessment_tcsp-72
+  description: Prior to account approval, customer requests letter of credit for trade
+    transaction for shipment of dual-use goods or goods subject to export control.
+  product_types:
+  - trade_finance
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: proliferation_financing
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - letter of credit
+  - dual-use goods
+  - export control
+- id: 114_ml_tf_risk_assessment_tcsp-73
+  description: Lack of full information or inconsistences are identified in trade
+    documents and financial flows, such as names, companies, addresses, final destination,
+    etc.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - invoice_mismatch
+  key_terms:
+  - trade documents
+  - financial flows
+- id: 114_ml_tf_risk_assessment_tcsp-74
+  description: Transactions include wire instructions or payment details from or due
+    to parties not identified on the original letter of credit or other documentation.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'ML/TF Sub-Sector Risk Assessment: Specialised Professionals
+    of the Financial Sector providing corporate services (Trust and Company Service
+    Providers)'
+  regulator: CSSF
+  regulator_jurisdiction: LU
+  issuing_agencies:
+  - CSSF
+  issued_date: 2026-01
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - wire_transfer_chains
+  - third_party_payments
+  key_terms:
+  - wire instructions
+  - letter of credit

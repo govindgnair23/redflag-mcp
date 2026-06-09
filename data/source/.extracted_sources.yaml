@@ -314,3 +314,7 @@
   slug: '106'
   output_file: data/source/106.yaml
   extracted_at: '2026-06-07T16:58:45.271593+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/114_ML_TF_risk_assessment_TCSP.pdf
+  slug: 114_ml_tf_risk_assessment_tcsp
+  output_file: data/source/114_ml_tf_risk_assessment_tcsp.yaml
+  extracted_at: '2026-06-09T00:10:07.551418+00:00'
