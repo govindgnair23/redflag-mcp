@@ -20,7 +20,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns:
@@ -55,7 +55,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns:
@@ -88,7 +88,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -119,7 +119,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -153,7 +153,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -186,7 +186,7 @@
   issued_date: 2026-01
   risk_level: low
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns:
@@ -218,7 +218,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -250,7 +250,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   - layering
@@ -281,7 +281,7 @@
   issued_date: 2026-01
   risk_level: low
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns:
@@ -309,7 +309,7 @@
   issued_date: 2026-01
   risk_level: high
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -338,7 +338,7 @@
   issued_date: 2026-01
   risk_level: low
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns: []
@@ -369,7 +369,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - tax_evasion
@@ -400,7 +400,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -429,7 +429,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: tax_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - tax_evasion
   transaction_patterns: []
@@ -459,7 +459,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: tax_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - tax_evasion
   transaction_patterns: []
@@ -485,7 +485,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: tax_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - tax_evasion
   - layering
@@ -521,7 +521,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns:
@@ -552,7 +552,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -584,7 +584,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -614,7 +614,7 @@
   issued_date: 2026-01
   risk_level: low
   category: tax_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - tax_evasion
   transaction_patterns: []
@@ -642,7 +642,7 @@
   issued_date: 2026-01
   risk_level: low
   category: tax_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - tax_evasion
   transaction_patterns: []
@@ -670,7 +670,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: layering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - layering
   - tax_evasion
@@ -704,7 +704,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: tax_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - tax_evasion
   - layering
@@ -736,7 +736,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: tax_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - tax_evasion
   - trade_based_money_laundering
@@ -772,7 +772,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   - tax_evasion
@@ -803,7 +803,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: layering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - layering
   - tax_evasion
@@ -833,7 +833,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -859,7 +859,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   - shell_company_usage
@@ -896,7 +896,7 @@
   issued_date: 2026-01
   risk_level: low
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -931,7 +931,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -965,7 +965,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns:
@@ -995,7 +995,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   - shell_company_usage
@@ -1026,7 +1026,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   - fraud_proceeds
@@ -1054,7 +1054,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   - layering
@@ -1086,7 +1086,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   - tax_evasion
@@ -1116,7 +1116,7 @@
   issued_date: 2026-01
   risk_level: high
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -1146,7 +1146,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   - fraud_proceeds
@@ -1176,7 +1176,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   - fraud_proceeds
@@ -1206,7 +1206,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -1232,7 +1232,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -1259,7 +1259,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -1286,7 +1286,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -1312,7 +1312,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -1339,7 +1339,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -1369,7 +1369,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns: []
@@ -1395,7 +1395,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: corruption
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - corruption_and_bribery
   transaction_patterns:
@@ -1426,7 +1426,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: proliferation_financing
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - proliferation_financing
   transaction_patterns:
@@ -1463,7 +1463,7 @@
   issued_date: 2026-01
   risk_level: high
   category: proliferation_financing
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - proliferation_financing
   - sanctions_evasion
@@ -1497,7 +1497,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: proliferation_financing
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - proliferation_financing
   transaction_patterns:
@@ -1529,7 +1529,7 @@
   issued_date: 2026-01
   risk_level: high
   category: proliferation_financing
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - proliferation_financing
   transaction_patterns:
@@ -1560,7 +1560,7 @@
   issued_date: 2026-01
   risk_level: high
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   - proliferation_financing
@@ -1593,7 +1593,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: proliferation_financing
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - proliferation_financing
   transaction_patterns:
@@ -1625,7 +1625,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: virtual_currency
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - crypto_asset_money_laundering
   transaction_patterns:
@@ -1653,7 +1653,7 @@
   issued_date: 2026-01
   risk_level: low
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns: []
@@ -1680,7 +1680,7 @@
   issued_date: 2026-01
   risk_level: low
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns:
@@ -1710,7 +1710,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: layering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - layering
   transaction_patterns:
@@ -1740,7 +1740,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   transaction_patterns:
@@ -1771,7 +1771,7 @@
   issued_date: 2026-01
   risk_level: high
   category: fraud_nexus
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - fraud_proceeds
   - layering
@@ -1805,7 +1805,7 @@
   issued_date: 2026-01
   risk_level: high
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -1836,7 +1836,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: shell_company
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - shell_company_usage
   - layering
@@ -1865,7 +1865,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: layering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - layering
   transaction_patterns:
@@ -1897,7 +1897,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: sanctions_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - sanctions_evasion
   - proliferation_financing
@@ -1931,7 +1931,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -1958,7 +1958,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -1990,7 +1990,7 @@
   issued_date: 2026-01
   risk_level: high
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -2020,7 +2020,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -2051,7 +2051,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   - proliferation_financing
@@ -2083,7 +2083,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -2112,7 +2112,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -2142,7 +2142,7 @@
   issued_date: 2026-01
   risk_level: medium
   category: sanctions_evasion
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - sanctions_evasion
   - proliferation_financing
@@ -2174,7 +2174,7 @@
   issued_date: 2026-01
   risk_level: high
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   - shell_company_usage
@@ -2206,7 +2206,7 @@
   issued_date: 2026-01
   risk_level: high
   category: proliferation_financing
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - proliferation_financing
   transaction_patterns:
@@ -2237,7 +2237,7 @@
   issued_date: 2026-01
   risk_level: high
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
@@ -2267,7 +2267,7 @@
   issued_date: 2026-01
   risk_level: high
   category: trade_based_money_laundering
-  source_url: https://www.cssf.lu/en/Document/circular-cssf-18-698/
+  source_url: https://www.cssf.lu/en/Document/ml-tf-sub-sector-risk-assessement-trust-and-company-services-provider-activities/
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
