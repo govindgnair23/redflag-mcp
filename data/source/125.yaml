@@ -1,0 +1,389 @@
+- id: 125-01
+  description: Use of tools and products to increase anonymity of transactions (e.g.
+    tumblers, mixers, privacy coins).
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - tumblers
+  - mixers
+  - privacy coins
+- id: 125-02
+  description: Transactions relating to potential cheating (e.g. scams, fraud) and
+    cybersecurity related offences, and darknet marketplaces.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - scams
+  - fraud
+  - cybersecurity
+  - darknet marketplaces
+- id: 125-03
+  description: DPT service providers that have not come forward for licensing despite
+    operating in Singapore or soliciting business from Singapore residents.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: low
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - licensing
+  - Singapore residents
+- id: 125-04
+  description: A product has characteristics that promote anonymity, obfuscate transactions
+    or undermine the payment service provider’s ability to perform AML/CFT measures
+    effectively.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - anonymity
+  - obfuscate transactions
+- id: 125-05
+  description: A product is known to be used by criminals for illicit purposes.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - criminals
+  - illicit purposes
+- id: 125-06
+  description: A product’s volatility and liquidity render it susceptible to market
+    manipulation and fraud.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - volatility
+  - liquidity
+  - market manipulation
+  - fraud
+- id: 125-07
+  description: Customers are politically exposed persons (PEPs) or present higher
+    ML/TF risks.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: low
+  category: corruption
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - PEP
+  - higher ML/TF risks
+- id: 125-08
+  description: The customer’s source of wealth, source of funds, or beneficial owner
+    cannot be satisfactorily established.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - source of wealth
+  - source of funds
+  - beneficial owner
+- id: 125-09
+  description: The customer’s first deposit is not made from an account in the customer’s
+    name with another FI subject to equivalent CDD standards.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - first deposit
+  - equivalent CDD standards
+- id: 125-10
+  description: The customer provides wallet addresses of counterparties, evidence
+    of original purchase of DPTs being deposited, or reasons for DPT transmission
+    that are inconsistent, incomplete, or otherwise suspicious.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - wallet addresses
+  - original purchase
+  - DPT transmission
+- id: 125-11
+  description: Transactions are complex, unusually large or unusual patterns of transactions
+    undertaken that have no apparent or visible economic or lawful purpose.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - complex transactions
+  - unusually large
+  - no apparent economic purpose
+- id: 125-12
+  description: Suspicious transaction patterns and use of anonymity-related services.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - suspicious transaction patterns
+  - anonymity-related services
+- id: 125-13
+  description: A DPT is traced back and the circumstances are unusual or suspicious.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - tracing previous transactions
+  - unusual or suspicious
+- id: 125-14
+  description: DPT transfers are made to private or unregulated wallets.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - private wallets
+  - unregulated wallets
+- id: 125-15
+  description: The purpose of the transaction is unclear for a DPT transfer to a private
+    or unregulated wallet.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - purpose of the transaction
+  - unregulated wallets
+- id: 125-16
+  description: The beneficiary or its beneficial owner cannot be adequately identified
+    for a DPT transfer to a private or unregulated wallet.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Strengthening AML/CFT Controls of Digital Payment Token Service
+    Providers
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulations-Guidance-and-Licensing/Payment-Service-Providers/Strengthening-AMLCFT-Controls-of-Digital-Payment-Token-Service-Providers.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - beneficiary
+  - beneficial owner
+  - unregulated wallets

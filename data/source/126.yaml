@@ -1,0 +1,997 @@
+- id: 126-01
+  description: Unclear economic purpose for a common individual/address linked to
+    multiple companies
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns: []
+  key_terms:
+  - economic purpose
+  - common address
+  - multiple companies
+- id: 126-02
+  description: Unclear economic purpose for requiring bank accounts in Singapore
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - singapore
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns: []
+  key_terms:
+  - bank accounts
+  - Singapore
+  - economic purpose
+- id: 126-03
+  description: Unusual change of corporate structure/beneficial ownerships after account
+    opening
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - beneficial ownership
+  - account opening
+  - corporate structure
+- id: 126-04
+  description: Unrelated third parties added to operate account after account opening
+    (e.g. authorised signatories or internet banking users)
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - authorised signatories
+  - internet banking users
+  - third parties
+- id: 126-05
+  description: Suspicious transactions which are not in line with bank’s understanding
+    of customers
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - suspicious transactions
+  - customer profile
+- id: 126-06
+  description: Superficial corporate websites which are inconsistent with scale of
+    business
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: low
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - corporate websites
+  - scale of business
+- id: 126-07
+  description: Foreign incorporated, with no business operations in Singapore
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - singapore
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns: []
+  key_terms:
+  - foreign incorporated
+  - no business operations
+  - Singapore
+- id: 126-08
+  description: Multiple layers/complex ownership structure
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - ownership structure
+  - multiple layers
+  - complex ownership
+- id: 126-09
+  description: Nominee arrangements (directors/shareholders)
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - nominee arrangements
+  - directors
+  - shareholders
+- id: 126-10
+  description: Use of newly incorporated companies set up by Singaporeans, and changing
+    of directors/authorised signatories post-account opening
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - newly incorporated
+  - directors
+  - authorised signatories
+- id: 126-11
+  description: Use of long-established company, and changing of directors/authorised
+    signatories/business activity
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - long-established company
+  - business activity
+  - directors
+- id: 126-12
+  description: Use of Singapore registered address, but no operating business conducted
+    in Singapore
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - singapore
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - registered address
+  - no operating business
+  - Singapore
+- id: 126-13
+  description: Accounts opened by Singapore incorporated companies, solely for facilitating
+    transactions with higher risk countries/pass through transactions with minimal
+    balance maintained
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints:
+  - singapore
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - pass_through_account_activity
+  - unusual_international_wires
+  key_terms:
+  - pass through
+  - minimal balance
+  - higher risk countries
+- id: 126-14
+  description: Transactions were being authorised online by third parties/foreign
+    nationals with no nexus to Singapore
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - foreign_individual
+  geographic_footprints:
+  - singapore
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - third_party_payments
+  - identity_misrepresentation
+  key_terms:
+  - online authorisation
+  - foreign nationals
+  - nexus to Singapore
+- id: 126-15
+  description: Transactions flowing through the account were predominantly executed
+    using internet banking, authorised by a foreigner residing overseas
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - internet banking
+  - foreigner
+  - residing overseas
+- id: 126-16
+  description: Instances of round-tripping and transactions to individuals in high
+    risk jurisdictions, which were not in line with the bank’s understanding of the
+    customer
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - unusual_international_wires
+  key_terms:
+  - round-tripping
+  - high risk jurisdictions
+  - customer understanding
+- id: 126-17
+  description: Change in BO one day after account opening
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - BO
+  - account opening
+- id: 126-18
+  description: Change of AS one month after account opening
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - AS
+  - account opening
+- id: 126-19
+  description: Change in company name and business activity to different industries
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - company name
+  - business activity
+  - different industries
+- id: 126-20
+  description: Common beneficial owners, directors, addresses, contact details, counterparties
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - beneficial owners
+  - directors
+  - addresses
+  - contact details
+- id: 126-21
+  description: Entities transacting with or have relation to tax haven/high risk countries
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - tax haven
+  - high risk countries
+- id: 126-22
+  description: Entities with high transaction traffic or value
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: low
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - high transaction traffic
+  - high value
+- id: 126-23
+  description: Entities with low paid up capital relative to monthly value of transactions
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - low paid up capital
+  - monthly value of transactions
+- id: 126-24
+  description: Entities exhibiting flow-through transactions
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - flow-through transactions
+- id: 126-25
+  description: Relationship managers whose portfolio comprise mainly companies that
+    are from tax haven/high risk countries
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: low
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns: []
+  key_terms:
+  - relationship managers
+  - tax haven
+  - high risk countries
+- id: 126-26
+  description: Transactions within the account appear to be of flow through nature
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - flow through
+  - account
+- id: 126-27
+  description: Credited funds were withdrawn shortly after fund was credited
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - credited funds
+  - withdrawn shortly after
+- id: 126-28
+  description: Circular fund flow
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - wire_transfer_chains
+  key_terms:
+  - circular fund flow
+- id: 126-29
+  description: No local business interests/transactions in Singapore
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - singapore
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns: []
+  key_terms:
+  - local business interests
+  - Singapore
+- id: 126-30
+  description: The company could be set up as a layering company to camouflage the
+    true source of funds
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  - pass_through_account_activity
+  key_terms:
+  - layering company
+  - true source of funds
+- id: 126-31
+  description: Unusual circular fund flow between the 2 customers (through Ext 11)
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - wire_transfer_chains
+  key_terms:
+  - circular fund flow
+  - through Ext 11
+- id: 126-32
+  description: Sources of funds for several transactions were from third parties,
+    which the bank had no sight of
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - sources of funds
+  - third parties
+- id: 126-33
+  description: Transactions volume and frequency to high risk counterparties had increased
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - transaction volume
+  - high risk counterparties
+- id: 126-34
+  description: Frequent wire transfers to high risk jurisdictions
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - wire transfers
+  - high risk jurisdictions
+- id: 126-35
+  description: Superficial corporate websites that were inconsistent with the turnover
+    of the companies
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: low
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - corporate websites
+  - turnover
+- id: 126-36
+  description: Accounts being controlled by foreign beneficial owner
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - foreign beneficial owner
+  - controlled
+- id: 126-37
+  description: Unusual changes of ownership to foreign entity
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - ownership
+  - foreign entity
+- id: 126-38
+  description: Addition of foreigners as internet banking users
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
+    of Legal Persons
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2019-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - internet banking users
+  - foreigners

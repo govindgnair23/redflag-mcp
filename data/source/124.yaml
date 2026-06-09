@@ -1,0 +1,1165 @@
+- id: 124-01
+  description: The commodity is shipped to, through or from a jurisdiction designated
+    (e.g. by the FATF or United Nations) as “higher risk” for financial crime activities
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - higher risk
+  - FATF
+  - United Nations
+- id: 124-02
+  description: The type of commodity shipped is designated as “higher risk” for financial
+    crime activities
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - higher risk commodity
+- id: 124-03
+  description: Underlying goods, size of transaction, value of transaction, counterparties
+    involved in the transaction, are inconsistent with the customer’s usual business
+    pattern, or deviate from the customer’s business strategy.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - usual business pattern
+  - business strategy
+- id: 124-04
+  description: Mis-declaration of value (e.g. over-valuation) of goods
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - over-valuation
+  - mis-declaration
+- id: 124-05
+  description: The method of payment or financing appears inconsistent with the risk
+    characteristics of the transaction
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - payment
+  - financing
+- id: 124-06
+  description: Unexplained, unnecessary or last minute changes to a specific transaction
+    or payment instructions
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - payment instructions
+- id: 124-07
+  description: Unusual payment terms, where payments and interest rates substantially
+    deviate from expected market practice or prevailing rates
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - payment terms
+  - interest rates
+- id: 124-08
+  description: Transaction does not make economic sense
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: low
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns: []
+  key_terms:
+  - economic sense
+- id: 124-09
+  description: Goods are inconsistent with the country of import/export
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - country of import/export
+- id: 124-10
+  description: Transport document shows transhipment through one or more jurisdictions
+    for no apparent economic reason
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - transhipment
+  - transport document
+- id: 124-11
+  description: Same address used for different transacting parties, usage of registered
+    agent’s address, or other address inconsistencies
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - registered agent
+  - address inconsistencies
+- id: 124-12
+  description: Unexplained or unnecessary parties to the transaction and who appear
+    evasive about their identity on further enquiries
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  - identity_misrepresentation
+  key_terms:
+  - evasive
+  - third parties
+- id: 124-13
+  description: Transaction involves the receipt of cash (or other payments) from third
+    party entities that have no apparent connection with the transaction
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - cash
+  - third party entities
+- id: 124-14
+  description: Payment or payment requests of proceeds to a third party unrelated
+    to customer
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - proceeds
+  - third party
+- id: 124-15
+  description: Transaction involves the use of repeatedly amended or frequently extended
+    L/Cs without legitimate commercial reasons
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - L/C
+  - amended
+  - extended
+- id: 124-16
+  description: Significant amendments in L/C without reasonable justification; including
+    changes to beneficiary or stated location of payment
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - L/C
+  - beneficiary
+  - payment location
+- id: 124-17
+  description: Non-standard clauses or phrases (e.g. L/C is unconditional, divisible
+    and assignable, transactions requiring proof of product, transferable and assignable
+    without being used) included in L/C
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - L/C
+  - non-standard clauses
+- id: 124-18
+  description: Unauthorised amendments or indications of tampering to trade documents
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - tampering
+  - trade documents
+- id: 124-19
+  description: Receipt of L/C as an unauthenticated SWIFT or untested telex message
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - SWIFT
+  - telex
+  - L/C
+- id: 124-20
+  description: Discrepancies in country of beneficiary’s account and beneficiary’s
+    stated location/ business operations
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - beneficiary account
+  - business operations
+- id: 124-21
+  description: Physical trade-related documents appear fraudulent or altered
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - fraudulent
+  - altered documents
+- id: 124-22
+  description: Variances between the description of the goods on the transport document
+    and the invoice
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - transport document
+  - invoice
+- id: 124-23
+  description: Discrepancies between the value of the invoice and current market value
+    of the product
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - invoice value
+  - market value
+- id: 124-24
+  description: The quantity of the goods exceeds the known capacity of the shipping
+    container or tanker capacity
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - container capacity
+  - tanker capacity
+- id: 124-25
+  description: Abnormal weights for the goods compared to the quantity of goods
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - abnormal weights
+- id: 124-26
+  description: Inappropriately sized or non-typical type of vessel used to transport
+    the goods
+  product_types:
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - vessel
+- id: 124-27
+  description: Absence of documentation or refusal to provide documents to prove shipment
+    of goods
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - shipment
+  - documents
+- id: 124-28
+  description: Bill of lading describes containerised cargo but no container numbers
+    are evidenced
+  product_types:
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - bill of lading
+  - container numbers
+- id: 124-29
+  description: Transaction involves the use of front (or shell) companies
+  product_types:
+  - trade_finance
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - front company
+  - shell company
+- id: 124-30
+  description: Attempts made to circumvent/disguise countries involved in the trade
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - circumvent
+  - disguise countries
+- id: 124-31
+  description: Unnecessarily complex transaction structure possibly designed to obscure
+    the true nature of the transaction
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - complex transaction structure
+- id: 124-32
+  description: Multiple intermediaries used for a transaction
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - wire_transfer_chains
+  key_terms:
+  - intermediaries
+- id: 124-33
+  description: Series of cross border transactions in the same goods between related
+    companies
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - round_tripping
+  key_terms:
+  - cross border transactions
+  - related companies
+- id: 124-34
+  description: Unusual triggers for payment (e.g. before goods are shipped, no documentation
+    required, etc.)
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - payment triggers
+  - documentation
+- id: 124-35
+  description: Customer shares the same address as a sanctioned entity
+  product_types:
+  - trade_finance
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - sanctioned entity
+  - address
+- id: 124-36
+  description: Inability or reluctance to provide clear answers to queries from the
+    bank in relation to the nature as well as the commercial and technical aspects
+    of the transaction
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - reluctance
+  - commercial and technical aspects
+- id: 124-37
+  description: Dual-use goods used in a transaction, which could also be coupled with
+    additional red flags such as military or government buyers, unusual shipping route,
+    reluctance on part of customer or purchasing agent to offer information on end
+    use of the item, product is not in line with the buyer’s business, or product
+    is incompatible with the technical level of the country to which it is shipped
+    to.
+  product_types:
+  - trade_finance
+  industry_types:
+  - arms_dual_use_goods
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: proliferation_financing
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - proliferation_financing
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - dual-use goods
+  - military
+  - government buyers
+  - end use
+- id: 124-38
+  description: The commodity is shipped to, through or from a jurisdiction designated
+    (e.g. by the FATF or United Nations) as “higher risk” for financial crime activities
+  product_types:
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - higher risk
+  - FATF
+  - United Nations
+- id: 124-39
+  description: The type of commodity shipped is designated as “higher risk” for financial
+    crime activities
+  product_types:
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - higher risk commodity
+- id: 124-40
+  description: If the vessel had docked at embargoed countries during its previous
+    voyages, it could be a trigger for banks to conduct further checks as the transaction
+    could involve dealings with sanctioned entities or embargoed goods.
+  product_types:
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - embargoed countries
+  - voyage history
+- id: 124-41
+  description: screening hits against vessel names, discrepancies or ambiguity in
+    trade documents, transhipments or the use of multiple ports
+  product_types:
+  - trade_finance
+  industry_types:
+  - maritime_shipping
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - screening hits
+  - multiple ports
+- id: 124-42
+  description: Flow of funds to sanctioned entities and countries
+  product_types:
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - sanctioned entities
+  - sanctioned countries
+- id: 124-43
+  description: Transactions with or payments to sanctioned parties
+  product_types:
+  - correspondent_banking
+  industry_types: []
+  customer_profiles:
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Monetary Authority of Singapore Guidance on Anti-Money Laundering
+    and Countering the Financing of Terrorism Controls in Trade Finance and Correspondent
+    Banking
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2015-10
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/MAS/News-and-Publications/Monographs-and-Information-Papers/Guidance-on-AML-CFT-Controls-in-Trade-Finance-and-Correspondent-Banking.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - sanctioned parties

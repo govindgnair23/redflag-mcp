@@ -318,3 +318,23 @@
   slug: 114_ml_tf_risk_assessment_tcsp
   output_file: data/source/114_ml_tf_risk_assessment_tcsp.yaml
   extracted_at: '2026-06-09T00:10:07.551418+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/122.pdf
+  slug: '122'
+  output_file: data/source/122.yaml
+  extracted_at: '2026-06-09T11:02:11.211677+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/125.pdf
+  slug: '125'
+  output_file: data/source/125.yaml
+  extracted_at: '2026-06-09T11:02:11.226001+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/124.pdf
+  slug: '124'
+  output_file: data/source/124.yaml
+  extracted_at: '2026-06-09T11:02:40.194490+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/126.pdf
+  slug: '126'
+  output_file: data/source/126.yaml
+  extracted_at: '2026-06-09T11:02:46.003589+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/123.pdf
+  slug: '123'
+  output_file: data/source/123.yaml
+  extracted_at: '2026-06-09T11:02:50.715544+00:00'
