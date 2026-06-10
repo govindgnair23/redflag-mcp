@@ -383,7 +383,9 @@
   key_terms:
   - false or misleading information
 - id: 061-18
-  description: Client exhibits nervous behaviour.
+  description: Client exhibits nervous behaviour during account opening, KYC questioning,
+    or transaction processing — including agitation, sweating, evasive responses,
+    or visible reluctance to engage.
   product_types:
   - depository
   industry_types: []
@@ -424,7 +426,9 @@
   key_terms:
   - refuses to provide information
 - id: 061-20
-  description: Client has a defensive stance to questioning.
+  description: Client adopts a defensive or hostile stance when staff ask routine
+    due-diligence questions about source of funds, purpose of transaction, or beneficial
+    ownership.
   product_types:
   - depository
   industry_types: []
@@ -553,7 +557,8 @@
   key_terms:
   - avoid reporting
 - id: 061-26
-  description: Insufficient explanation for the source of funds.
+  description: Client provides an insufficient or implausible explanation for the
+    source of funds, or cannot produce supporting documentation when asked.
   product_types:
   - depository
   industry_types: []
@@ -694,7 +699,9 @@
   - payroll
   - invoices
 - id: 061-32
-  description: Client appears to be living beyond their means.
+  description: Client appears to be living beyond their declared means — visible lifestyle,
+    asset holdings, or spending patterns are inconsistent with stated occupation,
+    income, or net worth.
   product_types:
   - depository
   industry_types: []
@@ -945,7 +952,9 @@
   key_terms:
   - product and/or service
 - id: 061-43
-  description: Frequent use of safety deposit box.
+  description: Frequent use of a safety deposit box, particularly with no clear explanation,
+    in conjunction with cash withdrawals, or by a customer whose profile does not
+    suggest a legitimate need to store high-value items.
   product_types:
   - depository
   industry_types: []
@@ -1226,7 +1235,9 @@
   key_terms:
   - new credit
 - id: 061-55
-  description: Abrupt change in account activity.
+  description: Abrupt change in account activity — a sudden increase in transaction
+    volume, value, or velocity, or a shift to new transaction types or counterparties,
+    inconsistent with prior account history.
   product_types:
   - depository
   industry_types: []
@@ -2037,150 +2048,6 @@
   key_terms:
   - structured cash transactions
   - record keeping requirements
-- id: 061-88
-  description: Funds are deposited or received into several accounts and then consolidated
-    into one before transferring the funds outside the country.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: high
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - nested_account_activity
-  - wire_transfer_chains
-  key_terms:
-  - consolidated
-  - outside the country
-- id: 061-89
-  description: Immediately after transferred funds have cleared, the client moves
-    funds, to another account or to another person or entity.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: high
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  - wire_transfer_chains
-  key_terms:
-  - after transferred funds have cleared
-- id: 061-90
-  description: Multiple clients have sent wire transfers over a short period of time
-    to the same recipient.
-  product_types:
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - money_services_business
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - money_mule_activity
-  - wire_transfer_chains
-  key_terms:
-  - same recipient
-- id: 061-91
-  description: Large wire transfers or high volume of wire transfers are conducted
-    or received through the account that does not fit the expected pattern of that
-    account.
-  product_types:
-  - wire_transfer
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - wire_transfer_chains
-  key_terms:
-  - high volume of wire transfers
-- id: 061-92
-  description: Large and/or frequent wire transfers between senders and receivers
-    with no apparent relationship.
-  product_types:
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - wire_transfer_chains
-  - unusual_international_wires
-  key_terms:
-  - no apparent relationship
-- id: 061-93
-  description: Client sending to, or receiving wire transfers from, multiple clients.
-  product_types:
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - money_services_business
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - wire_transfer_chains
-  key_terms:
-  - multiple clients
 - id: 061-94
   description: A client operates in, or is related to companies operating in, jurisdictions
     identified as high-risk for corruption.

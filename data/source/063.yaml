@@ -378,7 +378,9 @@
   key_terms:
   - false or misleading information
 - id: 063-15
-  description: Client exhibits nervous behaviour.
+  description: Client exhibits nervous behaviour during account opening, KYC questioning,
+    or transaction processing — including agitation, sweating, evasive responses,
+    or visible reluctance to engage.
   product_types:
   - depository
   - wire_transfer
@@ -428,7 +430,9 @@
   key_terms:
   - reluctant
 - id: 063-17
-  description: Client has a defensive stance to questioning.
+  description: Client adopts a defensive or hostile stance when staff ask routine
+    due-diligence questions about source of funds, purpose of transaction, or beneficial
+    ownership.
   product_types:
   - depository
   - wire_transfer
@@ -578,7 +582,8 @@
   - reporting
   - required reports
 - id: 063-23
-  description: Insufficient explanation for the source of funds.
+  description: Client provides an insufficient or implausible explanation for the
+    source of funds, or cannot produce supporting documentation when asked.
   product_types:
   - depository
   - wire_transfer
@@ -632,7 +637,9 @@
   - transactional activity
   - financial standing
 - id: 063-25
-  description: Client appears to be living beyond their means.
+  description: Client appears to be living beyond their declared means — visible lifestyle,
+    asset holdings, or spending patterns are inconsistent with stated occupation,
+    income, or net worth.
   product_types:
   - depository
   - wire_transfer
@@ -2162,7 +2169,9 @@
   - below market value
   - under the table
 - id: 063-81
-  description: Client purchases property without viewing it.
+  description: Client purchases real property without viewing it in person, suggesting
+    the purchase is motivated by placement of illicit funds into real estate rather
+    than by genuine residential or investment intent.
   product_types:
   - depository
   - wire_transfer

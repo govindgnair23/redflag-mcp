@@ -235,7 +235,9 @@
   key_terms:
   - AML procedures
 - id: 093_ofsi_cryptoassets_threat_assessment-11
-  description: Frequent address changes
+  description: Frequent address changes — a customer or counterparty rapidly rotates
+    crypto wallet addresses across transactions in a manner inconsistent with legitimate
+    operational needs, indicating attempts to break the on-chain trail.
   product_types:
   - crypto
   industry_types:
@@ -303,7 +305,9 @@
   key_terms:
   - privacy wallets
 - id: 093_ofsi_cryptoassets_threat_assessment-14
-  description: Use of mixing/tumbling services
+  description: Use of mixing or tumbling services that pool and shuffle crypto-assets
+    from multiple users to obscure the link between source and destination wallets,
+    a common laundering technique for illicit proceeds.
   product_types:
   - crypto
   industry_types:

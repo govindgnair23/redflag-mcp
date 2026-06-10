@@ -414,7 +414,9 @@
   - proof of ownership
   - entities
 - id: 090-14
-  description: Unexplained wealth on company tax returns
+  description: Unexplained wealth appears on company tax returns — reported income
+    or assets that cannot be reconciled with the declared business activity, customer
+    base, or known revenue streams.
   product_types:
   - depository
   industry_types:
@@ -536,39 +538,6 @@
   key_terms:
   - movement
   - obfuscate due diligence
-- id: 090-18
-  description: An absence of gold (or other precious metals) being hallmarked with
-    cartage before sale, allowing for misrepresentation of the true value of the gold
-  product_types:
-  - depository
-  - trade_finance
-  industry_types:
-  - precious_metals_jewelry
-  customer_profiles:
-  - small_business
-  geographic_footprints:
-  - uk_eu
-  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies:
-  - National Economic Crime Centre
-  - National Crime Agency
-  - HM Treasury’s Office of Financial Sanctions Implementation
-  - Foreign, Commonwealth & Development Office
-  issued_date: 2023-11
-  risk_level: medium
-  category: fraud_nexus
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
-  typology_family:
-  - fraud_proceeds
-  - trade_based_money_laundering
-  transaction_patterns:
-  - invoice_mismatch
-  key_terms:
-  - hallmarked
-  - cartage
-  - misrepresentation
 - id: 090-19
   description: Unusual customer patterns for recasting of existing jewellery or gold,
     such as high numbers of small volume transactions, or numerous customers requesting
@@ -604,7 +573,9 @@
   - recasting
   - small volume transactions
 - id: 090-20
-  description: Unrealistic pricing of gold for sale
+  description: Gold is offered for sale at unrealistic prices — significantly above
+    or below prevailing market rates — suggesting trade-based laundering through over-
+    or under-invoicing.
   product_types:
   - trade_finance
   - depository
@@ -667,33 +638,3 @@
   - origin
   - quality
   - grade
-- id: 090-22
-  description: Cash based transactions
-  product_types:
-  - depository
-  - currency_exchange
-  - money_transmitter
-  - check_cashing
-  industry_types:
-  - precious_metals_jewelry
-  customer_profiles:
-  - cash_intensive_business
-  geographic_footprints: []
-  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies:
-  - National Economic Crime Centre
-  - National Crime Agency
-  - HM Treasury’s Office of Financial Sanctions Implementation
-  - Foreign, Commonwealth & Development Office
-  issued_date: 2023-11
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - cash

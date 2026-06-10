@@ -427,7 +427,9 @@
   - false information
   - misleading information
 - id: 062-18
-  description: Client exhibits nervous behaviour.
+  description: Client exhibits nervous behaviour during account opening, KYC questioning,
+    or transaction processing — including agitation, sweating, evasive responses,
+    or visible reluctance to engage.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -473,7 +475,9 @@
   key_terms:
   - refuses to provide information
 - id: 062-20
-  description: Client has a defensive stance to questioning.
+  description: Client adopts a defensive or hostile stance when staff ask routine
+    due-diligence questions about source of funds, purpose of transaction, or beneficial
+    ownership.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -614,7 +618,8 @@
   - avoid reporting
   - required reports
 - id: 062-26
-  description: Insufficient explanation for the source of funds.
+  description: Client provides an insufficient or implausible explanation for the
+    source of funds, or cannot produce supporting documentation when asked.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -737,7 +742,9 @@
   key_terms:
   - geographical area
 - id: 062-31
-  description: Client appears to be living beyond their means.
+  description: Client appears to be living beyond their declared means — visible lifestyle,
+    asset holdings, or spending patterns are inconsistent with stated occupation,
+    income, or net worth.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1200,7 +1207,9 @@
   key_terms:
   - same time of day
 - id: 062-50
-  description: Atypical transfers between the client's products.
+  description: Atypical transfers between the client's products at the same institution
+    — for example, repeated movement between depository, investment, and credit products
+    without an apparent legitimate cash-management reason.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1275,7 +1284,9 @@
   - same day
   - short period of time
 - id: 062-53
-  description: Unusual amount of self-use by agent/owner.
+  description: Unusual amount of self-use by the agent or owner of a money services
+    business — the agent/owner is themselves originating or receiving a disproportionate
+    share of transactions, suggesting use of the MSB for personal layering.
   product_types:
   - money_transmitter
   - currency_exchange

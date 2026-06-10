@@ -361,7 +361,10 @@
   key_terms:
   - underlying customer
 - id: 087-11
-  description: Clients classified as PEPs paying school fees.
+  description: Clients classified as Politically Exposed Persons (PEPs) paying private
+    school fees — particularly where the fee level is inconsistent with the PEP's
+    declared salary or where payments originate from offshore entities or third parties,
+    raising corruption-proceeds concerns.
   product_types:
   - depository
   - wire_transfer

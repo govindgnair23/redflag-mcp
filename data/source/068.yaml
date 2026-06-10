@@ -185,7 +185,10 @@
   - cosmetic surgery
   - medical procedures
 - id: 068-08
-  description: Purchases at higher-end nightclubs.
+  description: Card purchases at higher-end nightclubs, particularly in patterns (high-frequency,
+    large rounded amounts, late-night clusters) inconsistent with the cardholder's
+    declared income or normal spending profile, potentially indicating laundering
+    through hospitality venues.
   product_types:
   - depository
   - credit_card
@@ -208,7 +211,9 @@
   key_terms:
   - nightclubs
 - id: 068-09
-  description: Purchases at jewellery retailers.
+  description: Card purchases at jewellery retailers, particularly large or repeated
+    purchases that may indicate conversion of illicit funds into high-value, easily
+    resold portable assets.
   product_types:
   - depository
   - credit_card
@@ -232,7 +237,10 @@
   key_terms:
   - jewellery retailers
 - id: 068-10
-  description: Frequent low-value payments for parking.
+  description: Frequent low-value card payments for parking at the same location,
+    potentially indicating use of parking transactions to test card validity, layer
+    small illicit amounts, or maintain an appearance of routine activity on a money-mule
+    card.
   product_types:
   - depository
   - credit_card
@@ -2178,7 +2186,9 @@
   - common address
   - domestic/international funds transfers
 - id: 068-83
-  description: Rounded sum hotel transactions;
+  description: Hotel transactions in rounded sums (e.g., exact hundreds or thousands)
+    with no itemised breakdown, potentially consistent with prepaid stays used to
+    layer or place illicit funds.
   product_types:
   - credit_card
   - depository

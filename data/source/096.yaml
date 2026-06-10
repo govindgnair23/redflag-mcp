@@ -395,7 +395,9 @@
   - private funds
   - low income
 - id: 096-16
-  description: Unusual source of funds
+  description: Customer presents an unusual source of funds for the transmission —
+    for example, cash from an unrelated third party, proceeds from informal lending,
+    or funds that do not match the customer's stated occupation or income.
   product_types:
   - depository
   - money_transmitter
@@ -442,7 +444,9 @@
   key_terms:
   - source of funds
 - id: 096-18
-  description: The transmission is to a high risk country
+  description: The transmission is destined to a high-risk country, including jurisdictions
+    identified by FATF as having strategic AML/CFT deficiencies or known as drug-producing,
+    conflict, or sanctions-evasion hubs.
   product_types:
   - money_transmitter
   - remittance
@@ -469,7 +473,9 @@
   - high risk country
   - transmission
 - id: 096-19
-  description: There's an unusually large cash transaction
+  description: The transaction involves an unusually large cash payment that is inconsistent
+    with the customer's profile or the typical ticket size for that money service
+    business.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -628,7 +634,9 @@
   - economic basis
   - financial basis
 - id: 096-25
-  description: Route through third countries or third parties
+  description: Funds are routed through third countries or third parties with no apparent
+    commercial connection to the originator or beneficiary, suggesting layering to
+    obscure the source or destination.
   product_types:
   - money_transmitter
   - remittance
@@ -656,7 +664,8 @@
   - third countries
   - third parties
 - id: 096-26
-  description: Regularly go to or from tax haven countries
+  description: Transactions regularly originate from, or are sent to, tax haven jurisdictions
+    without a clear business or personal rationale.
   product_types:
   - money_transmitter
   - remittance
@@ -942,7 +951,9 @@
   - same recipient
   - same day
 - id: 096-37
-  description: Have an unusually high transaction size
+  description: The customer conducts transactions of unusually high size relative
+    to the customer's profile, the MSB's typical ticket size, or the stated purpose
+    of the transfer.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -966,7 +977,8 @@
   key_terms:
   - transaction size
 - id: 096-38
-  description: Have an unusually large cash transaction
+  description: The customer presents unusually large cash transactions inconsistent
+    with their stated occupation, business activity, or historical pattern.
   product_types:
   - money_transmitter
   - currency_exchange
