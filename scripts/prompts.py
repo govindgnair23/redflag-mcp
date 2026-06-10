@@ -375,6 +375,93 @@ def build_shaping_prompt(descriptions: list[str]) -> list[dict]:
     ]
 
 
+_CLEAN_SYSTEM_PROMPT = """You are an AML compliance expert reviewing a batch of extracted red flag records. Clean this batch by applying four operations.
+
+## 1. Deduplication
+
+Identify records that describe the same observable indicator as a record appearing earlier in the list. Two records are duplicates when their descriptions describe the same suspicious behavior — even if phrased differently (e.g., past vs. present tense, minor reordering of clauses, "A customer's transactions that did not make economic sense" vs. "A customer's transactions that do not make economic sense"). Records with identical descriptions but different product_types or industry_types are still duplicates at the description level.
+
+Mark the *later* record as the duplicate; keep the earlier one.
+
+## 2. Abbreviation expansion
+
+In the description field of each kept record, expand the first occurrence of each known abbreviation to its full form followed by the abbreviation in parentheses. Only expand when the abbreviation appears in isolation — do not expand when it is already part of a spelled-out phrase in the same description.
+
+| Abbreviation | Expansion |
+|---|---|
+| CMI | Capital Markets Intermediary (CMI) |
+| DPT | Digital Payment Token (DPT) |
+| DPTs | Digital Payment Tokens (DPTs) |
+| FI | financial institution (FI) |
+| CDD | Customer Due Diligence (CDD) |
+| BO | beneficial owner (BO) |
+| AS | Authorised Signatory (AS) |
+| OpCo | operating company (OpCo) |
+| OpCos | operating companies (OpCos) |
+| L/C | letter of credit (L/C) |
+| L/Cs | letters of credit (L/Cs) |
+| FATCA | Foreign Account Tax Compliance Act (FATCA) |
+| CRS | Common Reporting Standard (CRS) |
+| PEP | Politically Exposed Person (PEP) |
+| SOW | source of wealth (SOW) |
+| SOF | source of funds (SOF) |
+| MSB | money services business (MSB) |
+| VASP | Virtual Asset Service Provider (VASP) |
+| STR | Suspicious Transaction Report (STR) |
+| SAR | Suspicious Activity Report (SAR) |
+| KYC | Know Your Customer (KYC) |
+| AML/CFT | Anti-Money Laundering/Countering the Financing of Terrorism (AML/CFT) |
+
+Do not modify any field other than description.
+
+## 3. Fragment repair
+
+Fix descriptions that are clearly broken:
+- If the description begins with a lowercase letter, capitalize it.
+- Remove internal document references such as "(through Ext 11)", "(see Table 3)", "(Annex A)", or any parenthetical that references an exhibit, annex, or table by number.
+- If the description is a fragment with no grammatical subject (e.g., begins with a bare verb), add the smallest accurate subject. Do not add new content beyond what the description clearly implies.
+
+## 4. Terse descriptions
+
+Keep a terse description when it names a specific, actionable AML signal that a compliance officer would recognize (e.g., "Circular fund flow", "Multiple layers/complex ownership structure", "Nominee arrangements (directors/shareholders)"). Remove only if the description is so generic as to be unactionable (e.g., "Unusual transaction behavior" with no qualifier).
+
+## Output format
+
+Return a single JSON object with one key "records", one entry per input record in the same order:
+
+{
+  "records": [
+    {"id": "<id>", "keep": true, "description": "<updated or unchanged description>"},
+    {"id": "<id>", "keep": false, "duplicate_of": "<id of the earlier record this duplicates>"}
+  ]
+}
+
+For kept records: always include "description" (updated if a change was needed, otherwise the original verbatim).
+For removed duplicates: include "duplicate_of". Omit "description".
+No markdown fences, no commentary — emit valid JSON only."""
+
+
+def build_clean_prompt(records: list[dict]) -> list[dict]:
+    """Build system+user prompts to clean a batch of red flag records.
+
+    Handles deduplication, abbreviation expansion, and description repair.
+    Only id and description are sent to the model; no metadata is shared.
+    """
+    numbered = "\n".join(
+        f"[{i}] id={r['id']!r}  description={r.get('description', '')!r}"
+        for i, r in enumerate(records)
+    )
+
+    user_prompt = f"""Clean the following {len(records)} red flag records.
+
+{numbered}"""
+
+    return [
+        {"role": "system", "content": _CLEAN_SYSTEM_PROMPT},
+        {"role": "user", "content": user_prompt},
+    ]
+
+
 OPTIMIZED_PROMPT_PATH = Path(__file__).resolve().parent.parent / "data" / "verifier_prompt.json"
 
 _HANDCRAFTED_SYSTEM_PROMPT = """You are an AML compliance expert reviewing candidate red flags extracted from regulatory documents. Your task is to classify each candidate as a genuine red flag or not.
