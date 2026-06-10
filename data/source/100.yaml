@@ -1,17 +1,17 @@
 - id: 100-01
   description: Customers' nature and behaviour, including when customers provide inconsistent
-    or incorrect information or their transaction volumes or patterns are not in line
-    with those expected from the type of customer
+    or incorrect information or their transaction volumes or patterns are not in line with
+    those expected from the type of customer
   product_types:
   - crypto
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -29,8 +29,8 @@
   - transaction patterns
 - id: 100-02
   description: Transactions, such as transfers to or from self-hosted addresses, decentralised
-    platforms or transfers involving providers of crypto-assets services that are
-    not authorised or regulated in accordance with Regulation (EU) 2023/1114
+    platforms or transfers involving providers of crypto-assets services that are not authorised
+    or regulated in accordance with Regulation (EU) 2023/1114
   product_types:
   - crypto
   industry_types:
@@ -38,11 +38,11 @@
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -59,20 +59,19 @@
   - decentralised platforms
   - crypto-assets services
 - id: 100-03
-  description: Products, such as those containing anonymity-enhancing features or
-    which allow transfers to and from the CASP and self-hosted and decentralised trading
-    platforms
+  description: Products, such as those containing anonymity-enhancing features or which allow
+    transfers to and from the CASP and self-hosted and decentralised trading platforms
   product_types:
   - crypto
   industry_types:
   - crypto
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -91,8 +90,8 @@
   - mixers
   - tumblers
 - id: 100-04
-  description: The customers’ or beneficial owners’ links to high-risk jurisdictions
-    or transactions to/from jurisdictions associated with a high risk of ML/TF
+  description: The customers’ or beneficial owners’ links to high-risk jurisdictions or transactions
+    to/from jurisdictions associated with a high risk of ML/TF
   product_types:
   - crypto
   industry_types: []
@@ -101,11 +100,11 @@
   geographic_footprints:
   - high_risk_jurisdiction
   - sanctioned_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -122,19 +121,18 @@
   - beneficial owners
   - ML/TF
 - id: 100-05
-  description: Transactions that are more frequent than usual or transactions involving
-    small amounts that are unusually frequent or transactions without an obvious economic
-    rationale
+  description: Transactions that are more frequent than usual or transactions involving small
+    amounts that are unusually frequent or transactions without an obvious economic rationale
   product_types:
   - crypto
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -151,21 +149,20 @@
   - small amounts
   - no obvious economic rationale
 - id: 100-06
-  description: Transactions that are split up to circumvent reporting limits or align
-    unusual transactions with the normally expected behaviour and patterns as supported
-    by information gathered during the on-boarding procedure and the ongoing monitoring
-    of the business relationship
+  description: Transactions that are split up to circumvent reporting limits or align unusual
+    transactions with the normally expected behaviour and patterns as supported by information
+    gathered during the on-boarding procedure and the ongoing monitoring of the business relationship
   product_types:
   - crypto
   industry_types: []
   customer_profiles: []
   geographic_footprints:
   - domestic_us
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -182,17 +179,17 @@
   - on-boarding
   - ongoing monitoring
 - id: 100-07
-  description: 'The respondent conducts significant business with sectors that are
-    associated with higher levels of ML/TF risk. For example, the respondent conducts:
-    i. significant remittance business; ii. business on behalf of certain money remitters
-    or exchange houses; iii. business on behalf of or with providers of crypto-assets
-    services, other than CASPs regulated under Regulation (EU) 2023/1114, which are
-    bound by an AML/CFT regulatory and supervisory regime that is less robust than
-    the regime envisaged in Directive (EU) 2015/849 or are not subject to any AML/CFT
-    obligations; iv. significant business on behalf of CASPs, for which the business
-    model is focused on providing products and services described in Guideline 21.3(d);
-    v. business with non-residents; or vi. business in a currency other than that
-    of the country in which it is based'
+  description: 'The respondent conducts significant business with sectors that are associated
+    with higher levels of ML/TF risk. For example, the respondent conducts: i. significant
+    remittance business; ii. business on behalf of certain money remitters or exchange houses;
+    iii. business on behalf of or with providers of crypto-assets services, other than CASPs
+    regulated under Regulation (EU) 2023/1114, which are bound by an Anti-Money Laundering/Countering
+    the Financing of Terrorism (AML/CFT) regulatory and supervisory regime that is less robust
+    than the regime envisaged in Directive (EU) 2015/849 or are not subject to any AML/CFT
+    obligations; iv. significant business on behalf of CASPs, for which the business model
+    is focused on providing products and services described in Guideline 21.3(d); v. business
+    with non-residents; or vi. business in a currency other than that of the country in which
+    it is based'
   product_types:
   - correspondent_banking
   - wire_transfer
@@ -208,11 +205,11 @@
   - cross_border_business
   geographic_footprints:
   - domestic_us
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -230,10 +227,9 @@
   - exchange houses
   - non-residents
 - id: 100-08
-  description: The IBAN account provided by a respondent CASP where it receives funds
-    in an official currency from customers is in the name and ownership of a company,
-    which is not the respondent CASP’s company or in any way known to be linked to
-    the respondent CASP
+  description: The IBAN account provided by a respondent CASP where it receives funds in an
+    official currency from customers is in the name and ownership of a company, which is not
+    the respondent CASP’s company or in any way known to be linked to the respondent CASP
   product_types:
   - wire_transfer
   - depository
@@ -242,11 +238,11 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -262,88 +258,21 @@
   - IBAN
   - official currency
   - ownership
-- id: 100-09
-  description: The respondent conducts significant business on behalf of or with providers
-    of crypto-assets services, other than CASPs regulated under Regulation (EU) 2023/1114,
-    which are bound by an AML/CFT regulatory and supervisory regime that is less robust
-    than the regime envisaged in Directive (EU) 2015/849 or are not subject to any
-    AML/CFT obligations
-  product_types:
-  - correspondent_banking
-  - crypto
-  industry_types:
-  - crypto
-  customer_profiles:
-  - foreign_financial_institution
-  - money_services_business
-  geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: layering
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - nested_account_activity
-  key_terms:
-  - providers of crypto-assets services
-  - AML/CFT obligations
-  - less robust regime
-- id: 100-10
-  description: The respondent conducts significant business on behalf of CASPs, for
-    which the business model is focused on providing products and services described
-    in Guideline 21.3(d)
-  product_types:
-  - correspondent_banking
-  - crypto
-  industry_types:
-  - crypto
-  customer_profiles:
-  - foreign_financial_institution
-  geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: virtual_currency
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - nested_account_activity
-  key_terms:
-  - CASPs
-  - business model
-  - products and services
 - id: 100-11
   description: The product allows payments from third parties that are neither associated
-    with the product nor identified and verified upfront, where such payments have
-    no apparent economic rationale
+    with the product nor identified and verified upfront, where such payments have no apparent
+    economic rationale
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -360,18 +289,18 @@
   - identified and verified upfront
   - economic rationale
 - id: 100-12
-  description: The product places no upfront restrictions on the overall volume or
-    value of transactions
+  description: The product places no upfront restrictions on the overall volume or value of
+    transactions
   product_types:
   - crypto
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -388,19 +317,19 @@
   - value
   - transactions
 - id: 100-13
-  description: The product allows transactions between the customer’s account and
-    self-hosted addresses
+  description: The product allows transactions between the customer’s account and self-hosted
+    addresses
   product_types:
   - crypto
   industry_types:
   - crypto
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -415,11 +344,11 @@
   key_terms:
   - self-hosted addresses
 - id: 100-14
-  description: The product allows transactions between the customer’s account and
-    crypto-asset accounts or distributed ledger addresses managed by a provider of
-    crypto-assets services as defined in Guideline 9.20 or which is subject to the
-    AML/CFT regulatory and supervisory regime that is less robust than the regime
-    envisaged in Directive (EU) 2015/849
+  description: The product allows transactions between the customer’s account and crypto-asset
+    accounts or distributed ledger addresses managed by a provider of crypto-assets services
+    as defined in Guideline 9.20 or which is subject to the Anti-Money Laundering/Countering
+    the Financing of Terrorism (AML/CFT) regulatory and supervisory regime that is less robust
+    than the regime envisaged in Directive (EU) 2015/849
   product_types:
   - crypto
   industry_types:
@@ -427,11 +356,11 @@
   customer_profiles:
   - foreign_financial_institution
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -447,21 +376,21 @@
   - distributed ledger addresses
   - less robust regime
 - id: 100-15
-  description: The product allows transactions between the customer’s account and
-    a peer-to-peer cryptocurrency exchange platform or another type of decentralised
-    or distributed crypto-assets application, which is not controlled or influenced
-    by a legal or natural person (often referred to as ‘decentralised finance’ (DeFi))
+  description: The product allows transactions between the customer’s account and a peer-to-peer
+    cryptocurrency exchange platform or another type of decentralised or distributed crypto-assets
+    application, which is not controlled or influenced by a legal or natural person (often
+    referred to as ‘decentralised finance’ (DeFi))
   product_types:
   - crypto
   industry_types:
   - crypto
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -478,20 +407,19 @@
   - DeFi
   - decentralised finance
 - id: 100-16
-  description: The product allows transactions between the customer’s account and
-    platforms that aim to obfuscate transactions and facilitate anonymity such as
-    mixer or tumbler platforms
+  description: The product allows transactions between the customer’s account and platforms
+    that aim to obfuscate transactions and facilitate anonymity such as mixer or tumbler platforms
   product_types:
   - crypto
   industry_types:
   - crypto
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -508,11 +436,11 @@
   - tumbler
   - anonymity
 - id: 100-17
-  description: The product allows transactions between the customer’s account and
-    hardware used to exchange crypto-assets to official currencies or vice versa (such
-    as crypto-ATMs), that involves the use of cash or electronic money, that benefits
-    from exemptions under Article 12 of Directive (EU) 2015/849 or that does not fall
-    within the regulatory and supervisory regime in the EU
+  description: The product allows transactions between the customer’s account and hardware
+    used to exchange crypto-assets to official currencies or vice versa (such as crypto-ATMs),
+    that involves the use of cash or electronic money, that benefits from exemptions under
+    Article 12 of Directive (EU) 2015/849 or that does not fall within the regulatory and
+    supervisory regime in the EU
   product_types:
   - crypto
   - currency_exchange
@@ -522,11 +450,11 @@
   customer_profiles: []
   geographic_footprints:
   - uk_eu
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -544,9 +472,8 @@
   - electronic money
 - id: 100-18
   description: Products involving new business practices, including new delivery channels,
-    and the use of technologies where the level of the ML/TF risk cannot be reliably
-    assessed by the CASP in accordance with Guideline 1.7, point (d) due to the lack
-    of information
+    and the use of technologies where the level of the ML/TF risk cannot be reliably assessed
+    by the CASP in accordance with Guideline 1.7, point (d) due to the lack of information
   product_types:
   - crypto
   industry_types:
@@ -554,11 +481,11 @@
   customer_profiles:
   - newly_established_business
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -574,18 +501,18 @@
   - new delivery channels
   - lack of information
 - id: 100-19
-  description: The results of an analysis ran by advanced analytics tools indicate
-    an increased level of risk
+  description: The results of an analysis ran by advanced analytics tools indicate an increased
+    level of risk
   product_types:
   - crypto
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -600,10 +527,10 @@
   - advanced analytics tools
   - increased level of risk
 - id: 100-20
-  description: A non-profit organisation that has been linked, on the basis of reliable
-    and independent sources, to extremism, extremist propaganda or terrorist sympathies
-    and activities, or has been involved in misconduct or criminal activities, including
-    ML/TF or corruption related cases
+  description: A non-profit organisation that has been linked, on the basis of reliable and
+    independent sources, to extremism, extremist propaganda or terrorist sympathies and activities,
+    or has been involved in misconduct or criminal activities, including ML/TF or corruption
+    related cases
   product_types:
   - crypto
   industry_types:
@@ -611,11 +538,11 @@
   customer_profiles:
   - charity_or_nonprofit
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -631,19 +558,19 @@
   - extremism
   - terrorist sympathies
 - id: 100-21
-  description: An undertaking, which is a shell bank, as defined in Article 3(17)
-    of Directive (EU) 2015/849, or another type of shell company
+  description: An undertaking, which is a shell bank, as defined in Article 3(17) of Directive
+    (EU) 2015/849, or another type of shell company
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -659,19 +586,19 @@
   - shell bank
   - shell company
 - id: 100-22
-  description: A company, that has been recently established and is processing large
-    volumes of transactions
+  description: A company, that has been recently established and is processing large volumes
+    of transactions
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - newly_established_business
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -695,11 +622,11 @@
   customer_profiles:
   - newly_established_business
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -715,9 +642,9 @@
   - period of inactivity
   - large volumes of transactions
 - id: 100-24
-  description: An undertaking or a person who is using an IP address associated with
-    a darknet or a software that allows anonymous communication, including encrypted
-    emails, anonymous or temporary email services and VPNs
+  description: An undertaking or a person who is using an IP address associated with a darknet
+    or a software that allows anonymous communication, including encrypted emails, anonymous
+    or temporary email services and VPNs
   product_types:
   - crypto
   industry_types:
@@ -725,11 +652,11 @@
   customer_profiles:
   - foreign_individual
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -746,12 +673,12 @@
   - VPNs
   - anonymous email services
 - id: 100-25
-  description: A vulnerable person, meaning a person who is not likely to be a typical
-    customer of a CASP, or a person who displays very little knowledge and understanding
-    of crypto-assets or the related technology, which may be evidenced by the results
-    of an appropriate-ness/knowledge test or through other engagements with the customer,
-    and who nevertheless chooses to make frequent or high-value transactions, may
-    increase the risk that the customer is being used as a money mule
+  description: A vulnerable person, meaning a person who is not likely to be a typical customer
+    of a CASP, or a person who displays very little knowledge and understanding of crypto-assets
+    or the related technology, which may be evidenced by the results of an appropriate-ness/knowledge
+    test or through other engagements with the customer, and who nevertheless chooses to make
+    frequent or high-value transactions, may increase the risk that the customer is being
+    used as a money mule
   product_types:
   - crypto
   industry_types:
@@ -760,11 +687,11 @@
   - elderly_or_vulnerable_person
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -782,8 +709,8 @@
   - knowledge test
   - money mule
 - id: 100-26
-  description: Tries to open multiple crypto-asset accounts with the CASP with no
-    apparent economic rationale or business purpose
+  description: Tries to open multiple crypto-asset accounts with the CASP with no apparent
+    economic rationale or business purpose
   product_types:
   - crypto
   industry_types:
@@ -791,11 +718,11 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -812,14 +739,14 @@
   - economic rationale
   - business purpose
 - id: 100-27
-  description: 'The customer’s beneficial owner is unable or unwilling to provide
-    the necessary CDD information, when requested by the CASP, without any legitimate
-    reason for it, by: a) deliberately avoiding direct contact with a CASP, either
-    in person or remotely; b) trying to obscure the beneficial owner of the funds
-    through the engagement of agents or associates, such as providers or trust services
-    or corporate services, in the business relationship or transactions; c) remaining
-    silent or trying to mislead the CASP about the source of funds or the source of
-    crypto-assets used to obtain crypto-assets or the purpose of the transactions'
+  description: 'The customer’s beneficial owner is unable or unwilling to provide the necessary
+    Customer Due Diligence (CDD) information, when requested by the CASP, without any legitimate
+    reason for it, by: a) deliberately avoiding direct contact with a CASP, either in person
+    or remotely; b) trying to obscure the beneficial owner of the funds through the engagement
+    of agents or associates, such as providers or trust services or corporate services, in
+    the business relationship or transactions; c) remaining silent or trying to mislead the
+    CASP about the source of funds or the source of crypto-assets used to obtain crypto-assets
+    or the purpose of the transactions'
   product_types:
   - crypto
   industry_types:
@@ -828,11 +755,11 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -851,21 +778,21 @@
   - source of funds
   - source of crypto-assets
 - id: 100-28
-  description: Uses an IP address or mobile device that is linked to multiple customers,
-    without any apparent economic reason, or that is known to be linked to potentially
-    illegal or criminal activities; or the customer’s crypto-asset account is accessed
-    from multiple IP addresses without any evident link to the customer
+  description: Uses an IP address or mobile device that is linked to multiple customers, without
+    any apparent economic reason, or that is known to be linked to potentially illegal or
+    criminal activities; or the customer’s crypto-asset account is accessed from multiple
+    IP addresses without any evident link to the customer
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -884,14 +811,13 @@
   - mobile device
   - multiple customers
 - id: 100-29
-  description: Provides information that is inconsistent, including when the customer’s
-    IP address is inconsistent with other information about the customer, like the
-    information necessary to accompany a transfer in accordance with Article 14(1)
-    and 14(2) of Regulation (EU) 2023/1113, or the customer’s habitual residence,
-    registration or business activities (both at the time of entry into the business
-    relationship and at the time of the transaction), the information about the sources
-    of funds or the source of crypto-assets is inconsistent with other CDD information
-    or the customer’s overall profile
+  description: Provides information that is inconsistent, including when the customer’s IP
+    address is inconsistent with other information about the customer, like the information
+    necessary to accompany a transfer in accordance with Article 14(1) and 14(2) of Regulation
+    (EU) 2023/1113, or the customer’s habitual residence, registration or business activities
+    (both at the time of entry into the business relationship and at the time of the transaction),
+    the information about the sources of funds or the source of crypto-assets is inconsistent
+    with other Customer Due Diligence (CDD) information or the customer’s overall profile
   product_types:
   - crypto
   industry_types: []
@@ -899,11 +825,11 @@
   - foreign_individual
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -921,20 +847,19 @@
   - source of funds
   - source of crypto-assets
 - id: 100-30
-  description: Is using an address, a location or an IP address linked to crypto-asset
-    accounts registered to different users held with a single CASP or with multiple
-    CASPs
+  description: Is using an address, a location or an IP address linked to crypto-asset accounts
+    registered to different users held with a single CASP or with multiple CASPs
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -952,19 +877,19 @@
   - different users
   - multiple CASPs
 - id: 100-31
-  description: Frequently changes its personal information or its payment instruments
-    without obvious reason
+  description: Frequently changes its personal information or its payment instruments without
+    obvious reason
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -982,10 +907,10 @@
   - payment instruments
   - without obvious reason
 - id: 100-32
-  description: Frequently receiving or transferring such amounts of crypto-assets
-    from self-hosted addresses, which are just below the EUR 1 000 threshold defined
-    in Article 14(5) and Article 16(2) of Regulation (EU) 2023/1113 triggering the
-    verification of the beneficiary or the originator
+  description: Frequently receiving or transferring such amounts of crypto-assets from self-hosted
+    addresses, which are just below the EUR 1 000 threshold defined in Article 14(5) and Article
+    16(2) of Regulation (EU) 2023/1113 triggering the verification of the beneficiary or the
+    originator
   product_types:
   - crypto
   industry_types:
@@ -993,11 +918,11 @@
   customer_profiles: []
   geographic_footprints:
   - uk_eu
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1014,11 +939,10 @@
   - self-hosted addresses
   - verification of the beneficiary
 - id: 100-33
-  description: Indicates that the purpose is to invest in an initial public offering
-    of tokens or in a crypto-asset or product that offers a disproportionately high
-    return and is based in a high-risk jurisdiction or is associated with high fraud-related
-    indications or which is not supported by a white paper required under the Regulation
-    (EU) 2023/1114
+  description: Indicates that the purpose is to invest in an initial public offering of tokens
+    or in a crypto-asset or product that offers a disproportionately high return and is based
+    in a high-risk jurisdiction or is associated with high fraud-related indications or which
+    is not supported by a white paper required under the Regulation (EU) 2023/1114
   product_types:
   - crypto
   industry_types:
@@ -1027,11 +951,11 @@
   - individual_consumer
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1048,17 +972,16 @@
   - high return
   - white paper
 - id: 100-34
-  description: 'Displays behaviour or transaction patterns which are not in line with
-    that expected from the type of customer or the risk category to which it belongs,
-    or is unexpected based on the information the customer has provided to the CASP,
-    either at the start or throughout the business relationship. Such circumstances
-    include the customer: a) unexpectedly and without obvious reason significantly
-    increasing the volume or value of a crypto-asset transfer or combined transfers
-    after a period of dormancy; b) transacting with an unusually high frequency and
-    volume of crypto-assets, which is inconsistent with the purpose and nature of
-    the business relationship and without an apparent economic purpose; c) increasing
-    the transaction limit to an extent that is not commensurate with the customer’s
-    declared income or it otherwise exceeds the expected volume of activity'
+  description: 'Displays behaviour or transaction patterns which are not in line with that
+    expected from the type of customer or the risk category to which it belongs, or is unexpected
+    based on the information the customer has provided to the CASP, either at the start or
+    throughout the business relationship. Such circumstances include the customer: a) unexpectedly
+    and without obvious reason significantly increasing the volume or value of a crypto-asset
+    transfer or combined transfers after a period of dormancy; b) transacting with an unusually
+    high frequency and volume of crypto-assets, which is inconsistent with the purpose and
+    nature of the business relationship and without an apparent economic purpose; c) increasing
+    the transaction limit to an extent that is not commensurate with the customer’s declared
+    income or it otherwise exceeds the expected volume of activity'
   product_types:
   - crypto
   industry_types:
@@ -1067,11 +990,11 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1088,9 +1011,9 @@
   - high frequency
   - declared income
 - id: 100-35
-  description: Displays behaviour and patterns, which are unusual because they involve
-    unexplained transfers to/from distributed ledger addresses or crypto-assets accounts
-    in multiple jurisdictions with no apparent business or lawful purpose
+  description: Displays behaviour and patterns, which are unusual because they involve unexplained
+    transfers to/from distributed ledger addresses or crypto-assets accounts in multiple jurisdictions
+    with no apparent business or lawful purpose
   product_types:
   - crypto
   industry_types:
@@ -1099,11 +1022,11 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1121,19 +1044,18 @@
   - multiple jurisdictions
   - no apparent business or lawful purpose
 - id: 100-36
-  description: 'When exchanging crypto-assets to official currencies and vice versa,
-    the customer: a) uses multiple bank or payment accounts, credit cards or prepaid
-    cards to fund the crypto-assets account; b) uses a bank or payment account, credit
-    card in the name of a different person than the customer without having evident
-    links to that person; c) uses a bank or payment account located in a jurisdiction,
-    which is inconsistent with the customer’s given address or location; d) uses multiple
-    providers of payment services; e) repeatedly requests an exchange of crypto-assets
-    to or from cash or anonymous electronic money; f) uses protocols that connect
-    two blockchains, to exchange crypto-assets to other crypto-assets on a different
+  description: 'When exchanging crypto-assets to official currencies and vice versa, the customer:
+    a) uses multiple bank or payment accounts, credit cards or prepaid cards to fund the crypto-assets
+    account; b) uses a bank or payment account, credit card in the name of a different person
+    than the customer without having evident links to that person; c) uses a bank or payment
+    account located in a jurisdiction, which is inconsistent with the customer’s given address
+    or location; d) uses multiple providers of payment services; e) repeatedly requests an
+    exchange of crypto-assets to or from cash or anonymous electronic money; f) uses protocols
+    that connect two blockchains, to exchange crypto-assets to other crypto-assets on a different
     network, such as Monero, Zcash or similar; g) uses Crypto-ATMs in different locations
-    to repeatedly transfer funds to a bank account; h) withdraws crypto-assets from
-    a CASP to a self-hosted address immediately after depositing crypto-assets or
-    exchanging for different crypto-assets in a CASP'
+    to repeatedly transfer funds to a bank account; h) withdraws crypto-assets from a CASP
+    to a self-hosted address immediately after depositing crypto-assets or exchanging for
+    different crypto-assets in a CASP'
   product_types:
   - crypto
   - currency_exchange
@@ -1145,11 +1067,11 @@
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1170,11 +1092,11 @@
   - crypto-ATMs
   - self-hosted address
 - id: 100-37
-  description: Is investing or exchanging crypto-assets, which it has borrowed via
-    a peer-to-peer or other lending platform that does not fall within the scope of
-    Regulation (EU) 2023/1114 or under any other relevant regulatory framework within
-    or outside the EU and, which is notably a decentralised or distributed application
-    with no legal or natural person with control or influence over it
+  description: Is investing or exchanging crypto-assets, which it has borrowed via a peer-to-peer
+    or other lending platform that does not fall within the scope of Regulation (EU) 2023/1114
+    or under any other relevant regulatory framework within or outside the EU and, which is
+    notably a decentralised or distributed application with no legal or natural person with
+    control or influence over it
   product_types:
   - crypto
   industry_types:
@@ -1182,11 +1104,11 @@
   customer_profiles: []
   geographic_footprints:
   - uk_eu
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1211,11 +1133,11 @@
   - crypto
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1231,22 +1153,21 @@
   - darknet
   - illegal activities
 - id: 100-39
-  description: Is investing or exchanging crypto-assets, which themselves offer a
-    higher degree of anonymity or the customer receives crypto-assets which have been
-    subject to anonymity-enhancing activities, in particular, processes which obfuscate
-    the transaction on the ledger technology or contain other characteristics similar
-    to those listed in point a) of Guideline 21.5
+  description: Is investing or exchanging crypto-assets, which themselves offer a higher degree
+    of anonymity or the customer receives crypto-assets which have been subject to anonymity-enhancing
+    activities, in particular, processes which obfuscate the transaction on the ledger technology
+    or contain other characteristics similar to those listed in point a) of Guideline 21.5
   product_types:
   - crypto
   industry_types:
   - crypto
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1263,28 +1184,26 @@
   - ledger technology
   - privacy coins
 - id: 100-40
-  description: 'Repeatedly receives crypto-assets from or sends crypto-assets to:
-    a) a crypto-asset account through an intermediary crypto-asset service provider,
-    which does not fall within the scope of Regulation (EU) 2023/1114 or under any
-    other relevant regulatory framework within or outside the EU; or which is subject
-    to AML/CTF regulatory and supervisory framework that is less robust than the one
-    provided for in Directive (EU) 2015/849; b) multiple self-hosted addresses or
-    multiple crypto-asset accounts held by the same or different CASPs without an
-    apparent economic rationale for it; c) a newly created or previously inactive
-    crypto-asset account or a distributed ledger address held by a third party; d)
-    self-hosted addresses on decentralised platforms, which involve the use of mixers,
-    tumblers and other privacy-enhancing technologies that may obfuscate the financial
-    history associated with the distributed ledger address and the source of funds
-    for the transaction, therefore undermining the CASP’s ability to know its customers
-    and implement effective AML/CTF systems and controls; e) a crypto-asset account
-    shortly after being onboarded by the CASP, which is then followed by a withdrawal
-    or a transfer from such an account in a short period of time without an apparent
-    economic rationale for it; f) a crypto-asset account frequently below a defined
-    threshold or, in case of transfers to a self-hosted address, below the threshold
-    of EUR 1 000 as defined in Article 14(5) and Article 16(2) of the Regulation (EU)
-    2023/1113; g) a crypto-asset account by splitting the transactions into multiple
-    transactions which are sent to multiple distributed ledger addresses by using
-    smurfing techniques'
+  description: 'Repeatedly receives crypto-assets from or sends crypto-assets to: a) a crypto-asset
+    account through an intermediary crypto-asset service provider, which does not fall within
+    the scope of Regulation (EU) 2023/1114 or under any other relevant regulatory framework
+    within or outside the EU; or which is subject to AML/CTF regulatory and supervisory framework
+    that is less robust than the one provided for in Directive (EU) 2015/849; b) multiple
+    self-hosted addresses or multiple crypto-asset accounts held by the same or different
+    CASPs without an apparent economic rationale for it; c) a newly created or previously
+    inactive crypto-asset account or a distributed ledger address held by a third party; d)
+    self-hosted addresses on decentralised platforms, which involve the use of mixers, tumblers
+    and other privacy-enhancing technologies that may obfuscate the financial history associated
+    with the distributed ledger address and the source of funds for the transaction, therefore
+    undermining the CASP’s ability to know its customers and implement effective AML/CTF systems
+    and controls; e) a crypto-asset account shortly after being onboarded by the CASP, which
+    is then followed by a withdrawal or a transfer from such an account in a short period
+    of time without an apparent economic rationale for it; f) a crypto-asset account frequently
+    below a defined threshold or, in case of transfers to a self-hosted address, below the
+    threshold of EUR 1 000 as defined in Article 14(5) and Article 16(2) of the Regulation
+    (EU) 2023/1113; g) a crypto-asset account by splitting the transactions into multiple
+    transactions which are sent to multiple distributed ledger addresses by using smurfing
+    techniques'
   product_types:
   - crypto
   industry_types:
@@ -1293,11 +1212,11 @@
   - shell_or_front_company
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1319,19 +1238,19 @@
   - tumbler
   - smurfing
 - id: 100-41
-  description: The customer appears to exploit technological glitches or failures
-    to their advantage
+  description: The customer appears to exploit technological glitches or failures to their
+    advantage
   product_types:
   - crypto
   industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1348,20 +1267,20 @@
   - technological glitches
   - failures
 - id: 100-42
-  description: The customer explains that the crypto-assets transferred to the CASP
-    have been obtained through mining or staking rewards, but these rewards do not
-    appear to be proportionate to the crypto-assets generated through such activities
+  description: The customer explains that the crypto-assets transferred to the CASP have been
+    obtained through mining or staking rewards, but these rewards do not appear to be proportionate
+    to the crypto-assets generated through such activities
   product_types:
   - crypto
   industry_types:
   - crypto
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1378,9 +1297,8 @@
   - staking rewards
   - disproportionate
 - id: 100-43
-  description: The customer’s funds that are exchanged to crypto-assets are derived
-    from personal or business relationships involving jurisdictions associated with
-    higher ML/TF risk
+  description: The customer’s funds that are exchanged to crypto-assets are derived from personal
+    or business relationships involving jurisdictions associated with higher ML/TF risk
   product_types:
   - crypto
   industry_types: []
@@ -1389,11 +1307,11 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1409,12 +1327,11 @@
   - higher ML/TF risk
   - jurisdictions
 - id: 100-44
-  description: The originating or the beneficiary crypto-asset account or a distributed
-    ledger address is linked to a jurisdiction associated with higher ML/TF risk or
-    jurisdictions/regions known to provide funding or support for terrorist activities
-    or where groups committing terrorist offences are known to be operating, and jurisdictions
-    subject to financial sanctions, embargoes or measures that are related to terrorism,
-    financing of terrorism or proliferation
+  description: The originating or the beneficiary crypto-asset account or a distributed ledger
+    address is linked to a jurisdiction associated with higher ML/TF risk or jurisdictions/regions
+    known to provide funding or support for terrorist activities or where groups committing
+    terrorist offences are known to be operating, and jurisdictions subject to financial sanctions,
+    embargoes or measures that are related to terrorism, financing of terrorism or proliferation
   product_types:
   - crypto
   industry_types: []
@@ -1428,11 +1345,11 @@
   - iran
   - north_korea
   - syria
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1453,8 +1370,8 @@
   - proliferation
 - id: 100-45
   description: The customer or the customer’s beneficial owner is a resident, is established,
-    operates in or has personal or business relationships involving a jurisdiction
-    associated with an increased ML or TF risk
+    operates in or has personal or business relationships involving a jurisdiction associated
+    with an increased ML or TF risk
   product_types:
   - crypto
   industry_types: []
@@ -1464,11 +1381,11 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1484,9 +1401,9 @@
   - beneficial owner
   - jurisdiction
 - id: 100-46
-  description: The business relationship is established through a CASP or a crypto-ATM,
-    which is located in a region or a jurisdiction that is associated with high levels
-    of the ML/TF risk
+  description: The business relationship is established through a CASP or a crypto-ATM, which
+    is located in a region or a jurisdiction that is associated with high levels of the ML/TF
+    risk
   product_types:
   - crypto
   - currency_exchange
@@ -1496,11 +1413,11 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1516,11 +1433,11 @@
   - crypto-ATM
   - high levels of ML/TF risk
 - id: 100-47
-  description: The customer is involved in crypto-asset mining operations, either
-    directly or indirectly through relationships with third parties, that take place
-    in a high-risk jurisdiction, identified by the European Commission in accordance
-    with Article 9 of Directive (EU) 2015/849, or in a jurisdiction that is subject
-    to restrictive measures or targeted financial sanctions
+  description: The customer is involved in crypto-asset mining operations, either directly
+    or indirectly through relationships with third parties, that take place in a high-risk
+    jurisdiction, identified by the European Commission in accordance with Article 9 of Directive
+    (EU) 2015/849, or in a jurisdiction that is subject to restrictive measures or targeted
+    financial sanctions
   product_types:
   - crypto
   industry_types:
@@ -1530,11 +1447,11 @@
   geographic_footprints:
   - high_risk_jurisdiction
   - sanctioned_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
+  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on customer
+    due diligence and the factors credit and financial institutions should consider when assessing
+    the money laundering and terrorist financing risk associated with individual business
+    relationships and occasional transactions (‘The ML/TF Risk Factors Guidelines’) under
+    Articles 17 and 18(4) of Directive (EU) 2015/849
   regulator: EBA
   regulator_jurisdiction: EU
   issuing_agencies: []
@@ -1550,237 +1467,3 @@
   - mining operations
   - restrictive measures
   - targeted financial sanctions
-- id: 100-48
-  description: The business relationship is established via crypto-ATMs, which increases
-    risk due to the use of cash
-  product_types:
-  - crypto
-  - currency_exchange
-  industry_types:
-  - crypto
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: virtual_currency
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - crypto-ATMs
-  - cash
-- id: 100-49
-  description: The customer’s funds that are exchanged to crypto-assets are derived
-    from personal or business relationships involving jurisdictions associated with
-    higher ML/TF risk
-  product_types:
-  - crypto
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  - foreign_individual
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - jurisdictions associated with higher ML/TF risk
-- id: 100-50
-  description: The originating or the beneficiary crypto-asset account or a distributed
-    ledger address is linked to a jurisdiction associated with higher ML/TF risk or
-    jurisdictions/regions known to provide funding or support for terrorist activities
-    or where groups committing terrorist offences are known to be operating, and jurisdictions
-    subject to financial sanctions, embargoes or measures that are related to terrorism,
-    financing of terrorism or proliferation
-  product_types:
-  - crypto
-  industry_types: []
-  customer_profiles:
-  - foreign_individual
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  - sanctioned_jurisdiction
-  - ofac_sanctioned_country
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - sanctions_evasion
-  - terrorist_financing
-  - proliferation_financing
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - financial sanctions
-  - embargoes
-  - terrorism
-  - proliferation
-- id: 100-51
-  description: The customer or the customer’s beneficial owner is a resident, is established,
-    operates in or has personal or business relationships involving a jurisdiction
-    associated with an increased ML or TF risk
-  product_types:
-  - crypto
-  industry_types: []
-  customer_profiles:
-  - foreign_individual
-  - cross_border_business
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - resident
-  - beneficial owner
-  - jurisdiction
-- id: 100-52
-  description: The business relationship is established through a CASP or a crypto-ATM,
-    which is located in a region or a jurisdiction that is associated with high levels
-    of the ML/TF risk
-  product_types:
-  - crypto
-  - currency_exchange
-  industry_types:
-  - crypto
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - crypto-ATM
-  - high levels of ML/TF risk
-- id: 100-53
-  description: The customer is involved in crypto-asset mining operations, either
-    directly or indirectly through relationships with third parties, that take place
-    in a high-risk jurisdiction, identified by the European Commission in accordance
-    with Article 9 of Directive (EU) 2015/849, or in a jurisdiction that is subject
-    to restrictive measures or targeted financial sanctions
-  product_types:
-  - crypto
-  industry_types:
-  - crypto
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  - sanctioned_jurisdiction
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - third_party_payments
-  key_terms:
-  - mining operations
-  - restrictive measures
-  - targeted financial sanctions
-- id: 100-54
-  description: The business relationship is established via crypto-ATMs, which increases
-    risk due to the use of cash
-  product_types:
-  - crypto
-  - currency_exchange
-  industry_types:
-  - crypto
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: EBA/GL/2024/01 Guidelines amending Guidelines EBA/2021/02 on
-    customer due diligence and the factors credit and financial institutions should
-    consider when assessing the money laundering and terrorist financing risk associated
-    with individual business relationships and occasional transactions (‘The ML/TF
-    Risk Factors Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849
-  regulator: EBA
-  regulator_jurisdiction: EU
-  issuing_agencies: []
-  issued_date: '2024-01-16'
-  risk_level: medium
-  category: virtual_currency
-  source_url: https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf
-  typology_family:
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - crypto-ATMs
-  - cash
