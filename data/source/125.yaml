@@ -50,8 +50,9 @@
   - cybersecurity
   - darknet marketplaces
 - id: 125-03
-  description: DPT service providers that have not come forward for licensing despite
-    operating in Singapore or soliciting business from Singapore residents.
+  description: Digital Payment Token (DPT) service providers that have not come forward
+    for licensing despite operating in Singapore or soliciting business from Singapore
+    residents.
   product_types:
   - crypto
   industry_types: []
@@ -196,7 +197,8 @@
   - beneficial owner
 - id: 125-09
   description: The customer’s first deposit is not made from an account in the customer’s
-    name with another FI subject to equivalent CDD standards.
+    name with another financial institution (FI) subject to equivalent Customer Due
+    Diligence (CDD) standards.
   product_types:
   - crypto
   industry_types: []
@@ -219,8 +221,8 @@
   - equivalent CDD standards
 - id: 125-10
   description: The customer provides wallet addresses of counterparties, evidence
-    of original purchase of DPTs being deposited, or reasons for DPT transmission
-    that are inconsistent, incomplete, or otherwise suspicious.
+    of original purchase of Digital Payment Tokens (DPTs) being deposited, or reasons
+    for DPT transmission that are inconsistent, incomplete, or otherwise suspicious.
   product_types:
   - crypto
   industry_types: []
@@ -292,7 +294,8 @@
   - suspicious transaction patterns
   - anonymity-related services
 - id: 125-13
-  description: A DPT is traced back and the circumstances are unusual or suspicious.
+  description: A Digital Payment Token (DPT) transaction is traced back and the circumstances
+    are unusual or suspicious.
   product_types:
   - crypto
   industry_types: []
@@ -315,7 +318,8 @@
   - tracing previous transactions
   - unusual or suspicious
 - id: 125-14
-  description: DPT transfers are made to private or unregulated wallets.
+  description: Digital Payment Token (DPT) transfers are made to private or unregulated
+    wallets.
   product_types:
   - crypto
   industry_types: []
@@ -338,8 +342,8 @@
   - private wallets
   - unregulated wallets
 - id: 125-15
-  description: The purpose of the transaction is unclear for a DPT transfer to a private
-    or unregulated wallet.
+  description: The purpose of the transaction is unclear for a Digital Payment Token
+    (DPT) transfer to a private or unregulated wallet.
   product_types:
   - crypto
   industry_types: []
@@ -363,7 +367,7 @@
   - unregulated wallets
 - id: 125-16
   description: The beneficiary or its beneficial owner cannot be adequately identified
-    for a DPT transfer to a private or unregulated wallet.
+    for a Digital Payment Token (DPT) transfer to a private or unregulated wallet.
   product_types:
   - crypto
   industry_types: []

@@ -219,8 +219,8 @@
   - credit cards
   - debit cards
 - id: 122-09
-  description: Transactions that exceed predefined thresholds, to ensure alignment
-    with customers’ profiles and purpose of accounts
+  description: Transactions that exceed predefined thresholds in a manner inconsistent
+    with the customer’s profile and the stated purpose of the account
   product_types:
   - depository
   - wire_transfer

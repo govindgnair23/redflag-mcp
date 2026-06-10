@@ -374,7 +374,7 @@
   - third party
 - id: 124-15
   description: Transaction involves the use of repeatedly amended or frequently extended
-    L/Cs without legitimate commercial reasons
+    letters of credit (L/Cs) without legitimate commercial reasons
   product_types:
   - trade_finance
   industry_types:
@@ -401,8 +401,8 @@
   - amended
   - extended
 - id: 124-16
-  description: Significant amendments in L/C without reasonable justification; including
-    changes to beneficiary or stated location of payment
+  description: Significant amendments in letter of credit (L/C) without reasonable
+    justification; including changes to beneficiary or stated location of payment
   product_types:
   - trade_finance
   industry_types:
@@ -429,9 +429,9 @@
   - beneficiary
   - payment location
 - id: 124-17
-  description: Non-standard clauses or phrases (e.g. L/C is unconditional, divisible
-    and assignable, transactions requiring proof of product, transferable and assignable
-    without being used) included in L/C
+  description: Non-standard clauses or phrases (e.g. letter of credit (L/C) is unconditional,
+    divisible and assignable, transactions requiring proof of product, transferable
+    and assignable without being used) included in the L/C
   product_types:
   - trade_finance
   industry_types:
@@ -483,7 +483,8 @@
   - tampering
   - trade documents
 - id: 124-19
-  description: Receipt of L/C as an unauthenticated SWIFT or untested telex message
+  description: Receipt of letter of credit (L/C) as an unauthenticated SWIFT or untested
+    telex message
   product_types:
   - trade_finance
   industry_types:
@@ -1084,8 +1085,8 @@
   - embargoed countries
   - voyage history
 - id: 124-41
-  description: screening hits against vessel names, discrepancies or ambiguity in
-    trade documents, transhipments or the use of multiple ports
+  description: Sanctions screening hits against vessel names, or discrepancies and
+    ambiguity in trade documents, transhipments, or the use of multiple ports
   product_types:
   - trade_finance
   industry_types:

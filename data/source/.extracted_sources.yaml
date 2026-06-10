@@ -338,3 +338,7 @@
   slug: '123'
   output_file: data/source/123.yaml
   extracted_at: '2026-06-09T11:02:50.715544+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/128.pdf
+  slug: '128'
+  output_file: data/source/128.yaml
+  extracted_at: '2026-06-09T23:28:13.350214+00:00'

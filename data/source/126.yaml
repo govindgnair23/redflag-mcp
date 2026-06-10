@@ -436,7 +436,7 @@
   - high risk jurisdictions
   - customer understanding
 - id: 126-17
-  description: Change in BO one day after account opening
+  description: Change in beneficial owner (BO) one day after account opening
   product_types:
   - depository
   industry_types: []
@@ -461,7 +461,7 @@
   - BO
   - account opening
 - id: 126-18
-  description: Change of AS one month after account opening
+  description: Change of Authorised Signatory (AS) one month after account opening
   product_types:
   - depository
   industry_types: []
@@ -665,32 +665,6 @@
   - relationship managers
   - tax haven
   - high risk countries
-- id: 126-26
-  description: Transactions within the account appear to be of flow through nature
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: high
-  category: layering
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - layering
-  transaction_patterns:
-  - pass_through_account_activity
-  - rapid_fund_movement
-  key_terms:
-  - flow through
-  - account
 - id: 126-27
   description: Credited funds were withdrawn shortly after fund was credited
   product_types:
@@ -792,7 +766,8 @@
   - layering company
   - true source of funds
 - id: 126-31
-  description: Unusual circular fund flow between the 2 customers (through Ext 11)
+  description: Unusual circular fund flow between related customers, where funds cycle
+    back to their source without clear economic purpose
   product_types:
   - depository
   - wire_transfer
@@ -893,31 +868,6 @@
   key_terms:
   - wire transfers
   - high risk jurisdictions
-- id: 126-35
-  description: Superficial corporate websites that were inconsistent with the turnover
-    of the companies
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: low
-  category: shell_company
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - shell_company
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - corporate websites
-  - turnover
 - id: 126-36
   description: Accounts being controlled by foreign beneficial owner
   product_types:
