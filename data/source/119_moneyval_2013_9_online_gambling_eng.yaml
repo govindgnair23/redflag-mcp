@@ -1,0 +1,339 @@
+- id: 119_moneyval_2013_9_online_gambling_eng-01
+  description: Information provided by the player contains a number of mismatches (e.g. email domain,
+    telephone or postcode details do not correspond to the country).
+  product_types:
+  - depository
+  - prepaid
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - email domain
+  - postcode
+  - telephone
+  - mismatch
+- id: 119_moneyval_2013_9_online_gambling_eng-02
+  description: The registered credit card or bank account details do not match the player’s registration
+    details.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - credit card
+  - bank account
+  - registration details
+- id: 119_moneyval_2013_9_online_gambling_eng-03
+  description: The player is situated in a higher-risk jurisdiction or is identified as being listed
+    on an international sanctions list.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - sanctions list
+  - higher-risk jurisdiction
+- id: 119_moneyval_2013_9_online_gambling_eng-04
+  description: The player seeks to open multiple accounts under the same name.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - multiple accounts
+- id: 119_moneyval_2013_9_online_gambling_eng-05
+  description: The player opens several accounts under different names using the same IP address.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - different names
+  - multiple accounts
+- id: 119_moneyval_2013_9_online_gambling_eng-06
+  description: The withdrawals from the account are not commensurate with the conduct of the account,
+    such as for instance where the player makes numerous withdrawals without engaging in significant
+    gambling activity.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - withdrawals
+  - gambling activity
+- id: 119_moneyval_2013_9_online_gambling_eng-07
+  description: The source of funds being deposited into the account appears to be suspicious and
+    it is not possible to verify the origin of the funds.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - source of funds
+  - origin of funds
+- id: 119_moneyval_2013_9_online_gambling_eng-08
+  description: The customer logs on to the account from multiple countries.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - cross_border_business
+  geographic_footprints:
+  - caribbean
+  - central_america
+  - east_asia
+  - eastern_europe
+  - high_risk_jurisdiction
+  - hong_kong
+  - latin_america
+  - middle_east
+  - north_korea
+  - ofac_sanctioned_country
+  - russia
+  - sanctioned_jurisdiction
+  - south_asia
+  - south_east_asia
+  - uk_eu
+  - west_africa
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - multiple countries
+  - log on
+- id: 119_moneyval_2013_9_online_gambling_eng-09
+  description: A deposit of substantial funds followed by very limited activity.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - substantial funds
+  - limited activity
+- id: 119_moneyval_2013_9_online_gambling_eng-10
+  description: The player has links to previously investigated accounts.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - previously investigated accounts
+- id: 119_moneyval_2013_9_online_gambling_eng-11
+  description: Different players are identified as sharing bank accounts from which deposits or withdrawals
+    are made.
+  product_types:
+  - depository
+  - wire_transfer
+  - credit_card
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: 'MONEYVAL Research Report: The use of online gambling for money laundering and
+    the financing of terrorism purposes'
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies:
+  - MONEYVAL
+  issued_date: 2013-04
+  risk_level: medium
+  category: layering
+  source_url: https://rm.coe.int/research-report-the-use-of-online-gambling-for-money-laundering-and-th/168071509c
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - sharing bank accounts
+  - deposits
+  - withdrawals

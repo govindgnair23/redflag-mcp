@@ -342,3 +342,19 @@
   slug: '128'
   output_file: data/source/128.yaml
   extracted_at: '2026-06-09T23:28:13.350214+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/119_MONEYVAL_2013_9_Online_gambling_ENG.pdf
+  slug: 119_moneyval_2013_9_online_gambling_eng
+  output_file: data/source/119_moneyval_2013_9_online_gambling_eng.yaml
+  extracted_at: '2026-06-10T23:48:52.826932+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/120_MONEYVAL_2015_20_typologies_laundering_the_proceedsof_organised_crime_ENG.pdf
+  slug: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng
+  output_file: data/source/120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng.yaml
+  extracted_at: '2026-06-10T23:49:11.942052+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/117_MONEYVAL_2013_6_Reptyp_flows_ENG.pdf
+  slug: 117_moneyval_2013_6_reptyp_flows_eng
+  output_file: data/source/117_moneyval_2013_6_reptyp_flows_eng.yaml
+  extracted_at: '2026-06-10T23:49:23.298727+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/118_RepTyp_MSBs_ENG.pdf
+  slug: 118_reptyp_msbs_eng
+  output_file: data/source/118_reptyp_msbs_eng.yaml
+  extracted_at: '2026-06-10T23:50:47.743877+00:00'
