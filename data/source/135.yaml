@@ -1,0 +1,754 @@
+- id: 135-01
+  description: A business relationship is conducted in unusual circumstances (e.g.
+    significant unexplained geographic difference between the CBR and the customer).
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - unusual circumstances
+  - geographic difference
+- id: 135-02
+  description: Legal persons or legal arrangements that involve a shell vehicle without
+    a clear and legitimate commercial purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell vehicle
+  - commercial purpose
+- id: 135-03
+  description: Companies that have nominee shareholders, nominee directors, bearer
+    shares or bearer share warrants.
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - nominee shareholders
+  - nominee directors
+  - bearer shares
+  - bearer share warrants
+- id: 135-04
+  description: Customer owns or operates cash intensive business.
+  product_types:
+  - depository
+  - check_cashing
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash intensive business
+- id: 135-05
+  description: The ownership structure of the legal person or legal arrangement appears
+    unusual or excessively complex given the nature of the legal person’s or legal
+    arrangement’s business.
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - ownership structure
+  - excessively complex
+- id: 135-06
+  description: The customer or the beneficial owner of the customer is a politically
+    exposed person.
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  - trade_finance
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: corruption
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - PEP
+- id: 135-07
+  description: Countries or jurisdictions identified by credible sources, such as
+    mutual evaluation or detailed assessment reports, as not having effective AML/CFT
+    Systems.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: low
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - AML/CFT Systems
+  - mutual evaluation
+- id: 135-08
+  description: Countries or jurisdictions identified by credible sources as having
+    a significant level of corruption or other criminal activity.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: low
+  category: corruption
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - corruption_and_bribery
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - corruption
+  - criminal activity
+- id: 135-09
+  description: Countries or jurisdictions subject to sanctions, embargoes or similar
+    measures issued by, for example, the United Nations.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - sanctions
+  - embargoes
+  - United Nations
+- id: 135-10
+  description: Countries, jurisdictions or geographical areas identified by credible
+    sources as providing funding or support for terrorist activities, or that have
+    designated terrorist organisations operation.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - terrorist activities
+  - designated terrorist organisations
+- id: 135-11
+  description: Transactions that are not consistent with the CBR’s knowledge of the
+    customer, the customer’s business, risk profile or source of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - check_cashing
+  - currency_exchange
+  - private_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - source of funds
+  - customer profile
+- id: 135-12
+  description: Transactions that are complex, unusually large in amount or of an unusual
+    pattern, and have no apparent economic or lawful purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - check_cashing
+  - currency_exchange
+  - private_banking
+  - trade_finance
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - complex
+  - unusually large
+  - unusual pattern
+- id: 135-15
+  description: A customer has instructed the CBR to move funds or other property,
+    close the account, make cash available for collection, or carry out significant
+    changes to the business relationship, particularly when the customer is part of
+    an ongoing investigation by law enforcement agency.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - check_cashing
+  - currency_exchange
+  - private_banking
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  key_terms:
+  - move funds
+  - close the account
+  - cash available for collection
+- id: 135-16
+  description: A customer has not been physically present for identification purposes.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - non-face-to-face
+  - impersonation risk
+- id: 135-17
+  description: A customer that is not a natural person establishes a business relationship
+    with a CBR through a non-face-to-face channel.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - non-face-to-face
+  - legal person
+- id: 135-18
+  description: A customer is not a natural person and the natural person acting on
+    behalf of the customer to establish the business relationship is not physically
+    present for identification purposes.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - non-face-to-face
+  - acting on behalf
+- id: 135-19
+  description: A customer or a beneficial owner of a customer is a non-Hong Kong Politically
+    Exposed Person (PEP).
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: corruption
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - non-Hong Kong PEP
+- id: 135-20
+  description: A customer or a beneficial owner of a customer is a Hong Kong Politically
+    Exposed Person (PEP) or an international organisation PEP.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: corruption
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - Hong Kong PEP
+  - international organisation PEP
+- id: 135-21
+  description: A customer or a beneficial owner of a customer is a former non-Hong
+    Kong Politically Exposed Person (PEP).
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: corruption
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - former non-Hong Kong PEP
+- id: 135-22
+  description: A customer or a beneficial owner of a customer is a former Hong Kong
+    Politically Exposed Person (PEP) or international organisation PEP.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: corruption
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns: []
+  key_terms:
+  - former Hong Kong PEP
+  - former international organisation PEP
+- id: 135-23
+  description: A customer or a beneficial owner of a customer is a customer from jurisdictions
+    for which enhanced due diligence is called for by the FATF.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - FATF
+  - enhanced due diligence
+- id: 135-24
+  description: A customer or a beneficial owner of a customer is from jurisdictions
+    for which mandatory EDD or countermeasures are called for by the FATF, or in other
+    circumstances independent of any call by the FATF but also considered to be higher
+    risk.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: high
+  category: layering
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - countermeasures
+  - FATF
+- id: 135-25
+  description: A customer or a beneficial owner of a customer is a customer from jurisdictions
+    subject to sanctions, embargoes or similar measures issued by, for example, the
+    United Nations.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - sanctions
+  - embargoes
+  - United Nations
+- id: 135-26
+  description: A customer or a beneficial owner of a customer is a customer from countries,
+    jurisdictions or geographical areas identified by credible sources as providing
+    funding or support for terrorist activities, or that have designated terrorist
+    organisations operation.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - correspondent_banking
+  - trade_finance
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  - foreign_financial_institution
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Category B Registrants Dealing in Precious Metals and Stones) June 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies: []
+  issued_date: 2023-06
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.drs.customs.gov.hk/download/drsguideline/AML_CFT_Guideline_en.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - terrorist activities
+  - designated terrorist organisations

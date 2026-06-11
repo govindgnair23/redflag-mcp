@@ -358,3 +358,15 @@
   slug: 118_reptyp_msbs_eng
   output_file: data/source/118_reptyp_msbs_eng.yaml
   extracted_at: '2026-06-10T23:50:47.743877+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/131.pdf
+  slug: '131'
+  output_file: data/source/131.yaml
+  extracted_at: '2026-06-11T00:25:28.559727+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/133.pdf
+  slug: '133'
+  output_file: data/source/133.yaml
+  extracted_at: '2026-06-11T00:26:22.682957+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/135.pdf
+  slug: '135'
+  output_file: data/source/135.yaml
+  extracted_at: '2026-06-11T00:27:05.958585+00:00'
