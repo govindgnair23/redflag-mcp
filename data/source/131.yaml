@@ -1,32 +1,6 @@
 - id: 131-01
-  description: 'Transactions: The following is a (non-exhaustive) list of examples
-    of situations that might give rise to suspicion in certain circumstances: discrepancies
-    between the information submitted by the customer and information detected by
-    monitoring systems; individuals who hold an unusual volume of SVF accounts with
-    the same provider; a large and diverse source of funds (i.e. bank transfers, credit
-    card and cash funding from different locations) used to fund the same SVF account(s);
-    multiple reference bank accounts from banks located in different jurisdictions
-    used to fund the same SVF account; loading or funding of an SVF account always
-    done by third parties; multiple third party funding activities of an SVF account,
-    followed by the immediate transfer of funds to unrelated bank account(s); multiple
-    loading or funding of the same SVF account, followed by ATM withdrawals shortly
-    afterwards, over a short period of time; multiple withdrawals conducted at different
-    ATMs (sometimes located in various countries different from jurisdiction where
-    the SVF account was funded); an SVF account only used for withdrawals, and not
-    for making payments for goods or services; an SVF account being used in multiple
-    jurisdictions within days of issuance; atypical use of the SVF product (including
-    unexpected and frequent cross-border access or transactions); customers who load
-    or fund SVF accounts containing counterfeit notes or forged instruments; a substantial
-    increase in turnover on an SVF account; reluctance to provide normal information
-    when opening an SVF account, providing minimal or fictitious information or, when
-    applying to open an SVF account, providing information that is difficult or expensive
-    for the institution to verify; large cash withdrawals from a previously dormant/inactive
-    SVF account; and structured the transactions to avoid reaching the limits for
-    conducting Customer Due Diligence (CDD) for a verified customer (e.g. a few transactions
-    within a short period of time with an amount just below the limit for conducting
-    CDD for a verified customer, purchase of multiple non-reloadable prepaid cards
-    just below the limit for conducting CDD for a verified customer by a single customer
-    over a short period of time).'
+  description: Discrepancies between information submitted by the customer and information
+    detected by monitoring systems.
   product_types:
   - depository
   - money_transmitter
@@ -72,15 +46,714 @@
   - structured transactions
   - CDD
 - id: 131-02
-  description: 'Examples of potentially higher risk factors include: business relationship
-    is conducted in unusual circumstances (e.g. significant unexplained geographic
-    difference between the SVF licensee and the customer); nature and scope of business
-    activities generating the funds/assets (e.g. merchants), having regard to high-risk
-    activities; legal persons or legal arrangements that involve a shell vehicle without
-    a clear and legitimate commercial purpose; the ownership structure of the legal
-    person or legal arrangement appears unusual or excessively complex given the nature
-    of the legal person’s or legal arrangement’s business; or companies that have
-    nominee shareholders, nominee directors, bearer shares or bearer share warrants.'
+  description: Individuals who hold an unusual volume of Stored Value Facility (SVF)
+    accounts with the same provider.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-03
+  description: A large and diverse source of funds (e.g. bank transfers, credit card
+    and cash funding from different locations) used to fund the same SVF account(s).
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-04
+  description: Multiple reference bank accounts from banks located in different jurisdictions
+    used to fund the same SVF account.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-05
+  description: Loading or funding of an SVF account always done by third parties.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-06
+  description: Multiple third-party funding activities of an SVF account, followed
+    by the immediate transfer of funds to unrelated bank account(s).
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-07
+  description: Multiple loading or funding of the same SVF account, followed by ATM
+    withdrawals shortly afterwards, over a short period of time.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-08
+  description: Multiple withdrawals conducted at different ATMs, sometimes located
+    in various countries different from the jurisdiction where the SVF account was
+    funded.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-09
+  description: An SVF account only used for withdrawals, and not for making payments
+    for goods or services.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-10
+  description: An SVF account being used in multiple jurisdictions within days of
+    issuance.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-11
+  description: Atypical use of the SVF product, including unexpected and frequent
+    cross-border access or transactions.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-12
+  description: Customers who load or fund SVF accounts containing counterfeit notes
+    or forged instruments.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-13
+  description: A substantial increase in turnover on an SVF account.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-14
+  description: Reluctance to provide normal information when opening an SVF account,
+    providing minimal or fictitious information, or providing information that is
+    difficult or expensive for the institution to verify.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-15
+  description: Large cash withdrawals from a previously dormant or inactive SVF account.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-16
+  description: Structuring transactions to avoid reaching the limits for conducting
+    Customer Due Diligence (CDD) for a verified customer (e.g. several transactions
+    just below the CDD limit, or purchase of multiple non-reloadable prepaid cards
+    just below the limit by a single customer over a short period).
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - money_mule_activity
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_withdrawals
+  - unusual_international_wires
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - SVF account
+  - third parties
+  - ATM withdrawals
+  - counterfeit notes
+  - forged instruments
+  - structured transactions
+  - CDD
+- id: 131-17
+  description: Business relationship conducted in unusual circumstances (e.g. significant
+    unexplained geographic difference between the SVF licensee and the customer).
   product_types:
   - depository
   - money_transmitter
@@ -114,10 +787,152 @@
   - nominee directors
   - bearer shares
   - bearer share warrants
-- id: 131-03
-  description: 'Examples of potentially higher risk factors include: anonymous transactions
-    (which may involve cash); or frequent payments received from unknown or un-associated
-    third parties.'
+- id: 131-18
+  description: Nature and scope of business activities generating the funds or assets
+    (e.g. merchants) involves high-risk activities.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types:
+  - retail
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell vehicle
+  - nominee shareholders
+  - nominee directors
+  - bearer shares
+  - bearer share warrants
+- id: 131-19
+  description: Legal persons or legal arrangements that involve a shell vehicle without
+    a clear and legitimate commercial purpose.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types:
+  - retail
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell vehicle
+  - nominee shareholders
+  - nominee directors
+  - bearer shares
+  - bearer share warrants
+- id: 131-20
+  description: The ownership structure of the legal person or legal arrangement appears
+    unusual or excessively complex given the nature of the business.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types:
+  - retail
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell vehicle
+  - nominee shareholders
+  - nominee directors
+  - bearer shares
+  - bearer share warrants
+- id: 131-21
+  description: Companies that have nominee shareholders, nominee directors, bearer
+    shares, or bearer share warrants.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types:
+  - retail
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shell vehicle
+  - nominee shareholders
+  - nominee directors
+  - bearer shares
+  - bearer share warrants
+- id: 131-22
+  description: Anonymous transactions, which may involve cash.
   product_types:
   - depository
   - money_transmitter
@@ -148,15 +963,41 @@
   - anonymous transactions
   - third parties
   - cash
-- id: 131-04
-  description: Countries or jurisdictions identified by credible sources, such as
-    mutual evaluation or detailed assessment reports, as not having effective AML/CFT
-    Systems; countries or jurisdictions identified by credible sources as having a
-    significant level of corruption or other criminal activity; countries or jurisdictions
-    subject to sanctions, embargoes or similar measures issued by, for example, the
-    United Nations; or countries, jurisdictions or geographical areas identified by
-    credible sources as providing funding or support for terrorist activities, or
-    that have designated terrorist organisations operation.
+- id: 131-23
+  description: Frequent payments received from unknown or un-associated third parties.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - anonymous transactions
+  - third parties
+  - cash
+- id: 131-24
+  description: Countries or jurisdictions identified by credible sources (e.g. mutual
+    evaluation or detailed assessment reports) as not having effective AML/CFT systems.
   product_types:
   - depository
   - money_transmitter
@@ -194,15 +1035,168 @@
   - terrorist activities
   - designated terrorist organisations
   - United Nations
-- id: 131-05
-  description: 'An SVF licensee should take appropriate steps (e.g. examining the
-    background and purposes of the transactions; making appropriate enquiries to or
-    obtaining additional Customer Due Diligence (CDD) information from a customer)
-    to identify if there are any grounds for suspicion, when: the customer’s transactions
-    are not consistent with the SVF licensee’s knowledge of the customer, the customer’s
-    business, risk profile and source of funds; or the SVF licensee identifies transactions
-    that (i) are complex, unusually large in amount or of an unusual pattern, and
-    (ii) have no apparent economic or lawful purpose.'
+- id: 131-25
+  description: Countries or jurisdictions identified by credible sources as having
+    a significant level of corruption or other criminal activity.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  - iran
+  - north_korea
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - sanctions_evasion
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - sanctions
+  - embargoes
+  - terrorist activities
+  - designated terrorist organisations
+  - United Nations
+- id: 131-26
+  description: Countries or jurisdictions subject to sanctions, embargoes, or similar
+    measures issued by, for example, the United Nations.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  - iran
+  - north_korea
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - sanctions_evasion
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - sanctions
+  - embargoes
+  - terrorist activities
+  - designated terrorist organisations
+  - United Nations
+- id: 131-27
+  description: Countries, jurisdictions, or geographical areas identified by credible
+    sources as providing funding or support for terrorist activities, or that host
+    designated terrorist organisations.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - foreign_financial_institution
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  - iran
+  - north_korea
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - sanctions_evasion
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - sanctions
+  - embargoes
+  - terrorist activities
+  - designated terrorist organisations
+  - United Nations
+- id: 131-28
+  description: The customer's transactions are not consistent with the SVF licensee's
+    knowledge of the customer, the customer's business, risk profile, and source of
+    funds.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - remittance
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
+    (For Stored Value Facility Licensees) Revised May 2023
+  regulator: HKMA
+  regulator_jurisdiction: HK
+  issuing_agencies:
+  - HKMA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - structuring
+  - unusual_international_wires
+  key_terms:
+  - unusual pattern
+  - no apparent economic or lawful purpose
+  - source of funds
+- id: 131-29
+  description: Transactions identified by the SVF licensee that are complex, unusually
+    large in amount, or of an unusual pattern, and have no apparent economic or lawful
+    purpose.
   product_types:
   - depository
   - money_transmitter
