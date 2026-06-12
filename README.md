@@ -7,7 +7,7 @@ MCP server exposing AML red flag knowledge as queryable tools. Compliance office
 Public users should start with the hosted MCP URL:
 
 ```text
-https://<deployment>/mcp
+https://redflag-mcp.up.railway.app/mcp
 ```
 
 Add that URL in a hosted MCP client, enable the connector, and ask AML red flag research questions such as:
