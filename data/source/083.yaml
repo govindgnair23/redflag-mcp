@@ -1,9 +1,9 @@
 - id: 083-01
-  description: DPs communicating changes to the beneficial ownership of their corporate
-    structures such as Private Investment Companies (PICs) and Joint Stock Companies
-    (JSC) to non-Russian or dual national family members or associates, or nominee
-    directors/shareholders, prior to, or shortly after sanctions taking effect. These
-    new individuals are likely to be a front, with the DP maintaining indirect control.
+  description: DPs communicating changes to the beneficial ownership of their corporate structures
+    such as Private Investment Companies (PICs) and Joint Stock Companies (JSC) to non-Russian
+    or dual national family members or associates, or nominee directors/shareholders, prior
+    to, or shortly after sanctions taking effect. These new individuals are likely to be a
+    front, with the DP maintaining indirect control.
   product_types:
   - depository
   - securities
@@ -14,8 +14,8 @@
   - shell_or_front_company
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -36,12 +36,11 @@
   - nominee shareholders
   - front
 - id: 083-02
-  description: Changes to ownership of a corporate holding to reduce ownership stakes
-    to below the 50% threshold, shortly before or after sanctions designations. Where
-    the transaction does not appear to be at “arms-length”, the DP may still be able
-    to initiate undue influence through associates or existing corporate governance,
-    or through a joint arrangement with an associate or another DP in the ownership
-    chain.
+  description: Changes to ownership of a corporate holding to reduce ownership stakes to below
+    the 50% threshold, shortly before or after sanctions designations. Where the transaction
+    does not appear to be at “arms-length”, the DP may still be able to initiate undue influence
+    through associates or existing corporate governance, or through a joint arrangement with
+    an associate or another DP in the ownership chain.
   product_types:
   - depository
   - securities
@@ -52,8 +51,8 @@
   - shell_or_front_company
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -71,9 +70,9 @@
   - joint arrangement
   - ownership chain
 - id: 083-03
-  description: Movement of assets previously associated with the DP, by family members
-    or otherwise on their behalf , such as the sale of high value assets, where funds
-    are then disbursed offshore through secrecy jurisdictions.
+  description: Movement of assets previously associated with the DP, by family members or
+    otherwise on their behalf , such as the sale of high value assets, where funds are then
+    disbursed offshore through secrecy jurisdictions.
   product_types:
   - depository
   - wire_transfer
@@ -86,8 +85,8 @@
   geographic_footprints:
   - russia
   - high_risk_jurisdiction
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -105,13 +104,12 @@
   - secrecy jurisdictions
   - on their behalf
 - id: 083-04
-  description: Use of trust arrangements or complex corporate structures involving
-    offshore companies, with circumstances of transfers calling into question whether
-    the original owner retains indirect control or otherwise could retain a benefit
-    from the assets transferred. Complex ownership structures could include circular
-    ownership structures, shell companies and trust structures, with varying combinations
-    of relatives or other close business associates of DPs operating as PSC, trustee,
-    beneficiary, settlor, protector or other connected person.
+  description: Use of trust arrangements or complex corporate structures involving offshore
+    companies, with circumstances of transfers calling into question whether the original
+    owner retains indirect control or otherwise could retain a benefit from the assets transferred.
+    Complex ownership structures could include circular ownership structures, shell companies
+    and trust structures, with varying combinations of relatives or other close business associates
+    of DPs operating as PSC, trustee, beneficiary, settlor, protector or other connected person.
   product_types:
   - depository
   - securities
@@ -124,8 +122,8 @@
   geographic_footprints:
   - high_risk_jurisdiction
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -148,9 +146,9 @@
   - protector
 - id: 083-05
   description: Ownership transfers to previously unknown individuals, where that person’s
-    economic consumption, displays of wealth or financial footprint (such as private
-    jets, large addresses and fleets of luxury cars) does not correspond with their
-    newly reported wealth.
+    economic consumption, displays of wealth or financial footprint (such as private jets,
+    large addresses and fleets of luxury cars) does not correspond with their newly reported
+    wealth.
   product_types:
   - depository
   - private_banking
@@ -162,8 +160,8 @@
   - high_net_worth_individual
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -189,8 +187,8 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -206,8 +204,7 @@
   - new equity ownership
   - long dated loan
 - id: 083-07
-  description: Multiple beneficial ownership changes synchronised with new sanctions
-    designations.
+  description: Multiple beneficial ownership changes synchronised with new sanctions designations.
   product_types:
   - depository
   - securities
@@ -216,8 +213,8 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -233,8 +230,8 @@
   - beneficial ownership changes
   - sanctions designations
 - id: 083-08
-  description: Clients connected with DPs seeking to move all their assets to other
-    financial institutions and closing their accounts in the UK.
+  description: Clients connected with DPs seeking to move all their assets to other financial
+    institutions and closing their accounts in the UK.
   product_types:
   - depository
   - wire_transfer
@@ -245,8 +242,8 @@
   geographic_footprints:
   - uk_eu
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -265,8 +262,7 @@
 - id: 083-09
   description: Russian high-net worth individuals (HNWI) who are already on international
     sanctions lists, but not the UK list, who anticipate that they may become a sanctions
-    target, transferring assets to family members and/or close associates such as
-    employees.
+    target, transferring assets to family members and/or close associates such as employees.
   product_types:
   - depository
   - securities
@@ -279,8 +275,8 @@
   geographic_footprints:
   - russia
   - uk_eu
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -299,8 +295,8 @@
   - close associates
   - employees
 - id: 083-10
-  description: Change in address and names for Russian entities in the lead up to
-    the Russian invasion of Ukraine.
+  description: Change in address and names for Russian entities in the lead up to the Russian
+    invasion of Ukraine.
   product_types:
   - depository
   - securities
@@ -311,8 +307,8 @@
   geographic_footprints:
   - russia
   - uk_eu
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -342,8 +338,8 @@
   - high_risk_jurisdiction
   - eastern_europe
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -360,10 +356,9 @@
   - offshore
   - former Soviet Union
 - id: 083-12
-  description: Change of UBOs from Russian nationals to persons of other nationalities,
-    potentially with names of Russian origin but from third-country jurisdictions
-    (including, but not limited to, countries that offer citizenship-by-investment
-    schemes).
+  description: Change of UBOs from Russian nationals to persons of other nationalities, potentially
+    with names of Russian origin but from third-country jurisdictions (including, but not
+    limited to, countries that offer citizenship-by-investment schemes).
   product_types:
   - depository
   - securities
@@ -374,8 +369,8 @@
   geographic_footprints:
   - russia
   - high_risk_jurisdiction
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -392,8 +387,8 @@
   - citizenship-by-investment
   - Russian origin
 - id: 083-13
-  description: Investor visa or golden passport holders changing ownership information
-    or divesting investments.
+  description: Investor visa or golden passport holders changing ownership information or
+    divesting investments.
   product_types:
   - depository
   - securities
@@ -403,8 +398,8 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -430,8 +425,8 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -447,8 +442,8 @@
   - aggregated thresholds
   - beneficial ownership
 - id: 083-15
-  description: ‘Interim dividend’ payments to provide liquidity for due considerations
-    for beneficial ownership changes.
+  description: ‘Interim dividend’ payments to provide liquidity for due considerations for
+    beneficial ownership changes.
   product_types:
   - depository
   - securities
@@ -457,8 +452,8 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -474,10 +469,9 @@
   - interim dividend
   - beneficial ownership changes
 - id: 083-16
-  description: Beneficial ownership changes notified to other firms in the regulated
-    sector accompanied by opinion of client’s external counsel as to new sanctions
-    disposition, potentially accompanied by correspondence from a senior UK company
-    representative to convey authority.
+  description: Beneficial ownership changes notified to other firms in the regulated sector
+    accompanied by opinion of client’s external counsel as to new sanctions disposition, potentially
+    accompanied by correspondence from a senior UK company representative to convey authority.
   product_types:
   - depository
   - securities
@@ -489,8 +483,8 @@
   geographic_footprints:
   - uk_eu
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -507,8 +501,8 @@
   - sanctions disposition
   - regulated sector
 - id: 083-17
-  description: Trust and Company Service Providers (TCSPs) offering nominees and trustee
-    services to DPs and close family members or business associates.
+  description: Trust and Company Service Providers (TCSPs) offering nominees and trustee services
+    to DPs and close family members or business associates.
   product_types:
   - depository
   - private_banking
@@ -521,8 +515,8 @@
   - third_party_payment_processor
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -539,9 +533,8 @@
   - nominees
   - trustee services
 - id: 083-18
-  description: Pooled accounts, in which banks see only the name of the enabler and
-    not the client, transferring funds to entities associated in open source with
-    DPs.
+  description: Pooled accounts, in which banks see only the name of the enabler and not the
+    client, transferring funds to entities associated in open source with DPs.
   product_types:
   - depository
   - wire_transfer
@@ -550,8 +543,8 @@
   - third_party_payment_processor
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -569,8 +562,7 @@
   - enabler
   - open source
 - id: 083-19
-  description: Use of banks and financial organisations owned by close associates
-    of DPs.
+  description: Use of banks and financial organisations owned by close associates of DPs.
   product_types:
   - depository
   - correspondent_banking
@@ -580,8 +572,8 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -596,9 +588,9 @@
   - banks and financial organisations
   - close associates
 - id: 083-20
-  description: Numerous transfers of shares from sanctioned entities to non-sanctioned
-    entities involving corporations incorporated by the same people and company (often
-    with a registered office at the same physical address).
+  description: Numerous transfers of shares from sanctioned entities to non-sanctioned entities
+    involving corporations incorporated by the same people and company (often with a registered
+    office at the same physical address).
   product_types:
   - securities
   - depository
@@ -607,8 +599,8 @@
   - shell_or_front_company
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -626,8 +618,8 @@
   - sanctioned entities
   - registered office
 - id: 083-21
-  description: A large number of off-the-shelf corporations with no trading record
-    with nominee ownership used as throughputs.
+  description: A large number of off-the-shelf corporations with no trading record with nominee
+    ownership used as throughputs.
   product_types:
   - depository
   - securities
@@ -637,8 +629,8 @@
   - shell_or_front_company
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -656,33 +648,9 @@
   - no trading record
   - nominee ownership
   - throughputs
-- id: 083-22
-  description: Extensive personal connections between a DP and a known enabler.
-  product_types: []
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2022-07
-  risk_level: low
-  category: sanctions_evasion
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/605-necc-financial-sanctions-evasion-russian-elites-and-enablers/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - DP
-  - enabler
-  - personal connections
 - id: 083-23
-  description: Intelligence indicating suspicious consulting invoices at exorbitant
-    or clearly non-market rates.
+  description: Intelligence indicating suspicious consulting invoices at exorbitant or clearly
+    non-market rates.
   product_types:
   - depository
   - wire_transfer
@@ -692,8 +660,8 @@
   - third_party_payment_processor
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -708,36 +676,9 @@
   key_terms:
   - consulting invoices
   - non-market rates
-- id: 083-24
-  description: Material indicating that an enabler’s own due diligence relies on a
-    further layer of due diligence not actually conducted by themselves or relies
-    on an apparently trusted (but unsubstantiated) source.
-  product_types: []
-  industry_types:
-  - legal_accounting
-  - professional_services
-  customer_profiles:
-  - third_party_payment_processor
-  geographic_footprints:
-  - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2022-07
-  risk_level: low
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/605-necc-financial-sanctions-evasion-russian-elites-and-enablers/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - due diligence
-  - unsubstantiated source
 - id: 083-25
-  description: Material on open source, such as Companies House, indicating work for
-    multiple sanctioned entities, such as multiple directorships.
+  description: Material on open source, such as Companies House, indicating work for multiple
+    sanctioned entities, such as multiple directorships.
   product_types: []
   industry_types:
   - professional_services
@@ -746,8 +687,8 @@
   geographic_footprints:
   - uk_eu
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -764,10 +705,9 @@
   - multiple sanctioned entities
   - multiple directorships
 - id: 083-26
-  description: The appointment of a nominee director to manage the assets of the company
-    and beneficial ownership is obscured through the use of nominee shareholders and
-    a deed of trust between the parties, with the DP claiming to have divested the
-    asset.
+  description: The appointment of a nominee director to manage the assets of the company and
+    beneficial ownership is obscured through the use of nominee shareholders and a deed of
+    trust between the parties, with the DP claiming to have divested the asset.
   product_types:
   - depository
   - securities
@@ -777,8 +717,8 @@
   - shell_or_front_company
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -796,9 +736,8 @@
   - deed of trust
   - divested the asset
 - id: 083-27
-  description: The use of a complex trust structure for the ownership of a luxury
-    asset, which is overseen by a trust company and its trustees for no apparent legitimate
-    reason.
+  description: The use of a complex trust structure for the ownership of a luxury asset, which
+    is overseen by a trust company and its trustees for no apparent legitimate reason.
   product_types:
   - private_banking
   - securities
@@ -810,8 +749,8 @@
   - high_net_worth_individual
   geographic_footprints:
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -828,40 +767,9 @@
   - luxury asset
   - trust company
   - trustees
-- id: 083-28
-  description: Holding companies based in jurisdictions that are offshore and/or historically
-    linked to assets in the former Soviet Union.
-  product_types:
-  - depository
-  - securities
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints:
-  - high_risk_jurisdiction
-  - eastern_europe
-  - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2022-07
-  risk_level: medium
-  category: shell_company
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/605-necc-financial-sanctions-evasion-russian-elites-and-enablers/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - shell_company_usage
-  key_terms:
-  - holding companies
-  - offshore
-  - former Soviet Union
 - id: 083-29
-  description: Identification of transactions by holding companies linked with DPs
-    with Swiss bank accounts and BVI / Cypriot legal persons.
+  description: Identification of transactions by holding companies linked with DPs with Swiss
+    bank accounts and BVI / Cypriot legal persons.
   product_types:
   - depository
   - wire_transfer
@@ -872,8 +780,8 @@
   geographic_footprints:
   - high_risk_jurisdiction
   - uk_eu
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -891,10 +799,10 @@
   - BVI
   - Cypriot legal persons
 - id: 083-30
-  description: Payments from venture capital and private equity vehicles, many located
-    in offshore jurisdictions, Middle East, East Asia or other jurisdictions that
-    continue to support the Russian government or expressed neutrality in international
-    forums such as the UN.
+  description: Payments from venture capital and private equity vehicles, many located in
+    offshore jurisdictions, Middle East, East Asia or other jurisdictions that continue to
+    support the Russian government or expressed neutrality in international forums such as
+    the UN.
   product_types:
   - depository
   - wire_transfer
@@ -907,8 +815,8 @@
   - middle_east
   - east_asia
   - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -926,11 +834,10 @@
   - offshore jurisdictions
   - UN
 - id: 083-31
-  description: Payments received by UK businesses, often in innovative areas, such
-    as fintechs including UK-registered payments service providers (PSPs) and electronic
-    money institutes (EMIs), owned in part by Russian nationals and/or others implicated
-    in previous major trade-based money laundering schemes (often involving the Baltic
-    and Nordic states).
+  description: Payments received by UK businesses, often in innovative areas, such as fintechs
+    including UK-registered payments service providers (PSPs) and electronic money institutes
+    (EMIs), owned in part by Russian nationals and/or others implicated in previous major
+    trade-based money laundering schemes (often involving the Baltic and Nordic states).
   product_types:
   - depository
   - wire_transfer
@@ -944,8 +851,8 @@
   - uk_eu
   - russia
   - eastern_europe
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -964,10 +871,10 @@
   - EMIs
   - trade-based money laundering
 - id: 083-32
-  description: Payments via a Fintech with Russian investor nexus including customer’s
-    transactions that are initiated from or sent to IP addresses that have non-trusted
-    sources, or are located in Russia, Belarus, jurisdictions with FATF-identified
-    AML deficiencies or comprehensively sanctioned jurisdictions.
+  description: Payments via a Fintech with Russian investor nexus including customer’s transactions
+    that are initiated from or sent to IP addresses that have non-trusted sources, or are
+    located in Russia, Belarus, jurisdictions with FATF-identified AML deficiencies or comprehensively
+    sanctioned jurisdictions.
   product_types:
   - depository
   - wire_transfer
@@ -982,8 +889,8 @@
   - belarus
   - sanctioned_jurisdiction
   - high_risk_jurisdiction
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -1001,41 +908,9 @@
   - IP addresses
   - FATF-identified AML deficiencies
   - comprehensively sanctioned jurisdictions
-- id: 083-33
-  description: Research on private equity / venture capital vehicles and some PSC/officers
-    of UK businesses showing individuals connected to Russian industry previously
-    subject to sectoral sanctions and on occasion PEPs.
-  product_types:
-  - securities
-  - depository
-  industry_types:
-  - professional_services
-  customer_profiles:
-  - politically_exposed_person
-  geographic_footprints:
-  - uk_eu
-  - russia
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2022-07
-  risk_level: low
-  category: sanctions_evasion
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/605-necc-financial-sanctions-evasion-russian-elites-and-enablers/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - private equity
-  - venture capital
-  - PSC
-  - sectoral sanctions
-  - PEPs
 - id: 083-34
-  description: Circumvention attempts through Open Account Trade-Based Money Laundering
-    (TBML) typology, such as increases in third party open account payments.
+  description: Circumvention attempts through Open Account Trade-Based Money Laundering (TBML)
+    typology, such as increases in third party open account payments.
   product_types:
   - trade_finance
   - wire_transfer
@@ -1046,8 +921,8 @@
   geographic_footprints:
   - russia
   - uk_eu
-  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites
-    and Enablers'
+  regulatory_source: 'Red Alert: Financial Sanctions Evasion Typologies: Russian Elites and
+    Enablers'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies: []

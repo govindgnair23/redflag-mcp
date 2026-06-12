@@ -1,6 +1,6 @@
 - id: 068-01
-  description: Rounded sum purchases at grocery stores and/or other retailers that
-    sell gift cards and/or prepaid credit cards.
+  description: Rounded sum purchases at grocery stores and/or other retailers that sell gift
+    cards and/or prepaid credit cards.
   product_types:
   - depository
   - prepaid
@@ -26,8 +26,8 @@
   - gift cards
   - prepaid credit cards
 - id: 068-02
-  description: Atypical high-value purchases at convenience stores, particularly those
-    that sell gift cards, prepaid credit cards, or offer money transfer services.
+  description: Atypical high-value purchases at convenience stores, particularly those that
+    sell gift cards, prepaid credit cards, or offer money transfer services.
   product_types:
   - depository
   - money_transmitter
@@ -81,8 +81,7 @@
   - online merchants
   - gift cards
 - id: 068-04
-  description: Purchases and/or payments at luxury vehicle dealerships or for limousine
-    services.
+  description: Purchases and/or payments at luxury vehicle dealerships or for limousine services.
   product_types:
   - depository
   - credit_card
@@ -159,8 +158,8 @@
   - footwear
   - accessories retailers
 - id: 068-07
-  description: Purchases and/or payments at entities offering cosmetic surgery or
-    other medical procedures to enhance one's physical appearance.
+  description: Purchases and/or payments at entities offering cosmetic surgery or other medical
+    procedures to enhance one's physical appearance.
   product_types:
   - depository
   - credit_card
@@ -186,9 +185,9 @@
   - medical procedures
 - id: 068-08
   description: Card purchases at higher-end nightclubs, particularly in patterns (high-frequency,
-    large rounded amounts, late-night clusters) inconsistent with the cardholder's
-    declared income or normal spending profile, potentially indicating laundering
-    through hospitality venues.
+    large rounded amounts, late-night clusters) inconsistent with the cardholder's declared
+    income or normal spending profile, potentially indicating laundering through hospitality
+    venues.
   product_types:
   - depository
   - credit_card
@@ -211,9 +210,9 @@
   key_terms:
   - nightclubs
 - id: 068-09
-  description: Card purchases at jewellery retailers, particularly large or repeated
-    purchases that may indicate conversion of illicit funds into high-value, easily
-    resold portable assets.
+  description: Card purchases at jewellery retailers, particularly large or repeated purchases
+    that may indicate conversion of illicit funds into high-value, easily resold portable
+    assets.
   product_types:
   - depository
   - credit_card
@@ -237,10 +236,9 @@
   key_terms:
   - jewellery retailers
 - id: 068-10
-  description: Frequent low-value card payments for parking at the same location,
-    potentially indicating use of parking transactions to test card validity, layer
-    small illicit amounts, or maintain an appearance of routine activity on a money-mule
-    card.
+  description: Frequent low-value card payments for parking at the same location, potentially
+    indicating use of parking transactions to test card validity, layer small illicit amounts,
+    or maintain an appearance of routine activity on a money-mule card.
   product_types:
   - depository
   - credit_card
@@ -262,9 +260,9 @@
   key_terms:
   - parking
 - id: 068-11
-  description: Frequent purchases for food delivery services, often on the same day.
-    (This may indicate the food is for multiple people or the account is used by multiple
-    people to purchase food.)
+  description: Frequent purchases for food delivery services, often on the same day. (This
+    may indicate the food is for multiple people or the account is used by multiple people
+    to purchase food.)
   product_types:
   - depository
   - credit_card
@@ -287,8 +285,7 @@
   key_terms:
   - food delivery services
 - id: 068-12
-  description: Purchases and/or payments to entities associated with jail collect
-    calls.
+  description: Purchases and/or payments to entities associated with jail collect calls.
   product_types:
   - depository
   - credit_card
@@ -310,8 +307,8 @@
   key_terms:
   - jail collect calls
 - id: 068-13
-  description: Frequent transfers to virtual currency exchangers, particularly if
-    these funds were sourced from incoming email money transfers from multiple individuals.
+  description: Frequent transfers to virtual currency exchangers, particularly if these funds
+    were sourced from incoming email money transfers from multiple individuals.
   product_types:
   - money_transmitter
   - depository
@@ -338,9 +335,9 @@
   - virtual currency exchangers
   - email money transfers
 - id: 068-14
-  description: Frequent transfers to individuals who conduct virtual currency exchanges
-    on behalf of third parties, particularly if these funds were sourced from incoming
-    email money transfers from multiple individuals.
+  description: Frequent transfers to individuals who conduct virtual currency exchanges on
+    behalf of third parties, particularly if these funds were sourced from incoming email
+    money transfers from multiple individuals.
   product_types:
   - money_transmitter
   - depository
@@ -400,9 +397,9 @@
   - virtual currency services
   - escort websites
 - id: 068-16
-  description: Frequent purchases and/or payments to online gambling/online casino
-    platforms, particularly if these funds were sourced from incoming email money
-    transfers from multiple individuals.
+  description: Frequent purchases and/or payments to online gambling/online casino platforms,
+    particularly if these funds were sourced from incoming email money transfers from multiple
+    individuals.
   product_types:
   - depository
   - credit_card
@@ -452,10 +449,10 @@
   - reloadable prepaid credit card
   - prepaid cards
 - id: 068-18
-  description: Use of reloadable prepaid cards to do card-to-card transfers. Where
-    one card has no reloads and only receives transfers from another reloadable card
-    user. (For example, a female's reloadable prepaid credit card has no reloads and
-    only receives transfers from another reloadable prepaid card.)
+  description: Use of reloadable prepaid cards to do card-to-card transfers. Where one card
+    has no reloads and only receives transfers from another reloadable card user. (For example,
+    a female's reloadable prepaid credit card has no reloads and only receives transfers from
+    another reloadable prepaid card.)
   product_types:
   - prepaid
   industry_types: []
@@ -478,8 +475,8 @@
   - reloadable prepaid cards
   - card-to-card transfers
 - id: 068-19
-  description: Female's reloadable prepaid credit card is funded by reloads or transfers
-    from a male, usually the same male.
+  description: Female's reloadable prepaid credit card is funded by reloads or transfers from
+    a male, usually the same male.
   product_types:
   - prepaid
   industry_types: []
@@ -551,8 +548,8 @@
   - bank account
   - phone numbers
 - id: 068-22
-  description: Location(s) of accommodation bookings correspond to location(s) of
-    cash deposits, particularly when multiple cities are observed in transactions.
+  description: Location(s) of accommodation bookings correspond to location(s) of cash deposits,
+    particularly when multiple cities are observed in transactions.
   product_types:
   - depository
   - credit_card
@@ -578,9 +575,9 @@
   - accommodation bookings
   - cash deposits
 - id: 068-23
-  description: Use of automatic banking machine(s) located in or near location(s)
-    of accommodation booking(s), particularly if the transaction(s) occurred following
-    the payment for that accommodation booking(s).
+  description: Use of automatic banking machine(s) located in or near location(s) of accommodation
+    booking(s), particularly if the transaction(s) occurred following the payment for that
+    accommodation booking(s).
   product_types:
   - depository
   industry_types:
@@ -605,9 +602,9 @@
   - automatic banking machine
   - accommodation bookings
 - id: 068-24
-  description: Frequent cash withdrawals from automated banking machines not owned
-    by a financial institution (i.e., white-label ATMs), often located in convenience
-    stores, gas stations, casinos, hotels.
+  description: Frequent cash withdrawals from automated banking machines not owned by a financial
+    institution (i.e., white-label ATMs), often located in convenience stores, gas stations,
+    casinos, hotels.
   product_types:
   - depository
   industry_types:
@@ -660,8 +657,8 @@
   - third party accommodations
   - travel-booking websites
 - id: 068-26
-  description: Transactions involving payment processors associated to escort websites
-    or online gambling.
+  description: Transactions involving payment processors associated to escort websites or
+    online gambling.
   product_types:
   - depository
   - credit_card
@@ -714,8 +711,8 @@
   key_terms:
   - payment processors
 - id: 068-28
-  description: Female's account is primarily funded by transfers from another female
-    and account activities of both females indicate they may be escorts.
+  description: Female's account is primarily funded by transfers from another female and account
+    activities of both females indicate they may be escorts.
   product_types:
   - depository
   industry_types:
@@ -740,13 +737,12 @@
   - escorts
   - funded by transfers
 - id: 068-29
-  description: Individual received numerous email money transfers with escort-related
-    references from several parties, usually males, followed by outgoing email money
-    transfers to female(s) or male(s) who also received similar email money transfers
-    from other parties. The individual had very few or no other transactions related
-    to escorts or human trafficking. (The individual may be a financial intermediary/nominee
-    in a human trafficking network and may be a collector of human trafficking-related
-    funds.)
+  description: Individual received numerous email money transfers with escort-related references
+    from several parties, usually males, followed by outgoing email money transfers to female(s)
+    or male(s) who also received similar email money transfers from other parties. The individual
+    had very few or no other transactions related to escorts or human trafficking. (The individual
+    may be a financial intermediary/nominee in a human trafficking network and may be a collector
+    of human trafficking-related funds.)
   product_types:
   - money_transmitter
   - depository
@@ -774,8 +770,8 @@
   - escort-related references
   - nominee
 - id: 068-30
-  description: Individual or entity received multiple email money transfers referencing
-    the name or partial name of an escort agency/escort services business.
+  description: Individual or entity received multiple email money transfers referencing the
+    name or partial name of an escort agency/escort services business.
   product_types:
   - money_transmitter
   - depository
@@ -827,8 +823,8 @@
   - escort agency
   - escort services business
 - id: 068-32
-  description: Funds deposited to or withdrawn from a casino player's gaming account
-    with limited or no gambling involved.
+  description: Funds deposited to or withdrawn from a casino player's gaming account with
+    limited or no gambling involved.
   product_types:
   - depository
   industry_types:
@@ -851,8 +847,8 @@
   key_terms:
   - casino player's gaming account
 - id: 068-33
-  description: Funds deposited to or withdrawn from an investment account with limited
-    or no purchases of investments.
+  description: Funds deposited to or withdrawn from an investment account with limited or
+    no purchases of investments.
   product_types:
   - securities
   industry_types: []
@@ -924,10 +920,9 @@
   - escort advertisements
   - premium fees
 - id: 068-36
-  description: An individual is the owner, operator or employee of an entity in an
-    industry that could be used as a venue for human trafficking for sexual purposes
-    (e.g., spa, body-rub centre, strip club, motel, real estate rentals, property
-    management).
+  description: An individual is the owner, operator or employee of an entity in an industry
+    that could be used as a venue for human trafficking for sexual purposes (e.g., spa, body-rub
+    centre, strip club, motel, real estate rentals, property management).
   product_types:
   - depository
   industry_types:
@@ -936,38 +931,6 @@
   - adult_entertainment
   customer_profiles:
   - small_business
-  geographic_footprints:
-  - canada
-  regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2021-07
-  risk_level: low
-  category: shell_company
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-hts-2021-eng
-  typology_family:
-  - human_trafficking_proceeds
-  transaction_patterns:
-  - shell_company_usage
-  key_terms:
-  - spa
-  - body-rub centre
-  - strip club
-  - motel
-  - property management
-- id: 068-37
-  description: An entity is in an industry that could be used as a venue for human
-    trafficking for sexual purposes (e.g., spa, body-rub centre, strip club, motel,
-    real estate rentals, property management).
-  product_types:
-  - depository
-  industry_types:
-  - travel_hospitality
-  - real_estate
-  - adult_entertainment
-  customer_profiles:
-  - shell_or_front_company
   geographic_footprints:
   - canada
   regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
@@ -1014,9 +977,9 @@
   - separate accounts
   - separate credit cards
 - id: 068-39
-  description: Incoming funds (cash deposits and incoming email money transfers) are
-    immediately transferred to a business account and from the business account, funds
-    are depleted by outgoing email money transfers and cash withdrawals.
+  description: Incoming funds (cash deposits and incoming email money transfers) are immediately
+    transferred to a business account and from the business account, funds are depleted by
+    outgoing email money transfers and cash withdrawals.
   product_types:
   - depository
   - money_transmitter
@@ -1044,8 +1007,8 @@
   - email money transfers
   - business account
 - id: 068-40
-  description: Individual frequently transfers funds between business accounts of
-    entities owned by the same individual.
+  description: Individual frequently transfers funds between business accounts of entities
+    owned by the same individual.
   product_types:
   - depository
   - money_transmitter
@@ -1070,8 +1033,8 @@
   key_terms:
   - business accounts
 - id: 068-41
-  description: Credit card receives payments from multiple financial institutions
-    followed by cash advances on the credit card.
+  description: Credit card receives payments from multiple financial institutions followed
+    by cash advances on the credit card.
   product_types:
   - credit_card
   industry_types: []
@@ -1116,9 +1079,9 @@
   key_terms:
   - cash advances
 - id: 068-43
-  description: Payments, usually monthly, to multiple individuals or entities involved
-    in residential rentals (e.g., landlords, property management, real estate agencies)
-    or that reference rent or specific addresses.
+  description: Payments, usually monthly, to multiple individuals or entities involved in
+    residential rentals (e.g., landlords, property management, real estate agencies) or that
+    reference rent or specific addresses.
   product_types:
   - depository
   - credit_card
@@ -1168,8 +1131,8 @@
   - property taxes
   - municipalities
 - id: 068-45
-  description: Payment of utility bill for a utility service provider not servicing
-    the area where the individual or business has an address.
+  description: Payment of utility bill for a utility service provider not servicing the area
+    where the individual or business has an address.
   product_types:
   - depository
   industry_types: []
@@ -1193,8 +1156,7 @@
   - utility bill
   - utility service provider
 - id: 068-46
-  description: Purchases/payments/or transfers associated to multiple purchases of
-    real estate.
+  description: Purchases/payments/or transfers associated to multiple purchases of real estate.
   product_types:
   - depository
   - wire_transfer
@@ -1220,8 +1182,7 @@
   key_terms:
   - real estate
 - id: 068-47
-  description: Escort services business/escort agency is associated to a residential
-    address.
+  description: Escort services business/escort agency is associated to a residential address.
   product_types: []
   industry_types:
   - adult_entertainment
@@ -1246,8 +1207,8 @@
   - escort services business
   - residential address
 - id: 068-48
-  description: Business appears to maintain unusually long and extended business hours
-    into the late night or early morning.
+  description: Business appears to maintain unusually long and extended business hours into
+    the late night or early morning.
   product_types: []
   industry_types: []
   customer_profiles:
@@ -1269,8 +1230,8 @@
   - late night
   - early morning
 - id: 068-49
-  description: Merchant point-of-sale transactions occur after the establishment's
-    normal business hours.
+  description: Merchant point-of-sale transactions occur after the establishment's normal
+    business hours.
   product_types:
   - credit_card
   industry_types:
@@ -1294,35 +1255,10 @@
   key_terms:
   - point-of-sale
   - normal business hours
-- id: 068-50
-  description: Storefront business is associated to escort advertisements or escort
-    services websites.
-  product_types: []
-  industry_types:
-  - adult_entertainment
-  - online_marketplace
-  customer_profiles:
-  - small_business
-  geographic_footprints:
-  - canada
-  regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2021-07
-  risk_level: high
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-hts-2021-eng
-  typology_family:
-  - human_trafficking_proceeds
-  transaction_patterns: []
-  key_terms:
-  - escort advertisements
-  - escort services websites
 - id: 068-51
-  description: Storefront business or its owner(s) received multiple funds transfers
-    from payment processors, particularly from payment processors associated to escort
-    services or adult entertainment.
+  description: Storefront business or its owner(s) received multiple funds transfers from
+    payment processors, particularly from payment processors associated to escort services
+    or adult entertainment.
   product_types:
   - depository
   - money_transmitter
@@ -1350,8 +1286,8 @@
   - escort services
   - adult entertainment
 - id: 068-52
-  description: Individual or entity is associated to advertisements recruiting escorts
-    from foreign countries.
+  description: Individual or entity is associated to advertisements recruiting escorts from
+    foreign countries.
   product_types: []
   industry_types:
   - adult_entertainment
@@ -1378,8 +1314,8 @@
   - recruiting escorts
   - foreign countries
 - id: 068-53
-  description: Individual or entity is associated to escort advertisements in another
-    country and/or in a foreign language.
+  description: Individual or entity is associated to escort advertisements in another country
+    and/or in a foreign language.
   product_types: []
   industry_types:
   - adult_entertainment
@@ -1402,8 +1338,8 @@
   - escort advertisements
   - foreign language
 - id: 068-54
-  description: Individual or entity is associated to an illicit storefront business
-    offering sexual services in another country.
+  description: Individual or entity is associated to an illicit storefront business offering
+    sexual services in another country.
   product_types: []
   industry_types:
   - adult_entertainment
@@ -1426,8 +1362,8 @@
   - illicit storefront business
   - sexual services
 - id: 068-55
-  description: Individual or entity is associated to an escort agency/escort services
-    business in another country.
+  description: Individual or entity is associated to an escort agency/escort services business
+    in another country.
   product_types: []
   industry_types:
   - adult_entertainment
@@ -1450,8 +1386,8 @@
   - escort agency
   - escort services business
 - id: 068-56
-  description: Individual or entity is associated to job recruitment advertisements
-    posted in another country.
+  description: Individual or entity is associated to job recruitment advertisements posted
+    in another country.
   product_types: []
   industry_types:
   - professional_services
@@ -1496,10 +1432,9 @@
   key_terms:
   - training in a foreign country
 - id: 068-58
-  description: Large and/or multiple international travel-related purchases (e.g.,
-    airfare) for self or other individuals to or from jurisdictions that are sources
-    of victims associated with trafficking foreigners in Canada for sexual exploitation
-    (e.g., China, South Korea).
+  description: Large and/or multiple international travel-related purchases (e.g., airfare)
+    for self or other individuals to or from jurisdictions that are sources of victims associated
+    with trafficking foreigners in Canada for sexual exploitation (e.g., China, South Korea).
   product_types:
   - credit_card
   - depository
@@ -1526,10 +1461,10 @@
   - airfare
   - international travel-related purchases
 - id: 068-59
-  description: 'Online advertising and promotional services (e.g., escort services,
-    massage services, relationship services, related peer-to-peer online booking services):
-    frequent payments in multiples of small amounts (e.g., $3, $12, $24) in relatively
-    short timelines and inconsistent with expected activity;'
+  description: 'Online advertising and promotional services (e.g., escort services, massage
+    services, relationship services, related peer-to-peer online booking services): frequent
+    payments in multiples of small amounts (e.g., $3, $12, $24) in relatively short timelines
+    and inconsistent with expected activity;'
   product_types:
   - depository
   - credit_card
@@ -1559,9 +1494,9 @@
   - $12
   - $24
 - id: 068-60
-  description: 'Accommodations (e.g., hotels, motels, peer-to-peer online booking
-    services for private and commercial lodgings): payments for short stays and/or
-    stays in multiple cities in a relatively short time period;'
+  description: 'Accommodations (e.g., hotels, motels, peer-to-peer online booking services
+    for private and commercial lodgings): payments for short stays and/or stays in multiple
+    cities in a relatively short time period;'
   product_types:
   - depository
   - credit_card
@@ -1588,9 +1523,9 @@
   - motels
   - short stays
 - id: 068-61
-  description: 'Distance transportation: frequent purchases for airline, train, and/or
-    bus tickets, possibly for multiple individuals, in relatively short timelines
-    and inconsistent with expected activity;'
+  description: 'Distance transportation: frequent purchases for airline, train, and/or bus
+    tickets, possibly for multiple individuals, in relatively short timelines and inconsistent
+    with expected activity;'
   product_types:
   - depository
   - credit_card
@@ -1617,9 +1552,8 @@
   - train
   - bus tickets
 - id: 068-62
-  description: 'Local transportation: purchases for taxi, limousine, vehicle rentals,
-    and ride sharing services in relatively short timelines and inconsistent with
-    expected activity;'
+  description: 'Local transportation: purchases for taxi, limousine, vehicle rentals, and
+    ride sharing services in relatively short timelines and inconsistent with expected activity;'
   product_types:
   - depository
   - credit_card
@@ -1646,8 +1580,8 @@
   - vehicle rentals
   - ride sharing
 - id: 068-63
-  description: 'Fast food restaurants: frequent low value purchases in relatively
-    short timelines and inconsistent with expected activity;'
+  description: 'Fast food restaurants: frequent low value purchases in relatively short timelines
+    and inconsistent with expected activity;'
   product_types:
   - depository
   - credit_card
@@ -1671,9 +1605,8 @@
   key_terms:
   - fast food restaurants
 - id: 068-64
-  description: 'Drug stores, clothing stores, beauty stores (e.g., lingerie, make-up):
-    frequent purchases in relatively short timelines and inconsistent with expected
-    activity;'
+  description: 'Drug stores, clothing stores, beauty stores (e.g., lingerie, make-up): frequent
+    purchases in relatively short timelines and inconsistent with expected activity;'
   product_types:
   - depository
   - credit_card
@@ -1700,37 +1633,9 @@
   - beauty stores
   - lingerie
   - make-up
-- id: 068-65
-  description: 'Strip clubs, massage parlours, beauty salons and modelling agencies:
-    credit card payments for purchases made after the establishments'' normal hours
-    of business;'
-  product_types:
-  - credit_card
-  industry_types:
-  - adult_entertainment
-  - retail
-  customer_profiles: []
-  geographic_footprints:
-  - canada
-  regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2021-07
-  risk_level: medium
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-hts-2021-eng
-  typology_family:
-  - human_trafficking_proceeds
-  transaction_patterns: []
-  key_terms:
-  - strip clubs
-  - massage parlours
-  - beauty salons
-  - modelling agencies
 - id: 068-66
-  description: 'Bitcoins or other virtual currencies: frequent purchases in multiples
-    of small amounts (e.g., $3, $12, $24), directly by the client or through exchanges;'
+  description: 'Bitcoins or other virtual currencies: frequent purchases in multiples of small
+    amounts (e.g., $3, $12, $24), directly by the client or through exchanges;'
   product_types:
   - crypto
   - depository
@@ -1760,10 +1665,9 @@
   - $24
 - id: 068-67
   description: 'Online payment services companies: personal account activity inconsistent
-    with expectations involving frequent deposits and payments through an online payment
-    service in small amounts typically under $100. Account funds may then be used
-    for virtual currency deposits/redemptions, or payment of bills, such as personal
-    or third party credit cards;'
+    with expectations involving frequent deposits and payments through an online payment service
+    in small amounts typically under $100. Account funds may then be used for virtual currency
+    deposits/redemptions, or payment of bills, such as personal or third party credit cards;'
   product_types:
   - depository
   - money_transmitter
@@ -1793,8 +1697,8 @@
   - under $100
   - virtual currency
 - id: 068-68
-  description: 'Rent payments: for addresses where prostitution is reported to occur
-    by media, law enforcement, or classified ads; and,'
+  description: 'Rent payments: for addresses where prostitution is reported to occur by media,
+    law enforcement, or classified ads; and,'
   product_types:
   - depository
   - credit_card
@@ -1820,8 +1724,7 @@
   - rent payments
   - prostitution
 - id: 068-69
-  description: 'Credit card purchases: for online purchases which provide relative
-    anonymity.'
+  description: 'Credit card purchases: for online purchases which provide relative anonymity.'
   product_types:
   - credit_card
   industry_types:
@@ -1868,35 +1771,9 @@
   - cash withdrawals
   - 10 p.m.
   - 6 a.m.
-- id: 068-71
-  description: Multiple cash deposits conducted at different bank branches/ATMs, possibly
-    across different cities and provinces;
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles:
-  - cash_intensive_business
-  geographic_footprints:
-  - canada
-  regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2021-07
-  risk_level: medium
-  category: structuring
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-hts-2021-eng
-  typology_family:
-  - human_trafficking_proceeds
-  transaction_patterns:
-  - structuring
-  key_terms:
-  - cash deposits
-  - bank branches
-  - ATMs
 - id: 068-72
-  description: Frequent transactions (e.g., purchases, payments, account debits/credits,
-    electronic transfers) across different cities and provinces within short timelines;
+  description: Frequent transactions (e.g., purchases, payments, account debits/credits, electronic
+    transfers) across different cities and provinces within short timelines;
   product_types:
   - depository
   - credit_card
@@ -1922,9 +1799,9 @@
   - electronic transfers
   - different cities and provinces
 - id: 068-73
-  description: Multiple deposits and/or incoming email money transfers or other forms
-    of electronic transfers, possibly using a temporary address (e.g., hotel), from
-    unrelated third parties with little or no explanation;
+  description: Multiple deposits and/or incoming email money transfers or other forms of electronic
+    transfers, possibly using a temporary address (e.g., hotel), from unrelated third parties
+    with little or no explanation;
   product_types:
   - depository
   - money_transmitter
@@ -1975,9 +1852,8 @@
   key_terms:
   - third party cash transactions
 - id: 068-75
-  description: Deposits (e.g., via ABM, in-branch, email money transfers, other forms
-    of electronic transfers) followed rapidly by cash withdrawals, bill payments,
-    and/or electronic transfers;
+  description: Deposits (e.g., via ABM, in-branch, email money transfers, other forms of electronic
+    transfers) followed rapidly by cash withdrawals, bill payments, and/or electronic transfers;
   product_types:
   - depository
   - money_transmitter
@@ -2028,8 +1904,8 @@
   key_terms:
   - kept depleted
 - id: 068-77
-  description: Account appears to function as a funnel account; deposits occur in
-    locations where the client does not reside or conduct business;
+  description: Account appears to function as a funnel account; deposits occur in locations
+    where the client does not reside or conduct business;
   product_types:
   - depository
   industry_types: []
@@ -2053,8 +1929,8 @@
   - funnel account
   - deposits
 - id: 068-78
-  description: Deposits (e.g., via ABM, in-branch) conducted in one city followed
-    by same day or next day withdrawal and/or purchase conducted in another city;
+  description: Deposits (e.g., via ABM, in-branch) conducted in one city followed by same
+    day or next day withdrawal and/or purchase conducted in another city;
   product_types:
   - depository
   - credit_card
@@ -2080,9 +1956,9 @@
   - next day
   - another city
 - id: 068-79
-  description: Unrelated third parties sending email money transfers or other forms
-    of electronic transfers to the same beneficiary with no apparent relation to the
-    recipient or no stated purpose for the transfers;
+  description: Unrelated third parties sending email money transfers or other forms of electronic
+    transfers to the same beneficiary with no apparent relation to the recipient or no stated
+    purpose for the transfers;
   product_types:
   - money_transmitter
   - depository
@@ -2108,8 +1984,8 @@
   - same beneficiary
   - unrelated third parties
 - id: 068-80
-  description: Email money transfers to third parties with alternate names provided
-    in brackets [e.g., jane@example.com (Bambi)];
+  description: Email money transfers to third parties with alternate names provided in brackets
+    [e.g., jane@example.com (Bambi)];
   product_types:
   - money_transmitter
   industry_types: []
@@ -2134,8 +2010,8 @@
   - email money transfers
   - alternate names
 - id: 068-81
-  description: Large and frequent electronic transfers between senders and receivers
-    with no apparent relationship;
+  description: Large and frequent electronic transfers between senders and receivers with
+    no apparent relationship;
   product_types:
   - money_transmitter
   - depository
@@ -2186,9 +2062,9 @@
   - common address
   - domestic/international funds transfers
 - id: 068-83
-  description: Hotel transactions in rounded sums (e.g., exact hundreds or thousands)
-    with no itemised breakdown, potentially consistent with prepaid stays used to
-    layer or place illicit funds.
+  description: Hotel transactions in rounded sums (e.g., exact hundreds or thousands) with
+    no itemised breakdown, potentially consistent with prepaid stays used to layer or place
+    illicit funds.
   product_types:
   - credit_card
   - depository
@@ -2213,8 +2089,8 @@
   key_terms:
   - hotel transactions
 - id: 068-84
-  description: Hotel transactions by the same individual for two separate rooms for
-    the same dates;
+  description: Hotel transactions by the same individual for two separate rooms for the same
+    dates;
   product_types:
   - credit_card
   - depository
@@ -2265,8 +2141,8 @@
   - hotel transactions
   - refund
 - id: 068-86
-  description: Pre-authorized hotel by credit card, but accommodations are actually
-    paid for using cash.
+  description: Pre-authorized hotel by credit card, but accommodations are actually paid for
+    using cash.
   product_types:
   - credit_card
   - depository
@@ -2292,8 +2168,8 @@
   - pre-authorized hotel
   - cash
 - id: 068-87
-  description: Media or other reliable sources suggest that a client may be linked
-    to criminal activity which could generate proceeds of crime;
+  description: Media or other reliable sources suggest that a client may be linked to criminal
+    activity which could generate proceeds of crime;
   product_types: []
   industry_types: []
   customer_profiles: []
@@ -2336,8 +2212,8 @@
   - media coverage
   - prostitution rings
 - id: 068-89
-  description: Use of addresses where prostitution is reported to occur by media,
-    law enforcement, or classified ads;
+  description: Use of addresses where prostitution is reported to occur by media, law enforcement,
+    or classified ads;
   product_types: []
   industry_types:
   - adult_entertainment
@@ -2361,8 +2237,8 @@
   - prostitution
   - classified ads
 - id: 068-90
-  description: Phone number provided on online advertising and promotional services
-    is used in different cities and provinces in a short period of time;
+  description: Phone number provided on online advertising and promotional services is used
+    in different cities and provinces in a short period of time;
   product_types: []
   industry_types:
   - online_marketplace
@@ -2387,8 +2263,8 @@
   - online advertising
   - different cities and provinces
 - id: 068-91
-  description: Use of a third party to execute transactions (for example, under the
-    pretext of requiring an interpreter);
+  description: Use of a third party to execute transactions (for example, under the pretext
+    of requiring an interpreter);
   product_types:
   - depository
   - money_transmitter
@@ -2413,10 +2289,9 @@
   - third party
   - interpreter
 - id: 068-92
-  description: Client makes deposits accompanied or watched by a third party who may,
-    on separate occasions, accompany or watch clients who are making deposits. The
-    third party may be handing over to the client what is subsequently confirmed to
-    be the client's identification.
+  description: Client makes deposits accompanied or watched by a third party who may, on separate
+    occasions, accompany or watch clients who are making deposits. The third party may be
+    handing over to the client what is subsequently confirmed to be the client's identification.
   product_types:
   - depository
   industry_types: []
@@ -2442,9 +2317,9 @@
   - deposits
   - identification
 - id: 068-93
-  description: 'Financial activity is inconsistent with that expected based on one
-    or more of the following: the client''s financial status, stated occupation, type
-    of account or stated business activity;'
+  description: 'Financial activity is inconsistent with that expected based on one or more
+    of the following: the client''s financial status, stated occupation, type of account or
+    stated business activity;'
   product_types:
   - depository
   - credit_card
@@ -2469,8 +2344,8 @@
   - stated occupation
   - business activity
 - id: 068-94
-  description: Clients give contact/identifying information that is traceable through
-    open sources to advertising related to escort services;
+  description: Clients give contact/identifying information that is traceable through open
+    sources to advertising related to escort services;
   product_types: []
   industry_types:
   - adult_entertainment
@@ -2493,35 +2368,9 @@
   key_terms:
   - escort services
   - open sources
-- id: 068-95
-  description: Use of someone else's identification, or opening an account in the
-    name of an unqualified minor;
-  product_types:
-  - depository
-  - credit_card
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  - elderly_or_vulnerable_person
-  geographic_footprints:
-  - canada
-  regulatory_source: FINTRAC Operational Alert FINTRAC-2021-OA001
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2021-07
-  risk_level: high
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-hts-2021-eng
-  typology_family: []
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - someone else's identification
-  - unqualified minor
 - id: 068-96
-  description: Use of aliases for the purpose of opening multiple accounts in different
-    banks, or in different branches of the same bank;
+  description: Use of aliases for the purpose of opening multiple accounts in different banks,
+    or in different branches of the same bank;
   product_types:
   - depository
   industry_types: []
@@ -2544,8 +2393,8 @@
   - aliases
   - multiple accounts
 - id: 068-97
-  description: Addition of an unusual number of individuals as joint account holders,
-    or authorized users to products such as credit cards.
+  description: Addition of an unusual number of individuals as joint account holders, or authorized
+    users to products such as credit cards.
   product_types:
   - depository
   - credit_card

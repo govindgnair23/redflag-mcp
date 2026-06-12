@@ -38,16 +38,12 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - discrepancies
+  - submitted information
+  - monitoring systems
 - id: 131-02
-  description: Individuals who hold an unusual volume of Stored Value Facility (SVF)
-    accounts with the same provider.
+  description: Individuals who hold an unusual volume of Stored Value Facility (SVF) accounts
+    with the same provider.
   product_types:
   - depository
   - money_transmitter
@@ -86,15 +82,11 @@
   - cash_deposits_below_threshold
   key_terms:
   - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - unusual volume
+  - multiple accounts
 - id: 131-03
-  description: A large and diverse source of funds (e.g. bank transfers, credit card
-    and cash funding from different locations) used to fund the same SVF account(s).
+  description: A large and diverse source of funds (e.g. bank transfers, credit card and cash
+    funding from different locations) used to fund the same SVF account(s).
   product_types:
   - depository
   - money_transmitter
@@ -132,13 +124,10 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - diverse source of funds
+  - bank transfers
+  - credit card
+  - cash funding
 - id: 131-04
   description: Multiple reference bank accounts from banks located in different jurisdictions
     used to fund the same SVF account.
@@ -179,13 +168,8 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - multiple reference bank accounts
+  - different jurisdictions
 - id: 131-05
   description: Loading or funding of an SVF account always done by third parties.
   product_types:
@@ -225,16 +209,11 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
+  - third-party loading
   - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
 - id: 131-06
-  description: Multiple third-party funding activities of an SVF account, followed
-    by the immediate transfer of funds to unrelated bank account(s).
+  description: Multiple third-party funding activities of an SVF account, followed by the
+    immediate transfer of funds to unrelated bank account(s).
   product_types:
   - depository
   - money_transmitter
@@ -272,16 +251,12 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - multiple third-party funding
+  - immediate transfer
+  - unrelated bank accounts
 - id: 131-07
-  description: Multiple loading or funding of the same SVF account, followed by ATM
-    withdrawals shortly afterwards, over a short period of time.
+  description: Multiple loading or funding of the same SVF account, followed by ATM withdrawals
+    shortly afterwards, over a short period of time.
   product_types:
   - depository
   - money_transmitter
@@ -319,17 +294,12 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
+  - multiple loading
   - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - short period
 - id: 131-08
-  description: Multiple withdrawals conducted at different ATMs, sometimes located
-    in various countries different from the jurisdiction where the SVF account was
-    funded.
+  description: Multiple withdrawals conducted at different ATMs, sometimes located in various
+    countries different from the jurisdiction where the SVF account was funded.
   product_types:
   - depository
   - money_transmitter
@@ -367,16 +337,11 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - multiple ATM withdrawals
+  - different countries
 - id: 131-09
-  description: An SVF account only used for withdrawals, and not for making payments
-    for goods or services.
+  description: An SVF account only used for withdrawals, and not for making payments for goods
+    or services.
   product_types:
   - depository
   - money_transmitter
@@ -414,16 +379,10 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - SVF account withdrawal only
+  - no payments for goods
 - id: 131-10
-  description: An SVF account being used in multiple jurisdictions within days of
-    issuance.
+  description: An SVF account being used in multiple jurisdictions within days of issuance.
   product_types:
   - depository
   - money_transmitter
@@ -462,62 +421,11 @@
   - cash_deposits_below_threshold
   key_terms:
   - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
-- id: 131-11
-  description: Atypical use of the SVF product, including unexpected and frequent
-    cross-border access or transactions.
-  product_types:
-  - depository
-  - money_transmitter
-  - prepaid
-  - remittance
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  - small_business
-  - money_services_business
-  geographic_footprints:
-  - domestic_us
-  - high_risk_jurisdiction
-  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
-    (For Stored Value Facility Licensees) Revised May 2023
-  regulator: HKMA
-  regulator_jurisdiction: HK
-  issuing_agencies:
-  - HKMA
-  issued_date: 2023-05
-  risk_level: medium
-  category: layering
-  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
-  typology_family:
-  - organized_crime_proceeds
-  - fraud_proceeds
-  transaction_patterns:
-  - identity_misrepresentation
-  - money_mule_activity
-  - third_party_payments
-  - rapid_fund_movement
-  - cash_withdrawals
-  - unusual_international_wires
-  - structuring
-  - cash_deposits_below_threshold
-  key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - multiple jurisdictions
+  - days of issuance
 - id: 131-12
-  description: Customers who load or fund SVF accounts containing counterfeit notes
-    or forged instruments.
+  description: Customers who load or fund SVF accounts containing counterfeit notes or forged
+    instruments.
   product_types:
   - depository
   - money_transmitter
@@ -555,13 +463,9 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
   - counterfeit notes
   - forged instruments
-  - structured transactions
-  - CDD
+  - SVF loading
 - id: 131-13
   description: A substantial increase in turnover on an SVF account.
   product_types:
@@ -601,17 +505,12 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
+  - substantial turnover increase
   - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
 - id: 131-14
-  description: Reluctance to provide normal information when opening an SVF account,
-    providing minimal or fictitious information, or providing information that is
-    difficult or expensive for the institution to verify.
+  description: Reluctance to provide normal information when opening an SVF account, providing
+    minimal or fictitious information, or providing information that is difficult or expensive
+    for the institution to verify.
   product_types:
   - depository
   - money_transmitter
@@ -649,13 +548,9 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - reluctance to provide information
+  - minimal information
+  - fictitious information
 - id: 131-15
   description: Large cash withdrawals from a previously dormant or inactive SVF account.
   product_types:
@@ -695,18 +590,13 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
-  - structured transactions
-  - CDD
+  - large cash withdrawal
+  - dormant SVF account
 - id: 131-16
-  description: Structuring transactions to avoid reaching the limits for conducting
-    Customer Due Diligence (CDD) for a verified customer (e.g. several transactions
-    just below the CDD limit, or purchase of multiple non-reloadable prepaid cards
-    just below the limit by a single customer over a short period).
+  description: Structuring transactions to avoid reaching the limits for conducting Customer
+    Due Diligence (CDD) for a verified customer (e.g. several transactions just below the
+    CDD limit, or purchase of multiple non-reloadable prepaid cards just below the limit by
+    a single customer over a short period).
   product_types:
   - depository
   - money_transmitter
@@ -744,13 +634,9 @@
   - structuring
   - cash_deposits_below_threshold
   key_terms:
-  - SVF account
-  - third parties
-  - ATM withdrawals
-  - counterfeit notes
-  - forged instruments
   - structured transactions
-  - CDD
+  - CDD limit
+  - prepaid cards
 - id: 131-17
   description: Business relationship conducted in unusual circumstances (e.g. significant
     unexplained geographic difference between the SVF licensee and the customer).
@@ -787,45 +673,9 @@
   - nominee directors
   - bearer shares
   - bearer share warrants
-- id: 131-18
-  description: Nature and scope of business activities generating the funds or assets
-    (e.g. merchants) involves high-risk activities.
-  product_types:
-  - depository
-  - money_transmitter
-  - prepaid
-  - remittance
-  - wire_transfer
-  industry_types:
-  - retail
-  customer_profiles:
-  - shell_or_front_company
-  - beneficial_owner_obscured
-  - cross_border_business
-  geographic_footprints: []
-  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
-    (For Stored Value Facility Licensees) Revised May 2023
-  regulator: HKMA
-  regulator_jurisdiction: HK
-  issuing_agencies:
-  - HKMA
-  issued_date: 2023-05
-  risk_level: medium
-  category: shell_company
-  source_url: https://www.hkma.gov.hk/media/eng/doc/key-information/guidelines-and-circular/guideline/Guideline_on_AML-CFT_(for_SVFs)_eng_May%202023.pdf
-  typology_family:
-  - shell_company
-  transaction_patterns:
-  - shell_company_usage
-  key_terms:
-  - shell vehicle
-  - nominee shareholders
-  - nominee directors
-  - bearer shares
-  - bearer share warrants
 - id: 131-19
-  description: Legal persons or legal arrangements that involve a shell vehicle without
-    a clear and legitimate commercial purpose.
+  description: Legal persons or legal arrangements that involve a shell vehicle without a
+    clear and legitimate commercial purpose.
   product_types:
   - depository
   - money_transmitter
@@ -860,8 +710,8 @@
   - bearer shares
   - bearer share warrants
 - id: 131-20
-  description: The ownership structure of the legal person or legal arrangement appears
-    unusual or excessively complex given the nature of the business.
+  description: The ownership structure of the legal person or legal arrangement appears unusual
+    or excessively complex given the nature of the business.
   product_types:
   - depository
   - money_transmitter
@@ -896,8 +746,8 @@
   - bearer shares
   - bearer share warrants
 - id: 131-21
-  description: Companies that have nominee shareholders, nominee directors, bearer
-    shares, or bearer share warrants.
+  description: Companies that have nominee shareholders, nominee directors, bearer shares,
+    or bearer share warrants.
   product_types:
   - depository
   - money_transmitter
@@ -996,8 +846,8 @@
   - third parties
   - cash
 - id: 131-24
-  description: Countries or jurisdictions identified by credible sources (e.g. mutual
-    evaluation or detailed assessment reports) as not having effective AML/CFT systems.
+  description: Countries or jurisdictions identified by credible sources (e.g. mutual evaluation
+    or detailed assessment reports) as not having effective AML/CFT systems.
   product_types:
   - depository
   - money_transmitter
@@ -1036,8 +886,8 @@
   - designated terrorist organisations
   - United Nations
 - id: 131-25
-  description: Countries or jurisdictions identified by credible sources as having
-    a significant level of corruption or other criminal activity.
+  description: Countries or jurisdictions identified by credible sources as having a significant
+    level of corruption or other criminal activity.
   product_types:
   - depository
   - money_transmitter
@@ -1076,8 +926,8 @@
   - designated terrorist organisations
   - United Nations
 - id: 131-26
-  description: Countries or jurisdictions subject to sanctions, embargoes, or similar
-    measures issued by, for example, the United Nations.
+  description: Countries or jurisdictions subject to sanctions, embargoes, or similar measures
+    issued by, for example, the United Nations.
   product_types:
   - depository
   - money_transmitter
@@ -1116,9 +966,9 @@
   - designated terrorist organisations
   - United Nations
 - id: 131-27
-  description: Countries, jurisdictions, or geographical areas identified by credible
-    sources as providing funding or support for terrorist activities, or that host
-    designated terrorist organisations.
+  description: Countries, jurisdictions, or geographical areas identified by credible sources
+    as providing funding or support for terrorist activities, or that host designated terrorist
+    organisations.
   product_types:
   - depository
   - money_transmitter
@@ -1157,9 +1007,8 @@
   - designated terrorist organisations
   - United Nations
 - id: 131-28
-  description: The customer's transactions are not consistent with the SVF licensee's
-    knowledge of the customer, the customer's business, risk profile, and source of
-    funds.
+  description: The customer's transactions are not consistent with the SVF licensee's knowledge
+    of the customer, the customer's business, risk profile, and source of funds.
   product_types:
   - depository
   - money_transmitter
@@ -1194,9 +1043,8 @@
   - no apparent economic or lawful purpose
   - source of funds
 - id: 131-29
-  description: Transactions identified by the SVF licensee that are complex, unusually
-    large in amount, or of an unusual pattern, and have no apparent economic or lawful
-    purpose.
+  description: Transactions identified by the SVF licensee that are complex, unusually large
+    in amount, or of an unusual pattern, and have no apparent economic or lawful purpose.
   product_types:
   - depository
   - money_transmitter

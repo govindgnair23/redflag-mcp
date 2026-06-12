@@ -1,7 +1,7 @@
 - id: 069-01
-  description: 'Client moves funds sourced from individuals/entities located in China,
-    notably in Hong Kong, within a short period of time to one or more of the following
-    sectors: real estate, investments, automotive and/or the legal profession.'
+  description: 'Client moves funds sourced from individuals/entities located in China, notably
+    in Hong Kong, within a short period of time to one or more of the following sectors: real
+    estate, investments, automotive and/or the legal profession.'
   product_types:
   - depository
   - wire_transfer
@@ -38,9 +38,9 @@
   - automotive
   - legal profession
 - id: 069-02
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are immediately transferred to a client’s associated personal or
-    businesses account(s) or to unrelated party(ies).
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are immediately transferred to a client’s associated personal or businesses account(s)
+    or to unrelated party(ies).
   product_types:
   - depository
   - wire_transfer
@@ -71,9 +71,9 @@
   - immediately transferred
   - unrelated parties
 - id: 069-03
-  description: Client has ties to China and is using their accounts for pass-through
-    activities funded by individuals/entities located in China, notably in Hong Kong,
-    whose relationship is unclear.
+  description: Client has ties to China and is using their accounts for pass-through activities
+    funded by individuals/entities located in China, notably in Hong Kong, whose relationship
+    is unclear.
   product_types:
   - depository
   - wire_transfer
@@ -102,9 +102,9 @@
   - pass-through
   - relationship is unclear
 - id: 069-04
-  description: Client is receiving funds from entities located in China, notably in
-    Hong Kong, that are connected to the money service business industry, with no
-    ultimate remitting party names listed.
+  description: Client is receiving funds from entities located in China, notably in Hong Kong,
+    that are connected to the money service business industry, with no ultimate remitting
+    party names listed.
   product_types:
   - depository
   - wire_transfer
@@ -136,9 +136,9 @@
   - China
   - Hong Kong
 - id: 069-05
-  description: Funds are received from entities in China, notably in Hong Kong, with
-    limited to no online presence and there are no details relating to the types of
-    services offered by the sending entity.
+  description: Funds are received from entities in China, notably in Hong Kong, with limited
+    to no online presence and there are no details relating to the types of services offered
+    by the sending entity.
   product_types:
   - depository
   - wire_transfer
@@ -167,9 +167,9 @@
   - China
   - Hong Kong
 - id: 069-06
-  description: Stated purpose of incoming funds from individuals/entities located
-    in China, notably in Hong Kong, is for the purchase of property but the funds
-    were used to purchase Guaranteed Investment Certificates.
+  description: Stated purpose of incoming funds from individuals/entities located in China,
+    notably in Hong Kong, is for the purchase of property but the funds were used to purchase
+    Guaranteed Investment Certificates.
   product_types:
   - depository
   - securities
@@ -201,8 +201,8 @@
   - China
   - Hong Kong
 - id: 069-07
-  description: Business accounts are funded by multiple transfers, mainly from the
-    business’ directors and/or authorized signatories’ personal accounts.
+  description: Business accounts are funded by multiple transfers, mainly from the business’
+    directors and/or authorized signatories’ personal accounts.
   product_types:
   - depository
   - wire_transfer
@@ -228,9 +228,9 @@
   - authorized signatories
   - personal accounts
 - id: 069-08
-  description: Adverse media mentions client, or related transacting parties of the
-    client, as being linked to criminal activity such as fraud, possession of proceeds
-    of crime, corruption/bribery, or illicit gambling/betting charges.
+  description: Adverse media mentions client, or related transacting parties of the client,
+    as being linked to criminal activity such as fraud, possession of proceeds of crime, corruption/bribery,
+    or illicit gambling/betting charges.
   product_types:
   - depository
   - wire_transfer
@@ -260,11 +260,10 @@
   - bribery
   - gambling
 - id: 069-09
-  description: Incoming funds of unknown origin sent by individuals/entities located
-    in China, notably in Hong Kong, to a real estate-related party (e.g., real estate
-    agent/brokerage or real estate developer) in structured amounts with indications
-    suggesting the purpose of funds is for a real estate-related transaction (such
-    as memos referencing an address).
+  description: Incoming funds of unknown origin sent by individuals/entities located in China,
+    notably in Hong Kong, to a real estate-related party (e.g., real estate agent/brokerage
+    or real estate developer) in structured amounts with indications suggesting the purpose
+    of funds is for a real estate-related transaction (such as memos referencing an address).
   product_types:
   - depository
   - wire_transfer
@@ -298,10 +297,9 @@
   - real estate agent
   - real estate developer
 - id: 069-10
-  description: Cash deposit(s) are followed by funds sent to a real estate party (e.g.,
-    real estate agent/brokerage) with indications suggesting the purpose of payment
-    is for a real estate-related transaction (such as memos referencing the same address
-    repeatedly).
+  description: Cash deposit(s) are followed by funds sent to a real estate party (e.g., real
+    estate agent/brokerage) with indications suggesting the purpose of payment is for a real
+    estate-related transaction (such as memos referencing the same address repeatedly).
   product_types:
   - depository
   - wire_transfer
@@ -331,11 +329,11 @@
   - brokerage
   - address repeatedly
 - id: 069-11
-  description: Client receives funds from individuals/entities located in China, notably
-    in Hong Kong, marked for education or personal purposes (e.g., “tuition” or “living
-    expense”), but funds are then used towards payments with indications suggesting
-    the purpose of payment is for a real estate-related transaction (such as memos
-    referencing “property purchase” or “mortgage”).
+  description: Client receives funds from individuals/entities located in China, notably in
+    Hong Kong, marked for education or personal purposes (e.g., “tuition” or “living expense”),
+    but funds are then used towards payments with indications suggesting the purpose of payment
+    is for a real estate-related transaction (such as memos referencing “property purchase”
+    or “mortgage”).
   product_types:
   - depository
   - wire_transfer
@@ -370,8 +368,8 @@
   - China
   - Hong Kong
 - id: 069-12
-  description: Mortgage payments are sourced from incoming funds from China, notably
-    in Hong Kong, where the original source of funds is unclear.
+  description: Mortgage payments are sourced from incoming funds from China, notably in Hong
+    Kong, where the original source of funds is unclear.
   product_types:
   - depository
   - wire_transfer
@@ -402,10 +400,9 @@
   - China
   - Hong Kong
 - id: 069-13
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are used to purchase shorter-term investment products (such as Guaranteed
-    Investment Certificates), which are then redeemed before the term date, despite
-    incurring a penalty.
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are used to purchase shorter-term investment products (such as Guaranteed Investment
+    Certificates), which are then redeemed before the term date, despite incurring a penalty.
   product_types:
   - depository
   - securities
@@ -436,9 +433,8 @@
   - China
   - Hong Kong
 - id: 069-14
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are quickly transferred to holding companies, trust companies or
-    investment firms.
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are quickly transferred to holding companies, trust companies or investment firms.
   product_types:
   - depository
   - wire_transfer
@@ -473,8 +469,8 @@
   - China
   - Hong Kong
 - id: 069-15
-  description: Cash deposits are transferred within a short period of time to a holding
-    company, trust company or investment firm.
+  description: Cash deposits are transferred within a short period of time to a holding company,
+    trust company or investment firm.
   product_types:
   - depository
   - wire_transfer
@@ -505,8 +501,8 @@
   - trust company
   - investment firm
 - id: 069-16
-  description: Cash deposits are transferred within a short period of time to vehicle
-    import/export companies, often located in China, notably in Hong Kong.
+  description: Cash deposits are transferred within a short period of time to vehicle import/export
+    companies, often located in China, notably in Hong Kong.
   product_types:
   - depository
   - wire_transfer
@@ -539,9 +535,9 @@
   - China
   - Hong Kong
 - id: 069-17
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are used to send funds to high end car dealerships that are inconsistent
-    with clients stated occupation.
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are used to send funds to high end car dealerships that are inconsistent with clients
+    stated occupation.
   product_types:
   - depository
   - wire_transfer
@@ -571,9 +567,9 @@
   - China
   - Hong Kong
 - id: 069-18
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are used to send funds to entities listed in the automotive sector
-    who have newer profiles (1-2 years at most).
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are used to send funds to entities listed in the automotive sector who have newer
+    profiles (1-2 years at most).
   product_types:
   - depository
   - wire_transfer
@@ -604,9 +600,9 @@
   - China
   - Hong Kong
 - id: 069-19
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are used to send funds to entities listed in the automotive sector
-    who have residential addresses as their business locations.
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are used to send funds to entities listed in the automotive sector who have residential
+    addresses as their business locations.
   product_types:
   - depository
   - wire_transfer
@@ -636,41 +632,9 @@
   - automotive sector
   - China
   - Hong Kong
-- id: 069-20
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are used to send funds to entities listed in the automotive sector
-    who have limited to no online presence.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types:
-  - auto_sales
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints:
-  - china
-  - hong_kong
-  - canada
-  regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2023-07
-  risk_level: medium
-  category: shell_company
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/ml-rec-eng
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - shell_company_usage
-  key_terms:
-  - limited to no online presence
-  - automotive sector
-  - China
-  - Hong Kong
 - id: 069-21
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are used to send funds in a similar amount to a car dealership.
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are used to send funds in a similar amount to a car dealership.
   product_types:
   - depository
   - wire_transfer
@@ -701,8 +665,8 @@
   - Hong Kong
 - id: 069-22
   description: Circular flow of funds between different entities listed in the automotive
-    industry and import/export entities, with one or more entity located in China,
-    notably in Hong Kong.
+    industry and import/export entities, with one or more entity located in China, notably
+    in Hong Kong.
   product_types:
   - depository
   - wire_transfer
@@ -736,10 +700,9 @@
   - China
   - Hong Kong
 - id: 069-23
-  description: Outgoing fund transfers to entities operating in China, notably in
-    Hong Kong, with references to the automotive industry (such as “car purchases”
-    or “buying cars”) that are inconsistent with client’s stated occupation (e.g.,
-    student, homemaker or unemployed).
+  description: Outgoing fund transfers to entities operating in China, notably in Hong Kong,
+    with references to the automotive industry (such as “car purchases” or “buying cars”)
+    that are inconsistent with client’s stated occupation (e.g., student, homemaker or unemployed).
   product_types:
   - depository
   - wire_transfer
@@ -774,10 +737,10 @@
   - China
   - Hong Kong
 - id: 069-24
-  description: Client receiving funds from entities with no apparent online presence
-    that appear to be involved in automotive import/export activities and are inconsistent
-    with clients stated occupation or expected pattern of activities (e.g., student,
-    homemaker, unemployed).
+  description: Client receiving funds from entities with no apparent online presence that
+    appear to be involved in automotive import/export activities and are inconsistent with
+    clients stated occupation or expected pattern of activities (e.g., student, homemaker,
+    unemployed).
   product_types:
   - depository
   - wire_transfer
@@ -811,9 +774,9 @@
   - homemaker
   - unemployed
 - id: 069-25
-  description: Incoming funds of unknown origin from individuals/entities located
-    in China, notably in Hong Kong, are sent to a legal professional in structured
-    amounts with no clear relationship or stated purpose.
+  description: Incoming funds of unknown origin from individuals/entities located in China,
+    notably in Hong Kong, are sent to a legal professional in structured amounts with no clear
+    relationship or stated purpose.
   product_types:
   - depository
   - wire_transfer
@@ -845,10 +808,10 @@
   - China
   - Hong Kong
 - id: 069-26
-  description: Incoming funds from individuals/entities located in China, notably
-    in Hong Kong, are used to send funds to legal professionals who specialize in
-    real estate and are inconsistent with client’s stated occupation or expected pattern
-    of activities (e.g., student, homemaker, unemployed).
+  description: Incoming funds from individuals/entities located in China, notably in Hong
+    Kong, are used to send funds to legal professionals who specialize in real estate and
+    are inconsistent with client’s stated occupation or expected pattern of activities (e.g.,
+    student, homemaker, unemployed).
   product_types:
   - depository
   - wire_transfer
@@ -885,9 +848,8 @@
   - China
   - Hong Kong
 - id: 069-27
-  description: Client’s account is mainly or in part funded by bank drafts, email
-    money transfers and/or cheques from legal professionals who have limited or no
-    open source footprint.
+  description: Client’s account is mainly or in part funded by bank drafts, email money transfers
+    and/or cheques from legal professionals who have limited or no open source footprint.
   product_types:
   - depository
   - wire_transfer
@@ -916,8 +878,8 @@
   - cheques
   - open source footprint
 - id: 069-28
-  description: Cash deposits, not in line with account holder’s stated occupation,
-    were used to send funds to legal professionals with no clear relationship.
+  description: Cash deposits, not in line with account holder’s stated occupation, were used
+    to send funds to legal professionals with no clear relationship.
   product_types:
   - depository
   - wire_transfer
@@ -945,37 +907,3 @@
   - stated occupation
   - legal professionals
   - no clear relationship
-- id: 069-29
-  description: Financial transactions such as cash deposits/withdrawals, use of personal
-    negotiable instruments (e.g., cheques), electronic funds transfers and foreign
-    exchange using legal professional’s personal account.
-  product_types:
-  - depository
-  - wire_transfer
-  - currency_exchange
-  - check_cashing
-  industry_types:
-  - legal_accounting
-  customer_profiles:
-  - professional_services
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: FINTRAC Operational Alert FINTRAC-2023-OA002
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2023-07
-  risk_level: low
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/ml-rec-eng
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - cash deposits
-  - withdrawals
-  - cheques
-  - electronic funds transfers
-  - foreign exchange
-  - personal account

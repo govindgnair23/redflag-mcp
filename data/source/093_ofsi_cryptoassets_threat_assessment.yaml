@@ -49,8 +49,8 @@
   - counterparties
   - DPs
 - id: 093_ofsi_cryptoassets_threat_assessment-03
-  description: Sudden changes in transaction patterns, which may indicate attempts
-    to circumvent compliance measures or otherwise obfuscate on-chain activity
+  description: Sudden changes in transaction patterns, which may indicate attempts to circumvent
+    compliance measures or otherwise obfuscate on-chain activity
   product_types:
   - crypto
   industry_types:
@@ -119,8 +119,8 @@
   key_terms:
   - multiple addresses
 - id: 093_ofsi_cryptoassets_threat_assessment-06
-  description: Newly created wallets receiving large transfers, or dormant wallets
-    with no prior transaction history suddenly becoming active
+  description: Newly created wallets receiving large transfers, or dormant wallets with no
+    prior transaction history suddenly becoming active
   product_types:
   - crypto
   industry_types:
@@ -190,8 +190,8 @@
   - DEXs
   - regulated exchanges
 - id: 093_ofsi_cryptoassets_threat_assessment-09
-  description: Exposure to services lacking a KYC requirement or transactions involving
-    services that do not require user identification
+  description: Exposure to services lacking a KYC requirement or transactions involving services
+    that do not require user identification
   product_types:
   - crypto
   industry_types:
@@ -213,31 +213,10 @@
   key_terms:
   - KYC
   - user identification
-- id: 093_ofsi_cryptoassets_threat_assessment-10
-  description: Exposure to services lacking Anti-Money Laundering procedures
-  product_types:
-  - crypto
-  industry_types:
-  - crypto
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Cryptoassets OFSI Threat Assessment
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-07
-  risk_level: low
-  category: layering
-  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
-  typology_family:
-  - layering
-  transaction_patterns: []
-  key_terms:
-  - AML procedures
 - id: 093_ofsi_cryptoassets_threat_assessment-11
-  description: Frequent address changes — a customer or counterparty rapidly rotates
-    crypto wallet addresses across transactions in a manner inconsistent with legitimate
-    operational needs, indicating attempts to break the on-chain trail.
+  description: Frequent address changes — a customer or counterparty rapidly rotates crypto
+    wallet addresses across transactions in a manner inconsistent with legitimate operational
+    needs, indicating attempts to break the on-chain trail.
   product_types:
   - crypto
   industry_types:
@@ -305,9 +284,9 @@
   key_terms:
   - privacy wallets
 - id: 093_ofsi_cryptoassets_threat_assessment-14
-  description: Use of mixing or tumbling services that pool and shuffle crypto-assets
-    from multiple users to obscure the link between source and destination wallets,
-    a common laundering technique for illicit proceeds.
+  description: Use of mixing or tumbling services that pool and shuffle crypto-assets from
+    multiple users to obscure the link between source and destination wallets, a common laundering
+    technique for illicit proceeds.
   product_types:
   - crypto
   industry_types:
@@ -355,34 +334,9 @@
   key_terms:
   - cross-chain bridge
   - transaction trails
-- id: 093_ofsi_cryptoassets_threat_assessment-16
-  description: Cross-chain transfers (chain hopping), particularly to privacy-focused
-    blockchains
-  product_types:
-  - crypto
-  industry_types:
-  - crypto
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Cryptoassets OFSI Threat Assessment
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-07
-  risk_level: medium
-  category: virtual_currency
-  source_url: https://www.gov.uk/government/publications/sanctions-compliance-in-the-cryptoassets-sector-threat-assessment
-  typology_family:
-  - crypto_asset_money_laundering
-  - sanctions_evasion
-  transaction_patterns:
-  - wire_transfer_chains
-  key_terms:
-  - chain hopping
-  - privacy-focused blockchains
 - id: 093_ofsi_cryptoassets_threat_assessment-17
-  description: One customer account generating hundreds / thousands of new deposit
-    addresses via Application Programming Interface (API)
+  description: One customer account generating hundreds / thousands of new deposit addresses
+    via Application Programming Interface (API)
   product_types:
   - crypto
   industry_types:
@@ -405,8 +359,8 @@
   - API
   - deposit addresses
 - id: 093_ofsi_cryptoassets_threat_assessment-18
-  description: Concentrated inflows from mixers, darknet or ransomware wallets, followed
-    by immediate withdrawals
+  description: Concentrated inflows from mixers, darknet or ransomware wallets, followed by
+    immediate withdrawals
   product_types:
   - crypto
   industry_types:
@@ -433,8 +387,7 @@
   - darknet
   - ransomware wallets
 - id: 093_ofsi_cryptoassets_threat_assessment-19
-  description: Large cumulative volumes built from multiple small transfers (e.g.,
-    <£10k)
+  description: Large cumulative volumes built from multiple small transfers (e.g., <£10k)
   product_types:
   - crypto
   industry_types: []
@@ -457,8 +410,8 @@
   - <£10 k
   - small transfers
 - id: 093_ofsi_cryptoassets_threat_assessment-20
-  description: Public marketing of “no-passport cash-out” or “sanctions-proof” services
-    on social media
+  description: Public marketing of “no-passport cash-out” or “sanctions-proof” services on
+    social media
   product_types:
   - crypto
   industry_types: []
@@ -535,8 +488,8 @@
   key_terms:
   - VPN
 - id: 093_ofsi_cryptoassets_threat_assessment-23
-  description: Counterparties refusing standard compliance checks or failing to provide
-    transaction documentation
+  description: Counterparties refusing standard compliance checks or failing to provide transaction
+    documentation
   product_types:
   - crypto
   industry_types: []

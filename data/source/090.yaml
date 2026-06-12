@@ -1,6 +1,6 @@
 - id: 090-01
-  description: Suspicious cargo movements, including use of dark fleet vessels and
-    private jets
+  description: Suspicious cargo movements, including use of dark fleet vessels and private
+    jets
   product_types:
   - trade_finance
   industry_types:
@@ -95,8 +95,8 @@
   key_terms:
   - cash
 - id: 090-04
-  description: Gold originates from or has been transported through a conflict-affected
-    or high-risk area
+  description: Gold originates from or has been transported through a conflict-affected or
+    high-risk area
   product_types:
   - trade_finance
   industry_types:
@@ -126,10 +126,10 @@
   - conflict-affected area
   - high-risk area
 - id: 090-05
-  description: Gold is claimed to originate from a country that has limited known
-    reserves or stocks, likely resources or expected production levels of gold (i.e.
-    the declared volumes of gold from that country are out of keeping with its known
-    reserves or expected production levels)
+  description: Gold is claimed to originate from a country that has limited known reserves
+    or stocks, likely resources or expected production levels of gold (i.e. the declared volumes
+    of gold from that country are out of keeping with its known reserves or expected production
+    levels)
   product_types:
   - trade_finance
   industry_types:
@@ -160,8 +160,8 @@
   - expected production levels
   - declared volumes
 - id: 090-06
-  description: Gold is claimed to originate from a country through which gold from
-    conflict-affected and high-risk areas is known or reasonably suspected to transit
+  description: Gold is claimed to originate from a country through which gold from conflict-affected
+    and high-risk areas is known or reasonably suspected to transit
   product_types:
   - trade_finance
   industry_types:
@@ -191,9 +191,9 @@
   - transit
   - conflict-affected and high-risk areas
 - id: 090-07
-  description: The gold is claimed to originate from recyclable/scrap or mixed sources
-    and has been refined in a country where gold from conflict-affected and high-risk
-    areas is known or reasonably suspected to transit
+  description: The gold is claimed to originate from recyclable/scrap or mixed sources and
+    has been refined in a country where gold from conflict-affected and high-risk areas is
+    known or reasonably suspected to transit
   product_types:
   - trade_finance
   industry_types:
@@ -225,8 +225,8 @@
   - mixed sources
   - refined
 - id: 090-08
-  description: New recycled gold provider/s without an established trading reputation
-    or limited ability to verify upstream supply chain
+  description: New recycled gold provider/s without an established trading reputation or limited
+    ability to verify upstream supply chain
   product_types:
   - trade_finance
   industry_types:
@@ -282,43 +282,9 @@
   key_terms:
   - recycled gold
   - high volumes
-- id: 090-10
-  description: Suppliers or other known upstream companies operate in one of the above-mentioned
-    red flag locations of gold origin and transit, or have shareholder or other interests
-    in suppliers of gold from one of the above-mentioned red flag locations of gold
-    origin and transit
-  product_types:
-  - trade_finance
-  industry_types:
-  - precious_metals_jewelry
-  - import_export
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies:
-  - National Economic Crime Centre
-  - National Crime Agency
-  - HM Treasury’s Office of Financial Sanctions Implementation
-  - Foreign, Commonwealth & Development Office
-  issued_date: 2023-11
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - shell_company_usage
-  key_terms:
-  - upstream companies
-  - shareholder interests
-  - origin and transit
 - id: 090-11
-  description: Suppliers or other known upstream companies are known to have sourced
-    gold from a red flag location of gold origin and transit in the last 12 months
+  description: Suppliers or other known upstream companies are known to have sourced gold
+    from a red flag location of gold origin and transit in the last 12 months
   product_types:
   - trade_finance
   industry_types:
@@ -349,8 +315,8 @@
   - upstream companies
   - origin and transit
 - id: 090-12
-  description: An absence of gold (or other precious metals) being hallmarked with
-    cartage before sale, allowing for misrepresentation of the true value of the gold
+  description: An absence of gold (or other precious metals) being hallmarked with cartage
+    before sale, allowing for misrepresentation of the true value of the gold
   product_types:
   - depository
   - trade_finance
@@ -414,9 +380,9 @@
   - proof of ownership
   - entities
 - id: 090-14
-  description: Unexplained wealth appears on company tax returns — reported income
-    or assets that cannot be reconciled with the declared business activity, customer
-    base, or known revenue streams.
+  description: Unexplained wealth appears on company tax returns — reported income or assets
+    that cannot be reconciled with the declared business activity, customer base, or known
+    revenue streams.
   product_types:
   - depository
   industry_types:
@@ -474,9 +440,9 @@
   - volume of gold
   - volume of trade
 - id: 090-16
-  description: Use of jurisdictions in which anti-money laundering laws, anti-corruption
-    laws, customs controls and other relevant governmental oversight laws are weakly
-    enforced; informal banking systems operate, and cash is extensively used
+  description: Use of jurisdictions in which anti-money laundering laws, anti-corruption laws,
+    customs controls and other relevant governmental oversight laws are weakly enforced; informal
+    banking systems operate, and cash is extensively used
   product_types:
   - trade_finance
   - wire_transfer
@@ -509,39 +475,10 @@
   - weakly enforced
   - informal banking systems
   - cash
-- id: 090-17
-  description: Patterns of movement that suggest organisation to obfuscate due diligence
-  product_types:
-  - trade_finance
-  industry_types:
-  - precious_metals_jewelry
-  - import_export
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints: []
-  regulatory_source: 'Red Alert: Gold-based Financial and Trade Sanctions Circumvention'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies:
-  - National Economic Crime Centre
-  - National Crime Agency
-  - HM Treasury’s Office of Financial Sanctions Implementation
-  - Foreign, Commonwealth & Development Office
-  issued_date: 2023-11
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/679-necc-red-alert-gold-sanctions-circumvention/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - movement
-  - obfuscate due diligence
 - id: 090-19
-  description: Unusual customer patterns for recasting of existing jewellery or gold,
-    such as high numbers of small volume transactions, or numerous customers requesting
-    similar transactions
+  description: Unusual customer patterns for recasting of existing jewellery or gold, such
+    as high numbers of small volume transactions, or numerous customers requesting similar
+    transactions
   product_types:
   - depository
   - trade_finance
@@ -573,9 +510,8 @@
   - recasting
   - small volume transactions
 - id: 090-20
-  description: Gold is offered for sale at unrealistic prices — significantly above
-    or below prevailing market rates — suggesting trade-based laundering through over-
-    or under-invoicing.
+  description: Gold is offered for sale at unrealistic prices — significantly above or below
+    prevailing market rates — suggesting trade-based laundering through over- or under-invoicing.
   product_types:
   - trade_finance
   - depository
@@ -605,8 +541,8 @@
   - pricing
   - gold for sale
 - id: 090-21
-  description: Stated origin of recycled or scrap jewellery not matching the expected
-    quality or grade for that origin
+  description: Stated origin of recycled or scrap jewellery not matching the expected quality
+    or grade for that origin
   product_types:
   - trade_finance
   - depository

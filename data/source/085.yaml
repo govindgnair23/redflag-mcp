@@ -1,7 +1,6 @@
 - id: 085-01
-  description: 'The following activity can be associated with bank accounts linked
-    to businesses in the art sector involved in money laundering: quick movements
-    of funds out of the account.'
+  description: An art-sector business bank account exhibits quick movements of funds out of
+    the account, with funds rarely held for any meaningful period.
   product_types:
   - depository
   industry_types:
@@ -28,11 +27,10 @@
   - quick movements
   - art sector
 - id: 085-02
-  description: 'The following activity can be associated with bank accounts linked
-    to businesses in the art sector involved in money laundering: debit covering the
-    purchase, followed quickly by a credit for the proceeds of the subsequent sale
-    by the purchaser, particularly where there is a significant discrepancy in price
-    and transaction amounts.'
+  description: An art-sector business bank account shows a debit covering the purchase of
+    an artwork, followed quickly by a credit for the proceeds of the subsequent sale by the
+    purchaser, particularly where there is a significant discrepancy in price between the
+    purchase and resale transaction amounts.
   product_types:
   - depository
   industry_types:
@@ -62,9 +60,8 @@
   - purchase
   - sale
 - id: 085-03
-  description: 'The following activity can be associated with bank accounts linked
-    to businesses in the art sector involved in money laundering: high volumes of
-    third-party transactions, particularly to move funds offshore.'
+  description: An art-sector business bank account exhibits high volumes of third-party transactions,
+    particularly funds moved offshore.
   product_types:
   - depository
   - wire_transfer
@@ -94,9 +91,8 @@
   - third-party transactions
   - offshore
 - id: 085-04
-  description: 'The following activity can be associated with bank accounts linked
-    to businesses in the art sector involved in money laundering: high volumes of
-    cash deposits.'
+  description: An art-sector business bank account exhibits high volumes of cash deposits,
+    inconsistent with the typical operating model of a legitimate art dealer or gallery.
   product_types:
   - depository
   industry_types:
@@ -124,11 +120,9 @@
   key_terms:
   - cash deposits
 - id: 085-05
-  description: 'The following activity can be associated with bank accounts linked
-    to businesses in the art sector involved in money laundering: transaction references
-    such as ‘artwork’, ‘sale of painting’ and ‘xxx name of auction house or gallery’
-    could be used to provide a seemingly legitimate reason for funds being sent to
-    or received from other accounts.'
+  description: An art-sector business bank account uses transaction references such as "artwork",
+    "sale of painting", or the name of an auction house or gallery to provide a seemingly
+    legitimate reason for funds being sent to or received from other accounts.
   product_types:
   - depository
   - wire_transfer
@@ -158,9 +152,9 @@
   - auction house
   - gallery
 - id: 085-06
-  description: 'The following activity can be associated with bank accounts linked
-    to businesses in the art sector involved in money laundering: regular / excessive
-    / unexpected / prolonged payments to freeports.'
+  description: An art-sector business bank account makes regular, excessive, unexpected, or
+    prolonged payments to freeports (high-value storage facilities in low-tax jurisdictions
+    used to warehouse art).
   product_types:
   - depository
   - wire_transfer
@@ -189,8 +183,8 @@
   - freeports
   - payments
 - id: 085-07
-  description: Sellers involved in laundering money may use both business and personal
-    accounts to deposit and receive business transactions.
+  description: Sellers involved in laundering money may use both business and personal accounts
+    to deposit and receive business transactions.
   product_types:
   - depository
   industry_types:
@@ -217,9 +211,9 @@
   - business accounts
   - personal accounts
 - id: 085-08
-  description: Transactions completed via intermediaries acting as a middle layer
-    between the buyer and seller, so that the end ultimate buyers/ sellers remain
-    unknown to each other.
+  description: Transactions completed via intermediaries acting as a middle layer between
+    the buyer and seller, so that the end ultimate buyers/ sellers remain unknown to each
+    other.
   product_types:
   - depository
   - wire_transfer
@@ -251,8 +245,8 @@
   - sellers
 - id: 085-09
   description: Businesses may have unusual activity such as unusual turnover or exclusive
-    relationships (where they appear to be trading with one or two other businesses
-    that also do not trade with any other businesses).
+    relationships (where they appear to be trading with one or two other businesses that also
+    do not trade with any other businesses).
   product_types:
   - depository
   industry_types:
@@ -280,8 +274,8 @@
   - unusual turnover
   - exclusive relationships
 - id: 085-10
-  description: Shell companies may be used to purchase and sell art to distance and
-    disguise the ultimate beneficial owner.
+  description: Shell companies may be used to purchase and sell art to distance and disguise
+    the ultimate beneficial owner.
   product_types:
   - depository
   - wire_transfer
@@ -314,8 +308,8 @@
   - ultimate beneficial owner
   - UBO
 - id: 085-11
-  description: In respect of antiquity dealers, regular travel to source countries
-    combined with shipping costs to the UK may be indicative of possible smuggling.
+  description: In respect of antiquity dealers, regular travel to source countries combined
+    with shipping costs to the UK may be indicative of possible smuggling.
   product_types:
   - trade_finance
   - wire_transfer

@@ -1,6 +1,6 @@
 - id: 087-01
-  description: School staff show unexpected interest in specific student applications,
-    or request to circumvent normal application requirements.
+  description: School staff show unexpected interest in specific student applications, or
+    request to circumvent normal application requirements.
   product_types:
   - depository
   industry_types:
@@ -9,8 +9,8 @@
   - small_business
   geographic_footprints:
   - uk_eu
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -33,44 +33,10 @@
   - student applications
   - circumvent
   - normal application requirements
-- id: 087-02
-  description: The student comes from a jurisdiction considered of higher risk for
-    money laundering.
-  product_types:
-  - depository
-  industry_types:
-  - education
-  customer_profiles:
-  - foreign_individual
-  - non_resident_alien
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies:
-  - NCA
-  - NECC
-  - Home Office
-  - Independent Schools Council
-  - Independent Schools Bursars Association
-  - Office of Financial Sanctions Implementation
-  - HM Treasury
-  - JMLIT
-  issued_date: 2020-10
-  risk_level: low
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - higher risk
-  - money laundering
 - id: 087-03
-  description: Funds coming to the school to pay for a child’s fees, where the funds
-    are not coming from either a UK account, or from the same jurisdiction the child
-    is a national of.
+  description: Funds coming to the school to pay for a child’s fees, where the funds are not
+    coming from either a UK account, or from the same jurisdiction the child is a national
+    of.
   product_types:
   - depository
   - wire_transfer
@@ -84,8 +50,8 @@
   - domestic_us
   - uk_eu
   - high_risk_jurisdiction
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -122,8 +88,8 @@
   geographic_footprints:
   - uk_eu
   - high_risk_jurisdiction
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -146,45 +112,9 @@
   key_terms:
   - school fees
   - parents
-- id: 087-05
-  description: Cash deposits into accounts funding outgoing payments to schools.
-  product_types:
-  - depository
-  industry_types:
-  - education
-  customer_profiles:
-  - individual_consumer
-  - small_business
-  geographic_footprints:
-  - domestic_us
-  - uk_eu
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies:
-  - NCA
-  - NECC
-  - Home Office
-  - Independent Schools Council
-  - Independent Schools Bursars Association
-  - Office of Financial Sanctions Implementation
-  - HM Treasury
-  - JMLIT
-  issued_date: 2020-10
-  risk_level: medium
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/486-necc-bribery-corruption-risks-to-uk-independent-schools-alert/file
-  typology_family:
-  - corruption_and_bribery
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - cash deposits
-  - schools
 - id: 087-06
-  description: Cash deposits paid directly into independent schools’ accounts for
-    fees, obscuring the source of funds.
+  description: Cash deposits paid directly into independent schools’ accounts for fees, obscuring
+    the source of funds.
   product_types:
   - depository
   industry_types:
@@ -195,8 +125,8 @@
   geographic_footprints:
   - domestic_us
   - uk_eu
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -221,8 +151,8 @@
   - school fees
   - source of funds
 - id: 087-07
-  description: Accounts are funded by a number of un-associated third parties, with
-    the income exceeding the profile of the customer.
+  description: Accounts are funded by a number of un-associated third parties, with the income
+    exceeding the profile of the customer.
   product_types:
   - depository
   industry_types: []
@@ -230,8 +160,8 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -255,8 +185,8 @@
   - un-associated third parties
   - income exceeding profile
 - id: 087-08
-  description: Transactions to schools of a size that may indicate that multiple years’
-    fees are being paid up front.
+  description: Transactions to schools of a size that may indicate that multiple years’ fees
+    are being paid up front.
   product_types:
   - depository
   - wire_transfer
@@ -267,8 +197,8 @@
   - small_business
   geographic_footprints:
   - uk_eu
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -292,8 +222,8 @@
   - multiple years’ fees
   - paid up front
 - id: 087-09
-  description: Account activity which is not aligned to the purpose of the account
-    such as the use of custody accounts for school payments.
+  description: Account activity which is not aligned to the purpose of the account such as
+    the use of custody accounts for school payments.
   product_types:
   - securities
   industry_types:
@@ -304,8 +234,8 @@
   geographic_footprints:
   - domestic_us
   - uk_eu
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -338,8 +268,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -361,10 +291,10 @@
   key_terms:
   - underlying customer
 - id: 087-11
-  description: Clients classified as Politically Exposed Persons (PEPs) paying private
-    school fees — particularly where the fee level is inconsistent with the PEP's
-    declared salary or where payments originate from offshore entities or third parties,
-    raising corruption-proceeds concerns.
+  description: Clients classified as Politically Exposed Persons (PEPs) paying private school
+    fees — particularly where the fee level is inconsistent with the PEP's declared salary
+    or where payments originate from offshore entities or third parties, raising corruption-proceeds
+    concerns.
   product_types:
   - depository
   - wire_transfer
@@ -375,8 +305,8 @@
   geographic_footprints:
   - uk_eu
   - high_risk_jurisdiction
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:
@@ -400,8 +330,8 @@
   - PEPs
   - school fees
 - id: 087-12
-  description: Clients classified as PEPs and also originating from a country that
-    has controls in place around PEPs holding offshore accounts.
+  description: Clients classified as PEPs and also originating from a country that has controls
+    in place around PEPs holding offshore accounts.
   product_types:
   - depository
   - wire_transfer
@@ -411,8 +341,8 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools:
-    Case Studies and Red Flags'
+  regulatory_source: 'Amber ALERT Bribery & Corruption Risks to UK Independent Schools: Case
+    Studies and Red Flags'
   regulator: NCA
   regulator_jurisdiction: GB
   issuing_agencies:

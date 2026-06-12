@@ -1,7 +1,7 @@
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-01
-  description: Links with Organised Crime Groups (OCGs) — the customer, beneficial owner, or counterparty
-    has known association with an OCG (e.g., adverse-media hits, law-enforcement notifications, or
-    shared addresses/directors with previously identified OCG-linked accounts).
+  description: Links with Organised Crime Groups (OCGs) — the customer, beneficial owner,
+    or counterparty has known association with an OCG (e.g., adverse-media hits, law-enforcement
+    notifications, or shared addresses/directors with previously identified OCG-linked accounts).
   product_types: []
   industry_types: []
   customer_profiles: []
@@ -22,9 +22,9 @@
   key_terms:
   - OCG
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-02
-  description: Use of money mules — funds are received and rapidly forwarded by individuals (often
-    recruited via job/romance scams or social media) whose own profile cannot account for the transactional
-    activity passing through their accounts.
+  description: Use of money mules — funds are received and rapidly forwarded by individuals
+    (often recruited via job/romance scams or social media) whose own profile cannot account
+    for the transactional activity passing through their accounts.
   product_types:
   - depository
   - money_transmitter
@@ -54,8 +54,9 @@
   key_terms:
   - money mule
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-03
-  description: Transfer to or from off-shore zones, usually mischaracterised as loans or credit reimbursements
-    between related parties, with no genuine underlying lending relationship or commercial substance.
+  description: Transfer to or from off-shore zones, usually mischaracterised as loans or credit
+    reimbursements between related parties, with no genuine underlying lending relationship
+    or commercial substance.
   product_types:
   - depository
   - wire_transfer
@@ -147,8 +148,8 @@
   - high denomination banknotes
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-06
   description: Structured cash deposits used as collateral to guarantee loans — multiple sub-threshold
-    cash deposits are aggregated and pledged as security for a loan, with the loan proceeds drawn
-    down as 'clean' funds.
+    cash deposits are aggregated and pledged as security for a loan, with the loan proceeds
+    drawn down as 'clean' funds.
   product_types:
   - depository
   industry_types: []
@@ -177,8 +178,9 @@
   - collateral
   - loans
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-07
-  description: Use of a straw man — an individual acts as the nominal holder of an account, asset,
-    or company on behalf of an undisclosed principal, obscuring the true beneficial owner.
+  description: Use of a straw man — an individual acts as the nominal holder of an account,
+    asset, or company on behalf of an undisclosed principal, obscuring the true beneficial
+    owner.
   product_types:
   - depository
   - wire_transfer
@@ -206,37 +208,9 @@
   - identity_misrepresentation
   key_terms:
   - straw man
-- id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-08
-  description: Involvement of many jurisdictions in a scheme.
-  product_types:
-  - wire_transfer
-  - correspondent_banking
-  - remittance
-  industry_types:
-  - import_export
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: MONEYVAL Typologies Report on Laundering the Proceeds of Organised Crime
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - Council of Europe
-  - MONEYVAL
-  issued_date: '2015-04-17'
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/typologies-report-on-laundering-the-proceeds-of-organised-crime/168071509d
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - unusual_international_wires
-  - wire_transfer_chains
-  key_terms:
-  - multiple jurisdictions
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-09
-  description: Indication of e-crimes coupled with significant amount of money involved in the transaction.
+  description: Indication of e-crimes coupled with significant amount of money involved in
+    the transaction.
   product_types:
   - depository
   - wire_transfer
@@ -265,9 +239,9 @@
   key_terms:
   - e-crimes
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-10
-  description: Use of temporary transit accounts and escrow accounts to pass funds through with no
-    genuine commercial transaction underlying the holding period, enabling layering between source
-    and destination.
+  description: Use of temporary transit accounts and escrow accounts to pass funds through
+    with no genuine commercial transaction underlying the holding period, enabling layering
+    between source and destination.
   product_types:
   - depository
   - wire_transfer
@@ -295,8 +269,8 @@
   - transit accounts
   - escrow accounts
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-11
-  description: Large number of transfers between a group of individuals and accounts made in a systematic
-    way.
+  description: Large number of transfers between a group of individuals and accounts made
+    in a systematic way.
   product_types:
   - depository
   - wire_transfer
@@ -324,9 +298,9 @@
   key_terms:
   - systematic way
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-12
-  description: Multiple companies issue fictitious invoices to each other — networks of related shell
-    or front companies exchange invoices for goods or services that were never delivered, generating
-    apparent commercial flows that disguise the movement of illicit funds.
+  description: Multiple companies issue fictitious invoices to each other — networks of related
+    shell or front companies exchange invoices for goods or services that were never delivered,
+    generating apparent commercial flows that disguise the movement of illicit funds.
   product_types:
   - trade_finance
   - depository
@@ -359,9 +333,10 @@
   key_terms:
   - fictitious invoices
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-13
-  description: Suspicious use of bank credits — loans are obtained, drawn down, or repaid in patterns
-    that suggest the credit facility is being used to layer illicit funds rather than to finance
-    a genuine business need (e.g., immediate repayment from unrelated third parties, loan-back schemes).
+  description: Suspicious use of bank credits — loans are obtained, drawn down, or repaid
+    in patterns that suggest the credit facility is being used to layer illicit funds rather
+    than to finance a genuine business need (e.g., immediate repayment from unrelated third
+    parties, loan-back schemes).
   product_types:
   - depository
   - securities
@@ -388,8 +363,8 @@
   key_terms:
   - bank credits
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-14
-  description: Funds sent or received to/from jurisdictions known as being risky for drugs or human
-    trafficking, without apparent economic or legal purpose.
+  description: Funds sent or received to/from jurisdictions known as being risky for drugs
+    or human trafficking, without apparent economic or legal purpose.
   product_types:
   - wire_transfer
   - remittance
@@ -448,8 +423,8 @@
   key_terms:
   - large sums
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-18
-  description: Large amounts transferred to/from multiple jurisdictions to accounts linked to OC
-    figures.
+  description: Large amounts transferred to/from multiple jurisdictions to accounts linked
+    to OC figures.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -476,37 +451,10 @@
   - wire_transfer_chains
   key_terms:
   - OC figures
-- id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-19
-  description: Large number of transfers between a group of individuals and a company’s accounts.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  - small_business
-  geographic_footprints: []
-  regulatory_source: MONEYVAL Typologies Report on Laundering the Proceeds of Organised Crime
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - Council of Europe
-  - MONEYVAL
-  issued_date: '2015-04-17'
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/typologies-report-on-laundering-the-proceeds-of-organised-crime/168071509d
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - wire_transfer_chains
-  - pass_through_account_activity
-  key_terms:
-  - company accounts
 - id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-21
-  description: Use of front companies — entities that appear to conduct a legitimate trade (construction,
-    retail, manufacturing, import-export) but have minimal genuine operations, used to absorb cash,
-    generate fake invoices, or hold assets on behalf of OCGs.
+  description: Use of front companies — entities that appear to conduct a legitimate trade
+    (construction, retail, manufacturing, import-export) but have minimal genuine operations,
+    used to absorb cash, generate fake invoices, or hold assets on behalf of OCGs.
   product_types:
   - depository
   - wire_transfer
@@ -537,33 +485,3 @@
   - shell_company_usage
   key_terms:
   - front companies
-- id: 120_moneyval_2015_20_typologies_laundering_the_proceedsof_organised_crime_eng-27
-  description: Suspicious use of bank credits or services involving cheques — loans, credits, or
-    cheque-based payments are used in patterns inconsistent with genuine commercial activity, suggesting
-    layering of illicit proceeds.
-  product_types:
-  - depository
-  - check_cashing
-  industry_types: []
-  customer_profiles:
-  - small_business
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: MONEYVAL Typologies Report on Laundering the Proceeds of Organised Crime
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - Council of Europe
-  - MONEYVAL
-  issued_date: '2015-04-17'
-  risk_level: medium
-  category: fraud_nexus
-  source_url: https://rm.coe.int/typologies-report-on-laundering-the-proceeds-of-organised-crime/168071509d
-  typology_family:
-  - fraud_proceeds
-  - organized_crime_proceeds
-  transaction_patterns:
-  - third_party_payments
-  key_terms:
-  - cheques
-  - bank credits

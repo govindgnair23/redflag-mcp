@@ -8,8 +8,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -33,8 +33,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -52,8 +52,8 @@
   - customer identification
   - IP address
 - id: 117_moneyval_2013_6_reptyp_flows_eng-03
-  description: Suspicious IP addresses, and suspicious usernames (monikers, nicknames, ICQ numbers)
-    would help in the detection of criminal money flows
+  description: Suspicious IP addresses, and suspicious usernames (monikers, nicknames, ICQ
+    numbers) would help in the detection of criminal money flows
   product_types:
   - depository
   - prepaid
@@ -61,8 +61,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -80,9 +80,9 @@
   - ICQ
   - usernames
 - id: 117_moneyval_2013_6_reptyp_flows_eng-04
-  description: Log-ins or attempting log-ins from non trusted IP addresses or from user’s ID previously
-    identified as associated with suspicious activity; attempted placement of previously identified
-    as bad “cookies”
+  description: Log-ins or attempting log-ins from non trusted IP addresses or from user’s
+    ID previously identified as associated with suspicious activity; attempted placement of
+    previously identified as bad “cookies”
   product_types:
   - depository
   - prepaid
@@ -90,8 +90,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -110,9 +110,9 @@
   - cookies
   - log-ins
 - id: 117_moneyval_2013_6_reptyp_flows_eng-05
-  description: 'Unusual conditions and complexity of the transaction: high frequency of money transfers
-    in a short time, large and diverse source of funds, large and diverse payment methods for the
-    beneficiaries'
+  description: 'Unusual conditions and complexity of the transaction: high frequency of money
+    transfers in a short time, large and diverse source of funds, large and diverse payment
+    methods for the beneficiaries'
   product_types:
   - depository
   - prepaid
@@ -121,8 +121,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -140,8 +140,8 @@
   - money transfers
   - beneficiaries
 - id: 117_moneyval_2013_6_reptyp_flows_eng-06
-  description: In case of legal persons customers, lack of apparent economic grounds or links between
-    the transaction and the business activity of the client
+  description: In case of legal persons customers, lack of apparent economic grounds or links
+    between the transaction and the business activity of the client
   product_types:
   - depository
   - wire_transfer
@@ -150,8 +150,8 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -167,8 +167,9 @@
   - economic grounds
   - business activity
 - id: 117_moneyval_2013_6_reptyp_flows_eng-07
-  description: Unclear information on the business activity of the client or on the reasons for using
-    Internet payment methods instead of traditional channels (usual for companies and business payments)
+  description: Unclear information on the business activity of the client or on the reasons
+    for using Internet payment methods instead of traditional channels (usual for companies
+    and business payments)
   product_types:
   - depository
   - prepaid
@@ -177,8 +178,8 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -194,9 +195,9 @@
   - Internet payment methods
   - business activity
 - id: 117_moneyval_2013_6_reptyp_flows_eng-08
-  description: For private persons (i.e. manager of a company) – lack of data on the business area
-    of the performed activity; for a company – stated business activity like “investment”, “international”,
-    “global investor”, “import-export of every kind”
+  description: For private persons (i.e. manager of a company) – lack of data on the business
+    area of the performed activity; for a company – stated business activity like “investment”,
+    “international”, “global investor”, “import-export of every kind”
   product_types:
   - depository
   - prepaid
@@ -207,8 +208,8 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -226,8 +227,8 @@
   - global investor
   - import-export
 - id: 117_moneyval_2013_6_reptyp_flows_eng-09
-  description: Overlaying corporate officers, holders of specimens or apparent similarities associated
-    with addresses, activities related to recommendations or finances
+  description: Overlaying corporate officers, holders of specimens or apparent similarities
+    associated with addresses, activities related to recommendations or finances
   product_types:
   - depository
   - wire_transfer
@@ -236,8 +237,8 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -255,8 +256,8 @@
   - specimens
   - addresses
 - id: 117_moneyval_2013_6_reptyp_flows_eng-10
-  description: The person’s appearance and behaviour are not in conformity with the nature of the
-    transaction being concluded or the person’s behaviour is not trustworthy
+  description: The person’s appearance and behaviour are not in conformity with the nature
+    of the transaction being concluded or the person’s behaviour is not trustworthy
   product_types:
   - depository
   - prepaid
@@ -265,8 +266,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -281,34 +282,9 @@
   key_terms:
   - behaviour
   - transaction
-- id: 117_moneyval_2013_6_reptyp_flows_eng-11
-  description: The person uses assistance in filling documents or cannot fill them in
-  product_types:
-  - depository
-  - prepaid
-  - money_transmitter
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - MONEYVAL
-  - Council of Europe
-  issued_date: 2012-03
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://rm.coe.int/research-report-criminal-money-flows-on-the-internet-methods-trends-an/168071509a
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - documents
 - id: 117_moneyval_2013_6_reptyp_flows_eng-12
-  description: The person is not familiar with the nature of the activities of the legal person being
-    represented
+  description: The person is not familiar with the nature of the activities of the legal person
+    being represented
   product_types:
   - depository
   - wire_transfer
@@ -317,8 +293,8 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -335,8 +311,8 @@
   - legal person
   - represented
 - id: 117_moneyval_2013_6_reptyp_flows_eng-13
-  description: The person cannot explain the need for the service for the use of which the person
-    called upon the credit or financial institution
+  description: The person cannot explain the need for the service for the use of which the
+    person called upon the credit or financial institution
   product_types:
   - depository
   - prepaid
@@ -345,8 +321,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -362,9 +338,9 @@
   - service
   - credit or financial institution
 - id: 117_moneyval_2013_6_reptyp_flows_eng-14
-  description: The person requests unusually high limits (especially the ones used through long distance
-    channels) which do not conform to the person’s presumed turnover, previous financial behaviour
-    and social appearance
+  description: The person requests unusually high limits (especially the ones used through
+    long distance channels) which do not conform to the person’s presumed turnover, previous
+    financial behaviour and social appearance
   product_types:
   - depository
   - prepaid
@@ -374,8 +350,8 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -391,8 +367,8 @@
   - limits
   - long distance channels
 - id: 117_moneyval_2013_6_reptyp_flows_eng-15
-  description: The person requests two or more bank cards which do not conform to the person’s presumed
-    turnover or nature of activity
+  description: The person requests two or more bank cards which do not conform to the person’s
+    presumed turnover or nature of activity
   product_types:
   - depository
   - prepaid
@@ -402,8 +378,8 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -420,8 +396,8 @@
   key_terms:
   - bank cards
 - id: 117_moneyval_2013_6_reptyp_flows_eng-16
-  description: The person does not know the real beneficiaries (owners) of the legal person being
-    represented or the location or contact information of the legal person
+  description: The person does not know the real beneficiaries (owners) of the legal person
+    being represented or the location or contact information of the legal person
   product_types:
   - depository
   - wire_transfer
@@ -431,8 +407,8 @@
   - shell_or_front_company
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -458,8 +434,8 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -475,9 +451,9 @@
   - partners
   - areas of activity
 - id: 117_moneyval_2013_6_reptyp_flows_eng-18
-  description: The person wants to open an account in a bank branch in one county/town while the
-    address/location of the representative and legal person is elsewhere and no reasonable explanation
-    for such need is provided
+  description: The person wants to open an account in a bank branch in one county/town while
+    the address/location of the representative and legal person is elsewhere and no reasonable
+    explanation for such need is provided
   product_types:
   - depository
   industry_types: []
@@ -485,8 +461,8 @@
   - shell_or_front_company
   geographic_footprints:
   - domestic_us
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -504,8 +480,8 @@
   - branch
   - representative
 - id: 117_moneyval_2013_6_reptyp_flows_eng-19
-  description: The deposits to the account of a person/company with normally low income or no income
-    have remarkably increased
+  description: The deposits to the account of a person/company with normally low income or
+    no income have remarkably increased
   product_types:
   - depository
   industry_types: []
@@ -513,8 +489,8 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -544,8 +520,8 @@
   - individual_consumer
   geographic_footprints:
   - foreign_individual
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -561,8 +537,8 @@
   key_terms:
   - international transfers
 - id: 117_moneyval_2013_6_reptyp_flows_eng-21
-  description: Foreign payments received and subsequent cash withdrawals and transfers via money
-    transfer services
+  description: Foreign payments received and subsequent cash withdrawals and transfers via
+    money transfer services
   product_types:
   - wire_transfer
   - money_transmitter
@@ -574,8 +550,8 @@
   - individual_consumer
   geographic_footprints:
   - foreign_individual
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -601,8 +577,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -617,8 +593,8 @@
   key_terms:
   - previous operations
 - id: 117_moneyval_2013_6_reptyp_flows_eng-23
-  description: Regular transactions of sums below the threshold required for declaring the origin
-    of the assets; high total amount of the transferred assets
+  description: Regular transactions of sums below the threshold required for declaring the
+    origin of the assets; high total amount of the transferred assets
   product_types:
   - depository
   - wire_transfer
@@ -626,8 +602,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -653,8 +629,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -680,8 +656,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -711,8 +687,8 @@
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -731,8 +707,8 @@
   key_terms:
   - unknown third parties
 - id: 117_moneyval_2013_6_reptyp_flows_eng-27
-  description: Operations from and to foreign countries combined with unclear data on the external
-    beneficiaries, on the payers or on the origin of the assets
+  description: Operations from and to foreign countries combined with unclear data on the
+    external beneficiaries, on the payers or on the origin of the assets
   product_types:
   - wire_transfer
   - money_transmitter
@@ -742,8 +718,8 @@
   - cross_border_business
   geographic_footprints:
   - foreign_individual
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -761,9 +737,9 @@
   - payers
   - origin of the assets
 - id: 117_moneyval_2013_6_reptyp_flows_eng-28
-  description: Setting of durable commercial relations or conducting a transaction through electronic
-    statement, electronic document of electronic signature or other form without the physical presence
-    of the client
+  description: Setting of durable commercial relations or conducting a transaction through
+    electronic statement, electronic document of electronic signature or other form without
+    the physical presence of the client
   product_types:
   - depository
   - prepaid
@@ -772,8 +748,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -790,8 +766,8 @@
   - electronic signature
   - physical presence
 - id: 117_moneyval_2013_6_reptyp_flows_eng-29
-  description: Corporate accumulation (transfers between bank accounts of related persons or donations
-    without reasonable grounds)
+  description: Corporate accumulation (transfers between bank accounts of related persons
+    or donations without reasonable grounds)
   product_types:
   - depository
   - wire_transfer
@@ -800,8 +776,8 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -819,8 +795,8 @@
   - donations
   - related persons
 - id: 117_moneyval_2013_6_reptyp_flows_eng-30
-  description: Telegraphic transfers from donor organizations in favour of companies located in countries
-    known to be bank or tax heavens
+  description: Telegraphic transfers from donor organizations in favour of companies located
+    in countries known to be bank or tax heavens
   product_types:
   - wire_transfer
   - depository
@@ -830,8 +806,8 @@
   - charity_or_nonprofit
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -849,8 +825,8 @@
   - tax heavens
   - telegraphic transfers
 - id: 117_moneyval_2013_6_reptyp_flows_eng-31
-  description: Transactions of funds originating from offshore zones, countries which do not enforce
-    the international AML/CFT standards, etc.
+  description: Transactions of funds originating from offshore zones, countries which do not
+    enforce the international AML/CFT standards, etc.
   product_types:
   - wire_transfer
   - money_transmitter
@@ -861,8 +837,8 @@
   geographic_footprints:
   - high_risk_jurisdiction
   - sanctioned_jurisdiction
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -879,8 +855,8 @@
   - offshore zones
   - AML/CFT standards
 - id: 117_moneyval_2013_6_reptyp_flows_eng-32
-  description: Transactions or withdrawals (in cash, cheques, telegraphic transfers, etc.) under
-    accounts which do no correspond to the previous conditions on deposits
+  description: Transactions or withdrawals (in cash, cheques, telegraphic transfers, etc.)
+    under accounts which do no correspond to the previous conditions on deposits
   product_types:
   - depository
   - wire_transfer
@@ -888,8 +864,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -907,9 +883,9 @@
   - cheques
   - telegraphic transfers
 - id: 117_moneyval_2013_6_reptyp_flows_eng-33
-  description: Transactions involving large amounts of incoming or outgoing transfers, without logical
-    or apparent purpose and which are received or sent to/from ‘at risk jurisdictions’ (i.e. sanctioned
-    countries, non-cooperating nations, nations supporting terrorism)
+  description: Transactions involving large amounts of incoming or outgoing transfers, without
+    logical or apparent purpose and which are received or sent to/from ‘at risk jurisdictions’
+    (i.e. sanctioned countries, non-cooperating nations, nations supporting terrorism)
   product_types:
   - wire_transfer
   - money_transmitter
@@ -921,8 +897,8 @@
   - sanctioned_jurisdiction
   - ofac_sanctioned_country
   - high_risk_jurisdiction
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -941,8 +917,8 @@
   - at risk jurisdictions
   - sanctioned countries
 - id: 117_moneyval_2013_6_reptyp_flows_eng-34
-  description: Unexplained clearing or contracting with cheques of third parties or their deposits
-    in foreign bank accounts
+  description: Unexplained clearing or contracting with cheques of third parties or their
+    deposits in foreign bank accounts
   product_types:
   - check_cashing
   - depository
@@ -952,8 +928,8 @@
   - third_party_payment_processor
   geographic_footprints:
   - foreign_individual
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -970,8 +946,8 @@
   - cheques
   - foreign bank accounts
 - id: 117_moneyval_2013_6_reptyp_flows_eng-35
-  description: Using multiple accounts to raise funds which are then transferred in favour of the
-    same foreign beneficiaries
+  description: Using multiple accounts to raise funds which are then transferred in favour
+    of the same foreign beneficiaries
   product_types:
   - depository
   - wire_transfer
@@ -981,8 +957,8 @@
   - shell_or_front_company
   geographic_footprints:
   - foreign_individual
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1000,9 +976,9 @@
   - foreign beneficiaries
   - multiple accounts
 - id: 117_moneyval_2013_6_reptyp_flows_eng-36
-  description: Schemes for cash debiting in which the deposits (i. e. in the USA) are directly related
-    to cash withdrawal from ATM in problem countries. Reverse transactions of this nature are also
-    suspicious
+  description: Schemes for cash debiting in which the deposits (i. e. in the USA) are directly
+    related to cash withdrawal from ATM in problem countries. Reverse transactions of this
+    nature are also suspicious
   product_types:
   - depository
   - wire_transfer
@@ -1012,8 +988,8 @@
   geographic_footprints:
   - domestic_us
   - high_risk_jurisdiction
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1031,9 +1007,9 @@
   - ATM
   - cash debiting
 - id: 117_moneyval_2013_6_reptyp_flows_eng-37
-  description: Issuing of cheques, payment orders or other financial instruments sequentially numbered,
-    in favour of one and the same person or company or persons and companies with name similar in
-    sound
+  description: Issuing of cheques, payment orders or other financial instruments sequentially
+    numbered, in favour of one and the same person or company or persons and companies with
+    name similar in sound
   product_types:
   - check_cashing
   - depository
@@ -1041,8 +1017,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1060,8 +1036,9 @@
   - payment orders
   - sequentially numbered
 - id: 117_moneyval_2013_6_reptyp_flows_eng-38
-  description: An enterprise with a usually passive economic turnover or a newly established enterprise
-    receive unusually high volume transactions not in accordance of the profile of the person
+  description: An enterprise with a usually passive economic turnover or a newly established
+    enterprise receive unusually high volume transactions not in accordance of the profile
+    of the person
   product_types:
   - depository
   - wire_transfer
@@ -1071,8 +1048,8 @@
   - newly_established_business
   - small_business
   geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1089,8 +1066,8 @@
   - newly established enterprise
   - passive economic turnover
 - id: 117_moneyval_2013_6_reptyp_flows_eng-39
-  description: Accounts opened by non-residents without any relations to the jurisdiction where the
-    payment services is located
+  description: Accounts opened by non-residents without any relations to the jurisdiction
+    where the payment services is located
   product_types:
   - depository
   - prepaid
@@ -1101,8 +1078,8 @@
   geographic_footprints:
   - foreign_individual
   - domestic_us
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
+  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods,
+    trends and multi-stakeholder counteraction'
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1117,70 +1094,3 @@
   key_terms:
   - non-residents
   - payment services
-- id: 117_moneyval_2013_6_reptyp_flows_eng-40
-  description: Frequent foreign income registered into a bank account followed by cash withdrawals
-    and transfers via money remittance services Online payment system or currency system hosted on
-    a server based in a weak regulatory environment or a jurisdiction of ML/FT concern, as defined
-    by the FATF, a regional FSRB or a relevant national authority
-  product_types:
-  - depository
-  - money_transmitter
-  - remittance
-  - prepaid
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  - sanctioned_jurisdiction
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - MONEYVAL
-  - Council of Europe
-  issued_date: 2012-03
-  risk_level: high
-  category: layering
-  source_url: https://rm.coe.int/research-report-criminal-money-flows-on-the-internet-methods-trends-an/168071509a
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  - cash_intensive_behavior
-  - unusual_international_wires
-  key_terms:
-  - foreign income
-  - ML/FT concern
-  - weak regulatory environment
-- id: 117_moneyval_2013_6_reptyp_flows_eng-41
-  description: Activity by money mules is a red flag for money laundering and should trigger action
-    by or an involvement of FIUs
-  product_types:
-  - depository
-  - wire_transfer
-  - money_transmitter
-  - remittance
-  - prepaid
-  industry_types: []
-  customer_profiles:
-  - money_services_business
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: 'MONEYVAL Research Report: Criminal money flows on the Internet: methods, trends
-    and multi-stakeholder counteraction'
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - MONEYVAL
-  - Council of Europe
-  issued_date: 2012-03
-  risk_level: high
-  category: layering
-  source_url: https://rm.coe.int/research-report-criminal-money-flows-on-the-internet-methods-trends-an/168071509a
-  typology_family:
-  - fraud_proceeds
-  transaction_patterns:
-  - money_mule_activity
-  key_terms:
-  - money mules

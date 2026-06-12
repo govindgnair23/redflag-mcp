@@ -1,6 +1,6 @@
 - id: 126-01
-  description: Unclear economic purpose for a common individual/address linked to
-    multiple companies
+  description: Unclear economic purpose for a common individual/address linked to multiple
+    companies
   product_types:
   - depository
   industry_types: []
@@ -8,8 +8,8 @@
   - shell_or_front_company
   geographic_footprints:
   - domestic_us
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -24,34 +24,8 @@
   - economic purpose
   - common address
   - multiple companies
-- id: 126-02
-  description: Unclear economic purpose for requiring bank accounts in Singapore
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints:
-  - singapore
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: medium
-  category: shell_company
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - shell_company
-  transaction_patterns: []
-  key_terms:
-  - bank accounts
-  - Singapore
-  - economic purpose
 - id: 126-03
-  description: Unusual change of corporate structure/beneficial ownerships after account
-    opening
+  description: Unusual change of corporate structure/beneficial ownerships after account opening
   product_types:
   - depository
   industry_types: []
@@ -59,8 +33,8 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -77,8 +51,8 @@
   - account opening
   - corporate structure
 - id: 126-04
-  description: Unrelated third parties added to operate account after account opening
-    (e.g. authorised signatories or internet banking users)
+  description: Unrelated third parties added to operate account after account opening (e.g.
+    authorised signatories or internet banking users)
   product_types:
   - depository
   industry_types: []
@@ -86,8 +60,8 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -104,42 +78,16 @@
   - authorised signatories
   - internet banking users
   - third parties
-- id: 126-05
-  description: Suspicious transactions which are not in line with bank’s understanding
-    of customers
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: medium
-  category: layering
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - layering
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - suspicious transactions
-  - customer profile
 - id: 126-06
-  description: Superficial corporate websites which are inconsistent with scale of
-    business
+  description: Superficial corporate websites which are inconsistent with scale of business
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -164,8 +112,8 @@
   - shell_or_front_company
   geographic_footprints:
   - singapore
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -189,8 +137,8 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -215,8 +163,8 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -233,8 +181,8 @@
   - directors
   - shareholders
 - id: 126-10
-  description: Use of newly incorporated companies set up by Singaporeans, and changing
-    of directors/authorised signatories post-account opening
+  description: Use of newly incorporated companies set up by Singaporeans, and changing of
+    directors/authorised signatories post-account opening
   product_types:
   - depository
   industry_types: []
@@ -243,8 +191,8 @@
   - shell_or_front_company
   geographic_footprints:
   - domestic_us
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -261,16 +209,16 @@
   - directors
   - authorised signatories
 - id: 126-11
-  description: Use of long-established company, and changing of directors/authorised
-    signatories/business activity
+  description: Use of long-established company, and changing of directors/authorised signatories/business
+    activity
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -287,8 +235,8 @@
   - business activity
   - directors
 - id: 126-12
-  description: Use of Singapore registered address, but no operating business conducted
-    in Singapore
+  description: Use of Singapore registered address, but no operating business conducted in
+    Singapore
   product_types:
   - depository
   industry_types: []
@@ -296,8 +244,8 @@
   - shell_or_front_company
   geographic_footprints:
   - singapore
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -315,8 +263,8 @@
   - Singapore
 - id: 126-13
   description: Accounts opened by Singapore incorporated companies, solely for facilitating
-    transactions with higher risk countries/pass through transactions with minimal
-    balance maintained
+    transactions with higher risk countries/pass through transactions with minimal balance
+    maintained
   product_types:
   - depository
   - wire_transfer
@@ -327,8 +275,8 @@
   geographic_footprints:
   - singapore
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -346,8 +294,8 @@
   - minimal balance
   - higher risk countries
 - id: 126-14
-  description: Transactions were being authorised online by third parties/foreign
-    nationals with no nexus to Singapore
+  description: Transactions were being authorised online by third parties/foreign nationals
+    with no nexus to Singapore
   product_types:
   - depository
   - wire_transfer
@@ -357,8 +305,8 @@
   - foreign_individual
   geographic_footprints:
   - singapore
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -376,8 +324,8 @@
   - foreign nationals
   - nexus to Singapore
 - id: 126-15
-  description: Transactions flowing through the account were predominantly executed
-    using internet banking, authorised by a foreigner residing overseas
+  description: Transactions flowing through the account were predominantly executed using
+    internet banking, authorised by a foreigner residing overseas
   product_types:
   - depository
   - wire_transfer
@@ -387,8 +335,8 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -406,9 +354,8 @@
   - foreigner
   - residing overseas
 - id: 126-16
-  description: Instances of round-tripping and transactions to individuals in high
-    risk jurisdictions, which were not in line with the bank’s understanding of the
-    customer
+  description: Instances of round-tripping and transactions to individuals in high risk jurisdictions,
+    which were not in line with the bank’s understanding of the customer
   product_types:
   - depository
   - wire_transfer
@@ -417,8 +364,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -444,8 +391,8 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -469,8 +416,8 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -493,8 +440,8 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -519,8 +466,8 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -548,8 +495,8 @@
   - shell_or_front_company
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -564,31 +511,6 @@
   key_terms:
   - tax haven
   - high risk countries
-- id: 126-22
-  description: Entities with high transaction traffic or value
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: low
-  category: layering
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - layering
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - high transaction traffic
-  - high value
 - id: 126-23
   description: Entities with low paid up capital relative to monthly value of transactions
   product_types:
@@ -598,8 +520,8 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -623,8 +545,8 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -639,32 +561,6 @@
   - rapid_fund_movement
   key_terms:
   - flow-through transactions
-- id: 126-25
-  description: Relationship managers whose portfolio comprise mainly companies that
-    are from tax haven/high risk countries
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: low
-  category: layering
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - layering
-  transaction_patterns: []
-  key_terms:
-  - relationship managers
-  - tax haven
-  - high risk countries
 - id: 126-27
   description: Credited funds were withdrawn shortly after fund was credited
   product_types:
@@ -673,8 +569,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -689,93 +585,17 @@
   key_terms:
   - credited funds
   - withdrawn shortly after
-- id: 126-28
-  description: Circular fund flow
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: high
-  category: layering
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - layering
-  transaction_patterns:
-  - round_tripping
-  - wire_transfer_chains
-  key_terms:
-  - circular fund flow
-- id: 126-29
-  description: No local business interests/transactions in Singapore
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints:
-  - singapore
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: medium
-  category: shell_company
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - shell_company
-  transaction_patterns: []
-  key_terms:
-  - local business interests
-  - Singapore
-- id: 126-30
-  description: The company could be set up as a layering company to camouflage the
-    true source of funds
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies: []
-  issued_date: 2019-06
-  risk_level: high
-  category: layering
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Effective-Practices-to-Detect-and-Mitigate-the-Risk-from-Misuse-of-Legal-Persons-June-2019.pdf
-  typology_family:
-  - layering
-  transaction_patterns:
-  - shell_company_usage
-  - pass_through_account_activity
-  key_terms:
-  - layering company
-  - true source of funds
 - id: 126-31
-  description: Unusual circular fund flow between related customers, where funds cycle
-    back to their source without clear economic purpose
+  description: Unusual circular fund flow between related customers, where funds cycle back
+    to their source without clear economic purpose
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -790,18 +610,18 @@
   - wire_transfer_chains
   key_terms:
   - circular fund flow
-  - through Ext 11
+  - related customers
 - id: 126-32
-  description: Sources of funds for several transactions were from third parties,
-    which the bank had no sight of
+  description: Sources of funds for several transactions were from third parties, which the
+    bank had no sight of
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -826,8 +646,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -852,8 +672,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -878,8 +698,8 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -904,8 +724,8 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []
@@ -928,8 +748,8 @@
   customer_profiles:
   - foreign_individual
   geographic_footprints: []
-  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse
-    of Legal Persons
+  regulatory_source: Effective Practices to Detect and Mitigate the Risk from Misuse of Legal
+    Persons
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies: []

@@ -1,11 +1,41 @@
-- id: 070-01
-  description: 'Schemes involving falsified customs, shipping and trade finance documents,
-    including the following: Phantom shipments: Transferring funds to buy goods that
-    are never shipped, received or documented. Falsely described goods and services:
-    Misrepresenting the quality, quantity, or type of goods or services traded. Multiple
-    invoicing: Issuing a single invoice but receiving multiple payments. Over/under
-    invoicing: Invoicing goods or services at a price above or below market value
-    in order to move money or value from the exporter to the importer or vice-versa.'
+- id: 070-01a
+  description: Phantom shipments — funds are transferred to a counterparty as payment
+    for goods that are never shipped, received, or documented through customs.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - latin_america
+  - china
+  - hong_kong
+  - canada
+  - mexico
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - unusual_international_wires
+  key_terms:
+  - phantom shipments
+  - never shipped
+  - undocumented
+- id: 070-01b
+  description: Falsely described goods or services — trade documentation misrepresents
+    the quality, quantity, or type of goods or services actually being traded.
   product_types:
   - trade_finance
   - wire_transfer
@@ -34,23 +64,89 @@
   transaction_patterns:
   - trade_document_manipulation
   - invoice_mismatch
-  - unusual_international_wires
   key_terms:
-  - customs
-  - shipping
-  - trade finance
-  - phantom shipments
+  - falsely described
+  - quality
+  - quantity
+  - type of goods
+- id: 070-01c
+  description: Multiple invoicing — a single shipment of goods or services is invoiced
+    once but generates multiple matching payments from the same or related parties.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - latin_america
+  - china
+  - hong_kong
+  - canada
+  - mexico
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
   - multiple invoicing
-  - over/under invoicing
+  - single invoice
+  - multiple payments
+- id: 070-01d
+  description: Over- or under-invoicing — goods or services are invoiced at a price
+    materially above or below market value in order to move value from the exporter
+    to the importer (or vice versa) under the cover of a trade transaction.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - latin_america
+  - china
+  - hong_kong
+  - canada
+  - mexico
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - over-invoicing
+  - under-invoicing
+  - market value
 - id: 070-02
-  description: 'The Black Market Peso Exchange, which typically works as follows:
-    Transnational organized crime groups, such as Colombian or Mexican drug cartels,
-    place proceeds of crime into the U.S. financial system through structured cash
-    deposits (deposits that are organized to avoid record-keeping or reporting requirements)
-    of U.S. dollars. A Colombian or Mexican importer buys those dollars from complicit
-    brokers, paying for them in pesos. The importer uses the U.S. funds to purchase
-    goods that are then shipped to Colombia or Mexico. The brokers return the pesos
-    they received from the importer to the cartel.'
+  description: Black Market Peso Exchange (BMPE) — Colombian or Mexican drug cartels
+    place U.S. dollar drug proceeds into the U.S. financial system through structured
+    cash deposits; a Latin American importer buys those dollars from complicit brokers
+    paying in pesos, uses the U.S. funds to purchase goods shipped to Colombia or
+    Mexico, and the brokers return the pesos to the cartel — leaving observable patterns
+    of structured U.S. dollar deposits paired with goods shipments to Latin America.
   product_types:
   - depository
   - wire_transfer
@@ -87,10 +183,11 @@
   - importer
   - broker
 - id: 070-03
-  description: An entity is a Canadian small or medium-size import/export company,
-    wholesaler, dealer or broker operating in a sector dealing in high-volume, high-demand
-    commodities with variable price ranges, including agri-food, textiles, electronics,
-    toys, lumber and paper, and automotive or heavy equipment.
+  description: A Canadian small or medium-sized import/export company, wholesaler,
+    dealer, or broker operates in a sector dealing in high-volume, high-demand commodities
+    with variable price ranges (agri-food, textiles, electronics, toys, lumber and
+    paper, automotive or heavy equipment) — sectors commonly used as cover for trade-based
+    money laundering.
   product_types:
   - trade_finance
   - wire_transfer
@@ -125,9 +222,9 @@
   - high-volume
   - high-demand commodities
 - id: 070-04
-  description: The entity has business activities or a business model that is outside
-    the norm for its sector, or conducts no business activities in Canada. It may
-    also be difficult to confirm the exact nature of the business.
+  description: An import/export entity's business activities are outside the norm
+    for its sector, conducts no business activities in Canada despite being incorporated
+    there, or the exact nature of the business is difficult to confirm.
   product_types:
   - trade_finance
   - wire_transfer
@@ -162,20 +259,47 @@
   - outside the norm
   - no business activities in Canada
   - difficult to confirm
-- id: 070-05
-  description: 'The entity transacts with a large number of entities that have activities
-    in the above-noted sectors or have names that suggest activities in a wide range
-    of unrelated sectors, and also does some or all of the following: receives a sudden
-    inflow of large-value electronic funds transfers; orders electronic funds transfers
-    to the benefit of China- or Hong Kong-based trading companies or individuals,
-    and receives electronic funds transfers from the U.S. and Latin American countries;
-    orders electronic funds transfers to the benefit of entities or individuals in
-    the U.S., Mexico or Latin American countries, and receives such transfers from
-    the U.S.; orders or receives electronic funds transfers to/from entities holding
-    a bank account in Latvia or Cyprus, and are registered to addresses in the U.K.,
-    Cyprus, the British Virgin Islands, Panama, the Seychelles, Belize, the Marshall
-    Islands or other offshore financial centers; and orders or receives payments for
-    goods in round figures or in increments of approximately US$50,000.'
+- id: 070-05a
+  description: An entity transacts with a large number of counterparties whose names
+    suggest activities in a wide range of unrelated sectors, while receiving a sudden
+    inflow of large-value electronic funds transfers (EFTs) inconsistent with the
+    entity's stated business model.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - import_export
+  - retail
+  - manufacturing
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - unrelated sectors
+  - large-value EFTs
+- id: 070-05b
+  description: An entity orders electronic funds transfers to China- or Hong Kong-based
+    trading companies or individuals while receiving electronic funds transfers from
+    the U.S. and Latin American countries — a corridor pattern consistent with trade-based
+    laundering of drug proceeds.
   product_types:
   - wire_transfer
   - trade_finance
@@ -192,9 +316,6 @@
   - hong_kong
   - latin_america
   - domestic_us
-  - mexico
-  - uk_eu
-  - caribbean
   regulatory_source: 'Operational alert: Professional money laundering through trade
     and money services businesses'
   regulator: FINTRAC
@@ -207,19 +328,89 @@
   typology_family:
   - trade_based_money_laundering
   transaction_patterns:
-  - rapid_fund_movement
   - unusual_international_wires
-  - round_tripping
   key_terms:
-  - large-value electronic funds transfers
-  - round figures
-  - US$50,000
-  - offshore financial centers
+  - China
+  - Hong Kong
+  - Latin American
+  - corridor
+- id: 070-05c
+  description: An entity orders or receives electronic funds transfers to/from entities
+    holding bank accounts in Latvia or Cyprus that are registered to addresses in
+    the U.K., Cyprus, the British Virgin Islands, Panama, the Seychelles, Belize,
+    the Marshall Islands, or other offshore financial centres — i.e., registration
+    jurisdiction and banking jurisdiction are deliberately mismatched.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - caribbean
+  - high_risk_jurisdiction
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: shell_company
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - trade_based_money_laundering
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
   - Latvia
   - Cyprus
+  - British Virgin Islands
+  - Panama
+  - Seychelles
+  - Belize
+  - Marshall Islands
+- id: 070-05d
+  description: Payments for goods are ordered or received in round figures or in increments
+    of approximately US$50,000, inconsistent with normal commercial invoicing.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - round_tripping
+  key_terms:
+  - round figures
+  - US$50,000
+  - increments
 - id: 070-06
   description: A trading company based in the United Arab Emirates orders electronic
-    funds transfers to the benefit of individuals or entities in Canada.
+    funds transfers to the benefit of individuals or entities in Canada with no apparent
+    underlying trade relationship.
   product_types:
   - wire_transfer
   - trade_finance
@@ -250,8 +441,8 @@
   - electronic funds transfers
 - id: 070-07
   description: An entity's U.S. dollar business accounts held in Canada exhibit flow-through
-    activity—that is, money is taken or transferred out of the account as quickly
-    as it flows in.
+    activity — funds are transferred out of the account as quickly as they flow in,
+    leaving negligible end-of-day balances.
   product_types:
   - depository
   - wire_transfer
@@ -280,8 +471,8 @@
   - U.S. dollar business accounts
   - flow-through activity
 - id: 070-08
-  description: An entity imports currency (predominantly U.S. dollars) from Latin
-    American countries.
+  description: An entity imports physical currency (predominantly U.S. dollars) from
+    Latin American countries — bulk-cash inflows under the cover of trade activity.
   product_types:
   - currency_exchange
   - depository
@@ -313,8 +504,9 @@
   - U.S. dollars
   - Latin American countries
 - id: 070-09
-  description: An entity makes large business purchases by credit card, funded by
-    overpayments.
+  description: An entity makes large business purchases by credit card that are funded
+    by overpayments to the card account, effectively using the credit card as a wash
+    mechanism.
   product_types:
   - credit_card
   industry_types: []
@@ -339,9 +531,9 @@
   - credit card
   - overpayments
 - id: 070-10
-  description: An individual issues cheques, purchases drafts or orders electronic
-    funds transfers through the account of a legal professional for trade-related
-    payments.
+  description: An individual issues cheques, purchases drafts, or orders electronic
+    funds transfers through the trust account of a legal professional for trade-related
+    payments, using the lawyer's account as a layer to obscure the true payer.
   product_types:
   - depository
   - wire_transfer
@@ -371,18 +563,11 @@
   - cheques
   - drafts
   - trade-related payments
-- id: 070-11
-  description: 'A Canadian money services business does some or all of the following:
-    receives a sudden inflow of large electronic funds transfers and cash deposits;
-    this is followed by an increased outflow of electronic funds transfers, cheques
-    and bank drafts made out to multiple unrelated third parties for loans or investments,
-    or to the individual conducting the transaction; undertakes numerous currency
-    exchanges involving Canadian and U.S. dollars and/or Euros; carries out business
-    largely with or through Iran or other countries subject to sanctions, the United
-    Arab Emirates, Kuwait, Hong Kong, and China or countries with internal capital
-    controls; and receives electronic funds transfers from foreign exchange and trading
-    companies based in the above-noted countries for real estate transactions, loans
-    or investments.'
+- id: 070-11a
+  description: A Canadian money services business (MSB) receives a sudden inflow of
+    large electronic funds transfers and cash deposits, followed by an increased outflow
+    of electronic funds transfers, cheques, and bank drafts made out to multiple unrelated
+    third parties for loans or investments, or to the individual conducting the transaction.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -390,19 +575,11 @@
   - wire_transfer
   industry_types:
   - money_services_business
-  - real_estate
-  - professional_services
   customer_profiles:
   - money_services_business
   geographic_footprints:
-  - iran
-  - middle_east
-  - hong_kong
-  - china
   - canada
   - domestic_us
-  - high_risk_jurisdiction
-  - sanctioned_jurisdiction
   regulatory_source: 'Operational alert: Professional money laundering through trade
     and money services businesses'
   regulator: FINTRAC
@@ -414,39 +591,219 @@
   source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
   typology_family:
   - organized_crime_proceeds
-  - sanctions_evasion
-  - trade_based_money_laundering
   transaction_patterns:
   - rapid_fund_movement
   - third_party_payments
   - cash_intensive_behavior
-  - unusual_international_wires
   key_terms:
-  - money services business
-  - currency exchanges
-  - bank drafts
-  - loans
-  - investments
-  - real estate transactions
-  - sanctions
-- id: 070-12
-  description: 'A money services business owner, associate or employee does some or
-    all of the following: maintains personal account activity similar to that of a
-    money services business; attempts to avoid reporting obligations when exchanging
-    currency on behalf of another money services business; lists multiple occupations,
-    addresses and/or telephone numbers with financial institutions or online; lists
-    occupation as immigration consultant, student, homemaker or unemployed; lives
-    outside of their reasonable means (i.e., buys real estate beyond what they could
-    reasonably afford on their claimed income); attempts to close an account(s) to
-    avoid due diligence questioning; receives wires and transfers from multiple sources
-    in accounts at numerous banks and credit unions; the individual then depletes
-    these amounts through drafts payable to self or for real estate purchases; places
-    large structured cash deposits into the same account at multiple locations on
-    the same day; and is a customer at many banks and credit unions, and negotiates
-    many self-addressed bank drafts from various financial institutions.'
+  - MSB
+  - large inflow
+  - unrelated third parties
+- id: 070-11b
+  description: A Canadian money services business (MSB) undertakes numerous currency
+    exchanges involving Canadian and U.S. dollars and/or Euros, materially out of
+    line with the customer base's expected demand.
   product_types:
   - money_transmitter
   - currency_exchange
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: medium
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - currency exchanges
+  - CAD
+  - USD
+  - EUR
+- id: 070-11c
+  description: A Canadian money services business (MSB) carries out business largely
+    with or through Iran or other sanctioned countries, the United Arab Emirates,
+    Kuwait, Hong Kong, China, or countries with internal capital controls, and receives
+    electronic funds transfers from foreign exchange and trading companies in those
+    jurisdictions for real estate transactions, loans, or investments.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - wire_transfer
+  industry_types:
+  - money_services_business
+  - real_estate
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - iran
+  - middle_east
+  - hong_kong
+  - china
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - sanctions_evasion
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - Iran
+  - sanctions
+  - capital controls
+  - foreign exchange companies
+- id: 070-12a
+  description: A money services business owner, associate, or employee maintains personal
+    account activity that mirrors that of a money services business (currency exchanges,
+    third-party transfers, high-volume cash) on a personal account.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - cash_intensive_behavior
+  key_terms:
+  - personal account
+  - MSB-like activity
+- id: 070-12b
+  description: A money services business (MSB) owner, associate, or employee attempts
+    to avoid reporting obligations when exchanging currency on behalf of another money
+    services business.
+  product_types:
+  - money_transmitter
+  - currency_exchange
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - avoid reporting
+  - MSB
+- id: 070-12c
+  description: A money services business owner, associate, or employee lists multiple
+    occupations, addresses, and/or telephone numbers with financial institutions or
+    online, or lists occupation as immigration consultant, student, homemaker, or
+    unemployed — inconsistent with the high transaction volume observed.
+  product_types:
+  - money_transmitter
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - multiple occupations
+  - multiple addresses
+  - immigration consultant
+- id: 070-12d
+  description: A money services business owner, associate, or employee buys real estate
+    beyond what could reasonably be afforded on their claimed income, or attempts
+    to close accounts to avoid customer due diligence (CDD) questioning.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - money_services_business
+  - real_estate
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - fraud_proceeds
+  - real_estate_money_laundering
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - lives beyond means
+  - real estate
+  - avoid CDD
+- id: 070-12e
+  description: A money services business owner, associate, or employee receives wires
+    and transfers from multiple sources into accounts at numerous banks and credit
+    unions, then depletes these amounts through drafts payable to self or for real
+    estate purchases.
+  product_types:
+  - money_transmitter
   - depository
   - wire_transfer
   industry_types:
@@ -457,6 +814,75 @@
   - individual_consumer
   geographic_footprints:
   - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: layering
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - multiple banks
+  - self-payable drafts
+  - real estate purchases
+- id: 070-12f
+  description: A money services business owner, associate, or employee places large
+    structured cash deposits into the same account at multiple locations on the same
+    day, or is a customer at many banks and credit unions and negotiates many self-addressed
+    bank drafts from various financial institutions.
+  product_types:
+  - money_transmitter
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  regulatory_source: 'Operational alert: Professional money laundering through trade
+    and money services businesses'
+  regulator: FINTRAC
+  regulator_jurisdiction: CA
+  issuing_agencies: []
+  issued_date: '2018-07-18'
+  risk_level: high
+  category: structuring
+  source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  - cash_deposits_below_threshold
+  - money_mule_activity
+  key_terms:
+  - structured cash deposits
+  - multiple locations
+  - self-addressed bank drafts
+- id: 070-13a
+  description: A Canadian import/export company has account activity similar to that
+    of a money services business — receiving one or two large electronic funds transfers
+    and then ordering multiple outgoing cheques and drafts to multiple third-party
+    individuals and companies.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - canada
   - domestic_us
   regulatory_source: 'Operational alert: Professional money laundering through trade
     and money services businesses'
@@ -469,26 +895,19 @@
   source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
   typology_family:
   - organized_crime_proceeds
-  - fraud_proceeds
+  - trade_based_money_laundering
   transaction_patterns:
   - pass_through_account_activity
-  - structuring
-  - cash_deposits_below_threshold
-  - money_mule_activity
   - third_party_payments
-  - rapid_fund_movement
   key_terms:
-  - money services business
-  - due diligence questioning
-  - self-addressed bank drafts
-  - multiple banks and credit unions
-- id: 070-13
-  description: 'A Canadian import/export company has account activity similar to that
-    of a money services business, including the following: receives one or two large
-    electronic funds transfers and then orders multiple outgoing cheques and drafts
-    to multiple third-party individuals and companies; and receives large incoming
-    electronic funds transfers from Iran, the United Arab Emirates, Kuwait, Hong Kong
-    and China for living costs, expenses or spare parts.'
+  - import/export company
+  - MSB-like activity
+  - third-party payments
+- id: 070-13b
+  description: A Canadian import/export company receives large incoming electronic
+    funds transfers from Iran, the United Arab Emirates, Kuwait, Hong Kong, and China
+    referenced for "living costs", "expenses", or "spare parts" — references inconsistent
+    with the entity's stated import/export business model.
   product_types:
   - wire_transfer
   - depository
@@ -503,8 +922,6 @@
   - middle_east
   - hong_kong
   - china
-  - canada
-  - domestic_us
   - sanctioned_jurisdiction
   regulatory_source: 'Operational alert: Professional money laundering through trade
     and money services businesses'
@@ -513,20 +930,18 @@
   issuing_agencies: []
   issued_date: '2018-07-18'
   risk_level: high
-  category: layering
+  category: sanctions_evasion
   source_url: https://fintrac-canafe.canada.ca/intel/operation/oai-ml-eng
   typology_family:
-  - organized_crime_proceeds
-  - trade_based_money_laundering
   - sanctions_evasion
+  - trade_based_money_laundering
   transaction_patterns:
-  - pass_through_account_activity
-  - third_party_payments
   - unusual_international_wires
+  - invoice_mismatch
   key_terms:
-  - import/export company
-  - cheques
-  - drafts
+  - Iran
+  - UAE
+  - Kuwait
+  - Hong Kong
   - living costs
-  - expenses
   - spare parts

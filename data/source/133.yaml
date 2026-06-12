@@ -1,9 +1,9 @@
 - id: 133-01
   description: A customer who has no discernible reason for using the financial institution
-    (FI)’s services (e.g. a customer has opened an account for discretionary management
-    services but directs the FI to carry out his own investment decisions or a customer
-    located in a place outside Hong Kong who uses local accounts to trade on stock
-    or futures exchanges located in that place);
+    (FI)’s services (e.g. a customer has opened an account for discretionary management services
+    but directs the FI to carry out his own investment decisions or a customer located in
+    a place outside Hong Kong who uses local accounts to trade on stock or futures exchanges
+    located in that place);
   product_types:
   - securities
   - futures
@@ -33,9 +33,8 @@
   - futures exchanges
 - id: 133-02
   description: A customer who has requested, without reasonable explanation, transactions
-    that are out of the ordinary range of services normally requested, or are outside
-    the experience of the financial services business in relation to the particular
-    customer;
+    that are out of the ordinary range of services normally requested, or are outside the
+    experience of the financial services business in relation to the particular customer;
   product_types:
   - securities
   - futures
@@ -58,8 +57,8 @@
   key_terms:
   - ordinary range of services
 - id: 133-03
-  description: Extensive use of trusts or offshore structures in circumstances where
-    the customer’s needs are inconsistent with the use of such services;
+  description: Extensive use of trusts or offshore structures in circumstances where the customer’s
+    needs are inconsistent with the use of such services;
   product_types:
   - private_banking
   - securities
@@ -86,8 +85,8 @@
   - trusts
   - offshore structures
 - id: 133-04
-  description: A legal person customer with bearer shares constituting a large part
-    of its issued capital;
+  description: A legal person customer with bearer shares constituting a large part of its
+    issued capital;
   product_types:
   - securities
   - depository
@@ -114,8 +113,8 @@
   - bearer shares
   - issued capital
 - id: 133-05
-  description: A customer who has opened multiple accounts with the same beneficial
-    owners or controlling parties for no apparent business reason;
+  description: A customer who has opened multiple accounts with the same beneficial owners
+    or controlling parties for no apparent business reason;
   product_types:
   - securities
   - depository
@@ -142,8 +141,8 @@
   - beneficial owners
   - controlling parties
 - id: 133-06
-  description: A customer’s legal or mailing address is associated with other apparently
-    unrelated accounts; or does not seem connected to the customer;
+  description: A customer’s legal or mailing address is associated with other apparently unrelated
+    accounts; or does not seem connected to the customer;
   product_types:
   - securities
   - depository
@@ -169,10 +168,9 @@
   - legal address
   - mailing address
 - id: 133-07
-  description: Requests by customers for dealing or investment management services
-    (with regard to securities, futures contracts or leveraged foreign exchange contracts)
-    where the source of the funds is unclear or not consistent with the customers'
-    profile and apparent standing;
+  description: Requests by customers for dealing or investment management services (with regard
+    to securities, futures contracts or leveraged foreign exchange contracts) where the source
+    of the funds is unclear or not consistent with the customers' profile and apparent standing;
   product_types:
   - securities
   industry_types: []
@@ -199,9 +197,9 @@
   - investment management
   - leveraged foreign exchange contracts
 - id: 133-08
-  description: A customer who refuses to provide the information requested without
-    reasonable explanation or who otherwise refuses to cooperate with the Customer
-    Due Diligence (CDD) and/or ongoing monitoring process;
+  description: A customer who refuses to provide the information requested without reasonable
+    explanation or who otherwise refuses to cooperate with the Customer Due Diligence (CDD)
+    and/or ongoing monitoring process;
   product_types:
   - securities
   - depository
@@ -225,8 +223,7 @@
   - ongoing monitoring
 - id: 133-09
   description: A customer who has entered into a business relationship uses the relationship
-    for a single transaction or for only a very short period without a reasonable
-    explanation;
+    for a single transaction or for only a very short period without a reasonable explanation;
   product_types:
   - securities
   - depository
@@ -253,8 +250,8 @@
   - single transaction
   - short period
 - id: 133-10
-  description: A customer who exhibits unusual concern with the financial institution
-    (FI)’s AML/CFT Systems including policies, controls, monitoring or reporting thresholds;
+  description: A customer who exhibits unusual concern with the financial institution (FI)’s
+    AML/CFT Systems including policies, controls, monitoring or reporting thresholds;
   product_types:
   - securities
   - depository
@@ -276,34 +273,10 @@
   key_terms:
   - AML/CFT Systems
   - reporting thresholds
-- id: 133-11
-  description: A customer who does not exhibit any concern with the cost of transactions
-    or fees;
-  product_types:
-  - securities
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
-    (For Licensed Corporations)
-  regulator: SFC-HK
-  regulator_jurisdiction: HK
-  issuing_agencies:
-  - Securities and Futures Commission
-  issued_date: 2021-09
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://www.sfc.hk/-/media/EN/assets/components/codes/files-current/web/guidelines/guideline-on-anti-money-laundering-and-counter-financing-of-terrorism-for-licensed-corporations/AML-Guideline-for-LCs_Eng_30-Sep-2021.pdf
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - cost of transactions
-  - fees
 - id: 133-12
-  description: A customer who is known to have criminal, civil or regulatory proceedings
-    against it for corruption, misuse of public funds, other financial crimes or regulatory
-    non-compliance, or is known to associate with such persons.
+  description: A customer who is known to have criminal, civil or regulatory proceedings against
+    it for corruption, misuse of public funds, other financial crimes or regulatory non-compliance,
+    or is known to associate with such persons.
   product_types:
   - securities
   - depository
@@ -328,8 +301,8 @@
   - misuse of public funds
   - regulatory proceedings
 - id: 133-13
-  description: Transactions or instructions which have no apparent legitimate purpose
-    or commercial rationale or involve apparently unnecessary complexity;
+  description: Transactions or instructions which have no apparent legitimate purpose or commercial
+    rationale or involve apparently unnecessary complexity;
   product_types:
   - securities
   - futures
@@ -355,8 +328,8 @@
   - commercial rationale
   - unnecessary complexity
 - id: 133-14
-  description: The size or pattern of transactions is not in line with the background
-    of the customer or its past transaction volume/pattern;
+  description: The size or pattern of transactions is not in line with the background of the
+    customer or its past transaction volume/pattern;
   product_types:
   - securities
   - futures
@@ -382,11 +355,11 @@
   - transaction volume
   - pattern
 - id: 133-15
-  description: Buying and selling of securities, futures or leveraged foreign exchange
-    contracts with no discernible purpose or where the nature, size or frequency of
-    the transactions appears unusual. For example, where a customer frequently purchases
-    securities at a high price and subsequently sells them at a considerable loss
-    to the same party. This may indicate transferring value from one party to another;
+  description: Buying and selling of securities, futures or leveraged foreign exchange contracts
+    with no discernible purpose or where the nature, size or frequency of the transactions
+    appears unusual. For example, where a customer frequently purchases securities at a high
+    price and subsequently sells them at a considerable loss to the same party. This may indicate
+    transferring value from one party to another;
   product_types:
   - securities
   - futures
@@ -413,9 +386,9 @@
   - futures contracts
   - leveraged foreign exchange contracts
 - id: 133-16
-  description: A number of transactions by the same customer in small amounts relating
-    to the same investment, each purchased for cash and then sold in one transaction,
-    the proceeds being paid to a person other than that customer;
+  description: A number of transactions by the same customer in small amounts relating to
+    the same investment, each purchased for cash and then sold in one transaction, the proceeds
+    being paid to a person other than that customer;
   product_types:
   - securities
   industry_types: []
@@ -441,8 +414,8 @@
   - proceeds
   - same investment
 - id: 133-17
-  description: Mirror trades or transactions involving securities used for currency
-    conversion for illegitimate or no apparent business purposes;
+  description: Mirror trades or transactions involving securities used for currency conversion
+    for illegitimate or no apparent business purposes;
   product_types:
   - securities
   industry_types: []
@@ -466,9 +439,8 @@
   - mirror trades
   - currency conversion
 - id: 133-18
-  description: Securities, futures or leveraged foreign exchange contracts transactions
-    occur across many jurisdictions, and in particular jurisdictions posing a higher
-    risk;
+  description: Securities, futures or leveraged foreign exchange contracts transactions occur
+    across many jurisdictions, and in particular jurisdictions posing a higher risk;
   product_types:
   - securities
   - futures
@@ -495,8 +467,8 @@
   - many jurisdictions
   - higher risk
 - id: 133-19
-  description: Securities intended to be held-to-maturity are unwound before maturity
-    in the absence of volatile market conditions or other logical or apparent reason;
+  description: Securities intended to be held-to-maturity are unwound before maturity in the
+    absence of volatile market conditions or other logical or apparent reason;
   product_types:
   - securities
   industry_types: []
@@ -543,10 +515,9 @@
   - front-running
   - pending customer orders
 - id: 133-21
-  description: Making a large purchase or sale of a security, or option on a security,
-    shortly before news or a significant announcement is issued that affects the price
-    of the security, which may be suggestive of potential insider trading or market
-    manipulation;
+  description: Making a large purchase or sale of a security, or option on a security, shortly
+    before news or a significant announcement is issued that affects the price of the security,
+    which may be suggestive of potential insider trading or market manipulation;
   product_types:
   - securities
   industry_types: []
@@ -570,8 +541,8 @@
   - market manipulation
 - id: 133-22
   description: A request to execute or clear a buy order and sell order in close chronological
-    sequence for accounts with the same beneficial owner or of connected persons in
-    the same securities which are thinly-traded;
+    sequence for accounts with the same beneficial owner or of connected persons in the same
+    securities which are thinly-traded;
   product_types:
   - securities
   industry_types: []
@@ -597,8 +568,8 @@
   - sell order
   - thinly-traded
 - id: 133-23
-  description: Multiple new customers are referred by the same individual to open
-    accounts for trading in the same security within a short period of time;
+  description: Multiple new customers are referred by the same individual to open accounts
+    for trading in the same security within a short period of time;
   product_types:
   - securities
   industry_types: []
@@ -622,8 +593,8 @@
   - new customers
   - same security
 - id: 133-24
-  description: A customer engages in prearranged or other non-competitive trading
-    in particular securities or futures contracts;
+  description: A customer engages in prearranged or other non-competitive trading in particular
+    securities or futures contracts;
   product_types:
   - securities
   - futures
@@ -647,10 +618,10 @@
   - prearranged trading
   - non-competitive trading
 - id: 133-25
-  description: The entry of matching buy and sell orders in particular securities
-    or futures contracts (“wash trading”), creating the illusion of active trading.
-    Such wash trading does not result in a bona fide market position, which might
-    also provide “cover” for a money launderer;
+  description: The entry of matching buy and sell orders in particular securities or futures
+    contracts (“wash trading”), creating the illusion of active trading. Such wash trading
+    does not result in a bona fide market position, which might also provide “cover” for a
+    money launderer;
   product_types:
   - securities
   - futures
@@ -674,35 +645,9 @@
   key_terms:
   - wash trading
   - bona fide market position
-- id: 133-26
-  description: Transfers of positions between accounts that do not appear to be commonly
-    controlled;
-  product_types:
-  - securities
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints: []
-  regulatory_source: Guideline on Anti-Money Laundering and Counter-Financing of Terrorism
-    (For Licensed Corporations)
-  regulator: SFC-HK
-  regulator_jurisdiction: HK
-  issuing_agencies:
-  - Securities and Futures Commission
-  issued_date: 2021-09
-  risk_level: medium
-  category: layering
-  source_url: https://www.sfc.hk/-/media/EN/assets/components/codes/files-current/web/guidelines/guideline-on-anti-money-laundering-and-counter-financing-of-terrorism-for-licensed-corporations/AML-Guideline-for-LCs_Eng_30-Sep-2021.pdf
-  typology_family:
-  - layering
-  transaction_patterns:
-  - nested_account_activity
-  key_terms:
-  - transfers of positions
-  - commonly controlled
 - id: 133-27
-  description: Accumulation of a security with small increments in price throughout
-    the trading day to increase the price of the security;
+  description: Accumulation of a security with small increments in price throughout the trading
+    day to increase the price of the security;
   product_types:
   - securities
   industry_types: []
@@ -725,9 +670,8 @@
   - accumulation
   - price of the security
 - id: 133-28
-  description: Executing purchase or sale orders for one or more accounts in a security
-    regularly at or near the close of market trading hours that alter the closing
-    price of the security;
+  description: Executing purchase or sale orders for one or more accounts in a security regularly
+    at or near the close of market trading hours that alter the closing price of the security;
   product_types:
   - securities
   industry_types: []
@@ -750,8 +694,8 @@
   - close of market
   - closing price
 - id: 133-29
-  description: Placing multiple buy or sell orders and cancelling some or all of them
-    before execution regularly.
+  description: Placing multiple buy or sell orders and cancelling some or all of them before
+    execution regularly.
   product_types:
   - securities
   industry_types: []
@@ -774,9 +718,8 @@
   - buy or sell orders
   - cancelling
 - id: 133-30
-  description: The customer’s explanation regarding the method of acquiring the physical
-    share certificates deposited at the financial institution (FI) does not make sense
-    or changes;
+  description: The customer’s explanation regarding the method of acquiring the physical share
+    certificates deposited at the financial institution (FI) does not make sense or changes;
   product_types:
   - securities
   - depository
@@ -800,9 +743,8 @@
   key_terms:
   - physical share certificates
 - id: 133-31
-  description: A customer has a pattern of depositing physical share certificates
-    or receiving incoming share transfers, forthwith selling the shares and transferring
-    out the proceeds;
+  description: A customer has a pattern of depositing physical share certificates or receiving
+    incoming share transfers, forthwith selling the shares and transferring out the proceeds;
   product_types:
   - securities
   - depository
@@ -828,8 +770,8 @@
   - incoming share transfers
   - proceeds
 - id: 133-32
-  description: A customer with limited or no other assets at the financial institution
-    (FI) receives a transfer of large amounts of thinly-traded securities;
+  description: A customer with limited or no other assets at the financial institution (FI)
+    receives a transfer of large amounts of thinly-traded securities;
   product_types:
   - securities
   - depository
@@ -853,9 +795,8 @@
   key_terms:
   - thinly-traded securities
 - id: 133-33
-  description: A customer deposits securities and requests to credit them to multiple
-    accounts that do not appear to be related, and to sell or otherwise transfer ownership
-    of the securities.
+  description: A customer deposits securities and requests to credit them to multiple accounts
+    that do not appear to be related, and to sell or otherwise transfer ownership of the securities.
   product_types:
   - securities
   - depository
@@ -882,8 +823,8 @@
   - multiple accounts
   - transfer ownership
 - id: 133-34
-  description: Large or unusual settlements of transactions in cash or bearer form
-    or where a customer only deals with an financial institution (FI) in cash;
+  description: Large or unusual settlements of transactions in cash or bearer form or where
+    a customer only deals with an financial institution (FI) in cash;
   product_types:
   - securities
   - depository
@@ -911,10 +852,10 @@
   - cash
   - bearer form
 - id: 133-35
-  description: A customer uses an financial institution (FI) to make payments or to
-    hold funds or other property that are rarely used or are not being used to trade
-    in securities, futures contracts or leveraged foreign exchange contracts, i.e.
-    account appears to be used as a depositary account or a conduit for transfers;
+  description: A customer uses an financial institution (FI) to make payments or to hold funds
+    or other property that are rarely used or are not being used to trade in securities, futures
+    contracts or leveraged foreign exchange contracts, i.e. account appears to be used as
+    a depositary account or a conduit for transfers;
   product_types:
   - securities
   - depository
@@ -939,8 +880,8 @@
   - depositary account
   - conduit for transfers
 - id: 133-36
-  description: Non-resident customer’s account with very large account movements and
-    subsequent fund transfers to offshore financial centres;
+  description: Non-resident customer’s account with very large account movements and subsequent
+    fund transfers to offshore financial centres;
   product_types:
   - securities
   - depository
@@ -970,9 +911,8 @@
   - offshore financial centres
   - account movements
 - id: 133-37
-  description: Transfers of positions, funds or other property between securities
-    accounts of parties that do not appear to be commonly controlled or have an apparent
-    relationship;
+  description: Transfers of positions, funds or other property between securities accounts
+    of parties that do not appear to be commonly controlled or have an apparent relationship;
   product_types:
   - securities
   industry_types: []
@@ -998,8 +938,8 @@
   - securities accounts
   - commonly controlled
 - id: 133-38
-  description: Frequent funds or other property transfers or cheque payments to or
-    from third parties that are unrelated or difficult to verify;
+  description: Frequent funds or other property transfers or cheque payments to or from third
+    parties that are unrelated or difficult to verify;
   product_types:
   - securities
   - depository
@@ -1027,8 +967,8 @@
   - cheque payments
 - id: 133-39
   description: Transfers to and from jurisdictions posing a higher risk without reasonable
-    explanation, which are not consistent with the customer’s declared business dealings
-    or interests;
+    explanation, which are not consistent with the customer’s declared business dealings or
+    interests;
   product_types:
   - securities
   - wire_transfer
@@ -1056,8 +996,8 @@
   - declared business dealings
 - id: 133-40
   description: The involvement of offshore companies on whose accounts multiple transfers
-    are made, especially when they are destined for a tax haven, and to accounts in
-    the name of offshore companies of which the customer may be a shareholder;
+    are made, especially when they are destined for a tax haven, and to accounts in the name
+    of offshore companies of which the customer may be a shareholder;
   product_types:
   - securities
   - wire_transfer
@@ -1087,8 +1027,8 @@
   - offshore companies
   - tax haven
 - id: 133-41
-  description: Transactions appear to be undertaken in a structured, sequential manner
-    in order to avoid transaction monitoring threshold;
+  description: Transactions appear to be undertaken in a structured, sequential manner in
+    order to avoid transaction monitoring threshold;
   product_types:
   - securities
   - wire_transfer
@@ -1113,8 +1053,8 @@
   key_terms:
   - transaction monitoring threshold
 - id: 133-42
-  description: Transfers of funds or securities to the same person from different
-    parties, or to different persons from the same party without reasonable explanation;
+  description: Transfers of funds or securities to the same person from different parties,
+    or to different persons from the same party without reasonable explanation;
   product_types:
   - securities
   - wire_transfer
@@ -1140,8 +1080,8 @@
   - different parties
   - same person
 - id: 133-43
-  description: Funds are transferred to other FIs in different jurisdictions from
-    the financial institution (FI) where the funds were initially received;
+  description: Funds are transferred to other FIs in different jurisdictions from the financial
+    institution (FI) where the funds were initially received;
   product_types:
   - wire_transfer
   - securities
@@ -1168,8 +1108,8 @@
   - different jurisdictions
   - other FIs
 - id: 133-44
-  description: Frequent changes of bank account details or information for receiving
-    investment sale proceeds.
+  description: Frequent changes of bank account details or information for receiving investment
+    sale proceeds.
   product_types:
   - securities
   - depository

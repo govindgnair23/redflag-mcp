@@ -8,7 +8,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -36,7 +37,8 @@
   - shell_or_front_company
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -54,8 +56,8 @@
   - front men
   - shell companies
 - id: 118_reptyp_msbs_eng-03
-  description: Transactions in a series are structured just below the regulatory threshold for due
-    diligence identity checks.
+  description: Transactions in a series are structured just below the regulatory threshold
+    for due diligence identity checks.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -64,7 +66,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -83,8 +86,9 @@
   - due diligence
   - identity checks
 - id: 118_reptyp_msbs_eng-04
-  description: The customer appears to be trying to avoid reporting requirements by using two or
-    more MR/CE locations or cashiers on the same day to break one transaction into smaller transactions.
+  description: The customer appears to be trying to avoid reporting requirements by using
+    two or more MR/CE locations or cashiers on the same day to break one transaction into
+    smaller transactions.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -93,7 +97,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -112,8 +117,8 @@
   - MR/CE locations
   - cashiers
 - id: 118_reptyp_msbs_eng-05
-  description: Two or more customers appear to be trying to avoid reporting requirements and seem
-    to be working together to break one transaction into two or more transactions.
+  description: Two or more customers appear to be trying to avoid reporting requirements and
+    seem to be working together to break one transaction into two or more transactions.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -122,7 +127,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -140,8 +146,8 @@
   - reporting requirements
   - working together
 - id: 118_reptyp_msbs_eng-06
-  description: Transactions are carried out by the customer on behalf of third parties without there
-    being an appropriate business relationship with such parties.
+  description: Transactions are carried out by the customer on behalf of third parties without
+    there being an appropriate business relationship with such parties.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -151,7 +157,8 @@
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -169,8 +176,8 @@
   - third parties
   - business relationship
 - id: 118_reptyp_msbs_eng-07
-  description: Sudden increases in the frequency/value of transactions of a particular customer without
-    reasonable explanation.
+  description: Sudden increases in the frequency/value of transactions of a particular customer
+    without reasonable explanation.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -179,7 +186,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -197,8 +205,8 @@
   - value
   - reasonable explanation
 - id: 118_reptyp_msbs_eng-08
-  description: An unusually large cash transaction inconsistent with the customer's profile or the
-    typical ticket size for that money service business (MSB).
+  description: An unusually large cash transaction inconsistent with the customer's profile
+    or the typical ticket size for that money service business (MSB).
   product_types:
   - money_transmitter
   - currency_exchange
@@ -208,7 +216,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -223,32 +232,6 @@
   - cash_intensive_behavior
   key_terms:
   - cash transaction
-- id: 118_reptyp_msbs_eng-09
-  description: The amount of the transaction is unusually large for the typical customer or for the
-    MR/CE.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - unusually large
-  - typical customer
 - id: 118_reptyp_msbs_eng-10
   description: The transaction has no apparent purpose or no obvious economic/financial basis.
   product_types:
@@ -259,7 +242,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -285,7 +269,8 @@
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -311,7 +296,8 @@
   customer_profiles: []
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -338,7 +324,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -354,7 +341,8 @@
   key_terms:
   - sends/receives funds to/from him/herself
 - id: 118_reptyp_msbs_eng-14
-  description: There is no genuine reason for the customer to use the services of an MR/CE business.
+  description: There is no genuine reason for the customer to use the services of an MR/CE
+    business.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -363,7 +351,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -378,8 +367,8 @@
   key_terms:
   - MR/CE business
 - id: 118_reptyp_msbs_eng-15
-  description: Transfers of large sums of money to or from overseas locations with instructions for
-    payment in cash.
+  description: Transfers of large sums of money to or from overseas locations with instructions
+    for payment in cash.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -389,7 +378,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -406,8 +396,8 @@
   - overseas locations
   - cash
 - id: 118_reptyp_msbs_eng-16
-  description: Customers send or receive (regular) payments from countries which are regarded as
-    “tax havens” or non co-operating.
+  description: Customers send or receive (regular) payments from countries which are regarded
+    as “tax havens” or non co-operating.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -417,7 +407,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -443,7 +434,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -460,8 +452,8 @@
   key_terms:
   - many legal/natural persons
 - id: 118_reptyp_msbs_eng-18
-  description: One legal/natural person receives sums from many legal/natural persons (from various
-    countries).
+  description: One legal/natural person receives sums from many legal/natural persons (from
+    various countries).
   product_types:
   - money_transmitter
   - wire_transfer
@@ -470,7 +462,8 @@
   customer_profiles: []
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -488,8 +481,8 @@
   - many legal/natural persons
   - various countries
 - id: 118_reptyp_msbs_eng-19
-  description: Many legal/natural persons (who have no obvious blood/business relation) are beneficial
-    owners of transfers ordered by one legal/natural person.
+  description: Many legal/natural persons (who have no obvious blood/business relation) are
+    beneficial owners of transfers ordered by one legal/natural person.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -498,7 +491,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -515,8 +509,8 @@
   - beneficial owners
   - blood/business relation
 - id: 118_reptyp_msbs_eng-20
-  description: An under-aged person receives funds from many legal/natural persons and/or from different
-    locations.
+  description: An under-aged person receives funds from many legal/natural persons and/or
+    from different locations.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -525,7 +519,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -541,8 +536,9 @@
   key_terms:
   - under-aged person
 - id: 118_reptyp_msbs_eng-21
-  description: A customer sends/receives funds to/from counterparts located in jurisdictions which
-    are known to be exposed to risks of, i.e. drug trafficking, terrorism financing, smuggling.
+  description: A customer sends/receives funds to/from counterparts located in jurisdictions
+    which are known to be exposed to risks of, i.e. drug trafficking, terrorism financing,
+    smuggling.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -552,7 +548,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -573,7 +570,8 @@
   - terrorism financing
   - smuggling
 - id: 118_reptyp_msbs_eng-22
-  description: Transactions are accompanied by information which appears clearly false or contradictory.
+  description: Transactions are accompanied by information which appears clearly false or
+    contradictory.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -582,7 +580,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -599,8 +598,8 @@
   - 'false'
   - contradictory
 - id: 118_reptyp_msbs_eng-23
-  description: The customer is unwilling to provide routine information when requested or the information
-    provided is insufficient, false, or hard for the MR/CE to verify.
+  description: The customer is unwilling to provide routine information when requested or
+    the information provided is insufficient, false, or hard for the MR/CE to verify.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -609,7 +608,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -625,32 +625,9 @@
   key_terms:
   - routine information
   - verify
-- id: 118_reptyp_msbs_eng-24
-  description: No or limited information about the origin of funds.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - origin of funds
 - id: 118_reptyp_msbs_eng-25
-  description: The explanation for the business activity and/or the funds involved is not credible.
+  description: The explanation for the business activity and/or the funds involved is not
+    credible.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -660,7 +637,8 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -684,7 +662,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -708,7 +687,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -735,7 +715,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -759,7 +740,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -783,7 +765,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -808,7 +791,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -833,7 +817,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -857,7 +842,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -884,7 +870,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -900,8 +887,8 @@
   key_terms:
   - irregular
 - id: 118_reptyp_msbs_eng-35
-  description: The supporting documentation does not add validity to the other information provided
-    by the customer.
+  description: The supporting documentation does not add validity to the other information
+    provided by the customer.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -910,7 +897,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -925,8 +913,8 @@
   key_terms:
   - supporting documentation
 - id: 118_reptyp_msbs_eng-36
-  description: The customer is in a hurry to rush a transaction through, with promises to provide
-    the supporting information later.
+  description: The customer is in a hurry to rush a transaction through, with promises to
+    provide the supporting information later.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -935,7 +923,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -960,7 +949,8 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -985,7 +975,8 @@
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1010,7 +1001,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1026,8 +1018,8 @@
   key_terms:
   - correspondence
 - id: 118_reptyp_msbs_eng-40
-  description: The customer needs information on what has been deposited in the account before a
-    large cash withdrawal or transfer to abroad.
+  description: The customer needs information on what has been deposited in the account before
+    a large cash withdrawal or transfer to abroad.
   product_types:
   - depository
   - wire_transfer
@@ -1035,7 +1027,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1052,8 +1045,9 @@
   - large cash withdrawal
   - transfer to abroad
 - id: 118_reptyp_msbs_eng-41
-  description: Forms (e.g., remittance or KYC forms) are completed in advance and presented for signature,
-    suggesting the customer is not the true originator or is acting on behalf of an undisclosed party.
+  description: Forms (e.g., remittance or KYC forms) are completed in advance and presented
+    for signature, suggesting the customer is not the true originator or is acting on behalf
+    of an undisclosed party.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1062,7 +1056,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1076,64 +1071,9 @@
   transaction_patterns: []
   key_terms:
   - form
-- id: 118_reptyp_msbs_eng-42
-  description: The pattern of transactions has changed since the business relationship was established.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - small_business
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - business relationship
-- id: 118_reptyp_msbs_eng-43
-  description: Money transfers to high-risk jurisdictions without reasonable explanation, which are
-    not consistent with the customer’s usual foreign business dealings.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - high-risk jurisdictions
-  - foreign business dealings
 - id: 118_reptyp_msbs_eng-44
-  description: Instruction on the form of payment changes suddenly just before the transaction goes
-    through.
+  description: Instruction on the form of payment changes suddenly just before the transaction
+    goes through.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1142,7 +1082,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1157,8 +1098,8 @@
   key_terms:
   - form of payment
 - id: 118_reptyp_msbs_eng-45
-  description: The customer, without a plausible reason, repeatedly goes to agents located far from
-    his/her place of residence or work.
+  description: The customer, without a plausible reason, repeatedly goes to agents located
+    far from his/her place of residence or work.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1169,7 +1110,8 @@
   - individual_consumer
   geographic_footprints:
   - domestic_us
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1186,60 +1128,9 @@
   - agents
   - place of residence
   - work
-- id: 118_reptyp_msbs_eng-46
-  description: Funds are sent at a time not associated with salary payments.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types:
-  - payroll
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - salary payments
-- id: 118_reptyp_msbs_eng-47
-  description: Remittance sent outside migrant remittance corridors.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - migrant_worker
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - migrant remittance corridors
 - id: 118_reptyp_msbs_eng-48
-  description: Unusually large cash payments in circumstances where payment would normally be made
-    by cheque, bank draft, etc.
+  description: Unusually large cash payments in circumstances where payment would normally
+    be made by cheque, bank draft, etc.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1249,7 +1140,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1267,8 +1159,8 @@
   - cheque
   - bank draft
 - id: 118_reptyp_msbs_eng-49
-  description: Cash is in used notes and/or small denominations (possible indication that the money
-    originates from the criminal offence).
+  description: Cash is in used notes and/or small denominations (possible indication that
+    the money originates from the criminal offence).
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1278,7 +1170,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1295,32 +1188,6 @@
   key_terms:
   - used notes
   - small denominations
-- id: 118_reptyp_msbs_eng-50
-  description: Customer refuses to disclose the source of cash.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - cash_intensive_business
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - source of cash
 - id: 118_reptyp_msbs_eng-51
   description: Customer has made an unusual request for collection or delivery.
   product_types:
@@ -1331,7 +1198,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1347,11 +1215,12 @@
   - collection
   - delivery
 - id: 118_reptyp_msbs_eng-52
-  description: Banknotes brought by customer are in small denominations and dirty; stains on the
-    notes indicating that the funds have been carried or concealed, or the notes smell musty are,
-    packaged carelessly and precipitately; when the funds are counted, there is a substantial difference
-    between the actual amount and the amount indicated by the customer (over or under); detection
-    of counterfeit banknotes in the amount to be transferred or exchanged.
+  description: Banknotes brought by customer are in small denominations and dirty; stains
+    on the notes indicating that the funds have been carried or concealed, or the notes smell
+    musty are, packaged carelessly and precipitately; when the funds are counted, there is
+    a substantial difference between the actual amount and the amount indicated by the customer
+    (over or under); detection of counterfeit banknotes in the amount to be transferred or
+    exchanged.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1361,7 +1230,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1378,8 +1248,8 @@
   - banknotes
   - counterfeit banknotes
 - id: 118_reptyp_msbs_eng-53
-  description: Depositing funds in cash with further transfer of funds to other person on the same
-    or next day.
+  description: Depositing funds in cash with further transfer of funds to other person on
+    the same or next day.
   product_types:
   - depository
   - money_transmitter
@@ -1387,7 +1257,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1404,7 +1275,8 @@
   - cash
   - same or next day
 - id: 118_reptyp_msbs_eng-54
-  description: Customer’s area of residence is inconsistent with other profile details such as employment.
+  description: Customer’s area of residence is inconsistent with other profile details such
+    as employment.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1414,7 +1286,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1431,8 +1304,8 @@
   - area of residence
   - employment
 - id: 118_reptyp_msbs_eng-55
-  description: The size or frequency of the transaction(s) is not consistent with the normal activities
-    of the customer.
+  description: The size or frequency of the transaction(s) is not consistent with the normal
+    activities of the customer.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1441,7 +1314,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1469,7 +1343,8 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1496,7 +1371,8 @@
   - beneficial_owner_obscured
   geographic_footprints:
   - domestic_us
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1513,7 +1389,8 @@
   - P.O. box
   - c/o address
 - id: 118_reptyp_msbs_eng-58
-  description: The customer’s address is that of a company service provider (domiciliation service).
+  description: The customer’s address is that of a company service provider (domiciliation
+    service).
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1524,7 +1401,8 @@
   - shell_or_front_company
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1550,7 +1428,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1566,7 +1445,8 @@
   key_terms:
   - address information
 - id: 118_reptyp_msbs_eng-60
-  description: The postal address for correspondence differs from the customer’s official address.
+  description: The postal address for correspondence differs from the customer’s official
+    address.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1576,7 +1456,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1593,8 +1474,8 @@
   - postal address
   - official address
 - id: 118_reptyp_msbs_eng-61
-  description: The address stated by the customer does not exist or cannot be verified against postal/utility
-    records, suggesting use of a fictitious identity.
+  description: The address stated by the customer does not exist or cannot be verified against
+    postal/utility records, suggesting use of a fictitious identity.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1604,7 +1485,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1620,9 +1502,9 @@
   key_terms:
   - address
 - id: 118_reptyp_msbs_eng-62
-  description: A large number of persons are registered at the stated address, or there are a very
-    large number of changing occupants, or other information is available indicating that it is not
-    the real address of residence or domicile.
+  description: A large number of persons are registered at the stated address, or there are
+    a very large number of changing occupants, or other information is available indicating
+    that it is not the real address of residence or domicile.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1632,7 +1514,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1659,7 +1542,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1685,7 +1569,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1701,7 +1586,8 @@
   key_terms:
   - changes address frequently
 - id: 118_reptyp_msbs_eng-65
-  description: The customer is a business whose name and purpose do not correspond with its transactions.
+  description: The customer is a business whose name and purpose do not correspond with its
+    transactions.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1712,7 +1598,8 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1738,33 +1625,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - identification documents
-- id: 118_reptyp_msbs_eng-67
-  description: Identification documents appear to be unused.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1780,7 +1642,8 @@
   key_terms:
   - identification documents
 - id: 118_reptyp_msbs_eng-68
-  description: Identification documents are soiled making it difficult to read the necessary information.
+  description: Identification documents are soiled making it difficult to read the necessary
+    information.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1790,7 +1653,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1816,7 +1680,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1831,7 +1696,8 @@
   key_terms:
   - life style
 - id: 118_reptyp_msbs_eng-70
-  description: The customer drives very expensive cars that do not correspond to his income situation;
+  description: The customer drives very expensive cars that do not correspond to his income
+    situation;
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1842,7 +1708,8 @@
   - high_net_worth_individual
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1858,8 +1725,8 @@
   - expensive cars
   - income situation
 - id: 118_reptyp_msbs_eng-71
-  description: The customer hires or leases costly assets (e.g., real estate or cars) that do not
-    correspond to his income situation.
+  description: The customer hires or leases costly assets (e.g., real estate or cars) that
+    do not correspond to his income situation.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1871,7 +1738,8 @@
   - high_net_worth_individual
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1889,7 +1757,8 @@
   - real estate
   - cars
 - id: 118_reptyp_msbs_eng-72
-  description: The customer is unwilling provide details of his/her identity information and references.
+  description: The customer is unwilling provide details of his/her identity information and
+    references.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1898,7 +1767,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1924,7 +1794,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1950,7 +1821,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -1975,7 +1847,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2000,7 +1873,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2016,7 +1890,8 @@
   key_terms:
   - simplest way
 - id: 118_reptyp_msbs_eng-77
-  description: The customer has no connection with the area where the customer relationship is established.
+  description: The customer has no connection with the area where the customer relationship
+    is established.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -2027,7 +1902,8 @@
   - foreign_individual
   geographic_footprints:
   - domestic_us
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2042,8 +1918,8 @@
   key_terms:
   - customer relationship
 - id: 118_reptyp_msbs_eng-78
-  description: Transaction is a price-raising link in a series of transactions with no obvious reasons
-    for the choice.
+  description: Transaction is a price-raising link in a series of transactions with no obvious
+    reasons for the choice.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -2052,7 +1928,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2068,8 +1945,8 @@
   key_terms:
   - series of transactions
 - id: 118_reptyp_msbs_eng-79
-  description: The customer gives a rather detailed explanation that appears to be rehearsed concerning
-    the reasons for the customer relationship or the transaction.
+  description: The customer gives a rather detailed explanation that appears to be rehearsed
+    concerning the reasons for the customer relationship or the transaction.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -2078,7 +1955,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2103,7 +1981,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2130,7 +2009,8 @@
   - newly_established_business
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2155,7 +2035,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2172,7 +2053,8 @@
   - loan
   - lodging of equivalent security
 - id: 118_reptyp_msbs_eng-83
-  description: The customer has companies abroad that are not justified by the customer’s business.
+  description: The customer has companies abroad that are not justified by the customer’s
+    business.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -2182,7 +2064,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2198,8 +2081,8 @@
   key_terms:
   - companies abroad
 - id: 118_reptyp_msbs_eng-84
-  description: The customer explains that expensive assets are a loan from or financed by a third
-    party.
+  description: The customer explains that expensive assets are a loan from or financed by
+    a third party.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -2211,7 +2094,8 @@
   - high_net_worth_individual
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2229,7 +2113,8 @@
   - expensive assets
   - third party
 - id: 118_reptyp_msbs_eng-85
-  description: The customer uses a payment card from a country which is not his country of residence.
+  description: The customer uses a payment card from a country which is not his country of
+    residence.
   product_types:
   - credit_card
   - depository
@@ -2238,7 +2123,8 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2263,7 +2149,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2280,8 +2167,8 @@
   - low denomination notes
   - higher denominations
 - id: 118_reptyp_msbs_eng-87
-  description: Exchange of large amounts or frequent exchanges that are not related to the customer’s
-    business.
+  description: Exchange of large amounts or frequent exchanges that are not related to the
+    customer’s business.
   product_types:
   - currency_exchange
   - depository
@@ -2289,7 +2176,8 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2306,16 +2194,17 @@
   - frequent exchanges
   - customer’s business
 - id: 118_reptyp_msbs_eng-88
-  description: Structuring of large amounts — the customer breaks a single large transaction into
-    multiple smaller transfers below reporting thresholds, often across short time windows or multiple
-    branches.
+  description: Structuring of large amounts — the customer breaks a single large transaction
+    into multiple smaller transfers below reporting thresholds, often across short time windows
+    or multiple branches.
   product_types:
   - currency_exchange
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2332,14 +2221,15 @@
   - large amounts
 - id: 118_reptyp_msbs_eng-89
   description: Repeated requests from an exchange office for foreign exchange purchasing-selling
-    transactions in the amounts slightly less than the transaction limit for identification in a
-    short period of time.
+    transactions in the amounts slightly less than the transaction limit for identification
+    in a short period of time.
   product_types:
   - currency_exchange
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2364,7 +2254,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2389,7 +2280,8 @@
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2405,7 +2297,8 @@
   key_terms:
   - destination
 - id: 118_reptyp_msbs_eng-92
-  description: The customer buys currency from an unusual location in comparison to his/her own location.
+  description: The customer buys currency from an unusual location in comparison to his/her
+    own location.
   product_types:
   - currency_exchange
   - depository
@@ -2414,7 +2307,8 @@
   - foreign_individual
   geographic_footprints:
   - domestic_us
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2437,7 +2331,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2451,32 +2346,10 @@
   transaction_patterns: []
   key_terms:
   - amount being exchanged
-- id: 118_reptyp_msbs_eng-94
-  description: The customer looks around all the time and does not watch the counting of money.
-  product_types:
-  - currency_exchange
-  - depository
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - counting of money
 - id: 118_reptyp_msbs_eng-95
   description: The customer accepts a poor exchange rate or unusually high fees without negotiation,
-    suggesting indifference to economics consistent with laundering rather than legitimate value-transfer.
+    suggesting indifference to economics consistent with laundering rather than legitimate
+    value-transfer.
   product_types:
   - currency_exchange
   - depository
@@ -2484,7 +2357,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2507,7 +2381,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2533,7 +2408,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2557,7 +2433,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2573,28 +2450,6 @@
   key_terms:
   - cash
   - other currencies
-- id: 118_reptyp_msbs_eng-99
-  description: Exchange of primarily one type of currency.
-  product_types:
-  - currency_exchange
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - one type of currency
 - id: 118_reptyp_msbs_eng-100
   description: The amounts exchanged are significantly higher than usual.
   product_types:
@@ -2603,7 +2458,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2617,28 +2473,6 @@
   transaction_patterns: []
   key_terms:
   - significantly higher
-- id: 118_reptyp_msbs_eng-101
-  description: There is no link between the amount of money exchanged and holiday periods.
-  product_types:
-  - currency_exchange
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - holiday periods
 - id: 118_reptyp_msbs_eng-102
   description: High frequency of currency exchange transactions over a period of time.
   product_types:
@@ -2647,7 +2481,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2670,7 +2505,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2684,32 +2520,6 @@
   transaction_patterns: []
   key_terms:
   - currency exchange office
-- id: 118_reptyp_msbs_eng-104
-  description: Requests to exchange large amounts of foreign currency which is not convertible (or
-    not frequently used) another kind of foreign currency.
-  product_types:
-  - currency_exchange
-  - depository
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - non-convertible currency
 - id: 118_reptyp_msbs_eng-105
   description: Transferring funds without any apparent economic reason.
   product_types:
@@ -2719,7 +2529,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2734,35 +2545,6 @@
   - rapid_fund_movement
   key_terms:
   - economic reason
-- id: 118_reptyp_msbs_eng-106
-  description: Unusual large cash payments in circumstances where payment would normally be made
-    by cheque, banker’s draft, etc.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - cash_intensive_business
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - cash payments
-  - cheque
-  - banker’s draft
 - id: 118_reptyp_msbs_eng-107
   description: Transfers of funds without underlying transactions.
   product_types:
@@ -2772,7 +2554,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2788,7 +2571,8 @@
   key_terms:
   - underlying transactions
 - id: 118_reptyp_msbs_eng-109
-  description: Transfers paid by large cash amounts in different sums in a short period of time.
+  description: Transfers paid by large cash amounts in different sums in a short period of
+    time.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -2797,7 +2581,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2813,33 +2598,6 @@
   - cash_intensive_behavior
   key_terms:
   - large cash amounts
-- id: 118_reptyp_msbs_eng-110
-  description: Personal remittances sent to jurisdictions that do not have an apparent family or
-    business link.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - family or business link
 - id: 118_reptyp_msbs_eng-111
   description: Remittance made outside migrant remittance corridors (e.g., Asian foreign domestic
     remits funds to South America).
@@ -2852,7 +2610,8 @@
   - migrant_worker
   geographic_footprints:
   - south_america
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2878,7 +2637,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2892,86 +2652,9 @@
   transaction_patterns: []
   key_terms:
   - salary payments
-- id: 118_reptyp_msbs_eng-113
-  description: The customer seems only after the counting to know which amount is being transferred.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - counting
-- id: 118_reptyp_msbs_eng-114
-  description: The customer shows no interest in the transfer costs.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - transfer costs
-- id: 118_reptyp_msbs_eng-115
-  description: The customer has no relation to the country where he/she sends/receives the money
-    and cannot sufficiently explain why money is sent there/received from there.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - foreign_individual
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - country
-  - sent there
-  - received from there
 - id: 118_reptyp_msbs_eng-116
-  description: The customer has a note with information about payee but is hesitating if asked whether
-    to mention the purpose of payment.
+  description: The customer has a note with information about payee but is hesitating if asked
+    whether to mention the purpose of payment.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -2979,7 +2662,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -2995,8 +2679,8 @@
   - payee
   - purpose of payment
 - id: 118_reptyp_msbs_eng-117
-  description: Large or repeated transfers between the account of a legal person and a private account,
-    especially if the legal person is not a resident.
+  description: Large or repeated transfers between the account of a legal person and a private
+    account, especially if the legal person is not a resident.
   product_types:
   - depository
   - wire_transfer
@@ -3005,7 +2689,8 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3034,7 +2719,8 @@
   - shell_or_front_company
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3050,59 +2736,10 @@
   - shell_company_usage
   key_terms:
   - service provider address
-- id: 118_reptyp_msbs_eng-119
-  description: Large or frequent money transfers inconsistent with the customer's stated occupation,
-    declared income, or historical transaction profile.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - frequent transfers
-- id: 118_reptyp_msbs_eng-120
-  description: Frequent transfer of value that is not related to the customer’s business.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - small_business
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - customer’s business
 - id: 118_reptyp_msbs_eng-121
-  description: Use of groups of people (smurfs/money mules) to send money — multiple senders coordinate
-    transfers to the same beneficiary or related beneficiaries to evade thresholds and identity scrutiny.
+  description: Use of groups of people (smurfs/money mules) to send money — multiple senders
+    coordinate transfers to the same beneficiary or related beneficiaries to evade thresholds
+    and identity scrutiny.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3111,7 +2748,8 @@
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3134,7 +2772,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3150,8 +2789,8 @@
   key_terms:
   - different money remittance businesses
 - id: 118_reptyp_msbs_eng-123
-  description: Amounts sent are higher than usual for the customer or for the MSB's typical ticket
-    size, without a corresponding change in declared circumstances.
+  description: Amounts sent are higher than usual for the customer or for the MSB's typical
+    ticket size, without a corresponding change in declared circumstances.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3159,7 +2798,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3183,7 +2823,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3198,34 +2839,9 @@
   - third_party_payments
   key_terms:
   - beneficial owner
-- id: 118_reptyp_msbs_eng-125
-  description: The operations are irregular in timing, amount, or counterparty — the customer's activity
-    lacks the steady cadence consistent with genuine remittance for family support, payroll, or trade.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - irregular
 - id: 118_reptyp_msbs_eng-126
-  description: Receiving money from different parts of the world (developed countries) from different
-    people.
+  description: Receiving money from different parts of the world (developed countries) from
+    different people.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3236,7 +2852,8 @@
   geographic_footprints:
   - uk_eu
   - north_america
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3251,30 +2868,6 @@
   - unusual_international_wires
   key_terms:
   - different parts of the world
-- id: 118_reptyp_msbs_eng-127
-  description: Money is received during short periods of time.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - short periods of time
 - id: 118_reptyp_msbs_eng-128
   description: Money is received from different money remittance companies.
   product_types:
@@ -3283,7 +2876,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3299,8 +2893,8 @@
   key_terms:
   - money remittance companies
 - id: 118_reptyp_msbs_eng-129
-  description: Money is withdrawn in cash immediately upon receipt of an incoming transfer, breaking
-    the audit trail in a manner consistent with layering.
+  description: Money is withdrawn in cash immediately upon receipt of an incoming transfer,
+    breaking the audit trail in a manner consistent with layering.
   product_types:
   - depository
   - money_transmitter
@@ -3308,7 +2902,8 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3332,7 +2927,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3355,7 +2951,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3379,7 +2976,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3396,7 +2994,8 @@
   - false identification
   - fictitious names
 - id: 118_reptyp_msbs_eng-133
-  description: Frequent transactions or purchase of negotiable instruments under the reporting obligation.
+  description: Frequent transactions or purchase of negotiable instruments under the reporting
+    obligation.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -3404,7 +3003,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3430,7 +3030,8 @@
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3447,16 +3048,17 @@
   - agent
   - money remitter
 - id: 118_reptyp_msbs_eng-135
-  description: The agent makes false or fabricated remittance operations — recording transfers that
-    did not actually take place or altering originator/beneficiary details to disguise the true flow
-    of funds.
+  description: The agent makes false or fabricated remittance operations — recording transfers
+    that did not actually take place or altering originator/beneficiary details to disguise
+    the true flow of funds.
   product_types:
   - money_transmitter
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3471,34 +3073,10 @@
   - identity_misrepresentation
   key_terms:
   - false remittance operations
-- id: 118_reptyp_msbs_eng-136
-  description: Use false identity documents to send money.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: high
-  category: fraud_nexus
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - false identity documents
 - id: 118_reptyp_msbs_eng-137
-  description: The customer or agent conducts too many operations in a short period (frequency well
-    above the customer's profile or the agent's normal book), suggesting layering or smurfing.
+  description: The customer or agent conducts too many operations in a short period (frequency
+    well above the customer's profile or the agent's normal book), suggesting layering or
+    smurfing.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3506,7 +3084,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3521,31 +3100,6 @@
   - rapid_fund_movement
   key_terms:
   - too many operations
-- id: 118_reptyp_msbs_eng-138
-  description: Sending money to certain countries/cities.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: medium
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - countries/cities
 - id: 118_reptyp_msbs_eng-140
   description: Large volume of business in large person-to-person transactions.
   product_types:
@@ -3555,7 +3109,8 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3571,15 +3126,16 @@
   key_terms:
   - person-to-person transactions
 - id: 118_reptyp_msbs_eng-141
-  description: Unusual ratio of sent to received transactions (the direction of the flow of the suspicious
-    ratio imbalance being determined by the context).
+  description: Unusual ratio of sent to received transactions (the direction of the flow of
+    the suspicious ratio imbalance being determined by the context).
   product_types:
   - money_transmitter
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3595,8 +3151,8 @@
   key_terms:
   - sent to received transactions
 - id: 118_reptyp_msbs_eng-142
-  description: High ratio of larger than normal transactions (the complicit operator attracts the
-    larger-transacting criminal customers).
+  description: High ratio of larger than normal transactions (the complicit operator attracts
+    the larger-transacting criminal customers).
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3605,7 +3161,8 @@
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3620,30 +3177,6 @@
   - rapid_fund_movement
   key_terms:
   - larger than normal transactions
-- id: 118_reptyp_msbs_eng-143
-  description: Seasonal pattern of business that is different from other similar local businesses.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  - currency_exchange
-  industry_types: []
-  customer_profiles:
-  - small_business
-  geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
-  regulator: FATF
-  regulator_jurisdiction: FATF
-  issuing_agencies:
-  - FATF
-  - MONEYVAL
-  issued_date: 2010-06
-  risk_level: low
-  category: layering
-  source_url: https://rm.coe.int/fatf-report-money-laundering-through-money-remittance-and-currency-exc/16807150ad
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - seasonal pattern
 - id: 118_reptyp_msbs_eng-144
   description: High percentage of customers that are high dollar or value customers.
   product_types:
@@ -3654,7 +3187,8 @@
   customer_profiles:
   - high_net_worth_individual
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3670,8 +3204,9 @@
   - high dollar
   - value customers
 - id: 118_reptyp_msbs_eng-145
-  description: Agent has a high percentage of high-risk customers — disproportionate share of customers
-    tied to high-risk jurisdictions, PEPs, cash-intensive businesses, or adverse-media subjects.
+  description: Agent has a high percentage of high-risk customers — disproportionate share
+    of customers tied to high-risk jurisdictions, PEPs, cash-intensive businesses, or adverse-media
+    subjects.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3680,7 +3215,8 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3695,8 +3231,9 @@
   key_terms:
   - high-risk customers
 - id: 118_reptyp_msbs_eng-146
-  description: High percentage of criminal activity corridor business, where the location is susceptible
-    to involvement in known criminal activity, such as drugs, prostitution, certain fraud, etc..
+  description: High percentage of criminal activity corridor business, where the location
+    is susceptible to involvement in known criminal activity, such as drugs, prostitution,
+    certain fraud, etc..
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3705,7 +3242,8 @@
   customer_profiles: []
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3732,7 +3270,8 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3747,8 +3286,8 @@
   key_terms:
   - high-risk customers
 - id: 118_reptyp_msbs_eng-148
-  description: High volume of large or suspicious transactions in comparison to other MR/CE service
-    providers in the same area.
+  description: High volume of large or suspicious transactions in comparison to other MR/CE
+    service providers in the same area.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3758,7 +3297,8 @@
   - money_services_business
   geographic_footprints:
   - domestic_us
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3775,15 +3315,17 @@
   - suspicious transactions
   - same area
 - id: 118_reptyp_msbs_eng-149
-  description: Turnover of the MR service provider, after changes in the management structure (with
-    no development of services) exceeds remarkably the flows that were recorded before those changes.
+  description: Turnover of the MR service provider, after changes in the management structure
+    (with no development of services) exceeds remarkably the flows that were recorded before
+    those changes.
   product_types:
   - money_transmitter
   industry_types: []
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3808,7 +3350,8 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3824,8 +3367,8 @@
   key_terms:
   - business hours
 - id: 118_reptyp_msbs_eng-151
-  description: Common acceptance of false identification that permits structuring by customers that
-    leave funds in the system for more than the average time before pick-up.
+  description: Common acceptance of false identification that permits structuring by customers
+    that leave funds in the system for more than the average time before pick-up.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3833,7 +3376,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3851,8 +3395,8 @@
   - false identification
   - pick-up
 - id: 118_reptyp_msbs_eng-152
-  description: Multiple transmissions to or receipts from a single customer in a high criminal activity
-    corridor.
+  description: Multiple transmissions to or receipts from a single customer in a high criminal
+    activity corridor.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3861,7 +3405,8 @@
   - individual_consumer
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3878,11 +3423,11 @@
   key_terms:
   - high criminal activity corridor
 - id: 118_reptyp_msbs_eng-153
-  description: Large volume of transactions for the same customer with multiple instances of using
-    different name spellings, false addresses or identification that “evolves,” i.e., some parts
-    of the identification change, while other parts remains the same, such as a person whose last
-    name changes while his first name, date of birth, identification number and address remain the
-    same.
+  description: Large volume of transactions for the same customer with multiple instances
+    of using different name spellings, false addresses or identification that “evolves,” i.e.,
+    some parts of the identification change, while other parts remains the same, such as a
+    person whose last name changes while his first name, date of birth, identification number
+    and address remain the same.
   product_types:
   - money_transmitter
   - wire_transfer
@@ -3890,7 +3435,8 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:
@@ -3908,15 +3454,16 @@
   - false addresses
   - identification that evolves
 - id: 118_reptyp_msbs_eng-154
-  description: Transmission of funds by the same customer on the same day to several money transmitter
-    locations to purportedly same or different recipients.
+  description: Transmission of funds by the same customer on the same day to several money
+    transmitter locations to purportedly same or different recipients.
   product_types:
   - money_transmitter
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange Providers
+  regulatory_source: FATF Report Money Laundering through Remittance Currency and Exchange
+    Providers
   regulator: FATF
   regulator_jurisdiction: FATF
   issuing_agencies:

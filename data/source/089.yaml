@@ -1,7 +1,6 @@
 - id: 089-01
-  description: Transactions related to payments for goods on the Common High Priority
-    list, from a company incorporated after 24 February 2022 and based in known diversionary
-    destinations.
+  description: Transactions related to payments for goods on the Common High Priority list,
+    from a company incorporated after 24 February 2022 and based in known diversionary destinations.
   product_types:
   - wire_transfer
   - trade_finance
@@ -37,8 +36,8 @@
   - diversionary destinations
   - sanctions evasion
 - id: 089-02
-  description: A customer who lacks or refuses to provide details on banks, shippers,
-    or third parties, including about end users, intended end-use, or company ownership.
+  description: A customer who lacks or refuses to provide details on banks, shippers, or third
+    parties, including about end users, intended end-use, or company ownership.
   product_types:
   - trade_finance
   - wire_transfer
@@ -71,9 +70,8 @@
   - intended end-use
   - company ownership
 - id: 089-03
-  description: Transactions involving smaller value payments, all from the same end
-    user’s foreign bank account, to multiple, similar suppliers of Common High Priority
-    list items.
+  description: Transactions involving smaller value payments, all from the same end user’s
+    foreign bank account, to multiple, similar suppliers of Common High Priority list items.
   product_types:
   - wire_transfer
   - trade_finance
@@ -105,8 +103,8 @@
   - Common High Priority list
   - multiple suppliers
 - id: 089-04
-  description: A customer that significantly overpays for a Common High Priority list
-    item, compared to known market prices.
+  description: A customer that significantly overpays for a Common High Priority list item,
+    compared to known market prices.
   product_types:
   - wire_transfer
   - trade_finance
@@ -135,9 +133,9 @@
   - market prices
   - Common High Priority list item
 - id: 089-05
-  description: Purchases under a letter of credit that are consigned to the issuing
-    bank, not to the actual end user. In addition, supporting documents, such as a
-    commercial invoice, do not list the actual end-user.
+  description: Purchases under a letter of credit that are consigned to the issuing bank,
+    not to the actual end user. In addition, supporting documents, such as a commercial invoice,
+    do not list the actual end-user.
   product_types:
   - trade_finance
   - wire_transfer
@@ -167,8 +165,8 @@
   - commercial invoice
   - end user
 - id: 089-06
-  description: Transactions involving entities with little to no web presence, such
-    as a website or a domain-based email account.
+  description: Transactions involving entities with little to no web presence, such as a website
+    or a domain-based email account.
   product_types:
   - wire_transfer
   - trade_finance
@@ -199,8 +197,8 @@
   - web presence
   - domain-based email account
 - id: 089-07
-  description: Transactions involving customers with phone numbers with country codes
-    that do not match the destination country.
+  description: Transactions involving customers with phone numbers with country codes that
+    do not match the destination country.
   product_types:
   - wire_transfer
   - trade_finance
@@ -229,8 +227,8 @@
   - country codes
   - destination country
 - id: 089-08
-  description: The item or service (commodity, software, service or technology) does
-    not fit the purchaser’s line of business.
+  description: The item or service (commodity, software, service or technology) does not fit
+    the purchaser’s line of business.
   product_types:
   - trade_finance
   - wire_transfer
@@ -261,8 +259,8 @@
   - software
   - technology
 - id: 089-09
-  description: The customer’s name or its address is similar to one of the parties
-    on the OFSI consolidated list.
+  description: The customer's name or address is similar to one of the parties on the UK Office
+    of Financial Sanctions Implementation (OFSI) consolidated list.
   product_types:
   - wire_transfer
   - trade_finance
@@ -295,10 +293,9 @@
   - name similarity
   - address similarity
 - id: 089-10
-  description: Transactions involve a purported civil end-user, but research indicates
-    customers with counterparties with connections with the military, such as an address
-    that is a military facility or is co-located with military facilities in a country
-    of concern.
+  description: Transactions involve a purported civil end-user, but research indicates customers
+    with counterparties with connections with the military, such as an address that is a military
+    facility or is co-located with military facilities in a country of concern.
   product_types:
   - trade_finance
   - wire_transfer
@@ -331,8 +328,8 @@
   - military facility
   - country of concern
 - id: 089-11
-  description: Transactions involving companies that are physically co-located, or
-    have shared ownership, with an entity on the OFSI consolidated list.
+  description: Transactions involving companies that are physically co-located, or have shared
+    ownership, with an entity on the OFSI consolidated list.
   product_types:
   - wire_transfer
   - trade_finance
@@ -367,8 +364,8 @@
   - co-located
   - OFSI consolidated list
 - id: 089-12
-  description: Transactions that use open accounts/open lines of credit when the payment
-    services are conducted in conjunction with known diversionary destinations.
+  description: Transactions that use open accounts/open lines of credit when the payment services
+    are conducted in conjunction with known diversionary destinations.
   product_types:
   - trade_finance
   - wire_transfer
@@ -401,9 +398,8 @@
   - open lines of credit
   - diversionary destinations
 - id: 089-13
-  description: Transactions involving a last-minute change in payment routing that
-    was previously scheduled from a country of concern, but now routed through a different
-    country or company.
+  description: Transactions involving a last-minute change in payment routing that was previously
+    scheduled from a country of concern, but now routed through a different country or company.
   product_types:
   - wire_transfer
   - trade_finance
@@ -437,8 +433,8 @@
   - country of concern
   - last-minute change
 - id: 089-14
-  description: Transactions involving payments being made from entities located at
-    known transhipment points or involve atypical shipping routes to reach a destination.
+  description: Transactions involving payments being made from entities located at known transhipment
+    points or involve atypical shipping routes to reach a destination.
   product_types:
   - wire_transfer
   - trade_finance

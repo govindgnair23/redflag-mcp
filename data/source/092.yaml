@@ -49,34 +49,10 @@
   - Russian DP
   - obligation
   - payments
-- id: 092-03
-  description: Low profile legal services providers who could be acting on behalf
-    of DPs to facilitate breaches of financial sanctions.
-  product_types: []
-  industry_types:
-  - legal_accounting
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Legal Services Threat Assessment
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: low
-  category: sanctions_evasion
-  source_url: https://assets.publishing.service.gov.uk/media/6835e2f4214f7f554cf6932a/OFSI_Legal_Services_Threat_Assessment.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - low profile
-  - DPs
-  - financial sanctions
 - id: 092-04
   description: Trusts where the identity of individuals in the trust structure, including
-    the settlor and/or beneficiaries, are unclear or not provided to counterparties
-    during know-your-customer (KYC) checks.
+    the settlor and/or beneficiaries, are unclear or not provided to counterparties during
+    know-your-customer (KYC) checks.
   product_types:
   - private_banking
   - depository
@@ -105,9 +81,9 @@
   - beneficiaries
   - KYC
 - id: 092-05
-  description: Complex corporate structures, including trusts, where the source of
-    wealth of the individuals involved is unclear and the same individuals have discernible
-    links to Russian DPs (including family members or associates).
+  description: Complex corporate structures, including trusts, where the source of wealth
+    of the individuals involved is unclear and the same individuals have discernible links
+    to Russian DPs (including family members or associates).
   product_types:
   - private_banking
   - depository
@@ -138,8 +114,8 @@
   - Russian DPs
 - id: 092-06
   description: Non-designated individuals with discernible links to Russian DPs, including
-    family members and associates, dealing with assets which could be subject to an
-    asset freeze relating to the same DP.
+    family members and associates, dealing with assets which could be subject to an asset
+    freeze relating to the same DP.
   product_types:
   - depository
   - wire_transfer
@@ -165,10 +141,10 @@
   - asset freeze
   - Russian DP
 - id: 092-07
-  description: Extensive links between a non-designated individual and a Russian DP
-    and/or their family members without a clear business purpose. This includes current
-    or former corporate appointments (e.g., director or company secretary) at multiple
-    companies linked, directly or indirectly, to a Russian DP.
+  description: Extensive links between a non-designated individual and a Russian DP and/or
+    their family members without a clear business purpose. This includes current or former
+    corporate appointments (e.g., director or company secretary) at multiple companies linked,
+    directly or indirectly, to a Russian DP.
   product_types: []
   industry_types: []
   customer_profiles:
@@ -193,9 +169,9 @@
   - company secretary
   - Russian DP
 - id: 092-08
-  description: Non-designated individuals serving as shareholders at entities linked,
-    directly or indirectly, to a Russian DP without a clear business purpose. In some
-    cases, these individuals could be nominee shareholders.
+  description: Non-designated individuals serving as shareholders at entities linked, directly
+    or indirectly, to a Russian DP without a clear business purpose. In some cases, these
+    individuals could be nominee shareholders.
   product_types: []
   industry_types: []
   customer_profiles:
@@ -250,9 +226,9 @@
   - complex corporate structures
   - trusts
 - id: 092-10
-  description: Counterparties or clients claiming their relationship with a Russian
-    DP ended following the DP’s designation without providing information to counterparties
-    to substantiate this.
+  description: Counterparties or clients claiming their relationship with a Russian DP ended
+    following the DP’s designation without providing information to counterparties to substantiate
+    this.
   product_types: []
   industry_types: []
   customer_profiles:
@@ -277,8 +253,8 @@
   - substantiate
 - id: 092-11
   description: A potential PCWR who may be seeking to hide the extent of their connections
-    to Russia, including through the use of citizenship by investment schemes, in
-    order to receive trust services from a UK TCSP.
+    to Russia, including through the use of citizenship by investment schemes, in order to
+    receive trust services from a UK TCSP.
   product_types:
   - private_banking
   industry_types:
@@ -307,8 +283,8 @@
   - trust services
   - TCSP
 - id: 092-12
-  description: TCSPs claiming their client is not a PCWR without conducting robust
-    due diligence or providing information to counterparties to substantiate this.
+  description: TCSPs claiming their client is not a PCWR without conducting robust due diligence
+    or providing information to counterparties to substantiate this.
   product_types: []
   industry_types:
   - legal_accounting
@@ -333,9 +309,8 @@
   - due diligence
   - TCSPs
 - id: 092-13
-  description: Clients, including Russian DPs, PCWR or related individuals, pressuring
-    UK legal services providers into non-compliance, including by threatening legal
-    action.
+  description: Clients, including Russian DPs, PCWR or related individuals, pressuring UK
+    legal services providers into non-compliance, including by threatening legal action.
   product_types: []
   industry_types:
   - legal_accounting
@@ -360,9 +335,9 @@
   - Russian DPs
   - PCWR
 - id: 092-14
-  description: Clients, including Russian DPs, PCWR or related individuals, refusing
-    to provide TCSPs or other legal services providers with information upon request,
-    including signed and dated trust deeds.
+  description: Clients, including Russian DPs, PCWR or related individuals, refusing to provide
+    TCSPs or other legal services providers with information upon request, including signed
+    and dated trust deeds.
   product_types: []
   industry_types:
   - legal_accounting
@@ -388,10 +363,10 @@
   - information upon request
   - TCSPs
 - id: 092-15
-  description: Reporting failures by DP clients under licence reporting requirements,
-    including not making a report within 14 days of receiving payment under a general
-    licence and not providing relevant documentation which sets out the obligation
-    under which the payment has been made.
+  description: Reporting failures by DP clients under licence reporting requirements, including
+    not making a report within 14 days of receiving payment under a general licence and not
+    providing relevant documentation which sets out the obligation under which the payment
+    has been made.
   product_types:
   - depository
   - wire_transfer
@@ -417,8 +392,8 @@
   - general licence
   - reporting requirements
 - id: 092-16
-  description: Delays in freezing funds belonging to DP clients and by transferring
-    frozen funds into accounts other than those specified in specific OFSI licences.
+  description: Delays in freezing funds belonging to DP clients and by transferring frozen
+    funds into accounts other than those specified in specific OFSI licences.
   product_types:
   - depository
   - wire_transfer
@@ -446,9 +421,9 @@
   - specific OFSI licences
   - DP clients
 - id: 092-17
-  description: Complex corporate structures, including trusts, linked to Russian DPs
-    and their family members have obfuscated the ownership and control of assets which
-    could be frozen under UK financial sanctions.
+  description: Complex corporate structures, including trusts, linked to Russian DPs and their
+    family members have obfuscated the ownership and control of assets which could be frozen
+    under UK financial sanctions.
   product_types:
   - depository
   - private_banking
@@ -479,8 +454,8 @@
   - Russian DPs
   - asset freeze
 - id: 092-18
-  description: Russian DPs have transferred the ownership and control of assets to
-    non-designated individuals and entities.
+  description: Russian DPs have transferred the ownership and control of assets to non-designated
+    individuals and entities.
   product_types:
   - depository
   - private_banking
@@ -509,10 +484,9 @@
   - non-designated individuals
   - Russian DPs
 - id: 092-19
-  description: Russian DPs removing themselves from complex corporate structures,
-    including trusts, following their designation, thereby creating uncertainty over
-    whether assets held through the same structures should be frozen under UK financial
-    sanctions.
+  description: Russian DPs removing themselves from complex corporate structures, including
+    trusts, following their designation, thereby creating uncertainty over whether assets
+    held through the same structures should be frozen under UK financial sanctions.
   product_types:
   - depository
   - private_banking
@@ -542,37 +516,9 @@
   - complex corporate structures
   - trusts
   - frozen
-- id: 092-20
-  description: Attempts at transferring the same assets to non-designated individuals
-    and entities.
-  product_types:
-  - depository
-  - private_banking
-  - securities
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Legal Services Threat Assessment
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://assets.publishing.service.gov.uk/media/6835e2f4214f7f554cf6932a/OFSI_Legal_Services_Threat_Assessment.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - third_party_payments
-  - shell_company_usage
-  key_terms:
-  - transferring assets
-  - non-designated individuals
 - id: 092-21
-  description: Designated Russian businesses have sought to transfer or otherwise
-    dispose of their historical business interests in the UK.
+  description: Designated Russian businesses have sought to transfer or otherwise dispose
+    of their historical business interests in the UK.
   product_types:
   - depository
   - wire_transfer
@@ -600,32 +546,6 @@
   - historical business interests
   - UK
   - designated Russian businesses
-- id: 092-22
-  description: Russian DPs and their enablers obfuscating the source of their funds
-    through money laundering.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - russia
-  regulatory_source: Legal Services Threat Assessment
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/media/6835e2f4214f7f554cf6932a/OFSI_Legal_Services_Threat_Assessment.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - source of their funds
-  - money laundering
 - id: 092-23
   description: Any indications of high value cryptoasset to cash (or vice versa) transfers.
   product_types:

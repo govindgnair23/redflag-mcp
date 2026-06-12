@@ -49,10 +49,9 @@
   key_terms:
   - online presence
 - id: 080-03
-  description: Few or no payments to HMRC (Her Majesty's Revenue and Customs) from
-    a UK-registered company purportedly conducting substantial business activity,
-    suggesting the entity is a shell used for laundering rather than a genuine trading
-    business.
+  description: Few or no payments to HMRC (Her Majesty's Revenue and Customs) from a UK-registered
+    company purportedly conducting substantial business activity, suggesting the entity is
+    a shell used for laundering rather than a genuine trading business.
   product_types:
   - depository
   industry_types:
@@ -75,9 +74,9 @@
   key_terms:
   - HMRC
 - id: 080-04
-  description: Receipts of large payments from recruitment agencies from the opening
-    of the account, far in excess of the anticipated turnover or not consistent with
-    the declared business type.
+  description: Receipts of large payments from recruitment agencies from the opening of the
+    account, far in excess of the anticipated turnover or not consistent with the declared
+    business type.
   product_types:
   - depository
   - wire_transfer
@@ -104,9 +103,9 @@
   - anticipated turnover
   - declared business type
 - id: 080-05
-  description: Profits from the fraud are often extracted internationally by the OCGs,
-    disguised as fees, admin expenses and other purchases, often through companies
-    and bank accounts also based abroad.
+  description: Profits from the underlying fraud are extracted internationally by Organised
+    Crime Groups (OCGs), disguised as fees, administration expenses, or unrelated purchases,
+    often routed through companies and bank accounts based abroad.
   product_types:
   - depository
   - wire_transfer
@@ -137,9 +136,9 @@
   - purchases
   - OCGs
 - id: 080-06
-  description: Links to/use of nonbank Payment Service Providers (NBPSPs) that use
-    FinTech/Blockchain technology and Alternative Payment Systems (APS) to provide
-    financial services without a traditional banking license.
+  description: Links to, or use of, non-bank Payment Service Providers (NBPSPs) that use FinTech/Blockchain
+    technology and Alternative Payment Systems (APS) to provide financial services without
+    a traditional banking licence.
   product_types:
   - money_transmitter
   - crypto
@@ -168,8 +167,9 @@
   - APS
   - traditional banking license
 - id: 080-07
-  description: The OCGs often uses stolen or fraudulently purchased identities for
-    the MUCs directorships, to avoid personal association, including foreign nationals.
+  description: Organised Crime Groups (OCGs) use stolen or fraudulently purchased identities
+    (including foreign nationals' identities) to staff the directorships of Money Mule Companies
+    (MUCs), in order to avoid personal association with the laundering scheme.
   product_types:
   - depository
   industry_types:
@@ -197,120 +197,9 @@
   - fraudulently purchased identities
   - directorships
   - foreign nationals
-- id: 080-08
-  description: The OCG often uses stolen or fraudulently purchased identities for
-    the MUCs directorships, to avoid personal association, including foreign nationals.
-  product_types:
-  - depository
-  industry_types:
-  - payroll
-  customer_profiles:
-  - beneficial_owner_obscured
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: UKFIU SARs in Action, Issue 31
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: high
-  category: shell_company
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/749-sars-in-action-issue-31/file
-  typology_family:
-  - shell_company
-  - fraud_proceeds
-  transaction_patterns:
-  - identity_misrepresentation
-  - shell_company_usage
-  key_terms:
-  - stolen identities
-  - fraudulently purchased identities
-  - directorships
-  - foreign nationals
-- id: 080-14
-  description: The financial flows of OIC are particularly complex, in large part
-    due to the widespread use of Informal Value Transfer Systems (IVTS), particularly
-    in the form of Hawala banking.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  industry_types:
-  - money_services_business
-  customer_profiles:
-  - money_services_business
-  geographic_footprints:
-  - middle_east
-  - south_asia
-  regulatory_source: UKFIU SARs in Action, Issue 31
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: medium
-  category: human_smuggling
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/749-sars-in-action-issue-31/file
-  typology_family:
-  - human_smuggling_proceeds
-  transaction_patterns:
-  - informal_value_transfer
-  key_terms:
-  - IVTS
-  - Hawala
-  - hawala banking
-- id: 080-15
-  description: The broken audit trails that IVTS generate make the money flows more
-    difficult to trace.
-  product_types:
-  - money_transmitter
-  - wire_transfer
-  industry_types:
-  - money_services_business
-  customer_profiles:
-  - money_services_business
-  geographic_footprints:
-  - middle_east
-  - south_asia
-  regulatory_source: UKFIU SARs in Action, Issue 31
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: low
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/749-sars-in-action-issue-31/file
-  typology_family:
-  - human_smuggling_proceeds
-  transaction_patterns:
-  - informal_value_transfer
-  key_terms:
-  - IVTS
-  - audit trails
-- id: 080-16
-  description: A subject’s account was identified due to an alert being triggered
-    by the reporter’s transaction monitoring system.
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: UKFIU SARs in Action, Issue 31
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: low
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/749-sars-in-action-issue-31/file
-  typology_family: []
-  transaction_patterns:
-  - pass_through_account_activity
-  key_terms:
-  - transaction monitoring system
-  - alert
 - id: 080-17
-  description: The account was being used to deposit cash in order to transfer funds
-    to third parties, which was indicative of money muling.
+  description: An account is used to deposit cash and immediately transfer the funds out to
+    third parties, a pattern indicative of money muling.
   product_types:
   - depository
   - wire_transfer
@@ -337,38 +226,9 @@
   - cash
   - third parties
   - money muling
-- id: 080-18
-  description: The subject had previously been the subject of a SAR, in which the
-    subject had been complicit in layering funds to a prisoner.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints:
-  - domestic_us
-  regulatory_source: UKFIU SARs in Action, Issue 31
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: medium
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/749-sars-in-action-issue-31/file
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - pass_through_account_activity
-  - rapid_fund_movement
-  key_terms:
-  - SAR
-  - layering
-  - prisoner
 - id: 080-19
-  description: Multiple accounts held by the business frequently received high value
-    payments that were transferred in and out of the accounts, indicating potential
-    money laundering.
+  description: Multiple accounts held by the business frequently received high value payments
+    that were transferred in and out of the accounts, indicating potential money laundering.
   product_types:
   - depository
   - wire_transfer
@@ -392,32 +252,9 @@
   key_terms:
   - high value payments
   - transferred in and out
-- id: 080-20
-  description: Some of these payments were received from the subject of a previous
-    SAR.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: UKFIU SARs in Action, Issue 31
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-04
-  risk_level: low
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/749-sars-in-action-issue-31/file
-  typology_family: []
-  transaction_patterns:
-  - third_party_payments
-  key_terms:
-  - previous SAR
 - id: 080-21
-  description: Crypto asset wallets believed to have been in receipt of the proceeds
-    of crime.
+  description: Crypto asset wallets believed, from blockchain analytics or open-source intelligence,
+    to have been in receipt of the proceeds of crime.
   product_types:
   - crypto
   industry_types:

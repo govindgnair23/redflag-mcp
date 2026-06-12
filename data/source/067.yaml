@@ -1,6 +1,6 @@
 - id: 067-01
-  description: Funds sent to/received from an individual charged with and/or mentioned
-    in adverse media for child sexual exploitation-related offences.
+  description: Funds sent to/received from an individual charged with and/or mentioned in
+    adverse media for child sexual exploitation-related offences.
   product_types:
   - depository
   - wire_transfer
@@ -27,8 +27,8 @@
 - id: 067-02
   description: Frequent transfers of low-value funds by a male to one or a few recipients,
     often female, located in a jurisdiction(s) at high-risk for child sexual exploitation,
-    in a short timeframe and who has no apparent familial or other legitimate connection
-    to the recipient.
+    in a short timeframe and who has no apparent familial or other legitimate connection to
+    the recipient.
   product_types:
   - depository
   - wire_transfer
@@ -62,10 +62,10 @@
   - low-value funds
   - high-risk for child sexual exploitation
 - id: 067-03
-  description: Frequent transfers of low-value funds by a male (usually aged over
-    40), to younger recipients, often female, in a jurisdiction(s) at high-risk for
-    child sexual exploitation through online banking or money services business, including
-    digital platforms, often in the late evening/early morning hours.
+  description: Frequent transfers of low-value funds by a male (usually aged over 40), to
+    younger recipients, often female, in a jurisdiction(s) at high-risk for child sexual exploitation
+    through online banking or money services business, including digital platforms, often
+    in the late evening/early morning hours.
   product_types:
   - depository
   - wire_transfer
@@ -102,9 +102,9 @@
   - late evening
   - early morning
 - id: 067-04
-  description: Receipt by an individual of numerous small credit transfers from third
-    parties, often from other countries that are immediately transferred to another
-    account or withdrawn in cash.
+  description: Receipt by an individual of numerous small credit transfers from third parties,
+    often from other countries that are immediately transferred to another account or withdrawn
+    in cash.
   product_types:
   - depository
   - wire_transfer
@@ -133,10 +133,9 @@
   - small credit transfers
   - withdrawn in cash
 - id: 067-05
-  description: Remittance information or transaction details that refer to expenses
-    paid (such as school expenses, family support, medical bills, allowances, allotment)
-    but does not align with the smaller amounts or frequency of the funds that were
-    actually sent.
+  description: Remittance information or transaction details that refer to expenses paid (such
+    as school expenses, family support, medical bills, allowances, allotment) but does not
+    align with the smaller amounts or frequency of the funds that were actually sent.
   product_types:
   - depository
   - wire_transfer
@@ -162,9 +161,9 @@
   - remittance information
   - transaction details
 - id: 067-06
-  description: Travel related expenses (e.g., flight bookings, hotel and taxi charges)
-    that occur closely before or after transfers to a jurisdiction at high-risk for
-    child sexual exploitation.
+  description: Travel related expenses (e.g., flight bookings, hotel and taxi charges) that
+    occur closely before or after transfers to a jurisdiction at high-risk for child sexual
+    exploitation.
   product_types:
   - credit_card
   - depository
@@ -199,9 +198,9 @@
   - hotel charges
   - taxi charges
 - id: 067-07
-  description: Travel related expenses (e.g., flight bookings, hotel and taxi charges)
-    occurring in a jurisdiction at high-risk for child sexual exploitation for periods
-    longer or more frequent than expected for a typical Canadian traveller.
+  description: Travel related expenses (e.g., flight bookings, hotel and taxi charges) occurring
+    in a jurisdiction at high-risk for child sexual exploitation for periods longer or more
+    frequent than expected for a typical Canadian traveller.
   product_types:
   - credit_card
   - depository
@@ -235,9 +234,9 @@
   key_terms:
   - typical Canadian traveller
 - id: 067-08
-  description: Transactions conducted or account accessed in a jurisdiction at high-risk
-    for child sexual exploitation (e.g., significant ATM cash withdrawals, purchases
-    of jewellery or clothes that are atypical for account holder).
+  description: Transactions conducted or account accessed in a jurisdiction at high-risk for
+    child sexual exploitation (e.g., significant ATM cash withdrawals, purchases of jewellery
+    or clothes that are atypical for account holder).
   product_types:
   - depository
   - credit_card
@@ -273,9 +272,9 @@
   - jewellery
   - atypical for account holder
 - id: 067-09
-  description: Purchases at vendors that offer online encryption tools, virtual private
-    network services, software to clear online tracking, or other tools or services
-    for online privacy and anonymity, including encrypted email services.
+  description: Purchases at vendors that offer online encryption tools, virtual private network
+    services, software to clear online tracking, or other tools or services for online privacy
+    and anonymity, including encrypted email services.
   product_types:
   - credit_card
   - depository
@@ -328,10 +327,10 @@
   - hosting vendors
   - platforms
 - id: 067-11
-  description: Frequent, low-value transfers, to or through peer-to-peer funds transfer
-    platforms, often with sexually explicit references, references to social media
-    platforms, and/or references to file sharing and creator-content streaming websites,
-    including those hosting artificial intelligence generated material.
+  description: Frequent, low-value transfers, to or through peer-to-peer funds transfer platforms,
+    often with sexually explicit references, references to social media platforms, and/or
+    references to file sharing and creator-content streaming websites, including those hosting
+    artificial intelligence generated material.
   product_types:
   - depository
   - wire_transfer
@@ -360,9 +359,9 @@
   - social media platforms
   - creator-content streaming websites
 - id: 067-12
-  description: Frequent, low-value transfers, to payment service providers, particularly
-    those serving high-risk merchants in the adult entertainment industry or file
-    sharing and hosting vendors/providers.
+  description: Frequent, low-value transfers, to payment service providers, particularly those
+    serving high-risk merchants in the adult entertainment industry or file sharing and hosting
+    vendors/providers.
   product_types:
   - depository
   - wire_transfer
@@ -392,9 +391,9 @@
   - file sharing
   - hosting vendors
 - id: 067-13
-  description: Purchases on webcam/livestreaming platforms, dating platforms, and/or
-    websites offering adult entertainment, particularly those that have chat functions
-    and those suspected to host illegal content.
+  description: Purchases on webcam/livestreaming platforms, dating platforms, and/or websites
+    offering adult entertainment, particularly those that have chat functions and those suspected
+    to host illegal content.
   product_types:
   - credit_card
   - depository
@@ -422,9 +421,9 @@
   - chat functions
   - illegal content
 - id: 067-14
-  description: Purchases at multiple vendors of electronics, computers, and cell phones
-    and/or payments to cell phone service providers, particularly those specializing
-    in international calling services.
+  description: Purchases at multiple vendors of electronics, computers, and cell phones and/or
+    payments to cell phone service providers, particularly those specializing in international
+    calling services.
   product_types:
   - credit_card
   - depository
@@ -451,8 +450,8 @@
   - cell phones
   - international calling services
 - id: 067-15
-  description: Frequent purchases at online gaming platforms that are known to be
-    frequented by minors and have chat functions.
+  description: Frequent purchases at online gaming platforms that are known to be frequented
+    by minors and have chat functions.
   product_types:
   - credit_card
   - depository
@@ -502,8 +501,8 @@
   key_terms:
   - gift cards
 - id: 067-17
-  description: Frequent, low-value funds transfers with references related to child
-    sexual exploitation and/or image and video-based social media platforms.
+  description: Frequent, low-value funds transfers with references related to child sexual
+    exploitation and/or image and video-based social media platforms.
   product_types:
   - depository
   - wire_transfer
@@ -528,8 +527,8 @@
   - child sexual exploitation
   - social media platforms
 - id: 067-18
-  description: Frequent, low-value amounts sent to entities that engage in virtual
-    currency money service business activities (e.g., Instant exchanges).
+  description: Frequent, low-value amounts sent to entities that engage in virtual currency
+    money service business activities (e.g., Instant exchanges).
   product_types:
   - crypto
   - depository
@@ -557,8 +556,7 @@
   - money service business
   - Instant exchanges
 - id: 067-19
-  description: Frequent low-value purchases of cryptocurrencies, particularly privacy
-    coins.
+  description: Frequent low-value purchases of cryptocurrencies, particularly privacy coins.
   product_types:
   - crypto
   - depository
@@ -583,8 +581,7 @@
   - cryptocurrencies
   - privacy coins
 - id: 067-20
-  description: Purchases or withdrawals of cryptocurrencies using prepaid and credit
-    cards.
+  description: Purchases or withdrawals of cryptocurrencies using prepaid and credit cards.
   product_types:
   - crypto
   - credit_card
@@ -610,9 +607,9 @@
   - prepaid cards
   - credit cards
 - id: 067-21
-  description: Funds from a virtual currency wallet, often in low-value amounts, sent
-    directly or indirectly to a wallet address or cluster identified as selling child
-    sexual abuse material.
+  description: Funds from a virtual currency wallet, often in low-value amounts, sent directly
+    or indirectly to a wallet address or cluster identified as selling child sexual abuse
+    material.
   product_types:
   - crypto
   industry_types:
@@ -638,9 +635,9 @@
   - wallet address
   - cluster
 - id: 067-22
-  description: Re-occurring, virtual currency payments to one address, or a group
-    of addresses controlled by the same individual or entity, for the possible subscription
-    of child sexual abuse material.
+  description: Re-occurring, virtual currency payments to one address, or a group of addresses
+    controlled by the same individual or entity, for the possible subscription of child sexual
+    abuse material.
   product_types:
   - crypto
   industry_types:
@@ -665,11 +662,10 @@
   - subscription
   - child sexual abuse material
 - id: 067-23
-  description: Receiving peer-to-peer payments from predominantly male counterparts
-    in low-value amounts, often located in other jurisdictions, with sexually explicit
-    references, references to social media platforms and/or references to file sharing
-    and creator-content streaming websites, including those hosting artificial intelligence
-    generated material.
+  description: Receiving peer-to-peer payments from predominantly male counterparts in low-value
+    amounts, often located in other jurisdictions, with sexually explicit references, references
+    to social media platforms and/or references to file sharing and creator-content streaming
+    websites, including those hosting artificial intelligence generated material.
   product_types:
   - depository
   - wire_transfer
@@ -698,8 +694,8 @@
   - sexually explicit references
   - social media platforms
 - id: 067-24
-  description: Purchasing software for capturing video from websites and other online
-    platforms from vendors.
+  description: Purchasing software for capturing video from websites and other online platforms
+    from vendors.
   product_types:
   - credit_card
   - depository
@@ -723,35 +719,9 @@
   key_terms:
   - capturing video
   - online platforms
-- id: 067-25
-  description: Purchasing domain registration/website hosting entities.
-  product_types:
-  - credit_card
-  - depository
-  - prepaid
-  industry_types:
-  - online_marketplace
-  - professional_services
-  customer_profiles:
-  - newly_established_business
-  geographic_footprints: []
-  regulatory_source: Project Shadow
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2025-11
-  risk_level: low
-  category: cyber_enabled
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/exploitation-eng
-  typology_family:
-  - cybercrime_proceeds
-  transaction_patterns: []
-  key_terms:
-  - domain registration
-  - website hosting
 - id: 067-26
-  description: Purchasing equipment or software for photography or video making from
-    specialized vendors, not in line with stated occupation or expected business activity.
+  description: Purchasing equipment or software for photography or video making from specialized
+    vendors, not in line with stated occupation or expected business activity.
   product_types:
   - credit_card
   - depository
@@ -806,9 +776,9 @@
   - subscription payments
   - child sexual abuse material
 - id: 067-28
-  description: Receiving funds from a payment processor while having a profile on
-    a creator-content streaming website that includes adult entertainment content,
-    especially with a subscription-based channel model.
+  description: Receiving funds from a payment processor while having a profile on a creator-content
+    streaming website that includes adult entertainment content, especially with a subscription-based
+    channel model.
   product_types:
   - depository
   - wire_transfer
@@ -836,8 +806,8 @@
   - creator-content streaming website
   - subscription-based channel
 - id: 067-29
-  description: Receiving funds from a payment processor through a website that hosts
-    child sexual exploitation material.
+  description: Receiving funds from a payment processor through a website that hosts child
+    sexual exploitation material.
   product_types:
   - depository
   - wire_transfer
@@ -863,9 +833,9 @@
   - payment processor
   - child sexual exploitation material
 - id: 067-30
-  description: Sending low-value (i.e. $0.01) peer-to-peer payments to counterparts
-    with memos using jargon or slang that advertise new content for sale and child
-    sexual exploitation material related references.
+  description: Sending low-value (i.e. $0.01) peer-to-peer payments to counterparts with memos
+    using jargon or slang that advertise new content for sale and child sexual exploitation
+    material related references.
   product_types:
   - depository
   - wire_transfer
@@ -893,8 +863,8 @@
   - slang
   - new content for sale
 - id: 067-31
-  description: Multiple purchases for accommodations (e.g., hotel, motel, short-term
-    rentals) within the individual's city of residence or a nearby city.
+  description: Multiple purchases for accommodations (e.g., hotel, motel, short-term rentals)
+    within the individual's city of residence or a nearby city.
   product_types:
   - credit_card
   - depository
@@ -921,8 +891,8 @@
   - motel
   - short-term rentals
 - id: 067-32
-  description: Funds transfers sent in low, rounded dollar amounts to minors, especially
-    with sexually explicit references.
+  description: Funds transfers sent in low, rounded dollar amounts to minors, especially with
+    sexually explicit references.
   product_types:
   - depository
   - wire_transfer
@@ -949,8 +919,8 @@
   - sexually explicit references
   - rounded dollar amounts
 - id: 067-33
-  description: Funds transfers sent to minors with references to social media platforms
-    or other communication platforms, particularly ones with restricted/closed channels.
+  description: Funds transfers sent to minors with references to social media platforms or
+    other communication platforms, particularly ones with restricted/closed channels.
   product_types:
   - depository
   - wire_transfer
@@ -976,37 +946,9 @@
   - minors
   - social media platforms
   - restricted/closed channels
-- id: 067-34
-  description: Purchases at youth-oriented stores or venues (e.g., gaming stores,
-    children's clothing store, amusement parks).
-  product_types:
-  - credit_card
-  - depository
-  - prepaid
-  industry_types:
-  - retail
-  - travel_hospitality
-  customer_profiles:
-  - student
-  geographic_footprints: []
-  regulatory_source: Project Shadow
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2025-11
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/exploitation-eng
-  typology_family:
-  - fraud_proceeds
-  transaction_patterns: []
-  key_terms:
-  - gaming stores
-  - children's clothing store
-  - amusement parks
 - id: 067-35
-  description: Purchases at youth-oriented live online chat rooms and/or social media
-    platforms for upgrades, subscriptions, and special features.
+  description: Purchases at youth-oriented live online chat rooms and/or social media platforms
+    for upgrades, subscriptions, and special features.
   product_types:
   - credit_card
   - depository
@@ -1034,9 +976,9 @@
   - subscriptions
   - special features
 - id: 067-36
-  description: Referencing in transaction notes that suggest the funds were extorted
-    from the senders, such as pleading language, and references to explicit material
-    taken including photos and videos (e.g., "delete the video", "please stop").
+  description: Referencing in transaction notes that suggest the funds were extorted from
+    the senders, such as pleading language, and references to explicit material taken including
+    photos and videos (e.g., "delete the video", "please stop").
   product_types:
   - depository
   - wire_transfer
@@ -1063,8 +1005,8 @@
   - delete the video
   - please stop
 - id: 067-37
-  description: Receiving funds from young and underage counterparties, often funded
-    by prepaid cards, using peer-to-peer funds transfer platforms.
+  description: Receiving funds from young and underage counterparties, often funded by prepaid
+    cards, using peer-to-peer funds transfer platforms.
   product_types:
   - depository
   - wire_transfer
@@ -1093,8 +1035,8 @@
   - prepaid cards
   - peer-to-peer funds transfer platforms
 - id: 067-38
-  description: Receiving a pattern of funds from young and underage individuals in
-    short succession in low-value amounts only once or twice with no clear purpose.
+  description: Receiving a pattern of funds from young and underage individuals in short succession
+    in low-value amounts only once or twice with no clear purpose.
   product_types:
   - depository
   - wire_transfer
@@ -1121,8 +1063,8 @@
   - low-value amounts
   - no clear purpose
 - id: 067-39
-  description: Withdrawing funds, often by way of e-transfers to unrelated individuals,
-    beyond transaction limit.
+  description: Withdrawing funds, often by way of e-transfers to unrelated individuals, beyond
+    transaction limit.
   product_types:
   - depository
   - wire_transfer
@@ -1149,8 +1091,8 @@
   - unrelated individuals
   - transaction limit
 - id: 067-40
-  description: Quickly depleting an account by way of email money transfers, online
-    gift card purchases, and/or funds sent to peer-to-peer funds transfer platforms.
+  description: Quickly depleting an account by way of email money transfers, online gift card
+    purchases, and/or funds sent to peer-to-peer funds transfer platforms.
   product_types:
   - depository
   - wire_transfer
@@ -1208,8 +1150,8 @@
   - sex doll manufacturers
   - expected income
 - id: 067-42
-  description: Frequent purchases from toy stores that are not in line with individual's
-    personal status (single with no dependants) or expected account activity.
+  description: Frequent purchases from toy stores that are not in line with individual's personal
+    status (single with no dependants) or expected account activity.
   product_types:
   - credit_card
   - depository
@@ -1262,29 +1204,3 @@
   - unusual_international_wires
   key_terms:
   - shipping companies
-- id: 067-44
-  description: Purchases associated with dolls such as clothing, accessories and toys.
-  product_types:
-  - credit_card
-  - depository
-  - prepaid
-  industry_types:
-  - retail
-  customer_profiles:
-  - individual_consumer
-  geographic_footprints: []
-  regulatory_source: Project Shadow
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: 2025-11
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/intel/operation/exploitation-eng
-  typology_family:
-  - fraud_proceeds
-  transaction_patterns: []
-  key_terms:
-  - clothing
-  - accessories
-  - toys

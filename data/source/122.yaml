@@ -1,6 +1,5 @@
 - id: 122-01
-  description: Large or complex transactions with no visible/apparent economic or
-    lawful purpose
+  description: Large or complex transactions with no visible/apparent economic or lawful purpose
   product_types:
   - depository
   - wire_transfer
@@ -50,8 +49,8 @@
   key_terms:
   - frequent and small transactions
 - id: 122-03
-  description: Unusual patterns of physical cash deposits or withdrawals, which are
-    large when aggregated over a period of time
+  description: Unusual patterns of physical cash deposits or withdrawals, which are large
+    when aggregated over a period of time
   product_types:
   - depository
   industry_types: []
@@ -135,9 +134,8 @@
   - higher risk countries
   - geographies
 - id: 122-06
-  description: Detection of activities or behaviours consistent with certain predicate
-    offences (e.g. possible tax evasion or avoidance, corruption nexus, or terrorism
-    financing)
+  description: Detection of activities or behaviours consistent with certain predicate offences
+    (e.g. possible tax evasion or avoidance, corruption nexus, or terrorism financing)
   product_types:
   - depository
   - wire_transfer
@@ -163,8 +161,7 @@
   - corruption nexus
   - terrorism financing
 - id: 122-07
-  description: Hidden relationships between customers or accounts evident through
-    funds flows
+  description: Hidden relationships between customers or accounts evident through funds flows
   product_types:
   - depository
   - wire_transfer
@@ -191,8 +188,8 @@
   key_terms:
   - funds flows
 - id: 122-08
-  description: Anomalous activities involving the use of bank cards (e.g. ATM, credit
-    or debit cards)
+  description: Anomalous activities involving the use of bank cards (e.g. ATM, credit or debit
+    cards)
   product_types:
   - depository
   - credit_card
@@ -219,8 +216,8 @@
   - credit cards
   - debit cards
 - id: 122-09
-  description: Transactions that exceed predefined thresholds in a manner inconsistent
-    with the customer’s profile and the stated purpose of the account
+  description: Transactions that exceed predefined thresholds in a manner inconsistent with
+    the customer’s profile and the stated purpose of the account
   product_types:
   - depository
   - wire_transfer
@@ -243,9 +240,9 @@
   - predefined thresholds
   - purpose of accounts
 - id: 122-10
-  description: Transactions that are aligned with customers’ wealth and profile, but
-    the explanations made by customers and relationship managers run contrary to past
-    information obtained from the customers
+  description: Transactions that are aligned with customers’ wealth and profile, but the explanations
+    made by customers and relationship managers run contrary to past information obtained
+    from the customers
   product_types:
   - depository
   - wire_transfer
@@ -272,9 +269,8 @@
   - wealth and profile
   - past information
 - id: 122-11
-  description: Transactions involving a beneficial owner’s personal and second corporate
-    account that could not be reasonably corroborated and were misaligned with the
-    customer’s profile
+  description: Transactions involving a beneficial owner’s personal and second corporate account
+    that could not be reasonably corroborated and were misaligned with the customer’s profile
   product_types:
   - depository
   - wire_transfer
@@ -354,34 +350,9 @@
   key_terms:
   - circular flows
   - related accounts
-- id: 122-14
-  description: Transactions that are related to tax crimes
-  product_types:
-  - depository
-  - wire_transfer
-  - trade_finance
-  industry_types:
-  - professional_services
-  - legal_accounting
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Guidance for Effective AML/CFT Transaction Monitoring Controls
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Monetary Authority of Singapore
-  issued_date: 2018-09
-  risk_level: medium
-  category: tax_evasion
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Guidance-for-Effective-AML-CFT-Transaction-Monitoring-Controls.pdf
-  typology_family:
-  - tax_evasion
-  transaction_patterns: []
-  key_terms:
-  - tax crimes
 - id: 122-15
-  description: Transactions with concerns over the beneficial owner’s source of funds
-    and potential pass-through transactions
+  description: Transactions with concerns over the beneficial owner’s source of funds and
+    potential pass-through transactions
   product_types:
   - depository
   - wire_transfer
@@ -407,63 +378,3 @@
   key_terms:
   - source of funds
   - pass-through transactions
-- id: 122-16
-  description: Multiple third party transactions involving the beneficial owner’s
-    personal and second corporate account that could not be reasonably corroborated
-    and were misaligned with the customer’s profile
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Guidance for Effective AML/CFT Transaction Monitoring Controls
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Monetary Authority of Singapore
-  issued_date: 2018-09
-  risk_level: medium
-  category: layering
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Guidance-for-Effective-AML-CFT-Transaction-Monitoring-Controls.pdf
-  typology_family:
-  - organized_crime_proceeds
-  - fraud_proceeds
-  transaction_patterns:
-  - third_party_payments
-  - pass_through_account_activity
-  key_terms:
-  - third party transactions
-  - beneficial owner
-  - customer profile
-- id: 122-17
-  description: Transactions in one of the accounts indicative of possible insider
-    trading behaviour, with unexplained anomalies (e.g. circular flows) in the non-securities
-    transactions taking place between related accounts
-  product_types:
-  - securities
-  - depository
-  - wire_transfer
-  industry_types: []
-  customer_profiles:
-  - politically_exposed_person
-  geographic_footprints: []
-  regulatory_source: Guidance for Effective AML/CFT Transaction Monitoring Controls
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Monetary Authority of Singapore
-  issued_date: 2018-09
-  risk_level: high
-  category: fraud_nexus
-  source_url: https://www.mas.gov.sg/-/media/MAS/Regulations-and-Financial-Stability/Regulatory-and-Supervisory-Framework/Anti_Money-Laundering_Countering-the-Financing-of-Terrorism/Guidance-for-Effective-AML-CFT-Transaction-Monitoring-Controls.pdf
-  typology_family:
-  - fraud_proceeds
-  transaction_patterns:
-  - round_tripping
-  - wire_transfer_chains
-  key_terms:
-  - insider trading
-  - circular flows

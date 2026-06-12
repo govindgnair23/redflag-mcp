@@ -1,7 +1,6 @@
 - id: 084-01
-  description: Shipping companies or consignments that have changed ownership, name,
-    management structures or flag within a short timeframe, with no clear commercial
-    rationale.
+  description: Shipping companies or consignments that have changed ownership, name, management
+    structures or flag within a short timeframe, with no clear commercial rationale.
   product_types:
   - trade_finance
   industry_types:
@@ -28,8 +27,8 @@
   - management structures
   - flag
 - id: 084-02
-  description: Front companies incorporated in the past 12 months with no evident
-    operational history, often sharing addresses, directors, or email domains.
+  description: Front companies incorporated in the past 12 months with no evident operational
+    history, often sharing addresses, directors, or email domains.
   product_types:
   - trade_finance
   industry_types: []
@@ -55,38 +54,10 @@
   - incorporated in the past 12 months
   - operational history
   - email domains
-- id: 084-03
-  description: Vessels, counterparties, or cargo exhibiting sudden changes in names,
-    flags, or corporate affiliations, particularly where linked to offshore jurisdictions.
-  product_types:
-  - trade_finance
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints: []
-  regulatory_source: Networks & Shadow Fleets
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-11
-  risk_level: medium
-  category: shell_company
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/769-necc-amber-alert-networks-and-shadow-fleets/file
-  typology_family:
-  - sanctions_evasion
-  - shell_company_usage
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - name changes
-  - flags
-  - corporate affiliations
-  - offshore jurisdictions
 - id: 084-04
   description: Maritime vessels engaged in voyages with gaps or unexplained deactivations
-    in AIS transmissions during transits near sanctioned jurisdictions or high-risk
-    maritime zones.
+    in AIS transmissions during transits near sanctioned jurisdictions or high-risk maritime
+    zones.
   product_types:
   - trade_finance
   industry_types:
@@ -116,8 +87,8 @@
   - deactivations
   - signal spoofing
 - id: 084-05
-  description: Inconsistent cargo documentation (origin vs routing) - Bills of Lading
-    and certificates of origin that conflict with maritime tracking or port call records.
+  description: Inconsistent cargo documentation (origin vs routing) - Bills of Lading and
+    certificates of origin that conflict with maritime tracking or port call records.
   product_types:
   - trade_finance
   industry_types:
@@ -174,8 +145,8 @@
   - short-term anchorage
   - commodities
 - id: 084-07
-  description: Entities with historic links to designated persons, leaked registries,
-    or law enforcement reports.
+  description: Entities with historic links to designated persons, leaked registries, or law
+    enforcement reports.
   product_types:
   - depository
   - wire_transfer
@@ -205,41 +176,9 @@
   - designated persons
   - leaked registries
   - law enforcement reports
-- id: 084-08
-  description: Engagement with clients, counterparties or vessels previously linked
-    to sanctions breaches or designated persons, or law enforcement reports.
-  product_types:
-  - depository
-  - wire_transfer
-  - trade_finance
-  - correspondent_banking
-  - private_banking
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - sanctioned_jurisdiction
-  - ofac_sanctioned_country
-  regulatory_source: Networks & Shadow Fleets
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-11
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/769-necc-amber-alert-networks-and-shadow-fleets/file
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - sanctions breaches
-  - designated persons
-  - law enforcement reports
 - id: 084-09
-  description: Trade flows exhibiting circular routing or unnecessary complexity without
-    a clear commercial rationale.
+  description: Trade flows exhibiting circular routing or unnecessary complexity without a
+    clear commercial rationale.
   product_types:
   - trade_finance
   industry_types:
@@ -267,9 +206,8 @@
   - circular routing
   - commercial rationale
 - id: 084-10
-  description: Unusual or non-standard payment arrangements, including third-party
-    payments, use of cryptocurrencies, or payment terms inconsistent with industry
-    norms.
+  description: Unusual or non-standard payment arrangements, including third-party payments,
+    use of cryptocurrencies, or payment terms inconsistent with industry norms.
   product_types:
   - wire_transfer
   - crypto
@@ -329,44 +267,10 @@
   key_terms:
   - multiple intermediaries
   - offshore jurisdictions
-- id: 084-12
-  description: Payment terms that involve third parties, obscure remittance sources,
-    crypto wallets, or currencies not typically used in global commodities markets.
-  product_types:
-  - wire_transfer
-  - crypto
-  - trade_finance
-  - remittance
-  industry_types:
-  - import_export
-  - oil_and_gas
-  customer_profiles:
-  - third_party_payment_processor
-  - cross_border_business
-  geographic_footprints: []
-  regulatory_source: Networks & Shadow Fleets
-  regulator: NCA
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: 2025-11
-  risk_level: medium
-  category: layering
-  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/769-necc-amber-alert-networks-and-shadow-fleets/file
-  typology_family:
-  - layering
-  - sanctions_evasion
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - third_party_payments
-  - rapid_fund_movement
-  key_terms:
-  - remittance sources
-  - crypto wallets
-  - commodities markets
 - id: 084-13
-  description: Transactions routed through banks or payment institutions known to
-    have weak Anti-Money Laundering / Counter-Terrorism Financing controls, or where
-    sanctions evasion cases have occurred.
+  description: Transactions routed through banks or payment institutions known to have weak
+    Anti-Money Laundering / Counter-Terrorism Financing controls, or where sanctions evasion
+    cases have occurred.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -393,9 +297,8 @@
   - AML/CTF controls
   - sanctions evasion cases
 - id: 084-14
-  description: Obfuscated corporate restructuring, with frequent changes or creation
-    in company ownership, structure, or control to obscure beneficial ownership and
-    true purpose.
+  description: Obfuscated corporate restructuring, with frequent changes or creation in company
+    ownership, structure, or control to obscure beneficial ownership and true purpose.
   product_types:
   - depository
   - wire_transfer
@@ -487,8 +390,8 @@
   - high-risk sectors
   - prior experience
 - id: 084-17
-  description: Random or meaningless company names - use of nonsensical or generic
-    names without contextual logic.
+  description: Random or meaningless company names - use of nonsensical or generic names without
+    contextual logic.
   product_types:
   - depository
   - wire_transfer

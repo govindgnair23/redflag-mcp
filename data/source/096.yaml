@@ -1,8 +1,7 @@
 - id: 096-01
-  description: Money transmission can involve placing illegal cash with a Money Service
-    Business, or enabling the transfer of value by netting-off transactions in different
-    countries without moving any money; a common practice is to split transactions
-    into small sums
+  description: Money transmission can involve placing illegal cash with a Money Service Business,
+    or enabling the transfer of value by netting-off transactions in different countries without
+    moving any money; a common practice is to split transactions into small sums
   product_types:
   - money_transmitter
   - remittance
@@ -10,8 +9,7 @@
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -31,8 +29,8 @@
   - netting-off
   - small sums
 - id: 096-02
-  description: Third party cheque cashing has been exploited by some traders to evade
-    a ban on paying cash for scrap metal
+  description: Third party cheque cashing has been exploited by some traders to evade a ban
+    on paying cash for scrap metal
   product_types:
   - check_cashing
   industry_types:
@@ -41,8 +39,7 @@
   - small_business
   geographic_footprints:
   - domestic_us
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -59,18 +56,16 @@
   - scrap metal
   - cash ban
 - id: 096-03
-  description: Currency exchanges are exploited to change small denomination notes
-    into large denominations in another currency to enable easier and cheaper handling
-    of large quantities of illegal cash; once the money has been exchanged, it’s difficult
-    to trace its origin
+  description: Currency exchanges are exploited to change small denomination notes into large
+    denominations in another currency to enable easier and cheaper handling of large quantities
+    of illegal cash; once the money has been exchanged, it’s difficult to trace its origin
   product_types:
   - currency_exchange
   industry_types: []
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -99,8 +94,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -115,8 +109,8 @@
   - fake documents
   - identity
 - id: 096-05
-  description: The customer is trying to use intermediaries to protect their identity
-    or hide their involvement
+  description: The customer is trying to use intermediaries to protect their identity or hide
+    their involvement
   product_types:
   - depository
   - money_transmitter
@@ -126,8 +120,7 @@
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -154,8 +147,7 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -179,8 +171,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -193,32 +184,6 @@
   - rapid_fund_movement
   key_terms:
   - normal business
-- id: 096-08
-  description: The size and frequency of the transaction is different from the customer’s
-    normal pattern
-  product_types:
-  - depository
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - size and frequency
-  - normal pattern
 - id: 096-09
   description: The pattern has changed since the business relationship was established
   product_types:
@@ -229,8 +194,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -244,30 +208,6 @@
   key_terms:
   - pattern changed
   - business relationship
-- id: 096-10
-  description: There has been a significant or unexpected improvement in the customer’s
-    financial position
-  product_types:
-  - depository
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - financial position
 - id: 096-11
   description: The customer can't give a proper explanation of where money came from
   product_types:
@@ -278,8 +218,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -292,8 +231,8 @@
   key_terms:
   - source of funds
 - id: 096-12
-  description: A third party, apparently unconnected with the customer, bears the
-    costs, or otherwise pays the transaction costs
+  description: A third party, apparently unconnected with the customer, bears the costs, or
+    otherwise pays the transaction costs
   product_types:
   - depository
   - money_transmitter
@@ -303,8 +242,7 @@
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -318,57 +256,9 @@
   key_terms:
   - third party
   - transaction costs
-- id: 096-13
-  description: An unusually big cash or foreign currency transaction
-  product_types:
-  - depository
-  - currency_exchange
-  - money_transmitter
-  industry_types: []
-  customer_profiles:
-  - cash_intensive_business
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - cash
-  - foreign currency
-- id: 096-14
-  description: The customer won’t disclose the source of the funds
-  product_types:
-  - depository
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - source of funds
 - id: 096-15
-  description: Unusual involvement of third parties, or large payments from private
-    funds, particularly where the customer appears to have a low income
+  description: Unusual involvement of third parties, or large payments from private funds,
+    particularly where the customer appears to have a low income
   product_types:
   - depository
   - money_transmitter
@@ -378,8 +268,7 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -395,9 +284,9 @@
   - private funds
   - low income
 - id: 096-16
-  description: Customer presents an unusual source of funds for the transmission —
-    for example, cash from an unrelated third party, proceeds from informal lending,
-    or funds that do not match the customer's stated occupation or income.
+  description: Customer presents an unusual source of funds for the transmission — for example,
+    cash from an unrelated third party, proceeds from informal lending, or funds that do not
+    match the customer's stated occupation or income.
   product_types:
   - depository
   - money_transmitter
@@ -406,32 +295,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - source of funds
-- id: 096-17
-  description: The customer is unable to provide satisfactory evidence of the source
-    of the funds
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -456,8 +320,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -474,8 +337,7 @@
   - transmission
 - id: 096-19
   description: The transaction involves an unusually large cash payment that is inconsistent
-    with the customer's profile or the typical ticket size for that money service
-    business.
+    with the customer's profile or the typical ticket size for that money service business.
   product_types:
   - money_transmitter
   - currency_exchange
@@ -485,8 +347,7 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -500,8 +361,8 @@
   key_terms:
   - cash transaction
 - id: 096-20
-  description: The transaction seems to be unnecessarily complicated, or seems to
-    use front men or companies
+  description: The transaction seems to be unnecessarily complicated, or seems to use front
+    men or companies
   product_types:
   - money_transmitter
   - currency_exchange
@@ -512,8 +373,7 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -539,8 +399,7 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -554,8 +413,8 @@
   key_terms:
   - sends or receives money
 - id: 096-22
-  description: The customer is acting on behalf of third parties without there being
-    an appropriate family or business relationship between them
+  description: The customer is acting on behalf of third parties without there being an appropriate
+    family or business relationship between them
   product_types:
   - money_transmitter
   - remittance
@@ -564,8 +423,7 @@
   customer_profiles:
   - third_party_payment_processor
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -580,8 +438,8 @@
   - third parties
   - family or business relationship
 - id: 096-23
-  description: The customer (or two or more customers) is using more than one local
-    Money Service Business, perhaps to break one transaction into smaller transactions
+  description: The customer (or two or more customers) is using more than one local Money
+    Service Business, perhaps to break one transaction into smaller transactions
   product_types:
   - money_transmitter
   - currency_exchange
@@ -592,8 +450,7 @@
   - individual_consumer
   - small_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -608,35 +465,10 @@
   key_terms:
   - more than one local Money Service Business
   - smaller transactions
-- id: 096-24
-  description: Appear to have no obvious economic or financial basis benefit
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - economic basis
-  - financial basis
 - id: 096-25
   description: Funds are routed through third countries or third parties with no apparent
-    commercial connection to the originator or beneficiary, suggesting layering to
-    obscure the source or destination.
+    commercial connection to the originator or beneficiary, suggesting layering to obscure
+    the source or destination.
   product_types:
   - money_transmitter
   - remittance
@@ -647,8 +479,7 @@
   - third_party_payment_processor
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -675,8 +506,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -699,8 +529,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -723,8 +552,7 @@
   - small_business
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -740,11 +568,10 @@
   - limited company
   - cheque
 - id: 096-29
-  description: If a customer attempts to cash a cheque issued by a scrap metal dealer
-    through a third party cheque cashing business, instead of paying the cheque into
-    the customer’s own bank account, there is a high risk that this is an attempt
-    to bypass the provisions of the Scrap Metal Dealers Act and to launder the proceeds
-    of metal theft
+  description: If a customer attempts to cash a cheque issued by a scrap metal dealer through
+    a third party cheque cashing business, instead of paying the cheque into the customer’s
+    own bank account, there is a high risk that this is an attempt to bypass the provisions
+    of the Scrap Metal Dealers Act and to launder the proceeds of metal theft
   product_types:
   - check_cashing
   - depository
@@ -754,8 +581,7 @@
   - small_business
   geographic_footprints:
   - domestic_us
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -772,8 +598,8 @@
   - third party cheque cashing
   - metal theft
 - id: 096-30
-  description: Request high denomination notes such as €100, €200, and €500 notes
-    or $100 US notes
+  description: Request high denomination notes such as €100, €200, and €500 notes or $100
+    US notes
   product_types:
   - currency_exchange
   industry_types: []
@@ -782,8 +608,7 @@
   geographic_footprints:
   - uk_eu
   - domestic_us
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -798,29 +623,9 @@
   - high denomination notes
   - €500
   - $100 US notes
-- id: 096-31
-  description: The customer's willing to accept poor rates of exchange
-  product_types:
-  - currency_exchange
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: low
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - poor rates of exchange
 - id: 096-32
-  description: The customer is buying currency that doesn't fit with what the business
-    knows about their travel destination
+  description: The customer is buying currency that doesn't fit with what the business knows
+    about their travel destination
   product_types:
   - currency_exchange
   industry_types:
@@ -828,8 +633,7 @@
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -851,8 +655,7 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -866,8 +669,8 @@
   key_terms:
   - low denomination notes
 - id: 096-34
-  description: Have a high number of transactions that fall just under the threshold
-    for due diligence or reporting to the principal
+  description: Have a high number of transactions that fall just under the threshold for due
+    diligence or reporting to the principal
   product_types:
   - money_transmitter
   - currency_exchange
@@ -876,8 +679,7 @@
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -894,8 +696,7 @@
   - due diligence
   - reporting
 - id: 096-35
-  description: Report a high volume of business with single customer to a high risk
-    country
+  description: Report a high volume of business with single customer to a high risk country
   product_types:
   - money_transmitter
   - remittance
@@ -906,8 +707,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -923,8 +723,8 @@
   - high risk country
   - single customer
 - id: 096-36
-  description: Process a customer sending money to several destinations or the same
-    recipient on the same day
+  description: Process a customer sending money to several destinations or the same recipient
+    on the same day
   product_types:
   - money_transmitter
   - remittance
@@ -933,8 +733,7 @@
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -950,111 +749,6 @@
   - several destinations
   - same recipient
   - same day
-- id: 096-37
-  description: The customer conducts transactions of unusually high size relative
-    to the customer's profile, the MSB's typical ticket size, or the stated purpose
-    of the transfer.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  industry_types: []
-  customer_profiles:
-  - cash_intensive_business
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - transaction size
-- id: 096-38
-  description: The customer presents unusually large cash transactions inconsistent
-    with their stated occupation, business activity, or historical pattern.
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  industry_types: []
-  customer_profiles:
-  - cash_intensive_business
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns:
-  - cash_intensive_behavior
-  key_terms:
-  - cash transaction
-- id: 096-39
-  description: Have a size and frequency of transactions that are different from the
-    customer’s normal pattern
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: layering
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family: []
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - size and frequency
-  - normal pattern
-- id: 096-40
-  description: Have transactions that seem unnecessarily complicated, or seem to use
-    front men or companies
-  product_types:
-  - money_transmitter
-  - currency_exchange
-  - check_cashing
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  - shell_or_front_company
-  geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
-  regulator: OFSI
-  regulator_jurisdiction: GB
-  issuing_agencies: []
-  issued_date: '2014-08-08'
-  risk_level: medium
-  category: shell_company
-  source_url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/348648/Money-laundering-guidance-for-money-service-businesses.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - shell_company_usage
-  - rapid_fund_movement
-  key_terms:
-  - front men
-  - companies
 - id: 096-41
   description: Undertake a large proportion of business with high risk countries
   product_types:
@@ -1066,8 +760,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []
@@ -1082,9 +775,8 @@
   key_terms:
   - high risk countries
 - id: 096-42
-  description: Have records in which fake identities repeat common fields, for example
-    a different surname with all the other details like birth day and address the
-    same
+  description: Have records in which fake identities repeat common fields, for example a different
+    surname with all the other details like birth day and address the same
   product_types:
   - money_transmitter
   - currency_exchange
@@ -1093,8 +785,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service
-    Businesses
+  regulatory_source: Money Laundering Regulations 2007 Supervision of Money Service Businesses
   regulator: OFSI
   regulator_jurisdiction: GB
   issuing_agencies: []

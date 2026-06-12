@@ -1,7 +1,7 @@
 - id: 128-01
-  description: Transactions that pass through legal persons with no real economic
-    purpose or plausible explanations are risk indicators that the legal persons may
-    be misused for money laundering.
+  description: Transactions that pass through legal persons with no real economic purpose
+    or plausible explanations are risk indicators that the legal persons may be misused for
+    money laundering.
   product_types:
   - depository
   - wire_transfer
@@ -10,8 +10,8 @@
   - shell_or_front_company
   geographic_footprints:
   - domestic_us
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -29,9 +29,8 @@
   - pass-through
   - economic purpose
 - id: 128-02
-  description: The legal person's transaction profile, counterparties, or fund flows
-    are inconsistent with its stated nature of business, industry sector, or declared
-    purpose.
+  description: The legal person's transaction profile, counterparties, or fund flows are inconsistent
+    with its stated nature of business, industry sector, or declared purpose.
   product_types:
   - depository
   - wire_transfer
@@ -55,8 +54,8 @@
   - east_asia
   - north_america
   - africa
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -72,9 +71,9 @@
   key_terms:
   - business profile
 - id: 128-03
-  description: Trade transactions involve underlying goods that appear dubious — such
-    as goods that are over- or under-invoiced, non-existent, inappropriate for the
-    purported business activity, or of unverifiable provenance.
+  description: Trade transactions involve underlying goods that appear dubious — such as goods
+    that are over- or under-invoiced, non-existent, inappropriate for the purported business
+    activity, or of unverifiable provenance.
   product_types:
   - trade_finance
   - wire_transfer
@@ -89,8 +88,8 @@
   - east_asia
   - middle_east
   - africa
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -109,9 +108,8 @@
   - invoices
   - goods
 - id: 128-04
-  description: The legal person makes frequent large cash deposits and withdrawals
-    that are disproportionate to and inconsistent with its stated business profile
-    or declared revenues.
+  description: The legal person makes frequent large cash deposits and withdrawals that are
+    disproportionate to and inconsistent with its stated business profile or declared revenues.
   product_types:
   - depository
   - check_cashing
@@ -126,8 +124,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -145,8 +143,8 @@
   - cash deposits
   - cash withdrawals
 - id: 128-05
-  description: Transactions are broken into smaller amounts apparently designed to
-    avoid regulatory reporting thresholds, indicative of structuring.
+  description: Transactions are broken into smaller amounts apparently designed to avoid regulatory
+    reporting thresholds, indicative of structuring.
   product_types:
   - depository
   - wire_transfer
@@ -163,8 +161,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -181,9 +179,9 @@
   key_terms:
   - structured transactions
 - id: 128-06
-  description: Funds transferred out of the account are cycled back to the originating
-    entity through a chain of intermediary companies, with no apparent legitimate
-    commercial purpose, indicating a round-tripping pattern.
+  description: Funds transferred out of the account are cycled back to the originating entity
+    through a chain of intermediary companies, with no apparent legitimate commercial purpose,
+    indicating a round-tripping pattern.
   product_types:
   - depository
   - wire_transfer
@@ -199,8 +197,8 @@
   - middle_east
   - europe
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -218,8 +216,8 @@
   key_terms:
   - round-tripping
 - id: 128-07
-  description: High turn-over of funds within a relatively short period of time without
-    any plausible explanations.
+  description: High turn-over of funds within a relatively short period of time without any
+    plausible explanations.
   product_types:
   - depository
   - wire_transfer
@@ -235,8 +233,8 @@
   - middle_east
   - europe
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -253,8 +251,8 @@
   key_terms:
   - high turnover
 - id: 128-08
-  description: Unable to corroborate the stated source of funds (SOF) for the legal
-    person through verifiable documentation or business records.
+  description: Unable to corroborate the stated source of funds (SOF) for the legal person
+    through verifiable documentation or business records.
   product_types:
   - depository
   - wire_transfer
@@ -270,8 +268,8 @@
   - middle_east
   - east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -287,54 +285,10 @@
   key_terms:
   - SOF
   - source of funds
-- id: 128-09
-  description: Mismatch between transactions and nature of business.
-  product_types:
-  - depository
-  - wire_transfer
-  - trade_finance
-  industry_types:
-  - wholesale
-  - retail
-  - construction
-  - oil_and_gas
-  - import_export
-  - manufacturing
-  - professional_services
-  - real_estate
-  - healthcare
-  customer_profiles:
-  - small_business
-  - newly_established_business
-  - shell_or_front_company
-  geographic_footprints:
-  - domestic_us
-  - south_east_asia
-  - east_asia
-  - middle_east
-  - europe
-  - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: layering
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - invoice_mismatch
-  key_terms:
-  - nature of business
 - id: 128-10
-  description: Customer was unable to provide a satisfactory explanation regarding
-    the pass through nature of the transactions and reasons for fund transfers between
-    companies with seemingly unrelated business profile.
+  description: Customer was unable to provide a satisfactory explanation regarding the pass
+    through nature of the transactions and reasons for fund transfers between companies with
+    seemingly unrelated business profile.
   product_types:
   - depository
   - wire_transfer
@@ -351,8 +305,8 @@
   - south_east_asia
   - europe
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -387,8 +341,8 @@
   - middle_east
   - europe
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -405,8 +359,8 @@
   key_terms:
   - connected companies
 - id: 128-12
-  description: Frequent/multiple transaction involving entities with the same beneficial
-    owner which did not make economic sense.
+  description: Frequent/multiple transaction involving entities with the same beneficial owner
+    which did not make economic sense.
   product_types:
   - depository
   - wire_transfer
@@ -421,8 +375,8 @@
   - east_asia
   - europe
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -440,8 +394,7 @@
   key_terms:
   - same beneficial owner
 - id: 128-13
-  description: Deliberate avoidance of traditional banking service without legitimate
-    reasons.
+  description: Deliberate avoidance of traditional banking service without legitimate reasons.
   product_types:
   - depository
   - wire_transfer
@@ -455,8 +408,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -473,9 +426,9 @@
   key_terms:
   - traditional banking
 - id: 128-14
-  description: Funds received into the account are transferred out almost immediately
-    with little to no residual balance retained, and without a plausible business
-    explanation for the rapid movement.
+  description: Funds received into the account are transferred out almost immediately with
+    little to no residual balance retained, and without a plausible business explanation for
+    the rapid movement.
   product_types:
   - depository
   - wire_transfer
@@ -489,8 +442,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -507,9 +460,9 @@
   key_terms:
   - rapid movement
 - id: 128-15
-  description: The account shows high volumes of funds passing through but consistently
-    maintains very low end-of-day balances, suggesting the account is being used as
-    a conduit rather than for genuine business operations.
+  description: The account shows high volumes of funds passing through but consistently maintains
+    very low end-of-day balances, suggesting the account is being used as a conduit rather
+    than for genuine business operations.
   product_types:
   - depository
   - wire_transfer
@@ -521,8 +474,8 @@
   geographic_footprints:
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -538,36 +491,6 @@
   - rapid_fund_movement
   key_terms:
   - low account balances
-- id: 128-16
-  description: Dubious relationship between the companies.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types:
-  - commodities
-  customer_profiles:
-  - shell_or_front_company
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - south_east_asia
-  - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: layering
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - nested_account_activity
-  key_terms:
-  - relationship
 - id: 128-17
   description: Possible circumvention of currency controls.
   product_types:
@@ -580,8 +503,8 @@
   geographic_footprints:
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -610,8 +533,8 @@
   geographic_footprints:
   - south_east_asia
   - domestic_us
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -641,8 +564,8 @@
   geographic_footprints:
   - south_east_asia
   - domestic_us
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -659,8 +582,8 @@
   key_terms:
   - third parties
 - id: 128-20
-  description: Lack of a reasonable explanation on the use of another passport for
-    the incorporation of another company.
+  description: Lack of a reasonable explanation on the use of another passport for the incorporation
+    of another company.
   product_types:
   - depository
   - wire_transfer
@@ -672,8 +595,8 @@
   geographic_footprints:
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -691,8 +614,8 @@
   - passport
 - id: 128-21
   description: Instructions received from a personal email account instead of a government
-    email account, where the signatory was a public official and where the account
-    is supposed to be government linked and for government purposes.
+    email account, where the signatory was a public official and where the account is supposed
+    to be government linked and for government purposes.
   product_types:
   - depository
   - wire_transfer
@@ -704,8 +627,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -723,8 +646,8 @@
   - government email
   - personal email
 - id: 128-22
-  description: A single and seemingly self-appointed authorised signatory for a large
-    government linked account.
+  description: A single and seemingly self-appointed authorised signatory for a large government
+    linked account.
   product_types:
   - depository
   - wire_transfer
@@ -736,8 +659,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -754,8 +677,8 @@
   key_terms:
   - authorised signatory
 - id: 128-23
-  description: A large government linked entity seeking a private banking serviced
-    account instead of a corporate or institutional serviced account.
+  description: A large government linked entity seeking a private banking serviced account
+    instead of a corporate or institutional serviced account.
   product_types:
   - private_banking
   industry_types:
@@ -765,8 +688,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -782,8 +705,8 @@
   key_terms:
   - private banking
 - id: 128-24
-  description: Inconsistencies in the information relating to purpose of the account
-    and source of funding.
+  description: Inconsistencies in the information relating to purpose of the account and source
+    of funding.
   product_types:
   - depository
   - wire_transfer
@@ -795,8 +718,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -813,8 +736,8 @@
   key_terms:
   - source of funding
 - id: 128-25
-  description: Use of influential names (government linked entities) where the link
-    with the high profile parent entity cannot be directly validated.
+  description: Use of influential names (government linked entities) where the link with the
+    high profile parent entity cannot be directly validated.
   product_types:
   - depository
   - wire_transfer
@@ -826,8 +749,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -857,8 +780,8 @@
   geographic_footprints:
   - domestic_us
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -889,8 +812,8 @@
   - north_asia
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -907,9 +830,9 @@
   key_terms:
   - commingling
 - id: 128-28
-  description: Account activity deviates significantly from the purpose declared at
-    account opening, with incoming or outgoing transactions unrelated to the stated
-    business function of the legal person.
+  description: Account activity deviates significantly from the purpose declared at account
+    opening, with incoming or outgoing transactions unrelated to the stated business function
+    of the legal person.
   product_types:
   - depository
   - wire_transfer
@@ -924,8 +847,8 @@
   - domestic_us
   - south_east_asia
   - north_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -955,8 +878,8 @@
   geographic_footprints:
   - offshore
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -973,69 +896,6 @@
   key_terms:
   - no physical presence
   - employees
-- id: 128-30
-  description: Bank account of the company is located in a separate jurisdiction from
-    its business activities.
-  product_types:
-  - depository
-  - wire_transfer
-  - private_banking
-  industry_types:
-  - technology
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - north_asia
-  - domestic_us
-  - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: tax_evasion
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - tax_evasion
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - separate jurisdiction
-- id: 128-31
-  description: Company does not have any commercial interest in the jurisdiction in
-    which the bank account is located.
-  product_types:
-  - depository
-  - wire_transfer
-  - private_banking
-  industry_types:
-  - technology
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - north_asia
-  - domestic_us
-  - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: tax_evasion
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - tax_evasion
-  transaction_patterns: []
-  key_terms:
-  - commercial interest
 - id: 128-32
   description: Pass-through transfer to unknown account.
   product_types:
@@ -1049,8 +909,8 @@
   geographic_footprints:
   - domestic_us
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1068,9 +928,9 @@
   - retainer
   - client account
 - id: 128-33
-  description: An instruction to transfer funds from a legal person's client account
-    was cancelled without any plausible explanation, raising concerns about the legitimacy
-    of the underlying transaction.
+  description: An instruction to transfer funds from a legal person's client account was cancelled
+    without any plausible explanation, raising concerns about the legitimacy of the underlying
+    transaction.
   product_types:
   - depository
   - wire_transfer
@@ -1082,8 +942,8 @@
   geographic_footprints:
   - domestic_us
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1111,8 +971,8 @@
   geographic_footprints:
   - domestic_us
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1129,8 +989,8 @@
   key_terms:
   - retainer
 - id: 128-35
-  description: Time lapse between instruction to act in respect of claim and settlement
-    appeared implausible.
+  description: Time lapse between instruction to act in respect of claim and settlement appeared
+    implausible.
   product_types:
   - depository
   - wire_transfer
@@ -1142,8 +1002,8 @@
   geographic_footprints:
   - domestic_us
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1159,37 +1019,6 @@
   key_terms:
   - claim
   - settlement
-- id: 128-36
-  description: Transaction size mismatched to business profile.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types:
-  - mobile_phones
-  - wholesale
-  - retail
-  customer_profiles:
-  - cash_intensive_business
-  - small_business
-  geographic_footprints:
-  - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: layering
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - invoice_mismatch
-  key_terms:
-  - transaction size
 - id: 128-37
   description: Large cash deposits in foreign currency.
   product_types:
@@ -1200,8 +1029,8 @@
   - cash_intensive_business
   geographic_footprints:
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1218,38 +1047,10 @@
   key_terms:
   - foreign currency
   - cash deposits
-- id: 128-38
-  description: Declared activity did not match transactional behaviour.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types:
-  - healthcare
-  customer_profiles:
-  - investment_holding
-  geographic_footprints:
-  - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: layering
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - invoice_mismatch
-  key_terms:
-  - declared activity
 - id: 128-39
-  description: A Private Investment Fund (PIF) held by the customer is not known to
-    the bank, or its valuation has not been sourced from well-known regulated valuation
-    channels or an independent party.
+  description: A Private Investment Fund (PIF) held by the customer is not known to the bank,
+    or its valuation has not been sourced from well-known regulated valuation channels or
+    an independent party.
   product_types:
   - private_banking
   - securities
@@ -1261,8 +1062,8 @@
   geographic_footprints:
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1292,8 +1093,8 @@
   geographic_footprints:
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1321,8 +1122,8 @@
   geographic_footprints:
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1338,8 +1139,8 @@
   key_terms:
   - net worth
 - id: 128-42
-  description: The underlying investments of the Private Investment Fund (PIF), where
-    their nature or value can be determined, are unusual in nature or cannot be substantiated.
+  description: The underlying investments of the Private Investment Fund (PIF), where their
+    nature or value can be determined, are unusual in nature or cannot be substantiated.
   product_types:
   - private_banking
   - securities
@@ -1350,8 +1151,8 @@
   geographic_footprints:
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1367,36 +1168,6 @@
   key_terms:
   - PIF
   - NAV
-- id: 128-43
-  description: Lack of corroborative information on a Private Investment Fund (PIF)
-    investment held in the bank's custody.
-  product_types:
-  - private_banking
-  - securities
-  industry_types:
-  - financial_services
-  customer_profiles:
-  - high_net_worth_individual
-  geographic_footprints:
-  - south_east_asia
-  - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: layering
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns: []
-  key_terms:
-  - PIF
-  - custody
 - id: 128-44
   description: Use of complex structure or shell companies with no reasonable explanation.
   product_types:
@@ -1411,8 +1182,8 @@
   geographic_footprints:
   - offshore
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1429,8 +1200,8 @@
   key_terms:
   - shell companies
 - id: 128-45
-  description: Absence of reputable regulated fund manager and/or administrator in
-    the fund structure.
+  description: Absence of reputable regulated fund manager and/or administrator in the fund
+    structure.
   product_types:
   - private_banking
   - securities
@@ -1441,8 +1212,8 @@
   geographic_footprints:
   - offshore
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1459,10 +1230,9 @@
   - fund manager
   - administrator
 - id: 128-46
-  description: Private Investment Companies (PICs) are investing into a fund at a
-    participation rate below the threshold the financial institution applies for Know-Your-Client
-    (KYC) due diligence, potentially to avoid scrutiny of the ultimate beneficial
-    owner.
+  description: Private Investment Companies (PICs) are investing into a fund at a participation
+    rate below the threshold the financial institution applies for Know-Your-Client (KYC)
+    due diligence, potentially to avoid scrutiny of the ultimate beneficial owner.
   product_types:
   - private_banking
   - securities
@@ -1474,8 +1244,8 @@
   geographic_footprints:
   - offshore
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1493,66 +1263,9 @@
   - PIC
   - participation rate
   - KYC
-- id: 128-47
-  description: Hidden or overly complex relationships.
-  product_types:
-  - private_banking
-  - securities
-  industry_types:
-  - financial_services
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - offshore
-  - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: shell_company
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - shell_company
-  transaction_patterns:
-  - nested_account_activity
-  key_terms:
-  - complex relationships
-- id: 128-48
-  description: Adverse news on fund managers and significant investors.
-  product_types:
-  - private_banking
-  - securities
-  industry_types:
-  - financial_services
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - offshore
-  - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: layering
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns: []
-  key_terms:
-  - adverse news
 - id: 128-49
-  description: Incoming funds from third parties (i.e. funds are not from any of the
-    private equity investors).
+  description: Incoming funds from third parties (i.e. funds are not from any of the private
+    equity investors).
   product_types:
   - private_banking
   - securities
@@ -1565,8 +1278,8 @@
   geographic_footprints:
   - offshore
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1598,8 +1311,8 @@
   - north_asia
   - europe
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1617,39 +1330,6 @@
   - country of incorporation
   - operations
   - accounts
-- id: 128-51
-  description: Declared business activity did not match transactional behaviour.
-  product_types:
-  - depository
-  - wire_transfer
-  industry_types:
-  - training
-  customer_profiles:
-  - foreign_individual
-  - non_resident_alien
-  geographic_footprints:
-  - oceania
-  - south_east_asia
-  - north_asia
-  - europe
-  - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: tax_evasion
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - tax_evasion
-  transaction_patterns:
-  - invoice_mismatch
-  key_terms:
-  - declared business activity
 - id: 128-52
   description: Lack of a plausible purpose for opening an offshore account in Singapore.
   product_types:
@@ -1664,8 +1344,8 @@
   - oceania
   - south_east_asia
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1694,8 +1374,8 @@
   geographic_footprints:
   - middle_east
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1710,37 +1390,6 @@
   transaction_patterns: []
   key_terms:
   - mailing address
-- id: 128-54
-  description: Mismatch between purpose of the transactions and the stated purpose
-    of opening the Private Bank account in Singapore.
-  product_types:
-  - private_banking
-  - wire_transfer
-  industry_types:
-  - retail
-  - precious_metals_jewelry
-  customer_profiles:
-  - shell_or_front_company
-  geographic_footprints:
-  - middle_east
-  - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
-  regulator: MAS
-  regulator_jurisdiction: SG
-  issuing_agencies:
-  - Commercial Affairs Department
-  - Monetary Authority of Singapore
-  issued_date: 2018-05
-  risk_level: medium
-  category: layering
-  source_url: https://abs.org.sg/docs/library/legal-persons-misuse-typologies-and-best-practice.pdf
-  typology_family:
-  - organized_crime_proceeds
-  transaction_patterns:
-  - pass_through_account_activity
-  key_terms:
-  - purpose of the transactions
 - id: 128-55
   description: Co-mingling of operational funds with investment funds.
   product_types:
@@ -1754,8 +1403,8 @@
   geographic_footprints:
   - middle_east
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1772,8 +1421,8 @@
   key_terms:
   - commingling
 - id: 128-56
-  description: SWIFT messages show third party funding from ostensibly un-related
-    companies but with the same virtual address.
+  description: SWIFT messages show third party funding from ostensibly un-related companies
+    but with the same virtual address.
   product_types:
   - wire_transfer
   - private_banking
@@ -1785,8 +1434,8 @@
   geographic_footprints:
   - middle_east
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1804,8 +1453,8 @@
   - SWIFT
   - virtual address
 - id: 128-57
-  description: Usage of entities bearing similar names to those of well-known global
-    fund manager and jewellery firms.
+  description: Usage of entities bearing similar names to those of well-known global fund
+    manager and jewellery firms.
   product_types:
   - depository
   - wire_transfer
@@ -1818,8 +1467,8 @@
   geographic_footprints:
   - middle_east
   - offshore
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
@@ -1838,9 +1487,9 @@
   - fund manager
   - jewellery firms
 - id: 128-58
-  description: Despite holding significant available cash, the customer avoids making
-    outward remittances and instead uses loan facilities, a pattern consistent with
-    loan-back schemes used to launder funds while obscuring their origin.
+  description: Despite holding significant available cash, the customer avoids making outward
+    remittances and instead uses loan facilities, a pattern consistent with loan-back schemes
+    used to launder funds while obscuring their origin.
   product_types:
   - depository
   - wire_transfer
@@ -1853,8 +1502,8 @@
   geographic_footprints:
   - high_risk_jurisdiction
   - south_east_asia
-  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies
-    and Best Practices
+  regulatory_source: AML/CFT Industry Partnership Legal Persons – Misuse Typologies and Best
+    Practices
   regulator: MAS
   regulator_jurisdiction: SG
   issuing_agencies:
