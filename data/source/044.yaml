@@ -2,7 +2,7 @@
   description: Maintaining accounts, transferring funds, or providing other financial
     services (e.g., payment processing, trade finance, insurance) for any person blocked
     pursuant to E.O. 14024, including Russian financial institutions blocked pursuant
-    to E.O. 14024, outside of the activities described below under “Permissible Activities.”
+    to E.O. 14024, outside the scope of OFAC-authorised activities.
   product_types:
   - depository
   - wire_transfer
@@ -14,7 +14,7 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -38,8 +38,9 @@
 - id: 044-02
   description: Maintaining accounts, transferring funds, or providing other financial
     services (e.g., payment processing, trade finance, insurance) for any persons,
-    either inside or outside Russia, that otherwise support Russia’s military-industrial
-    base, including those that operate in the specified sectors.
+    inside or outside Russia, that support Russia's military-industrial base, including
+    those operating in the OFAC-specified sectors (technology, defence and related
+    materiel, construction, aerospace, manufacturing).
   product_types:
   - depository
   - wire_transfer
@@ -53,7 +54,7 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -75,8 +76,9 @@
   - insurance
 - id: 044-03
   description: Facilitating the sale, supply, or transfer, directly or indirectly,
-    of the specified items to Russian importers or companies shipping the items to
-    Russia.
+    of OFAC-specified controlled items (machine tools, microelectronics, electronic
+    test equipment, propellants, etc.) to Russian importers or to companies shipping
+    those items onward to Russia.
   product_types:
   - trade_finance
   - wire_transfer
@@ -90,7 +92,7 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -109,12 +111,11 @@
   - specified items
   - Russian importers
   - shipping the items to Russia
-- id: 044-04
-  description: Helping companies or individuals evade U.S. sanctions on Russia’s military-industrial
-    base, including offering to set up alternative or non-transparent payment mechanisms,
-    changing or removing customer names or other relevant information from payment
-    fields, obfuscating the true purpose of or parties involved in payments, or otherwise
-    taking steps to hide the ultimate purpose of transactions to evade sanctions.
+- id: 044-04a
+  description: Setting up alternative or non-transparent payment mechanisms (e.g.,
+    informal value transfer, nested correspondent arrangements, off-ledger settlement)
+    for customers transacting with parties tied to Russia's military-industrial base
+    to evade U.S. sanctions.
   product_types:
   - wire_transfer
   - depository
@@ -127,7 +128,75 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2024-06-12'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - wire_transfer_chains
+  - pass_through_account_activity
+  key_terms:
+  - alternative payment mechanisms
+  - non-transparent payment mechanisms
+  - sanctions evasion
+- id: 044-04b
+  description: Changing or removing customer names, beneficiary information, or other
+    identifying details from payment fields (wire-stripping) to obscure parties tied
+    to Russia's military-industrial base.
+  product_types:
+  - wire_transfer
+  - depository
+  - correspondent_banking
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2024-06-12'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - wire stripping
+  - payment fields
+  - customer names
+- id: 044-04c
+  description: Obfuscating the true purpose of, or parties involved in, payments —
+    e.g., misdescribing the underlying goods, using vague references, or inserting
+    intermediaries — to hide the ultimate purpose of transactions touching Russia's
+    military-industrial base.
+  product_types:
+  - wire_transfer
+  - depository
+  - correspondent_banking
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -141,15 +210,12 @@
   transaction_patterns:
   - identity_misrepresentation
   - rapid_fund_movement
-  - wire_transfer_chains
   key_terms:
-  - alternative payment mechanisms
-  - non-transparent payment mechanisms
-  - payment fields
   - hide the ultimate purpose
-  - sanctions evasion
+  - obfuscating payment purpose
 - id: 044-05
-  description: Any customers involved in the specified sectors or who conduct business
+  description: Customers operating in the OFAC-specified sectors (technology, defence
+    and related materiel, construction, aerospace, manufacturing) or conducting business
     with persons blocked pursuant to E.O. 14024.
   product_types:
   - depository
@@ -164,7 +230,7 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -183,9 +249,9 @@
   - blocked persons
   - E.O. 14024
 - id: 044-06
-  description: Any customers that may be involved in the sale, supply, or transfer
-    of the specified items to Russia or to jurisdictions previously identified as
-    posing a high risk of Russian sanctions evasion.
+  description: Customers involved in the sale, supply, or transfer of OFAC-specified
+    controlled items to Russia, or to jurisdictions previously identified as high-risk
+    for Russian sanctions evasion (e.g., known transshipment hubs).
   product_types:
   - trade_finance
   - wire_transfer
@@ -200,7 +266,7 @@
   - russia
   - high_risk_jurisdiction
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -219,8 +285,8 @@
   - specified items
   - high risk of Russian sanctions evasion
 - id: 044-07
-  description: Customers conducting business with newly formed Russian companies or
-    newly formed companies in third countries known to be potential transshipment
+  description: Customers conducting business with newly formed Russian companies,
+    or with newly formed companies in third countries known to be potential transshipment
     points for exports to Russia.
   product_types:
   - wire_transfer
@@ -237,7 +303,7 @@
   - russia
   - high_risk_jurisdiction
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -256,8 +322,9 @@
   - newly formed Russian companies
   - transshipment points
 - id: 044-08
-  description: Companies or counterparties supposedly involved in production or import-export
-    of sophisticated items with no business history or little-to-no web presence.
+  description: Companies or counterparties claiming to be involved in the production
+    or import-export of sophisticated items (e.g., microelectronics, machine tools,
+    aerospace components) but with no business history and little-to-no web presence.
   product_types:
   - trade_finance
   - wire_transfer
@@ -271,7 +338,7 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -288,11 +355,10 @@
   - no business history
   - little-to-no web presence
   - sophisticated items
-- id: 044-09
-  description: Customers or counterparties using unusual or atypical payment terms
-    and methods, such as large cash payments, frequent or last-minute changes to end-users
-    or payees, or routing payments through third countries not otherwise involved
-    in the transaction.
+- id: 044-09a
+  description: Customers or counterparties using unusually large cash payments for
+    trade or import-export transactions where wire transfer or letter of credit would
+    be expected.
   product_types:
   - wire_transfer
   - depository
@@ -307,7 +373,7 @@
   - russia
   - high_risk_jurisdiction
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -321,18 +387,86 @@
   - trade_based_money_laundering
   transaction_patterns:
   - cash_intensive_behavior
-  - rapid_fund_movement
-  - third_party_payments
-  - unusual_international_wires
   key_terms:
   - large cash payments
+- id: 044-09b
+  description: Frequent or last-minute changes to declared end-users or payees on
+    cross-border trade payments, particularly when the substitute parties have no
+    apparent connection to the original transaction.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  - money_transmitter
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - high_risk_jurisdiction
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2024-06-12'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+  typology_family:
+  - sanctions_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
   - end-users
   - payees
+  - last-minute changes
+- id: 044-09c
+  description: Routing payments through third countries that have no apparent involvement
+    in the underlying trade transaction, particularly known transshipment hubs for
+    Russia-related trade.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  - money_transmitter
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - high_risk_jurisdiction
+  regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
+    Base'
+  regulator: OFAC
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2024-06-12'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://ofac.treasury.gov/media/932436/download
+  typology_family:
+  - sanctions_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
   - third countries
+  - transit jurisdictions
 - id: 044-10
-  description: A microelectronics exporter formed in March 2022 located in a high-risk
-    jurisdiction that has received repeated international wire transfers from possible
-    shell companies in offshore financial centers.
+  description: A recently formed (e.g., within the past two years) microelectronics
+    or dual-use goods exporter located in a high-risk jurisdiction that has received
+    repeated international wire transfers from suspected shell companies in offshore
+    financial centres, with no demonstrated commercial track record.
   product_types:
   - wire_transfer
   - trade_finance
@@ -346,7 +480,7 @@
   geographic_footprints:
   - high_risk_jurisdiction
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -366,14 +500,13 @@
   - offshore financial centers
   - international wire transfers
 - id: 044-11
-  description: A small bank in a jurisdiction with a strong trading relationship with
-    Russia has a high number of customers in the import-export and microelectronics
-    sectors that continue to do business with Russia. This bank maintains relationships
-    with multiple designated Russian banks for the purpose of facilitating trade with
-    Russia in the local currency. The activity going through this bank’s foreign correspondent
-    relationships shows repeated linkages with Russia, a large volume of suspected
-    shell company activity, and other general indicators of suspicious activity, such
-    as wires with no clear business purpose involving high-risk jurisdictions.
+  description: A respondent bank in a jurisdiction with a strong trading relationship
+    with Russia exhibits a combination of: (a) a high concentration of customers in
+    import-export and microelectronics sectors that continue to do business with Russia;
+    (b) correspondent or nested relationships with multiple designated Russian banks
+    used to facilitate trade in local currency; and (c) outbound wires showing repeated
+    Russia linkages, large volumes of suspected shell company activity, and payments
+    with no clear business purpose involving high-risk jurisdictions.
   product_types:
   - correspondent_banking
   - wire_transfer
@@ -388,7 +521,7 @@
   - russia
   - high_risk_jurisdiction
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -410,13 +543,11 @@
   - designated Russian banks
   - wires with no clear business purpose
 - id: 044-12
-  description: A medium-sized bank in a jurisdiction with a strong trading relationship
-    with Russia is reported in credible open-source media as taking steps to bring
-    in new Russia-related business in order to capitalize on measures other banks
-    have taken to reduce their Russia-related risk. These steps include opening a
-    new representative office in Russia, expanding its Russian language promotional
-    materials and website, and advertising in Russian-language media about services
-    for Russian businesses.
+  description: A respondent bank in a jurisdiction with strong Russia trading ties
+    is observed (including via credible open-source media) actively soliciting Russia-related
+    business as other banks de-risk — e.g., opening a new representative office in
+    Russia, expanding Russian-language promotional materials and websites, or advertising
+    in Russian-language media for services targeting Russian businesses.
   product_types:
   - correspondent_banking
   - wire_transfer
@@ -426,7 +557,7 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US
@@ -441,10 +572,11 @@
   key_terms:
   - Russia-related business
   - Russian-language promotional materials
-  - Russian-language media
+  - de-risking arbitrage
 - id: 044-13
-  description: A small bank frequently sends transactions through its foreign correspondent
-    account for customers who are later blocked pursuant to E.O. 14024.
+  description: A respondent bank repeatedly sends transactions through its foreign
+    correspondent account on behalf of customers who are subsequently blocked pursuant
+    to E.O. 14024, suggesting weak screening or wilful facilitation.
   product_types:
   - correspondent_banking
   - wire_transfer
@@ -454,7 +586,7 @@
   geographic_footprints:
   - russia
   regulatory_source: 'OFAC Sanctions Advisory: Updated Guidance for Foreign Financial
-    Institutions on OFAC Sanctions Authorities Targeting Support to Russia’s Military-Industrial
+    Institutions on OFAC Sanctions Authorities Targeting Support to Russia''s Military-Industrial
     Base'
   regulator: OFAC
   regulator_jurisdiction: US

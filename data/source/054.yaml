@@ -346,7 +346,7 @@
 - id: 054-15
   description: A customer accesses a safe deposit box after completing a transaction
     involving a large withdrawal of currency, or accesses a safe deposit box before
-    making currency deposits structured at or just under $10,000, to evade CTR filing
+    making currency deposits structured at or just under $10,000, to evade Currency Transaction Report (CTR) filing
     requirements.
   product_types:
   - depository

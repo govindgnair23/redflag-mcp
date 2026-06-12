@@ -1,9 +1,9 @@
 - id: 053-01
-  description: Disabling or manipulating the Automatic Identification System (AIS)
-    on vessels. Vessels intentionally disable AIS transponders or spoof/alter the
-    transmitted vessel identification (IMO number, MMSI, vessel name) in a manner
-    inconsistent with SOLAS to mask their movements, port calls, or ship-to-ship
-    transfers connected to sanctioned jurisdictions.
+  description: Vessels intentionally disable Automatic Identification System (AIS)
+    transponders or spoof/alter the transmitted vessel identification (IMO number,
+    MMSI, vessel name) in a manner inconsistent with SOLAS, to mask movements, port
+    calls, or ship-to-ship transfers connected to sanctioned jurisdictions (Iran,
+    North Korea, Syria).
   product_types:
   - correspondent_banking
   - depository
@@ -32,7 +32,8 @@
   source_url: https://ofac.treasury.gov/media/37751/download?inline=
   typology_family:
   - sanctions_evasion
-  transaction_patterns: []
+  transaction_patterns:
+  - identity_misrepresentation
   key_terms:
   - AIS
   - spoofing
@@ -40,10 +41,10 @@
   - IMO number
   - MMSI
 - id: 053-02
-  description: Physically altering vessel identification. Vessels paint over or otherwise
-    obscure their name and IMO number on the hull or superstructure and substitute
-    alternate identifiers to pass themselves off as different vessels and evade sanctions
-    screening.
+  description: Vessels physically alter their displayed identification — painting
+    over or obscuring the vessel name and IMO number on the hull or superstructure
+    and substituting alternate identifiers — to pose as different vessels and evade
+    sanctions screening.
   product_types:
   - correspondent_banking
   - depository
@@ -80,10 +81,10 @@
   - hull
   - superstructure
 - id: 053-03
-  description: Falsifying cargo and vessel documents. Shipping documentation — including
-    bills of lading, certificates of origin, invoices, packing lists, proof of insurance,
-    and lists of last ports of call — is altered or fabricated to obscure the true
-    origin, destination, parties, or nature of cargo connected to sanctioned jurisdictions.
+  description: Shipping documentation — bills of lading, certificates of origin, invoices,
+    packing lists, proof of insurance, or last-ports-of-call lists — is altered or
+    fabricated to obscure the true origin, destination, parties, or nature of cargo
+    connected to sanctioned jurisdictions.
   product_types:
   - trade_finance
   - wire_transfer
@@ -121,11 +122,10 @@
   - packing lists
   - proof of insurance
 - id: 053-04
-  description: Ship-to-ship (STS) transfers used to conceal the origin or destination
-    of cargo. Vessels transfer cargo at sea — often at night, in unusual or unscheduled
-    locations, or with AIS disabled — to launder sanctioned petroleum, petrochemicals,
-    metals, or other goods originating from or destined for Iran, North Korea, or
-    Syria.
+  description: Ship-to-ship (STS) transfers at sea — often at night, in unusual or
+    unscheduled locations, or with AIS disabled — used to conceal the origin or destination
+    of sanctioned petroleum, petrochemicals, metals, or other goods originating from
+    or destined for Iran, North Korea, or Syria.
   product_types:
   - trade_finance
   - wire_transfer
@@ -163,10 +163,11 @@
   - ship-to-ship
   - at night
 - id: 053-05
-  description: Voyage irregularities. Vessels follow indirect routing, take unscheduled
-    detours, transit through unrelated third countries, or call at ports that have
-    no apparent commercial connection to the stated cargo or voyage purpose — patterns
-    consistent with transshipment to evade sanctions on Iran, North Korea, or Syria.
+  description: Voyage irregularities — indirect routing, unscheduled detours, transit
+    through unrelated third countries, or calls at ports with no commercial connection
+    to the stated cargo or voyage purpose (e.g., off-route detours that cannot be
+    justified by unsafe ports, extreme weather, or emergencies) — consistent with
+    transshipment to evade sanctions on Iran, North Korea, or Syria.
   product_types:
   - trade_finance
   - wire_transfer
@@ -203,10 +204,10 @@
   - indirect routing
   - unscheduled detours
   - transshipment
-  - third countries
+  - off-route
 - id: 053-06
-  description: False flags and flag hopping. A vessel claims a country's flag without
-    proper authorization, continues to fly a flag after being deregistered, or changes
+  description: False flags and flag hopping — a vessel claims a country's flag without
+    proper authorisation, continues to fly a flag after deregistration, or changes
     flag state frequently in a short period to obscure its identity, ownership chain,
     or sanctions exposure.
   product_types:
@@ -243,11 +244,12 @@
   - flag hopping
   - deregistered
   - flag state
+  - false flag
 - id: 053-07
-  description: Complex ownership or management. Vessels are held through layered
-    shell companies, nominee directors, or opaque ownership and management structures
-    with no discernible legitimate purpose, obscuring the true beneficial owner and
-    enabling sanctioned parties to retain effective control.
+  description: Vessels held through layered shell companies, nominee directors, or
+    opaque ownership and management structures with no legitimate purpose, obscuring
+    the true beneficial owner and enabling sanctioned parties to retain effective
+    control.
   product_types:
   - correspondent_banking
   - depository
@@ -277,50 +279,17 @@
   source_url: https://ofac.treasury.gov/media/37751/download?inline=
   typology_family:
   - sanctions_evasion
-  - shell_company_usage
+  - shell_company
   transaction_patterns:
   - shell_company_usage
   key_terms:
   - shell companies
   - beneficial owner
   - ownership and management
-- id: 053-08
-  description: a pattern of AIS manipulation not consistent with SOLAS
-  product_types:
-  - correspondent_banking
-  - depository
-  - insurance
-  - trade_finance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - AIS
-  - SOLAS
 - id: 053-09
-  description: transactions inconsistent with the client’s typical business practices,
-    to include when clients acquire new vessels.
+  description: Trade, insurance, or finance transactions involving vessels that are
+    inconsistent with the customer's typical business practices — including sudden
+    acquisitions of new vessels by entities with no prior maritime activity.
   product_types:
   - depository
   - wire_transfer
@@ -347,122 +316,17 @@
   risk_level: medium
   category: layering
   source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family: []
+  typology_family:
+  - sanctions_evasion
   transaction_patterns:
   - rapid_fund_movement
   key_terms:
   - new vessels
   - typical business practices
-- id: 053-10
-  description: significant time period with non-transmission that is not consistent
-    with the International Convention for the Safety of Life at Sea (SOLAS)
-  product_types:
-  - insurance
-  - trade_finance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - AIS
-  - non-transmission
-  - SOLAS
-- id: 053-11
-  description: navigation of suspicious deviations in routes (e.g., changes without
-    what appears to be a legitimate reason to go off-route, such as unsafe ports,
-    extreme weather, or emergencies)
-  product_types:
-  - trade_finance
-  - wire_transfer
-  - insurance
-  industry_types:
-  - maritime_shipping
-  - import_export
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  - high_risk_jurisdiction
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - rapid_fund_movement
-  - unusual_international_wires
-  key_terms:
-  - off-route
-  - unsafe ports
-  - extreme weather
-  - emergencies
-- id: 053-12
-  description: a pattern of turning off AIS in a manner inconsistent with SOLAS
-  product_types:
-  - insurance
-  - trade_finance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - AIS
-  - turning off
-  - SOLAS
 - id: 053-13
-  description: engaging in trade to or from vessels that are not transmitting AIS
-    consistent with SOLAS
+  description: A customer engages in trade transactions to or from vessels that are
+    not broadcasting AIS consistent with SOLAS, or that have a documented history
+    of AIS transponder manipulation.
   product_types:
   - trade_finance
   - wire_transfer
@@ -495,8 +359,11 @@
   key_terms:
   - AIS
   - SOLAS
+  - counterparty vessel
 - id: 053-14
-  description: If a vessel cannot account for its AIS history consistent with SOLAS
+  description: A vessel cannot account for gaps in its AIS history in a manner consistent
+    with SOLAS (e.g., no documented technical failure, emergency, or authorised exemption
+    covering the gap).
   product_types:
   - insurance
   - trade_finance
@@ -528,9 +395,9 @@
   - AIS history
   - SOLAS
 - id: 053-15
-  description: ownership of a vessel is transferred between companies controlled by
-    the same beneficial owner and where there is no discernable legitimate purpose
-    for the transfer
+  description: Ownership of a vessel is transferred between companies controlled by
+    the same beneficial owner with no discernible legitimate commercial purpose, often
+    to insulate the vessel from sanctions enforcement.
   product_types:
   - depository
   - wire_transfer
@@ -559,54 +426,18 @@
   source_url: https://ofac.treasury.gov/media/37751/download?inline=
   typology_family:
   - sanctions_evasion
-  - shell_company_usage
+  - shell_company
   transaction_patterns:
   - shell_company_usage
   key_terms:
   - beneficial owner
   - vessel transfer
   - legitimate purpose
-- id: 053-16
-  description: transfers of cargo to or from clients with other vessels that are not
-    broadcasting AIS consistent with SOLAS or have a history of AIS transponder manipulation
-    inconsistent with SOLAS
-  product_types:
-  - trade_finance
-  - wire_transfer
-  - insurance
-  industry_types:
-  - maritime_shipping
-  - import_export
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - pass_through_account_activity
-  key_terms:
-  - AIS
-  - SOLAS
-  - transfers of cargo
 - id: 053-18
-  description: purchases of crude and refined petroleum, petrochemicals, and metals
-    at rates significantly below market prices may be red flags indicating illicit
-    behavior.
+  description: Purchases of crude or refined petroleum, petrochemicals, or metals
+    at rates significantly below prevailing market prices — a possible indicator that
+    the goods originate from a sanctioned jurisdiction and are being discounted to
+    move them illicitly.
   product_types:
   - trade_finance
   - wire_transfer
@@ -614,6 +445,7 @@
   industry_types:
   - import_export
   - maritime_shipping
+  - oil_and_gas
   customer_profiles:
   - cross_border_business
   geographic_footprints:
@@ -630,10 +462,10 @@
   - USCG
   issued_date: '2020-05-14'
   risk_level: medium
-  category: fraud_nexus
+  category: trade_based_money_laundering
   source_url: https://ofac.treasury.gov/media/37751/download?inline=
   typology_family:
-  - fraud_proceeds
+  - sanctions_evasion
   - trade_based_money_laundering
   transaction_patterns:
   - invoice_mismatch
@@ -643,42 +475,9 @@
   - refined petroleum
   - petrochemicals
   - metals
-- id: 053-19
-  description: a pattern of AIS disablement or manipulation inconsistent with SOLAS
-  product_types:
-  - insurance
-  - trade_finance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - AIS
-  - disablement
-  - manipulation
-  - SOLAS
 - id: 053-20
-  description: a vessel’s IMO and ship name do not clearly match
+  description: A vessel's IMO number and ship name do not match across registry, AIS,
+    hull markings, or shipping documentation.
   product_types:
   - depository
   - insurance
@@ -701,54 +500,19 @@
   - USCG
   issued_date: '2020-05-14'
   risk_level: high
-  category: fraud_nexus
+  category: sanctions_evasion
   source_url: https://ofac.treasury.gov/media/37751/download?inline=
   typology_family:
-  - fraud_proceeds
+  - sanctions_evasion
   transaction_patterns:
   - identity_misrepresentation
   key_terms:
   - IMO
   - ship name
-  - match
-- id: 053-21
-  description: a vessel has changed flags frequently in a short period of time in
-    a suspicious manner consistent with flag hopping
-  product_types:
-  - depository
-  - insurance
-  - trade_finance
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - flag hopping
-  - flags
-  - short period of time
+  - mismatch
 - id: 053-22
-  description: transactions involving products going to or from Iran, North Korea,
-    and Syria
+  description: Transactions involving products going to or from Iran, North Korea,
+    or Syria.
   product_types:
   - trade_finance
   - wire_transfer
@@ -783,109 +547,10 @@
   - Iran
   - North Korea
   - Syria
-- id: 053-23
-  description: North Korea-associated vessels intentionally disregard requirements
-    to operate AIS to evade UNSCR sanctions monitoring.
-  product_types:
-  - trade_finance
-  - insurance
-  - wire_transfer
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - north_korea
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - North Korea-associated vessels
-  - AIS
-  - UNSCR sanctions monitoring
-- id: 053-26
-  description: a vessel owner or manager who continues to use a country’s flag after
-    it has been removed from a registry (i.e., “deregistered”)
-  product_types:
-  - depository
-  - insurance
-  - trade_finance
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - deregistered
-  - flag
-  - registry
-- id: 053-27
-  description: a ship claiming a country flag without proper authorization
-  product_types:
-  - depository
-  - insurance
-  - trade_finance
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - iran
-  - north_korea
-  - syria
-  regulatory_source: Sanctions Advisory for the Maritime Industry, Energy and Metals
-    Sectors, and Related Communities
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2020-05-14'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/37751/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - country flag
-  - authorization
 - id: 053-31
-  description: North Korea sometimes utilizes non-ocean-going barges that do not transmit
-    an AIS signal to illicitly transport North Korea-origin goods to China.
+  description: Non-ocean-going barges that do not transmit an AIS signal used to transport
+    North Korea-origin goods (notably coal and minerals) across coastal or riverine
+    waters to China or other transshipment points.
   product_types:
   - trade_finance
   - insurance
@@ -914,15 +579,15 @@
   typology_family:
   - sanctions_evasion
   transaction_patterns:
-  - bulk_cash_smuggling
+  - trade_document_manipulation
   key_terms:
   - non-ocean-going barges
   - AIS signal
   - North Korea-origin goods
   - China
 - id: 053-32
-  description: transactions for the purchase, acquisition, sale, transport, or marketing
-    of petroleum, petroleum products, or petrochemical products from Iran
+  description: Transactions for the purchase, acquisition, sale, transport, or marketing
+    of petroleum, petroleum products, or petrochemical products from Iran.
   product_types:
   - trade_finance
   - wire_transfer
@@ -957,11 +622,11 @@
   - petrochemical products
   - Iran
 - id: 053-33
-  description: persons who operate in the iron, steel, aluminum, or copper sectors
-    of Iran, or who knowingly engage in a significant transaction for the sale, supply,
+  description: A customer operates in the iron, steel, aluminum, or copper sectors
+    of Iran, or knowingly engages in a significant transaction for the sale, supply,
     or transfer to Iran of significant goods or services used in connection with those
-    sectors or for the purchase, acquisition, sale, or transport, or marketing of
-    iron, steel, aluminum, or copper from Iran
+    sectors, or for the purchase, acquisition, sale, transport, or marketing of iron,
+    steel, aluminum, or copper from Iran.
   product_types:
   - trade_finance
   - wire_transfer
@@ -998,9 +663,9 @@
   - copper
   - Iran
 - id: 053-34
-  description: persons who knowingly sell, supply, or transfer, directly or indirectly,
-    to or from Iran, precious metals or certain materials, including coal, graphite,
-    or certain raw or semi-finished metals such as aluminum and steel
+  description: A customer knowingly sells, supplies, or transfers, directly or indirectly,
+    to or from Iran, precious metals or certain materials including coal, graphite,
+    or raw or semi-finished metals such as aluminum and steel.
   product_types:
   - trade_finance
   - wire_transfer
@@ -1037,10 +702,10 @@
   - aluminum
   - steel
 - id: 053-35
-  description: persons who operate in the construction, mining, manufacturing, and
-    textile sectors of the Iranian economy, or who knowingly engage in a significant
+  description: A customer operates in the construction, mining, manufacturing, or
+    textile sectors of the Iranian economy, or knowingly engages in a significant
     transaction for the sale, supply, or transfer to or from Iran of significant goods
-    or services used in connection with those sectors
+    or services used in connection with those sectors.
   product_types:
   - trade_finance
   - wire_transfer
@@ -1076,10 +741,9 @@
   - textile
   - Iran
 - id: 053-36
-  description: Persons risk exposure to sanctions if they knowingly provide certain
-    bunkering services to Iranian vessels or to non-Iranian vessels transporting cargo,
-    including petroleum or petroleum products from Iran, for Iranian persons on the
-    SDN List
+  description: A customer knowingly provides bunkering (fuel) services to Iranian
+    vessels, or to non-Iranian vessels transporting cargo (including petroleum or
+    petroleum products) from Iran or for Iranian persons on the SDN List.
   product_types:
   - correspondent_banking
   - depository
@@ -1114,10 +778,10 @@
   - Iranian vessels
   - SDN List
 - id: 053-37
-  description: persons risk exposure to sanctions if they knowingly provide underwriting
-    services or insurance or reinsurance to or for Iranian persons on the SDN List,
-    including IRISL, NIOC, NITC, or to or for any person with respect to or for the
-    benefit of any activity in the energy, shipping, or shipbuilding sectors of Iran
+  description: A customer knowingly provides underwriting, insurance, or reinsurance
+    services to or for Iranian persons on the SDN List (including IRISL, NIOC, NITC)
+    or to or for any person with respect to activity in the energy, shipping, or shipbuilding
+    sectors of Iran.
   product_types:
   - insurance
   - correspondent_banking
@@ -1153,8 +817,10 @@
   - NIOC
   - NITC
 - id: 053-38
-  description: actors, such as Iran’s IRGC-QF, attempt to evade U.S. sanctions by
-    obfuscating the origin, destination, and recipient of oil shipments.
+  description: Oil shipments where documentation, AIS data, or ownership records show
+    inconsistencies suggesting obfuscation of the origin, destination, or recipient
+    of cargo — particularly patterns consistent with Iranian state actors (e.g., IRGC-QF)
+    evading U.S. sanctions on oil exports.
   product_types:
   - trade_finance
   - wire_transfer

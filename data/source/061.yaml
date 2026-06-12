@@ -1,13 +1,12 @@
 - id: 061-01
-  description: There is an inability to properly identify the client or there are
-    questions surrounding the client's identity.
+  description: There is an inability to properly identify the client or there are questions
+    surrounding the client's identity.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -21,16 +20,15 @@
   key_terms:
   - client identity
 - id: 061-02
-  description: When opening an account, the client refuses or tries to avoid providing
-    information required by the financial institution, or provides information that
-    is misleading, vague, or difficult to verify.
+  description: When opening an account, the client refuses or tries to avoid providing information
+    required by the financial institution, or provides information that is misleading, vague,
+    or difficult to verify.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -44,17 +42,16 @@
   key_terms:
   - account opening
 - id: 061-03
-  description: The client refuses to provide information regarding the beneficial
-    owners of an account opened for an entity, or provides information that is false,
-    conflicting, misleading or substantially incorrect.
+  description: The client refuses to provide information regarding the beneficial owners of
+    an account opened for an entity, or provides information that is false, conflicting, misleading
+    or substantially incorrect.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -75,8 +72,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -90,16 +86,14 @@
   key_terms:
   - identification document
 - id: 061-05
-  description: There are inconsistencies in the identification documents or different
-    identifiers provided by the client, such as name, address, date of birth or phone
-    number.
+  description: There are inconsistencies in the identification documents or different identifiers
+    provided by the client, such as name, address, date of birth or phone number.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -113,15 +107,14 @@
   key_terms:
   - identification documents
 - id: 061-06
-  description: Client produces seemingly false information or identification that
-    appears to be counterfeited, altered or inaccurate.
+  description: Client produces seemingly false information or identification that appears
+    to be counterfeited, altered or inaccurate.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -136,15 +129,14 @@
   - counterfeited
   - altered identification
 - id: 061-07
-  description: Client displays a pattern of name variations from one transaction to
-    another or uses aliases.
+  description: Client displays a pattern of name variations from one transaction to another
+    or uses aliases.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -165,8 +157,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -179,16 +170,15 @@
   key_terms:
   - identity documents
 - id: 061-09
-  description: The client provides only a non-civic address or disguises a post office
-    box as a civic address for the purpose of concealing their physical residence.
+  description: The client provides only a non-civic address or disguises a post office box
+    as a civic address for the purpose of concealing their physical residence.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints:
   - domestic_us
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -203,37 +193,14 @@
   - post office box
   - civic address
 - id: 061-10
-  description: Common identifiers (e.g. addresses, phone numbers, etc.) are used by
-    multiple clients that do not appear to be related.
+  description: Common identifiers (e.g. addresses, phone numbers, etc.) are used by multiple
+    clients that do not appear to be related.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - common identifiers
-- id: 061-11
-  description: Common identifiers (e.g. addresses, phone numbers, etc.) are used by
-    multiple clients conducting similar transactions.
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -254,8 +221,7 @@
   - travel_hospitality
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -269,15 +235,14 @@
   key_terms:
   - hotel address
 - id: 061-13
-  description: Transactions involve persons or entities identified by the media, law
-    enforcement and/or intelligence agencies as being linked to criminal activities.
+  description: Transactions involve persons or entities identified by the media, law enforcement
+    and/or intelligence agencies as being linked to criminal activities.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -293,16 +258,15 @@
   - law enforcement
   - intelligence agencies
 - id: 061-14
-  description: Attempts to verify the information provided by a new or prospective
-    client are difficult.
+  description: Attempts to verify the information provided by a new or prospective client
+    are difficult.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - newly_established_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -322,8 +286,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -345,8 +308,7 @@
   customer_profiles: []
   geographic_footprints:
   - domestic_us
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -361,15 +323,14 @@
   - different physical locations
   - tellers
 - id: 061-17
-  description: Evidence of untruthfulness on behalf of the client (e.g. providing
-    false or misleading information).
+  description: Evidence of untruthfulness on behalf of the client (e.g. providing false or
+    misleading information).
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -384,15 +345,14 @@
   - false or misleading information
 - id: 061-18
   description: Client exhibits nervous behaviour during account opening, KYC questioning,
-    or transaction processing — including agitation, sweating, evasive responses,
-    or visible reluctance to engage.
+    or transaction processing — including agitation, sweating, evasive responses, or visible
+    reluctance to engage.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -404,38 +364,15 @@
   transaction_patterns: []
   key_terms:
   - nervous behaviour
-- id: 061-19
-  description: Client refuses to provide information when required, or is reluctant
-    to provide information.
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - refuses to provide information
 - id: 061-20
-  description: Client adopts a defensive or hostile stance when staff ask routine
-    due-diligence questions about source of funds, purpose of transaction, or beneficial
-    ownership.
+  description: Client adopts a defensive or hostile stance when staff ask routine due-diligence
+    questions about source of funds, purpose of transaction, or beneficial ownership.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -448,15 +385,14 @@
   key_terms:
   - defensive stance
 - id: 061-21
-  description: Client presents confusing details about the transaction or knows few
-    details about its purpose.
+  description: Client presents confusing details about the transaction or knows few details
+    about its purpose.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -469,60 +405,16 @@
   - rapid_fund_movement
   key_terms:
   - transaction purpose
-- id: 061-22
-  description: Client avoids contact with reporting entity employees.
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: low
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns: []
-  key_terms:
-  - avoids contact
-- id: 061-23
-  description: Client refuses to identify a source of funds or provides information
-    that is false, misleading, or substantially incorrect.
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: fraud_nexus
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family:
-  - corruption_and_bribery
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - source of funds
 - id: 061-24
-  description: Client exhibits a lack of concern about higher than normal transaction
-    costs or fees.
+  description: Client exhibits a lack of concern about higher than normal transaction costs
+    or fees.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - high_net_worth_individual
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -535,15 +427,14 @@
   key_terms:
   - fees
 - id: 061-25
-  description: Client makes enquiries/statements indicating a desire to avoid reporting
-    or tries to persuade the reporting entity not to file/maintain required reports.
+  description: Client makes enquiries/statements indicating a desire to avoid reporting or
+    tries to persuade the reporting entity not to file/maintain required reports.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -557,15 +448,14 @@
   key_terms:
   - avoid reporting
 - id: 061-26
-  description: Client provides an insufficient or implausible explanation for the
-    source of funds, or cannot produce supporting documentation when asked.
+  description: Client provides an insufficient or implausible explanation for the source of
+    funds, or cannot produce supporting documentation when asked.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -586,8 +476,7 @@
   customer_profiles:
   - newly_established_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -601,16 +490,15 @@
   key_terms:
   - initial deposit
 - id: 061-28
-  description: The transactional activity far exceeds the projected activity at the
-    time of the account opening or the beginning of the relationship.
+  description: The transactional activity far exceeds the projected activity at the time of
+    the account opening or the beginning of the relationship.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - newly_established_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -624,9 +512,9 @@
   key_terms:
   - projected activity
 - id: 061-29
-  description: The transactional activity (level or volume) is inconsistent with the
-    client's apparent financial standing, their usual pattern of activities or occupational
-    information (e.g. student, unemployed, social assistance, etc.).
+  description: The transactional activity (level or volume) is inconsistent with the client's
+    apparent financial standing, their usual pattern of activities or occupational information
+    (e.g. student, unemployed, social assistance, etc.).
   product_types:
   - depository
   industry_types: []
@@ -634,8 +522,7 @@
   - individual_consumer
   - student
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -649,16 +536,14 @@
   key_terms:
   - financial standing
 - id: 061-30
-  description: The volume of transactional activity exceeds the norm for geographical
-    area.
+  description: The volume of transactional activity exceeds the norm for geographical area.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints:
   - domestic_us
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -672,9 +557,9 @@
   key_terms:
   - geographical area
 - id: 061-31
-  description: The transactional activity is inconsistent with what is expected from
-    a declared business (e.g. business account has no normal business-related activities,
-    such as the payment of payrolls or invoices).
+  description: The transactional activity is inconsistent with what is expected from a declared
+    business (e.g. business account has no normal business-related activities, such as the
+    payment of payrolls or invoices).
   product_types:
   - depository
   industry_types:
@@ -682,8 +567,7 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -700,16 +584,15 @@
   - invoices
 - id: 061-32
   description: Client appears to be living beyond their declared means — visible lifestyle,
-    asset holdings, or spending patterns are inconsistent with stated occupation,
-    income, or net worth.
+    asset holdings, or spending patterns are inconsistent with stated occupation, income,
+    or net worth.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -722,16 +605,15 @@
   key_terms:
   - living beyond their means
 - id: 061-33
-  description: Large and/or rapid movement of funds not commensurate with the client's
-    financial profile.
+  description: Large and/or rapid movement of funds not commensurate with the client's financial
+    profile.
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -745,15 +627,13 @@
   key_terms:
   - rapid movement of funds
 - id: 061-34
-  description: Rounded sum transactions atypical of what would be expected from the
-    client.
+  description: Rounded sum transactions atypical of what would be expected from the client.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -767,15 +647,13 @@
   key_terms:
   - rounded sum transactions
 - id: 061-35
-  description: Size or type of transactions atypical of what is expected from the
-    client.
+  description: Size or type of transactions atypical of what is expected from the client.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -789,8 +667,8 @@
   - transaction size
   - transaction type
 - id: 061-36
-  description: Opening accounts when the client's address or employment address is
-    outside the local service area without a reasonable explanation.
+  description: Opening accounts when the client's address or employment address is outside
+    the local service area without a reasonable explanation.
   product_types:
   - depository
   industry_types: []
@@ -798,8 +676,7 @@
   - foreign_individual
   geographic_footprints:
   - domestic_us
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -813,15 +690,14 @@
   key_terms:
   - local service area
 - id: 061-37
-  description: There is a sudden change in the client's financial profile, pattern
-    of activity or transactions.
+  description: There is a sudden change in the client's financial profile, pattern of activity
+    or transactions.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -835,8 +711,8 @@
   key_terms:
   - sudden change
 - id: 061-38
-  description: Client uses notes, monetary instruments, or products and/or services
-    that are unusual for such a client.
+  description: Client uses notes, monetary instruments, or products and/or services that are
+    unusual for such a client.
   product_types:
   - depository
   - money_transmitter
@@ -844,8 +720,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -859,15 +734,14 @@
   key_terms:
   - monetary instruments
 - id: 061-39
-  description: Holding multiple accounts at several financial institutions for no
-    apparent reason.
+  description: Holding multiple accounts at several financial institutions for no apparent
+    reason.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -889,8 +763,7 @@
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -905,16 +778,15 @@
   - personal account
   - business purposes
 - id: 061-41
-  description: Client appears to have recently established a series of new relationships
-    with different financial entities.
+  description: Client appears to have recently established a series of new relationships with
+    different financial entities.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - newly_established_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -928,16 +800,15 @@
   key_terms:
   - new relationships
 - id: 061-42
-  description: A product and/or service opened on behalf of a person or entity that
-    is inconsistent based on what you know about that client.
+  description: A product and/or service opened on behalf of a person or entity that is inconsistent
+    based on what you know about that client.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -953,16 +824,15 @@
   - product and/or service
 - id: 061-43
   description: Frequent use of a safety deposit box, particularly with no clear explanation,
-    in conjunction with cash withdrawals, or by a customer whose profile does not
-    suggest a legitimate need to store high-value items.
+    in conjunction with cash withdrawals, or by a customer whose profile does not suggest
+    a legitimate need to store high-value items.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - high_net_worth_individual
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -983,8 +853,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1008,8 +877,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1023,9 +891,9 @@
   key_terms:
   - foreign bank accounts
 - id: 061-46
-  description: Credit card transactions and payments are exceptionally high for what
-    is expected of the client including an excessive amount of cash advance usage,
-    balance transfer requests or transactions involving luxury items.
+  description: Credit card transactions and payments are exceptionally high for what is expected
+    of the client including an excessive amount of cash advance usage, balance transfer requests
+    or transactions involving luxury items.
   product_types:
   - credit_card
   industry_types:
@@ -1033,8 +901,7 @@
   customer_profiles:
   - high_net_worth_individual
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1050,15 +917,13 @@
   - balance transfer
   - luxury items
 - id: 061-47
-  description: Client frequently makes credit card overpayments and then requests
-    a cash advance.
+  description: Client frequently makes credit card overpayments and then requests a cash advance.
   product_types:
   - credit_card
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1073,15 +938,14 @@
   - overpayments
   - cash advance
 - id: 061-48
-  description: Frequent and/or atypical transfers between the client's products and
-    accounts for no apparent reason.
+  description: Frequent and/or atypical transfers between the client's products and accounts
+    for no apparent reason.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1095,17 +959,15 @@
   key_terms:
   - transfers between accounts
 - id: 061-49
-  description: The same person holds signing authority for accounts held by multiple
-    entities where there is no legal reason or sufficient explanation for such an
-    arrangement.
+  description: The same person holds signing authority for accounts held by multiple entities
+    where there is no legal reason or sufficient explanation for such an arrangement.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1120,16 +982,15 @@
   key_terms:
   - signing authority
 - id: 061-50
-  description: Accounts held by multiple entities either headquartered at the same
-    location or having the same directors/signing authorities for no apparent reason.
+  description: Accounts held by multiple entities either headquartered at the same location
+    or having the same directors/signing authorities for no apparent reason.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1145,16 +1006,15 @@
   - same directors
   - same location
 - id: 061-51
-  description: A business account has a change in ownership structure with increases
-    in transactional activity and no apparent explanation.
+  description: A business account has a change in ownership structure with increases in transactional
+    activity and no apparent explanation.
   product_types:
   - depository
   industry_types: []
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1169,16 +1029,15 @@
   key_terms:
   - ownership structure
 - id: 061-52
-  description: An inactive account begins to see financial activity (e.g. deposits,
-    wire transfers, withdrawals).
+  description: An inactive account begins to see financial activity (e.g. deposits, wire transfers,
+    withdrawals).
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1192,15 +1051,14 @@
   key_terms:
   - inactive account
 - id: 061-53
-  description: Accounts that receive relevant periodical deposits and are inactive
-    at other periods without a logical explanation.
+  description: Accounts that receive relevant periodical deposits and are inactive at other
+    periods without a logical explanation.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1220,8 +1078,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1235,16 +1092,15 @@
   key_terms:
   - new credit
 - id: 061-55
-  description: Abrupt change in account activity — a sudden increase in transaction
-    volume, value, or velocity, or a shift to new transaction types or counterparties,
-    inconsistent with prior account history.
+  description: Abrupt change in account activity — a sudden increase in transaction volume,
+    value, or velocity, or a shift to new transaction types or counterparties, inconsistent
+    with prior account history.
   product_types:
   - depository
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1266,8 +1122,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1281,16 +1136,15 @@
   key_terms:
   - multiple products
 - id: 061-57
-  description: A series of complicated transfers of funds that seems to be an attempt
-    to hide the source and intended use of the funds.
+  description: A series of complicated transfers of funds that seems to be an attempt to hide
+    the source and intended use of the funds.
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1306,9 +1160,8 @@
   - hide the source
   - intended use
 - id: 061-58
-  description: Transactions displaying financial connections between persons or entities
-    that are not usually connected (e.g. a food importer dealing with an automobile
-    parts exporter).
+  description: Transactions displaying financial connections between persons or entities that
+    are not usually connected (e.g. a food importer dealing with an automobile parts exporter).
   product_types:
   - wire_transfer
   - trade_finance
@@ -1317,8 +1170,7 @@
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1343,8 +1195,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1366,8 +1217,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1389,8 +1239,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1411,8 +1260,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1434,8 +1282,7 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1451,8 +1298,8 @@
   - musty
   - dirty bills
 - id: 061-64
-  description: Transaction involves a suspected shell entity (an entity that does
-    not have an economical or logical reason to exist).
+  description: Transaction involves a suspected shell entity (an entity that does not have
+    an economical or logical reason to exist).
   product_types:
   - depository
   - wire_transfer
@@ -1460,8 +1307,7 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1484,8 +1330,7 @@
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1508,8 +1353,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1523,17 +1367,16 @@
   key_terms:
   - same time of day
 - id: 061-67
-  description: Atypical transfers by a client on an in-and-out basis, or other methods
-    of moving funds quickly, such as a cash deposit followed immediately by a wire
-    transfer of the funds out.
+  description: Atypical transfers by a client on an in-and-out basis, or other methods of
+    moving funds quickly, such as a cash deposit followed immediately by a wire transfer of
+    the funds out.
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1560,8 +1403,7 @@
   - cross_border_business
   geographic_footprints:
   - domestic_us
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1577,16 +1419,15 @@
   - consolidated
   - outside the country
 - id: 061-69
-  description: Immediately after transferred funds have cleared, the client moves
-    funds, to another account or to another person or entity.
+  description: Immediately after transferred funds have cleared, the client moves funds, to
+    another account or to another person or entity.
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1601,16 +1442,15 @@
   key_terms:
   - after transferred funds have cleared
 - id: 061-70
-  description: Multiple clients have sent wire transfers over a short period of time
-    to the same recipient.
+  description: Multiple clients have sent wire transfers over a short period of time to the
+    same recipient.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1625,16 +1465,14 @@
   key_terms:
   - same recipient
 - id: 061-71
-  description: Large wire transfers or high volume of wire transfers are conducted
-    or received through the account that does not fit the expected pattern of that
-    account.
+  description: Large wire transfers or high volume of wire transfers are conducted or received
+    through the account that does not fit the expected pattern of that account.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1648,16 +1486,15 @@
   key_terms:
   - high volume of wire transfers
 - id: 061-72
-  description: Large and/or frequent wire transfers between senders and receivers
-    with no apparent relationship.
+  description: Large and/or frequent wire transfers between senders and receivers with no
+    apparent relationship.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1679,8 +1516,7 @@
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1694,8 +1530,8 @@
   key_terms:
   - multiple clients
 - id: 061-74
-  description: Transactions with jurisdictions that are known to produce or transit
-    drugs or precursor chemicals, or are sources of other types of criminality.
+  description: Transactions with jurisdictions that are known to produce or transit drugs
+    or precursor chemicals, or are sources of other types of criminality.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -1705,8 +1541,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1724,8 +1559,7 @@
   - drugs
   - precursor chemicals
 - id: 061-75
-  description: Transactions with jurisdictions that are known to be at a higher risk
-    of ML/TF.
+  description: Transactions with jurisdictions that are known to be at a higher risk of ML/TF.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -1734,8 +1568,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1748,63 +1581,6 @@
   - unusual_international_wires
   key_terms:
   - higher risk of ML/TF
-- id: 061-76
-  description: Transaction/business activity involving locations of concern, which
-    can include jurisdictions where there are ongoing conflicts (and periphery areas),
-    countries with weak ML/TF controls, or countries with highly secretive banking
-    or other transactional laws.
-  product_types:
-  - wire_transfer
-  - correspondent_banking
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  - sanctioned_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - locations of concern
-  - weak ML/TF controls
-  - secretive banking
-- id: 061-77
-  description: Transactions involving any countries deemed high risk or non-cooperative
-    by the FATF.
-  product_types:
-  - wire_transfer
-  - correspondent_banking
-  industry_types: []
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
-  regulator: FINTRAC
-  regulator_jurisdiction: CA
-  issuing_agencies: []
-  issued_date: '2025-11-24'
-  risk_level: medium
-  category: layering
-  source_url: https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/indicators-indicateurs/fin_mltf-eng
-  typology_family: []
-  transaction_patterns:
-  - unusual_international_wires
-  key_terms:
-  - FATF
-  - high risk
-  - non-cooperative
 - id: 061-78
   description: Client makes frequent overseas transfers, not in line with their financial
     profile.
@@ -1816,8 +1592,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1831,15 +1606,14 @@
   key_terms:
   - overseas transfers
 - id: 061-79
-  description: Client is unaware of details surrounding incoming wire transfers, such
-    as the ordering client details, amounts or reasons.
+  description: Client is unaware of details surrounding incoming wire transfers, such as the
+    ordering client details, amounts or reasons.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1853,16 +1627,14 @@
   key_terms:
   - incoming wire transfers
 - id: 061-80
-  description: Client does not appear to know the sender of the wire transfer from
-    whom the wire transfer was received, or the recipient to whom they are sending
-    the wire transfer.
+  description: Client does not appear to know the sender of the wire transfer from whom the
+    wire transfer was received, or the recipient to whom they are sending the wire transfer.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1877,8 +1649,8 @@
   - sender
   - recipient
 - id: 061-81
-  description: Client frequents multiple locations utilizing cash, prepaid credit
-    cards or money orders/cheques/drafts to send wire transfers overseas.
+  description: Client frequents multiple locations utilizing cash, prepaid credit cards or
+    money orders/cheques/drafts to send wire transfers overseas.
   product_types:
   - wire_transfer
   - prepaid
@@ -1887,8 +1659,7 @@
   - money_services_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1905,17 +1676,16 @@
   - prepaid credit cards
   - money orders
 - id: 061-82
-  description: The client sends wire transfers or receives wire transfers to or from
-    multiple beneficiaries that do not correspond to the expected use of the account
-    type or business account.
+  description: The client sends wire transfers or receives wire transfers to or from multiple
+    beneficiaries that do not correspond to the expected use of the account type or business
+    account.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles:
   - small_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1929,16 +1699,15 @@
   key_terms:
   - multiple beneficiaries
 - id: 061-83
-  description: Client is accompanied by persons who appear to be instructing the sending
-    or receiving of wire transfers on their behalf.
+  description: Client is accompanied by persons who appear to be instructing the sending or
+    receiving of wire transfers on their behalf.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles:
   - money_services_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1952,8 +1721,8 @@
   key_terms:
   - on their behalf
 - id: 061-84
-  description: Multiple persons are sending wire transfers that are similar in amounts,
-    receiver names, security questions, addresses or destination country.
+  description: Multiple persons are sending wire transfers that are similar in amounts, receiver
+    names, security questions, addresses or destination country.
   product_types:
   - wire_transfer
   industry_types: []
@@ -1961,8 +1730,7 @@
   - money_services_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -1986,8 +1754,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2009,8 +1776,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2024,16 +1790,15 @@
   key_terms:
   - requisite information
 - id: 061-87
-  description: Client utilizes structured cash transactions to send wire transfers
-    in an effort to avoid record keeping requirements.
+  description: Client utilizes structured cash transactions to send wire transfers in an effort
+    to avoid record keeping requirements.
   product_types:
   - wire_transfer
   industry_types: []
   customer_profiles:
   - cash_intensive_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2062,8 +1827,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2077,9 +1841,8 @@
   key_terms:
   - high-risk for corruption
 - id: 061-95
-  description: A client is a politically exposed foreign person operating in a high-risk
-    jurisdiction where they are responsible for granting authorizations, licenses,
-    or contracts to businesses.
+  description: A client is a politically exposed foreign person operating in a high-risk jurisdiction
+    where they are responsible for granting authorizations, licenses, or contracts to businesses.
   product_types:
   - depository
   - wire_transfer
@@ -2091,8 +1854,7 @@
   - foreign_individual
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2109,8 +1871,8 @@
   - licenses
   - contracts
 - id: 061-96
-  description: A client is a family member or known associate of a politically exposed
-    foreign person.
+  description: A client is a family member or known associate of a politically exposed foreign
+    person.
   product_types:
   - depository
   - wire_transfer
@@ -2119,8 +1881,7 @@
   - politically_exposed_person
   - foreign_individual
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2135,8 +1896,8 @@
   - family member
   - known associate
 - id: 061-97
-  description: A client engages in high-value transactions with politically exposed
-    domestic or foreign persons, including their family members or known associates.
+  description: A client engages in high-value transactions with politically exposed domestic
+    or foreign persons, including their family members or known associates.
   product_types:
   - depository
   - wire_transfer
@@ -2144,8 +1905,7 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2161,9 +1921,9 @@
   - high-value transactions
   - politically exposed persons
 - id: 061-98
-  description: Transactions involving long-term government contracts that may have
-    been awarded through an opaque selection process to a legal entity or multiple
-    legal entities with similar beneficial owners.
+  description: Transactions involving long-term government contracts that may have been awarded
+    through an opaque selection process to a legal entity or multiple legal entities with
+    similar beneficial owners.
   product_types:
   - wire_transfer
   - trade_finance
@@ -2173,8 +1933,7 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2190,8 +1949,8 @@
   - government contracts
   - beneficial owners
 - id: 061-99
-  description: Transactions involving services provided to state-owned companies or
-    public institutions by companies registered in high-risk jurisdictions for corruption.
+  description: Transactions involving services provided to state-owned companies or public
+    institutions by companies registered in high-risk jurisdictions for corruption.
   product_types:
   - wire_transfer
   - trade_finance
@@ -2201,8 +1960,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2217,8 +1975,8 @@
   - state-owned companies
   - public institutions
 - id: 061-100
-  description: Transactions involving government business being conducted through
-    personal accounts, which may indicate an attempt to divert or misuse public funds.
+  description: Transactions involving government business being conducted through personal
+    accounts, which may indicate an attempt to divert or misuse public funds.
   product_types:
   - depository
   industry_types: []
@@ -2226,8 +1984,7 @@
   - government_official
   - individual_consumer
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2243,9 +2000,9 @@
   - government business
   - personal accounts
 - id: 061-101
-  description: 'Transactions involving entities, intermediaries, or consultants that:
-    Did not take part in the related project. Would not typically be involved in the
-    client’s industry or line of business.'
+  description: 'Transactions involving entities, intermediaries, or consultants that: Did
+    not take part in the related project. Would not typically be involved in the client’s
+    industry or line of business.'
   product_types:
   - wire_transfer
   - trade_finance
@@ -2254,8 +2011,7 @@
   customer_profiles:
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2271,8 +2027,8 @@
   - intermediaries
   - consultants
 - id: 061-102
-  description: A client makes high-value payments for services, such as consulting
-    fees, in jurisdictions identified as high-risk for corruption.
+  description: A client makes high-value payments for services, such as consulting fees, in
+    jurisdictions identified as high-risk for corruption.
   product_types:
   - wire_transfer
   - trade_finance
@@ -2282,8 +2038,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2300,8 +2055,8 @@
   - high-value payments
 - id: 061-103
   description: A client makes commission payments into offshore bank accounts, particularly
-    when the accounts are located in jurisdictions with weak anti-money laundering
-    and anti-terrorist activity financing controls or secrecy laws.
+    when the accounts are located in jurisdictions with weak anti-money laundering and anti-terrorist
+    activity financing controls or secrecy laws.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -2311,8 +2066,7 @@
   geographic_footprints:
   - high_risk_jurisdiction
   - sanctioned_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2329,10 +2083,10 @@
   - offshore bank accounts
   - secrecy laws
 - id: 061-104
-  description: A client transacts with newly established, opaque, or unidentified
-    entities. This includes entities registered at the address of an offshore company
-    service provider, especially when there is no apparent business relationship between
-    the client and the entity.
+  description: A client transacts with newly established, opaque, or unidentified entities.
+    This includes entities registered at the address of an offshore company service provider,
+    especially when there is no apparent business relationship between the client and the
+    entity.
   product_types:
   - depository
   - wire_transfer
@@ -2344,8 +2098,7 @@
   - shell_or_front_company
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2361,9 +2114,8 @@
   - opaque
   - offshore company service provider
 - id: 061-105
-  description: Funds move through intermediaries in third countries or through countries
-    with which the client does not appear to have any legitimate business or personal
-    ties.
+  description: Funds move through intermediaries in third countries or through countries with
+    which the client does not appear to have any legitimate business or personal ties.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -2372,8 +2124,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2389,8 +2140,8 @@
   - intermediaries
   - third countries
 - id: 061-106
-  description: Transactions involve fictitious email addresses or false invoices used
-    to justify payments, particularly in the context of international transactions.
+  description: Transactions involve fictitious email addresses or false invoices used to justify
+    payments, particularly in the context of international transactions.
   product_types:
   - wire_transfer
   - trade_finance
@@ -2400,8 +2151,7 @@
   - cross_border_business
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2418,9 +2168,9 @@
   - false invoices
   - fictitious email addresses
 - id: 061-107
-  description: A client uses intermediaries, professional facilitators, or complex
-    legal entity structures to hide the origin or ownership of funds. For example,
-    the client may use such structures to obscure the purchase or sale of real estate.
+  description: A client uses intermediaries, professional facilitators, or complex legal entity
+    structures to hide the origin or ownership of funds. For example, the client may use such
+    structures to obscure the purchase or sale of real estate.
   product_types:
   - depository
   - wire_transfer
@@ -2432,8 +2182,7 @@
   - beneficial_owner_obscured
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2451,8 +2200,8 @@
   - complex legal entity structures
   - real estate
 - id: 061-108
-  description: 'A client conducts transactions that involve: Vague or incomplete payment
-    details. Fraudulent documentation used to justify the transfer of funds.'
+  description: 'A client conducts transactions that involve: Vague or incomplete payment details.
+    Fraudulent documentation used to justify the transfer of funds.'
   product_types:
   - wire_transfer
   - trade_finance
@@ -2461,8 +2210,7 @@
   customer_profiles:
   - cross_border_business
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2479,9 +2227,9 @@
   - vague payment details
   - fraudulent documentation
 - id: 061-109
-  description: A client who is a politically exposed domestic or foreign person exhibits
-    a significant increase in net worth that cannot be reasonably explained by their
-    reported income, assets, or legitimate sources of wealth.
+  description: A client who is a politically exposed domestic or foreign person exhibits a
+    significant increase in net worth that cannot be reasonably explained by their reported
+    income, assets, or legitimate sources of wealth.
   product_types:
   - depository
   - securities
@@ -2489,8 +2237,7 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2504,8 +2251,8 @@
   key_terms:
   - net worth
 - id: 061-110
-  description: A client employs or has business connections with a politically exposed
-    foreign person, or their family members or close associates.
+  description: A client employs or has business connections with a politically exposed foreign
+    person, or their family members or close associates.
   product_types:
   - depository
   - wire_transfer
@@ -2514,8 +2261,7 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2531,9 +2277,9 @@
   - business connections
   - politically exposed foreign person
 - id: 061-111
-  description: Payments are made for the travel and lodging of politically exposed
-    domestic or foreign persons, or their family members, which may indicate attempts
-    to curry favor or provide undue benefits.
+  description: Payments are made for the travel and lodging of politically exposed domestic
+    or foreign persons, or their family members, which may indicate attempts to curry favor
+    or provide undue benefits.
   product_types:
   - depository
   - credit_card
@@ -2542,8 +2288,7 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2558,10 +2303,10 @@
   key_terms:
   - travel and lodging
 - id: 061-112
-  description: 'Transactions involving politically exposed domestic or foreign persons
-    related to the acquisition of high-value assets, such as real estate, luxury vehicles,
-    or other luxury goods, that are: Inconsistent with the client’s reported source
-    of wealth. Outside the individual’s normal pattern of activity or lifestyle.'
+  description: 'Transactions involving politically exposed domestic or foreign persons related
+    to the acquisition of high-value assets, such as real estate, luxury vehicles, or other
+    luxury goods, that are: Inconsistent with the client’s reported source of wealth. Outside
+    the individual’s normal pattern of activity or lifestyle.'
   product_types:
   - depository
   - securities
@@ -2573,8 +2318,7 @@
   - politically_exposed_person
   - high_net_worth_individual
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2590,9 +2334,9 @@
   - high-value assets
   - source of wealth
 - id: 061-113
-  description: A client who is a politically exposed domestic or foreign person owns
-    or controls a legal entity, particularly one located offshore, which appears to
-    serve little or no legitimate commercial purpose.
+  description: A client who is a politically exposed domestic or foreign person owns or controls
+    a legal entity, particularly one located offshore, which appears to serve little or no
+    legitimate commercial purpose.
   product_types:
   - depository
   - wire_transfer
@@ -2602,8 +2346,7 @@
   - shell_or_front_company
   geographic_footprints:
   - high_risk_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2620,9 +2363,8 @@
   - offshore
   - little or no legitimate commercial purpose
 - id: 061-114
-  description: Assets are held in the name of legal entities whose beneficial owners
-    are tied to a politically exposed domestic or foreign person, their family members,
-    or close associates.
+  description: Assets are held in the name of legal entities whose beneficial owners are tied
+    to a politically exposed domestic or foreign person, their family members, or close associates.
   product_types:
   - depository
   - securities
@@ -2631,8 +2373,7 @@
   - politically_exposed_person
   - beneficial_owner_obscured
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2658,8 +2399,7 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2674,12 +2414,11 @@
   key_terms:
   - multiple bank accounts
 - id: 061-116
-  description: 'Transactions involving politically exposed domestic or foreign persons
-    that deviate significantly from the individual’s expected financial profile. Examples
-    may include: Multiple cash deposits into their account. Multiple electronic funds
-    transfers from different senders within a short time frame. Situations where the
-    politically exposed person is both the ordering and beneficiary client for electronic
-    funds transfers.'
+  description: 'Transactions involving politically exposed domestic or foreign persons that
+    deviate significantly from the individual’s expected financial profile. Examples may include:
+    Multiple cash deposits into their account. Multiple electronic funds transfers from different
+    senders within a short time frame. Situations where the politically exposed person is
+    both the ordering and beneficiary client for electronic funds transfers.'
   product_types:
   - depository
   - wire_transfer
@@ -2687,8 +2426,7 @@
   customer_profiles:
   - politically_exposed_person
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2706,9 +2444,9 @@
   - electronic funds transfers
   - ordering and beneficiary
 - id: 061-117
-  description: Transactions involving certain high-risk jurisdictions such as locations
-    in the midst of or in proximity to, armed conflict where terrorist groups operate
-    or locations which are subject to weaker ML/TF controls.
+  description: Transactions involving certain high-risk jurisdictions such as locations in
+    the midst of or in proximity to, armed conflict where terrorist groups operate or locations
+    which are subject to weaker ML/TF controls.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -2720,8 +2458,7 @@
   - middle_east
   - south_asia
   - west_africa
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2737,8 +2474,8 @@
   - armed conflict
   - terrorist groups
 - id: 061-118
-  description: An account opened in the name of an entity, a foundation or association,
-    which may be linked or involved with a suspected terrorist organization.
+  description: An account opened in the name of an entity, a foundation or association, which
+    may be linked or involved with a suspected terrorist organization.
   product_types:
   - depository
   industry_types:
@@ -2747,8 +2484,7 @@
   - charity_or_nonprofit
   - shell_or_front_company
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2765,8 +2501,8 @@
   - association
   - suspected terrorist organization
 - id: 061-119
-  description: The use of funds by a non-profit organization is not consistent with
-    the purpose for which it was established.
+  description: The use of funds by a non-profit organization is not consistent with the purpose
+    for which it was established.
   product_types:
   - depository
   - wire_transfer
@@ -2775,8 +2511,7 @@
   customer_profiles:
   - charity_or_nonprofit
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2800,8 +2535,7 @@
   customer_profiles:
   - charity_or_nonprofit
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2816,10 +2550,10 @@
   - donations
   - unregistered
 - id: 061-121
-  description: Client identified by media or law enforcement as having travelled,
-    attempted or intended to travel to high-risk jurisdictions (including cities or
-    districts of concern), specifically countries (and adjacent countries) under conflict
-    and/or political instability or known to support terrorist activities and organizations.
+  description: Client identified by media or law enforcement as having travelled, attempted
+    or intended to travel to high-risk jurisdictions (including cities or districts of concern),
+    specifically countries (and adjacent countries) under conflict and/or political instability
+    or known to support terrorist activities and organizations.
   product_types:
   - depository
   - wire_transfer
@@ -2831,8 +2565,7 @@
   - middle_east
   - south_asia
   - west_africa
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2847,8 +2580,8 @@
   - travelled
   - terrorist activities
 - id: 061-122
-  description: Transactions involve persons or entities identified by media and/or
-    sanctions lists as being linked to a terrorist organization or terrorist activities.
+  description: Transactions involve persons or entities identified by media and/or sanctions
+    lists as being linked to a terrorist organization or terrorist activities.
   product_types:
   - depository
   - wire_transfer
@@ -2856,8 +2589,7 @@
   customer_profiles: []
   geographic_footprints:
   - sanctioned_jurisdiction
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2872,16 +2604,15 @@
   - sanctions lists
   - terrorist organization
 - id: 061-123
-  description: Law enforcement information provided which indicates persons or entities
-    may be linked to a terrorist organization or terrorist activities.
+  description: Law enforcement information provided which indicates persons or entities may
+    be linked to a terrorist organization or terrorist activities.
   product_types:
   - depository
   - wire_transfer
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2896,11 +2627,10 @@
   - law enforcement information
   - terrorist organization
 - id: 061-124
-  description: Client conducted travel-related purchases (e.g. purchase of airline
-    tickets, travel visa, passport, etc.) linked to high-risk jurisdictions (including
-    cities or districts of concern), specifically countries (and adjacent countries)
-    under conflict and/or political instability or known to support terrorist activities
-    and organizations.
+  description: Client conducted travel-related purchases (e.g. purchase of airline tickets,
+    travel visa, passport, etc.) linked to high-risk jurisdictions (including cities or districts
+    of concern), specifically countries (and adjacent countries) under conflict and/or political
+    instability or known to support terrorist activities and organizations.
   product_types:
   - credit_card
   - depository
@@ -2913,8 +2643,7 @@
   - middle_east
   - south_asia
   - west_africa
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2936,8 +2665,7 @@
   industry_types: []
   customer_profiles: []
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []
@@ -2952,9 +2680,9 @@
   - online presence
   - violent extremism
 - id: 061-126
-  description: Client donates to a cause that is subject to derogatory information
-    that is publicly available (e.g. crowdfunding initiative, charity, non-profit
-    organization, non-government organization, etc.).
+  description: Client donates to a cause that is subject to derogatory information that is
+    publicly available (e.g. crowdfunding initiative, charity, non-profit organization, non-government
+    organization, etc.).
   product_types:
   - depository
   - wire_transfer
@@ -2963,8 +2691,7 @@
   customer_profiles:
   - charity_or_nonprofit
   geographic_footprints: []
-  regulatory_source: Money laundering and terrorist financing indicators—Financial
-    entities
+  regulatory_source: Money laundering and terrorist financing indicators—Financial entities
   regulator: FINTRAC
   regulator_jurisdiction: CA
   issuing_agencies: []

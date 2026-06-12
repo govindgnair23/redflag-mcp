@@ -1,6 +1,7 @@
 - id: 042-01
-  description: Customers provide inaccurate or incomplete customer identification
-    or KYC information when attempting to open an account
+  description: Customers provide inaccurate or incomplete identification or Know Your
+    Customer (KYC) information when attempting to open an account at a virtual currency
+    exchange.
   product_types:
   - crypto
   industry_types:
@@ -24,7 +25,7 @@
   - open an account
 - id: 042-02
   description: Entities or individuals attempt to access a virtual currency exchange
-    from an IP address or VPN connected to a sanctioned jurisdiction
+    from an IP address or VPN connected to a sanctioned jurisdiction.
   product_types:
   - crypto
   industry_types:
@@ -49,8 +50,9 @@
   - VPN
   - sanctioned jurisdiction
 - id: 042-03
-  description: Customers are non-responsive or refuse to provide updated customer
-    identification or KYC information
+  description: Customers are non-responsive or refuse to provide updated identification
+    or Know Your Customer (KYC) information when requested by the virtual currency
+    company.
   product_types:
   - crypto
   industry_types:
@@ -72,7 +74,8 @@
   - updated customer identification
 - id: 042-04
   description: Customers are non-responsive or refuse to provide additional transaction
-    information in response to a virtual currency company’s request
+    information (e.g., source of funds, purpose of transaction, counterparty details)
+    in response to a virtual currency company's request.
   product_types:
   - crypto
   industry_types:
@@ -94,7 +97,7 @@
   - request
 - id: 042-05
   description: Customers attempt to transact with a virtual currency address associated
-    with a blocked person or sanctioned jurisdiction
+    with a blocked person or with a sanctioned jurisdiction.
   product_types:
   - crypto
   industry_types:
@@ -119,9 +122,9 @@
   - blocked person
   - sanctioned jurisdiction
 - id: 042-06
-  description: Unlisted virtual currency addresses that share a wallet with a listed
-    virtual currency address may pose sanctions risk because the sharing of a wallet
-    may indicate an association with a blocked person
+  description: Unlisted virtual currency addresses share a wallet (i.e., co-spending
+    relationship indicating common control) with a listed virtual currency address
+    on a sanctions list, suggesting association with the blocked person.
   product_types:
   - crypto
   industry_types:
@@ -144,11 +147,11 @@
   - listed virtual currency address
   - blocked person
 - id: 042-07
-  description: Transactions involving virtual currency addresses or other identifying
+  description: Transactions involve virtual currency addresses or other identifying
     information (e.g., originator, beneficiary, originating and beneficiary exchanges,
-    and underlying transactional data) associated with sanctioned individuals and
-    entities listed on the SDN List or other sanctions lists, or located in sanctioned
-    jurisdictions
+    underlying transactional data) associated with sanctioned individuals or entities
+    on the Specially Designated Nationals (SDN) List or other sanctions lists, or
+    located in sanctioned jurisdictions.
   product_types:
   - crypto
   industry_types:
@@ -174,8 +177,8 @@
   - originator
   - beneficiary
 - id: 042-08
-  description: Users located in sanctioned jurisdictions who try to access virtual
-    currency products and services
+  description: Users located in sanctioned jurisdictions attempt to access virtual
+    currency products and services.
   product_types:
   - crypto
   industry_types:
@@ -198,8 +201,10 @@
   - sanctioned jurisdictions
   - access virtual currency
 - id: 042-09
-  description: Same user logging in with an IP address in the United States, and then
-    shortly after with an IP address in Japan
+  description: The same user account logs in from geographically improbable IP addresses
+    within a short time window (e.g., a session from the United States followed shortly
+    by a session from Japan), indicating possible account sharing, credential compromise,
+    or VPN-based concealment of true location.
   product_types:
   - crypto
   industry_types:

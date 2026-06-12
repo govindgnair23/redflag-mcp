@@ -1,13 +1,8 @@
 - id: 049-01
-  description: 'Physically Altering Vessel Identification: Maritime vessels meeting
-    certain tonnage thresholds are required to display their name and International
-    Maritime Organization (IMO) number (a unique, seven-digit identifying vessel identification
-    code) in a visible location either on the ship’s hull or superstructure. A vessel’s
-    IMO number is intended to be permanent and should remain consistent regardless
-    of a change in a vessel’s ownership or name. North Korean-flagged merchant vessels
-    have physically altered their vessels to obscure their identities and attempt
-    to pass themselves off as different vessels. These physical alterations include
-    painting over vessel names and IMO numbers with alternate ones.'
+  description: A vessel's painted name or International Maritime Organization (IMO)
+    number on the hull or superstructure has been altered, painted over, or replaced
+    with alternate values inconsistent with its permanent IMO assignment — a technique
+    used by North Korean-flagged vessels to pose as different vessels.
   product_types:
   - correspondent_banking
   - trade_finance
@@ -20,7 +15,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -41,13 +36,10 @@
   - painted over
   - North Korean-flagged
 - id: 049-02
-  description: 'North Korean Ship-to-Ship (STS) Transfers: STS transfers are a method
-    of transferring cargo from one ship to another while at sea rather than while
-    located in port. STS transfers can conceal the origin or destination of cargo.
-    North Korea operates a fleet of tankers capable of engaging in STS transfers of
-    refined petroleum products and other banned goods. The names and IMO numbers of
-    these vessels are subject to change as North Korea seeks to conceal the identity
-    of vessels it owns and operates.'
+  description: Ship-to-ship (STS) transfers at sea of refined petroleum products or
+    other UN-banned goods involving North Korean tankers, where vessel names and IMO
+    numbers change over time to conceal the identity of North Korean-owned or operated
+    vessels.
   product_types:
   - trade_finance
   - insurance
@@ -61,7 +53,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -83,13 +75,10 @@
   - refined petroleum
   - banned goods
 - id: 049-03
-  description: 'Falsifying Cargo and Vessel Documents: Complete and accurate shipping
-    documentation is critical to ensuring all parties to a transaction understand
-    the parties, goods, and vessels involved in a given shipment. Bills of lading,
-    certificates of origin, invoices, packing lists, proof of insurance, and lists
-    of last ports of call are examples of documentation that typically accompany a
-    shipping transaction. North Korea has been known to falsify vessel and cargo documents
-    to obscure the origin or destination of cargo.'
+  description: Vessel and cargo documentation (bills of lading, certificates of origin,
+    invoices, packing lists, proof of insurance, or last-ports-of-call lists) that
+    appears falsified, inconsistent across documents, or designed to obscure the true
+    origin or destination of cargo linked to North Korea.
   product_types:
   - trade_finance
   - insurance
@@ -103,7 +92,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -127,18 +116,10 @@
   - packing lists
   - last ports of call
 - id: 049-04
-  description: 'Disabling Automatic Identification System (AIS): AIS is a collision
-    avoidance system, which transmits, at a minimum, a vessel’s identification and
-    select navigational and positional data via very high frequency (VHF) radio waves.
-    While AIS was not specifically designed for vessel tracking, it is often used
-    for this purpose via terrestrial and satellite receivers feeding this information
-    to commercial ship tracking services. Ships meeting certain tonnage thresholds
-    and engaged in international voyages are required to carry and operate AIS; however,
-    North Korean-flagged merchant vessels have been known to intentionally disable
-    their AIS transponders to mask their movements. This tactic, whether employed
-    by North Korean-flagged vessels or other vessels involved in trade with North
-    Korea, could conceal the origin or destination of cargo destined for, or originating
-    in, North Korea.'
+  description: A vessel required to operate Automatic Identification System (AIS)
+    intentionally disables its AIS transponder during voyages — particularly North
+    Korean-flagged vessels or third-country vessels engaged in trade with North Korea
+    — to mask vessel movements and conceal cargo origin or destination.
   product_types:
   - trade_finance
   - insurance
@@ -152,7 +133,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -173,11 +154,10 @@
   - vessel tracking
   - North Korean-flagged
 - id: 049-05
-  description: 'Manipulating AIS: North Korean-flagged merchant vessels have also
-    been known to manipulate the data being transmitted via AIS. Such manipulation
-    could include altering vessel names, IMO numbers, Maritime Mobile Service Identities
-    (MMSIs), or other unique identifying information. This tactic could also be used
-    to conceal a vessel’s next port of call or other information regarding its voyage.'
+  description: A vessel transmits manipulated Automatic Identification System (AIS)
+    data — altered vessel names, IMO numbers, Maritime Mobile Service Identities (MMSIs),
+    or falsified next port of call or voyage information — to conceal its true identity
+    or destination.
   product_types:
   - trade_finance
   - insurance
@@ -191,7 +171,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -212,48 +192,11 @@
   - vessel names
   - IMO numbers
   - next port of call
-- id: 049-06
-  description: Registering a vessel in North Korea, obtaining authorization for a
-    vessel to fly the North Korea flag, and owning, leasing, operating, and insuring
-    any vessel flagged by North Korea.
-  product_types:
-  - insurance
-  - correspondent_banking
-  - trade_finance
-  industry_types:
-  - maritime_shipping
-  customer_profiles:
-  - cross_border_business
-  geographic_footprints:
-  - north_korea
-  - east_asia
-  regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - State
-  - USCG
-  issued_date: '2018-02-23'
-  risk_level: high
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/7726/download?inline=
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - identity_misrepresentation
-  key_terms:
-  - North Korea flag
-  - registering a vessel
-  - owning
-  - leasing
-  - operating
-  - insuring
 - id: 049-07
   description: Owning, leasing, operating, chartering, or providing vessel classification,
-    certification or associated service and insurance or re-insurance, to any DPRK-flagged,
-    owned, controlled, or operated vessel;
+    certification, or associated services, insurance, or re-insurance to any DPRK-flagged,
+    -owned, -controlled, or -operated vessel (including registering vessels in North
+    Korea or facilitating North Korean flag authorisation).
   product_types:
   - insurance
   - correspondent_banking
@@ -266,7 +209,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -286,9 +229,10 @@
   - owned, controlled, or operated
   - vessel classification
   - re-insurance
+  - North Korea flag
 - id: 049-08
-  description: Providing bunkering or servicing of North Korean vessels suspected
-    of carrying prohibited items;
+  description: Providing bunkering (fuel) or other servicing to North Korean vessels
+    suspected of carrying UN-prohibited items.
   product_types:
   - trade_finance
   - insurance
@@ -302,7 +246,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -322,8 +266,8 @@
   - prohibited items
   - North Korean vessels
 - id: 049-09
-  description: STS transfers to or from North Korean-flagged vessels of any goods
-    or items that are supplied, sold, or transferred to or from North Korea;
+  description: Ship-to-ship transfers to or from North Korean-flagged vessels of any
+    goods or items that are supplied, sold, or transferred to or from North Korea.
   product_types:
   - trade_finance
   - insurance
@@ -337,7 +281,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:
@@ -358,10 +302,9 @@
   - North Korean-flagged vessels
   - supplied, sold, or transferred
 - id: 049-10
-  description: Port entry of vessels if designated by the United Nations Security
-    Council (UNSC) or if a State has information that provides reasonable grounds
-    believe that vessel is owned, controlled, or operated by persons designated by
-    the UNSC.
+  description: Permitting port entry of a vessel that has been designated by the United
+    Nations Security Council (UNSC), or where reasonable grounds exist to believe
+    the vessel is owned, controlled, or operated by UNSC-designated persons.
   product_types:
   - trade_finance
   - insurance
@@ -374,7 +317,7 @@
   - north_korea
   - east_asia
   regulatory_source: 'North Korea Sanctions Advisory: Sanctions Risks Related to North
-    Korea’s Shipping Practices'
+    Korea''s Shipping Practices'
   regulator: OFAC
   regulator_jurisdiction: US
   issuing_agencies:

@@ -1971,8 +1971,9 @@
   key_terms:
   - ATM activity
 - id: 059-76
-  description: A person customarily uses the ATM to make several deposits into a brokerage
-    account below a specified BSA/AML reporting threshold.
+  description: A person customarily uses the automated teller machine (ATM) to make
+    several deposits into a brokerage account below a specified Bank Secrecy Act (BSA)/Anti-Money
+    Laundering (AML) reporting threshold.
   product_types:
   - depository
   - securities

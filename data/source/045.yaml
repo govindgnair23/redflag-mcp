@@ -1,8 +1,8 @@
 - id: 045-01
-  description: Asset transfers to family members or close associates sometimes occur
-    in the period immediately leading up to a designation or closely thereafter, which
-    may indicate an attempt to evade sanctions on the part of the sanctioned individual
-    and the party that facilitated the transfer.
+  description: Asset transfers to family members or close associates occur in the
+    period immediately leading up to a sanctions designation or closely thereafter,
+    which may indicate an attempt to evade sanctions on the part of the sanctioned
+    individual and the party that facilitated the transfer.
   product_types:
   - depository
   - wire_transfer
@@ -37,7 +37,9 @@
   - close associates
   - sanctions evasion
 - id: 045-02
-  description: the purchase of real property below or above its market value
+  description: Purchase of real property at a price materially below or above its
+    fair market value, with no clear economic rationale, used to transfer value to
+    or from sanctioned parties or their proxies.
   product_types:
   - depository
   - wire_transfer
@@ -75,7 +77,9 @@
   - below market value
   - above market value
 - id: 045-03
-  description: the use of offshore buyers with potential links to Russia
+  description: Use of offshore buyers with potential links to Russia in real estate
+    or other high-value asset purchases, particularly where the buyer is registered
+    in a secrecy jurisdiction and beneficial ownership is unclear.
   product_types:
   - wire_transfer
   - trade_finance
@@ -110,11 +114,10 @@
   - Russia
   - links to Russia
 - id: 045-04
-  description: Sanctioned Russian individuals and entities and their proxies may launder
-    or attempt to launder and obfuscate illicit proceeds—including those derived from
-    sanctions evasion—through the purchase of real estate, often hiding behind intermediaries,
-    nominees or straw purchasers and/or opaque corporate structures including legal
-    entities or trusts.
+  description: Purchase of real estate by sanctioned Russian individuals or entities
+    (or their proxies) hidden behind intermediaries, nominees, straw purchasers, or
+    opaque corporate structures including legal entities or trusts, to launder or
+    obfuscate illicit proceeds derived from sanctions evasion.
   product_types:
   - depository
   - wire_transfer
@@ -155,51 +158,10 @@
   - nominees
   - straw purchasers
   - trusts
-- id: 045-05
-  description: the purchase of real property below or above its market value as well
-    as the use of offshore buyers with potential links to Russia
-  product_types:
-  - depository
-  - wire_transfer
-  - private_banking
-  - securities
-  industry_types:
-  - real_estate
-  customer_profiles:
-  - cross_border_business
-  - high_net_worth_individual
-  - shell_or_front_company
-  geographic_footprints:
-  - russia
-  - high_risk_jurisdiction
-  - domestic_us
-  - uk_eu
-  - canada
-  regulatory_source: Global Advisory on Russian Sanctions Evasion
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - DOJ
-  - REPO Task Force
-  issued_date: '2023-03-09'
-  risk_level: medium
-  category: layering
-  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
-  typology_family:
-  - sanctions_evasion
-  - real_estate_money_laundering
-  transaction_patterns:
-  - real_estate_transactions
-  - unusual_international_wires
-  key_terms:
-  - real property
-  - market value
-  - offshore buyers
-  - Russia
 - id: 045-06
-  description: the use of shell companies or other legal entities and arrangements
-    to avoid detection
+  description: Use of shell companies or other legal entities and arrangements with
+    no apparent business purpose to hold assets or move funds, structured to avoid
+    detection of links to sanctioned Russian persons.
   product_types:
   - depository
   - wire_transfer
@@ -233,8 +195,9 @@
   - arrangements
   - avoid detection
 - id: 045-07
-  description: complex ownership structures to disguise their connections to particular
-    assets or entities
+  description: Complex multi-layered ownership structures spanning multiple jurisdictions
+    used to disguise a customer's connections to particular assets, entities, or sanctioned
+    Russian persons.
   product_types:
   - depository
   - wire_transfer
@@ -268,8 +231,9 @@
   - assets
   - entities
 - id: 045-08
-  description: trust arrangements that may have been designed to thwart sanctions
-    enforcement
+  description: Trust arrangements involving Russian-linked settlors, beneficiaries,
+    or assets, particularly those established or restructured around the time of a
+    sanctions designation, that appear designed to thwart sanctions enforcement.
   product_types:
   - private_banking
   - securities
@@ -302,9 +266,9 @@
   - trust arrangements
   - sanctions enforcement
 - id: 045-09
-  description: Entities or individuals involved in the trust—including law firms,
-    grantors (also defined as protectors), trustees, settlors, and beneficiaries—may
-    be involved in sanctions evasion
+  description: Trust participants—including law firms, grantors (also defined as protectors),
+    trustees, settlors, and beneficiaries—who have known ties to sanctioned Russian
+    persons or have previously been linked to sanctions evasion activity.
   product_types:
   - private_banking
   - securities
@@ -339,44 +303,10 @@
   - trustees
   - settlors
   - beneficiaries
-- id: 045-10
-  description: legal entities and arrangements to further obfuscate their ownership
-    or relation to the assets
-  product_types:
-  - depository
-  - wire_transfer
-  - private_banking
-  - securities
-  industry_types: []
-  customer_profiles:
-  - beneficial_owner_obscured
-  - shell_or_front_company
-  geographic_footprints:
-  - russia
-  - high_risk_jurisdiction
-  regulatory_source: Global Advisory on Russian Sanctions Evasion
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - DOJ
-  - REPO Task Force
-  issued_date: '2023-03-09'
-  risk_level: medium
-  category: shell_company
-  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - shell_company_usage
-  key_terms:
-  - legal entities
-  - ownership
-  - relation to assets
 - id: 045-11
-  description: transactions that involve shell companies registered in traditional
+  description: Transactions that involve shell companies registered in traditional
     tax havens conducting international wire transfers using financial institutions
-    in jurisdictions distinct from the company’s registration (non-resident banking)
+    in jurisdictions distinct from the company's registration (non-resident banking).
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -410,46 +340,11 @@
   - tax havens
   - international wire transfers
   - non-resident banking
-- id: 045-12
-  description: Sanctioned Russian individuals and entities may attempt to avoid direct
-    participation in sanctions evasion activity by utilizing certain persons in key
-    professions, including those that frequently interact with the international financial
-    system.
-  product_types:
-  - depository
-  - wire_transfer
-  - private_banking
-  - securities
-  industry_types:
-  - legal_accounting
-  - professional_services
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - russia
-  - high_risk_jurisdiction
-  regulatory_source: Global Advisory on Russian Sanctions Evasion
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - DOJ
-  - REPO Task Force
-  issued_date: '2023-03-09'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - key professions
-  - international financial system
-  - sanctions evasion
 - id: 045-13
-  description: These persons, known as enablers, may leverage their ability to open
-    bank accounts, send and receive money, and create corporate structures—among other
-    functions—to directly and indirectly aid sanctioned persons’ evasion efforts.
+  description: Professional enablers (lawyers, accountants, company formation agents,
+    financial advisors) opening bank accounts, sending and receiving funds, or creating
+    corporate structures on behalf of clients with known or apparent ties to sanctioned
+    Russian persons.
   product_types:
   - depository
   - wire_transfer
@@ -484,110 +379,12 @@
   - bank accounts
   - send and receive money
   - corporate structures
-- id: 045-14
-  description: The enabler will often perform certain functions on behalf of the sanctioned
-    person to allow the sanctioned party continued access to their funds.
-  product_types:
-  - depository
-  - wire_transfer
-  - private_banking
-  - securities
-  industry_types:
-  - legal_accounting
-  - professional_services
-  customer_profiles:
-  - beneficial_owner_obscured
-  geographic_footprints:
-  - russia
-  - high_risk_jurisdiction
-  regulatory_source: Global Advisory on Russian Sanctions Evasion
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - DOJ
-  - REPO Task Force
-  issued_date: '2023-03-09'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - third_party_payments
-  key_terms:
-  - enabler
-  - continued access to funds
-- id: 045-15
-  description: Enablers may operate in offshore financial centers where company formation
-    is common.
-  product_types:
-  - depository
-  - wire_transfer
-  - private_banking
-  - securities
-  industry_types:
-  - legal_accounting
-  - professional_services
-  customer_profiles:
-  - beneficial_owner_obscured
-  - shell_or_front_company
-  geographic_footprints:
-  - high_risk_jurisdiction
-  regulatory_source: Global Advisory on Russian Sanctions Evasion
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - DOJ
-  - REPO Task Force
-  issued_date: '2023-03-09'
-  risk_level: low
-  category: shell_company
-  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - shell_company_usage
-  key_terms:
-  - offshore financial centers
-  - company formation
-- id: 045-16
-  description: An additional type of enabler that sanctioned persons may utilize is
-    an individual or entity that helps consolidate investments from high-net worth
-    individual or institutional investors.
-  product_types:
-  - securities
-  - private_banking
-  industry_types: []
-  customer_profiles:
-  - high_net_worth_individual
-  geographic_footprints: []
-  regulatory_source: Global Advisory on Russian Sanctions Evasion
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - OFAC
-  - DOJ
-  - REPO Task Force
-  issued_date: '2023-03-09'
-  risk_level: low
-  category: layering
-  source_url: https://home.treasury.gov/system/files/136/REPO_Joint_Advisory.pdf
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns:
-  - pass_through_account_activity
-  key_terms:
-  - consolidate investments
-  - high-net worth individual
-  - institutional investors
 - id: 045-17
-  description: These types of individuals and entities help “feed” or aggregate investments
-    for placement into a private fund that the investors may not be able to access
-    on their own because they do not meet asset or income requirements to invest in
-    private funds, lack the relationship with advisers of private funds, or wish to
-    avoid disclosing their identities.
+  description: Feeder funds or aggregator entities that consolidate investments from
+    high-net-worth individuals or institutional investors into a private fund, used
+    by underlying investors to gain access without meeting asset/income requirements,
+    without an adviser relationship, or to avoid disclosing their identities — a structure
+    that can mask sanctioned beneficial owners.
   product_types:
   - securities
   - private_banking
@@ -613,13 +410,13 @@
   - pass_through_account_activity
   key_terms:
   - private fund
+  - feeder fund
   - asset or income requirements
   - avoid disclosing their identities
 - id: 045-18
-  description: One method Russian end-users use is to list a freight forwarding business,
-    often located in third party jurisdictions, as the final destination of a good,
-    when in fact those goods will be further shipped to their intended final destination
-    in Russia.
+  description: Trade transactions listing a freight forwarding business in a third-party
+    jurisdiction as the final destination of goods, when the goods are in fact further
+    shipped to their intended final destination in Russia.
   product_types:
   - trade_finance
   - wire_transfer
@@ -654,9 +451,10 @@
   - final destination
   - Russia
 - id: 045-19
-  description: The entities facilitating these transactions may often appear to have
-    no affiliation with the transaction and may be utilizing a known trans-shipment
-    point.
+  description: Entities facilitating trade transactions that appear to have no apparent
+    affiliation with the underlying parties to the transaction and route shipments
+    through a known trans-shipment point used to evade Russia-related export controls
+    or sanctions.
   product_types:
   - trade_finance
   - wire_transfer
@@ -689,9 +487,10 @@
   - trans-shipment point
   - no affiliation
 - id: 045-20
-  description: These Russian end-users may rely on false documentation, to include
-    bill of lading information and other supporting documentation such as fraudulent
-    trade finance information, to ensure the delivery of goods.
+  description: Russian end-users rely on false documentation—including falsified bill
+    of lading information and fraudulent trade finance supporting documentation—to
+    ensure delivery of goods that would otherwise be blocked by sanctions or export
+    controls.
   product_types:
   - trade_finance
   - wire_transfer

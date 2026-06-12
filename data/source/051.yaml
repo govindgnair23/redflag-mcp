@@ -1,7 +1,8 @@
 - id: 051-01
-  description: DPRK cyber actors have also conducted extortion campaigns against third-country
-    entities by compromising an entity’s network and threatening to shut it down unless
-    the entity pays a ransom.
+  description: A customer of an institution (typically a third-country business or
+    financial institution) is the victim of a network intrusion and ransom demand
+    by DPRK-linked cyber actors, with the ransom payment routed through the institution's
+    accounts.
   product_types:
   - depository
   - wire_transfer
@@ -24,51 +25,18 @@
   source_url: https://ofac.treasury.gov/media/36061/download
   typology_family:
   - cybercrime_proceeds
-  - scam_proceeds
   transaction_patterns:
   - account_takeover
   - rapid_fund_movement
   key_terms:
-  - extortion campaigns
+  - extortion
   - ransom
-  - compromising an entity’s network
-- id: 051-02
-  description: DPRK cyber actors have also been paid to hack websites and extort targets
-    for third-party clients.
-  product_types:
-  - depository
-  - wire_transfer
-  - crypto
-  industry_types:
-  - online_marketplace
-  customer_profiles:
-  - third_party_payment_processor
-  geographic_footprints: []
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: medium
-  category: cyber_enabled
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - cybercrime_proceeds
-  - scam_proceeds
-  transaction_patterns:
-  - third_party_payments
-  key_terms:
-  - hack websites
-  - extort targets
-  - third-party clients
+  - network intrusion
 - id: 051-03
-  description: The POE is also investigating the DPRK’s use of “cryptojacking,” a
-    scheme to compromise a victim machine and steal its computing resources to mine
-    digital currency.
+  description: Computers infected with cryptojacking malware mine digital currency
+    on the victim's hardware and send the mined assets — often anonymity-enhanced
+    digital currencies (privacy coins) — to wallets or servers located in the DPRK
+    or controlled by DPRK-linked actors.
   product_types:
   - crypto
   industry_types:
@@ -76,39 +44,7 @@
   customer_profiles: []
   geographic_footprints:
   - east_asia
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: high
-  category: cyber_enabled
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - crypto_asset_money_laundering
-  - cybercrime_proceeds
-  transaction_patterns:
-  - account_takeover
-  - cryptocurrency_mixing
-  key_terms:
-  - cryptojacking
-  - mine digital currency
-  - privacy coins
-- id: 051-04
-  description: Computers infected with cryptojacking malware sent the mined assets
-    – much of it anonymity-enhanced digital currency (sometimes also referred to as
-    “privacy coins”) – to servers located in the DPRK
-  product_types:
-  - crypto
-  industry_types:
-  - crypto
-  customer_profiles: []
-  geographic_footprints:
-  - east_asia
+  - north_korea
   regulatory_source: DPRK Cyber Threat Advisory
   regulator: OFAC
   regulator_jurisdiction: US
@@ -128,45 +64,13 @@
   - cryptocurrency_mixing
   - rapid_fund_movement
   key_terms:
-  - anonymity-enhanced digital currency
+  - cryptojacking
   - privacy coins
-  - servers located in the DPRK
-- id: 051-05
-  description: Suspicious transactions, including those conducted, affected, or facilitated
-    by cyber events or illicit finance involving digital assets
-  product_types:
-  - crypto
-  - wire_transfer
-  - depository
-  industry_types:
-  - crypto
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: medium
-  category: cyber_enabled
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - cybercrime_proceeds
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - cyber events
-  - illicit finance
-  - digital assets
-  - suspicious transactions
+  - anonymity-enhanced digital currency
+  - DPRK
 - id: 051-06
-  description: Engaged in at least one significant importation from or exportation
-    to North Korea of any goods, services, or technology
+  description: A customer engages in at least one significant importation from or
+    exportation to North Korea of goods, services, or technology.
   product_types:
   - trade_finance
   - wire_transfer
@@ -201,8 +105,8 @@
   - exportation
   - North Korea
 - id: 051-07
-  description: A foreign financial institution has knowingly conducted or facilitated
-    significant trade with North Korea
+  description: A foreign financial institution (FI) knowingly conducts or facilitates
+    significant trade with North Korea on behalf of its customers.
   product_types:
   - correspondent_banking
   - trade_finance
@@ -236,10 +140,10 @@
   - North Korea
   - foreign financial institution
 - id: 051-08
-  description: A foreign financial institution has knowingly conducted or facilitated
+  description: A foreign financial institution (FI) knowingly conducts or facilitates
     a significant transaction on behalf of a person designated under a North Korea-related
     Executive Order, or under Executive Order 13382 (Weapons of Mass Destruction Proliferators
-    and Their Supporters) for North Korea-related activity
+    and Their Supporters) for North Korea-related activity.
   product_types:
   - correspondent_banking
   - wire_transfer
@@ -270,74 +174,11 @@
   - significant transaction
   - North Korea-related Executive Order
   - Executive Order 13382
-- id: 051-09
-  description: The DPRK’s use, and attempted use, of cyber-enabled means to steal
-    funds from banks and digital currency exchanges
-  product_types:
-  - depository
-  - crypto
-  - money_transmitter
-  industry_types:
-  - crypto
-  - money_services_business
-  customer_profiles: []
-  geographic_footprints:
-  - east_asia
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: high
-  category: cyber_enabled
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - cybercrime_proceeds
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - account_takeover
-  - rapid_fund_movement
-  key_terms:
-  - steal funds
-  - banks
-  - digital currency exchanges
-- id: 051-10
-  description: Attempted violations of UN Security Council sanctions on the DPRK
-  product_types:
-  - depository
-  - wire_transfer
-  - trade_finance
-  - crypto
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints:
-  - north_korea
-  - sanctioned_jurisdiction
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: medium
-  category: sanctions_evasion
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - sanctions_evasion
-  transaction_patterns: []
-  key_terms:
-  - UN Security Council sanctions
-  - DPRK
 - id: 051-11
   description: Unauthorized transactions on the Society for Worldwide Interbank Financial
-    Telecommunication (SWIFT) network
+    Telecommunication (SWIFT) network — particularly outbound wires from the institution
+    bearing authenticated SWIFT messages that the originating account holder did not
+    actually initiate.
   product_types:
   - wire_transfer
   - correspondent_banking
@@ -366,72 +207,16 @@
   key_terms:
   - SWIFT
   - unauthorized transactions
-- id: 051-12
-  description: Fraudulently authenticated SWIFT messages directing the Federal Reserve
-    Bank of New York to transfer funds out of the Bangladesh Bank’s Federal Reserve
-    account to accounts controlled by the conspirators
-  product_types:
-  - wire_transfer
-  - correspondent_banking
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints:
-  - east_asia
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: high
-  category: fraud_nexus
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - fraud_proceeds
-  - cybercrime_proceeds
-  transaction_patterns:
-  - identity_misrepresentation
-  - wire_transfer_chains
-  key_terms:
-  - SWIFT messages
-  - Federal Reserve account
-  - accounts controlled by the conspirators
-- id: 051-13
-  description: Ransom payments in the Bitcoin digital currency
-  product_types:
-  - crypto
-  industry_types:
-  - crypto
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: medium
-  category: ransomware
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - cybercrime_proceeds
-  - crypto_asset_money_laundering
-  transaction_patterns:
-  - rapid_fund_movement
-  key_terms:
-  - Bitcoin
-  - ransom payments
+  - fraudulently authenticated messages
 - id: 051-14
-  description: Fraudulent ATM cash withdrawal scheme known as “FASTCash”
+  description: Coordinated, large-volume cash withdrawals from automated teller machines
+    (ATMs) across multiple jurisdictions within a short window, on cards or accounts
+    whose authorisation limits or balances have been manipulated through compromise
+    of the issuing bank's payment switch (the "FASTCash" pattern attributed to DPRK-linked
+    actors).
   product_types:
   - depository
-  - cash_cashing
+  - check_cashing
   industry_types: []
   customer_profiles: []
   geographic_footprints:
@@ -451,15 +236,19 @@
   source_url: https://ofac.treasury.gov/media/36061/download
   typology_family:
   - fraud_proceeds
+  - cybercrime_proceeds
   transaction_patterns:
   - cash_intensive_behavior
   - money_mule_activity
+  - account_takeover
   key_terms:
   - FASTCash
-  - ATM cash withdrawal
+  - simultaneous ATM withdrawals
+  - payment switch compromise
 - id: 051-15
-  description: Remotely compromise payment switch application servers within banks
-    to facilitate fraudulent transactions
+  description: Remote compromise of a bank's payment switch or core application servers
+    used to inject or authorise fraudulent transactions (e.g., bypassing balance,
+    velocity, or fraud-screening controls).
   product_types:
   - depository
   - wire_transfer
@@ -485,38 +274,13 @@
   - account_takeover
   - wire_transfer_chains
   key_terms:
-  - payment switch application servers
+  - payment switch
+  - application servers
   - fraudulent transactions
-- id: 051-16
-  description: Cash to be simultaneously withdrawn from ATMs in 23 different countries
-  product_types:
-  - depository
-  industry_types: []
-  customer_profiles: []
-  geographic_footprints: []
-  regulatory_source: DPRK Cyber Threat Advisory
-  regulator: OFAC
-  regulator_jurisdiction: US
-  issuing_agencies:
-  - State
-  - Treasury
-  - DHS
-  - FBI
-  issued_date: '2020-04-15'
-  risk_level: high
-  category: fraud_nexus
-  source_url: https://ofac.treasury.gov/media/36061/download
-  typology_family:
-  - fraud_proceeds
-  transaction_patterns:
-  - cash_intensive_behavior
-  - money_mule_activity
-  key_terms:
-  - ATMs
-  - 23 different countries
 - id: 051-17
-  description: Stolen assets were laundered through hundreds of automated digital
-    currency transactions, to obfuscate the origins of the funds
+  description: Stolen digital assets are laundered through large numbers of automated,
+    chained virtual currency transactions (peel chains, mixer/tumbler usage, or rapid
+    exchange hops) to obfuscate the origin of the funds.
   product_types:
   - crypto
   industry_types:
@@ -543,11 +307,12 @@
   - cryptocurrency_mixing
   key_terms:
   - automated digital currency transactions
-  - obfuscate the origins of the funds
+  - obfuscate origins
+  - peel chain
 - id: 051-18
-  description: Receiving large sums (e.g., $91 million) from DPRK-controlled accounts,
-    as well as an additional large sum (e.g., $9.5 million) from a hack of another
-    exchange
+  description: A virtual currency exchange account receives large incoming transfers
+    from wallets or counterparties associated with DPRK-controlled accounts or with
+    other exchanges that have suffered known intrusions or thefts.
   product_types:
   - crypto
   - wire_transfer
@@ -578,3 +343,4 @@
   key_terms:
   - DPRK-controlled accounts
   - exchange hack
+  - tainted funds
