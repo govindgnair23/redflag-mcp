@@ -37,8 +37,7 @@ red_flag_sources/markdown/
 .env.local
 .tmp.driveupload/
 
-#Agent related 
+#Agent related
 
-.claude/*
-!.claude/commands/
+.claude/
 .codex/
