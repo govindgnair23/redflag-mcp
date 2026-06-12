@@ -1,0 +1,456 @@
+- id: 112_virtual-assets-risk-assessment-01
+  description: Criminals circumvent the onboarding processes of licensed Digital Payment
+    Token Service Providers (DPTSP) by coaxing the victim to set up an account with
+    the DPTSP in the victim’s name.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - DPTSP
+  - onboarding
+  - victim’s name
+- id: 112_virtual-assets-risk-assessment-02
+  description: After the victim buys Digital Payment Tokens (DPT) using fiat currency,
+    the criminal then convinces the victim to transfer the cryptocurrency to the criminal’s
+    wallet.
+  product_types:
+  - crypto
+  - depository
+  - wire_transfer
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - fiat currency
+  - cryptocurrency
+  - wallet
+- id: 112_virtual-assets-risk-assessment-03
+  description: Customer rapidly converts fiat currency or one Digital Payment Token
+    (DPT) into a different DPT (often a stablecoin or privacy coin) shortly before
+    transferring it out, inconsistent with their prior trading pattern — may indicate
+    scam-victim coaching or laundering of fraud proceeds.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - exchange
+  - convert fiat currency
+  - DPT
+- id: 112_virtual-assets-risk-assessment-04
+  description: Customer receives an incoming fiat or DPT deposit and immediately transfers
+    a Digital Payment Token (DPT) amount to a previously unknown wallet, with no prior
+    history of similar transfers — pattern consistent with ransom payment.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: high
+  category: ransomware
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - ransom
+  - DPTs
+  - wallet
+- id: 112_virtual-assets-risk-assessment-05
+  description: To avoid being identified, these are usually unhosted wallets or wallets
+    obtained by the criminal without having to undergo (or undergo minimal) Customer
+    Due Diligence (CDD) checks.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - cybercrime_proceeds
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - unhosted wallets
+  - CDD
+  - wallets
+- id: 112_virtual-assets-risk-assessment-06
+  description: To layer the proceeds and obscure trails, criminals could use mixers
+    or cross-chain bridges to convert ransoms into different, or privacy-centric Digital
+    Payment Tokens (DPT), such as those which do not operate on a transparent blockchain.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - cybercrime_proceeds
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - mixers
+  - cross-chain bridges
+  - privacy-centric DPTs
+- id: 112_virtual-assets-risk-assessment-07
+  description: Eventually, the criminal would integrate the proceeds back into the
+    fiat world by cashing out the Digital Payment Tokens (DPT), usually in jurisdictions
+    with no or minimal Customer Due Diligence (CDD) checks and separate from where
+    the criminal is.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - cybercrime_proceeds
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - cashing out
+  - CDD checks
+  - DPTs
+- id: 112_virtual-assets-risk-assessment-08
+  description: Criminals also use tools such as mixers and privacy coins, and techniques
+    such as slowing transactions, co-mingling, swapping of virtual assets via smart
+    contracts, cross-chain transactions and off-ramping via unregulated peer-to-peer
+    services.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - cybercrime_proceeds
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  - nested_account_activity
+  key_terms:
+  - mixers
+  - privacy coins
+  - smart contracts
+  - cross-chain transactions
+  - peer-to-peer services
+- id: 112_virtual-assets-risk-assessment-09
+  description: Criminals also open accounts at exchanges using identities of unrelated
+    individuals which were purchased on encrypted messaging platforms such as Telegram.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - cybercrime_proceeds
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - exchanges
+  - Telegram
+  - unrelated individuals
+- id: 112_virtual-assets-risk-assessment-12
+  description: Account activity (login, withdrawals, DPT transfers) from an IP address,
+    device fingerprint, or session token that does not match the registered customer's
+    historical access pattern — pattern consistent with account takeover using phished
+    or purchased credentials.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - login credentials
+  - custodial services
+  - overseas exchange
+- id: 112_virtual-assets-risk-assessment-14
+  description: An individual would pay an online gambling platform or an agent affiliated
+    with a money laundering network in cryptocurrency.
+  product_types:
+  - crypto
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - online gambling platform
+  - money laundering network
+  - cryptocurrency
+- id: 112_virtual-assets-risk-assessment-15
+  description: In return, the individual would receive in-game points which could
+    be cashed out in another jurisdiction or used in bets.
+  product_types:
+  - crypto
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - in-game points
+  - cashed out
+  - bets
+- id: 112_virtual-assets-risk-assessment-16
+  description: A person may be using virtual assets to move payments from clients
+    to other components in the drug supply chain.
+  product_types:
+  - crypto
+  industry_types:
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - drug supply chain
+  - virtual assets
+  - payments
+- id: 112_virtual-assets-risk-assessment-17
+  description: Virtual assets can also be used in proliferation financing.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - north_korea
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: proliferation_financing
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - proliferation_financing
+  transaction_patterns: []
+  key_terms:
+  - proliferation financing
+  - virtual assets
+  - DPRK
+- id: 112_virtual-assets-risk-assessment-18
+  description: Funds received by the customer are transferred to the customer's exchange
+    account and, within a short window, used to purchase Digital Payment Tokens (e.g.
+    bitcoin) that are then withdrawn to external (non-exchange) wallets — pattern
+    consistent with rapid laundering of fraud proceeds.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - wire_transfer_chains
+  key_terms:
+  - Cryptocurrency Account
+  - bitcoin
+  - external to the cryptocurrency exchange
+- id: 112_virtual-assets-risk-assessment-19
+  description: A third-party unhosted wallet had indirect transactions with a wallet
+    that was associated with a sanctioned entity and also had nexus to scams.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Virtual Assets Risk Assessment Report Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/virtual-assets-risk-assessment.pdf
+  typology_family:
+  - sanctions_evasion
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - unhosted wallet
+  - sanctioned entity
+  - scams

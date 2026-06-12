@@ -1,0 +1,631 @@
+- id: 111_env-crimes-ml-nra-final-for-publication-03
+  description: Company service providers which facilitate the formation of companies
+    including shell or front companies purporting to be involved in import and export
+    business, as well as businesses with dealings which could be cash intensive, or
+    provide a store of value at the integration stage, e.g. via precious stones and
+    precious metals, may also be vulnerable to environmental (Env) Crimes ML.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  - precious_metals_jewelry
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - shell_company
+  - trade_based_money_laundering
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  - cash_intensive_behavior
+  key_terms:
+  - shell or front companies
+  - import and export business
+  - precious stones and precious metals
+- id: 111_env-crimes-ml-nra-final-for-publication-04
+  description: Traffickers are also using air transport to smuggle smaller wildlife
+    products such as pieces of ivory accessories or rhinoceros horn in the luggage
+    of air passengers.
+  product_types: []
+  industry_types:
+  - travel_hospitality
+  - import_export
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - africa
+  - east_asia
+  - south_east_asia
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: narcotics_trafficking
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - bulk_cash_smuggling
+  - identity_misrepresentation
+  key_terms:
+  - air transport
+  - ivory accessories
+  - rhinoceros horn
+- id: 111_env-crimes-ml-nra-final-for-publication-05
+  description: Criminals could mask the origin of the illegally sourced goods through
+    falsification of documents, or by moving them through transit countries to commingle
+    legal and illegal goods.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - round_tripping
+  key_terms:
+  - falsification of documents
+  - commingle legal and illegal goods
+  - transit countries
+- id: 111_env-crimes-ml-nra-final-for-publication-06
+  description: Criminals could also launder proceeds from environmental (Env) goods
+    through layering, under the guise of loans or payments, and using cash deposits,
+    electronic payments, and third-party wire transfers.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - third_party_payments
+  - wire_transfer_chains
+  - rapid_fund_movement
+  key_terms:
+  - loans or payments
+  - cash deposits
+  - third-party wire transfers
+- id: 111_env-crimes-ml-nra-final-for-publication-09
+  description: Legitimate and illicit fund flows could arise from commingling in the
+    supply chain, trade fraud, and integration of funds in destination jurisdictions,
+    away from where the underlying environmental (Env) Crime was committed.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - trade_based_money_laundering
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - trade_document_manipulation
+  - rapid_fund_movement
+  key_terms:
+  - commingling
+  - trade fraud
+  - integration of funds
+- id: 111_env-crimes-ml-nra-final-for-publication-11
+  description: Bad actors smuggle cash across borders by using money changers to convert
+    cash into higher denomination notes, especially foreign notes.
+  product_types:
+  - currency_exchange
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - bulk_cash_smuggling
+  - cash_intensive_behavior
+  key_terms:
+  - money changers
+  - higher denomination notes
+  - foreign notes
+- id: 111_env-crimes-ml-nra-final-for-publication-12
+  description: Bad actors can misuse this channel by processing multiple smaller transactions
+    to avoid any threshold requirements to conduct due diligence checks.
+  product_types:
+  - currency_exchange
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: structuring
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - structuring
+  transaction_patterns:
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - threshold requirements
+  - due diligence checks
+  - multiple smaller transactions
+- id: 111_env-crimes-ml-nra-final-for-publication-13
+  description: Bad actors also use underground money changers to smuggle money across
+    borders.
+  product_types:
+  - currency_exchange
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - bulk_cash_smuggling
+  - informal_value_transfer
+  key_terms:
+  - underground money changers
+  - smuggle money
+  - across borders
+- id: 111_env-crimes-ml-nra-final-for-publication-15
+  description: Criminals can misuse companies incorporated through Company Service
+    Providers (CSPs) as a front company to move and hide illegal proceeds, or as a
+    shell company to hide beneficial owners to launder proceeds from environmental
+    (Env) Crimes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - shell_company
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - front company
+  - shell company
+  - beneficial owners
+- id: 111_env-crimes-ml-nra-final-for-publication-16
+  description: Front companies are misused to launder proceeds from environmental
+    (Env) Crimes in several ways – firstly, they could facilitate the appearance of
+    legitimate invoices and payment to suppliers through their possible ties to import-export
+    sector; secondly, they could be set up in a complex company structure with multiple
+    layers of ownership and multi-jurisdiction operations; and thirdly, they could
+    be connected to legal trades and businesses of Env goods.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - shell_company
+  - trade_based_money_laundering
+  - layering
+  transaction_patterns:
+  - invoice_mismatch
+  - shell_company_usage
+  - trade_document_manipulation
+  key_terms:
+  - front companies
+  - legitimate invoices
+  - multi-jurisdiction operations
+- id: 111_env-crimes-ml-nra-final-for-publication-17
+  description: Criminals use shell companies deliberately to create as many layers
+    as possible i.e., complex corporate structures, between the proceeds derived from
+    environmental (Env) Crimes and the account holder where funds are placed following
+    the sale of the illegal goods.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - shell_company
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  - nested_account_activity
+  key_terms:
+  - shell companies
+  - complex corporate structures
+  - beneficial owners
+- id: 111_env-crimes-ml-nra-final-for-publication-18
+  description: Funds are transferred through third-party transit countries to hide
+    the beneficial owners.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  - nested_account_activity
+  key_terms:
+  - third-party transit countries
+  - hide the beneficial owners
+- id: 111_env-crimes-ml-nra-final-for-publication-20
+  description: Virtual assets have anonymity-enhancing features (such as mixers, tumblers)
+    that enable bad actors to obfuscate their identities, counterparties, and physical
+    locations.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - identity_misrepresentation
+  key_terms:
+  - mixers
+  - tumblers
+  - virtual assets
+- id: 111_env-crimes-ml-nra-final-for-publication-21
+  description: Criminal networks use casinos to facilitate wildlife trafficking.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  - cross_border_business
+  geographic_footprints:
+  - south_east_asia
+  - east_asia
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - casinos
+  - wildlife trafficking
+  - casino chips
+- id: 111_env-crimes-ml-nra-final-for-publication-22
+  description: Criminals could purchase casino chips to launder proceeds of environmental
+    (Env) Crimes at the integration stage.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - casino chips
+  - integration stage
+- id: 111_env-crimes-ml-nra-final-for-publication-24
+  description: Pre-paid and gift cards are stored value facilities which can be used
+    to transfer and make payments for environmental (Env) goods.
+  product_types:
+  - prepaid
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - pre-paid cards
+  - gift cards
+  - stored value facilities
+- id: 111_env-crimes-ml-nra-final-for-publication-25
+  description: Pre-paid and gift cards can be bought in large quantities and in some
+    cases, redeemed for their monetary value outside of the country where they were
+    originally purchased and hence, enable movement of currency out of the country
+    where the environmental (Env) goods are received.
+  product_types:
+  - prepaid
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - large quantities
+  - redeemed for monetary value
+  - currency out of the country
+- id: 111_env-crimes-ml-nra-final-for-publication-26
+  description: Pre-paid cards and gift cards are also used to circumvent reporting
+    requirements and result in tax and revenue evasion and exchange control violations.
+  product_types:
+  - prepaid
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: high
+  category: structuring
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - structuring
+  - tax_evasion
+  transaction_patterns:
+  - structuring
+  - rapid_fund_movement
+  key_terms:
+  - reporting requirements
+  - tax and revenue evasion
+  - exchange control violations
+- id: 111_env-crimes-ml-nra-final-for-publication-27
+  description: Criminals could purchase high-value goods such as real estate and luxury
+    items e.g., gold, jewellery, precious stones and precious metals (PSPM) and insurance
+    policies, to launder proceeds at the integration stage of the environmental (Env)
+    Crimes ML process.
+  product_types:
+  - depository
+  - insurance
+  industry_types:
+  - real_estate
+  - precious_metals_jewelry
+  customer_profiles:
+  - high_net_worth_individual
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Environmental Crimes Money Laundering National Risk Assessment
+    MAY 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: 2024-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/env-crimes-ml-nra---final-for-publication.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - real_estate_transactions
+  - rapid_fund_movement
+  key_terms:
+  - real estate
+  - gold
+  - jewellery

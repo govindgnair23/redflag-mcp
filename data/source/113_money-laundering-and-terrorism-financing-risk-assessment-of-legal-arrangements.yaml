@@ -1,0 +1,351 @@
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-02
+  description: A trust is used to hold a company’s shares, thereby disguising the
+    beneficial owner of the company.
+  product_types:
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - layering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - trust
+  - company shares
+  - beneficial owner
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-03
+  description: Criminals may hence attempt to put their illicit assets in a trust
+    to conceal their control or ultimate beneficial ownership over the said assets
+    in order to hinder law enforcement efforts while retaining control through one
+    or more of the parties listed.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - illicit assets
+  - ultimate beneficial ownership
+  - trust
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-04
+  description: A lack of a rational purpose or dubious provenance of the sources of
+    funds and wealth could put them on notice that the legal arrangement is being
+    used for improper purposes.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+  - source of wealth
+  - dubious provenance
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-05
+  description: Trust funded by an initial injection from the settlor's personal account
+    at a bank that is a related entity of the licensed trust company — circular intra-group
+    flow with no independent commercial rationale.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - initial fund injection
+  - personal account
+  - trust
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-06
+  description: Settlor's personal account that funds a trust is itself sourced from
+    dividends of companies in the jurisdiction purportedly owned by the settlor —
+    beneficial ownership and source of wealth depend on the same self-reported chain
+    with no independent verification.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - layering
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  key_terms:
+  - dividends
+  - companies in Singapore
+  - personal account
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-07
+  description: Beneficial owner, settlor, or shareholders of underlying businesses
+    placed into the trust have sanctions concerns (adverse-media hits, OFAC/UN list
+    proximity, or links to sanctioned jurisdictions).
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - sanctions concerns
+  - shareholders
+  - businesses owned by the settlor
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-08
+  description: Licensed trust company or service provider fails to inquire into the
+    background and purpose of unusually large transactions with no obvious economic
+    purpose undertaken by customers who are Politically Exposed Persons (PEPs) — supervisory
+    red flag indicating inadequate enhanced due diligence.
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - politically_exposed_person
+  geographic_footprints: []
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: corruption
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unusually large transactions
+  - no obvious economic purpose
+  - PEP
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-12
+  description: Foreign legal arrangements are assessed to generally be more vulnerable
+    to ML/TF where the foreign trusts are set up in higher-risk locations (e.g. those
+    on FATF’s “blacklist”) or in countries with active terrorist activities.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - layering
+  - terrorist_financing
+  transaction_patterns: []
+  key_terms:
+  - higher-risk locations
+  - FATF blacklist
+  - active terrorist activities
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-13
+  description: Foreign legal arrangements are assessed to generally be more vulnerable
+    to ML/TF where such foreign trusts are created as part of a complex structure,
+    oftentimes interspersed with layer(s) of companies.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - layering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - shell_company_usage
+  key_terms:
+  - complex structure
+  - layer(s) of companies
+  - foreign trusts
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-15
+  description: A foreigner who did not obtain approval to purchase restricted residential
+    property in Singapore appointed as his/her nominee a Singapore citizen or an approved
+    purchaser to purchase the property and hold it on trust for the foreigner’s benefit.
+  product_types:
+  - depository
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - foreign_individual
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - layering
+  transaction_patterns:
+  - real_estate_transactions
+  - third_party_payments
+  key_terms:
+  - nominee
+  - restricted residential property
+  - trust
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-16
+  description: Charitable purpose trusts may be abused for TF, particularly where
+    funds raised in Singapore for charitable purposes, particularly for humanitarian
+    relief use in or near conflict and other crisis zones, could be diverted for TF
+    purposes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - middle_east
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - humanitarian relief
+  - conflict zones
+  - charitable purposes
+- id: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements-17
+  description: There is a possibility for disbursements from the wakafs to unknowingly
+    be made to TF causes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles: []
+  geographic_footprints:
+  - middle_east
+  - south_asia
+  regulatory_source: Money Laundering and Terrorism Financing Risk Assessment of Legal
+    Arrangements in Singapore 2024
+  regulator: MAS
+  regulator_jurisdiction: SG
+  issuing_agencies: []
+  issued_date: '2024'
+  risk_level: medium
+  category: terrorist_financing
+  source_url: https://www.mas.gov.sg/-/media/mas-media-library/publications/monographs-or-information-paper/amld/2024/money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.pdf
+  typology_family:
+  - terrorist_financing
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - wakaf
+  - disbursements
+  - TF causes

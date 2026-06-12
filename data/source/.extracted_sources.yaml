@@ -370,3 +370,18 @@
   slug: '135'
   output_file: data/source/135.yaml
   extracted_at: '2026-06-11T00:27:05.958585+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/112_Virtual
+    Assets Risk Assessment.pdf
+  slug: 112_virtual-assets-risk-assessment
+  output_file: data/source/112_virtual-assets-risk-assessment.yaml
+  extracted_at: '2026-06-12T00:12:55.636751+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/111_Env
+    Crimes ML NRA - Final for Publication.pdf
+  slug: 111_env-crimes-ml-nra-final-for-publication
+  output_file: data/source/111_env-crimes-ml-nra-final-for-publication.yaml
+  extracted_at: '2026-06-12T00:13:15.712000+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/113_MONEY
+    LAUNDERING AND TERRORISM FINANCING RISK ASSESSMENT OF LEGAL ARRANGEMENTS.pdf
+  slug: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements
+  output_file: data/source/113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.yaml
+  extracted_at: '2026-06-12T00:13:21.583059+00:00'
