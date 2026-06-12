@@ -11,7 +11,7 @@ restartPolicyMaxRetries = 3
 [variables]
 REDFLAG_RUNTIME_MODE = "hosted-corpus"
 REDFLAG_CORPUS_RELEASE_INDEX = "dist/corpus/releases.json"
-REDFLAG_CORPUS_VERSION = "2026.06.06.1"
+REDFLAG_CORPUS_VERSION = "2026.06.12"
 REDFLAG_CORPUS_CACHE_DIR = "/app/.redflag-mcp"
 REDFLAG_ALLOWED_HOSTS = "healthcheck.railway.app,redflag-mcp-production.up.railway.app"
 REDFLAG_MAX_REQUEST_BYTES = "1000000"
