@@ -1,11 +1,9 @@
 - id: 039_ofac_sham_transactions_advisory-01
   description: Commercially unreasonable transactions. Transfers of property in which
     a blocked person once held an interest on terms that are not commercially reasonable,
-    lacking adequate consideration, or otherwise not suggestive of an arm’s length
+    lacking adequate consideration, or otherwise not suggestive of an arm's length
     transaction may indicate that the blocked person still retains an interest in
-    the property. Conversely, evidence that a transaction was between unrelated parties,
-    at fair market value, in a competitive market, would tend to demonstrate that
-    a bona fide transfer occurred.
+    the property.
   product_types:
   - depository
   - private_banking
