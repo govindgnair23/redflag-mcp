@@ -1,0 +1,672 @@
+- id: 211-01
+  description: Third party payments for goods or services made by an intermediary
+    (either an individual or an entity) apparently unrelated to the seller or purchaser
+    of goods. This may be done to obscure the true origin of the funds.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - third party payments
+  - intermediary
+  - goods or services
+- id: 211-02
+  description: A customer’s inability to produce appropriate documentation (i.e.,
+    invoices) to support a requested transaction.
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - invoices
+  - documentation
+- id: 211-03
+  description: Significant discrepancies between the descriptions of the goods on
+    the transport document (i.e., bill of lading), the invoice, or other documents
+    (i.e., certificate of origin, packing list, etc.).
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - bill of lading
+  - invoice
+  - certificate of origin
+  - packing list
+- id: 211-04
+  description: Negotiable instruments (such as traveler’s checks, cashier’s checks
+    and money orders) in round denominations under $3,000 used to fund domestic accounts
+    or, alternatively, smuggled from the United States for placement into accounts
+    at foreign financial institutions. The negotiable instruments may be sequentially
+    numbered or purchased at multiple locations and may frequently lack payee information
+    or contain visible broker markings or symbols. These negotiable instruments may
+    also be used to pay for goods and services.
+  product_types:
+  - depository
+  - check_cashing
+  - money_transmitter
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - foreign_financial_institution
+  geographic_footprints:
+  - domestic_us
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - monetary_instrument_purchases
+  - cash_deposits_below_threshold
+  - bulk_cash_smuggling
+  key_terms:
+  - traveler’s checks
+  - cashier’s checks
+  - money orders
+  - $3,000
+  - sequentially numbered
+  - payee information
+- id: 211-05
+  description: International wire transfers received as payment for goods into U.S.
+    bank accounts or processed through U.S. correspondent or intermediary accounts,
+    especially where the ordering party (importer of goods) of the wire does not live
+    in the country from which the wire originated.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - central_america
+  - south_america
+  - mexico
+  - china
+  - hong_kong
+  - east_asia
+  - uk_eu
+  - caribbean
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - international wire transfers
+  - correspondent accounts
+  - intermediary accounts
+  - ordering party
+  - importer of goods
+- id: 211-06
+  description: Wires originating from jurisdictions which have been highlighted in
+    relation to black market peso exchange activities, such as Mexico, Guatemala,
+    Argentina, Brazil, Paraguay, Uruguay, Venezuela.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - latin_america
+  - venezuela
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - black market peso exchange
+  - wires originating
+  - jurisdictions
+- id: 211-07
+  description: Wires where no apparent business relationship appears to exist between
+    the originator and the beneficiary.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - originator
+  - beneficiary
+  - business relationship
+- id: 211-08
+  description: Customers who fail to provide adequate information, including adequate
+    information on the originator, beneficiary, and purpose of the wire.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - originator
+  - beneficiary
+  - purpose of the wire
+- id: 211-09
+  description: Frequent transactions involving rounding or whole dollar amounts.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: low
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - round_tripping
+  key_terms:
+  - rounding
+  - whole dollar amounts
+- id: 211-10
+  description: Funds transferred into U.S. domestic accounts that are subsequently
+    transferred out of the account in the same or nearly the same amounts. Origination
+    and destination locations are frequently high risk jurisdictions.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - same or nearly the same amounts
+  - high risk jurisdictions
+- id: 211-11
+  description: Sudden onset and equally sudden cessation of payments – typically wire
+    transfers – within a short duration. This could be an indication that the account
+    is temporarily being used to launder illicit proceeds.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - sudden onset
+  - sudden cessation
+  - wire transfers
+- id: 211-12
+  description: A foreign import business with U.S. accounts receiving payments from
+    locations outside the areas of their customer base.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - foreign import business
+  - customer base
+- id: 211-13
+  description: U. S. companies operating out of foreign countries, especially when
+    it is difficult or impossible to determine ownership or controlling persons for
+    the company, or when the business purpose is not fully apparent.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - central_america
+  - south_america
+  - mexico
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - ownership
+  - controlling persons
+  - business purpose
+- id: 211-14
+  description: Multiple deposits occurring in various locations when the account owner
+    resides elsewhere, for example, deposits made in New York and Michigan when the
+    account owner resides in Florida.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  key_terms:
+  - multiple deposits
+  - various locations
+- id: 211-15
+  description: A customer with multiple bank accounts, or multiple accounts held by
+    the customer and closely related family members. These accounts may be held at
+    one or more financial institutions. Such accounts may be used to facilitate the
+    placement and layering of illicit funds.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - multiple bank accounts
+  - closely related family members
+- id: 211-16
+  description: Checking accounts receiving cash deposits in amounts under $1,000 as
+    infrequently as several times per month. These deposits may be followed by ATM
+    withdrawals in foreign countries. This method, sometimes referred to as micro-structuring,
+    is used by “smurfs” to deposit cash which may then be used to purchase goods.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: high
+  category: structuring
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  - cash_intensive_behavior
+  key_terms:
+  - $1,000
+  - micro-structuring
+  - smurfs
+  - ATM withdrawals
+- id: 211-17
+  description: 'Foreign visitors opening multiple U.S. bank accounts at one or more
+    financial institutions. Individuals may travel to the United States with instructions
+    to establish multiple bank accounts as a straw party. Upon return to their home
+    country the straw account owner signs all of the blank checks and relinquishes
+    control of the checkbooks and ATM cards tied to the accounts to the beneficial
+    owner who now has control of the accounts. The following are examples of activity
+    common to these accounts: Cash deposits received using over-the-counter deposit
+    slips since the checkbooks containing the pre-printed deposit slips as well as
+    ATM cards are located out of country; Deposits which are frequently made in multiple
+    U.S. jurisdictions; Withdrawals made via foreign ATM transactions; or Withdrawals
+    via check transactions that exhibit a difference between the handwriting for the
+    signature and the payee portions of the check.'
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - money_mule_activity
+  - identity_misrepresentation
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - foreign visitors
+  - straw party
+  - blank checks
+  - ATM cards
+  - handwriting
+- id: 211-18
+  description: Unusual activity in established U.S. bank accounts for non-resident
+    aliens, such as structured cash and monetary instrument deposits; checks written
+    from the U.S. account to foreign businesses with no apparent relationship to the
+    account holder; and international wire transfers to entities that do not appear
+    to have any relationship with the originator.
+  product_types:
+  - depository
+  - wire_transfer
+  - check_cashing
+  industry_types:
+  - import_export
+  customer_profiles:
+  - non_resident_alien
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: layering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - structuring
+  - monetary_instrument_purchases
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - non-resident aliens
+  - structured cash
+  - monetary instrument deposits
+- id: 211-19
+  description: Currency Transaction Reports (CTRs) generated for accounts having multiple
+    cash deposits in a single day. Depository institutions should be particularly
+    aware of cash deposits occurring in multiple branch locations, including those
+    located in different states.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  key_terms:
+  - CTRs
+  - multiple cash deposits
+  - multiple branch locations
+- id: 211-20
+  description: Sequentially numbered checks drawn on U.S. accounts negotiated through
+    foreign money services businesses, for example, casas de cambios. Some checks
+    may be payable directly to casas de cambios instead of specific businesses or
+    individuals.
+  product_types:
+  - check_cashing
+  - depository
+  - money_transmitter
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - foreign_financial_institution
+  geographic_footprints:
+  - domestic_us
+  - latin_america
+  regulatory_source: Advisory to Financial Institutions on Filing Suspicious Activity
+    Reports regarding Trade-Based Money Laundering (FIN-2010-A001)
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2010-02-18'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  - money_mule_activity
+  key_terms:
+  - sequentially numbered checks
+  - casas de cambios
+  - MSB

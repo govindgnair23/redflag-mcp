@@ -385,3 +385,11 @@
   slug: 113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements
   output_file: data/source/113_money-laundering-and-terrorism-financing-risk-assessment-of-legal-arrangements.yaml
   extracted_at: '2026-06-12T00:13:21.583059+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/210-Virtual-Assets-Red-Flag-Indicators.pdf
+  slug: 210-virtual-assets-red-flag-indicators
+  output_file: data/source/210-virtual-assets-red-flag-indicators.yaml
+  extracted_at: '2026-06-14T12:09:07.694478+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/211.pdf
+  slug: '211'
+  output_file: data/source/211.yaml
+  extracted_at: '2026-06-14T12:09:33.831578+00:00'

@@ -1,0 +1,1392 @@
+- id: 210-virtual-assets-red-flag-indicators-01
+  description: Structuring VA transactions (e.g. exchange or transfer) in small amounts,
+    or in amounts under record-keeping or reporting thresholds, similar to structuring
+    cash transactions.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: structuring
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - record-keeping thresholds
+  - reporting thresholds
+  - structuring
+- id: 210-virtual-assets-red-flag-indicators-02
+  description: Making multiple high-value transactions in short succession, such as
+    within a 24-hour period; in a staggered and regular pattern, with no further transactions
+    recorded during a long period afterwards, which is particularly common in ransomware-related
+    cases; or to a newly created or to a previously inactive account.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: ransomware
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - ransomware
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - high-value transactions
+  - 24-hour period
+  - newly created account
+  - previously inactive account
+- id: 210-virtual-assets-red-flag-indicators-03
+  description: Transferring VAs immediately to multiple Virtual Asset Service Providers
+    (VASPs), especially to VASPs registered or operated in another jurisdiction where
+    there is no relation to where the customer lives or conducts business; or where
+    there is non-existent or weak AML/CFT regulation.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - VASP
+  - AML/CFT regulation
+  - another jurisdiction
+- id: 210-virtual-assets-red-flag-indicators-04
+  description: Depositing VAs at an exchange and then often immediately withdrawing
+    the VAs without additional exchange activity to other VAs, which is an unnecessary
+    step and incurs transaction fees; converting the VAs to multiple types of VAs,
+    again incurring additional transaction fees, but without logical business explanation
+    (e.g. portfolio diversification); or withdrawing the VAs from a Virtual Asset
+    Service Provider (VASP) immediately to a private wallet.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  - cryptocurrency_mixing
+  key_terms:
+  - exchange
+  - private wallet
+  - transaction fees
+  - portfolio diversification
+  - mixer
+- id: 210-virtual-assets-red-flag-indicators-05
+  description: Accepting funds suspected as stolen or fraudulent, depositing funds
+    from VA addresses that have been identified as holding stolen funds, or VA addresses
+    linked to the holders of stolen funds.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - stolen funds
+  - fraudulent
+  - VA addresses
+- id: 210-virtual-assets-red-flag-indicators-06
+  description: Conducting a large initial deposit to open a new relationship with
+    a Virtual Asset Service Provider (VASP), while the amount funded is inconsistent
+    with the customer profile.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - initial deposit
+  - customer profile
+  - VASP
+- id: 210-virtual-assets-red-flag-indicators-07
+  description: Conducting a large initial deposit to open a new relationship with
+    a Virtual Asset Service Provider (VASP) and funding the entire deposit the first
+    day it is opened, where the customer starts to trade the total amount or a large
+    portion of the amount on that same day or the day after, or withdraws the whole
+    amount the day after. Where transactional deposit limits are constraining, the
+    same pattern may be conducted through over-the-counter (OTC) trading.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - initial deposit
+  - over-the-counter-trading
+  - transactional limit
+- id: 210-virtual-assets-red-flag-indicators-08
+  description: A new user attempts to trade the entire balance of VAs, or withdraws
+    the VAs and attempts to send the entire balance off the platform.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - entire balance
+  - off the platform
+- id: 210-virtual-assets-red-flag-indicators-09
+  description: Transactions involving the use of multiple VAs, or multiple accounts,
+    with no logical business explanation.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - multiple VAs
+  - multiple accounts
+- id: 210-virtual-assets-red-flag-indicators-10
+  description: Making frequent transfers in a certain period of time (e.g. a day,
+    a week, a month, etc.) to the same VA account by more than one person; from the
+    same IP address by one or more persons; or concerning large amounts.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - same VA account
+  - IP address
+  - large amounts
+- id: 210-virtual-assets-red-flag-indicators-11
+  description: Incoming transactions from many unrelated wallets in relatively small
+    amounts (accumulation of funds) with subsequent transfer to another wallet or
+    full exchange for fiat currency. Such transactions by a number of related accumulating
+    accounts may initially use VAs instead of fiat currency.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - funnel_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - accumulation of funds
+  - unrelated wallets
+  - fiat currency
+- id: 210-virtual-assets-red-flag-indicators-12
+  description: Conducting VA-fiat currency exchange at a potential loss (e.g. when
+    the value of VA is fluctuating, or regardless of abnormally high commission fees
+    as compared to industry standards, and especially when the transactions have no
+    logical business explanation).
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - VA-fiat currency exchange
+  - commission fees
+  - potential loss
+- id: 210-virtual-assets-red-flag-indicators-13
+  description: Converting a large amount of fiat currency into VAs, or a large amount
+    of one type of VA into other types of VAs, with no logical business explanation.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - fiat currency
+  - large amount
+  - logical business explanation
+- id: 210-virtual-assets-red-flag-indicators-14
+  description: Transactions by a customer involving more than one type of VA, despite
+    additional transaction fees, and especially those VAs that provide higher anonymity,
+    such as anonymity-enhanced cryptocurrency (AEC) or privacy coins.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - AEC
+  - privacy coins
+  - transaction fees
+- id: 210-virtual-assets-red-flag-indicators-15
+  description: Moving a VA that operates on a public, transparent blockchain, such
+    as Bitcoin, to a centralised exchange and then immediately trading it for an AEC
+    or privacy coin.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  - cryptocurrency_mixing
+  key_terms:
+  - Bitcoin
+  - centralised exchange
+  - AEC
+  - privacy coin
+- id: 210-virtual-assets-red-flag-indicators-16
+  description: Customers that operate as an unregistered/unlicensed Virtual Asset
+    Service Provider (VASP) on peer-to-peer (P2P) exchange websites, particularly
+    when there are concerns that the customers handle huge amounts of VA transfers
+    on their customer's behalf, and charge higher fees to their customer than transmission
+    services offered by other exchanges, including use of bank accounts to facilitate
+    these P2P transactions.
+  product_types:
+  - crypto
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: high
+  category: money_services_business
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  - nested_account_activity
+  key_terms:
+  - unregistered
+  - unlicensed VASP
+  - P2P
+  - bank accounts
+- id: 210-virtual-assets-red-flag-indicators-17
+  description: Abnormal transactional activity (level and volume) of VAs cashed out
+    at exchanges from P2P platform-associated wallets with no logical business explanation.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - cashed out
+  - P2P platform
+  - wallets
+- id: 210-virtual-assets-red-flag-indicators-18
+  description: VAs transferred to or from wallets that show previous patterns of activity
+    associated with the use of Virtual Asset Service Providers (VASPs) that operate
+    mixing or tumbling services or peer-to-peer (P2P) platforms.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - mixing
+  - tumbling
+  - P2P platforms
+- id: 210-virtual-assets-red-flag-indicators-19
+  description: Transactions making use of mixing and tumbling services, suggesting
+    an intent to obscure the flow of illicit funds between known wallet addresses
+    and darknet marketplaces.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - mixing
+  - tumbling
+  - darknet marketplaces
+- id: 210-virtual-assets-red-flag-indicators-20
+  description: Funds deposited or withdrawn from a VA address or wallet with direct
+    and indirect exposure links to known suspicious sources, including darknet marketplaces,
+    mixing/tumbling services, questionable gambling sites, illegal activities (e.g.
+    ransomware) and/or theft reports.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  - ransomware
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - darknet marketplaces
+  - ransomware
+  - theft reports
+  - gambling sites
+- id: 210-virtual-assets-red-flag-indicators-21
+  description: Users entering the Virtual Asset Service Provider (VASP) platform
+    using an IP address associated with a darknet or other similar software that allows
+    anonymous communication, including encrypted emails and VPNs; or transactions
+    between partners using various anonymous encrypted communication means (e.g. forums,
+    chats, mobile applications, online games, etc.) instead of a VASP.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - darknet
+  - VPN
+  - encrypted communication
+- id: 210-virtual-assets-red-flag-indicators-22
+  description: A large number of seemingly unrelated VA wallets controlled from the
+    same IP-address (or MAC-address), which may involve the use of shell wallets registered
+    to different users to conceal their relation to each other.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - IP-address
+  - MAC-address
+  - shell wallets
+- id: 210-virtual-assets-red-flag-indicators-23
+  description: Use of VAs whose design is not adequately documented, or that are linked
+    to possible fraud or other tools aimed at implementing fraudulent schemes, such
+    as Ponzi schemes.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - Ponzi schemes
+  - design not adequately documented
+- id: 210-virtual-assets-red-flag-indicators-24
+  description: Receiving funds from or sending funds to Virtual Asset Service Providers
+    (VASPs) whose Customer Due Diligence (CDD) or know-your-customer (KYC) processes
+    are demonstrably weak or non-existent.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - CDD
+  - KYC
+  - weak or non-existent
+- id: 210-virtual-assets-red-flag-indicators-25
+  description: Using VA ATMs/kiosks despite the higher transaction fees and including
+    those commonly used by mules or scam victims; or in high-risk locations where
+    increased criminal activities occur. A single use of an ATM/kiosk is not enough
+    in and of itself to constitute a red flag, but would if it was coupled with the
+    machine being in a high-risk area, or was used for repeated small transactions
+    (or other additional factors).
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - scam_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - VA ATM
+  - kiosk
+  - mules
+  - scam victims
+- id: 210-virtual-assets-red-flag-indicators-26
+  description: Creating separate accounts under different names to circumvent restrictions
+    on trading or withdrawal limits imposed by Virtual Asset Service Providers (VASPs).
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  key_terms:
+  - trading limits
+  - withdrawal limits
+  - different names
+- id: 210-virtual-assets-red-flag-indicators-27
+  description: Transactions initiated from non-trusted IP addresses, IP addresses
+    from sanctioned jurisdictions, or IP addresses previously flagged as suspicious.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP addresses
+  - sanctioned jurisdictions
+  - suspicious
+- id: 210-virtual-assets-red-flag-indicators-28
+  description: Trying to open an account frequently within the same Virtual Asset
+    Service Provider (VASP) from the same IP address.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - same IP address
+  - open an account
+- id: 210-virtual-assets-red-flag-indicators-29
+  description: Regarding merchants/corporate users, their Internet domain registrations
+    are in a different jurisdiction than their jurisdiction of establishment or in
+    a jurisdiction with a weak process for domain registration.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: low
+  category: shell_company
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - domain registrations
+  - jurisdiction of establishment
+  - weak process
+- id: 210-virtual-assets-red-flag-indicators-30
+  description: Incomplete or insufficient KYC information, or a customer declines
+    requests for KYC documents or inquiries regarding source of funds.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - KYC
+  - source of funds
+  - documents
+- id: 210-virtual-assets-red-flag-indicators-31
+  description: Sender / recipient lacking knowledge or providing inaccurate information
+    about the transaction, the source of funds, or the relationship with the counterparty.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - source of funds
+  - counterparty
+  - inaccurate information
+- id: 210-virtual-assets-red-flag-indicators-32
+  description: Customer has provided forged documents or has edited photographs and/or
+    identification documents as part of the on-boarding process.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - forged documents
+  - identification documents
+  - on-boarding
+- id: 210-virtual-assets-red-flag-indicators-33
+  description: A customer provides identification or account credentials (e.g. a non-standard
+    IP address, or flash cookies) shared by another account.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - account credentials
+  - flash cookies
+  - non-standard IP address
+- id: 210-virtual-assets-red-flag-indicators-34
+  description: Discrepancies arise between IP addresses associated with the customer’s
+    profile and the IP addresses from which transactions are being initiated.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - IP addresses
+  - customer profile
+  - transactions
+- id: 210-virtual-assets-red-flag-indicators-35
+  description: A customer’s VA address appears on public forums associated with illegal
+    activity.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - VA address
+  - public forums
+  - illegal activity
+- id: 210-virtual-assets-red-flag-indicators-36
+  description: A customer significantly older than the average age of platform users
+    opens an account and engages in large numbers of transactions, suggesting their
+    potential role as a VA money mule or a victim of elder financial exploitation.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - elder_financial_exploitation
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  key_terms:
+  - elder financial exploitation
+  - money mule
+  - large numbers of transactions
+- id: 210-virtual-assets-red-flag-indicators-38
+  description: Customer purchases large amounts of VA not substantiated by available
+    wealth or consistent with his or her historical financial profile, which may indicate
+    money laundering, a money mule, or a scam victim.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  key_terms:
+  - available wealth
+  - historical financial profile
+  - money mule
+  - scam victim
+- id: 210-virtual-assets-red-flag-indicators-39
+  description: A customer frequently changes his or her identification information,
+    including email addresses, IP addresses, or financial information, which may also
+    indicate account takeover against a customer.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - email addresses
+  - IP addresses
+  - financial information
+  - account takeover
+- id: 210-virtual-assets-red-flag-indicators-40
+  description: A customer tries to enter into one or more Virtual Asset Service Providers
+    (VASPs) from different IP addresses frequently over the course of a day.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - different IP addresses
+  - VASPs
+  - course of a day
+- id: 210-virtual-assets-red-flag-indicators-41
+  description: Use of language in VA message fields indicative of the transactions
+    being conducted in support of illicit activity or in the purchase of illicit goods,
+    such as drugs or stolen credit card information.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - narcotics_proceeds
+  - cybercrime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - message fields
+  - drugs
+  - stolen credit card information
+- id: 210-virtual-assets-red-flag-indicators-42
+  description: A customer repeatedly conducts transactions with a subset of individuals
+    at significant profit or loss. This could indicate potential account takeover
+    and attempted extraction of victim balances via trade, or a money laundering scheme
+    to obfuscate funds flow within a Virtual Asset Service Provider (VASP) infrastructure.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - rapid_fund_movement
+  key_terms:
+  - significant profit or loss
+  - victim balances
+  - VASP infrastructure
+- id: 210-virtual-assets-red-flag-indicators-43
+  description: Transacting with VA addresses or bank cards that are connected to known
+    fraud, extortion, or ransomware schemes, sanctioned addresses, darknet marketplaces,
+    or other illicit websites.
+  product_types:
+  - crypto
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - sanctioned_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  - ransomware
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - fraud
+  - extortion
+  - ransomware
+  - sanctioned addresses
+  - darknet marketplaces
+- id: 210-virtual-assets-red-flag-indicators-44
+  description: The use of one or multiple credit and/or debit cards that are linked
+    to a VA wallet to withdraw large amounts of fiat currency (crypto-to-plastic),
+    or funds for purchasing VAs are sourced from cash deposits into credit cards.
+  product_types:
+  - crypto
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - money_mule_activity
+  key_terms:
+  - credit cards
+  - debit cards
+  - crypto-to-plastic
+  - cash deposits
+- id: 210-virtual-assets-red-flag-indicators-45
+  description: Deposits into an account or a VA address are significantly higher than
+    ordinary with an unknown source of funds, followed by conversion to fiat currency,
+    which may indicate theft of funds.
+  product_types:
+  - crypto
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unknown source of funds
+  - conversion to fiat currency
+  - theft of funds
+- id: 210-virtual-assets-red-flag-indicators-46
+  description: Lack of transparency or insufficient information on the origin and
+    owners of the funds, such as those involving the use of shell companies or those
+    funds placed in an Initial Coin Offering (ICO) where personal data of investors
+    may not be available or incoming transactions from online payments system through
+    credit/pre-paid cards followed by instant withdrawal.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  - third_party_payments
+  key_terms:
+  - shell companies
+  - ICO
+  - credit cards
+  - pre-paid cards
+  - instant withdrawal
+- id: 210-virtual-assets-red-flag-indicators-47
+  description: A customer’s funds which are sourced directly from third-party mixing
+    services or wallet tumblers.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - mixing services
+  - wallet tumblers
+- id: 210-virtual-assets-red-flag-indicators-48
+  description: Bulk of a customer’s source of wealth is derived from investments in
+    VAs, ICOs, or fraudulent ICOs, etc.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - source of wealth
+  - ICO
+  - fraudulent ICOs
+- id: 210-virtual-assets-red-flag-indicators-49
+  description: A customer’s source of wealth is disproportionately drawn from VAs
+    originating from other Virtual Asset Service Providers (VASPs) that lack AML/CFT
+    controls.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - source of wealth
+  - AML/CFT controls
+  - VASPs
+- id: 210-virtual-assets-red-flag-indicators-50
+  description: Customer’s funds originate from, or are sent to, an exchange that is
+    not registered in the jurisdiction where either the customer or exchange is located.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - exchange
+  - registered
+  - jurisdiction
+- id: 210-virtual-assets-red-flag-indicators-51
+  description: Customer utilises a VA exchange or foreign-located Money or Value
+    Transfer Service (MVTS) in a high-risk jurisdiction lacking, or known to have
+    inadequate, AML/CFT regulations for VA entities, including inadequate Customer
+    Due Diligence (CDD) or know-your-customer (KYC) measures.
+  product_types:
+  - crypto
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - MVTS
+  - AML/CFT regulations
+  - CDD
+  - KYC
+- id: 210-virtual-assets-red-flag-indicators-52
+  description: Customer sends funds to Virtual Asset Service Providers (VASPs) operating
+    in jurisdictions that have no VA regulation, or have not implemented AML/CFT controls.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - VASPs
+  - no VA regulation
+  - AML/CFT controls
+- id: 210-virtual-assets-red-flag-indicators-53
+  description: Customer sets up offices in or moves offices to jurisdictions that
+    have no regulation or have not implemented regulations governing VAs, or sets
+    up new offices in jurisdictions where there is no clear business rationale to
+    do so.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: FATF Report Virtual Assets - Red Flag Indicators of Money Laundering
+    and Terrorist Financing
+  regulator: FATF
+  regulator_jurisdiction: FATF
+  issuing_agencies: []
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Virtual-Assets-Red-Flag-Indicators.pdf
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - offices
+  - business rationale
+  - VAs
