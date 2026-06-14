@@ -590,7 +590,7 @@ uv run python scripts/verify_corpus.py dist/corpus/redflag-corpus-2026.04.29.zip
 
 The package contains `manifest.json` and `redflags.sqlite`. The manifest records schema version, build timestamp, source record hashes, file hashes, record/source counts, and source redistribution metadata. Source documents are treated as URL-only unless `data/lexicon/source_metadata.yaml` explicitly clears them for bundling.
 
-The current SQLite lexical corpus schema version is `3`. Rebuild older corpus packages after schema changes that add stored fields or filters.
+The current SQLite lexical corpus schema version is `4`. Rebuild older corpus packages after schema changes that add stored fields or filters.
 
 Run the hosted retrieval smoke benchmark before publishing a corpus package:
 
@@ -601,6 +601,103 @@ uv run python scripts/evaluate_retrieval.py \
 ```
 
 This benchmark checks representative alias, geography, typology, product/channel, and source-specific queries against the lexical corpus. It is a launch gate, not proof of broad AML retrieval quality.
+
+### Repackage and deploy the hosted corpus
+
+From the repository root, set a new release version and deterministic timestamp. Use the current release date for normal hosted corpus releases:
+
+```bash
+VERSION=2026.06.13
+TIMESTAMP=2026-06-13T12:00:00Z
+
+uv run python scripts/build_corpus.py \
+  --output-dir dist/corpus \
+  --version "$VERSION" \
+  --build-timestamp "$TIMESTAMP" \
+  --all-sources
+```
+
+Regenerate `dist/corpus/releases.json` from the packaged ZIP manifests:
+
+```bash
+uv run python - <<'PY'
+import hashlib
+import json
+import zipfile
+from pathlib import Path
+
+out = Path("dist/corpus")
+releases = []
+
+for package in sorted(out.glob("redflag-corpus-*.zip")):
+    with zipfile.ZipFile(package) as archive:
+        manifest = json.loads(archive.read("manifest.json"))
+
+    releases.append(
+        {
+            "artifact": f"dist/corpus/{package.name}",
+            "package_id": manifest["package_id"],
+            "record_count": manifest["record_count"],
+            "schema_version": manifest["schema_version"],
+            "sha256": hashlib.sha256(package.read_bytes()).hexdigest(),
+            "source_count": manifest["source_count"],
+            "version": manifest["version"],
+        }
+    )
+
+releases.sort(key=lambda item: item["version"], reverse=True)
+
+Path("dist/corpus/releases.json").write_text(
+    json.dumps(
+        {
+            "latest_compatible_version": releases[0]["version"],
+            "releases": releases,
+            "schema_version": 1,
+        },
+        indent=2,
+        sort_keys=True,
+    )
+    + "\n"
+)
+PY
+```
+
+Pin Railway to the new release:
+
+```bash
+perl -0pi -e "s/REDFLAG_CORPUS_VERSION = \"[^\"]+\"/REDFLAG_CORPUS_VERSION = \"$VERSION\"/" railway.toml
+```
+
+Verify the package before publishing:
+
+```bash
+uv run python scripts/verify_corpus.py "dist/corpus/redflag-corpus-$VERSION.zip"
+
+uv run python scripts/evaluate_retrieval.py \
+  --corpus "dist/corpus/redflag-corpus-$VERSION.zip" \
+  --benchmark data/eval/hosted_retrieval_queries.yaml
+
+uv run pytest tests/
+```
+
+Commit and push the release artifacts:
+
+```bash
+git add \
+  "dist/corpus/redflag-corpus-$VERSION.zip" \
+  dist/corpus/releases.json \
+  railway.toml
+
+git commit -m "data: package $VERSION hosted corpus"
+git push origin main
+```
+
+Check Railway after the push. `/ready` should report the new `corpus.version` and expected record count once the deployment has rolled:
+
+```bash
+curl -fsS https://redflag-mcp.up.railway.app/health
+curl -fsS https://redflag-mcp.up.railway.app/ready
+```
 
 ### Running from a corpus
 
