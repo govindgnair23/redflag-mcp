@@ -1,0 +1,6 @@
+FinCEN Advisory FIN-2010-A001, Trade-Based Money Laundering | https://www.fincen.gov/resources/advisories/fincen-advisory-fin-2010-a001
+FFIEC BSA/AML Manual, Due Diligence Programs for Correspondent Accounts for Foreign Financial Institutions | https://bsaaml.ffiec.gov/manual/AssessingComplianceWithBSARegulatoryRequirements/10
+FFIEC BSA/AML Manual, Office of Foreign Assets Control Overview | https://bsaaml.ffiec.gov/manual/OfficeOfForeignAssetsControl/01
+FATF, Jurisdictions under Increased Monitoring - 13 February 2026 | https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions/increased-monitoring-february-2026.html
+FinCEN, Financial Action Task Force Identifies Jurisdictions with AML/CFT/CPF Deficiencies - March 6, 2026 | https://www.fincen.gov/news/news-releases/financial-action-task-force-identifies-jurisdictions-anti-money-laundering-5
+OFAC, Sanctions Programs and Country Information | https://ofac.treasury.gov/sanctions-programs-and-country-information
