@@ -14,8 +14,8 @@ The project already has a URL-to-source pipeline and a unified `red_flag_sources
 ## Requirements
 
 **Source Coverage**
-- R1. The monitoring job uses the source lists in `red_flag_sources/regulatory_souce_automation.md` and the corresponding CSV files under `red_flag_sources/` as the source-tracking baseline.
-- R2. The job prioritizes Tier 1 sources from `red_flag_sources/prioritization_ranking.csv`, then Tier 2, then Tier 3 when runtime or reliability constraints require a narrower pass.
+- R1. The monitoring job uses the source lists in `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md` and the corresponding CSV files under `red_flag_sources/source_file_catalogue/` as the source-tracking baseline.
+- R2. The job prioritizes Tier 1 sources from `red_flag_sources/source_file_catalogue/prioritization_ranking.csv`, then Tier 2, then Tier 3 when runtime or reliability constraints require a narrower pass.
 - R3. The job monitors official primary-source publication endpoints, not third-party news, commentary, or scraped reposts.
 - R4. Empty or incomplete tracking CSVs are treated as setup gaps to report, not silently ignored.
 
@@ -61,21 +61,21 @@ The project already has a URL-to-source pipeline and a unified `red_flag_sources
 - **Download-only weekly automation**: New files should be reviewable before extraction, ingestion, or corpus publication. This keeps the recurring job lower-risk and limits LLM/API/model failure modes.
 - **Registry-based deduplication**: `red_flag_sources/registry.csv` and the existing source URL registry are the authoritative basis for skipping already-known URLs.
 - **Primary sources only**: The system should compound the corpus from official regulatory and law-enforcement material, not from secondary summaries.
-- **Tiered monitoring**: Prioritization from `red_flag_sources/prioritization_ranking.csv` gives the job a graceful fallback when some endpoints are expensive, unreliable, or too broad.
+- **Tiered monitoring**: Prioritization from `red_flag_sources/source_file_catalogue/prioritization_ranking.csv` gives the job a graceful fallback when some endpoints are expensive, unreliable, or too broad.
 - **Default schedule**: Saturday at 9:00 AM local time is specific enough for automation planning while preserving the user's requested Saturday morning cadence.
 
 ## Dependencies / Assumptions
 
 - `scripts/pipeline.py` already supports downloading supplied URLs and updating source status; the monitoring job can hand newly discovered URLs to that workflow during implementation planning.
-- `red_flag_sources/source_inventory.csv` and `red_flag_sources/subscription_automation.csv` currently exist but are empty; planning should decide whether to populate them from `red_flag_sources/regulatory_souce_automation.md` before implementation.
-- Some source endpoints listed in `red_flag_sources/regulatory_souce_automation.md` may have changed since the document was created; planning should verify official endpoints before relying on them.
+- `red_flag_sources/source_file_catalogue/source_inventory.csv` and `red_flag_sources/source_file_catalogue/subscription_automation.csv` may need validation/population from `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md` before implementation.
+- Some source endpoints listed in `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md` may have changed since the document was created; planning should verify official endpoints before relying on them.
 - The existing extraction workflow remains the downstream path for turning downloaded files into `data/source/*.yaml`.
 
 ## Outstanding Questions
 
 ### Deferred to Planning
 
-- [Affects R1, R4][Technical] Should implementation first regenerate/populate the empty tracking CSVs from `red_flag_sources/regulatory_souce_automation.md`, or should it read the markdown document directly as the baseline?
+- [Affects R1, R4][Technical] Should implementation first regenerate/populate the tracking CSVs from `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md`, or should it read the markdown document directly as the baseline?
 - [Affects R5, R16][Needs research] Which tracked endpoints provide RSS/API/XML feeds that can be checked cheaply, and which require HTML page diffing?
 - [Affects R7, R13][Technical] Should the monitoring job call `scripts/pipeline.py download` directly, import its functions, or produce a URL file for a separate pipeline step?
 - [Affects R9, R11][Technical] What durable run artifact, if any, should supplement the Codex automation summary for auditability?

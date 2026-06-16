@@ -31,6 +31,8 @@ Thumbs.db
 
 # Harvested source materials (downloaded by scripts/harvest_sources.py)
 red_flag_sources/markdown/
+red_flag_sources/source_file_catalogue/monitoring_runs/*
+!red_flag_sources/source_file_catalogue/monitoring_runs/.gitkeep
 
 # Environment
 .env

@@ -13,11 +13,12 @@ import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 RED_FLAG_SOURCES_DIR = PROJECT_ROOT / "red_flag_sources"
+SOURCE_FILE_CATALOGUE_DIR = RED_FLAG_SOURCES_DIR / "source_file_catalogue"
 SOURCE_DIR = PROJECT_ROOT / "data" / "source"
 
 DEFAULT_CATALOG_PATHS = [
-    RED_FLAG_SOURCES_DIR / "Global_AML_CFT_Sanctions_Red_Flag_Catalog.csv",
-    RED_FLAG_SOURCES_DIR / "Additional_sources_05132026.csv",
+    SOURCE_FILE_CATALOGUE_DIR / "Global_AML_CFT_Sanctions_Red_Flag_Catalog.csv",
+    SOURCE_FILE_CATALOGUE_DIR / "Additional_sources_05132026.csv",
 ]
 DEFAULT_SOURCES_YAML_PATH = RED_FLAG_SOURCES_DIR / "sources.yaml"
 DEFAULT_MANIFEST_PATH = SOURCE_DIR / ".extracted_sources.yaml"

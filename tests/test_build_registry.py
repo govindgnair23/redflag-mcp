@@ -11,6 +11,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 from build_registry import (
+    DEFAULT_CATALOG_PATHS,
     REGISTRY_COLUMNS,
     build_catalog_rows,
     build_extracted_rows,
@@ -79,6 +80,14 @@ def test_load_catalogs_normalizes_urls_and_handles_missing_files(tmp_path):
     assert [row["Direct URL"] for row in rows] == [
         "https://example.gov/source",
         "https://example.gov/other",
+    ]
+
+
+def test_default_catalog_paths_use_source_file_catalogue():
+    assert all("source_file_catalogue" in str(path) for path in DEFAULT_CATALOG_PATHS)
+    assert [path.name for path in DEFAULT_CATALOG_PATHS] == [
+        "Global_AML_CFT_Sanctions_Red_Flag_Catalog.csv",
+        "Additional_sources_05132026.csv",
     ]
 
 

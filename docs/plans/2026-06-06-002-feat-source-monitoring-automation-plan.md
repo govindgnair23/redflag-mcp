@@ -18,8 +18,8 @@ The project has source catalogs, a URL download pipeline, and a unified `red_fla
 
 ## Requirements Trace
 
-- R1. Use `red_flag_sources/regulatory_souce_automation.md` and corresponding CSV files as the tracking baseline.
-- R2. Prioritize Tier 1, then Tier 2, then Tier 3 sources from `red_flag_sources/prioritization_ranking.csv`.
+- R1. Use `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md` and corresponding CSV files under `red_flag_sources/source_file_catalogue/` as the tracking baseline.
+- R2. Prioritize Tier 1, then Tier 2, then Tier 3 sources from `red_flag_sources/source_file_catalogue/prioritization_ranking.csv`.
 - R3. Monitor official primary-source publication endpoints only.
 - R4. Report empty or incomplete tracking CSVs instead of silently ignoring them.
 - R5. Check tracked publication endpoints for newly published relevant official documents or pages.
@@ -58,7 +58,7 @@ The project has source catalogs, a URL download pipeline, and a unified `red_fla
 - `scripts/harvest_sources.py` already provides `download_single_url()`, `classify_url()`, `fetch_pdf()`, `fetch_web()`, `load_registry()`, `write_registry()`, `next_serial()`, and `USER_AGENT`.
 - `fetch_web()` in `scripts/harvest_sources.py` captures non-PDF pages through Jina Reader by prepending `https://r.jina.ai/` to the target URL and writing the returned clean markdown into `red_flag_sources/markdown/`.
 - `scripts/pipeline.py` already wraps download behavior, deduplicates against `red_flag_sources/registry.csv`, and calls `build_registry()` after downloads.
-- `scripts/build_registry.py` normalizes URLs with `normalize_url()` and regenerates `red_flag_sources/registry.csv` from catalogs, `red_flag_sources/sources.yaml`, and extraction manifests.
+- `scripts/build_registry.py` normalizes URLs with `normalize_url()` and regenerates `red_flag_sources/registry.csv` from catalogs, `red_flag_sources/sources.yaml`, and extraction manifests. Its catalog paths currently need to follow the moved files under `red_flag_sources/source_file_catalogue/`.
 - `src/redflag_mcp/config.py` defines the bounded `REGULATORS` vocabulary, `REGULATOR_JURISDICTIONS`, `URL_DOMAIN_TO_REGULATOR`, and `regulator_from_url()`. These give the sweep a controlled regulator list and official-domain validation source.
 - `tests/test_harvest_sources.py` and `tests/test_pipeline.py` already cover idempotent downloads, URL classification, failed downloads, and registry updates.
 - `AGENTS.md` requires red-green TDD for implementation work.
@@ -75,7 +75,7 @@ The project has source catalogs, a URL download pipeline, and a unified `red_fla
 
 ## Key Technical Decisions
 
-- **Normalize CSV inputs before monitoring**: Populate and validate the empty tracking CSVs from `red_flag_sources/regulatory_souce_automation.md` before using them as machine inputs. Reading prose/code fences directly in every run would make the automation brittle.
+- **Normalize CSV inputs before monitoring**: Populate and validate the tracking CSVs from `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md` before using them as machine inputs. Reading prose/code fences directly in every run would make the automation brittle.
 - **Verify official endpoints while implementing**: Treat endpoint URLs from the markdown note as seeded candidates, not guaranteed-current contracts. The implementation should validate official endpoint availability before enabling scheduled runs.
 - **Create a dedicated monitor script**: Add `scripts/monitor_sources.py` for discovery and reporting, while delegating actual downloads to `scripts/pipeline.py` or its importable functions.
 - **Prefer structured feeds first**: Use RSS, Atom, XML, JSON, and open-data endpoints when available; fall back to bounded HTML publication-page parsing only for sources without stable feeds.
@@ -91,7 +91,7 @@ The project has source catalogs, a URL download pipeline, and a unified `red_fla
 
 - **Should implementation populate CSVs or read markdown directly?** Populate/normalize the CSV files first, then treat CSVs as machine-readable inputs.
 - **Should discovery call the existing pipeline directly?** Yes. The monitor should produce candidate URLs and hand them to existing download behavior rather than reimplementing file naming, PDF/web classification, and registry updates.
-- **What should supplement the Codex automation summary?** A small structured run report under `red_flag_sources/monitoring_runs/`, with enough data to audit checked endpoints, candidates, downloads, duplicates, and failures.
+- **What should supplement the Codex automation summary?** A small structured run report under `red_flag_sources/source_file_catalogue/monitoring_runs/`, with enough data to audit checked endpoints, candidates, downloads, duplicates, and failures.
 - **How should Tavily fit?** The Codex automation should call the Tavily MCP tools as an agent-side discovery sweep, save/hand candidate official URLs to the repo monitor, and let the same dedup/download path process them.
 
 ### Deferred to Implementation
@@ -125,7 +125,7 @@ flowchart TD
 
 ## Implementation Units
 
-- [ ] **Unit 1: Normalize the monitoring source CSVs**
+- [x] **Unit 1: Normalize the monitoring source CSVs**
 
 **Goal:** Turn the source automation markdown's CSV blocks into complete machine-readable CSV inputs and add validation that catches empty or malformed files.
 
@@ -134,16 +134,21 @@ flowchart TD
 **Dependencies:** None
 
 **Files:**
-- Modify: `red_flag_sources/source_inventory.csv`
-- Modify: `red_flag_sources/subscription_automation.csv`
-- Modify: `red_flag_sources/hidden_sources.csv`
+- Modify: `red_flag_sources/source_file_catalogue/source_inventory.csv`
+- Modify: `red_flag_sources/source_file_catalogue/subscription_automation.csv`
+- Modify: `red_flag_sources/source_file_catalogue/hidden_sources.csv`
+- Modify: `scripts/build_registry.py`
+- Modify: `scripts/build_sources_registry.py`
 - Create: `tests/test_monitor_sources.py`
+- Modify: `tests/test_build_registry.py`
 - Create: `scripts/monitor_sources.py`
 
 **Approach:**
-- Populate `source_inventory.csv` from the `CSV A Source Inventory` block in `red_flag_sources/regulatory_souce_automation.md`.
+- Populate `source_inventory.csv` from the `CSV A Source Inventory` block in `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md`.
 - Populate `subscription_automation.csv` from the `CSV B Subscription and Automation Endpoints` block, adapting the documented `subscription_automation_endpoints.csv` deliverable name to the existing repo file name.
 - Confirm `prioritization_ranking.csv` and `hidden_sources.csv` are non-empty and have the expected headers.
+- Update existing catalog readers so `scripts/build_registry.py` reads catalog CSVs from `red_flag_sources/source_file_catalogue/` while still writing `red_flag_sources/registry.csv`.
+- Update `scripts/build_sources_registry.py` so its `pdflinks.txt` input is `red_flag_sources/source_file_catalogue/pdflinks.txt` while still writing `red_flag_sources/sources.yaml`.
 - Add loader/validator behavior in `scripts/monitor_sources.py` that returns setup-gap findings for missing, empty, or malformed files instead of treating them as no-op source lists.
 - Mark unverified or `Unspecified` collection endpoints as setup gaps until a planner/implementer confirms an official feed, API, structured file, or bounded publication page.
 
@@ -165,7 +170,7 @@ flowchart TD
 
 ---
 
-- [ ] **Unit 2: Add source discovery collectors**
+- [x] **Unit 2: Add source discovery collectors**
 
 **Goal:** Discover candidate official publication URLs from structured feeds and bounded HTML publication pages.
 
@@ -206,7 +211,7 @@ flowchart TD
 
 ---
 
-- [ ] **Unit 3: Add Tavily candidate-sweep support**
+- [x] **Unit 3: Add Tavily candidate-sweep support**
 
 **Goal:** Add a backstop path for the Codex automation to use Tavily MCP search results to catch official regulator publications missed by configured endpoints.
 
@@ -247,7 +252,7 @@ flowchart TD
 
 ---
 
-- [ ] **Unit 4: Filter, deduplicate, and download candidates**
+- [x] **Unit 4: Filter, deduplicate, and download candidates**
 
 **Goal:** Convert discovered candidates into a deduplicated URL set and download only new sources through the existing pipeline.
 
@@ -292,7 +297,7 @@ flowchart TD
 
 ---
 
-- [ ] **Unit 5: Add CLI, summary, and run reports**
+- [x] **Unit 5: Add CLI, summary, and run reports**
 
 **Goal:** Provide a maintainer-friendly command for scheduled and manual runs with concise output plus durable audit details.
 
@@ -303,7 +308,7 @@ flowchart TD
 **Files:**
 - Modify: `scripts/monitor_sources.py`
 - Modify: `tests/test_monitor_sources.py`
-- Create: `red_flag_sources/monitoring_runs/.gitkeep`
+- Create: `red_flag_sources/source_file_catalogue/monitoring_runs/.gitkeep`
 - Modify: `.gitignore` if run reports should be ignored rather than tracked
 
 **Approach:**
@@ -311,7 +316,7 @@ flowchart TD
 - Support practical bounded-run options such as tier selection and dry-run mode if they keep the scheduled path simple.
 - Print a concise summary with endpoints checked, setup gaps, candidates found, duplicates skipped, downloads completed, and failures.
 - Include Tavily candidate counts in the summary when a Tavily sweep was provided: accepted official leads, rejected non-official leads, duplicates, and downloaded leads.
-- Write a structured run report under `red_flag_sources/monitoring_runs/` for auditability.
+- Write a structured run report under `red_flag_sources/source_file_catalogue/monitoring_runs/` for auditability.
 - Ensure stdout/stderr behavior is safe for normal script execution. This script is not the MCP stdio server, but it should still use logging consistently rather than ad hoc `print()` calls.
 
 **Execution note:** Test summary/report behavior before adding CLI polish.
@@ -334,7 +339,7 @@ flowchart TD
 
 ---
 
-- [ ] **Unit 6: Configure the Codex Saturday automation**
+- [x] **Unit 6: Configure the Codex Saturday automation**
 
 **Goal:** Create the recurring Codex automation that runs the download-only monitor every Saturday at 9:00 AM local time.
 
@@ -371,6 +376,10 @@ flowchart TD
 - **Integration coverage:** Tests should prove monitor-to-pipeline handoff without live network calls by patching collectors and downloader boundaries.
 - **Unchanged invariants:** `scripts/pipeline.py run` remains the full download+extract flow; the new scheduled monitor uses download-only behavior.
 
+## Alternative Approaches Considered
+
+- **Use BigSet for source-document dataset assembly**: BigSet is a promising exploratory tool for generating structured datasets from live web research, exporting CSV/XLSX, and refreshing datasets on a schedule. Do not make it the core ingestion path for this feature because the red flag corpus needs deterministic official-source provenance, stable local files in `red_flag_sources/pdf/` and `red_flag_sources/markdown/`, and tight control over what is treated as canonical. BigSet may be useful as a separate one-off gap-discovery or source-inventory audit: run it against a bounded prompt, compare its exported URLs to `registry.csv` and the source inventory, then manually promote verified official URLs into the monitored source list.
+
 ## Risks & Dependencies
 
 | Risk | Mitigation |
@@ -381,11 +390,12 @@ flowchart TD
 | Duplicate local files after partial failures | Deduplicate against both `registry.csv` and `sources.yaml`, and reuse existing pipeline idempotency. |
 | Broad HTML scraping causes noisy or disrespectful polling | Restrict HTML parsing to configured official publication pages and bounded same-domain links. |
 | Tavily returns secondary-source or SEO results | Validate candidate domains against `URL_DOMAIN_TO_REGULATOR` and source-inventory official domains before download. |
+| BigSet output is treated as authoritative | Use BigSet only for exploratory gap analysis unless its results are independently validated against official domains and source documents. |
 | New dependency adds maintenance cost | Prefer existing dependencies and stdlib parsers unless implementation demonstrates a clear need. |
 
 ## Documentation / Operational Notes
 
-- Update `red_flag_sources/regulatory_souce_automation.md` only if CSV file names or source-maintenance instructions need correction.
+- Update `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md` only if CSV file names or source-maintenance instructions need correction.
 - Add a short README or section in an existing repo doc only if the monitor command is not self-explanatory from CLI help.
 - Document or preserve the existing Jina Reader convention: non-PDF URLs are captured through `https://r.jina.ai/<url>` by `fetch_web()`, unauthenticated by default, and should be inspected before extraction if the markdown looks empty, blocked, paywalled, or client-side rendered.
 - Document the Tavily sweep as a Codex automation backstop: it searches for missed official regulator publications but does not authorize downloads from unofficial domains.
@@ -401,8 +411,8 @@ flowchart TD
 - Related code: `scripts/build_registry.py`
 - Related tests: `tests/test_harvest_sources.py`
 - Related tests: `tests/test_pipeline.py`
-- Official source reference: `red_flag_sources/regulatory_souce_automation.md`
-- Official source reference: `red_flag_sources/prioritization_ranking.csv`
+- Official source reference: `red_flag_sources/source_file_catalogue/regulatory_souce_automation.md`
+- Official source reference: `red_flag_sources/source_file_catalogue/prioritization_ranking.csv`
 - External official reference: FinCEN advisories and notices page, `https://www.fincen.gov/resources/advisoriesbulletinsfact-sheets`
 - External official reference: OFAC Sanctions List Service, `https://ofac.treasury.gov/sanctions-list-service`
 - External official reference: Bank of England RSS feeds, `https://www.bankofengland.co.uk/rss`
