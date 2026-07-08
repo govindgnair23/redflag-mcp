@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """Regenerate red_flag_sources/sources.yaml from source_file_catalogue/pdflinks.txt.
 
-Usage:
+.. DEPRECATED / DO NOT RUN ::
+    This script FULLY OVERWRITES sources.yaml from pdflinks.txt, renumbering every
+    entry 001..NNN from scratch. It is now legacy: sources.yaml is maintained
+    directly (and appended to by scripts/harvest_sources.py), and pdflinks.txt is
+    badly out of sync — it holds far fewer URLs than sources.yaml currently has.
+    Running this would DESTROY entries not present in pdflinks.txt and scramble the
+    numbering (breaking the PDF-filename ↔ key mapping). Do not run it unless you are
+    deliberately rebuilding the entire registry from pdflinks.txt.
+
+Usage (only for a deliberate full rebuild):
     uv run python scripts/build_sources_registry.py
 
 Each non-blank, non-comment line in pdflinks.txt becomes one entry:
   line 1 → key "001", line 2 → "002", etc.
-
-Fully overwrites sources.yaml. Edit source_file_catalogue/pdflinks.txt and re-run to update.
 """
 
 from __future__ import annotations

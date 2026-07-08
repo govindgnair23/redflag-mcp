@@ -159,6 +159,8 @@ uv run python scripts/extract.py --range 039-060 --parallel
 | Extract from already-downloaded local files | `extract.py` |
 
 > **Note:** `sources.yaml` is the shared URL registry for `pipeline.py`, `harvest_sources.py`, and `build_sources_registry.py`. Do not run these scripts concurrently — each can overwrite `sources.yaml` after updating it.
+>
+> ⚠️ **`build_sources_registry.py` is legacy — do not run it in normal workflows.** It *fully overwrites* `sources.yaml` by renumbering `001..NNN` from `source_file_catalogue/pdflinks.txt`, which is now far out of sync (it holds fewer URLs than `sources.yaml`). Running it would delete entries and scramble the PDF-filename ↔ key numbering. `sources.yaml` is maintained directly and appended to by `harvest_sources.py`. Only use it for a deliberate full rebuild from `pdflinks.txt`.
 
 ### Web-page capture via Jina Reader
 
