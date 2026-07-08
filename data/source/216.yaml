@@ -1,0 +1,950 @@
+- id: 216-01
+  description: Regular payments to Adult Service Websites (ASWs) or escort agencies
+    that advertise sexual services.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - ASWs
+  - escort agencies
+  - sexual services
+- id: 216-02
+  description: Multiple payments to Adult Service Websites (ASWs) from the same account
+    may indicate that the account holder is in control of a number of potential victims.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - ASWs
+  - potential victims
+  - account holder
+- id: 216-03
+  description: A significant proportion of account activity taking place overnight,
+    particularly between 22:00 – 07:00, including payments to Adult Service Websites
+    (ASWs), cash credits,
+    ATM withdrawals or for travel and accommodation.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - '22:00'
+  - 07:00
+  - ASWs
+  - ATM withdrawals
+- id: 216-04
+  description: Payments received from numerous third parties for rounded values, particularly
+    those including a payment reference from clients suggesting sexual services have
+    been provided.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - rounded values
+  - payment reference
+  - sexual services
+- id: 216-05
+  description: Receipt of multiple credits, both in cash and faster payments, from
+    multiple locations or IP addresses linked to different locations across the UK.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - cash
+  - faster payments
+  - IP addresses
+- id: 216-06
+  description: Funds transferred to a third party shortly after payments into the
+    account.
+  product_types:
+  - depository
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - third party
+  - payments into the account
+- id: 216-07
+  description: Multiple credits into the account received from numerous locations
+    across the UK and, once consolidated, transferred in bulk to another third party
+    account, either in the UK or overseas.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - wire_transfer_chains
+  key_terms:
+  - consolidated
+  - bulk
+  - third party account
+- id: 216-08
+  description: Regular credits into an account, often with payment references including
+    female names not consistent with customer account details, or sexual services.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  key_terms:
+  - female names
+  - payment references
+  - sexual services
+- id: 216-09
+  description: ATM withdrawals of suspected client payments, leaving minimal balances.
+  product_types:
+  - depository
+  - prepaid
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - ATM withdrawals
+  - minimal balances
+  - client payments
+- id: 216-10
+  description: A lack of expected account payments, such as salary payments or household
+    spending.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - salary payments
+  - household spending
+- id: 216-11
+  description: Multiple account holders registered at the same address and/or use
+    of the same telephone number, IP address or device to access multiple accounts
+    for mobile and online banking.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - same address
+  - telephone number
+  - IP address
+  - device
+- id: 216-12
+  description: Multiple devices accessing a single mobile or online bank account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - mobile banking
+  - online bank account
+  - multiple devices
+- id: 216-13
+  description: Coaching through account set-up, whether via video on-boarding or in-branch,
+    or a third party acting as a ‘translator’, ‘guardian’, ‘friend’ or ‘relative’.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - account set-up
+  - translator
+  - guardian
+  - relative
+- id: 216-14
+  description: Open source investigation of a prospective account holder identifying
+    multiple links to advertising on Adult Service Websites (ASWs), such as a telephone
+    number associated to
+    multiple adverts and/or profiles.
+  product_types:
+  - depository
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - ASWs
+  - telephone number
+  - adverts
+  - profiles
+- id: 216-15
+  description: Numbers of account holders registered to one address inconsistent with
+    the house size.
+  product_types:
+  - depository
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - house size
+  - registered address
+- id: 216-16
+  description: Payments to budget airlines to and from locations typically identified
+    as source countries for potential victims of Modern Slavery and Human Trafficking
+    (MSHT), particularly where the traveller’s
+    name does not match the name of the account holder, or the account holder has
+    made multiple bookings on behalf of other people.
+  product_types:
+  - depository
+  - credit_card
+  - wire_transfer
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - migrant_worker
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - budget airlines
+  - source countries
+  - traveller’s name
+- id: 216-17
+  description: Frequent payments for UK airport/port car-parking, particularly with
+    no subsequent overseas travel exhibited on the account.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: low
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - airport
+  - port car-parking
+  - overseas travel
+- id: 216-18
+  description: Regular payments to toll roads and ancillary vehicle travel spending
+    such as petrol costs, payments at service stations etc., both within and outside
+    of the UK.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  industry_types:
+  - transportation
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: low
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - toll roads
+  - petrol
+  - service stations
+- id: 216-19
+  description: High volume and/or frequent transport costs on the same card, particularly
+    where the timings and locations of payments do not correspond with a single person
+    using the card, e.g. transport in London, followed by payment for transport in
+    Birmingham shortly afterwards.
+  product_types:
+  - credit_card
+  - prepaid
+  industry_types:
+  - transportation
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - same card
+  - London
+  - Birmingham
+- id: 216-20
+  description: Concurrent card payments to transport providers, such as TfL, app-based
+    taxi companies and rideshares predominantly occurring between the hours of 22:00
+    – 07:00.
+  product_types:
+  - credit_card
+  - prepaid
+  industry_types:
+  - transportation
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - TfL
+  - taxi companies
+  - rideshares
+  - '22:00'
+  - 07:00
+- id: 216-21
+  description: Ad-hoc and last minute payments for accommodation, particularly hotels,
+    B&Bs and short-term property rentals.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - hotels
+  - B&Bs
+  - short-term property rentals
+- id: 216-22
+  description: Payments for multiple accommodation providers, including hotels, B&Bs,
+    and short- and long-term property rentals.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - hotels
+  - B&Bs
+  - property rentals
+- id: 216-23
+  description: Payments for accommodation not following expected patterns, e.g. multiple
+    payments on the same dates for accommodation across the UK, or payments for accommodation
+    within close proximity to the registered address of the account holder.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  industry_types:
+  - travel_hospitality
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - accommodation
+  - registered address
+  - across the UK
+- id: 216-24
+  description: Registered addresses of the account holder inconsistent with the customer
+    profiles.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - registered addresses
+  - customer profiles
+- id: 216-25
+  description: Payments to cosmetic and beauty service providers (pharmacies, cosmetic
+    suppliers and tanning salons), bulk purchasing of contraception and erotic clothing
+    providers.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  industry_types:
+  - retail
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: low
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cosmetic suppliers
+  - tanning salons
+  - contraception
+  - erotic clothing
+- id: 216-26
+  description: Multiple mobile phone, SIM and contract payments not in line with the
+    account holder’s stated occupation.
+  product_types:
+  - depository
+  - credit_card
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - SIM
+  - contract payments
+  - stated occupation
+- id: 216-27
+  description: A series of large cash deposits into an account do not correspond with
+    the behaviour expected of the account holder’s occupation and lifestyle.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - large cash deposits
+  - occupation
+  - lifestyle
+- id: 216-28
+  description: Cash deposits are made in quick succession using various money service
+    businesses in different locations on the same day.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: high
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - money service businesses
+  - same day
+  - cash deposits
+- id: 216-29
+  description: Cash is deposited into international bank accounts to bypass restrictions
+    on currency exchange.
+  product_types:
+  - depository
+  - wire_transfer
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - layering
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - international bank accounts
+  - currency exchange
+  - bypass restrictions
+- id: 216-30
+  description: The account shows high turnover of funds and activity inconsistent
+    with its expected profile.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 18 - December 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-12
+  risk_level: low
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/625-sars-in-action-december-2022/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - high turnover
+  - funds and activity

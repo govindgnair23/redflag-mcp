@@ -1,0 +1,742 @@
+- id: 215-01
+  description: Significant branch or Post Office cash deposits without legitimate
+    explanation.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - Post Office
+- id: 215-02
+  description: Same day/closely-spaced cash deposits across multiple branches or regions.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  key_terms:
+  - cash deposits
+  - branches
+  - regions
+- id: 215-03
+  description: Purchase of significant volumes of high-value luxury goods.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - luxury_goods
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - luxury goods
+- id: 215-04
+  description: High concentrations of Scottish and Northern Irish banknotes.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: low
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - Scottish banknotes
+  - Northern Irish banknotes
+- id: 215-05
+  description: Test payments (also known as ‘coupling’) to make small payments to
+    link accounts together to legitimise new payees and IP addresses.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - identity_misrepresentation
+  key_terms:
+  - test payments
+  - coupling
+  - payees
+  - IP addresses
+- id: 215-06
+  description: Suspicious activity continues even after the customer is contacted
+    or challenged by the financial firm.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - financial firm
+- id: 215-07
+  description: Transactions to/from crypto-currency exchanges.
+  product_types:
+  - crypto
+  - depository
+  - wire_transfer
+  industry_types:
+  - crypto
+  customer_profiles:
+  - crypto
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - crypto-currency exchanges
+- id: 215-08
+  description: Transactions to/from payment service providers/electronic money institutes.
+  product_types:
+  - depository
+  - wire_transfer
+  - prepaid
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - payment service providers
+  - electronic money institutes
+- id: 215-09
+  description: For cryptocurrency wallets, funds may re-merge after they have been
+    through a tumbler service.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - crypto
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - cryptocurrency wallets
+  - tumbler service
+- id: 215-10
+  description: Company accounts linked with a UK company newly registered with Companies
+    House or purchased ‘off-the-shelf’ from a formation agent.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints:
+  - uk_eu
+  - domestic_us
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - Companies House
+  - off-the-shelf
+  - formation agent
+- id: 215-11
+  description: Company accounts used to co-mingle funds from multiple crime types
+    alongside legitimate income.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - nested_account_activity
+  key_terms:
+  - co-mingle
+  - legitimate income
+- id: 215-12
+  description: Significant cash deposits or transfers from another account in receipt
+    of cash deposits, followed by a bulk shopping spree on luxury goods.
+  product_types:
+  - depository
+  - wire_transfer
+  - credit_card
+  industry_types:
+  - luxury_goods
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - cash deposits
+  - luxury goods
+- id: 215-13
+  description: Use of second personal account in order to keep activity from impacting
+    on their primary account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - second personal account
+  - primary account
+- id: 215-14
+  description: Thousands of pounds being spent at the same retailer or within short
+    periods of time with repeat purchases of the same amounts, indicating purchase
+    of duplicate goods.
+  product_types:
+  - credit_card
+  - depository
+  industry_types:
+  - retail
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - retailer
+  - duplicate goods
+- id: 215-15
+  description: A newly incorporated company exhibits shell company attributes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - newly incorporated company
+  - shell company
+- id: 215-16
+  description: Following a period of inactivity, sudden financial acquisition in short
+    period (e.g. £1 million over two weeks).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - £1 million
+  - two weeks
+- id: 215-17
+  description: Large unprecedented incoming payments from Packaging Recovery Note (PRN)
+    brokers, trading platforms or Compliance Schemes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - PRN brokers
+  - trading platforms
+  - Compliance Schemes
+- id: 215-18
+  description: Rapid substantial outgoing payments, particularly to ‘non-waste’ entities
+    e.g. financial services, IT services and restaurants (Packaging Recovery Note (PRN)
+    revenue should finance improving recycling rates).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - food_service
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - non-waste entities
+  - financial services
+  - IT services
+  - restaurants
+  - PRN
+- id: 215-19
+  description: Account holder has associations or transactions with scrap metal dealers
+    linked to money laundering and serious organised crime.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - scrap metal dealers
+- id: 215-20
+  description: An address is linked to an account assessed to be in receipt of fraudulent
+    funds.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - address
+  - fraudulent funds
+- id: 215-21
+  description: A subject’s mobile number identified links to a high volume of bank
+    accounts.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - mobile number
+  - bank accounts
+- id: 215-22
+  description: Multiple accounts operated by different individuals form a money mule
+    network laundering an Organised Crime Group (OCG)’s proceeds of crime.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - nested_account_activity
+  key_terms:
+  - money mule network
+  - OCG
+  - proceeds of crime
+- id: 215-23
+  description: Accounts linked to a network committing payment diversion and investment
+    fraud internationally.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - payment diversion
+  - investment fraud
+- id: 215-24
+  description: The account is accessed in the UK and abroad simultaneously, indicative
+    of fraud.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  - unusual_international_wires
+  key_terms:
+  - accessed in the UK and abroad simultaneously
+- id: 215-25
+  description: The customer cannot explain the source of the remaining balance in
+    the account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - remaining balance
+- id: 215-26
+  description: The customer states the account is used for day-to-day spending, but
+    the transactions do not reflect this.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 20 - May 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/649-sars-in-action-issue-20/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - day to day spending

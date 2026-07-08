@@ -1,0 +1,220 @@
+- id: 219-01
+  description: A foreign national student whose bank account activity did not correlate
+    with their customer profile.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - student
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 14 - February 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2022-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/582-sars-in-action-february-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - bank account activity
+  - customer profile
+- id: 219-02
+  description: A subject operates in financial circles above their declared legitimate
+    means (e.g., a cash-rich lifestyle).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 14 - February 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2022-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/582-sars-in-action-february-2022/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash rich lifestyle
+  - declared legitimate means
+- id: 219-03
+  description: Transactions sent from the UK by nationals of migrant source countries
+    to European nationals in France along the Channel coast; amounts likely would
+    be or total £1,000 or more.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - france
+  - domestic_us
+  regulatory_source: SARs In Action Issue 14 - February 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2022-02
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/582-sars-in-action-february-2022/file
+  typology_family:
+  - human_smuggling_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - £1,000
+  - Channel coast
+  - migrant source countries
+- id: 219-04
+  description: Small value transactions, typically £150 - £3000 (electronic transfers
+    or cash deposits), in repeated patterns or sporadic patterns where incoming or
+    outgoing payments are made in two or more instalments of partial payments over
+    time, indicating an up-front or initial fee followed by the remaining amount.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 14 - February 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2022-02
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/582-sars-in-action-february-2022/file
+  typology_family:
+  - human_smuggling_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - £150
+  - £3000
+  - partial payments
+  - up-front fee
+- id: 219-05
+  description: Transactions sent from migrant source countries, or from Turkey or
+    Greece, to European nationals or nationals of migrant source countries in France
+    along the channel coast; amounts likely would total £1,000 or more, and the counterparties
+    from migrant source countries would demonstrate different surnames and/or otherwise
+    appear unrelated.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - france
+  - uk_eu
+  - south_east_europe
+  - middle_east
+  regulatory_source: SARs In Action Issue 14 - February 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2022-02
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/582-sars-in-action-february-2022/file
+  typology_family:
+  - human_smuggling_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - £1,000
+  - different surnames
+  - Channel coast
+- id: 219-06
+  description: A money mule account wittingly or unwittingly receives the confirmed
+    proceeds of fraud and/or financial crime and may then transfer or withdraw those
+    funds using a variety of methods, often on behalf of or at the direction of another.
+  product_types:
+  - depository
+  - wire_transfer
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 14 - February 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2022-02
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/582-sars-in-action-february-2022/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - money mule
+  - proceeds of fraud
+  - financial crime
+- id: 219-07
+  description: An account belonging to an individual with no adverse credit history
+    and no prior reported issues suddenly exhibits money mule activity.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 14 - February 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2022-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/582-sars-in-action-february-2022/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  key_terms:
+  - adverse credit history
+  - existing accounts

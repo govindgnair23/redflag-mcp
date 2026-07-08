@@ -1,0 +1,304 @@
+- id: 217-01
+  description: ‘Pump and dump’ or ‘wash-trading’ activity — coordinated buying and
+    selling to inflate a crypto asset’s traded volume or price — used to launder funds.
+  product_types:
+  - crypto
+  industry_types:
+  - online_marketplace
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - fraud_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - round_tripping
+  key_terms:
+  - pump and dump
+  - wash-trading
+  - money laundering
+- id: 217-02
+  description: Creating a digital asset (e.g., an NFT), listing it for sale and then
+    buying it back at an inflated price to move and launder value.
+  product_types:
+  - crypto
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - fraud_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - round_tripping
+  key_terms:
+  - digital file
+  - inflated price
+  - art
+  - launder money
+- id: 217-03
+  description: A personal customer account has large sums (e.g., £200,000) pass through
+    it in a short period of time, consistent with undeclared business usage.
+  product_types:
+  - depository
+  industry_types:
+  - small_business
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - pass through
+  - business usage
+  - personal account
+- id: 217-04
+  description: A customer account receives excessive funds from a third party located
+    overseas.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - third party
+  - overseas
+  - excessive funds
+- id: 217-05
+  description: A personal account’s name is falsified to appear as a business in order
+    to receive the funds.
+  product_types:
+  - depository
+  industry_types:
+  - small_business
+  customer_profiles:
+  - individual_consumer
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - personal account
+  - business
+  - falsified
+- id: 217-06
+  description: Funds are debited out in quick succession and transferred to related
+    accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - related accounts
+  - quick succession
+  - debited out
+- id: 217-07
+  description: Funds are debited back out and sent to multiple third parties located
+    in various countries.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - multiple third parties
+  - various countries
+  - debited back out
+- id: 217-08
+  description: A customer is recruited as a money mule through a perceived romance
+    with someone they ‘met’ on social media.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - scam_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  key_terms:
+  - romance
+  - social media
+  - money mule
+- id: 217-09
+  description: Account activity does not correlate with the expected business profile,
+    with funds layered numerous times between businesses in order to build a history
+    for the income.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - payroll
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - wire_transfer_chains
+  - pass_through_account_activity
+  key_terms:
+  - expected business profile
+  - layered numerous times
+  - income
+- id: 217-10
+  description: A client settling invoices using a previously unknown third party,
+    based in jurisdictions with known beneficial ownership transparency issues.
+  product_types:
+  - trade_finance
+  industry_types:
+  - professional_services
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action, Issue 17 - October 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-10
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/616-sars-in-action-october-2022/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  - invoice_mismatch
+  key_terms:
+  - invoices
+  - third party
+  - beneficial ownership transparency

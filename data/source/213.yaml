@@ -1,0 +1,521 @@
+- id: 213-01
+  description: Transactions from developed countries to high-risk jurisdictions associated
+    with child sexual exploitation.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - child sexual exploitation
+  - high-risk jurisdictions
+- id: 213-02
+  description: Payments being made to receivers in another jurisdiction, with whom
+    the remitter has no apparent legitimate connection.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - remitter
+  - receiver
+  - another jurisdiction
+- id: 213-03
+  description: Transactions made late at night or early in the morning (signalling
+    that the consumer may be in a different time zone).
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: low
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - late at night
+  - early in the morning
+  - time zone
+- id: 213-04
+  description: Purchases on dating or adult service sites linked to high-risk countries,
+    webcam or live-streaming services.
+  product_types:
+  - credit_card
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - adult_entertainment
+  - online_marketplace
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - dating sites
+  - adult service sites
+  - webcam
+  - live-streaming
+- id: 213-05
+  description: Purchases on online gaming platforms, including those providing adult
+    entertainment.
+  product_types:
+  - credit_card
+  - depository
+  - prepaid
+  - crypto
+  industry_types:
+  - adult_entertainment
+  - online_marketplace
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - online gaming
+  - adult entertainment
+- id: 213-06
+  description: Transactions linked to individuals charged with child sexual exploitation-related
+    offences or who are the subject of adverse media involving child sexual exploitation-related
+    offences.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - child sexual exploitation
+  - adverse media
+- id: 213-07
+  description: A transaction that used a virtual assets wallet previously flagged as
+    associated with child sexual abuse material (CSAM), such as one linked to a darknet
+    market.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints: []
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - cybercrime_proceeds
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - virtual assets wallet
+  - CSAM
+  - darknet market
+- id: 213-08
+  description: Concentration of decision-making power, where one individual controls
+    multiple approval or verification stages.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - construction
+  - real_estate
+  - professional_services
+  customer_profiles:
+  - small_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - approval
+  - verification stages
+- id: 213-09
+  description: Missing, falsified or duplicate documentation in procurement or allocation
+    records.
+  product_types:
+  - trade_finance
+  - depository
+  - wire_transfer
+  industry_types:
+  - construction
+  - real_estate
+  - professional_services
+  customer_profiles:
+  - small_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - procurement
+  - allocation records
+  - falsified documentation
+- id: 213-10
+  description: Payments routed through personal or unrelated third-party accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - corruption_and_bribery
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - third-party accounts
+  - personal accounts
+- id: 213-11
+  description: A subject in receipt of benefit payments with no record of employment
+    who has received a series of large unexplained payments from external accounts.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - benefit payments
+  - unexplained payments
+  - external accounts
+- id: 213-12
+  description: Linked accounts with a very large amount of funds received from overseas.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - foreign_individual
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  - nested_account_activity
+  key_terms:
+  - linked accounts
+  - overseas
+- id: 213-13
+  description: Multiple linked business accounts receive large credits that are rapidly
+    dispersed to third parties in the UK and to overseas businesses.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - retail
+  - import_export
+  customer_profiles:
+  - small_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - large credits
+  - linked business accounts
+  - overseas businesses
+- id: 213-14
+  description: Transactions that do not fit the business profiles of their respective
+    accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - professional_services
+  - retail
+  - import_export
+  customer_profiles:
+  - small_business
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - business profiles
+  - account activity
+- id: 213-15
+  description: An account exhibits money mule activity, receiving third-party credits
+    that are rapidly withdrawn or forwarded on.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - rapid_fund_movement
+  key_terms:
+  - money mule
+- id: 213-16
+  description: Large credits are deposited into a business account that shows limited
+    genuine business activity.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - money_services_business
+  - retail
+  customer_profiles:
+  - small_business
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action Issue 34
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/781-sars-in-action-issue-34/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - large credits
+  - limited business activity

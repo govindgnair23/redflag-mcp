@@ -1,0 +1,119 @@
+- id: 218-01
+  description: A personal bank account where the account holder has no history of
+    work in the food business area receives credits or makes debits on a regular basis
+    from obvious food suppliers e.g. “ABC Meats Ltd” etc. This is an indication of
+    a non-registered food business.
+  product_types:
+  - depository
+  industry_types:
+  - food_service
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action Issue 16 - July 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2022-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/604-sars-in-action-issue-16-july/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - food suppliers
+  - non-registered food business
+- id: 218-02
+  description: A business bank account of a food business that receives significant
+    cash receipts or makes cash withdrawals that are not the usual operation of the
+    account. This is an indication of off record purchases and sales of food produce
+    outside of usual supply chains.
+  product_types:
+  - depository
+  industry_types:
+  - food_service
+  customer_profiles:
+  - small_business
+  - cash_intensive_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action Issue 16 - July 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2022-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/604-sars-in-action-issue-16-july/file
+  typology_family:
+  - fraud_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash receipts
+  - cash withdrawals
+  - off record purchases
+  - off record sales
+- id: 218-03
+  description: A personal bank account receiving large credits (that are not obvious
+    salary payments) from the business account of a food business, especially if the
+    account holder has some association to a food business.
+  product_types:
+  - depository
+  industry_types:
+  - food_service
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action Issue 16 - July 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2022-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/604-sars-in-action-issue-16-july/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - salary payments
+  - food business
+- id: 218-04
+  description: A personal or business bank account that has credits that refer to
+    “dinitrophenol”, “2,4 dinitrophenol” or “DNP”. This is an indication that the
+    account holder is selling DNP, a dangerous chemical that is used for weight loss
+    but is not intended for human consumption and has led to many fatalities.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action Issue 16 - July 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2022-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/604-sars-in-action-issue-16-july/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - dinitrophenol
+  - 2,4 dinitrophenol
+  - DNP

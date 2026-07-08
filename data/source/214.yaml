@@ -1,0 +1,911 @@
+- id: 214-01
+  description: Customers purchasing high value goods (from legitimate sources) inconsistent
+    with legitimate income – vehicles, watches, multiple properties/holiday homes
+  product_types: []
+  industry_types:
+  - retail
+  - luxury_goods
+  - real_estate
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - high value goods
+  - legitimate income
+  - vehicles
+  - watches
+  - holiday homes
+- id: 214-02
+  description: Individuals provide or have access to multiple mobile phone numbers
+    or regularly change phone number and contact details
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - mobile phone numbers
+  - contact details
+- id: 214-03
+  description: Account turnover is high and inconsistent with the customer’s stated
+    role or occupation.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - high turnover
+- id: 214-04
+  description: Use of Money Services Businesses to transfer money overseas - primarily
+    through high risk corridors – South America and Caribbean islands, India, Pakistan,
+    China
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - cross_border_business
+  geographic_footprints:
+  - latin_america
+  - caribbean
+  - south_asia
+  - china
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - MSB
+  - high risk corridors
+  - overseas
+- id: 214-05
+  description: Transactions using large amounts of cash for purchases
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - retail
+  - luxury_goods
+  customer_profiles:
+  - cash_intensive_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - purchases
+- id: 214-06
+  description: Customers purchasing high value goods but registering in partner’s
+    / spouse’s / parent’s details
+  product_types: []
+  industry_types:
+  - retail
+  - luxury_goods
+  customer_profiles:
+  - beneficial_owner_obscured
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  key_terms:
+  - partner
+  - spouse
+  - parent's details
+- id: 214-07
+  description: Visible indicators of wealth beyond and inconsistent with legitimate
+    income – wearing high value jewellery, clothing, or driving high value vehicles
+  product_types: []
+  industry_types:
+  - luxury_goods
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - wealth
+  - high value jewellery
+  - high value vehicles
+- id: 214-08
+  description: Setting up trusts believed to be an attempt to conceal criminal proceeds.
+  product_types:
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - trusts
+  - conceal criminal proceeds
+- id: 214-09
+  description: Solicitors using client accounts to launder suspected proceeds of crime.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - legal_accounting
+  customer_profiles:
+  - professional_services
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  key_terms:
+  - client accounts
+  - proceeds of crime
+- id: 214-10
+  description: Accountants signing off company accounts believed to be false or do
+    not reflect the activity observed on a bank account.
+  product_types:
+  - depository
+  industry_types:
+  - legal_accounting
+  customer_profiles:
+  - professional_services
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - company accounts
+  - bank account
+- id: 214-11
+  description: Mortgage brokers submitting applications having not conducted effective
+    due diligence checks such as proof of identity/earnings.
+  product_types:
+  - depository
+  industry_types:
+  - professional_services
+  - real_estate
+  customer_profiles:
+  - professional_services
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - mortgage broker
+  - due diligence
+  - proof of identity
+  - proof of earnings
+- id: 214-12
+  description: Provision of services to individuals/companies subject to adverse media
+    reporting indicating involvement in criminal activity.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - professional_services
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - adverse media
+  - criminal activity
+- id: 214-13
+  description: Incorporation of large companies or investment management companies
+    at residential addresses.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - incorporation
+  - residential addresses
+- id: 214-14
+  description: Prolific incorporation of companies over a short period of time where
+    the company formation agent does not appear to have conducted proper customer
+    due diligence checks.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - company formation agent
+  - customer due diligence
+- id: 214-15
+  description: Incorporation of what appear to be shelf companies.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shelf companies
+- id: 214-16
+  description: Setting up complex corporate and/or trust structures that do not appear
+    to have a sound economic or business rationale.
+  product_types:
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - corporate structures
+  - trust structures
+  - economic rationale
+- id: 214-17
+  description: The Trust or Company Service Provider (TCSP) is transacting/conducting
+    business in/with a higher-risk jurisdiction known for trade based money laundering.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - professional_services
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - trade based money laundering
+  - higher risk jurisdiction
+- id: 214-18
+  description: The Trust or Company Service Provider (TCSP) is offering shelf companies
+    with similar names to well-known brands.
+  product_types: []
+  industry_types:
+  - professional_services
+  - retail
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shelf companies
+  - well-known brands
+- id: 214-19
+  description: The Trust or Company Service Provider (TCSP) is transacting to an extent
+    higher than turnover declared in annual accounts provided to Companies House.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - turnover
+  - annual accounts
+  - Companies House
+- id: 214-20
+  description: 'The Trust or Company Service Provider (TCSP) is transacting despite
+    being dormant (Companies House SIC Code: 99999).'
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - dormant
+  - SIC Code 99999
+  - Companies House
+- id: 214-21
+  description: Profit is transferred to opaque corporate entities, individuals and
+    other companies, without a clear economic rationale for doing so.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - opaque corporate entities
+  - economic rationale
+- id: 214-22
+  description: Payments carry vague or repetitive references that do not describe
+    a genuine underlying transaction.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: low
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - payment references
+- id: 214-23
+  description: Amounts being transferred are either rounded or accumulative (e.g.,
+    on consecutive days).
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  - rapid_fund_movement
+  key_terms:
+  - rounded
+  - accumulative
+  - consecutive days
+- id: 214-24
+  description: The company (client or counterparty) is located at a high-risk Trust
+    or Company Service Provider (TCSP)/brass plate address.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - TCSP
+  - brass plate address
+- id: 214-25
+  description: No clear rationale for why the client or counterparty is connected
+    to the registered (brass plate) address.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: low
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - address
+- id: 214-26
+  description: The company linked to a TCSP appears to have a complex or opaque ownership
+    structure
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - opaque ownership structure
+- id: 214-27
+  description: The company linked to a TCSP appears to be connected to offshore locations/secrecy
+    jurisdictions
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - offshore locations
+  - secrecy jurisdictions
+- id: 214-28
+  description: The company is a Limited Partnership (LP), Scottish Limited Partnership
+    (SLP) or Northern Irish Limited Partnership (NILP), Limited Liability Partnership
+    (LLP), or has these structures in its ownership structure, concealing the ultimate
+    beneficial owner
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - LP
+  - SLP
+  - NILP
+  - LLP
+  - ultimate beneficial owner
+- id: 214-29
+  description: The company appears to have nominee directors, secretaries or shareholders
+    who are linked to multiple other companies
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - nominee directors
+  - nominee shareholders
+- id: 214-30
+  description: The company Person with Significant Control (PSC) does not have a job
+    role of sufficient standing to be a genuine shareholder, indicating they are likely
+    a nominee shareholder.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - nominee shareholder
+  - PSC
+- id: 214-31
+  description: The company is unable to provide a legitimate explanation for why it
+    is seeking UK incorporation, such as limited evidence of trading activity in the
+    UK/EU on accounts or established European located buyers and suppliers
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - UK incorporation
+  - trading activity
+  - buyers and suppliers
+- id: 214-32
+  description: Upon review, the company’s activity does not appear to be in line with
+    the expected industry or sector as stated at on-boarding
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/669-sars-in-action-issue-21/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - on-boarding
+  - expected industry
+  - sector
