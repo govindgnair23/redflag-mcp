@@ -1,0 +1,671 @@
+- id: 220-fincen-alert-fiscal-fuel-theft-01
+  description: A customer is a U.S.-based company in the oil and natural gas industry
+    that is receiving wire transfers for fuel purchases from a Mexico-based company
+    without a SENER permit.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: high
+  category: trade_based_money_laundering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - SENER permit
+  - wire transfers
+  - fuel purchases
+- id: 220-fincen-alert-fiscal-fuel-theft-02
+  description: A customer is a U.S.-based company in the oil and natural gas industry
+    that is receiving wire transfers from a Mexico-based company with a CNE permit.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: trade_based_money_laundering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - CNE permit
+  - wire transfers
+- id: 220-fincen-alert-fiscal-fuel-theft-03
+  description: A customer is a U.S.-based company in the oil and natural gas industry
+    that is receiving multiple wire transfers a day from a single Mexico-based company.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - multiple wire transfers a day
+- id: 220-fincen-alert-fiscal-fuel-theft-04
+  description: A customer is a U.S.-based company (or their nominal and/or beneficial
+    owners) that is connected to huachicol-related activities according to U.S. or
+    Mexican media reporting.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: trade_based_money_laundering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - huachicol-related activities
+  - media reporting
+- id: 220-fincen-alert-fiscal-fuel-theft-05
+  description: A customer is a U.S.-based company in the oil and natural gas, freight,
+    or logistics industries that is transacting with Mexican companies with connections
+    to huachicol-related activities based on open-source reporting in the United States
+    and Mexico, indictments, and OFAC designations and/or press releases.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: trade_based_money_laundering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - huachicol-related activities
+  - OFAC designations
+  - press releases
+- id: 220-fincen-alert-fiscal-fuel-theft-06
+  description: A customer is a small U.S.-based company in the oil and natural gas,
+    freight, or logistics industries operating in states on the southern border with
+    transactional activity and profit margins that exceed the typical business profile
+    of similar companies in their industries.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - southwest_border
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: trade_based_money_laundering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - southern border
+  - profit margins
+- id: 220-fincen-alert-fiscal-fuel-theft-07
+  description: A customer is a U.S.-based company in the oil and natural gas, freight,
+    or logistics industries with significant operations in ports of entry despite
+    those areas being subject to bridge closures according to Mexican media reporting.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - southwest_border
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: trade_based_money_laundering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - ports of entry
+  - bridge closures
+- id: 220-fincen-alert-fiscal-fuel-theft-08
+  description: A customer is a U.S. oil and natural gas, freight, or logistics company
+    that operates in Mexico but does not have a Mexican subsidiary (e.g., ABC Fuel
+    without ABC Fuel S.A. de C.V.).
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: shell_company
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - Mexican subsidiary
+- id: 220-fincen-alert-fiscal-fuel-theft-09
+  description: A customer is a U.S. company in the oil and natural gas industry that
+    is sending a significant amount and volume of large wire transfers to a major
+    U.S. fuel distributor or refinery for fuel exports to Mexico in a single day and
+    later receiving commensurate wire transfers from a Mexican company without a SENER
+    permit or small, recently established U.S.-based companies in the oil and natural
+    gas, freight, or logistics industries.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  - newly_established_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: high
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - wire_transfer_chains
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - fuel exports to Mexico
+  - commensurate wire transfers
+  - SENER permit
+- id: 220-fincen-alert-fiscal-fuel-theft-10
+  description: A customer is a U.S. company in the oil and natural gas industry receiving
+    wire transfers from U.S. or Mexican companies registered to a residential address.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: shell_company
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - residential address
+- id: 220-fincen-alert-fiscal-fuel-theft-11
+  description: A customer is a U.S. company in the oil and natural gas, freight, or
+    logistics industries that is receiving a significant amount and volume of wire
+    transfers from companies in unrelated industries.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - unrelated industries
+- id: 220-fincen-alert-fiscal-fuel-theft-12
+  description: A customer is a small, recently established U.S.-based oil and natural
+    gas, freight, or logistics limited liability corporation (LLC) and/or sole proprietorship
+    that shares a name with a Mexican company and is sending a significant amount
+    and volume of large wire transfers to U.S. fuel distributors or refineries in
+    a single day and later receiving commensurate international wire transfers from
+    other Mexican companies.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: high
+  category: shell_company
+  typology_family:
+  - shell_company
+  - trade_based_money_laundering
+  transaction_patterns:
+  - wire_transfer_chains
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - LLC
+  - sole proprietorship
+  - shares a name
+- id: 220-fincen-alert-fiscal-fuel-theft-13
+  description: A customer is a small, recently established U.S.-based oil and natural
+    gas, freight, or logistics LLC and/or sole proprietorship that shares a name with
+    a Mexican company and has transactional activity and profit margins exceeding
+    the typical business profile of similar companies in their industry.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: shell_company
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - shares a name
+  - profit margins
+- id: 220-fincen-alert-fiscal-fuel-theft-14
+  description: A customer is a U.S. or Mexican company in the oil and natural gas,
+    freight, or logistics industries with little to no business expenses, operations,
+    or online presence.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: shell_company
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - online presence
+- id: 220-fincen-alert-fiscal-fuel-theft-15
+  description: A customer is a U.S. or Mexican company in the oil and natural gas,
+    freight, or logistics industries registered to a residential address.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: shell_company
+  typology_family:
+  - shell_company
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - residential address
+- id: 220-fincen-alert-fiscal-fuel-theft-16
+  description: A customer is a U.S. or Mexican company in the oil and natural gas
+    industry with significant transactional activity but no apparent infrastructure
+    to store and transport fuel.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: trade_based_money_laundering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - infrastructure to store and transport fuel
+- id: 220-fincen-alert-fiscal-fuel-theft-17
+  description: A customer is a U.S.-based company in the oil and natural gas, freight,
+    or logistics industries that is receiving a significant amount and volume of wire
+    transfers from Mexico before immediately transferring the funds to U.S. oil and
+    natural gas companies (i.e., acting as a pass-through account).
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: high
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - pass_through_account_activity
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - pass-through account
+- id: 220-fincen-alert-fiscal-fuel-theft-18
+  description: A customer is a U.S. or Mexican company in the oil and natural gas,
+    freight, or logistics industries that is receiving a significant amount and volume
+    of wire transfers from Mexico but only transacts with one or a small number of
+    U.S. companies.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - one or a small number of U.S. companies
+- id: 220-fincen-alert-fiscal-fuel-theft-19
+  description: A customer is a U.S.-based company in the oil and natural gas, freight,
+    or logistics industries that is receiving a significant amount and volume of wire
+    transfers from Mexico with little to no information contained in the memo line.
+  product_types:
+  - wire_transfer
+  industry_types:
+  - oil_and_gas
+  - logistics
+  - transportation
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - memo line
+- id: 220-fincen-alert-fiscal-fuel-theft-20
+  description: A customer is a U.S.-based company in the oil and natural gas industry
+    that is receiving digital asset payments from Mexican companies when similar energy
+    transactions would normally be conducted through the traditional fiat systems,
+    wire transfers, and standard trade finance.
+  product_types:
+  - crypto
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - mexico
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: virtual_currency
+  typology_family:
+  - trade_based_money_laundering
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - digital asset payments
+  - stablecoins
+  - fiat systems
+- id: 220-fincen-alert-fiscal-fuel-theft-21
+  description: A customer is a U.S.-based company in the oil and natural gas industry
+    that is receiving cash deposits.
+  product_types:
+  - depository
+  industry_types:
+  - oil_and_gas
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: low
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+- id: 220-fincen-alert-fiscal-fuel-theft-22
+  description: A customer is a U.S.-based company in the oil and natural gas industry
+    that operates in states on the southern border and has outgoing transactions to,
+    or expenditures related to, companies with no apparent nexus to the industry,
+    such as companies involved in the sale of luxury goods (e.g., high-end vehicles,
+    high-value jewelry or exclusive vacation rentals/travel destinations) or in industries
+    related to investment management or the sale of residential real estate.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - oil_and_gas
+  - luxury_goods
+  - real_estate
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - southwest_border
+  - domestic_us
+  regulatory_source: FIN-2026-Alert003 Supplemental Alert on Fuel Smuggling and Tax
+    Evasion Schemes on the Southern Border Associated with Mexico-Based Cartels
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies: []
+  issued_date: '2026-06-30'
+  risk_level: medium
+  category: layering
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - luxury goods
+  - residential real estate
+  - investment management
