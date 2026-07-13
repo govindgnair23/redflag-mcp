@@ -1,6 +1,15 @@
 {
-  "latest_compatible_version": "2026.07.08",
+  "latest_compatible_version": "2026.07.13",
   "releases": [
+    {
+      "artifact": "dist/corpus/redflag-corpus-2026.07.13.zip",
+      "package_id": "redflag-corpus-2026.07.13",
+      "record_count": 2532,
+      "schema_version": 4,
+      "sha256": "382142e501f32e6e0279f726fbbb6fe9c44885b1c3c4e128885874299e071949",
+      "source_count": 165,
+      "version": "2026.07.13"
+    },
     {
       "artifact": "dist/corpus/redflag-corpus-2026.07.08.zip",
       "package_id": "redflag-corpus-2026.07.08",
