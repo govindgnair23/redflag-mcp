@@ -397,3 +397,7 @@
   slug: 220-fincen-alert-fiscal-fuel-theft
   output_file: data/source/220-fincen-alert-fiscal-fuel-theft.yaml
   extracted_at: '2026-07-13T22:49:26.970734+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/221-FinCEN-Alert-Fraud-Schemes-Targeting-Federal-Student-Aid.pdf
+  slug: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid
+  output_file: data/source/221-fincen-alert-fraud-schemes-targeting-federal-student-aid.yaml
+  extracted_at: '2026-07-25T10:53:09.695963+00:00'

@@ -1,0 +1,315 @@
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-01
+  description: A customer who has no previous history of, or customer profile information
+    that would be consistent with, enrollment at an educational institution receives
+    a student aid refund, especially where the stated recipient of the refund listed
+    in the transaction reference is an individual with no known connection to the
+    customer. These funds are then rapidly transferred to another account via P2P
+    or wire transfers, used to purchase digital assets, or used in transactions with
+    online money services businesses that typically process international funds transfers.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: fraud_nexus
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  - third_party_payments
+  - virtual_currency
+  key_terms:
+  - student aid refund
+  - P2P
+  - wire transfers
+  - digital assets
+  - online money services businesses
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-02
+  description: A customer uses funds received from a student aid refund to quickly
+    purchase digital assets, which the customer then rapidly transfers to another
+    digital asset wallet for no business or apparent lawful purpose.
+  product_types:
+  - crypto
+  - depository
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: virtual_currency
+  typology_family:
+  - fraud_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  - cryptocurrency_mixing
+  key_terms:
+  - student aid refund
+  - digital assets
+  - wallet
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-03
+  description: Multiple unrelated students use the same account for the deposit of
+    federal student aid refunds.
+  product_types:
+  - depository
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: fraud_nexus
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - federal student aid refunds
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-04
+  description: A customer’s account receives multiple student aid refunds, for no
+    business or apparent lawful purpose, especially if the stated recipients listed
+    in the transaction reference are unrelated individuals with no known connections
+    to the customer. These funds may then be rapidly transferred to other accounts
+    via P2P or wire transfers, used to purchase digital assets, or used in transactions
+    with online money services businesses that typically process international funds
+    transfers.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: fraud_nexus
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  - third_party_payments
+  - virtual_currency
+  key_terms:
+  - student aid refunds
+  - transaction reference
+  - P2P
+  - wire transfers
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-05
+  description: A newly established customer account is funded solely by student aid
+    refunds and lacks other financial activity. These funds may then be rapidly transferred,
+    in whole or part, via P2P or wire transfers to other accounts, used to purchase
+    digital assets, or used in transactions with online money services businesses
+    that typically process international funds transfers.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  industry_types:
+  - education
+  customer_profiles:
+  - newly_established_business
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: fraud_nexus
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  - virtual_currency
+  key_terms:
+  - student aid refunds
+  - newly established customer account
+  - P2P
+  - wire transfers
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-06
+  description: A business account receives multiple student aid refunds—especially
+    if the stated recipients listed in the transaction reference are individuals with
+    no known connections to the customer—for no business or apparent lawful purpose.
+    These funds may be rapidly transferred to other accounts held by business entities
+    or used in transactions with online money services businesses that typically process
+    international funds transfers.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - education
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: shell_company
+  typology_family:
+  - fraud_proceeds
+  - shell_company_usage
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  - third_party_payments
+  - shell_company_usage
+  key_terms:
+  - business account
+  - student aid refunds
+  - transaction reference
+  - online money services businesses
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-07
+  description: A customer receives multiple P2P or wire transfers from accounts that
+    recently received student aid refunds, for no business or apparent lawful purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: fraud_nexus
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - wire_transfer_chains
+  key_terms:
+  - P2P
+  - wire transfers
+  - student aid refunds
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-08
+  description: Multiple accounts that receive a student aid refund are accessed from
+    the same out-of-state or international IP address or the same device.
+  product_types:
+  - depository
+  industry_types:
+  - education
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: fraud_nexus
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - IP address
+  - device
+  - student aid refund
+- id: 221-fincen-alert-fraud-schemes-targeting-federal-student-aid-09
+  description: Multiple accounts are created online within a short timeframe at a
+    financial institution and receive student aid refunds on a one-to-one basis (i.e.,
+    one account receives one refund). These funds, in whole or part, may be rapidly
+    transferred to other accounts via P2P or wire transfers, used to purchase digital
+    assets, or used in transactions with online money services businesses that typically
+    process international funds transfers.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - crypto
+  industry_types:
+  - education
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert FIN-2026-Alert004
+  regulator: FinCEN
+  regulator_jurisdiction: US
+  issuing_agencies:
+  - U.S. Department of Education Office of Inspector General
+  - Federal Bureau of Investigation
+  issued_date: '2026-07-24'
+  risk_level: medium
+  category: fraud_nexus
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  - virtual_currency
+  key_terms:
+  - one-to-one basis
+  - student aid refunds
+  - online
+  - P2P
+  - wire transfers
