@@ -5,6 +5,7 @@ queries:
     query: TBML invoice mismatch import export
     top_n: 5
     expected_ids:
+      - 232-23
       - 054-61
 
   - id: southwest-border-oil
