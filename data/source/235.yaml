@@ -1,0 +1,343 @@
+- id: 235-04
+  description: Deepfake imagery or video calls are used in a romance fraud to convince
+    the victim that the persona they are communicating with is real.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - credit_card
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - deepfake
+  - romance fraud
+  - video calls
+- id: 235-05
+  description: Voice cloning is used in an impersonation-enabled fraud to convince
+    the victim they are speaking with a colleague, friend, or family member.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - credit_card
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - voice cloning
+  - impersonation enabled fraud
+- id: 235-07
+  description: Fake invoices and impersonation of key business figures (potentially
+    using voice cloning or LLMs) are used to enhance the legitimacy of a payment diversion
+    fraud request.
+  product_types:
+  - wire_transfer
+  - depository
+  - trade_finance
+  industry_types:
+  - professional_services
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  - third_party_payments
+  - identity_misrepresentation
+  key_terms:
+  - payment diversion fraud
+  - fake invoices
+  - impersonate key figures
+  - LLMs
+- id: 235-11
+  description: A customer's financial accounts reveal links to drug dealing and drug
+    supply.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - drug dealing
+  - drug supply
+- id: 235-12
+  description: An associate who is linked to criminality sends regular payments to
+    a customer's business account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - retail
+  - professional_services
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - regular payments
+  - business account
+- id: 235-13
+  description: An elderly customer becomes uncontactable following rapid cash withdrawals
+    and card purchases that do not match their expected spending profile.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - elder_financial_exploitation
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - rapid cash withdrawals
+  - card purchases
+  - expected spending profile
+- id: 235-14
+  description: A customer's family members have fraudulently accessed the customer's
+    account, withdrawing a large sum.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - elder_financial_exploitation
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - account_takeover
+  - rapid_fund_movement
+  key_terms:
+  - fraudulently accessed
+  - family members
+- id: 235-15
+  description: An account shows high-value transfers, credits not reflecting the business
+    profile, links with fraudulent businesses, and adverse media on the subjects.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - retail
+  - professional_services
+  - import_export
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - high value transfers
+  - credits not reflecting business profiles
+  - adverse media
+- id: 235-16
+  description: A subject's criminal activity is linked to Electronic Money Institution
+    (EMI) accounts used to layer funds.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - EMI accounts
+  - Electronic Money Institution
+- id: 235-17
+  description: The source of funds in a customer's account is believed to be the proceeds
+    of crime, as the customer has previously committed fraud.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - source of funds
+  - proceeds of crime
+  - fraud
+- id: 235-19
+  description: A subject refuses to be interviewed and disclaims a significant sum
+    of money found in their accounts.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 26
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UK Financial Intelligence Unit
+  - National Crime Agency
+  issued_date: 2024-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/723-sars-in-action-issue-26/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - disclaimed

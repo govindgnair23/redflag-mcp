@@ -1,0 +1,356 @@
+- id: 234-01
+  description: Open-source or internet searches on a customer surface adverse information
+    (adverse media) suggesting something to hide.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - adverse media
+  - internet
+  - sanctions check
+- id: 234-02
+  description: The customer's name does not match the name on the bank account used,
+    with no clear explanation for the difference.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - bank account
+  - customer name
+- id: 234-03
+  description: The delivery address for goods differs from the customer's billing address
+    without explanation.
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - delivery address
+  - billing address
+- id: 234-04
+  description: A couple of days before high-value goods (e.g. art) are due to be delivered,
+    the delivery address changes from the business address to a residential address.
+  product_types:
+  - depository
+  industry_types:
+  - art_antiquities
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - rapid_fund_movement
+  key_terms:
+  - delivery address
+  - business address
+  - residential address
+- id: 234-05
+  description: An account shows unauthorised card-not-present (CNP) transactions consistent
+    with the use of compromised card data.
+  product_types:
+  - credit_card
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: medium
+  category: cyber_enabled
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - compromised data
+  - card not present
+  - CNP fraud
+- id: 234-08
+  description: A victim is convinced to change the details of a direct debit, standing
+    order, or bank transfer by a fraudster impersonating an organisation or colleague
+    they make regular payments to (payment diversion fraud).
+  product_types:
+  - ach
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - account_takeover
+  - rapid_fund_movement
+  key_terms:
+  - payment diversion fraud
+  - direct debit
+  - standing order
+  - bank transfer
+- id: 234-14
+  description: Bank accounts are opened by or on behalf of modern slavery and human
+    trafficking (MSHT) offenders and used for money mule activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - fraud_proceeds
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - funnel_account_activity
+  key_terms:
+  - bank accounts
+  - money mule
+- id: 234-15
+  description: Accounts are sold onwards to launder the proceeds of other crimes.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - pass_through_account_activity
+  key_terms:
+  - accounts sold onwards
+  - proceeds of other crimes
+- id: 234-19
+  description: High volumes of cash are paid into a professional business account over
+    a period of several months, disproportionate to the business.
+  product_types:
+  - depository
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - business account
+- id: 234-20
+  description: Large cash deposits inconsistent with the nature of a professional business
+    are transferred in quick succession to linked subjects.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - tax_evasion
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - linked subjects
+  - cash deposits
+- id: 234-21
+  description: Large-value funds are paid into a business account that are not consistent
+    with the business profile and include payments from firms unrelated to the business.
+  product_types:
+  - depository
+  industry_types:
+  - small_business
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - business profile
+  - unrelated firms
+  - business account
+- id: 234-23
+  description: False information is supplied to the corporate registry (Companies House),
+    enabling criminals to access financial products or other benefits.
+  product_types:
+  - depository
+  - wire_transfer
+  - prepaid
+  - securities
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-09
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/731-sars-in-action-issue-27/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  - identity_misrepresentation
+  key_terms:
+  - Companies House
+  - false information
+  - financial products

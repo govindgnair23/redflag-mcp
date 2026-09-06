@@ -1,0 +1,417 @@
+- id: 268-01
+  description: A customer’s business account is in receipt of a high value transaction
+    from an unconnected business based overseas which the customer is unable to account
+    for.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - high value transaction
+  - unconnected business
+  - overseas
+  - unable to account for
+- id: 268-02
+  description: A customer’s business account is primarily funded by cash deposits
+    and credit adjustments which do not match the stated nature of the business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - credit adjustments
+  - stated nature of the business
+- id: 268-03
+  description: A student account displays behaviour typical of money mules — receiving
+    funds from third parties and rapidly transferring them onward.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - student
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  key_terms:
+  - money mules
+  - student account
+- id: 268-04
+  description: Large funds are deposited via money service businesses and immediate
+    deposit machines, methods often used to launder funds to avoid being questioned
+    on the origins of funds, alongside multiple third party debits.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - student
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - money service businesses
+  - immediate deposit machines
+  - third party debits
+- id: 268-05
+  description: A large amount of cash is deposited into a customer’s student account
+    over a six-month period, inconsistent with a student profile.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - student
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  - cash_deposits_below_threshold
+  key_terms:
+  - cash
+  - student account
+  - six month period
+- id: 268-06
+  description: A vulnerable customer attempted to make multiple payments to an account
+    linked to a previous SAR.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - multiple payments
+  - previous SAR
+- id: 268-07
+  description: A recipient account receives payments that are inconsistent with the
+    normal activity seen on the vulnerable customers’ accounts sending them, suggesting
+    exploitation of those customers.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - vulnerable customers
+  - activity on accounts
+  - inconsistent payments
+- id: 268-08
+  description: A vulnerable customer’s account shows unusual high value transactions,
+    and the transactions do not match customer checks performed by the reporter.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unusual high value transactions
+  - customer checks
+- id: 268-09
+  description: A vulnerable customer’s account shows unusual transactions and the
+    customer refuses to engage with additional checks.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - unusual transactions
+  - refusal to engage
+  - additional checks
+- id: 268-10
+  description: A vulnerable octogenarian customer purchases a high value of foreign
+    currency over a short period of time and gives inconsistent reasons for these
+    large transactions.
+  product_types:
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - foreign currency
+  - high value
+  - inconsistent reasons
+- id: 268-12
+  description: A customer’s account contains substantial funds suspected to have originated
+    from an international investment fraud scheme.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - £1m
+  - international investment fraud scheme
+- id: 268-13
+  description: A company appears to be a front or shell used purely for laundering
+    criminal funds, with no genuine trading activity on the account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - front/shell
+  - laundering criminal funds
+- id: 268-14
+  description: A customer’s funds do not match information on their declared income.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - declared income
+  - funds do not match
+- id: 268-15
+  description: A business account’s transactions are inconsistent with the nature
+    of the business and the reporter is unable to determine the source of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - inconsistent with the nature of the business
+  - source of funds
+- id: 268-16
+  description: A customer’s account holder has connections to an associate with a
+    history of drug supply and organised crime group activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet March 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-03
+  risk_level: low
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/642-sars-reporter-booklet-march-2023/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - drug supply
+  - organised crime group activity
+  - associate

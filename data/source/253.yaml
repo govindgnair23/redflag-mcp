@@ -1,0 +1,309 @@
+- id: 253-05
+  description: An account is operated out of character — it receives large deposits
+    from third-party transfers, after which funds are withdrawn in cash or transferred
+    abroad.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - third party transfers
+  - cash
+  - transferred abroad
+- id: 253-06
+  description: A customer is an individual that uses a Social Security Number (SSN)
+    that, upon verification, does not match or is inconsistent with the Social Security
+    Administration's (SSA) records.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - SSN
+  - SSA
+  - identity verification
+- id: 253-07
+  description: A customer is an individual that opens an account using a non-U.S. passport
+    or ITIN claiming to be self-employed or operating a small business in the agriculture,
+    construction, domestic service, hospitality, or staffing industries and is receiving
+    a significant amount and volume of recurring check deposits from multiple companies
+    before either making a significant and repetitive amount of structured cash withdrawals
+    or issuing low-dollar checks to multiple individuals.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  - food_service
+  - retail
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: high
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - ITIN
+  - structured cash withdrawals
+  - check deposits
+- id: 253-08
+  description: A customer is an individual that cashes a significant volume of checks
+    drawn on accounts owned by companies in the agriculture, construction, domestic
+    service, hospitality, or staffing industries on a recurring basis at a Money Service
+    Business (MSB), including a check casher.
+  product_types:
+  - check_cashing
+  - money_transmitter
+  industry_types:
+  - construction
+  - food_service
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - migrant_worker
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - check cashing
+  - MSB
+  - labor-intensive industries
+- id: 253-09
+  description: A customer is an individual that receives a significant amount and volume
+    of recurring check deposits from multiple companies before either making a significant
+    and repetitive amount of structured cash withdrawals or issuing low-dollar checks
+    to multiple individuals.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: high
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - recurring check deposits
+  - structured cash withdrawals
+  - low-dollar checks
+- id: 253-16
+  description: A customer is an individual that has been befriended online by someone
+    asking the account holder to receive money and carry out transactions on their
+    behalf (money mule recruitment).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - third_party_payments
+  key_terms:
+  - befriended online
+  - receive money
+  - carry out transactions
+- id: 253-17
+  description: A customer is an individual that transfers funds abroad believing they
+    are for a good cause, later found to be a scam.
+  product_types:
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - transferred funds abroad
+  - good cause
+- id: 253-18
+  description: A customer is an individual that hands over large sums of cash to associates
+    of an online contact, assessed to be members of an organised crime group (OCG).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - large sums of cash
+  - associates
+  - OCG
+- id: 253-27
+  description: An individual’s gambling account shows a significant volume of transfers
+    in and out, with suspicion of receiving fraudulent credits.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - gambling account
+  - fraudulent credits
+  - transfers in and out
+- id: 253-29
+  description: Transaction monitoring generates alerts for changes in customer behaviour,
+    breaching pre-determined thresholds, or hitting red flags for known typologies
+    such as County Lines drug dealing.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  issued_date: 2019-08
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/333-sars-in-action-magazine-august-2019/file
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns:
+  - structuring
+  - rapid_fund_movement
+  key_terms:
+  - transaction monitoring
+  - pre-determined thresholds
+  - County Lines

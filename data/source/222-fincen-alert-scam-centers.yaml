@@ -1,0 +1,469 @@
+- id: 222-fincen-alert-scam-centers-01
+  description: A customer states that they were directed by a purported representative
+    of law enforcement or a government agency to make a payment using digital assets,
+    to conduct an international wire transfer, or to purchase precious metals or gift
+    cards.
+  product_types:
+  - crypto
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - digital assets
+  - international wire transfer
+  - precious metals
+  - gift cards
+- id: 222-fincen-alert-scam-centers-02
+  description: A customer states that a payment is intended to retain a law firm or
+    other entity to recover funds lost to fraud but lacks documentation demonstrating
+    that the service is legitimate.
+  product_types:
+  - wire_transfer
+  - crypto
+  - depository
+  industry_types:
+  - legal_accounting
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - recovery scam
+  - law firm
+  - documentation
+- id: 222-fincen-alert-scam-centers-03
+  description: A customer withdraws funds from an investment or retirement account
+    to purchase gold from a precious metals dealer and indicates that they have been
+    instructed to hand the gold to a courier.
+  product_types:
+  - securities
+  - depository
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - investment account
+  - retirement account
+  - gold
+  - courier
+- id: 222-fincen-alert-scam-centers-04
+  description: Open-source information shows that a Money Service Business (MSB) receiving
+    customer funds has claimed to be “approved by FinCEN.”
+  product_types:
+  - money_transmitter
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns: []
+  key_terms:
+  - FinCEN
+  - MSB
+  - approved by FinCEN
+- id: 222-fincen-alert-scam-centers-05
+  description: Open-source information shows that a digital asset exchange receiving
+    customer funds is advertising services “with no KYC” or a lack of compliance measures.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: low
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns: []
+  key_terms:
+  - KYC
+  - digital asset exchange
+- id: 222-fincen-alert-scam-centers-06
+  description: A customer conducts transactions involving a digital asset token issued
+    by or associated with a guarantee marketplace and fails to provide documentation
+    regarding the source of funds.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - guarantee marketplace
+  - source of funds
+  - digital asset token
+- id: 222-fincen-alert-scam-centers-07
+  description: Open-source information indicates that a payment service provider operating
+    a guarantee marketplace changed its name, branding, website, or other features
+    of its public presentation in an apparent attempt to mask its association with
+    a guarantee marketplace that has been subject to law enforcement action, takedowns
+    by service providers, or negative news.
+  product_types:
+  - money_transmitter
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - layering
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - guarantee marketplace
+  - branding
+  - website
+  - law enforcement action
+- id: 222-fincen-alert-scam-centers-08
+  description: A customer of a digital asset exchange transacts with an unattributed
+    cluster of digital asset addresses, which blockchain analysis flags as sharing
+    blockchain infrastructure with a known guarantee marketplace.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - nested_account_activity
+  key_terms:
+  - blockchain analysis
+  - digital asset addresses
+  - guarantee marketplace
+- id: 222-fincen-alert-scam-centers-09
+  description: Blockchain analysis indicates that a customer has transacted directly
+    or indirectly with a digital asset address attributed to a guarantee marketplace
+    and the transactions have no apparent economic, business, or lawful purpose.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - guarantee marketplace
+  - no apparent economic purpose
+  - blockchain analysis
+- id: 222-fincen-alert-scam-centers-10
+  description: A payment service provider that offers digital asset exchange services
+    appears to operate in Burma, Cambodia, or Laos, and appears to take measures to
+    obfuscate its location or corporate structure.
+  product_types:
+  - crypto
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - south_east_asia
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - layering
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - shell_company_usage
+  - identity_misrepresentation
+  key_terms:
+  - digital asset exchange
+  - Burma
+  - Cambodia
+  - Laos
+- id: 222-fincen-alert-scam-centers-11
+  description: A customer of a digital asset exchange receives stablecoin transactions
+    that originate from centralized digital asset exchanges that operate in the United
+    States and undergo transaction patterns associated with on-chain laundering techniques.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  - cryptocurrency_mixing
+  key_terms:
+  - stablecoin
+  - on-chain laundering
+  - digital asset exchange
+- id: 222-fincen-alert-scam-centers-12
+  description: Open-source information indicates that a digital asset address used
+    by a customer was posted on a messaging platform in proximity to Chinese-language
+    terms related to money laundering.
+  product_types:
+  - crypto
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - east_asia
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: low
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  key_terms:
+  - digital asset address
+  - messaging platform
+  - money laundering
+- id: 222-fincen-alert-scam-centers-13
+  description: A customer of a DeFi service receives deposits from a wallet that aggregates
+    suspected scam proceeds and uses the DeFi service to move the proceeds into a
+    different digital asset or blockchain.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - rapid_fund_movement
+  key_terms:
+  - DeFi
+  - wallet
+  - blockchain
+  - scam proceeds
+- id: 222-fincen-alert-scam-centers-14
+  description: A customer conducts substantial transactions using a stablecoin whose
+    issuer advertises that it does not cooperate with law enforcement or that its
+    stablecoin cannot be seized or frozen.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - stablecoin
+  - law enforcement
+  - seized or frozen
+- id: 222-fincen-alert-scam-centers-15
+  description: A customer of a digital asset exchange appears to be using liquidity
+    provided by the digital asset exchange to execute large numbers of offsetting
+    transactions consistent with operation as an OTC broker or P2P exchanger.
+  product_types:
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - round_tripping
+  - nested_account_activity
+  key_terms:
+  - OTC broker
+  - P2P exchanger
+  - liquidity
+  - offsetting transactions
+- id: 222-fincen-alert-scam-centers-16
+  description: A customer receives stablecoin deposits from a DeFi service that lacks
+    AML/CFT controls, converts the funds to fiat currency, and withdraws the proceeds.
+  product_types:
+  - crypto
+  - depository
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: FinCEN Alert on Money Laundering Activity Associated with Digital
+    Asset Investment Scam Centers
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-03'
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/777-video-text-ret-video-1-transcript/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - layering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - stablecoin
+  - DeFi
+  - AML/CFT controls
+  - fiat currency

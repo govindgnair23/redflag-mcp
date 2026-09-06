@@ -1,0 +1,398 @@
+- id: 242-01
+  description: An account shows excessive levels of cash, faster payments, and international
+    transfer funding not in keeping with the customer profile, indicating it may be
+    used as a mule account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - money_mule_activity
+  - unusual_international_wires
+  key_terms:
+  - mule account
+  - cash
+  - faster payments
+  - international transfer
+- id: 242-02
+  description: A business account receives fraudulently obtained loans, and the funds
+    are then dispersed to newly opened accounts held by various individuals and entities.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - shell_company_usage
+  key_terms:
+  - fraudulently obtained loans
+  - newly opened accounts
+  - business account
+- id: 242-03
+  description: A vulnerable teenager's account is used to receive funds from third
+    parties which are immediately withdrawn.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - third parties
+  - immediately withdrawn
+  - vulnerable person
+- id: 242-04
+  description: Online sales platforms or social media are used to sell wildlife/endangered
+    species, with products traded under false names or narratives.
+  product_types:
+  - depository
+  industry_types:
+  - online_marketplace
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  - east_asia
+  - domestic_us
+  - caribbean
+  - west_africa
+  - middle_east
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - online sales platforms
+  - social media
+  - false names
+  - narratives
+- id: 242-11
+  description: A customer uses crypto assets as a value transfer mechanism within informal
+    value transfer system (IVTS) networks.
+  product_types:
+  - crypto
+  - money_transmitter
+  - remittance
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - middle_east
+  - south_asia
+  - east_asia
+  - domestic_us
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  key_terms:
+  - crypto assets
+  - IVTS
+  - value transfer mechanism
+- id: 242-12
+  description: A complicit over-the-counter (OTC) crypto asset broker acts as a middleman
+    between criminals and regulated crypto asset exchanges, nesting illicit flows.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - nested_account_activity
+  - third_party_payments
+  key_terms:
+  - OTC
+  - middlemen
+  - regulated crypto asset exchanges
+- id: 242-13
+  description: Value is moved across multiple jurisdictions, financial systems, and
+    corporate entities to deliberately obfuscate the trail and frustrate asset tracing.
+  product_types:
+  - wire_transfer
+  - correspondent_banking
+  - securities
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - canada
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - corruption_and_bribery
+  - organized_crime_proceeds
+  transaction_patterns:
+  - wire_transfer_chains
+  - nested_account_activity
+  - shell_company_usage
+  key_terms:
+  - multiple jurisdictions
+  - hide and store value
+  - corporate entities
+- id: 242-14
+  description: Cash is smuggled via 'Roll-On, Roll-Off' freight, hidden within goods
+    or concealed in the vehicle itself, allowing the movement of large volumes.
+  product_types:
+  - trade_finance
+  - currency_exchange
+  industry_types:
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - southwest_border
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - bulk_cash_smuggling
+  key_terms:
+  - Roll-On, Roll-Off
+  - freight
+  - concealment
+  - cash
+- id: 242-17
+  description: Cash from different predicate offences is pooled together in an account
+    before being laundered.
+  product_types:
+  - depository
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - nested_account_activity
+  key_terms:
+  - pooled together
+  - predicate offences
+- id: 242-18
+  description: Wildlife products are smuggled alongside legitimate goods within a container
+    load (e.g. of Chinese medicines).
+  product_types:
+  - trade_finance
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - east_asia
+  - uk_eu
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - container load
+  - Chinese medicines
+  - legitimate ones
+- id: 242-19
+  description: Items are misdescribed on social media or online retail platforms to
+    facilitate illegal wildlife trade.
+  product_types:
+  - depository
+  industry_types:
+  - online_marketplace
+  - retail
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - east_asia
+  - uk_eu
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - misdescribe
+  - social media
+  - online retail platforms
+- id: 242-20
+  description: Account activity shows links to freight or courier services, with international
+    payments or references consistent with illicit trade.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  - east_asia
+  - middle_east
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: low
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - freight
+  - courier services
+  - international payments
+- id: 242-21
+  description: Funds are broken down into smaller, more frequent payments, and some
+    transactions are made in cash, evading detection and concealing the true origins
+    of the funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 13 - November 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-11
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/578-sars-in-action-november-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - structuring
+  - cash_intensive_behavior
+  key_terms:
+  - smaller and more frequent payments
+  - cash
+  - true origins

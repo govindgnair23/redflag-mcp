@@ -1,0 +1,505 @@
+- id: 273-01
+  description: Funds handled by different companies are not being used for the purpose
+    expected by their clients.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - funds not used for expected purpose
+  - client funds
+- id: 273-02
+  description: The nature of a business cannot be identified and there is no online
+    presence for it.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - no online presence
+  - business could not be identified
+- id: 273-03
+  description: A customer receives cash deposits from multiple UK locations within
+    a short period from unknown sources.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - multiple locations
+  - unknown sources
+- id: 273-04
+  description: A customer has a significant turnover in their account, much of it made
+    in cash deposits, which is inconsistent with the customer’s financial profile.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - account turnover
+  - cash deposits
+  - financial profile
+- id: 273-05
+  description: The account holder is a foreign national student with no legitimate
+    source of income to support the account activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - student
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - no legitimate source of income
+  - student
+- id: 273-06
+  description: A customer uses an Informal Value Transfer System (IVTS) to evade the
+    controls of their home country and transfer money to the UK.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - unusual_international_wires
+  key_terms:
+  - Informal Value Transfer System
+  - IVTS
+  - unregistered MSB
+- id: 273-08
+  description: A UK bank account sees large amounts of funds passing through it which
+    are then dispersed to third parties; the activity does not match the account holder’s
+    profile.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  key_terms:
+  - funds passing through
+  - dispersed to third parties
+  - profile mismatch
+- id: 273-09
+  description: Large amounts of cash are received and transferred out from a business
+    account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - business account
+  - cash received
+  - transferred out
+- id: 273-10
+  description: An account receives funds from an unidentified or unexplained property
+    sale.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  - real_estate_money_laundering
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - property sale
+  - unidentified
+- id: 273-11
+  description: A UK bank account is used as an intermediary for passing funds, with
+    large amounts of cash being deposited into it.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - cash_intensive_behavior
+  key_terms:
+  - intermediary bank
+  - passing funds
+  - cash funds
+- id: 273-12
+  description: An account’s turnover is higher than expected for the customer’s profile.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - account turnover
+  - customer profile
+- id: 273-13
+  description: An account’s turnover is more than expected for the customer’s profile
+    and there are unusual overseas trading links, with concerns over the validity of
+    payments passing through the account.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - trade_based_money_laundering
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - invoice_mismatch
+  key_terms:
+  - overseas trading links
+  - validity of payments
+  - account turnover
+- id: 273-14
+  description: A group of subjects are involved in the movement of cash to and from
+    overseas.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - bulk_cash_smuggling
+  - unusual_international_wires
+  key_terms:
+  - movement of cash
+  - overseas
+- id: 273-15
+  description: A customer is used as an unwitting mule after cheques are lodged into
+    their account and then withdrawn in cash.
+  product_types:
+  - check_cashing
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - scam_proceeds
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - money_mule_activity
+  - cash_intensive_behavior
+  key_terms:
+  - unwitting mule
+  - cheques
+  - withdrawn in cash
+- id: 273-16
+  description: A customer is used as an unwitting money mule after becoming the victim
+    of a romance scam.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - scam_proceeds
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - money_mule_activity
+  - third_party_payments
+  key_terms:
+  - money mule
+  - romance scam
+- id: 273-17
+  description: A customer is targeted as a victim of fraud and persuaded to transfer
+    funds into various accounts under the pretence of protecting money from fraud (e.g.
+    a bank official or vishing scam).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet January 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2021-01
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/491-sars-reporter-booklet-january-2021/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - third_party_payments
+  - account_takeover
+  key_terms:
+  - vishing scam
+  - bank official
+  - transfer funds

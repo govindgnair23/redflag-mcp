@@ -1,0 +1,138 @@
+- id: 238-02
+  description: Transactions flow to and from unlicensed gambling websites that do not
+    hold the required operating licence.
+  product_types:
+  - depository
+  - prepaid
+  - credit_card
+  - money_transmitter
+  - wire_transfer
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA publication), 23rd issue, December
+    2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/689-sars-in-action-issue-23/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - unlicensed gambling websites
+  - SARs
+  - Gamstop
+- id: 238-04
+  description: An account is receiving funds or payments believed or suspected to be
+    proceeds of counterfeit currency criminality, such as supplying or making counterfeit
+    banknotes.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA publication), 23rd issue, December
+    2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/689-sars-in-action-issue-23/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - counterfeit currency
+  - bank notes
+  - coins
+- id: 238-05
+  description: A customer’s account sees multiple payments, many of which are in cash,
+    which are then paid away rapidly to another account, with no typical salary or
+    wage payments and no ordinary living expenses.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA publication), 23rd issue, December
+    2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/689-sars-in-action-issue-23/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - cash
+  - salary
+  - wage payments
+  - expenses
+- id: 238-06
+  description: An account shows multiple suspicious transactions, including large transfers
+    towards retail merchants, which together indicate an intent to rapidly disperse
+    funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - credit_card
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA publication), 23rd issue, December
+    2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2023-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/689-sars-in-action-issue-23/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - large transfers
+  - retail merchants

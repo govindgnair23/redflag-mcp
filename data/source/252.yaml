@@ -1,0 +1,399 @@
+- id: 252-01
+  description: A customer is an individual that uses a Social Security Number (SSN)
+    that, upon verification, does not match or is inconsistent with the Social Security
+    Administration's (SSA) records.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - SSN
+  - SSA
+  - identity verification
+- id: 252-02
+  description: A customer is an individual that opens an account using a non-U.S. passport
+    or ITIN claiming to be self-employed or operating a small business in the agriculture,
+    construction, domestic service, hospitality, or staffing industries and is receiving
+    a significant amount and volume of recurring check deposits from multiple companies
+    before either making a significant and repetitive amount of structured cash withdrawals
+    or issuing low-dollar checks to multiple individuals.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  - food_service
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  - third_party_payments
+  key_terms:
+  - passport
+  - ITIN
+  - check deposits
+  - structured cash withdrawals
+  - low-dollar checks
+- id: 252-03
+  description: A customer is an individual that cashes a significant volume of checks
+    drawn on accounts owned by companies in the agriculture, construction, domestic
+    service, hospitality, or staffing industries on a recurring basis at a Money Service
+    Business (MSB), including a check casher.
+  product_types:
+  - check_cashing
+  - money_transmitter
+  industry_types:
+  - construction
+  - food_service
+  customer_profiles:
+  - individual_consumer
+  - migrant_worker
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - check cashing
+  - MSB
+  - check casher
+  - labor-intensive industries
+- id: 252-04
+  description: A foreign national becomes a victim of modern slavery after being duped
+    via a romance scam to travel to another country.
+  product_types:
+  - wire_transfer
+  - remittance
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - foreign_individual
+  - migrant_worker
+  geographic_footprints:
+  - uk_eu
+  - domestic_us
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - human_trafficking_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - modern slavery
+  - romance scam
+- id: 252-06
+  description: An individual alters account details to divert a large amount of salary
+    payments into other accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  - payroll
+  industry_types:
+  - payroll
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - salary payments
+  - account details
+- id: 252-07
+  description: Once diverted payments are received into these accounts, the funds are
+    withdrawn as cash from ATMs.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - ATM
+  - cash withdrawals
+- id: 252-08
+  description: Third parties pay cash into a customer’s account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - third parties
+- id: 252-09
+  description: Shell companies based overseas are used to disguise the origin and non-availability
+    of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - shell_company_usage
+  - layering
+  transaction_patterns:
+  - shell_company_usage
+  - pass_through_account_activity
+  key_terms:
+  - shell companies
+  - overseas
+  - origin of funds
+- id: 252-12
+  description: Legitimate limited companies are used to conceal illegal activity, or
+    shell companies are set up purely to distance individuals from the offences.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - limited companies
+  - shell companies
+  - conceal the illegal activity
+- id: 252-15
+  description: A mandate fraud is perpetrated against a public body (e.g. an NHS Trust),
+    with a large sum diverted.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - healthcare
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - mandate fraud
+  - NHS Trust
+- id: 252-16
+  description: Funds intended for a genuine contractor (e.g. an NHS contractor) are
+    diverted to another company’s account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - NHS contractor
+  - diverted
+  - company’s account
+- id: 252-17
+  description: The bulk of the funds is transferred onto two other accounts before
+    being dissipated further.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  - wire_transfer_chains
+  key_terms:
+  - dissipated further
+  - two other accounts
+- id: 252-23
+  description: Cash deposits are made via retail store cash-in services (e.g. Tesco
+    stores) rather than at a bank branch.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  - cash_intensive_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - Tesco stores
+- id: 252-24
+  description: A customer or syndicate uses online gambling with spread or match betting
+    to launder funds.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/391-sars-in-action-november-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - online gambling
+  - spread betting
+  - match betting

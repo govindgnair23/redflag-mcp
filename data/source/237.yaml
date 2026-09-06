@@ -1,0 +1,63 @@
+- id: 237-01
+  description: A series of large credit transfers are made into an e-money payment
+    account that does not correspond with the customer’s previous activity, or with
+    the behaviour expected of the customer’s occupation and lifestyle.
+  product_types:
+  - prepaid
+  - depository
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 24
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/698-sars-in-action-issue-24-january-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - large credit transfers
+  - e-money payment account
+  - transactional monitoring
+- id: 237-02
+  description: A customer has a series of large credit transfers into an e-money payment
+    account, and the customer refuses to answer questions about the funds.
+  product_types:
+  - prepaid
+  - depository
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: UKFIU SARs in Action, Issue 24
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: '2024'
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/698-sars-in-action-issue-24-january-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - credit transfers
+  - e-money payment account
+  - refused to answer questions

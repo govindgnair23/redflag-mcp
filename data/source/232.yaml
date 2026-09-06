@@ -1,0 +1,472 @@
+- id: 232-02
+  description: Multiple companies are associated with missing or opaque Person(s) of
+    Significant Control (PSC), obscuring the beneficial owner.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - PSC
+  - beneficial owner
+  - opaque ownership
+- id: 232-03
+  description: Multiple companies share similar naming-convention patterns (e.g. sequential
+    or templated names), suggesting mass incorporation by the same party.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: low
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - naming convention
+- id: 232-04
+  description: Multiple companies are linked to a large range of different and varied
+    Standard Industrial Classification (SIC) codes, inconsistent with genuine trading.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - SIC codes
+- id: 232-05
+  description: A company is registered at a residential address or via virtual office
+    provision (mail forwarding, no face-to-face contact).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - virtual office
+  - mail forwarding
+- id: 232-06
+  description: An account sees significant movement of funds on the company's incorporation
+    date or shortly after.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - incorporation date
+- id: 232-07
+  description: A company's director(s) are of an atypical age for a company director
+    (very young or very old), consistent with the use of a nominee.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: low
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns: []
+  key_terms:
+  - age
+- id: 232-08
+  description: Adverse media (negative news) is identified against the customer or
+    connected parties.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - negative news
+- id: 232-09
+  description: The customer or its counterparties are connected to high-risk jurisdictions.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - high-risk jurisdictions
+- id: 232-14
+  description: A hydroponics retailer's account shows large cash deposits inconsistent
+    with legitimate trade, consistent with laundering criminal cash from drug cultivation.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  - manufacturing
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - hydroponics
+  - criminal cash
+- id: 232-15
+  description: A customer's account contains multiple cash credits of unknown origin.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - fraud_proceeds
+  - narcotics_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash credits
+  - unknown origin
+- id: 232-16
+  description: A customer who operates an online retail business is purchasing goods
+    from their own business, consistent with round-tripping to create the appearance
+    of trade.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - online_marketplace
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - round_tripping
+  key_terms:
+  - online retail
+  - own business
+- id: 232-17
+  description: Significant cash deposits are made, including large volumes of Scottish
+    notes deposited at a single branch over a short period.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: high
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - cash_deposits_below_threshold
+  key_terms:
+  - cash deposits
+  - Scottish notes
+- id: 232-18
+  description: A customer's account shows patterns consistent with criminal underground
+    banking or informal value transfer, such as offsetting third-party payments with
+    no formal remittance record.
+  product_types:
+  - money_transmitter
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  key_terms:
+  - underground banking
+- id: 232-19
+  description: International students from countries with cash export restrictions deposit
+    or move large amounts of cash, potentially to circumvent those restrictions.
+  product_types:
+  - depository
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - student
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - bulk_cash_smuggling
+  key_terms:
+  - cash export restrictions
+  - international students
+- id: 232-20
+  description: A customer is arrested and under investigation by a law enforcement
+    agency for drug offences, suggesting account funds may be criminal proceeds.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: low
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns: []
+  key_terms:
+  - drug offences
+- id: 232-23
+  description: A customer in the plastic waste sector shows trade-based money laundering
+    (TBML) indicators such as mismatched invoices and trade documents against cross-border
+    shipments.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - canada
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - invoice_mismatch
+  key_terms:
+  - TBML
+  - plastic waste sector
+- id: 232-24
+  description: An account receives proceeds from online child exploitation, such as
+    payments for streamed or sold content.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - canada
+  - uk_eu
+  regulatory_source: SARs in Action (UKFIU/NCA), Issue 29
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-12
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/737-sars-in-action-issue-29/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - child exploitation online

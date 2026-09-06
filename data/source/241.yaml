@@ -1,0 +1,259 @@
+- id: 241-02
+  description: A customer or entity is associated with sanctioned individuals or companies
+    on a sanctions list.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - sanctioned individuals
+  - sanctioned companies
+  - sanctions list
+- id: 241-05
+  description: A Politically Exposed Person (PEP) or corrupt elite seeks to divest
+    UK assets such as property or securities, potentially to move value ahead of sanctions
+    or investigation.
+  product_types:
+  - depository
+  - securities
+  - private_banking
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - politically_exposed_person
+  - high_net_worth_individual
+  geographic_footprints:
+  - uk_eu
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - corrupt elites
+  - UK assets
+- id: 241-19
+  description: A Politically Exposed Person (PEP) holds assets that do not match their
+    known lawful income.
+  product_types:
+  - depository
+  - securities
+  - private_banking
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - politically_exposed_person
+  - high_net_worth_individual
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - PEPs
+  - assets
+  - income
+- id: 241-20
+  description: An account holds funds suspected to have originated from unlawful conduct.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - unlawful conduct
+  - bank and building society accounts
+- id: 241-22
+  description: A customer deals with a frozen asset or sends funds or economic resources
+    to a designated person (DP) subject to sanctions.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - frozen asset
+  - designated person
+  - DP
+- id: 241-23
+  description: A person moves or divests assets shortly before being designated or
+    sanctioned.
+  product_types:
+  - depository
+  - securities
+  - private_banking
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - politically_exposed_person
+  - high_net_worth_individual
+  geographic_footprints:
+  - uk_eu
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - real_estate_transactions
+  key_terms:
+  - sanctioned individuals
+  - designated
+- id: 241-24
+  description: A sanctioned individual transfers assets to family members to evade
+    the effect of the designation.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - third_party_payments
+  - shell_company_usage
+  key_terms:
+  - sanctioned individuals
+  - family members
+  - transferred assets
+- id: 241-25
+  description: Professional enablers (e.g. lawyers, accountants) act on behalf of designated
+    persons (DPs) to hold or move their assets.
+  product_types:
+  - depository
+  - wire_transfer
+  - securities
+  - private_banking
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  - ofac_sanctioned_country
+  - sanctioned_jurisdiction
+  regulatory_source: SARs In Action, Issue 15 - March 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2022-03
+  risk_level: low
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/591-sars-in-action-march-2022/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - third_party_payments
+  - shell_company_usage
+  key_terms:
+  - DPs
+  - professional enablers

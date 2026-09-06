@@ -1,0 +1,570 @@
+- id: 274-01
+  description: A customer changes their name and opens multiple business bank accounts
+    which see millions of pounds deposited, sometimes quickly transferred out to third
+    parties.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - DAML
+  - business bank accounts
+  - third parties
+- id: 274-02
+  description: An account holder is a principal member of an organised crime group
+    (OCG) and has used false identification documents to open accounts.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false identification documents
+  - open accounts
+  - OCG
+- id: 274-03
+  description: Vulnerable youths are targeted via social media to pass their account
+    details on to others and to allow fraudulent funds to pass through their accounts.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - pass_through_account_activity
+  key_terms:
+  - social media
+  - account details
+  - fraudulent funds
+- id: 274-04
+  description: An organised crime group places cash sums into the banking system, moves
+    them around various bank accounts, and then pays them into cryptocurrency.
+  product_types:
+  - depository
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - cash sums
+  - banking system
+  - cryptocurrency
+- id: 274-05
+  description: A customer obtains substantial amounts of cash through an account using
+    an illegal money service business (MSB).
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - illegal money service business
+  - MSB
+  - cash
+- id: 274-06
+  description: The volume of cash activity is excessively high and out of line with
+    the customer’s anticipated means.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash activity
+  - anticipated means
+- id: 274-09
+  description: A current account is funded by multiple third-party credits and cash
+    lodgements.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - current account
+  - third party credits
+  - cash lodgements
+- id: 274-10
+  description: A customer’s stated rationale for the activity does not correspond with
+    what is seen in the accounts.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - rationale
+  - accounts
+- id: 274-11
+  description: An account shows unusual fund activity despite the customer stating they
+    are in receipt of benefits.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - government_benefit_program_sponsor
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - benefits
+  - unusual fund activity
+- id: 274-12
+  description: Payments are made into a customer’s personal account from a business
+    account, raising suspicion when funds are then requested for release.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - online account
+  - personal account
+  - business account
+- id: 274-13
+  description: A customer has transferred a large sum in unauthorised credits.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unauthorised credits
+- id: 274-14
+  description: A customer seeks to withdraw a large sum and has previous convictions
+    linked to fraud.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - withdraw
+  - fraud
+- id: 274-15
+  description: An organised crime group conspires to defraud victims using mechanisms
+    including hijacking social media accounts, intercepting emails, and providing bank
+    account details for funds to be paid into.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  - third_party_payments
+  key_terms:
+  - social media accounts
+  - intercepting emails
+  - bank account details
+- id: 274-16
+  description: A customer’s account activity does not correlate with their background,
+    and the customer has previous convictions linked to embezzlement.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - account activity
+  - background
+  - embezzlement
+- id: 274-17
+  description: There are concerns about the unknown origin of funds entering an account,
+    indicative of fraudulent activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - unknown origin of funds
+  - account
+- id: 274-18
+  description: An account holder has no knowledge of the funds being paid into their
+    account, consistent with an unwitting mule or account takeover.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - no knowledge
+  - funds
+  - account
+- id: 274-19
+  description: Funds have been fraudulently withdrawn from a customer’s account by a
+    relative.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  - third_party_payments
+  key_terms:
+  - fraudulently withdrawn
+  - relative
+- id: 274-20
+  description: A customer opens, or attempts to open, bank accounts in false names.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false names
+  - bank accounts
+- id: 274-21
+  description: A customer has access to false identity documents.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family: []
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false ID documents
+- id: 274-23
+  description: Activity on a business account spikes suddenly and is not consistent
+    with the reasons given for opening the account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/471-sars-reporter-booklet-july-2020/file
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - business account
+  - spiked suddenly
+  - opening the account

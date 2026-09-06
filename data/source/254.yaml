@@ -1,0 +1,85 @@
+- id: 254-01
+  description: A customer sends a number of money transfers totalling a large sum to
+    receivers overseas within just a few months, inconsistent with their known profile.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/268-ukfiu-sars-in-action-march-2019/file
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - money transfers
+  - receivers overseas
+- id: 254-03
+  description: An elderly customer makes a number of money transfers totalling a significant
+    sum to receivers in various countries, consistent with a possible scam or financial
+    abuse.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/268-ukfiu-sars-in-action-march-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - money transfers
+  - receivers in various countries
+  - elderly
+- id: 254-04
+  description: A customer sends funds overseas after communicating with an individual
+    they met online, consistent with an online romance or investment scam.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2019-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/268-ukfiu-sars-in-action-march-2019/file
+  typology_family:
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - overseas scam
+  - online

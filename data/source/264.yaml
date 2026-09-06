@@ -1,0 +1,466 @@
+- id: 264-01
+  description: High-value cash deposits are made into a recently opened account and
+    the customer is unable to provide sufficient proof of the origin of these funds.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - origin of funds
+  - proof of funds
+- id: 264-02
+  description: A customer acts as a money mule to launder the proceeds of crime, receiving
+    funds and rapidly passing them on.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - rapid_fund_movement
+  key_terms:
+  - money mule
+  - proceeds of crime
+- id: 264-03
+  description: Multiple accounts held by a business frequently receive high-value payments
+    that are transferred in and out of the accounts, indicating potential money laundering.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - high value payments
+  - in and out of the accounts
+- id: 264-04
+  description: A customer deposits high values of cash and refuses to address the reporter’s
+    due diligence queries about the source.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - due diligence queries
+- id: 264-05
+  description: An account appears to have been set up by an existing customer using
+    alternative personal details, for example to evade linkage or account restrictions.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - alternative details
+  - account
+- id: 264-06
+  description: The primary source of funds is frequent high-value transfers of unknown
+    origin which are transferred out of the customer’s account soon after receipt.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - high value transfers
+  - unknown origin
+- id: 264-07
+  description: A customer’s account shows rapid turnover, with funds received and paid
+    away again shortly afterwards.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - rapid turnover of funds
+- id: 264-08
+  description: Multiple linked business accounts receive large credits that are rapidly
+    dispersed to third parties domestically and to overseas businesses.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - large credits
+  - third parties
+  - overseas businesses
+- id: 264-10
+  description: Funds in a customer’s account originate from email interception (business
+    email compromise) fraud.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - fraud_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - email interception fraud
+- id: 264-11
+  description: Accounts are funded by cash and other monies from sources that do not
+    match the customers’ profiles.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - sources did not match profiles
+- id: 264-12
+  description: The size and frequency of monies received by a business account do not
+    reflect the business profile, suggesting layering of funds for the purpose of money
+    laundering.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - business profile
+  - layering of funds
+- id: 264-13
+  description: High volumes of cash are deposited to a business account over a period
+    of several months, disproportionate to the stated business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - tax_evasion
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - high volumes of cash
+  - business account
+- id: 264-14
+  description: Large cash deposits inconsistent with the nature of the business are
+    transferred in quick succession to linked subjects.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - tax_evasion
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - cash deposits
+  - linked subjects
+- id: 264-15
+  description: A customer uses cash from an unknown source to purchase goods they are
+    not licensed to handle, using the purchase to clean the cash.
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - retail
+  - import_export
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - trade_document_manipulation
+  key_terms:
+  - unknown source
+  - clean the cash
+  - licensed to handle
+- id: 264-16
+  description: Large-value funds are paid into a business account that are not consistent
+    with the business profile and include payments from firms unrelated to the business.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - large value funds
+  - business profile
+  - unrelated firms
+- id: 264-17
+  description: A business account is opened without the knowledge of the sole owner,
+    whose identity has been misused.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet February 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-02
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/700-sars-reporter-booklet-february-2024/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - opened without their knowledge

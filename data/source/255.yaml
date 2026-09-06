@@ -1,0 +1,668 @@
+- id: 255-01
+  description: A large third-party credit is paid into a business account which is
+    not linked to, or compatible with, the services provided by the business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - third-party credit
+  - business account
+  - layering
+- id: 255-02
+  description: Multiple subjects fraudulently seek refunds on tickets.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - refunds on tickets
+  - fraudulent refunds
+- id: 255-03
+  description: Activity on an account linked to a vehicle sales business indicates
+    potential money laundering, with funds received from multiple counterparties.
+  product_types:
+  - depository
+  industry_types:
+  - auto_sales
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - multiple counterparties
+  - vehicle sales business
+- id: 255-04
+  description: A business account receives large payments from companies with little
+    or no online presence, alongside discrepancies in the stated business profile,
+    handwritten invoices, and weaknesses identified during verification checks.
+  product_types:
+  - depository
+  industry_types:
+  - auto_sales
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  - identity_misrepresentation
+  key_terms:
+  - handwritten invoices
+  - business profile
+  - verification checks
+- id: 255-05
+  description: Linked customers’ activity is inconsistent with their profiles, including
+    frequent disputed refund claims typically submitted in clusters, with funds credited
+    back to accounts pending investigation.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - disputed refund claims
+  - clusters
+  - funds credited back
+- id: 255-06
+  description: A customer’s bank account receives excessive third-party credits in
+    a relatively short period, not in line with their previous account activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - excessive third-party credits
+  - previous account activity
+- id: 255-07
+  description: A business account shows unknown third-party payments, the dispersal
+    of Bounce Back Loan funds, and large debits to individuals with no clear business
+    purpose.
+  product_types:
+  - depository
+  industry_types:
+  - small_business
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - Bounce Back Loan
+  - unknown third-party payments
+  - large debits
+- id: 255-08
+  description: A business account shows long dormant periods followed by sudden high-value
+    transactions.
+  product_types:
+  - depository
+  industry_types:
+  - small_business
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - dormant periods
+  - high-value transactions
+- id: 255-09
+  description: A fraud review highlights potential first-party fraud following concerns
+    that the customer has been misusing their account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  key_terms:
+  - first-party fraud
+  - misusing their account
+- id: 255-10
+  description: A business account lacks any online presence, which is inconsistent
+    with the large amount of funds seen passing through it.
+  product_types:
+  - depository
+  industry_types:
+  - small_business
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - online presence
+  - business account
+- id: 255-11
+  description: A business is inactive and the customer has used a false ID and address
+    to legitimise the dormant business.
+  product_types:
+  - depository
+  industry_types:
+  - small_business
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  key_terms:
+  - false ID
+  - false address
+  - dormant business
+- id: 255-12
+  description: Transaction monitoring of a customer’s accounts identifies activity
+    inconsistent with their profile, raising concerns of bribery and corruption linked
+    to the customer’s employment with a law enforcement agency.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - government_official
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - transaction monitoring
+  - inconsistent with profile
+  - bribery and corruption
+- id: 255-13
+  description: Unusually high incoming funds are seen in a customer’s account that
+    do not align with their known income or role.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - government_official
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - incoming funds
+  - known income
+  - role
+- id: 255-14
+  description: A subject abuses their position as a power of attorney to control significant
+    funds belonging to vulnerable individuals.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - elder_financial_exploitation
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - power of attorney
+  - vulnerable individuals
+- id: 255-15
+  description: An account shows high-value transactions inconsistent with the customer’s
+    known income, the use of multiple payment cards, and large volumes of funds received
+    from pension providers and wealth management firms.
+  product_types:
+  - depository
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - elder_financial_exploitation
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - multiple payment cards
+  - pension providers
+  - wealth management firms
+- id: 255-16
+  description: Cash withdrawn from a business account is used to purchase recyclable
+    material from local businesses and residential sellers.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - cash withdrawn
+  - recyclable material
+  - local businesses
+  - residential sellers
+- id: 255-17
+  description: The customer does not hold the required licence to operate as a scrap
+    merchant.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - scrap merchant
+  - required licence
+- id: 255-18
+  description: A business account receives very large payments from a single recycling
+    company.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - single recycling company
+- id: 255-19
+  description: Business accounts show large cash deposits alongside debit transactions
+    to adult sex-work websites.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - cash deposits
+  - adult sex work websites
+- id: 255-20
+  description: The businesses advertise massage services with implied sexual services.
+  product_types:
+  - depository
+  industry_types:
+  - adult_entertainment
+  - travel_hospitality
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns: []
+  key_terms:
+  - massage services
+  - implied sexual services
+- id: 255-21
+  description: Premises funded through the account are being operated as brothels.
+  product_types:
+  - depository
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns: []
+  key_terms:
+  - brothels
+- id: 255-22
+  description: The absence of wages being paid to workers raises concerns of controlled
+    prostitution.
+  product_types:
+  - depository
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns: []
+  key_terms:
+  - wages
+  - controlled prostitution
+- id: 255-23
+  description: Several individuals working at the premises do not have the right to
+    work in the UK.
+  product_types:
+  - depository
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - foreign_individual
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-06
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/817-sars-reporter-booklet-june-2026/file.pdf
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns: []
+  key_terms:
+  - right to work
+  - UK

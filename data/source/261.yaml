@@ -1,0 +1,424 @@
+- id: 261-01
+  description: A business customer has little evidence of the business being legitimate,
+    cash deposited in small amounts in an apparent effort to avoid detection, and
+    their business exceeding their expected yearly turnover within a few months.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - cash deposits
+  - expected yearly turnover
+  - business legitimacy
+- id: 261-02
+  description: A student customer is operating as a money mule, with origins of cash
+    credits entering the customer’s account unknown and rapidly transferred out following
+    deposit.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - student
+  - money_services_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - rapid_fund_movement
+  key_terms:
+  - money mule
+  - cash credits
+  - unknown origins
+- id: 261-03
+  description: An international student credits a large number of cash payments from
+    unknown origins into their account which are rapidly transferred out, exhibiting
+    behaviour atypical of a student.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - student
+  - foreign_individual
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  key_terms:
+  - money mule
+  - cash payments
+  - unknown origins
+- id: 261-04
+  description: A subject uses their account to launder the proceeds of suspected
+    illegal lotteries, with high-volume, low-value credits between third parties,
+    some recirculated between the same benefactors and beneficiaries, and a turnover
+    far exceeding expectations over a few years.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - round_tripping
+  - rapid_fund_movement
+  key_terms:
+  - illegal lotteries
+  - benefactors
+  - beneficiaries
+  - turnover
+- id: 261-06
+  description: A high value payment received into the account from an overseas company
+    is outside the usual subject profile and the overseas company is newly incorporated.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - high value payment
+  - overseas company
+  - newly incorporated
+- id: 261-07
+  description: A customer provided an invoice to account for a payment which did not
+    appear legitimate.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  - import_export
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - invoice
+  - not appear legitimate
+- id: 261-08
+  description: A recently opened company account is set up using fraudulent means
+    to pass identity verification checks.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  - shell_company_usage
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identity verification
+  - recently opened company account
+- id: 261-09
+  description: A customer’s account shows a lack of everyday spending and the quick
+    movement of money, where funds were deposited and withdrawn in cash or transferred
+    immediately.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - everyday spending
+  - deposited and withdrawn in cash
+- id: 261-10
+  description: A customer is in receipt of benefit payments with no record of employment
+    and is receiving a series of unexplained funds from external accounts.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - government_benefit_program_sponsor
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - benefit payments
+  - unexplained funds
+  - external accounts
+- id: 261-11
+  description: Several linked accounts hold combined funds of several million pounds
+    deposited over a short time period, with the funds received from overseas.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  - nested_account_activity
+  key_terms:
+  - linked accounts
+  - several million pounds
+  - overseas
+- id: 261-12
+  description: A customer’s financial activity is inconsistent with the customer’s
+    declared occupation and income.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - declared occupation
+  - income
+- id: 261-13
+  description: A customer’s account shows significant spikes in monthly credit turnover.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - monthly credit turnover
+- id: 261-14
+  description: A customer’s account shows multiple large cash deposits, often in the
+    same day.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - cash_deposits_below_threshold
+  key_terms:
+  - cash deposits
+  - same day
+- id: 261-15
+  description: A high number of businesses are registered at the customer’s address.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-01
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/738-sars-reporter-booklet-january-2025/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - registered at the customer’s address

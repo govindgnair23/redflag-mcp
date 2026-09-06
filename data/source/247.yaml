@@ -1,0 +1,398 @@
+- id: 247-01
+  description: A customer is an individual that uses a Social Security Number (SSN)
+    that, upon verification, does not match or is inconsistent with the Social Security
+    Administration's (SSA) records.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - SSN
+  - SSA
+  - identity verification
+- id: 247-02
+  description: A customer is an individual that opens an account using a non-U.S. passport
+    or ITIN claiming to be self-employed or operating a small business in the agriculture,
+    construction, domestic service, hospitality, or staffing industries and is receiving
+    a significant amount and volume of recurring check deposits from multiple companies
+    before either making a significant and repetitive amount of structured cash withdrawals
+    or issuing low-dollar checks to multiple individuals.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  - food_service
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  - third_party_payments
+  key_terms:
+  - ITIN
+  - non-U.S. passport
+  - structured cash withdrawals
+  - check deposits
+- id: 247-03
+  description: A customer is an individual that cashes a significant volume of checks
+    drawn on accounts owned by companies in the agriculture, construction, domestic
+    service, hospitality, or staffing industries on a recurring basis at a Money Service
+    Business (MSB), including a check casher.
+  product_types:
+  - check_cashing
+  - money_transmitter
+  industry_types:
+  - construction
+  - food_service
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - migrant_worker
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - check cashing
+  - MSB
+  - labor-intensive industries
+- id: 247-04
+  description: A customer receives a significant amount and volume of recurring check
+    deposits from multiple companies before either making a significant and repetitive
+    amount of structured cash withdrawals or issuing low-dollar checks to multiple
+    individuals.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  - third_party_payments
+  key_terms:
+  - check deposits
+  - structured cash withdrawals
+  - low-dollar checks
+- id: 247-09
+  description: A customer's account shows activity linked to County Lines drug dealing
+    — e.g. cash deposits across multiple towns, money mule activity, and top-ups of
+    dedicated 'deal line' mobile phones used to advertise drugs to users.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  - migrant_worker
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: high
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - money_mule_activity
+  key_terms:
+  - County Lines
+  - deal line
+  - money mule
+- id: 247-12
+  description: A vulnerable individual is used as a money mule or otherwise exploited
+    by organised crime groups (OCGs) to move and store money.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  - migrant_worker
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  key_terms:
+  - money mules
+  - exploitation
+  - OCGs
+- id: 247-13
+  description: A vulnerable member of society is being defrauded of their life savings.
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - life savings
+  - defrauded
+- id: 247-14
+  description: A customer is placing their savings or money into investments that do
+    not exist.
+  product_types:
+  - securities
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - investments that don't exist
+  - savings
+- id: 247-15
+  description: A customer is the victim of a romance fraud, sending funds to a fraudster.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - romance fraud
+- id: 247-16
+  description: A customer is involved in a Ponzi scheme, with funds cycling between
+    investors rather than being genuinely invested.
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - round_tripping
+  key_terms:
+  - Ponzi scheme
+- id: 247-24
+  description: A customer or business is linked to COVID-19 loan fraud (e.g. misuse
+    of Bounce Back Loan funds).
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  key_terms:
+  - COVID-19 loan fraud
+- id: 247-25
+  description: A customer is suspected of laundering the proceeds of criminality on
+    behalf of family members or trusted associates.
+  product_types:
+  - depository
+  - wire_transfer
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - nested_account_activity
+  key_terms:
+  - proceeds of criminality
+  - family members
+  - trusted associates
+- id: 247-31
+  description: Cash from street-level drug sales is used to purchase designer clothes,
+    watches, and other expensive lifestyle items.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  industry_types:
+  - retail
+  - luxury_goods
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action, Issue 8 - November 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-11
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/482-sars-in-action-november-2020/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - designer clothes
+  - watches

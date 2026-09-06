@@ -1,0 +1,482 @@
+- id: 275-01
+  description: A subject launders money through business accounts and appears to be
+    part of a wider organised crime group (OCG).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - OCG
+  - business accounts
+  - money laundering
+- id: 275-03
+  description: High-value cash credits pass through an individual’s account with no
+    apparent legitimate source.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - DAML SAR
+  - cash credits
+- id: 275-04
+  description: An informal value transfer scheme is used as a mechanism for laundering
+    criminal proceeds.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  key_terms:
+  - informal value transfer scheme
+  - criminal proceeds
+- id: 275-05
+  description: A customer receives high-value transactions which are not in line with
+    their known profile.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - high-value transactions
+  - customer profile
+- id: 275-06
+  description: A customer makes a suspicious purchase of a property that is inconsistent
+    with their known means.
+  product_types:
+  - depository
+  industry_types:
+  - real_estate
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - real_estate_money_laundering
+  transaction_patterns:
+  - real_estate_transactions
+  key_terms:
+  - property
+  - suspicious purchase
+- id: 275-09
+  description: A professional firm suspects a client of cheating the revenue (tax evasion)
+    and seeks to pay away the funds and end the client relationship.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - cheating the revenue
+  - DAML
+  - client relationship
+- id: 275-12
+  description: Businesses allow their bank accounts to receive funds from investors
+    before passing them on to the organisers of a boiler-room fraud.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  key_terms:
+  - boiler room fraud
+  - investors
+  - organisers
+- id: 275-13
+  description: A large amount of funds is sent from a customer’s corporate bank accounts
+    to a company account overseas.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - corporate bank accounts
+  - company account overseas
+- id: 275-19
+  description: Accounts are used by individuals who are not members of an organised
+    crime group but who make payments on its behalf, linked to organised immigration
+    crime (OIC).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - third_party_payment_processor
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - human_smuggling_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - organised immigration crime
+  - payments on their behalf
+  - OIC OCG
+- id: 275-21
+  description: An illegal (unregistered) money service business is operated, in this
+    case by individuals without legal immigration status.
+  product_types:
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - foreign_individual
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  key_terms:
+  - illegal money service business
+  - illegal immigrants
+- id: 275-23
+  description: A customer sends money using a contact number previously reported as
+    linked to child sexual exploitation overseas.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - contact number
+  - child sexual exploitation
+  - overseas
+- id: 275-24
+  description: A personal account is funded by large amounts of third-party payments
+    with no evidence of any payments to the tax authority (e.g. HMRC).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - personal account
+  - third party payments
+  - HMRC
+- id: 275-25
+  description: A personal account is linked to a business account showing third-party
+    payments, corroborating that business funds are being run through the personal account,
+    revealing an undisclosed business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - business account
+  - undisclosed business
+- id: 275-26
+  description: An account shows a high volume of faster payments to bank accounts held
+    by subjects who are part of an organised crime group involved in human trafficking
+    and prostitution.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: high
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - human_trafficking_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  key_terms:
+  - faster payments
+  - human trafficking
+  - prostitution
+- id: 275-27
+  description: Many of the accounts involved are opened just before the transfers take
+    place.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - accounts were opened just before the transfers
+- id: 275-28
+  description: Business funds are used to pay an individual’s personal credit card.
+  product_types:
+  - credit_card
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - business funds
+  - personal credit card
+- id: 275-29
+  description: A trader has ignored their tax returns for years despite ongoing account
+    activity.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2020-03
+  risk_level: low
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/436-sars-reporter-booklet-march-2020/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - tax returns

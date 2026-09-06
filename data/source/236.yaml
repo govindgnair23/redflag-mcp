@@ -1,0 +1,71 @@
+- id: 236-01
+  description: A client or business operates in, or transacts with counterparties in,
+    jurisdictions that are high-risk for wild species (wildlife) trade or the associated
+    logistics.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs in Action, Issue 25 (UKFIU/NCA)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-03
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/705-sars-in-action-issue-25/file
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - trade_document_manipulation
+  key_terms:
+  - wild species trade
+  - logistics
+  - high-risk jurisdictions
+- id: 236-02
+  description: Transaction references, payment narratives, or open-source information
+    on a customer contain overt or covert references to wild species types, trafficking
+    roles, specialised trafficking equipment, or known trafficking facilitators such
+    as particular freight companies.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  - depository
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: SARs in Action, Issue 25 (UKFIU/NCA)
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-03
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/705-sars-in-action-issue-25/file
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - wild species types
+  - trafficking roles
+  - specialised equipment
+  - freight companies
+  - open-source information

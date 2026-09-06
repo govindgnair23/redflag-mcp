@@ -1,0 +1,451 @@
+- id: 263-01
+  description: A customer transacts in an unusual manner, with numerous credits followed
+    by cash withdrawals and rapid dispersals of funds to third parties, consistent
+    with an intentional attempt to disguise the origins of the funds.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - credits
+  - cash withdrawals
+  - third parties
+- id: 263-02
+  description: A customer’s account has a disproportionately high level of turnover
+    in relation to their income, with a high volume of low- to mid-value transactions
+    with multiple third parties.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - turnover
+  - income
+  - low to mid value transactions
+  - third parties
+- id: 263-05
+  description: A customer opens multiple accounts using fraudulent identity documents
+    and receives credits where the customer is not the intended beneficiary.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - third_party_payments
+  key_terms:
+  - fraudulent identity documents
+  - intended beneficiary
+  - multiple accounts
+- id: 263-06
+  description: A customer creates multiple new identities to claim government benefits,
+    set up companies, and open accounts used to launder funds from the sale of goods
+    fraudulently obtained on credit.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - beneficial_owner_obscured
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  - rapid_fund_movement
+  key_terms:
+  - government benefits
+  - new identities
+  - credit
+  - goods
+- id: 263-07
+  description: A customer acquires further false identities to fraudulently claim additional
+    government benefits.
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false identities
+  - government benefits
+- id: 263-09
+  description: A customer’s account receives high-value funds not reflective of the
+    customer’s profile, suggesting these are the proceeds of crime.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - high value funds
+  - proceeds of crime
+  - profile
+- id: 263-10
+  description: A customer uses their card payment terminal to redirect sales from a
+    legitimate business into the customer’s own account.
+  product_types:
+  - depository
+  - credit_card
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  key_terms:
+  - card payment terminal
+  - sales
+  - legitimate business
+- id: 263-11
+  description: A customer’s account receives the proceeds of the sale of counterfeit
+    goods.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - counterfeit goods
+  - proceeds
+- id: 263-12
+  description: A beneficiary company has a further account which has amassed a multi-million
+    pound turnover in a short amount of time.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - multi-million pound turnover
+  - short amount of time
+- id: 263-13
+  description: Company accounts are linked via a shared address, transact with each
+    other, and are operated from the same device despite having different registered
+    directors.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - shell_company_usage
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - address
+  - same device
+  - registered directors
+- id: 263-14
+  description: Funds are immediately transferred to multiple third-party companies
+    operating overseas.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - immediate transfer
+  - overseas
+  - third party companies
+- id: 263-16
+  description: A customer transacts in unusual sums with a large number of unrelated
+    third parties, adds funds to their account without a verifiable source, and often
+    follows transactions with rapid dispersals and/or cash withdrawals.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  key_terms:
+  - unusual sums
+  - unrelated third parties
+  - verifiable source
+  - cash withdrawals
+- id: 263-17
+  description: Several large credits from third parties enter a customer’s account
+    which the customer claims are gifts.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - large credits
+  - third parties
+  - gifts
+- id: 263-19
+  description: A customer uses false identity documents to open the account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false identity documents
+  - open the account
+- id: 263-20
+  description: An account is opened only to receive funds and immediately transfer
+    them out to third parties, with no other genuine activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2024
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2024-08
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/727-sars-reporter-booklet-august-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - receive and immediately transfer
+  - third parties

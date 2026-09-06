@@ -1,0 +1,539 @@
+- id: 270-01
+  description: A customer receives a large sum into their bank account which is believed
+    to have come from fraudulent activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - fraudulent activity
+- id: 270-02
+  description: Linked businesses appear to be operating as unlicensed money service
+    businesses (MSBs), inconsistent with their stated nature of business.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - unlicensed money services businesses
+  - MSB
+- id: 270-03
+  description: There are significant discrepancies between a customer’s activity and
+    their stated business model.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - discrepancies
+  - business model
+- id: 270-04
+  description: Multiple large-value overseas transactions are made through a customer’s
+    accounts into linked business accounts.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - overseas transactions
+  - business accounts
+- id: 270-05
+  description: A customer’s account has minor prior activity, then high-value purchases
+    are made following the receipt of a large amount of money from a cryptocurrency
+    platform with no proof of investment.
+  product_types:
+  - depository
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - fraud_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - cryptocurrency platform
+  - proof of investment
+  - high value purchases
+- id: 270-06
+  description: A customer receives funds and forwards them on to an associate who has
+    previously been charged with drug offences.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  key_terms:
+  - drug offences
+  - associate
+- id: 270-07
+  description: A large amount of cash is paid into a customer’s personal account and
+    then transferred to a business account over a short period of time.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: high
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - rapid_fund_movement
+  key_terms:
+  - cash
+  - personal account
+  - business account
+- id: 270-08
+  description: An account is used to deposit cash in order to transfer the funds on
+    to third parties.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - cash deposits
+  - third parties
+- id: 270-09
+  description: A customer’s telephone number is found to be linked to adult sites offering
+    sexual services.
+  product_types: []
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: low
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns: []
+  key_terms:
+  - telephone number
+  - adult sites
+  - sexual services
+- id: 270-10
+  description: A customer’s account shows multiple payments to websites offering sexual
+    services.
+  product_types:
+  - depository
+  - wire_transfer
+  - credit_card
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - websites
+  - sexual services
+- id: 270-11
+  description: A customer uses an investment fund to make payments into their own bank
+    account.
+  product_types:
+  - securities
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - investment fund
+  - own bank account
+- id: 270-12
+  description: An elderly customer is the victim of an impersonation scam.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - impersonation scam
+- id: 270-13
+  description: A customer may be the victim of a scam and is sending large amounts
+    of money to a "friend".
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - scam
+  - friend
+- id: 270-14
+  description: Funds received from external accounts are immediately dispersed onward.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - external accounts
+  - immediately dispersed
+- id: 270-15
+  description: An elderly customer is vulnerable and may be being financially exploited.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - elder_financial_exploitation
+  transaction_patterns: []
+  key_terms:
+  - financially exploited
+  - vulnerable
+- id: 270-16
+  description: Payments come into an account from the customer’s own other accounts
+    as well as credits from third parties.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  - nested_account_activity
+  key_terms:
+  - other accounts
+  - credits from third parties
+- id: 270-17
+  description: An account has been set up fraudulently without the victim’s knowledge.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family:
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - identity_misrepresentation
+  - account_takeover
+  key_terms:
+  - fraudulently
+  - without the victim’s knowledge
+- id: 270-18
+  description: A customer’s account is used solely to transfer funds on to third parties.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - transfer funds
+  - third parties
+- id: 270-19
+  description: A customer has a previous SAR reported on them in which they were complicit
+    in layering funds to a prisoner.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet November 2022
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2022-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/621-sars-reporter-booklet-november-2022/file
+  typology_family: []
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - SAR
+  - layering
+  - prisoner

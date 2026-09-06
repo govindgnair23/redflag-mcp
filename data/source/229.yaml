@@ -1,0 +1,695 @@
+- id: 229-01
+  description: A customer pays money brokers for the services of migrant facilitators
+    to move people across borders.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_asia
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - third_party_payments
+  key_terms:
+  - hawala
+  - IVTS
+  - money brokers
+  - migrant facilitators
+- id: 229-04
+  description: Informal value transfer system (IVTS) operators move physical cash to
+    balance or settle accounts between them.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints: []
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - cash_intensive_behavior
+  key_terms:
+  - IVTS
+  - cash
+  - settling accounts
+- id: 229-05
+  description: A money transmitter with ties to specific geographic regions or ethnic
+    communities arranges the transfer and receipt of funds and settles through trade,
+    cash, and net settlement over a long period of time (hawala-style).
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_asia
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - money transmitters
+  - net settlement
+  - hawala
+- id: 229-10
+  description: Settlement occurs across multiple jurisdictions through value or cash
+    outside of the banking system.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_asia
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - cash_intensive_behavior
+  - unusual_international_wires
+  key_terms:
+  - multiple jurisdictions
+  - outside of the banking systems
+- id: 229-11
+  description: A subject directs others (e.g. members of an OCG overseas) to run multiple
+    social media platforms advertising organised immigration crime (OIC) services.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - middle_east
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - social media platforms
+  - OIC services
+  - aliases
+- id: 229-12
+  description: Social media accounts used to advertise services are held under various
+    aliases.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints: []
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - aliases
+  - social media accounts
+- id: 229-13
+  description: A subject displays an opulent lifestyle and flaunts wealth inconsistent
+    with their known legitimate income.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - opulence
+  - flaunted his wealth
+- id: 229-14
+  description: Monies are collected from migrants to pay for their journey (e.g. from
+    Turkey to Italy) and moved via hawala.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - middle_east
+  - uk_eu
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - third_party_payments
+  key_terms:
+  - migrants
+  - journey
+  - Turkey
+  - Italy
+- id: 229-16
+  description: Migrant payments are held by a select number of hawalas (e.g. in the
+    Kurdish Region of Iraq) until the smuggling journeys are completed.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - middle_east
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: high
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - pass_through_account_activity
+  key_terms:
+  - hawalas
+  - Kurdish Region of Iraq
+  - held until the journeys were completed
+- id: 229-17
+  description: Hawalas send money at the direction of the subject to purchase smuggling
+    equipment.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - middle_east
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - third_party_payments
+  key_terms:
+  - hawalas
+  - smuggling equipment
+- id: 229-18
+  description: Proceeds remain in the origin jurisdiction and are invested into assets
+    such as land, property, and high-end vehicles.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  industry_types:
+  - real_estate
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - middle_east
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Informal Value Transfer Systems'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - real_estate_transactions
+  key_terms:
+  - cash
+  - land
+  - property
+  - high-end vehicles
+- id: 229-19
+  description: A customer is involved in an organised crime group (OCG) facilitating
+    illegal entry to the UK, including via cross-channel small-boat crossings.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: high
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  key_terms:
+  - cross-channel migration
+  - small boats
+  - OCG
+- id: 229-20
+  description: An account shows use of informal value transfer systems (IVTS), payments
+    indicating frequent international travel, and payments to marine navigation and
+    nautical charting businesses (consistent with small-boat smuggling).
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types:
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - unusual_international_wires
+  key_terms:
+  - IVTS
+  - frequent international travel
+  - marine navigation
+  - nautical charting
+- id: 229-21
+  description: A care home or business funds an excessive number of UK visa applications,
+    suggesting visa or sponsorship abuse.
+  product_types: []
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - care homes
+  - UK Visas
+  - applications
+- id: 229-22
+  description: Adverse media material or direct law enforcement (LE) interest is identified
+    against a customer during Customer Due Diligence (CDD) checks or following LE contact.
+  product_types: []
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: low
+  category: customer_due_diligence
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - adverse media
+  - LE interest
+  - CDD
+- id: 229-23
+  description: Large-value funds are paid into a business account that are not consistent
+    with the business profile and include payments from firms unrelated to the business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - business account
+  - business profile
+  - unrelated firms
+- id: 229-24
+  description: A large number of payments made by a business are for visas and employee
+    sponsorships.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - visas
+  - employee sponsorships
+- id: 229-25
+  description: A business makes hundreds of sponsorship applications in less than 12
+    months, far in excess of its apparent size or need.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - sponsorship applications
+  - hundreds
+- id: 229-26
+  description: A business has assigned an excessive number of sponsorship certificates
+    to overseas workers, and a number of visa applications have been returned due to
+    false supporting documentation.
+  product_types: []
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - sponsorship certificates
+  - overseas workers
+  - false supporting documentation
+  - visa applications
+- id: 229-28
+  description: An unregistered money service business operated by a subject forms part
+    of a network of hawala bankers transferring money to and from overseas jurisdictions.
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - unusual_international_wires
+  key_terms:
+  - unregistered money service business
+  - hawala bankers
+  - overseas jurisdictions
+- id: 229-29
+  description: A subject declares a very low income and is in receipt of state benefits,
+    inconsistent with the value flowing through their accounts.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - low declared income
+  - state benefits
+- id: 229-30
+  description: Very large sums are transferred through a subject's accounts, with substantial
+    cash found at their premises, inconsistent with their declared means.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    in Suspicious Activity Reports'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - large transfers
+  - cash
+  - accounts
+- id: 229-33
+  description: A hawaladar acts as an intermediary and facilitator of organised immigration
+    crime, collecting payments for crossings on behalf of an OCG (since migrants often
+    refuse to deal directly with OCG members).
+  product_types:
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - south_asia
+  - uk_eu
+  regulatory_source: 'UKFIU SARs in Action, Issue 33: Organised Immigration Crime
+    through a Public Private Partnership'
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-08
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/762-sars-in-action-issue-33/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  - third_party_payments
+  key_terms:
+  - hawaladars
+  - payment for crossings
+  - OCG members

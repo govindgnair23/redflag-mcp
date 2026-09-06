@@ -1,0 +1,527 @@
+- id: 266-01
+  description: A customer receives a large sum of money following a transaction involving
+    funds from an unknown source.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unknown source
+  - large sum
+- id: 266-02
+  description: A customer claims, without supporting evidence, that funds credited
+    to the account are legitimate business proceeds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  - retail
+  - construction
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - business proceeds
+- id: 266-03
+  description: A customer transacts in a manner that does not fit their purported profile,
+    with a rapid account turnover indicative of money laundering activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - rapid account turnover
+  - purported profile
+- id: 266-04
+  description: A customer’s account receives payments from a third party who is themselves
+    the subject of a money laundering disclosure and law enforcement investigation.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - DAML disclosure
+  - LEA investigation
+- id: 266-06
+  description: A customer’s account is funded by cash of unknown origin, raising tax
+    evasion concerns given the absence of a declared income source.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - tax evasion
+  - unknown origin
+- id: 266-07
+  description: A customer receives numerous large payments from elderly individuals
+    and makes a series of suspicious transactions with no reasonable explanation.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - elderly individuals
+  - suspicious transactions
+- id: 266-08
+  description: A business account has no business-related spending and no online presence
+    other than a social media account, and has lain dormant for a number of months
+    before receiving a number of large payments from an unconnected company.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  - retail
+  - construction
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - no business related spending
+  - no online presence
+  - dormant
+  - unconnected company
+- id: 266-09
+  description: An account holder provides suspected fraudulent invoices when asked
+    for proof of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - professional_services
+  - import_export
+  customer_profiles:
+  - small_business
+  - newly_established_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - fraud_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - fraudulent invoices
+  - proof of funds
+- id: 266-12
+  description: A customer has faced previous allegations of fraud through a payment
+    diversion and impersonation scam.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - diversion scam
+  - impersonation scam
+- id: 266-13
+  description: A customer transacts closely with another customer who has been subject
+    to a restraint order for illegal drug supply under a separate SAR disclosure.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - pass_through_account_activity
+  key_terms:
+  - illegal drug supply
+  - restraint order
+- id: 266-15
+  description: A customer makes a series of very large cash transactions which are
+    later debited to a connected business.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - professional_services
+  - retail
+  - construction
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - small_business
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - pass_through_account_activity
+  key_terms:
+  - very large cash transactions
+  - connected business
+- id: 266-16
+  description: A vulnerable elderly person is targeted by scammers pretending to be
+    law enforcement officers (e.g. a fraud squad).
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - law enforcement officers
+  - scammers
+  - fraud squad
+- id: 266-17
+  description: Scammers instruct a vulnerable elderly person to withdraw cash and hand
+    it over under the guise of a counterfeit money investigation.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issued_date: 2023-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - cash_intensive_behavior
+  - identity_misrepresentation
+  key_terms:
+  - cash withdrawals
+  - counterfeit money investigation
+- id: 266-18
+  description: A customer is a victim of romance fraud and is potentially being used
+    as a money mule.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - rapid_fund_movement
+  key_terms:
+  - romance fraud
+  - money mule
+- id: 266-19
+  description: A customer’s account receives numerous payments that are then rapidly
+    paid out towards a cryptocurrency platform.
+  product_types:
+  - depository
+  - crypto
+  - wire_transfer
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - cryptocurrency_mixing
+  key_terms:
+  - cryptocurrency platform
+- id: 266-20
+  description: A vulnerable person receives a large payment which is used to purchase
+    a series of gift cards, with the customer claiming this is to repay money owed to
+    friends.
+  product_types:
+  - depository
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - elder_financial_exploitation
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - gift cards
+  - repay money owed to friends
+- id: 266-22
+  description: Scammers instruct a vulnerable elderly person to make a series of cash
+    withdrawals which are then collected by the scammers visiting the customer’s home
+    address.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet August 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-08
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/671-sars-reporter-booklet-august-2023/file
+  typology_family:
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - cash withdrawals
+  - home address

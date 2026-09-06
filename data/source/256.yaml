@@ -1,0 +1,258 @@
+- id: 256-01
+  description: A customer’s account shows frequent large cash deposits increasing in
+    value over a short period without explanation, with the funds then transferred
+    to the customer’s other accounts or withdrawn at cash points (ATMs).
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - cash deposits
+  - cash points
+  - other accounts
+- id: 256-04
+  description: A business account trading as a building services provider triggers
+    transaction-monitoring alerts for potential muling activity — it receives large
+    third-party credits (e.g. over six figures) with no clear source of funds, the
+    invoices provided are inconsistent with the stated business activity, and transactions
+    continue despite the company being dissolved on the corporate registry (Companies
+    House).
+  product_types:
+  - depository
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - third_party_payments
+  - invoice_mismatch
+  key_terms:
+  - transaction-monitoring alerts
+  - muling
+  - Companies House
+- id: 256-05
+  description: A newly established business with limited trade, activity, and online
+    presence receives a large credit from an overseas public body not in its name,
+    which is quickly debited to third parties including personal accounts and unrelated
+    businesses, contradicting the Know Your Business (KYB) information provided.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - KYB
+  - overseas public body
+  - false address
+- id: 256-06
+  description: A small hospitality business changes its nature of business to payroll
+    services with a turnover in excess of several million; credits to the business
+    account from recruitment and staffing businesses are immediately forwarded to hundreds
+    of third parties, with no business expenses or pension contributions recorded.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - travel_hospitality
+  - payroll
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - payroll services
+  - recruitment
+  - staffing
+- id: 256-07
+  description: A company account that has been largely dormant since opening receives
+    a large VAT credit, where the VAT return was false and the figures inflated in
+    order to obtain the pay-out.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - tax_evasion
+  - fraud_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - VAT
+  - VAT return
+  - dormant account
+- id: 256-08
+  description: A client attempts to transfer funds from their company account to a
+    third-party trading platform, alongside structured cash withdrawals, use of money
+    service businesses (MSBs), and inconsistencies between declared business activity
+    and actual account behaviour.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - tax_evasion
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - structuring
+  - cash_deposits_below_threshold
+  key_terms:
+  - trading platform
+  - MSBs
+  - VAT claims
+- id: 256-09
+  description: A customer’s account receives high volumes of third-party credits and
+    debits within a short period, with debits showing drug references, a high frequency
+    of mobile phone top-ups, and excessive card purchases at taxis and ride-shares.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - narcotics_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - drug references
+  - mobile phone top ups
+  - taxis
+  - ride shares
+- id: 256-10
+  description: A customer’s account shows illicit funds apparently mixed with legitimate
+    income, including suspicious third-party transfers and cash deposits, followed
+    by the rapid movement of funds to obscure their origin.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2026-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/801-sars-reporter-booklet-march-2026/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - legitimate income
+  - obscure their origin

@@ -1,0 +1,409 @@
+- id: 259-01
+  description: A business account receives large volumes of cash credits, third-party
+    deposits, faster payments and merchant card payments that far exceed the expected
+    turnover for the business; once received, funds are quickly dispersed to third
+    parties.
+  product_types:
+  - depository
+  - card
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - cash credits
+  - third-party deposits
+  - faster payments
+  - merchant card payments
+  - expected turnover
+- id: 259-02
+  description: A business account that has remained dormant for six months sees a sudden
+    spike in cash deposits and transactions between secondary accounts already known
+    to be involved in criminality.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - nested_account_activity
+  key_terms:
+  - dormant account
+  - cash deposits
+  - secondary accounts
+- id: 259-04
+  description: A business transfers substantial funds derived from what appears to
+    be a wider network of shell companies, consistent with laundering and layering.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  - rapid_fund_movement
+  key_terms:
+  - shell companies
+  - layering funds
+- id: 259-05
+  description: A customer’s personal accounts show excessive gambling as well as payments
+    to third-party accounts that are also quickly dispersed to gambling companies.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - gambling
+  - third party accounts
+  - gambling companies
+- id: 259-06
+  description: A customer purchases cryptoassets into a low-risk account and subsequently
+    transfers part of those cryptoassets to a high-risk account.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - cryptoassets
+  - low-risk account
+  - high-risk account
+- id: 259-07
+  description: A chemical company licensed to sell in bulk to trade is instead selling
+    chemical samples to individuals via social media (e.g. for body enhancement), inconsistent
+    with its licensed line of business.
+  product_types: []
+  industry_types:
+  - manufacturing
+  - retail
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - chemical company
+  - social media
+  - body enhancement
+- id: 259-08
+  description: A customer shows a significant uplift in account turnover, mostly from
+    cash deposits, with no corresponding change in their known profile.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - account turnover
+  - cash deposits
+- id: 259-09
+  description: A business account is used as an intermediary or pass-through to obscure
+    the criminal origin of funds.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - intermediary
+  - criminal origin of funds
+- id: 259-10
+  description: A business receives large sums over a short period from companies unrelated
+    to its declared industry, which are rapidly transferred on to other unrelated company
+    accounts, with a lack of legitimate business expenditure.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - unrelated company accounts
+  - legitimate business expenditure
+- id: 259-11
+  description: A business is entirely a front, with no legitimate business premises
+    or inventory.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - front
+  - business premises
+  - inventory
+- id: 259-12
+  description: A company director’s personal account shows multiple inconsistencies
+    with the profile held for them, such as unexplained income or activity inconsistent
+    with their stated role.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - profile inconsistencies
+- id: 259-13
+  description: An account shows transactional activity with no clear rationale, excessive
+    turnover, a poor-quality business website, and possible nominee directors and creditors
+    whose industries are inconsistent with the subject’s reported company.
+  product_types:
+  - depository
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - no clear rationale
+  - excessive turnover
+  - nominee directors
+  - creditors
+- id: 259-14
+  description: A customer previously used a device linked to fraud and receives payments
+    from a third party that were addressed to a different beneficiary.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - identity_misrepresentation
+  key_terms:
+  - device linked to fraud
+  - different beneficiary
+- id: 259-15
+  description: A customer is linked to fraudulent activity and the use of multiple
+    aliases.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/750-sars-reporter-booklet-may-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - multiple aliases
+  - fraudulent activity

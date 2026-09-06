@@ -1,0 +1,684 @@
+- id: 277-01
+  description: An examination of financial activity identifies unexplained deposits
+    into the account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - unexplained deposits
+- id: 277-02
+  description: A customer opens multiple current accounts in quick succession and uses
+    them to launder funds on behalf of others.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - nested_account_activity
+  - third_party_payments
+  key_terms:
+  - multiple current accounts
+  - launder funds on behalf of others
+- id: 277-03
+  description: A customer uses false instruments in order to open some of the accounts
+    identified.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false instruments
+  - account opening
+- id: 277-04
+  description: A customer receives a payment from a relative after a confiscation order
+    has been made against that relative.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - confiscation order
+  - relative
+  - payment
+- id: 277-06
+  description: Funds are split between accounts held in trust to obscure ownership.
+  product_types:
+  - depository
+  - private_banking
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - pass_through_account_activity
+  key_terms:
+  - trust
+  - split between accounts
+- id: 277-07
+  description: The source of funds originates from a third party in order to avoid settling
+    a confiscation order.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - third party
+  - confiscation order
+- id: 277-09
+  description: A business director uses fraudulently obtained genuine documentation
+    to set up the account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - fraudulently obtained genuine documentation
+  - account setup
+- id: 277-10
+  description: An account receives a large international payment which does not match
+    the profile of the customer, who is unemployed and in receipt of benefits.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - government_benefit_program_sponsor
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - large international payment
+  - profile mismatch
+  - benefits
+- id: 277-11
+  description: A customer is a recipient of funds from a CEO fraud and has unwittingly
+    acted as an account mule.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - third_party_payments
+  key_terms:
+  - CEO fraud
+  - account mule
+- id: 277-12
+  description: A customer fraudulently takes out a credit card in another person’s
+    name in order to secure funds.
+  product_types:
+  - credit_card
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - account_takeover
+  key_terms:
+  - credit card
+  - another’s name
+- id: 277-13
+  description: A company contacts fraud victims offering to act on their behalf to recover
+    their losses and charging an up-front fee for the service (recovery-room scam).
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - recovery room
+  - up-front fee
+- id: 277-14
+  description: Significant sums of money are transferred overseas from a customer’s
+    bank account to an account in another name.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - transferred overseas
+  - another name
+- id: 277-16
+  description: An organised crime group supplies falsified employment details and proofs
+    of income in relation to mortgage applications.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - mortgage applications
+  - falsified employment details
+  - proofs of income
+- id: 277-17
+  description: A pattern of falsified mortgage applications is identified, with the
+    same or similar entities repeatedly named as employers of the applicants.
+  product_types:
+  - depository
+  industry_types:
+  - construction
+  - real_estate
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  key_terms:
+  - mortgage applications
+  - employers of applicants
+- id: 277-19
+  description: A customer is linked to the receipt of funds of unknown origin and to
+    a business that is the subject of previous adverse intelligence.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family: []
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - funds of unknown origin
+  - adverse intelligence
+- id: 277-20
+  description: A potentially vulnerable person is withdrawing large sums of money.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - elder_financial_exploitation
+  - scam_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - withdrawing large sums of money
+- id: 277-21
+  description: A customer is sending funds overseas and the account is being used as
+    a mule account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - unusual_international_wires
+  key_terms:
+  - mule account
+  - sending funds overseas
+- id: 277-22
+  description: A customer makes a number of money transfers totalling a significant
+    sum to receivers in various countries.
+  product_types:
+  - wire_transfer
+  - remittance
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - scam_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - money transfers
+  - various countries
+- id: 277-23
+  description: A personal account is used for business purposes in order to evade tax.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - personal account
+  - business purposes
+  - evade tax
+- id: 277-24
+  description: A business is suspected to be used as a front for laundering the proceeds
+    of crime.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - human_trafficking_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - front
+  - laundering the proceeds
+- id: 277-25
+  description: An account receives funds of unknown origin suspected to be the fees
+    paid by sex workers in return for being brought to the UK.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - adult_entertainment
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - funds of unknown origin
+  - sex workers
+- id: 277-26
+  description: A customer is linked to the setting up of 'pop-up brothels', the payment
+    of airline tickets used by sex workers, and paying for online advertising on adult
+    sites.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - adult_entertainment
+  - travel_hospitality
+  customer_profiles:
+  - shell_or_front_company
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - pop-up brothels
+  - airline tickets
+  - online advertising
+- id: 277-27
+  description: A group makes cash deposits and transfers to bank accounts at different
+    locations around the country.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - rapid_fund_movement
+  key_terms:
+  - cash deposits
+  - transfers
+  - different locations
+- id: 277-28
+  description: A customer or group has assets which exceed their declared income.
+  product_types:
+  - depository
+  - securities
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2019-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/332-sars-reporter-booklet-july-2019/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - assets exceeded declared income

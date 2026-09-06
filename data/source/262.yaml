@@ -1,0 +1,525 @@
+- id: 262-02
+  description: A business customer sends bribery payments to a Politically Exposed
+    Person (PEP) overseas in return for the continued award of contracts to the customer’s
+    business.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - professional_services
+  - construction
+  - import_export
+  customer_profiles:
+  - politically_exposed_person
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: high
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - corruption_and_bribery
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - PEP
+  - bribery payments
+  - contracts
+- id: 262-04
+  description: A number of linked accounts show higher than expected turnover, with
+    multiple high-value transfers passing between the linked accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - rapid_fund_movement
+  - wire_transfer_chains
+  key_terms:
+  - linked accounts
+  - higher than expected turnover
+  - high value transfers
+- id: 262-05
+  description: Activity across both a customer’s personal and business accounts is
+    indicative of layering, with funds cycled between the two without clear economic
+    purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - nested_account_activity
+  key_terms:
+  - layering
+  - personal account
+  - business account
+- id: 262-06
+  description: The named customer appears to be a victim of identity fraud, or to have
+    been coerced into opening the account, with someone else operating it.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - identity fraud
+  - coerced into opening the account
+  - someone else was operating the account
+- id: 262-07
+  description: Application fraud is indicated by overdrafts and a loan being obtained
+    and used in the customer’s name.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - application fraud
+  - overdrafts
+  - loan
+- id: 262-08
+  description: Activity on the account is inconsistent with the customer’s profile,
+    including spending on high-value assets.
+  product_types:
+  - depository
+  - private_banking
+  - securities
+  industry_types: []
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - inconsistent with profile
+  - high value assets
+- id: 262-09
+  description: An account receives credits linked to the customer’s company that the
+    customer claimed had ceased trading.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - shell_company_usage
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - ceased trading
+  - company
+  - credits
+- id: 262-10
+  description: A customer’s account shows multiple indicators of underground banking
+    (hawala-style informal value transfer), such as offsetting third-party payments
+    to and from high-risk jurisdictions with no formal remittance record.
+  product_types:
+  - depository
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - south_asia
+  - east_asia
+  - middle_east
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - informal_value_transfer
+  key_terms:
+  - underground banking
+  - hawala
+- id: 262-11
+  description: An international student with only a short association with the reporter
+    shows financial activity and high-value cash deposits not reflective of a student,
+    with the origins of the cash credits unknown.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - student
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - cash_intensive_behavior
+  key_terms:
+  - international student
+  - cash deposits
+  - cash credits
+- id: 262-12
+  description: A customer uses a company account to layer the proceeds of crime, routing
+    funds through the business with no genuine trading purpose.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - nested_account_activity
+  key_terms:
+  - company account
+  - layer the proceeds of crime
+- id: 262-13
+  description: A suspicious transaction is identified where the explanation given by
+    the customer does not match the evidence provided.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - suspicious transaction
+  - did not match evidence
+- id: 262-14
+  description: A company is engaged in the regular importation of counterfeit products
+    that do not meet safety regulations, generating proceeds through the account.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - retail
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - counterfeit products
+  - importation
+  - safety regulations
+- id: 262-15
+  description: The sale of counterfeit products accounts for a company turnover five
+    times higher than expected for the legitimate business.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - retail
+  - import_export
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - turnover five times higher than expected
+  - counterfeit products
+- id: 262-16
+  description: A company attempts to import a large quantity of Class A drugs, with
+    the trade financed through the business account.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: high
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - class A drugs
+  - import
+  - UK
+- id: 262-17
+  description: The value and volume of cash being processed through a customer’s business
+    account is disproportionate to the nature and scale of the stated business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - cash_intensive_business
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash
+  - business account
+- id: 262-18
+  description: A customer’s retail business income comes primarily from high-value
+    cash funds deposited via money service bureaus.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types:
+  - retail
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - funnel_account_activity
+  key_terms:
+  - money service bureaus
+  - cash funds
+  - retail business income
+- id: 262-19
+  description: A business makes several outgoing payments to retailers linked to equipment
+    that could be used in the production of drugs.
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types:
+  - retail
+  - manufacturing
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2024-11
+  risk_level: medium
+  category: narcotics_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/736-sars-reporter-booklet-november-2024/file
+  typology_family:
+  - narcotics_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - equipment
+  - production of drugs
+  - retailers

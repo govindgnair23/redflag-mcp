@@ -1,0 +1,213 @@
+- id: 231-02
+  description: A customer uses artificial intelligence (AI) to attempt to bypass Customer
+    Due Diligence (CDD) checks, for example using generated or deepfake imagery to
+    defeat identity, liveness, or document-verification controls.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: UKFIU magazine SARs in Action, issue 30
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/739-sars-in-action-issue-30/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - AI
+  - CDD
+  - KYC
+- id: 231-03
+  description: A customer presents AI-generated fake identity documents during onboarding,
+    such as forged UK passports or driving licences.
+  product_types:
+  - depository
+  - prepaid
+  - money_transmitter
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - money_services_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: UKFIU magazine SARs in Action, issue 30
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-02
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/739-sars-in-action-issue-30/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - fake identity documents
+  - UK passports
+  - driving licenses
+  - AI
+- id: 231-04
+  description: A customer has already transferred a large sum to suspected fraudsters
+    and wishes to send further funds, in the belief that doing so will cause their
+    previously lost money to be returned (advance-fee or recovery scam).
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: UKFIU magazine SARs in Action, issue 30
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/739-sars-in-action-issue-30/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - fraudsters
+  - recovery scam
+  - advance-fee
+- id: 231-05
+  description: An account receives high-value credits that are quickly dispersed to
+    subjects linked to organised crime groups (OCGs), with no evidence the funds resulted
+    from legitimate business activity.
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: UKFIU magazine SARs in Action, issue 30
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/739-sars-in-action-issue-30/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - rapid_fund_movement
+  - wire_transfer_chains
+  key_terms:
+  - high value credits
+  - organised crime groups
+  - OCGs
+- id: 231-07
+  description: A money service business or informal exchanger swaps bulk 'street cash'
+    (e.g. proceeds of drug sales) for cryptocurrency, or facilitates payments structured
+    to bypass international sanctions on behalf of clients.
+  product_types:
+  - crypto
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  - uk_eu
+  - domestic_us
+  regulatory_source: UKFIU magazine SARs in Action, issue 30
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-02
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/739-sars-in-action-issue-30/file
+  typology_family:
+  - sanctions_evasion
+  - narcotics_proceeds
+  transaction_patterns:
+  - bulk_cash_smuggling
+  - cryptocurrency_mixing
+  - unusual_international_wires
+  key_terms:
+  - street cash
+  - drugs
+  - cryptocurrency
+  - international sanctions
+- id: 231-09
+  description: A customer or network transfers funds linked to a sanctioned entity,
+    such as a sanctioned foreign media organisation.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: UKFIU magazine SARs in Action, issue 30
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-02
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/739-sars-in-action-issue-30/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - sanctioned entity
+  - funds linked
+  - transfer of funds

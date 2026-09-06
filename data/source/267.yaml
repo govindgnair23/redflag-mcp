@@ -1,0 +1,323 @@
+- id: 267-02
+  description: A customer lists no contact details apart from two addresses, neither
+    of which is coherent or verifiable.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: low
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns: []
+  key_terms:
+  - contact details
+  - addresses
+- id: 267-04
+  description: An individual pays cash into their account several times a day through
+    money service businesses (MSBs) and automated cash deposit machines.
+  product_types:
+  - depository
+  industry_types:
+  - money_services_business
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - cash_deposits_below_threshold
+  key_terms:
+  - MSB
+  - automated cash deposit machines
+- id: 267-05
+  description: Funds are rapidly transferred to a person suspected of involvement in
+    modern slavery and human trafficking (MSHT).
+  product_types:
+  - wire_transfer
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  key_terms:
+  - MSHT
+- id: 267-06
+  description: An account is funded by a high volume and value of transfers from external
+    accounts, the majority of which are withdrawn immediately in cash.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - external accounts
+  - cash withdrawals
+- id: 267-07
+  description: A customer transacts in an unusual manner, with numerous credits followed
+    shortly by debits to third parties, some of which are in cash.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - cash_intensive_behavior
+  key_terms:
+  - credits
+  - debits to third parties
+- id: 267-08
+  description: A customer makes fraudulent submissions to take advantage of a government
+    scheme.
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - government scheme
+  - fraudulent submissions
+- id: 267-10
+  description: A vulnerable customer makes a series of cash withdrawals with no reasonable
+    explanation.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - elder_financial_exploitation
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - cash withdrawals
+  - no reasonable explanation
+- id: 267-11
+  description: A child or minor customer is used as a money mule, with their account
+    receiving significant unexplained funds before onward transfer.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - student
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - pass_through_account_activity
+  key_terms:
+  - money mule
+  - child customer
+- id: 267-12
+  description: A vulnerable elderly customer purchases a large amount in various foreign
+    currencies from the reporter.
+  product_types:
+  - currency_exchange
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - elder_financial_exploitation
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - foreign currencies
+- id: 267-13
+  description: A vulnerable person is a victim of courier fraud, losing a large sum
+    through various currency and non-currency purchases.
+  product_types:
+  - currency_exchange
+  - depository
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - elder_financial_exploitation
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - courier fraud
+- id: 267-14
+  description: A customer receives unusually large and irregular salary payments from
+    an unrelated company, which are then disseminated to a third party.
+  product_types:
+  - depository
+  industry_types:
+  - payroll
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - fraud_proceeds
+  - corruption_and_bribery
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - salary payments
+  - unrelated company
+  - third party
+- id: 267-15
+  description: A customer makes a series of large cash deposits followed shortly by
+    debits from their account.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints: []
+  regulatory_source: SARs Reporter Booklet June 2023
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2023-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/654-sars-reporter-booklet-june-2023/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - cash deposits
+  - debits

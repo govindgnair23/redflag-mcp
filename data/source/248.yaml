@@ -1,0 +1,262 @@
+- id: 248-08
+  description: A customer creates a picture of routine daily spending to disguise the
+    true source and nature of the funds in their account — activity more consistent
+    with layering and indicative that the funds are criminal property.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - daily spending
+  - layering
+  - criminal property
+- id: 248-10
+  description: No salary, business credits, Income Tax, or National Insurance payments
+    are evident on an account, raising suspicions that the customer could be cheating
+    the public revenue and that the balances are in part or in full the benefit of
+    criminal conduct.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns:
+  - cash_intensive_behavior
+  key_terms:
+  - salary
+  - Income Tax
+  - National Insurance
+- id: 248-11
+  description: A customer has failed to declare their true financial situation, with
+    monies going into their bank account while they are also receiving benefit payments.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - benefit payments
+  - financial situation
+- id: 248-12
+  description: A customer has claimed benefits under other identities.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - benefits
+  - other identities
+- id: 248-13
+  description: Unexplained considerable sums are being moved through the account.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - unexplained sums
+  - account
+- id: 248-14
+  description: A customer creates a company, advertises for employees, and then uses
+    the details from job applications to make fraudulent claims to benefits.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - job applications
+  - fraudulent claims
+  - benefits
+- id: 248-16
+  description: A customer receives a substantial amount of cryptocurrency from external
+    addresses.
+  product_types:
+  - crypto
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: medium
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - cryptocurrency
+  - external addresses
+- id: 248-18
+  description: International money laundering is linked to dark web activity and cryptocurrency
+    'mixing' services used to obscure the trail back to the funds' original source.
+  product_types:
+  - crypto
+  - wire_transfer
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - cryptocurrency_mixing
+  - unusual_international_wires
+  key_terms:
+  - Darkweb
+  - mixing
+  - original source
+- id: 248-20
+  description: A gambling customer spreads activity across multiple operators, moving
+    on whenever they approach a reporting threshold or other trigger, to avoid detection.
+  product_types:
+  - depository
+  - money_transmitter
+  - casino
+  industry_types:
+  - casinos
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 7 - September 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - NCA
+  - UKFIU
+  issued_date: 2020-09
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/474-sars-in-action-september-2020-1/file
+  typology_family:
+  - scam_proceeds
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - threshold
+  - trigger
+  - SAR

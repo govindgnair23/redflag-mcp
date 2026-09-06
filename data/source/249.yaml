@@ -1,0 +1,56 @@
+- id: 249-01
+  description: Transactions on an account consist of third-party transfers received
+    from foreign nationals, followed by debits for small daily living expenses, small
+    ATM withdrawals, and transfers on to third parties.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - third_party_payment_processor
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 6 - July 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/469-sars-in-action-july-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  - money_mule_activity
+  key_terms:
+  - third-party transfers
+  - ATM withdrawals
+  - daily living expenses
+- id: 249-02
+  description: The geographical profile of an account’s transactions does not correspond
+    with the Customer Due Diligence (CDD) held on the customer, with transactions regularly
+    taking place in a different part of the country from where the customer is based.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles: []
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 6 - July 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/469-sars-in-action-july-2020/file
+  typology_family: []
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - customer due diligence
+  - geographical profile
+  - transactions

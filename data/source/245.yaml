@@ -1,0 +1,255 @@
+- id: 245-01
+  description: A customer is an individual that uses an SSN that, upon verification,
+    does not match or is inconsistent with the SSA's records.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - SSN
+  - SSA
+  - identity verification
+- id: 245-02
+  description: A customer is an individual that opens an account using a non-U.S.
+    passport or ITIN claiming to be self-employed or operating a small business in
+    the agriculture, construction, domestic service, hospitality, or staffing industries
+    and is receiving a significant amount and volume of recurring check deposits from
+    multiple companies before either making a significant and repetitive amount of
+    structured cash withdrawals or issuing low-dollar checks to multiple individuals.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - construction
+  - food_service
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  - third_party_payments
+  key_terms:
+  - passport
+  - ITIN
+  - structured cash withdrawals
+  - check deposits
+- id: 245-03
+  description: A customer is an individual that cashes a significant volume of checks
+    drawn on accounts owned by companies in the agriculture, construction, domestic
+    service, hospitality, or staffing industries on a recurring basis at a Money Service
+    Business (MSB), including a check casher.
+  product_types:
+  - check_cashing
+  - money_transmitter
+  industry_types:
+  - construction
+  - food_service
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - migrant_worker
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  key_terms:
+  - check cashing
+  - MSB
+  - check cashier
+- id: 245-04
+  description: A customer is an individual that uses a bank account in the name of
+    another person or entity to receive benefits or take out forms of credit in the
+    victim's name, often without the victim being aware.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family:
+  - fraud_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - identity_misrepresentation
+  - account_takeover
+  - third_party_payments
+  key_terms:
+  - benefits
+  - credit
+  - victim's name
+- id: 245-05
+  description: A customer’s account shows a financial profile consistent with modern
+    slavery and human trafficking (MSHT) — many low-value but high-volume transactions
+    spread across many individual accounts.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: human_trafficking
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family:
+  - human_trafficking_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - low-value
+  - high-volume
+  - multiple accounts
+  - MSHT
+- id: 245-06
+  description: A customer moves funds through Chinese underground banking or another
+    informal value transfer system rather than the regulated banking sector, with offsetting
+    domestic and overseas payments and no formal remittance record.
+  product_types:
+  - money_transmitter
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - foreign_individual
+  - cross_border_business
+  geographic_footprints:
+  - china
+  - uk_eu
+  - east_asia
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family: []
+  transaction_patterns:
+  - informal_value_transfer
+  key_terms:
+  - underground banking
+  - informal value transfer
+  - Chinese community
+- id: 245-07
+  description: Unusual payments pass from one competitor to another (so-called 'compensation
+    payments'), which may indicate a business cartel arrangement.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - cartel
+  - compensation payments
+  - unusual deposits
+  - unusual payments
+- id: 245-08
+  description: In a bid-rigging cartel in the construction sector where over 100 companies
+    were found to have infringed competition law, the winning contractor in a tender
+    exercise paid sums of money to losing bidders in return for submitting inflated
+    tender amounts.
+  product_types:
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - construction
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action, Issue 10 - March 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-03
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/504-sars-in-action-march-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - bid rigging
+  - tender
+  - inflated tender amounts
+  - losing bidders

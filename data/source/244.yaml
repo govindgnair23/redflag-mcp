@@ -1,0 +1,177 @@
+- id: 244-01
+  description: Several connected bank accounts held in the names of individuals are
+    operated by a single person and used to purchase property not previously linked
+    to them.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 11 - June 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-06
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/534-sars-in-action-issue-5-june-2021/file
+  typology_family:
+  - shell_company_usage
+  - real_estate_money_laundering
+  transaction_patterns:
+  - pass_through_account_activity
+  - real_estate_transactions
+  key_terms:
+  - connected bank accounts
+  - previously unknown properties
+- id: 244-06
+  description: A landlord continues to accept rental payments from a tenant despite
+    repeated warnings that illicit alcohol and tobacco are being sold from the premises,
+    meaning the rent received may constitute criminal property.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 11 - June 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/534-sars-in-action-issue-5-june-2021/file
+  typology_family:
+  - fraud_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - illicit alcohol
+  - tobacco
+  - rental payments
+  - criminal property
+- id: 244-08
+  description: A new potential client fails Customer Due Diligence (CDD) because their
+    background or source of wealth (SOW) appears suspicious.
+  product_types:
+  - private_banking
+  - depository
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - high_net_worth_individual
+  geographic_footprints: []
+  regulatory_source: SARs IN ACTION Issue 11 - June 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-06
+  risk_level: low
+  category: corruption
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/534-sars-in-action-issue-5-june-2021/file
+  typology_family: []
+  transaction_patterns: []
+  key_terms:
+  - customer due diligence
+  - source of wealth
+- id: 244-09
+  description: A client’s information about a counterparty does not make sense or the
+    deal otherwise appears off, with no clear economic rationale for the transaction.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - securities
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs IN ACTION Issue 11 - June 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/534-sars-in-action-issue-5-june-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - counterparty
+  - deal rationale
+- id: 244-10
+  description: A counterparty changes its advisors midway through a deal without clear
+    justification.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - securities
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs IN ACTION Issue 11 - June 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/534-sars-in-action-issue-5-june-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - changing advisors
+  - counterparty
+- id: 244-11
+  description: The structuring of a deal, or the jurisdictions involved, fall outside
+    the firm’s usual area of expertise, suggesting the client may be forum-shopping
+    for a less informed adviser.
+  product_types:
+  - depository
+  - wire_transfer
+  - trade_finance
+  - securities
+  industry_types:
+  - legal_accounting
+  - professional_services
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  regulatory_source: SARs IN ACTION Issue 11 - June 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/534-sars-in-action-issue-5-june-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - structuring
+  - jurisdictions
+  - firm expertise

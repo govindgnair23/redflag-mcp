@@ -1,0 +1,272 @@
+- id: 243-12
+  description: A previously defrauded elderly or vulnerable customer is targeted again
+    by further fraud attempts, their details having been shared on a 'suckers list'
+    between crime groups.
+  product_types: []
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - suckers list
+  - fraud attempts
+- id: 243-13
+  description: A vulnerable customer is financially exploited by someone in a position
+    of trust — a family member, carer, power of attorney, or friend put in place to
+    protect them.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - elder_financial_exploitation
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - family member
+  - positions of trust
+  - power of attorney
+- id: 243-14
+  description: A customer, under pressure or coercion, sends money overseas consistent
+    with romance fraud.
+  product_types:
+  - wire_transfer
+  - money_transmitter
+  - remittance
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  key_terms:
+  - romance fraud
+  - send money overseas
+- id: 243-15
+  description: An account shows an increase in cash paid in or withdrawn, increased
+    inbound or outbound foreign payments, or third-party payments in, that do not fit
+    the expected profile of the customer.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - cash paid into an account
+  - cash withdrawn
+  - foreign payments
+- id: 243-16
+  description: Fraudsters ask victims to provide precious metal as payment within courier
+    frauds, or target precious metal through burglaries.
+  product_types:
+  - depository
+  - check_cashing
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  - latin_america
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - organized_crime_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - precious metal
+  - courier frauds
+- id: 243-17
+  description: Illicit cash is converted into gold as an early stage of the money laundering
+    process.
+  product_types:
+  - depository
+  - currency_exchange
+  - trade_finance
+  industry_types:
+  - precious_metals_jewelry
+  customer_profiles:
+  - cash_intensive_business
+  geographic_footprints:
+  - uk_eu
+  - latin_america
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - cash_intensive_behavior
+  - rapid_fund_movement
+  key_terms:
+  - illicit cash
+  - gold
+  - money laundering process
+- id: 243-18
+  description: Gold is used in trade-based money laundering (TBML), with the proceeds
+    of crime moved through gold trade transactions to legitimise their origins.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - precious_metals_jewelry
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - uk_eu
+  - latin_america
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - trade_based_money_laundering
+  - organized_crime_proceeds
+  transaction_patterns:
+  - trade_document_manipulation
+  - invoice_mismatch
+  key_terms:
+  - gold
+  - trade-based money laundering
+  - trade transactions
+- id: 243-38
+  description: A company uses an accountancy or other firm's address as its registered
+    office without the knowledge or consent of that firm.
+  product_types:
+  - depository
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  key_terms:
+  - registered office address
+  - without the knowledge or consent
+- id: 243-40
+  description: A company using a firm's address as its registered office combines this
+    with a Post Office mail redirection so the firm does not receive mail that might
+    trigger an investigation.
+  product_types:
+  - depository
+  industry_types:
+  - professional_services
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs In Action Issue 12 - September 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-09
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/569-sars-in-action-september-2021/file
+  typology_family:
+  - shell_company_usage
+  transaction_patterns:
+  - identity_misrepresentation
+  - shell_company_usage
+  key_terms:
+  - Post Office redirection
+  - mail

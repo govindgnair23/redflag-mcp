@@ -1,0 +1,319 @@
+- id: 258-01
+  description: A business account shows no genuine trading activity — for example no
+    operating expenses, payroll, or supplier payments consistent with a real trading
+    business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - not trading in a genuine capacity
+- id: 258-02
+  description: The account’s transaction activity is not aligned with the customer’s
+    stated business model or sector.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - business model
+- id: 258-03
+  description: Multiple seemingly unrelated companies open business accounts that show
+    linked or coordinated suspicious financial activity.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - business accounts
+  - suspicious financial activity
+- id: 258-05
+  description: An account’s turnover is in excess of what is expected based on the
+    business profile, including credits from UK and internationally based accounts
+    that are unrelated to the sector the business operates in.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - account turnover
+  - business profile
+  - credits
+  - sector
+- id: 258-06
+  description: A subject’s account shows indicators of trade-based money laundering
+    (TBML) alongside previous suspicions of payroll fraud, changes of ownership around
+    linked companies, and a poor-quality business website that does not support the
+    level of funds received through the account.
+  product_types:
+  - depository
+  - trade_finance
+  industry_types:
+  - payroll
+  customer_profiles:
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - trade_based_money_laundering
+  - fraud_proceeds
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - TBML
+  - payroll fraud
+  - changes of ownership
+  - business website
+- id: 258-07
+  description: A VAT-registered company makes no payments to the tax authority (e.g.
+    HMRC) despite substantial account turnover.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: tax_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - tax_evasion
+  transaction_patterns: []
+  key_terms:
+  - HMRC
+  - VAT registered
+- id: 258-08
+  description: A newly incorporated business account receives credits substantially
+    above the expected turnover, which are then transferred out to multiple individual
+    accounts, while operating in a high-risk sector.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - newly incorporated business
+  - expected turnover
+  - high risk sector
+- id: 258-09
+  description: A domestic account receives high-value credits from several foreign
+    jurisdictions, which are then transferred on to an account in a foreign jurisdiction.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  - rapid_fund_movement
+  key_terms:
+  - high value credits
+  - foreign jurisdictions
+  - UK based account
+- id: 258-11
+  description: A customer’s account is funded primarily by a family member (e.g. a
+    parent) who has been residing in the country illegally for several years, suggesting
+    the funds may be proceeds of illegal working or human smuggling.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: human_smuggling
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - human_smuggling_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - funded primarily
+  - parent
+  - illegally
+- id: 258-12
+  description: An account has very little activity and appears to be used to store
+    funds in order to obscure their origin.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - pass_through_account_activity
+  key_terms:
+  - very little activity
+  - store the funds
+  - obfuscate the origin
+- id: 258-13
+  description: An account is credited over a short period with funds that vastly exceed
+    the customer’s expected income.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs Reporter Booklet
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - National Crime Agency
+  issued_date: 2025-07
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/758-sars-reporter-booklet-july-2025/file
+  typology_family:
+  - organized_crime_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - expected income
+  - credited over a short period

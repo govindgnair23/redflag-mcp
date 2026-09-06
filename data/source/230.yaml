@@ -1,0 +1,93 @@
+- id: 230-01
+  description: Multiple linked business accounts receive large credits that are rapidly
+    dispersed to third parties domestically and to overseas businesses.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: UKFIU magazine SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/752-sars-in-action-issue-32/file
+  typology_family:
+  - fraud_proceeds
+  - tax_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - third_party_payments
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - linked business accounts
+  - large credits
+  - third parties
+  - overseas businesses
+- id: 230-02
+  description: A company’s financial activity does not match the information available
+    from the corporate registry (e.g. Companies House), such as turnover inconsistent
+    with its filed accounts or stated line of business.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: UKFIU magazine SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-06
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/752-sars-in-action-issue-32/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - Companies House
+  - business activity mismatch
+  - company account
+- id: 230-03
+  description: A company account transacts primarily with other newly opened accounts.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types: []
+  customer_profiles:
+  - newly_established_business
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: UKFIU magazine SARs in Action
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies:
+  - UKFIU
+  - NCA
+  issued_date: 2025-06
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/752-sars-in-action-issue-32/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - nested_account_activity
+  - rapid_fund_movement
+  key_terms:
+  - company account
+  - newly opened accounts

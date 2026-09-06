@@ -1,0 +1,171 @@
+- id: 246-05
+  description: A customer’s gambling activity is being financed through cash deposited
+    in bank accounts, funds received from other individuals, or government benefits,
+    inconsistent with a legitimate source of funds.
+  product_types:
+  - depository
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - government_benefit_program_sponsor
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 9 - February 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/497-sars-in-action-february-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - third_party_payments
+  key_terms:
+  - cash deposited in bank accounts
+  - government benefits
+  - source of funds
+- id: 246-07
+  description: A customer is spending beyond the risk profile held for them by the
+    gambling operator.
+  product_types:
+  - prepaid
+  - depository
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 9 - February 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/497-sars-in-action-february-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - risk profile
+  - spending
+- id: 246-08
+  description: A customer shows unusual betting patterns inconsistent with normal play,
+    such as low-risk offsetting bets used to convert stake money into apparently legitimate
+    winnings.
+  product_types:
+  - prepaid
+  - depository
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 9 - February 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/497-sars-in-action-february-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - betting patterns
+- id: 246-09
+  description: A customer shows a sudden change in spend patterns, such as a marked
+    increase in the volume or value of gambling relative to their established behaviour.
+  product_types:
+  - prepaid
+  - depository
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 9 - February 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-02
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/497-sars-in-action-february-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - spend patterns
+- id: 246-11
+  description: Money mules are used to receive gambling-related funds and obscure the
+    true origin of the funds before onward transfer.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 9 - February 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-02
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/497-sars-in-action-february-2021/file
+  typology_family:
+  - organized_crime_proceeds
+  - fraud_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - pass_through_account_activity
+  key_terms:
+  - money mules
+  - true origin of funds
+- id: 246-13
+  description: A customer attempts to impersonate another individual in order to bypass
+    gambling self-exclusion requirements.
+  product_types:
+  - prepaid
+  - depository
+  industry_types:
+  - casinos
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs In Action Issue 9 - February 2021
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2021-02
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/497-sars-in-action-february-2021/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - self-exclusion
+  - impersonate

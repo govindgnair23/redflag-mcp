@@ -1,0 +1,790 @@
+- id: 250-01
+  description: An individual or business takes payment for, but does not supply, face
+    masks, hand sanitisers, or other Personal Protective Equipment (PPE).
+  product_types:
+  - depository
+  - money_transmitter
+  - wire_transfer
+  - prepaid
+  - credit_card
+  industry_types:
+  - retail
+  - food_service
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - PPE
+  - face masks
+  - hand sanitisers
+- id: 250-02
+  description: Social engineering whereby fraudsters impersonating high street banks
+    persuade their victims to transfer funds to a new account following a claimed 'security
+    breach'.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - social engineering
+  - security breach
+  - new account
+- id: 250-03
+  description: Large credits or cash deposits are made into accounts, explained by
+    the owner as funds from a holiday, house, or car purchase cancelled due to COVID-19
+    (sometimes into previously inactive accounts) or by business owners claiming to
+    be making deposits for staff wages.
+  product_types:
+  - depository
+  industry_types:
+  - retail
+  - construction
+  - travel_hospitality
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - cash_intensive_behavior
+  - cash_deposits_below_threshold
+  key_terms:
+  - cash deposits
+  - previously inactive accounts
+  - staff wages
+- id: 250-04
+  description: A customer sends funds abroad to relatives to buy face masks.
+  product_types:
+  - wire_transfer
+  - remittance
+  - money_transmitter
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  - foreign_individual
+  geographic_footprints:
+  - uk_eu
+  - high_risk_jurisdiction
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - face masks
+  - relatives
+  - funds abroad
+- id: 250-05
+  description: A customer claims that funds received into their account from multiple
+    sources are from the importation and selling of face masks.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - import_export
+  - retail
+  customer_profiles:
+  - small_business
+  - cross_border_business
+  geographic_footprints:
+  - domestic_us
+  - high_risk_jurisdiction
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - trade_based_money_laundering
+  transaction_patterns:
+  - third_party_payments
+  - unusual_international_wires
+  key_terms:
+  - face masks
+  - multiple sources
+  - importation
+- id: 250-06
+  description: A customer receives multiple faster payments then withdraws large amounts
+    in cash, claiming to have lost faith in the banking system as a result of COVID-19.
+  product_types:
+  - depository
+  - ach
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  - cash_intensive_behavior
+  key_terms:
+  - faster payments
+  - cash withdrawals
+  - COVID-19
+- id: 250-07
+  description: So-called 'emergency' loans are facilitated to subjects about whom the
+    firm holds money laundering concerns.
+  product_types:
+  - depository
+  - money_transmitter
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: low
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  transaction_patterns:
+  - loan_back_scheme
+  key_terms:
+  - emergency loans
+  - money laundering concerns
+- id: 250-08
+  description: Victims send funds believing they are investing in companies developing
+    a vaccine for COVID-19.
+  product_types:
+  - securities
+  - depository
+  - wire_transfer
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - vaccine
+  - COVID-19
+  - investing
+- id: 250-15
+  description: Goods, particularly high-value items, are advertised for sale priced
+    much lower than the recommended retail price, and victims are given an account
+    number and instructed to transfer payment (purchase scam).
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - credit_card
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - third_party_payments
+  key_terms:
+  - recommended retail price
+  - high value items
+  - account number
+- id: 250-18
+  description: Investment opportunities advertised via social media encourage victims
+    to 'invest' in Bitcoin or a 'new virtual currency' offering substantial financial
+    returns.
+  product_types:
+  - crypto
+  - securities
+  - depository
+  - wire_transfer
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - Bitcoin
+  - virtual currency
+  - social media
+- id: 250-20
+  description: When a victim requests their funds, they are told additional investment
+    is required to release them, or the original contact fails to reply (advance-fee
+    or investment scam).
+  product_types:
+  - crypto
+  - securities
+  - depository
+  - wire_transfer
+  industry_types:
+  - crypto
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - additional investment
+  - funds be paid
+  - original contact fails to reply
+- id: 250-22
+  description: A customer initially sends small amounts to a new online contact, then
+    increasing amounts over time as a 'romance' develops, resulting in high-value losses
+    (romance scam).
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - elderly_or_vulnerable_person
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - elder_financial_exploitation
+  transaction_patterns:
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - romance
+  - small amounts
+  - high value losses
+- id: 250-23
+  description: A customer concocts a fake story to generate a false fraud claim against
+    the bank (first-party fraud), sometimes citing a vulnerability, in order to receive
+    money they are not entitled to.
+  product_types:
+  - depository
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - false fraud claims
+  - vulnerability
+  - fraud claim
+- id: 250-24
+  description: Money mules, frequently aged under 18 and recruited through social media,
+    allow their accounts to be used to conceal fraudulent funds.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  industry_types: []
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - money_mule_activity
+  - pass_through_account_activity
+  key_terms:
+  - money mules
+  - under 18
+  - social media
+- id: 250-25
+  description: Funds are laundered through multiple mule accounts and then converted
+    into cryptocurrency, making them harder to trace.
+  product_types:
+  - depository
+  - money_transmitter
+  - crypto
+  - prepaid
+  industry_types:
+  - crypto
+  customer_profiles:
+  - money_services_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - money_mule_activity
+  - pass_through_account_activity
+  - cryptocurrency_mixing
+  key_terms:
+  - mule accounts
+  - cryptocurrency
+  - harder to trace
+- id: 250-26
+  description: Suspected fraudulent use of the Self-Assessment Tax Refunds system.
+  product_types:
+  - depository
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: low
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - tax_evasion
+  - fraud_proceeds
+  transaction_patterns: []
+  key_terms:
+  - Self-Assessment Tax Refunds
+  - HMRC
+- id: 250-28
+  description: Suspected fraudulent use of government priority financial support schemes
+    established as a result of COVID-19 (e.g. loans and grants).
+  product_types:
+  - depository
+  industry_types:
+  - government_benefits
+  customer_profiles:
+  - government_benefit_program_sponsor
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns: []
+  key_terms:
+  - Government Priority Schemes
+  - COVID-19
+- id: 250-37
+  description: Office supply invoice fraud is committed using the correspondence details
+    of virtual offices, and prepay bank accounts (which have less oversight than conventional
+    banks) are exploited.
+  product_types:
+  - depository
+  - prepaid
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  - shell_company_usage
+  key_terms:
+  - invoice fraud
+  - virtual offices
+  - prepay bank accounts
+- id: 250-38
+  description: A customer sends funds in response to offers of exceptional financial
+    returns on bogus investments associated with fighting COVID-19.
+  product_types:
+  - securities
+  - depository
+  - wire_transfer
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - individual_consumer
+  - high_net_worth_individual
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - rapid_fund_movement
+  key_terms:
+  - fantastic financial returns
+  - COVID-19
+  - bogus investments
+- id: 250-40
+  description: A customer is targeted by smishing — text messages impersonating another
+    organisation to trick them into providing personal or banking information.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - smishing
+  - text messages
+  - personal information
+- id: 250-42
+  description: Criminals assume the identities of deceased persons to commit identity
+    fraud.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - elderly_or_vulnerable_person
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - identity fraud
+  - deceased
+- id: 250-43
+  description: Financial accounts are retrospectively manipulated to disguise activity
+    or misrepresent a business's position.
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - credit_card
+  industry_types: []
+  customer_profiles:
+  - individual_consumer
+  - small_business
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - account_takeover
+  - identity_misrepresentation
+  key_terms:
+  - retrospective manipulation
+  - financial accounts
+- id: 250-48
+  description: A director of a company secretly establishes a rival company (e.g. to
+    develop COVID-19 antivirals), diverting business or funds.
+  product_types:
+  - depository
+  industry_types:
+  - healthcare
+  customer_profiles:
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - shell_company_usage
+  transaction_patterns:
+  - shell_company_usage
+  key_terms:
+  - rival company
+  - conflict of interest
+- id: 250-49
+  description: A customer sells bootlegged or counterfeit goods (e.g. hand sanitiser)
+    at a large markup over the genuine retail price.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  - credit_card
+  industry_types:
+  - retail
+  customer_profiles:
+  - small_business
+  - individual_consumer
+  geographic_footprints:
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: medium
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - hand sanitiser
+  - bootlegged
+  - overcharging
+- id: 250-51
+  description: A customer is targeted by purchase scams (e.g. fake COVID-19 home testing
+    kits), smishing (spoof texts from an official source such as the government), or
+    phishing (scam emails offering a refund while impersonating a recognised company).
+  product_types:
+  - depository
+  - money_transmitter
+  - prepaid
+  - credit_card
+  industry_types:
+  - retail
+  customer_profiles:
+  - individual_consumer
+  geographic_footprints:
+  - domestic_us
+  - uk_eu
+  regulatory_source: SARs IN ACTION Issue 5 - May 2020
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: 2020-05
+  risk_level: high
+  category: cyber_enabled
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/452-sars-in-action-may-2020/file
+  typology_family:
+  - fraud_proceeds
+  - scam_proceeds
+  - cybercrime_proceeds
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - purchase scams
+  - spoof text messages
+  - phishing
