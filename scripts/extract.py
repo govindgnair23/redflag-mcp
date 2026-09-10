@@ -42,7 +42,7 @@ import pdfplumber
 import yaml
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import BadRequestError, OpenAI
 from pydantic import ValidationError
 
 load_dotenv()
@@ -67,6 +67,19 @@ DEFAULT_MODEL = "gpt-5.4-mini"
 DEFAULT_PARALLEL_WORKERS = 4
 MANIFEST_PATH = SOURCE_DIR / ".extracted_sources.yaml"
 LOGGER = logging.getLogger(__name__)
+
+
+def create_chat_completion(client: OpenAI, *, temperature: float, **kwargs):
+    """Call chat.completions.create, retrying without `temperature` if the
+    model rejects a non-default value (some reasoning models only support
+    the default temperature of 1).
+    """
+    try:
+        return client.chat.completions.create(temperature=temperature, **kwargs)
+    except BadRequestError as e:
+        if "temperature" in str(e).lower():
+            return client.chat.completions.create(**kwargs)
+        raise
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = PROJECT_ROOT / "red_flag_sources" / "pdf"
@@ -250,7 +263,8 @@ def extract_red_flags(document_text: str, model: str | None = None) -> list[dict
     messages = build_extraction_prompt(document_text)
 
     print(f"Sending document to {model} for extraction...")
-    response = client.chat.completions.create(
+    response = create_chat_completion(
+        client,
         model=model,
         messages=messages,
         response_format={"type": "json_object"},
@@ -289,7 +303,8 @@ def shape_red_flags(candidates: list[dict], model: str | None = None) -> list[di
     messages = build_shaping_prompt(descriptions)
 
     print(f"Shaping {len(candidates)} candidate descriptions with {model}...")
-    response = client.chat.completions.create(
+    response = create_chat_completion(
+        client,
         model=model,
         messages=messages,
         response_format={"type": "json_object"},
@@ -350,7 +365,8 @@ def verify_red_flags(
     messages = build_verification_prompt(descriptions, force_handcrafted=force_handcrafted)
 
     print(f"Verifying {len(candidates)} candidates with {model}...")
-    response = client.chat.completions.create(
+    response = create_chat_completion(
+        client,
         model=model,
         messages=messages,
         response_format={"type": "json_object"},

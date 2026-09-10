@@ -601,3 +601,7 @@
   slug: '251'
   output_file: data/source/251.yaml
   extracted_at: '2026-09-05T17:34:46.578118+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/223_FinCEN-Alert-Iranian-Commercial-Aviation.pdf
+  slug: 223_fincen-alert-iranian-commercial-aviation
+  output_file: data/source/223_fincen-alert-iranian-commercial-aviation.yaml
+  extracted_at: '2026-09-10T23:35:52.302897+00:00'

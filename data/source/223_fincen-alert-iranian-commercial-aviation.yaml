@@ -1,0 +1,293 @@
+- id: 223_fincen-alert-iranian-commercial-aviation-01
+  description: A recently incorporated technology, aviation, or logistics company
+    with an opaque ownership structure and a limited online presence in a jurisdiction
+    at high risk for transshipment to Iran makes a large number of purchases of aircraft
+    parts or other components that may be used in the commercial aviation industry
+    from U.S. or Western technology and aeronautics companies.
+  product_types:
+  - depository
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - logistics
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  - cross_border_business
+  - beneficial_owner_obscured
+  geographic_footprints:
+  - iran
+  - middle_east
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2026-Alert006
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-08'
+  risk_level: high
+  category: proliferation_financing
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/774-ukfiu-chapter-1-using-the-sar-portal/file
+  typology_family:
+  - proliferation_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - rapid_fund_movement
+  key_terms:
+  - recently incorporated
+  - opaque ownership structure
+  - limited online presence
+  - aircraft parts
+  - transshipment to Iran
+  - dual-use components
+- id: 223_fincen-alert-iranian-commercial-aviation-02
+  description: A recently incorporated technology, aviation, or logistics company
+    in a jurisdiction at high risk for transshipment to Iran lists a residential address
+    as its business address, shares beneficial ownership information with an unusual
+    number of other companies, or is co-located at the same physical address or shares
+    a PO Box with other companies that fit a similar profile and were established
+    at or around the same time.
+  product_types:
+  - depository
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - logistics
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - middle_east
+  - high_risk_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2026-Alert006
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-08'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/774-ukfiu-chapter-1-using-the-sar-portal/file
+  typology_family:
+  - proliferation_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - identity_misrepresentation
+  key_terms:
+  - residential address
+  - shared beneficial ownership
+  - co-located companies
+  - shared PO Box
+  - recently incorporated
+- id: 223_fincen-alert-iranian-commercial-aviation-03
+  description: Documentation or due diligence associated with the sale of an aircraft
+    indicates that the aircraft has been in storage for an extended period of time
+    or has undergone frequent re-registrations, layered changes in ownership by companies
+    in multiple jurisdictions, or an unusual number of moves between jurisdictions,
+    particularly in Central Asia, in the lead up to the sale.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - logistics
+  - import_export
+  customer_profiles:
+  - shell_or_front_company
+  - beneficial_owner_obscured
+  - cross_border_business
+  geographic_footprints:
+  - high_risk_jurisdiction
+  - iran
+  - middle_east
+  regulatory_source: FinCEN Alert FIN-2026-Alert006
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-08'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/774-ukfiu-chapter-1-using-the-sar-portal/file
+  typology_family:
+  - sanctions_evasion
+  - proliferation_financing
+  transaction_patterns:
+  - shell_company_usage
+  - rapid_fund_movement
+  key_terms:
+  - aircraft in storage
+  - frequent re-registrations
+  - layered ownership transfers
+  - multiple jurisdictions
+  - Central Asia
+- id: 223_fincen-alert-iranian-commercial-aviation-04
+  description: A customer with a nexus to Iran engaged in commercial aviation procurement
+    claims that their activities are authorized by OFAC or BIS without providing copies
+    of any OFAC or BIS authorizations, particularly if open-source aviation databases
+    indicate that aircraft previously owned or handled by the company were subsequently
+    transferred to Iran through one or more intermediary jurisdictions.
+  product_types:
+  - trade_finance
+  - depository
+  - wire_transfer
+  industry_types:
+  - logistics
+  - manufacturing
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - iran
+  - middle_east
+  - high_risk_jurisdiction
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2026-Alert006
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-08'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/774-ukfiu-chapter-1-using-the-sar-portal/file
+  typology_family:
+  - sanctions_evasion
+  - proliferation_financing
+  transaction_patterns:
+  - shell_company_usage
+  - pass_through_account_activity
+  key_terms:
+  - Iran nexus
+  - OFAC authorization
+  - BIS authorization
+  - intermediary jurisdictions
+  - aircraft transferred to Iran
+- id: 223_fincen-alert-iranian-commercial-aviation-05
+  description: A company, particularly a general trading company, located in a free
+    trade zone or a jurisdiction at high risk for Iranian commercial aviation procurement
+    which does not ordinarily appear to deal in aviation goods attempts to place orders
+    for U.S.- or Western-origin aircraft parts or components.
+  product_types:
+  - trade_finance
+  - depository
+  - wire_transfer
+  industry_types:
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - iran
+  - middle_east
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2026-Alert006
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-08'
+  risk_level: medium
+  category: proliferation_financing
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/774-ukfiu-chapter-1-using-the-sar-portal/file
+  typology_family:
+  - proliferation_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - general trading company
+  - free trade zone
+  - aviation goods
+  - aircraft parts
+  - Iranian commercial aviation procurement
+- id: 223_fincen-alert-iranian-commercial-aviation-06
+  description: A customer located in a jurisdiction of concern for Iranian aviation
+    procurement places orders for U.S.- or Western-origin aircraft parts or components
+    from firms in one country for delivery to freight forwarding or logistics firms
+    in a second country.
+  product_types:
+  - trade_finance
+  - depository
+  - wire_transfer
+  industry_types:
+  - logistics
+  - import_export
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - iran
+  - middle_east
+  - high_risk_jurisdiction
+  - domestic_us
+  regulatory_source: FinCEN Alert FIN-2026-Alert006
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-08'
+  risk_level: medium
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/774-ukfiu-chapter-1-using-the-sar-portal/file
+  typology_family:
+  - sanctions_evasion
+  - proliferation_financing
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - third_party_payments
+  - trade_document_manipulation
+  key_terms:
+  - jurisdiction of concern
+  - aircraft parts
+  - freight forwarding
+  - logistics firms
+  - transshipment
+- id: 223_fincen-alert-iranian-commercial-aviation-07
+  description: The movement of aircraft parts is handled by a logistics or air freight
+    company that does business in Iran or works with sanctioned Iranian or Russian
+    airlines or aviation companies.
+  product_types:
+  - trade_finance
+  - depository
+  - wire_transfer
+  industry_types:
+  - logistics
+  - transportation
+  - import_export
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - iran
+  - middle_east
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert FIN-2026-Alert006
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-09-08'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/774-ukfiu-chapter-1-using-the-sar-portal/file
+  typology_family:
+  - sanctions_evasion
+  - proliferation_financing
+  transaction_patterns:
+  - unusual_international_wires
+  - pass_through_account_activity
+  key_terms:
+  - aircraft parts
+  - air freight company
+  - sanctioned Iranian airlines
+  - Russian airlines
+  - aviation companies
