@@ -1,0 +1,686 @@
+- id: 224_fincen-alert-a7-network-01
+  description: A customer conducts transactions with suspected or previously identified
+    A7 Network Sub-Agents.
+  product_types:
+  - depository
+  - correspondent_banking
+  - wire_transfer
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - unusual_international_wires
+  - nested_account_activity
+  key_terms:
+  - A7 Network Sub-Agents
+  - sanctions evasion
+- id: 224_fincen-alert-a7-network-02
+  description: A customer conducts transactions with suspected shell companies located
+    in Kyrgyz Republic or other jurisdictions of concern for A7 Network activity.
+  product_types:
+  - depository
+  - correspondent_banking
+  - wire_transfer
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - shell_company_usage
+  - unusual_international_wires
+  key_terms:
+  - shell companies
+  - Kyrgyz Republic
+  - A7 Network
+- id: 224_fincen-alert-a7-network-03
+  description: A customer routes payments through several potential shell companies
+    in multiple jurisdictions for no clear economic purpose before the funds arrive
+    at their final destination.
+  product_types:
+  - depository
+  - correspondent_banking
+  - wire_transfer
+  - trade_finance
+  industry_types:
+  - import_export
+  - money_services_business
+  customer_profiles:
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - shell_company_usage
+  - wire_transfer_chains
+  - pass_through_account_activity
+  key_terms:
+  - shell companies
+  - multiple jurisdictions
+  - no clear economic purpose
+- id: 224_fincen-alert-a7-network-04
+  description: A customer's recently-formed company begins engaging in unusually high
+    volumes of large transactions that occur over a short period of time and do not
+    appear to be indicative of consistent business relationships with recurring counterparties.
+  product_types:
+  - depository
+  - wire_transfer
+  - correspondent_banking
+  industry_types:
+  - import_export
+  - money_services_business
+  customer_profiles:
+  - newly_established_business
+  - shell_or_front_company
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - recently formed company
+  - high transaction volume
+  - recurring counterparties
+- id: 224_fincen-alert-a7-network-05a
+  description: A customer conducts a large volume of transactions with counterparties
+    in disparate, unrelated lines of business with no apparent commercial connection
+    between them.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - manufacturing
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  - trade_based_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  key_terms:
+  - disparate lines of business
+  - unrelated counterparties
+- id: 224_fincen-alert-a7-network-05b
+  description: Documentation related to a customer's business transactions reveals
+    inconsistencies between the descriptions of goods or services and the supplier's
+    business profile.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - manufacturing
+  - logistics
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - invoice_mismatch
+  - trade_document_manipulation
+  key_terms:
+  - goods or services
+  - supplier business profile
+  - documentation inconsistencies
+- id: 224_fincen-alert-a7-network-06
+  description: A customer accesses a financial account or conducts transactions from
+    an IP address that resolves to identified VPN infrastructure known to be affiliated
+    with Ilan Shor and the A7 Network, such as the domains muzpan[.]com or sodkamus[.]com,
+    and runs on servers based in jurisdictions known to host A7 Network digital infrastructure,
+    such as Dubai, Hong Kong, or Kyrgyz Republic.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - hong_kong
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - VPN
+  - IP address
+  - muzpan.com
+  - sodkamus.com
+  - A7 Network
+- id: 224_fincen-alert-a7-network-07
+  description: A customer provides an email address to register an account or communicate
+    with their financial institution with a domain that resolves to mail servers affiliated
+    with the domains muzpan.com or sodkamus.com.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - hong_kong
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - email domain
+  - muzpan.com
+  - sodkamus.com
+  - mail servers
+- id: 224_fincen-alert-a7-network-08
+  description: A customer's purported business has a blank or minimally active website
+    whose serving IP ranges fall within 159.100.19.150/152 and 159.100.19.203/214.
+  product_types:
+  - depository
+  - wire_transfer
+  - crypto
+  industry_types:
+  - money_services_business
+  customer_profiles:
+  - shell_or_front_company
+  - newly_established_business
+  geographic_footprints:
+  - russia
+  - hong_kong
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: medium
+  category: shell_company
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - sanctions_evasion
+  transaction_patterns:
+  - identity_misrepresentation
+  key_terms:
+  - blank website
+  - minimally active website
+  - 159.100.19.150/152
+  - 159.100.19.203/214
+- id: 224_fincen-alert-a7-network-09
+  description: Documentation associated with a customer's transactions includes shipping
+    invoices that use templates that differ from previously observed standards.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - shipping invoices
+  - invoice templates
+  - previously observed standards
+- id: 224_fincen-alert-a7-network-10a
+  description: Documentation associated with a customer's transactions contains overly
+    simplified or vague product details for the trade goods purportedly being purchased.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - vague product details
+  - trade goods
+- id: 224_fincen-alert-a7-network-10b
+  description: Documentation associated with a customer's transactions lists financially
+    unlikely total dollar value prices for the listed trade goods.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - invoice_mismatch
+  key_terms:
+  - unlikely prices
+  - trade goods
+- id: 224_fincen-alert-a7-network-10c
+  description: Documentation associated with a customer's transactions contains dates
+    that do not make sense based on the type of goods and/or services purportedly being
+    purchased.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  - invoice_mismatch
+  key_terms:
+  - invoice dates
+  - trade goods
+- id: 224_fincen-alert-a7-network-11
+  description: Shipping invoices and other documentation associated with a customer's
+    activities exhibit an analog "company stamp" affixed to an otherwise seemingly
+    entirely digitally produced document.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - company stamp
+  - digitally produced document
+  - shipping invoices
+- id: 224_fincen-alert-a7-network-12
+  description: Shipping invoices or other documentation for a customer's transactions
+    contain out-of-place Cyrillic characters in otherwise English language documents.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - logistics
+  - maritime_shipping
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: medium
+  category: trade_based_money_laundering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - trade_document_manipulation
+  key_terms:
+  - Cyrillic characters
+  - English language documents
+  - shipping invoices
+- id: 224_fincen-alert-a7-network-13
+  description: Documentation associated with a customer's transactions appears to
+    have been modified or wholly created using AI, for example displaying incorrectly
+    formed letters, garbled wording, and malformed seals or other iconography.
+  product_types:
+  - trade_finance
+  - wire_transfer
+  - depository
+  industry_types:
+  - import_export
+  - logistics
+  - manufacturing
+  customer_profiles:
+  - cross_border_business
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: fraud_nexus
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  - fraud_proceeds
+  transaction_patterns:
+  - trade_document_manipulation
+  - identity_misrepresentation
+  key_terms:
+  - AI-generated documents
+  - garbled wording
+  - malformed seals
+  - invoice falsification
+- id: 224_fincen-alert-a7-network-14
+  description: A customer offers, has traded in, or has historic direct or indirect
+    exposure to trades denominated in the A7A5 token or in derivative, or "wrapped,"
+    tokens based on the A7A5 token.
+  product_types:
+  - crypto
+  - securities
+  industry_types:
+  - crypto
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - nested_account_activity
+  key_terms:
+  - A7A5
+  - wrapped tokens
+  - derivative tokens
+  - digital assets
+- id: 224_fincen-alert-a7-network-15
+  description: A customer provides digital assets, especially stablecoins, to identified
+    or suspected A7 Network Sub-Agents.
+  product_types:
+  - crypto
+  - wire_transfer
+  industry_types:
+  - crypto
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: sanctions_evasion
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - nested_account_activity
+  - third_party_payments
+  key_terms:
+  - stablecoins
+  - A7 Network Sub-Agents
+  - digital assets
+- id: 224_fincen-alert-a7-network-16
+  description: A customer engaged in international trade, import/export, or shipping
+    uses stablecoins to make large purchases or engage in a high volume of transactions,
+    especially to pay for commodities not usually traded using digital assets, including
+    military or dual-use goods or oil and petroleum products.
+  product_types:
+  - crypto
+  - trade_finance
+  - wire_transfer
+  industry_types:
+  - import_export
+  - maritime_shipping
+  - arms_dual_use_goods
+  - oil_and_gas
+  customer_profiles:
+  - cross_border_business
+  geographic_footprints:
+  - russia
+  - iran
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: proliferation_financing
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - trade_based_money_laundering
+  - proliferation_financing
+  - sanctions_evasion
+  - crypto_asset_money_laundering
+  transaction_patterns:
+  - unusual_international_wires
+  - trade_document_manipulation
+  key_terms:
+  - stablecoins
+  - military goods
+  - dual-use goods
+  - oil and petroleum products
+  - large purchases
+- id: 224_fincen-alert-a7-network-17
+  description: A customer operating a digital asset firm—including a firm that purports
+    to be engaged in "over the counter," "OTC," or "block trading" services with a
+    primary focus on stablecoin/fiat trading pairs—or suspected to be engaged in unregistered
+    Money Service Business (MSB) activity involving digital assets sees a sudden, unexplainable
+    growth in activity in jurisdictions with known touchpoints to A7 Network operations,
+    especially if they have a minimal online presence or limited operating history.
+  product_types:
+  - crypto
+  - money_transmitter
+  industry_types:
+  - crypto
+  - money_services_business
+  customer_profiles:
+  - money_services_business
+  - newly_established_business
+  - shell_or_front_company
+  geographic_footprints:
+  - russia
+  - hong_kong
+  - sanctioned_jurisdiction
+  regulatory_source: FinCEN Alert on the A7 Network
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-01'
+  risk_level: high
+  category: virtual_currency
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/775-ukfiu-chapter-2-submitting-a-sar/file
+  typology_family:
+  - crypto_asset_money_laundering
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - OTC
+  - block trading
+  - stablecoin/fiat trading pairs
+  - unregistered MSB
+  - sudden growth
