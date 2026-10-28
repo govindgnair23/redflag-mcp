@@ -1,0 +1,208 @@
+- id: 225-fincen-alert-iranian-charity-network-abuse-01a
+  description: A customer that is a charitable organization or NPO solicits donations
+    but does not appear to provide any charitable services.
+  product_types:
+  - depository
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - iran
+  - middle_east
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Alert to Counter Iranian Abuse of Religious Charity Networks
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-15'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/776-ukfiu-chapter-3-understanding-damls-and-datfs/file
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - charitable organization
+  - NPO
+  - no charitable services
+  - fundraising appeals
+- id: 225-fincen-alert-iranian-charity-network-abuse-01b
+  description: A customer that is a charitable organization or NPO openly supports
+    the Iranian regime or its terrorist proxies, such as in fundraising appeals or
+    on social media.
+  product_types:
+  - depository
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - iran
+  - middle_east
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Alert to Counter Iranian Abuse of Religious Charity Networks
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-15'
+  risk_level: high
+  category: terrorist_financing
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/776-ukfiu-chapter-3-understanding-damls-and-datfs/file
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns: []
+  key_terms:
+  - charitable organization
+  - NPO
+  - Iranian regime
+  - terrorist proxies
+  - social media
+- id: 225-fincen-alert-iranian-charity-network-abuse-02
+  description: A customer that is a charitable organization or NPO receives large
+    donations from an unknown source over a short period of time and then sends significant
+    wire transfers or checks to other charitable organizations or NPOs.
+  product_types:
+  - depository
+  - wire_transfer
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - iran
+  - middle_east
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Alert to Counter Iranian Abuse of Religious Charity Networks
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/776-ukfiu-chapter-3-understanding-damls-and-datfs/file
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - rapid_fund_movement
+  - pass_through_account_activity
+  key_terms:
+  - large donations
+  - unknown source
+  - short period of time
+  - significant wire transfers
+  - charitable organizations
+  - NPOs
+- id: 225-fincen-alert-iranian-charity-network-abuse-03a
+  description: A customer that is a charitable organization or NPO, or an employee,
+    officer, or contractor of a charitable organization or NPO, alters or cancels a
+    transaction when advised that a Currency Transaction Report (CTR) would be filed.
+  product_types:
+  - depository
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - iran
+  - middle_east
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Alert to Counter Iranian Abuse of Religious Charity Networks
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/776-ukfiu-chapter-3-understanding-damls-and-datfs/file
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - structuring
+  key_terms:
+  - CTR
+  - Currency Transaction Report
+  - alters or cancels transaction
+  - recordkeeping requirements
+- id: 225-fincen-alert-iranian-charity-network-abuse-03b
+  description: A customer that is a charitable organization or NPO, or an employee,
+    officer, or contractor of a charitable organization or NPO, engages in structuring
+    with multiple cash transactions in amounts below $10,000 to evade the Currency
+    Transaction Report (CTR) reporting and recordkeeping requirements.
+  product_types:
+  - depository
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - iran
+  - middle_east
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Alert to Counter Iranian Abuse of Religious Charity Networks
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-15'
+  risk_level: high
+  category: structuring
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/776-ukfiu-chapter-3-understanding-damls-and-datfs/file
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - cash_deposits_below_threshold
+  - structuring
+  key_terms:
+  - CTR
+  - Currency Transaction Report
+  - below $10,000
+  - structuring
+  - cash transactions
+- id: 225-fincen-alert-iranian-charity-network-abuse-04
+  description: A customer receives transfers from a charitable organization or NPO
+    with which the customer has no clear business relationship and then proceeds to
+    withdraw the funds in cash or remit them onward.
+  product_types:
+  - depository
+  - wire_transfer
+  - money_transmitter
+  industry_types:
+  - charity_or_nonprofit
+  customer_profiles:
+  - charity_or_nonprofit
+  geographic_footprints:
+  - iran
+  - middle_east
+  - sanctioned_jurisdiction
+  - ofac_sanctioned_country
+  regulatory_source: FinCEN Alert to Counter Iranian Abuse of Religious Charity Networks
+  regulator: NCA
+  regulator_jurisdiction: GB
+  issuing_agencies: []
+  issued_date: '2026-10-15'
+  risk_level: medium
+  category: layering
+  source_url: https://www.nationalcrimeagency.gov.uk/who-we-are/publications/776-ukfiu-chapter-3-understanding-damls-and-datfs/file
+  typology_family:
+  - terrorist_financing
+  - sanctions_evasion
+  transaction_patterns:
+  - pass_through_account_activity
+  - third_party_payments
+  - rapid_fund_movement
+  key_terms:
+  - charitable organization
+  - NPO
+  - no clear business relationship
+  - cash withdrawal
+  - remit onward

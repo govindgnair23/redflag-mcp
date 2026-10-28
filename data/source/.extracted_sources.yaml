@@ -605,3 +605,11 @@
   slug: 223_fincen-alert-iranian-commercial-aviation
   output_file: data/source/223_fincen-alert-iranian-commercial-aviation.yaml
   extracted_at: '2026-09-10T23:35:52.302897+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/224_FinCEN-Alert-A7-Network.pdf
+  slug: 224_fincen-alert-a7-network
+  output_file: data/source/224_fincen-alert-a7-network.yaml
+  extracted_at: '2026-10-02T17:00:51.550376+00:00'
+- source: /Users/learningmachine/Documents/Python-dev/redflag-mcp/red_flag_sources/pdf/225-FinCEN-Alert-Iranian-Charity-Network-Abuse.pdf
+  slug: 225-fincen-alert-iranian-charity-network-abuse
+  output_file: data/source/225-fincen-alert-iranian-charity-network-abuse.yaml
+  extracted_at: '2026-10-28T19:57:47.890623+00:00'
